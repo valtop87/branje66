@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
+                <style>
+        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
+        .dataTables_wrapper .dataTables_filter {
+            float: left;
+            text-align: left;
+        }
+        td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
+        table{border-collapse:collapse;border: 2px solid #aaa;}
+    .posameznoIskanje{width:75px}
+    </style>
+<TITLE> </TITLE>
+</head>
+<body>
+<H1 id=NSLV></H1>
+<TABLE id=tblOsnova>
+<THEAD ALIGN='CENTER'>
+<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
+<TH NOWRAP>Žalostinke</TH>
+</TR></THEAD>
+<style>
+td:nth-child(1){background-color:#ddffe0;text-align: left;}
+.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
+.highlighted {color: red;}
+</style>
+<tbody>
+<TR>
+<TD >Žalostinke 1. Poglavje</TD>
+</TR>
+<TR>
+<TD >[alef]<br>O kako osamljena sedi prestolnica,  ki je bila polna ljudi!<br>Nekoč je bila v primerjavi z drugimi narodi gosto naseljena,  zdaj pa je kakor vdova!<br>Nekoč plemkinja med provincami,  zdaj pa opravlja prisilno delo!</TD>
+</TR>
+<TR>
+<TD >[bet]<br>Ponoči bridko joka,  po licih ji polzijo solze.<br>Nihče od njenih ljubimcev je ne tolaži.<br>Vsi njeni prijatelji so jo izdali,  postali so njeni sovražniki.</TD>
+</TR>
+<TR>
+<TD >[gimel]<br>Judovska hči je odšla v pregnanstvo in prenaša stisko in kruto suženjstvo.<br>Živeti mora med narodi. Nikjer ne najde počitka.<br>Ko je bila v stiski,  so jo ujeli vsi njeni preganjalci.</TD>
+</TR>
+<TR>
+<TD >[dalet]<br>Poti,  ki vodijo do sionske hčere,  žalujejo,  ker nihče ne prihaja na praznik.<br>Vsa njena vrata so opustošena,  njeni duhovniki vzdihujejo.<br>Njena dekleta žalujejo in tudi sama hudo trpi.</TD>
+</TR>
+<TR>
+<TD >[he]<br>Njeni nasprotniki so zdaj njeni gospodarji,  njeni sovražniki so brez skrbi.<br>Jehova jo je namreč zaradi njenih mnogih prestopkov zavil v žalost.<br>Nasprotnik je njene otroke odpeljal v ujetništvo.</TD>
+</TR>
+<TR>
+<TD >[vav]<br>Sionsko hčer je zapustil ves njen sijaj.<br>Njeni poglavarji so kakor jeleni,  ki ne najdejo pašnika;<br>izčrpani hodijo pred preganjalcem.</TD>
+</TR>
+<TR>
+<TD >[zajin]<br>Jeruzalemska hči se je v dneh svoje stiske in svojega brezdomstva spomnila<br>vseh dragocenosti,  ki jih je imela pred davnimi časi.<br>Ko je njeno ljudstvo padlo v nasprotnikove roke in ni imela nikogar,  ki bi ji pomagal, <br>so nasprotniki to videli in se smejali njenemu propadu.</TD>
+</TR>
+<TR>
+<TD >[het]<br>Jeruzalemska hči je hudo grešila, <br>zato je postala odvratna.<br>Vsi,  ki so ji izkazovali čast,  jo zdaj zaničujejo,  ker so jo videli golo.<br>Ona pa vzdihuje in se od sramu obrača proč.</TD>
+</TR>
+<TR>
+<TD >[tet]<br>Njena oblačila so polna madežev.<br>Niti pomislila ni na to,  kaj jo čaka.<br>Njen padec je bil strahovit in nikogar nima,  da bi jo potolažil.<br>O Jehova,  poglej,  v kakšni stiski sem,  ker se sovražnik šopiri!</TD>
+</TR>
+<TR>
+<TD >[jod]<br>Nasprotnik ji je pobral vse dragocenosti.<br>Videla je,  kako so v njeno svetišče prišli narodi, <br>tisti,  ki si jim prepovedal zbirati se s tvojim ljudstvom.</TD>
+</TR>
+<TR>
+<TD >[kaf]<br>Vse njeno ljudstvo vzdihuje in išče hrano.<br>Svoje dragocenosti dajejo za hrano,  samo da bi ostali živi.<br>Poglej,  o Jehova,  in videl boš,  da me vsi zaničujejo.</TD>
+</TR>
+<TR>
+<TD >[lamed]<br>Vsi vi,  ki greste mimo po poti,  ali vam je čisto vseeno?<br>Ozrite se in poglejte!<br>Ali je kakšna bolečina podobna moji bolečini, <br>bolečini,  ki mi jo je zadal Jehova ob dnevu svoje plamteče jeze?</TD>
+</TR>
+<TR>
+<TD >[mem]<br>Z neba je poslal ogenj,  da bi sežgal vse moje kosti.<br>Razpel je mrežo mojim nogam. Prisilil me je,  da sem se obrnila nazaj.<br>Opustošil me je, <br>ves dan boleham.</TD>
+</TR>
+<TR>
+<TD >[nun]<br>Moji prestopki so privezani na moj vrat kakor jarem,  on sam jih je privezal.<br>Visijo okoli mojega vratu; moč me je zapustila.<br>Jehova me je izročil v roke tistim,  katerim se ne morem upirati.</TD>
+</TR>
+<TR>
+<TD >[sameh]<br>Jehova je iz moje sredine odstranil vse moje junake.<br>Proti meni je sklical množico ljudi,  da bi uničil moje mladeniče.<br>Jehova je v stiskalnici za grozdje tlačil devico,  judovsko hčer.</TD>
+</TR>
+<TR>
+<TD >[ajin]<br>Zaradi vsega tega jokam. Iz oči mi lijejo solze.<br>Vsi,  ki bi me lahko potolažili ali poživili,  so namreč daleč stran od mene.<br>Moji sinovi so brez upanja,  ker nas je sovražnik premagal.</TD>
+</TR>
+<TR>
+<TD >[pe]<br>Sionska hči izteguje svoje roke. Nikogar nima,  da bi jo potolažil.<br>Jehova je vsem nasprotnikom Jakobovega ljudstva naročil,  naj ga napadejo.<br>Jeruzalemska hči jim je postala odvratna.</TD>
+</TR>
+<TR>
+<TD >[cade]<br>Jehova je ravnal pravično,  ko me je kaznoval,  saj sem se uprla njegovim zapovedim.<br>Poslušajte,  vsa ljudstva,  in poglejte mojo bolečino!<br>Moja dekleta in moji mladeniči so odšli v ujetništvo.</TD>
+</TR>
+<TR>
+<TD >[kof]<br>Klicala sem svoje ljubimce,  oni pa so me izdali.<br>Moji duhovniki in moji starešine so pomrli v mestu, <br>ko so iskali hrano,  da bi ostali živi.</TD>
+</TR>
+<TR>
+<TD >[reš]<br>Poglej,  o Jehova,  v hudi stiski sem!<br>Preplavlja me obup.<br>Moje srce je strto,  ker sem se zelo upirala.<br>Zunaj mi je meč pobil otroke in tudi v hiši umirajo ljudje.</TD>
+</TR>
+<TR>
+<TD >[šin]<br>Ljudstvo sliši moje vzdihovanje. Nikogar ni,  ki bi me potolažil.<br>Vsi moji sovražniki so izvedeli za mojo nesrečo.<br>Veselijo se,  ker si jo ti zgrnil name.<br>Toda prišel bo dan,  ko boš naredil to,  kar si oznanil,  in takrat bodo na istem kot jaz.</TD>
+</TR>
+<TR>
+<TD >[tav]<br>Vsa njihova hudobnost naj ti bo razkrita,  ti pa jih kaznuj, <br>tako kot si kaznoval mene zaradi vseh mojih prestopkov.<br>Mojih vzdihljajev je mnogo in moje srce je bolno.</TD>
+</TR>
+<TR>
+<TD >Žalostinke 2. Poglavje</TD>
+</TR>
+<TR>
+<TD >[alef]<br>O kako je Jehova s svojo jezo kakor z oblakom prekril sionsko hčer!<br>Izraelovo lepoto je z neba vrgel na zemljo.<br>Ob dnevu svoje jeze se ni spomnil svojega podnožnika.</TD>
+</TR>
+<TR>
+<TD >[bet]<br>Jehova je brez usmiljenja požrl vsa prebivališča Jakobovega ljudstva.<br>V svoji jezi je porušil utrdbe judovske hčere.<br>Na tla jih je zrušil,  oskrunil je kraljestvo in njegove voditelje.</TD>
+</TR>
+<TR>
+<TD >[gimel]<br>V svoji veliki jezi je zlomil vso Izraelovo moč.<br>Ni priskočil na pomoč,  ko je sovražnik napadel.<br>Njegova jeza proti Jakobovemu ljudstvu je gorela kakor ogenj,  ki požira vse okrog sebe.</TD>
+</TR>
+<TR>
+<TD >[dalet]<br>Svoj lok je napel kakor sovražnik. Desnico je pripravil za boj.<br>Pobijal je vse,  ki so bili prijetni očem.<br>V šotor sionske hčere je izlil svojo jezo kakor ogenj.</TD>
+</TR>
+<TR>
+<TD >[he]<br>Jehova je postal kakor sovražnik.<br>Požrl je izraelski narod.<br>Požrl je vse njegove stolpe, <br>uničil je vse njegove utrdbe.<br>V judovski hčeri je pomnožil žalovanje in objokovanje.</TD>
+</TR>
+<TR>
+<TD >[vav]<br>Svojo senčno uto je podrl,  kakor da bi bila navadna uta na vrtu.<br>Svojemu prazniku je naredil konec.<br>Jehova je dovolil,  da sta praznik in šabat na Sionu šla v pozabo.<br>V svoji veliki jezi je zavrgel kralja in duhovnika.</TD>
+</TR>
+<TR>
+<TD >[zajin]<br>Jehova je zavrgel svoj oltar, <br>zavrgel je svoje svetišče.<br>Obzidje z utrjenimi stolpi je izročil v roke sovražniku.<br>V Jehovovi hiši so povzdignili svoj glas kakor ob prazniku.</TD>
+</TR>
+<TR>
+<TD >[het]<br>Jehova je sklenil,  da bo uničil obzidje sionske hčere.<br>Izmeril ga je z merilno vrvjo.<br>Pri uničevanju se ni zadrževal.<br>Obrambni nasip in obzidje je zavil v žalost.<br>Oba sta se podrla.</TD>
+</TR>
+<TR>
+<TD >[tet]<br>Njena vrata so se pogreznila v zemljo.<br>Njene zapahe je uničil in zlomil.<br>Njen kralj in njeni dostojanstveniki so zdaj pregnani med narode.<br>Nihče več ne upošteva zakona. Celo njeni preroki ne prejemajo več videnj od Jehova.</TD>
+</TR>
+<TR>
+<TD >[jod]<br>Starešine sionske hčere sedijo na tleh in molčijo.<br>Glavo so si posuli s prahom in si nadeli raševino.<br>Jeruzalemska dekleta so sklonila glavo do tal.</TD>
+</TR>
+<TR>
+<TD >[kaf]<br>Moje oči so utrujene od joka.<br>Preplavlja me obup.<br>Moje srce je zlomljeno,  ker je propadla moja hči,  moje ljudstvo, <br>ker otroci in dojenčki omedlevajo na mestnih trgih.</TD>
+</TR>
+<TR>
+<TD >[lamed]<br>Svoje mame sprašujejo »Kje sta žito in vino?«, <br>ko na mestnih trgih omedlevajo,  kakor da bi bili smrtno ranjeni, <br>ko njihovo življenje ugaša v maminem naročju.</TD>
+</TR>
+<TR>
+<TD >[mem]<br>Kaj ti lahko pokažem kot zgled?<br>S čim te lahko primerjam,  o jeruzalemska hči?<br>S čim te lahko primerjam,  da bi te potolažil,  o devica,  sionska hči?<br>Tvoj propad je namreč velik kakor morje. Kdo te lahko ozdravi?</TD>
+</TR>
+<TR>
+<TD >[nun]<br>Tvoji preroki so imeli lažna in prazna videnja.<br>Niso razkrili tvojih grehov,  s čimer bi te lahko obvarovali pred ujetništvom, <br>ampak so ti še naprej pripovedovali lažna in zavajajoča videnja.</TD>
+</TR>
+<TR>
+<TD >[sameh]<br>Vsi,  ki gredo mimo po cesti,  ti posmehljivo ploskajo z rokami.<br>Zaradi tebe,  jeruzalemska hči,  žvižgajo od začudenja in zmajujejo z glavo ter govorijo:<br>»Ali je to tisto mesto,  za katero so pravili ‚Popolno je v lepoti in prinaša veselje vsej zemlji?«</TD>
+</TR>
+<TR>
+<TD >[pe]<br>Vsi tvoji sovražniki se ti posmehujejo.<br>Žvižgajo in od jeze škripajo z zobmi ter govorijo: »Požrli smo jo.<br>To je dan,  na katerega smo čakali. Prišel je in videli smo ga.«</TD>
+</TR>
+<TR>
+<TD >[ajin]<br>Jehova je izvršil svoj namen. Izpolnil je svojo besedo, <br>to,  kar je zapovedal že pred davnimi časi.<br>Brez usmiljenja te je porušil.<br>Dovolil je,  da se sovražnik veseli nad teboj. Tvojim nasprotnikom je dal veliko moč.</TD>
+</TR>
+<TR>
+<TD >[cade]<br>Tvoji prebivalci vpijejo k Jehovu,  o obzidje sionske hčere!<br>Solze naj dan in noč derejo kakor hudournik!<br>Jokaj brez premora,  tvoje oči naj ne počivajo!</TD>
+</TR>
+<TR>
+<TD >[kof]<br>Vstani! Jokaj vso noč!<br>Izlij svoje srce pred Jehovom!<br>K njemu dvigni roke zaradi življenja svojih otrok, <br>ki na vseh uličnih vogalih omedlevajo od lakote.</TD>
+</TR>
+<TR>
+<TD >[reš]<br>Poglej,  o Jehova,  svoje ljudstvo,  ki si ga tako strogo kaznoval!<br>Ali naj bi ženske jedle dojenčke,  ki so jih rodile,  svoje zdrave otroke?<br>Ali naj bi bili v tvojem svetišču,  o Jehova,  umorjeni duhovniki in preroki?</TD>
+</TR>
+<TR>
+<TD >[šin]<br>Deček in starec mrtva ležita na ulici.<br>Moja dekleta in moji mladeniči so padli pod mečem.<br>Pobil si jih ob dnevu svoje jeze; neusmiljeno si jih pobil.</TD>
+</TR>
+<TR>
+<TD >[tav]<br>Od vsepovsod si sklical grozote,  kakor bi sklical ljudi na praznik.<br>Ob dnevu tvoje jeze,  o Jehova,  ni nihče ubežal ali preživel.<br>Moj sovražnik je pokončal otroke,  ki sem jih rodila in vzgajala.</TD>
+</TR>
+<TR>
+<TD >Žalostinke 3. Poglavje</TD>
+</TR>
+<TR>
+<TD >[alef]<br>Sam sem videl,  kako nas je Bog v svoji veliki jezi kaznoval.</TD>
+</TR>
+<TR>
+<TD >Pregnal me je ven in me prisilil,  da sem hodil po temi namesto po svetlobi.</TD>
+</TR>
+<TR>
+<TD >Vedno znova,  po ves dan,  dviguje svojo roko proti meni.</TD>
+</TR>
+<TR>
+<TD >[bet]<br>Povzročil je,  da mi je telo oslabelo in da se mi je koža obrabila.<br>Polomil mi je kosti.</TD>
+</TR>
+<TR>
+<TD >Obkolil me je,  obdal me je z grenkim strupom in težavami.</TD>
+</TR>
+<TR>
+<TD >Prisilil me je,  da živim v temačnih krajih kakor tisti,  ki so umrli že pred davnimi časi.</TD>
+</TR>
+<TR>
+<TD >[gimel]<br>Obzidal me je,  da ne morem uiti.<br>Vklenil me je v težke bakrene okove.</TD>
+</TR>
+<TR>
+<TD >Ko ves obupan kličem na pomoč,  noče poslušati mojih molitev.</TD>
+</TR>
+<TR>
+<TD >Z obdelanimi kamni mi je zaprl poti.<br>Moje steze je naredil težko prehodne.</TD>
+</TR>
+<TR>
+<TD >[dalet]<br>Name preži kakor medved,  kakor lev,  ki se skriva v zasedi.</TD>
+</TR>
+<TR>
+<TD >Pregnal me je s poti in me raztrgal na kose.<br>Opustošil me je.</TD>
+</TR>
+<TR>
+<TD >Napel je svoj lok,  mene pa postavil za tarčo puščicam.</TD>
+</TR>
+<TR>
+<TD >[he]<br>Ledvice mi je prebodel s puščicami iz svojega tulca.</TD>
+</TR>
+<TR>
+<TD >Vsem ljudem sem v posmeh,  v pesmih se norčujejo iz mene ves dan.</TD>
+</TR>
+<TR>
+<TD >Napolnil me je z grenkobo,  prepojil me je s pelinom.</TD>
+</TR>
+<TR>
+<TD >[vav]<br>S peskom mi lomi zobe, <br>pahnil me je v pepel.</TD>
+</TR>
+<TR>
+<TD >Oropal si me miru. Pozabil sem,  kaj je sreča.</TD>
+</TR>
+<TR>
+<TD >Zato govorim: »Moja slava je zbledela in od Jehova ne pričakujem ničesar več.«</TD>
+</TR>
+<TR>
+<TD >[zajin]<br>Spomni se moje stiske in mojega brezdomstva,  pelina in grenkega strupa!</TD>
+</TR>
+<TR>
+<TD >Gotovo se boš spomnil in se sklonil k meni,  da bi mi pomagal.</TD>
+</TR>
+<TR>
+<TD >O tem stalno razmišljam,  zato bom potrpežljivo čakal.</TD>
+</TR>
+<TR>
+<TD >[het]<br>Zaradi Jehovove vdane ljubezni nismo povsem pokončani, <br>njegovo usmiljenje nima konca.</TD>
+</TR>
+<TR>
+<TD >Vsako jutro je na novo usmiljen. Njegova zvestoba je zelo velika.</TD>
+</TR>
+<TR>
+<TD >»Jehova je moja dediščina, « sem rekel,  »zato ga bom potrpežljivo čakal.«</TD>
+</TR>
+<TR>
+<TD >[tet]<br>Jehova je dober s tistim,  ki zaupa vanj,  s tistim,  ki išče vodstvo pri njem.</TD>
+</TR>
+<TR>
+<TD >Dobro je tiho čakati na Jehovovo rešitev.</TD>
+</TR>
+<TR>
+<TD >Za človeka je dobro,  da se nauči nositi jarem že v svoji mladosti.</TD>
+</TR>
+<TR>
+<TD >[jod]<br>Sedi naj v samoti in molči,  ko Bog dovoli,  da mu je naloženo to breme.</TD>
+</TR>
+<TR>
+<TD >Svoj obraz naj potisne v prah! Morda je še kaj upanja.</TD>
+</TR>
+<TR>
+<TD >Tistemu,  ki ga tepe,  naj nastavi lice. Nase naj sprejme vse žaljivke!</TD>
+</TR>
+<TR>
+<TD >[kaf]<br>Jehova nas namreč ne bo zavrgel za vedno.</TD>
+</TR>
+<TR>
+<TD >Čeprav nam je povzročil žalost,  nam bo zaradi tega,  ker je neizmerno vdan v ljubezni,  izkazal usmiljenje.</TD>
+</TR>
+<TR>
+<TD >Ni mu namreč všeč povzročati stisko ali žalost.</TD>
+</TR>
+<TR>
+<TD >[lamed]<br>Če kdo tepta pod nogami jetnike na zemlji, </TD>
+</TR>
+<TR>
+<TD >če kdo pred Najvišjim človeku krati pravico, </TD>
+</TR>
+<TR>
+<TD >če kdo na sodišču človeku dela krivico –<br>Jehova tega ne odobrava.</TD>
+</TR>
+<TR>
+<TD >[mem]<br>Čigave besede se lahko izpolnijo,  če to ni Jehovova volja?</TD>
+</TR>
+<TR>
+<TD >Iz ust Najvišjega<br>ne prihaja hkrati slabo in dobro.</TD>
+</TR>
+<TR>
+<TD >Zakaj bi se živ človek pritoževal nad posledicami svojega greha?</TD>
+</TR>
+<TR>
+<TD >[nun]<br>Skrbno razmislimo o svojem vedenju,  vrnimo se k Jehovu!</TD>
+</TR>
+<TR>
+<TD >Z iskrenim srcem se obrnimo k Bogu v nebesih. Dvignimo svoje roke in recimo:</TD>
+</TR>
+<TR>
+<TD >»Grešili smo in se upirali. Tega nam nisi odpustil.</TD>
+</TR>
+<TR>
+<TD >[sameh]<br>Razjezil si se in nam ne pustiš,  da se ti bližamo.<br>Preganjaš nas in nas neusmiljeno pobijaš.</TD>
+</TR>
+<TR>
+<TD >Ogrnil si se z oblaki,  da naše molitve ne bi mogle priti do tebe.</TD>
+</TR>
+<TR>
+<TD >Naredil si nas za smeti in odpadke med ljudstvi.«</TD>
+</TR>
+<TR>
+<TD >[pe]<br>Vsi naši sovražniki se nam posmehujejo.</TD>
+</TR>
+<TR>
+<TD >V stalnem strahu smo in ujeti v zanko,  opustošeni smo in zlomljeni.</TD>
+</TR>
+<TR>
+<TD >Iz mojih oči tečejo potoki solz zaradi zloma moje hčere,  mojega ljudstva.</TD>
+</TR>
+<TR>
+<TD >[ajin]<br>Solze se mi ne bodo ustavile,  neprestano bodo tekle, </TD>
+</TR>
+<TR>
+<TD >dokler ne bo Jehova pogledal iz nebes in videl,  kaj se dogaja.</TD>
+</TR>
+<TR>
+<TD >Žalosten sem,  ko vidim,  kaj se je zgodilo hčeram mojega mesta.</TD>
+</TR>
+<TR>
+<TD >[cade]<br>Moji sovražniki me brez razloga lovijo kakor ptico.</TD>
+</TR>
+<TR>
+<TD >Vrgli so me v jamo in me hoteli ubiti,  vame so metali kamenje.</TD>
+</TR>
+<TR>
+<TD >Prekrile so me vode in rekel sem: »Umrl bom!«</TD>
+</TR>
+<TR>
+<TD >[kof]<br>Iz globin jame sem klical tvoje ime,  o Jehova.</TD>
+</TR>
+<TR>
+<TD >Prisluhni mi. Ne zatiskaj si ušes,  ko kličem na pomoč in prosim za olajšanje!</TD>
+</TR>
+<TR>
+<TD >Tisti dan,  ko sem te klical,  si se mi približal in rekel: »Ne boj se!«</TD>
+</TR>
+<TR>
+<TD >[reš]<br>Ti,  o Jehova,  si se postavil na mojo stran. Rešil si mi življenje.</TD>
+</TR>
+<TR>
+<TD >Videl si,  o Jehova,  krivico,  ki se mi dogaja. Prosim,  sodi mi pravično.</TD>
+</TR>
+<TR>
+<TD >Videl si,  kako so se mi maščevali,  kaj vse so naklepali proti meni.</TD>
+</TR>
+<TR>
+<TD >[sin] ali [šin]<br>Slišal si,  kako so se mi posmehovali,  o Jehova,  kaj vse so naklepali proti meni.</TD>
+</TR>
+<TR>
+<TD >Slišal si,  kaj govorijo moji nasprotniki,  kaj ves dan na skrivaj spletkarijo proti meni.</TD>
+</TR>
+<TR>
+<TD >Poglej jih! Ko sedijo in ko stojijo,  se mi v svojih pesmih posmehujejo.</TD>
+</TR>
+<TR>
+<TD >[tav]<br>O Jehova,  ti jim boš povrnil po njihovih dejanjih.</TD>
+</TR>
+<TR>
+<TD >Povzročil boš,  da bodo postali trmasti,  in jih s tem preklel.</TD>
+</TR>
+<TR>
+<TD >V jezi jih boš preganjal,  o Jehova,  in jih iztrebil s površja zemlje.</TD>
+</TR>
+<TR>
+<TD >Žalostinke 4. Poglavje</TD>
+</TR>
+<TR>
+<TD >[alef]<br>Kako zelo je potemnelo sijoče zlato,  to čisto zlato!<br>Sveti kamni ležijo raztreseni po vseh uličnih vogalih!</TD>
+</TR>
+<TR>
+<TD >[bet]<br>Dragoceni sionski otroci,  ki so bili nekoč cenjeni kot čisto zlato, <br>so zdaj vredni tako malo kot lončeni vrči, <br>izdelki lončarjevih rok.</TD>
+</TR>
+<TR>
+<TD >[gimel]<br>Celo šakali dojijo svoje mladiče.<br>Toda moja hči,  moje ljudstvo,  je postala okrutna kakor noji v pustinji.</TD>
+</TR>
+<TR>
+<TD >[dalet]<br>Dojenčku se od žeje lepi jezik na nebo.<br>Otroci prosijo kruha,  toda nihče jim ga ne da.</TD>
+</TR>
+<TR>
+<TD >[he]<br>Tisti,  ki so jedli izbrane jedi,  zdaj sestradani ležijo po ulicah.<br>Tisti,  ki so odraščali v dragih oblačilih,  zdaj ležijo na kupih pepela.</TD>
+</TR>
+<TR>
+<TD >[vav]<br>Moja hči,  moje ljudstvo,  je bila kaznovana bolj,  kakor je bila za svoj greh kaznovana Sodoma, <br>ki je bila uničena v trenutku in ki ji ni nihče pomagal.</TD>
+</TR>
+<TR>
+<TD >[zajin]<br>Njeni nazirci so bili čistejši od snega,  bolj beli od mleka.<br>Bili so bolj rdeči od koral,  sijali so kakor safir.</TD>
+</TR>
+<TR>
+<TD >[het]<br>Zdaj pa so videti temnejši od oglja.<br>Ljudje jih na ulicah ne prepoznajo.<br>Koža jim visi s kosti. Posušila se je kakor drevo.</TD>
+</TR>
+<TR>
+<TD >[tet]<br>Boljše je pobitim od meča kakor tistim,  ki jih je pomorila lakota, <br>kakor tistim,  ki umirajo,  ker jih je zadelo pomanjkanje hrane.</TD>
+</TR>
+<TR>
+<TD >[jod]<br>Nekoč sočutne ženske so z lastnimi rokami kuhale svoje otroke.<br>Z njimi so se hranile,  ko je mojo hčer,  moje ljudstvo,  doletelo uničenje.</TD>
+</TR>
+<TR>
+<TD >[kaf]<br>Jehova je pokazal ves svoj bes.<br>Izlil je svojo gorečo jezo.<br>Na Sionu je zanetil ogenj,  ki je požrl njegove temelje.</TD>
+</TR>
+<TR>
+<TD >[lamed]<br>Ne kralji na zemlji ne njeni prebivalci niso verjeli, <br>da bodo nasprotniki in sovražniki vstopili skozi jeruzalemska vrata.</TD>
+</TR>
+<TR>
+<TD >[mem]<br>To se je zgodilo zaradi grehov njegovih prerokov in prestopkov njegovih duhovnikov, <br>ki so v njem prelivali kri pravičnih.</TD>
+</TR>
+<TR>
+<TD >[nun]<br>Slepo tavajo po ulicah.<br>Umazani so od krvi, <br>tako da se nihče ne sme dotakniti njihovih oblačil.</TD>
+</TR>
+<TR>
+<TD >[sameh]<br>»Pojdite stran! Nečisti ste!« vpijejo na njih. »Pojdite stran! Pojdite stran! Ne dotikajte se nas!«<br>Postali so brezdomci in tavajo naokrog.<br>Narodi govorijo: »Ne morejo več živeti pri nas.</TD>
+</TR>
+<TR>
+<TD >[pe]<br>Jehova jih je razkropil.<br>Ne bo jim več naklonjen.<br>Duhovnikov ne bo nihče spoštoval,  starešinam ne bo nihče prizanesel.«</TD>
+</TR>
+<TR>
+<TD >[ajin]<br>Oči so nam že opešale,  ko smo gledali,  kdo bi nam pomagal,  pa ni bilo nikogar.<br>Iskali in iskali smo pomoč pri narodu,  ki nas ni mogel rešiti.</TD>
+</TR>
+<TR>
+<TD >[cade]<br>Sovražniki zalezujejo vsak naš korak,  tako da ne moremo hoditi po svojih trgih.<br>Približal se nam je konec. Naši dnevi so se iztekli,  prišel je naš konec.</TD>
+</TR>
+<TR>
+<TD >[kof]<br>Naši zasledovalci so bili hitrejši od orlov.<br>Lovili so nas po gorah. V pustinji so prežali na nas.</TD>
+</TR>
+<TR>
+<TD >[reš]<br>V njihovi veliki jami je ujet Jehovov maziljenec,  ki je kakor dih naših nosnic, <br>tisti,  za katerega smo govorili: »Pod njegovo zaščito bomo živeli med narodi.«</TD>
+</TR>
+<TR>
+<TD >[sin]<br>Vriskaj od veselja,  o edomska hči,  ki živiš v Uzovi deželi!<br>Toda tudi do tebe bo prišla čaša nesreče. Opijanila se boš in se razgalila.</TD>
+</TR>
+<TR>
+<TD >[tav]<br>O sionska hči,  dovolj si bila kaznovana za svoje grehe, <br>tebe ne bo več odpeljal v pregnanstvo.<br>O edomska hči,  zdaj bo svojo pozornost usmeril na tvoje grehe, <br>tvoje grehe bo razkril.</TD>
+</TR>
+<TR>
+<TD >Žalostinke 5. Poglavje</TD>
+</TR>
+<TR>
+<TD >Spomni se,  o Jehova,  kaj nas je doletelo.<br>Poglej našo sramoto.</TD>
+</TR>
+<TR>
+<TD >Naša dediščina je bila izročena neznancem,  naše hiše tujcem.</TD>
+</TR>
+<TR>
+<TD >Postali smo sirote,  nimamo očeta. Naše mame so kakor vdove.</TD>
+</TR>
+<TR>
+<TD >Plačati moramo,  da lahko pijemo svojo vodo. Svoja drva moramo kupovati.</TD>
+</TR>
+<TR>
+<TD >Preganjalci so nam tik za petami.<br>Izmučeni smo,  ampak ne moremo počivati.</TD>
+</TR>
+<TR>
+<TD >Proti Egiptu in Asiriji iztegujemo roko,  da bi dobili hrano.</TD>
+</TR>
+<TR>
+<TD >Naših prednikov,  ki so grešili,  ni več,  mi pa moramo nositi posledice njihovih grehov.</TD>
+</TR>
+<TR>
+<TD >Zdaj nam vladajo služabniki. Nikogar ni,  ki bi nas rešil iz njihovih rok.</TD>
+</TR>
+<TR>
+<TD >Da bi prišli do hrane,  tvegamo svoje življenje,  saj nas v pustinji lahko ubijejo z mečem.</TD>
+</TR>
+<TR>
+<TD >Naša koža je zaradi hude lakote postala vroča kakor peč.</TD>
+</TR>
+<TR>
+<TD >Naše žene na Sionu,  naše device v Judovih mestih,  ponižujejo.</TD>
+</TR>
+<TR>
+<TD >Dostojanstvenike so obesili za eno roko in starešinam niso izkazali nobenega spoštovanja.</TD>
+</TR>
+<TR>
+<TD >Mladeniči prenašajo mlinske kamne,  dečki se opotekajo pod težo drv,  ki jih nosijo.</TD>
+</TR>
+<TR>
+<TD >Pri mestnih vratih ni več starešin,  mladeniči ne igrajo več svojih pesmi.</TD>
+</TR>
+<TR>
+<TD >V našem srcu ni več veselja. Naše plesanje se je spremenilo v žalovanje.</TD>
+</TR>
+<TR>
+<TD >Z naše glave je padla krona. Gorje nam,  ker smo grešili!</TD>
+</TR>
+<TR>
+<TD >Zato je naše srce bolno<br>in zaradi vsega tega so nam oči oslabele.</TD>
+</TR>
+<TR>
+<TD >Gora Sion je opustošena in po njej tavajo lisice.</TD>
+</TR>
+<TR>
+<TD >Ti,  o Jehova,  boš večno sedel na svojem prestolu.<br>Kraljeval boš iz roda v rod.</TD>
+</TR>
+<TR>
+<TD >Zakaj nas hočeš pozabiti za vedno in nas zapustiti za tako dolgo?</TD>
+</TR>
+<TR>
+<TD >Pripelji nas nazaj k sebi,  o Jehova,  in mi se bomo radi vrnili.<br>Naj bo spet vse tako,  kot je bilo v dobrih starih časih.</TD>
+</TR>
+<TR>
+<TD >Toda ti si nas popolnoma zavrgel.<br>Še vedno si zelo jezen na nas.</TD>
+</TR>
+</TBODY>
+</TABLE>
+</body>
+</html>
