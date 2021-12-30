@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+<script type="text/javascript">
+//----------------------------------------------------------------------------------
+function Uvod(){
+//document.getElementById("TXT").innerHTML="1. Mojzes 2. poglavje";
+let q1='';
+	if (location.search.length > 0){
+		q1 = (location.search.substring(1));
+		q1=decodeURI(q1);
+		//q1 = location.search.substring(1);
+		document.getElementById("TXT").innerHTML=q1;
+		//u=q1.split(';');
+	}
+}
+//<textarea id="TXT" name="w3review" rows="40" cols="50">
+
+//-----------------
+</script>
+
+</HEAD>
+
+<body>
+
+
+<p id="TXT">
+</p>
+  <br><br>
+
+
+</body>
+<body onload="Uvod()">
+</html>
