@@ -7,7 +7,32 @@
 <script type="text/javascript">
 //----------------------------------------------------------------------------------
 function Uvod(){
-//document.getElementById("TXT").innerHTML="1. Mojzes 2. poglavje";
+if(location.hash.slice(1).length > 0){
+
+	//#['Rut',3,5]
+	const q = eval(location.hash.slice(1));
+	const L=q.length;
+	let url;
+	//console.log(q);
+	switch (L) {
+	case 1: 
+			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html";
+			break;
+		case 2: 
+			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html#["+q[1]+"]";
+			break;
+		case 3: 
+			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html#["+q[1]+","+q[2]+"]";
+			break;
+		case 4: 
+			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html#["+q[1]+","+q[2]+","+q[3]+"]";
+			break;
+	}
+
+    const msgW = open(url, '_self');
+
+}
+/*
 let q1='';
 	if (location.search.length > 0){
 		q1 = (location.search.substring(1));
@@ -16,13 +41,11 @@ let q1='';
     const msgW = open(url, '_self');
 
 		//"https://arhiv.snaga-mb.si/MS/bible66/index.html?Rut";
-		//document.getElementById("TXT").innerHTML=q1;
-		//u=q1.split(';');
 	}
+	*/
 }
-//<textarea id="TXT" name="w3review" rows="40" cols="50">
-
 //-----------------
+
 </script>
 
 </HEAD>
