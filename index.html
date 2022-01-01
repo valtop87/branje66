@@ -12,8 +12,11 @@ let q1='';
 	if (location.search.length > 0){
 		q1 = (location.search.substring(1));
 		q1=decodeURI(q1);
-		//q1 = location.search.substring(1);
-		document.getElementById("TXT").innerHTML=q1;
+		    const url = "https://arhiv.snaga-mb.si/MS/bible66/"+q1+".html";
+    const msgW = open(url, '_self');
+
+		//"https://arhiv.snaga-mb.si/MS/bible66/index.html?Rut";
+		//document.getElementById("TXT").innerHTML=q1;
 		//u=q1.split(';');
 	}
 }
