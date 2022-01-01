@@ -1,365 +1,235 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>1. Janezovo</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >1. Janezovo 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Pišemo vam o njem,  ki je bil od začetka,  ki smo ga slišali,  ga na lastne oči videli,  ga opazovali in ga z rokami otipali – pišemo vam o njem,  ki prinaša besedo,  ki daje življenje.</TD>
-</TR>
-<TR>
-<TD >(Da,  večno življenje nam je bilo razodeto in mi smo ga videli ter vam o njem pričujemo in ga oznanjamo. To večno življenje izvira od Očeta in nam je bilo razodeto.)</TD>
-</TR>
-<TR>
-<TD >Govorimo vam o njem,  ki smo ga videli in slišali. To delamo zato,  da bi bili tudi vi eno z nami,  tako kot smo mi eno z Očetom in njegovim Sinom,  Jezusom Kristusom.</TD>
-</TR>
-<TR>
-<TD >Vse to pišemo zato,  da bi bilo naše veselje popolno.</TD>
-</TR>
-<TR>
-<TD >Oznanjamo vam sporočilo,  ki smo ga slišali od njega. Glasi se takole: Bog je luč in z njim ni povezana nikakršna tema.</TD>
-</TR>
-<TR>
-<TD >Če rečemo,  da smo eno z njim,  vendar še naprej živimo v temi,  lažemo in ne živimo v skladu z resnico.</TD>
-</TR>
-<TR>
-<TD >Če pa živimo v luči,  kakor je v luči on sam,  smo res eno drug z drugim in nas kri njegovega Sina,  Jezusa,  očiščuje vsega greha.</TD>
-</TR>
-<TR>
-<TD >Če rečemo,  da smo brez greha,  zavajamo sami sebe in resnice ni v našem srcu.</TD>
-</TR>
-<TR>
-<TD >Če pa svoje grehe priznamo,  nam jih bo Bog,  ker je zvest in pravičen,  odpustil in nas očistil vse nepravičnosti.</TD>
-</TR>
-<TR>
-<TD >Če rečemo,  da ne grešimo,  je tako,  kot bi rekli,  da je Bog lažnivec,  in njegove besede ni v našem srcu.</TD>
-</TR>
-<TR>
-<TD >1. Janezovo 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Dragi moji otroci,  to vam pišem,  da se ne bi pregrešili. Če se kdo vendarle pregreši,  imamo pri Očetu pomočnika,  Jezusa Kristusa,  tistega,  ki dela,  kar je prav v Božjih očeh.</TD>
-</TR>
-<TR>
-<TD >On je spravna žrtev za naše grehe,  pa ne samo za naše,  ampak tudi za grehe vsega sveta.</TD>
-</TR>
-<TR>
-<TD >Če izpolnjujemo njegove zapovedi,  vemo,  da smo ga spoznali.</TD>
-</TR>
-<TR>
-<TD >Kdor pravi,  da ga je spoznal,  vendar njegovih zapovedi ne izpolnjuje,  je lažnivec in resnice ni v njegovem srcu.</TD>
-</TR>
-<TR>
-<TD >Kdor koli pa njegovo besedo izpolnjuje,  ima res popolno ljubezen do Boga. Po tem vemo,  da smo z njim povezani.</TD>
-</TR>
-<TR>
-<TD >Kdor pravi,  da ostaja z njim povezan,  je dolžan živeti tako,  kot je živel on.</TD>
-</TR>
-<TR>
-<TD >Ljubljeni bratje,  ne pišem vam nove zapovedi,  ampak staro zapoved,  ki jo imate že od začetka. Ta stara zapoved je beseda,  ki ste jo slišali.</TD>
-</TR>
-<TR>
-<TD >Pa vendar vam pišem novo zapoved,  ki jo je izpolnjeval on in jo izpolnjujete tudi vi,  saj tema mineva in prava luč že sveti.</TD>
-</TR>
-<TR>
-<TD >Kdor pravi,  da je v svetlobi,  vendar sovraži svojega brata,  je še vedno v temi.</TD>
-</TR>
-<TR>
-<TD >Kdor ima svojega brata rad,  ostaja v svetlobi in nič ga ne navaja na greh.</TD>
-</TR>
-<TR>
-<TD >Kdor pa svojega brata sovraži,  je v temi in hodi v temi in ne ve,  kam gre,  ker mu je tema zaslepila oči.</TD>
-</TR>
-<TR>
-<TD >Dragi otroci,  pišem vam,  ker so vam zaradi njegovega imena odpuščeni grehi.</TD>
-</TR>
-<TR>
-<TD >Očetje,  pišem vam,  ker ste spoznali njega,  ki obstaja od začetka. Mladeniči,  pišem vam,  ker ste premagali Hudobnega. Otroci,  pišem vam,  ker ste spoznali Očeta.</TD>
-</TR>
-<TR>
-<TD >Očetje,  pišem vam,  ker ste spoznali njega,  ki obstaja od začetka. Mladeniči,  pišem vam,  ker ste močni,  ker Božja beseda ostaja v vašem srcu in ste premagali Hudobnega.</TD>
-</TR>
-<TR>
-<TD >Ne ljubite ne sveta ne tega,  kar je v svetu. Če kdo ljubi svet,  v sebi nima ljubezni do Očeta, </TD>
-</TR>
-<TR>
-<TD >ker nič od tega,  kar je v svetu – želje grešnega telesa,  želje oči in bahavo razkazovanje življenjskih sredstev – ne izvira od Očeta,  ampak od sveta.</TD>
-</TR>
-<TR>
-<TD >Poleg tega svet mineva in njegove želje prav tako,  kdor pa izpolnjuje Božjo voljo,  ostane za večno.</TD>
-</TR>
-<TR>
-<TD >Dragi otroci,  živimo v zadnji uri. Slišali ste,  da bo prišel antikrist,  in zdaj so se že pojavili mnogi antikristi,  zato vemo,  da je to zadnja ura.</TD>
-</TR>
-<TR>
-<TD >Bili so med nami,  ampak so nas zapustili,  ker niso bili takšni kot mi; če bi namreč bili takšni,  bi ostali z nami. Toda odšli so,  da bi se pokazalo,  da niso vsi takšni kot mi.</TD>
-</TR>
-<TR>
-<TD >Vas pa je pomazilil Sveti in vsi imate spoznanje.</TD>
-</TR>
-<TR>
-<TD >Ne pišem vam zato,  ker ne bi poznali resnice,  ampak zato,  ker jo poznate in ker od resnice ne izvira nobena laž.</TD>
-</TR>
-<TR>
-<TD >Kdo je lažnivec,  če ne tisti,  ki zanika,  da je Jezus res Kristus? Ta je antikrist,  ta,  ki zanika Očeta in Sina.</TD>
-</TR>
-<TR>
-<TD >Kdor zanika Sina,  nima Očetovega odobravanja. Kdor pa priznava Sina,  ima Očetovo odobravanje.</TD>
-</TR>
-<TR>
-<TD >Kar se pa tiče vas,  naj to,  kar ste slišali že na začetku,  ostane v vašem srcu. Če bo to,  kar ste slišali na začetku,  ostalo v vašem srcu,  boste tudi vi ostali povezani s Sinom in Očetom.</TD>
-</TR>
-<TR>
-<TD >In obljubil nam je večno življenje.</TD>
-</TR>
-<TR>
-<TD >Vse to vam pišem,  ker vas skušajo nekateri zavesti.</TD>
-</TR>
-<TR>
-<TD >Toda maziljenje,  ki ste ga prejeli od njega,  ostaja v vas in ne potrebujete nikogar,  da bi vas učil. Z maziljenjem,  ki ste ga dobili od njega in ki je resnično in ni laž,  ste poučeni o vsem. Ostanite povezani z njim,  tako kot ste bili z maziljenjem poučeni.</TD>
-</TR>
-<TR>
-<TD >Zato,  dragi otroci,  ostanite povezani z njim,  da bomo lahko,  ko bo on razodet,  govorili brez zadržkov in da se ob njegovi navzočnosti ne bomo osramočeni umikali od njega.</TD>
-</TR>
-<TR>
-<TD >Če veste,  da je pravičen,  potem tudi veste,  da je iz njega rojen vsak,  ki ravna pravično.</TD>
-</TR>
-<TR>
-<TD >1. Janezovo 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Poglejte,  kakšno ljubezen nam je izkazal Oče – imenujemo se lahko Božji otroci! In to tudi smo. Toda svet nas ne pozna,  ker ni spoznal njega.</TD>
-</TR>
-<TR>
-<TD >Ljubljeni bratje,  čeprav smo zdaj Božji otroci,  se še ni razodelo,  kaj bomo v prihodnosti. Vemo pa,  da bomo,  ko se bo on razodel,  podobni njemu,  ker ga bomo videli prav takšnega,  kakršen je.</TD>
-</TR>
-<TR>
-<TD >Vsak,  ki ima to upanje in ga opira nanj,  se očiščuje,  saj je on čist.</TD>
-</TR>
-<TR>
-<TD >Vsak,  ki se vdaja grehu,  krši zakon; greh je kršenje zakona.</TD>
-</TR>
-<TR>
-<TD >Prav tako veste,  da je bil on razodet zato,  da bi nam odvzel grehe,  in v njem ni greha.</TD>
-</TR>
-<TR>
-<TD >Kdor ostaja z njim povezan,  se ne vdaja grehu. Nihče,  ki se vdaja grehu,  ga ni ne videl ne spoznal.</TD>
-</TR>
-<TR>
-<TD >Dragi otroci,  naj vas nihče ne zavede. Kdor ravna pravično,  je pravičen,  tako kot je pravičen on.</TD>
-</TR>
-<TR>
-<TD >Kdor se vdaja grehu,  izvira od Hudiča,  ker Hudič greši že od začetka. Božji Sin pa je bil razodet prav zato,  da bi razdrl Hudičeva dela.</TD>
-</TR>
-<TR>
-<TD >Nihče,  ki je rojen iz Boga,  se ne vdaja grehu,  ker v takšnem ostaja Božje seme. Ne more se vdajati grehu,  ker je rojen iz Boga.</TD>
-</TR>
-<TR>
-<TD >Božje otroke in Hudičeve otroke se prepozna po tem: tisti,  ki ne ravna pravično,  ne izvira od Boga pa tudi tisti ne,  ki nima rad svojega brata.</TD>
-</TR>
-<TR>
-<TD >Že na začetku ste namreč slišali,  da moramo imeti radi drug drugega.</TD>
-</TR>
-<TR>
-<TD >Ne bodimo kakor Kajn,  ki je izviral od Hudobnega in je svojega brata ubil. In zakaj ga je ubil? Ker so bila njegova dela hudobna,  bratova pa pravična.</TD>
-</TR>
-<TR>
-<TD >Bratje,  naj vas ne preseneča,  da vas svet sovraži.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da smo bili mrtvi,  ampak zdaj smo oživeli,  ker imamo radi svoje brate. Kdor nima ljubezni,  je tako,  kot da je mrtev.</TD>
-</TR>
-<TR>
-<TD >Vsak,  ki svojega brata sovraži,  je ubijalec. Vi pa veste,  da noben ubijalec ne bo dobil večnega življenja.</TD>
-</TR>
-<TR>
-<TD >To,  kaj je ljubezen,  razumemo zato,  ker je Jezus Kristus dal svoje življenje za nas. Tudi mi smo dolžni dati življenje za svoje brate.</TD>
-</TR>
-<TR>
-<TD >Če ima človek materialna sredstva za preživljanje,  ampak noče izkazati sočutja bratu,  čeprav vidi,  da je v pomanjkanju,  kako lahko reče,  da ljubi Boga?</TD>
-</TR>
-<TR>
-<TD >Dragi otroci,  naj nam ljubezen ne bo samo na jeziku in je ne kažimo samo z besedami,  ampak naj bo iskrena in jo kažimo z dejanji.</TD>
-</TR>
-<TR>
-<TD >Tako bomo vedeli,  da izviramo od resnice,  in bomo prepričali svoje srce,  da nas Bog ljubi, </TD>
-</TR>
-<TR>
-<TD >če bi nas srce morda zaradi česar koli obsojalo. Bog je namreč večji od našega srca in ve vse.</TD>
-</TR>
-<TR>
-<TD >Ljubljeni bratje,  če nas srce ne obsoja,  lahko z Bogom govorimo brez zadržkov.</TD>
-</TR>
-<TR>
-<TD >In ker izpolnjujemo njegove zapovedi in delamo,  kar mu je všeč,  dobimo od njega vse,  kar ga prosimo.</TD>
-</TR>
-<TR>
-<TD >Njegova zapoved pa je,  da naj verujemo v njegovega Sina,  Jezusa Kristusa,  in imamo radi drug drugega,  tako kot nam je to zapovedal.</TD>
-</TR>
-<TR>
-<TD >Človek,  ki izpolnjuje Božje zapovedi,  je povezan z Bogom in Bog je povezan z njim. In to,  da je povezan z nami,  vemo zato,  ker imamo duha,  ki nam ga je dal.</TD>
-</TR>
-<TR>
-<TD >1. Janezovo 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >Ljubljeni bratje,  ne verjemite vsaki navdihnjeni izjavi,  ampak navdihnjene izjave preverjajte,  da boste ugotovili,  ali izvirajo od Boga. Na svetu se je namreč pojavilo že veliko lažnih prerokov.</TD>
-</TR>
-<TR>
-<TD >To,  katera navdihnjena izjava je od Boga,  boste ugotovili takole: Vsaka navdihnjena izjava,  ki priznava,  da je Jezus Kristus prišel kot človek,  izvira od Boga.</TD>
-</TR>
-<TR>
-<TD >Toda nobena navdihnjena izjava,  ki Jezusa ne priznava,  ne izvira od Boga,  ampak izvira od antikrista. Slišali ste,  da bo do takšnih izjav prišlo in zdaj so se že razširile po svetu.</TD>
-</TR>
-<TR>
-<TD >Dragi otroci,  vi izvirate od Boga in ste lažne preroke premagali,  ker je ta,  ki je povezan z vami,  večji od tistega,  ki je povezan s svetom.</TD>
-</TR>
-<TR>
-<TD >Ti lažni preroki izvirajo od sveta,  zato govorijo to,  kar govori svet,  in svet jih posluša.</TD>
-</TR>
-<TR>
-<TD >Mi izviramo od Boga. Kdor spozna Boga,  nas posluša,  kdor pa ne izvira od Boga,  nas ne posluša. Po tem razločimo,  katera navdihnjena izjava je pravilna in katera je napačna.</TD>
-</TR>
-<TR>
-<TD >Ljubljeni bratje,  imejmo radi drug drugega! Ljubezen je namreč od Boga in vsak,  ki ljubi,  je rojen iz Boga in je Boga spoznal.</TD>
-</TR>
-<TR>
-<TD >Kdor ne ljubi,  Boga ni spoznal,  ker Bog je ljubezen.</TD>
-</TR>
-<TR>
-<TD >Bog nam je ljubezen izkazal s tem,  da je na svet poslal svojega edinorojenega Sina,  da bi po njem lahko dobili večno življenje.</TD>
-</TR>
-<TR>
-<TD >Vendar ne gre za to,  da smo mi ljubili Boga,  ampak za to,  da je on ljubil nas in je poslal svojega Sina kot spravno žrtev za naše grehe.</TD>
-</TR>
-<TR>
-<TD >Ljubljeni bratje,  če nas je Bog tako ljubil,  smo tudi mi dolžni imeti radi drug drugega.</TD>
-</TR>
-<TR>
-<TD >Boga ni nikoli nihče videl. Če imamo radi drug drugega,  ostaja Bog z nami in je njegova ljubezen med nami popolna.</TD>
-</TR>
-<TR>
-<TD >To,  da smo povezani z njim in on z nami,  vemo zato,  ker nam je dal svojega duha.</TD>
-</TR>
-<TR>
-<TD >Poleg tega smo sami videli in pričamo,  da je Oče poslal svojega Sina za rešitelja sveta.</TD>
-</TR>
-<TR>
-<TD >Človek,  ki priznava,  da je Jezus Božji Sin,  ostaja povezan z Bogom in Bog z njim.</TD>
-</TR>
-<TR>
-<TD >Spoznali smo,  da nas Bog ljubi,  in smo o tem prepričani.<br>Bog je ljubezen in kdor ostaja v ljubezni,  ostaja povezan z Bogom in Bog ostaja povezan z njim.</TD>
-</TR>
-<TR>
-<TD >Tako je ljubezen med nami popolna,  da bomo na dan sodbe lahko govorili brez zadržkov,  ker prav takšni,  kakršen je Jezus Kristus,  smo tudi mi v tem svetu.</TD>
-</TR>
-<TR>
-<TD >V ljubezni ni strahu,  ampak popolna ljubezen strah odganja,  saj nas strah ovira. Kdor se boji,  nima popolne ljubezni.</TD>
-</TR>
-<TR>
-<TD >Mi ljubimo,  ker nas je prvi ljubil Bog.</TD>
-</TR>
-<TR>
-<TD >Če kdo reče,  da ljubi Boga,  ampak sovraži svojega brata,  je lažnivec. Kdor namreč nima rad svojega brata,  katerega vidi,  ne more ljubiti Boga,  katerega ne vidi.</TD>
-</TR>
-<TR>
-<TD >In on nam je zapovedal,  da mora tisti,  ki ljubi Boga,  imeti rad tudi svojega brata.</TD>
-</TR>
-<TR>
-<TD >1. Janezovo 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >Vsak,  ki veruje,  da je Jezus res Kristus,  je Božji otrok in vsak,  ki ljubi Boga,  ima rad tudi njegove otroke.</TD>
-</TR>
-<TR>
-<TD >Božje otroke imamo radi,  če ljubimo Boga in izpolnjujemo njegove zapovedi.</TD>
-</TR>
-<TR>
-<TD >Ljubiti Boga namreč pomeni izpolnjevati njegove zapovedi. Njegove zapovedi pa niso v breme, </TD>
-</TR>
-<TR>
-<TD >saj vsak,  ki je Božji otrok,  premaga svet. In to,  kar nam pomaga premagati svet,  je naša vera.</TD>
-</TR>
-<TR>
-<TD >Kdo lahko premaga svet? Ali ne tisti,  ki veruje,  da je Jezus Božji Sin?</TD>
-</TR>
-<TR>
-<TD >Jezus Kristus je ta,  ki je prišel z vodo in krvjo – ne samo z vodo,  ampak z vodo in krvjo. Duh pa za to pričuje,  ker duh odkriva resnico.</TD>
-</TR>
-<TR>
-<TD >So namreč tri priče:</TD>
-</TR>
-<TR>
-<TD >duh,  voda in kri. In te tri priče so med seboj v soglasju.</TD>
-</TR>
-<TR>
-<TD >Če sprejemamo to,  kar pričujejo ljudje,  koliko bolj bi morali sprejemati to,  kar pričuje Bog,  saj je to še toliko bolj vzvišeno. Bog namreč oznanja,  kdo je njegov Sin.</TD>
-</TR>
-<TR>
-<TD >Kdor veruje v Božjega Sina,  v svojem srcu sprejema Božje pričevanje. Kdor pa ne veruje Bogu,  je tako,  kot bi rekel,  da je Bog lažnivec,  ker ne veruje temu,  kar je Bog povedal o svojem Sinu.</TD>
-</TR>
-<TR>
-<TD >Bog pričuje takole: dal nam je večno življenje in to življenje dobimo po njegovem Sinu.</TD>
-</TR>
-<TR>
-<TD >Kdor sprejema Sina,  ima upanje na večno življenje,  kdor pa ne sprejema Božjega Sina,  tudi upanja na večno življenje nima.</TD>
-</TR>
-<TR>
-<TD >To pišem vam,  ki verujete v Božjega Sina. Pišem vam zato,  da bi vedeli,  da imate upanje na večno življenje.</TD>
-</TR>
-<TR>
-<TD >Prepričani smo,  da Bog sliši vse,  kar koli ga prosimo,  če je to v skladu z njegovo voljo.</TD>
-</TR>
-<TR>
-<TD >In ker vemo,  da sliši vse,  kar koli ga prosimo,  vemo,  da bomo tudi dobili to,  kar smo ga prosili.</TD>
-</TR>
-<TR>
-<TD >Če kdo vidi svojega brata,  da greši,  vendar ne gre za greh,  ki vodi v smrt,  potem naj moli zanj in Bog bo temu bratu dal življenje. To velja za tiste,  ki ne grešijo tako,  da bi si s tem zaslužili smrt. Toda obstaja greh,  ki vodi v smrt. Glede takšnega greha nikomur ne pravim,  naj moli.</TD>
-</TR>
-<TR>
-<TD >Vsako nepravično dejanje je greh,  pa vendar obstaja greh,  ki ne vodi v smrt.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da se nihče,  ki je Božji otrok,  ne vdaja grehu. Nanj pazi ta,  ki je rojen iz Boga,  zato ga Hudobni ne more dobiti v svoj prijem.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da mi izviramo od Boga,  ves svet pa je pod oblastjo Hudobnega.</TD>
-</TR>
-<TR>
-<TD >Vemo pa,  da je Božji Sin prišel in nam dal sposobnost razumevanja,  da bi lahko spoznali tistega,  ki je resničen. In mi smo po njegovem Sinu,  Jezusu Kristusu,  povezani z njim. On je resnični Bog in vir večnega življenja.</TD>
-</TR>
-<TR>
-<TD >Dragi otroci,  varujte se malikov!</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','1._Janezovo','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,1._Janezovo:"1. Janezovo 1. poglavje",K:"",NZ:""},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:1,1._Janezovo:"Pišemo vam o njem. ki je bil od začetka. ki smo ga slišali. ga na lastne oči videli. ga opazovali in ga z rokami otipali – pišemo vam o njem. ki prinaša besedo. ki daje življenje.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:2,1._Janezovo:"(Da. večno življenje nam je bilo razodeto in mi smo ga videli ter vam o njem pričujemo in ga oznanjamo. To večno življenje izvira od Očeta in nam je bilo razodeto.)",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:3,1._Janezovo:"Govorimo vam o njem. ki smo ga videli in slišali. To delamo zato. da bi bili tudi vi eno z nami. tako kot smo mi eno z Očetom in njegovim Sinom. Jezusom Kristusom.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:4,1._Janezovo:"Vse to pišemo zato. da bi bilo naše veselje popolno.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:5,1._Janezovo:"Oznanjamo vam sporočilo. ki smo ga slišali od njega. Glasi se takole: Bog je luč in z njim ni povezana nikakršna tema.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:6,1._Janezovo:"Če rečemo. da smo eno z njim. vendar še naprej živimo v temi. lažemo in ne živimo v skladu z resnico.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:7,1._Janezovo:"Če pa živimo v luči. kakor je v luči on sam. smo res eno drug z drugim in nas kri njegovega Sina. Jezusa. očiščuje vsega greha.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:8,1._Janezovo:"Če rečemo. da smo brez greha. zavajamo sami sebe in resnice ni v našem srcu.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:9,1._Janezovo:"Če pa svoje grehe priznamo. nam jih bo Bog. ker je zvest in pravičen. odpustil in nas očistil vse nepravičnosti.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:1,V:10,1._Janezovo:"Če rečemo. da ne grešimo. je tako. kot bi rekli. da je Bog lažnivec. in njegove besede ni v našem srcu.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:2,V:0,1._Janezovo:"1. Janezovo 2. poglavje",K:"",NZ:""},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:1,1._Janezovo:"Dragi moji otroci. to vam pišem. da se ne bi pregrešili. Če se kdo vendarle pregreši. imamo pri Očetu pomočnika. Jezusa Kristusa. tistega. ki dela. kar je prav v Božjih očeh.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:2,1._Janezovo:"On je spravna žrtev za naše grehe. pa ne samo za naše. ampak tudi za grehe vsega sveta.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:3,1._Janezovo:"Če izpolnjujemo njegove zapovedi. vemo. da smo ga spoznali.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:4,1._Janezovo:"Kdor pravi. da ga je spoznal. vendar njegovih zapovedi ne izpolnjuje. je lažnivec in resnice ni v njegovem srcu.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:5,1._Janezovo:"Kdor koli pa njegovo besedo izpolnjuje. ima res popolno ljubezen do Boga. Po tem vemo. da smo z njim povezani.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:6,1._Janezovo:"Kdor pravi. da ostaja z njim povezan. je dolžan živeti tako. kot je živel on.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:7,1._Janezovo:"Ljubljeni bratje. ne pišem vam nove zapovedi. ampak staro zapoved. ki jo imate že od začetka. Ta stara zapoved je beseda. ki ste jo slišali.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:8,1._Janezovo:"Pa vendar vam pišem novo zapoved. ki jo je izpolnjeval on in jo izpolnjujete tudi vi. saj tema mineva in prava luč že sveti.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:9,1._Janezovo:"Kdor pravi. da je v svetlobi. vendar sovraži svojega brata. je še vedno v temi.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:10,1._Janezovo:"Kdor ima svojega brata rad. ostaja v svetlobi in nič ga ne navaja na greh.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:11,1._Janezovo:"Kdor pa svojega brata sovraži. je v temi in hodi v temi in ne ve. kam gre. ker mu je tema zaslepila oči.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:12,1._Janezovo:"Dragi otroci. pišem vam. ker so vam zaradi njegovega imena odpuščeni grehi.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:13,1._Janezovo:"Očetje. pišem vam. ker ste spoznali njega. ki obstaja od začetka. Mladeniči. pišem vam. ker ste premagali Hudobnega. Otroci. pišem vam. ker ste spoznali Očeta.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:14,1._Janezovo:"Očetje. pišem vam. ker ste spoznali njega. ki obstaja od začetka. Mladeniči. pišem vam. ker ste močni. ker Božja beseda ostaja v vašem srcu in ste premagali Hudobnega.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:15,1._Janezovo:"Ne ljubite ne sveta ne tega. kar je v svetu. Če kdo ljubi svet. v sebi nima ljubezni do Očeta.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:16,1._Janezovo:"ker nič od tega. kar je v svetu – želje grešnega telesa. želje oči in bahavo razkazovanje življenjskih sredstev – ne izvira od Očeta. ampak od sveta.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:17,1._Janezovo:"Poleg tega svet mineva in njegove želje prav tako. kdor pa izpolnjuje Božjo voljo. ostane za večno.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:18,1._Janezovo:"Dragi otroci. živimo v zadnji uri. Slišali ste. da bo prišel antikrist. in zdaj so se že pojavili mnogi antikristi. zato vemo. da je to zadnja ura.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:19,1._Janezovo:"Bili so med nami. ampak so nas zapustili. ker niso bili takšni kot mi  če bi namreč bili takšni. bi ostali z nami. Toda odšli so. da bi se pokazalo. da niso vsi takšni kot mi.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:20,1._Janezovo:"Vas pa je pomazilil Sveti in vsi imate spoznanje.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:21,1._Janezovo:"Ne pišem vam zato. ker ne bi poznali resnice. ampak zato. ker jo poznate in ker od resnice ne izvira nobena laž.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:22,1._Janezovo:"Kdo je lažnivec. če ne tisti. ki zanika. da je Jezus res Kristus? Ta je antikrist. ta. ki zanika Očeta in Sina.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:23,1._Janezovo:"Kdor zanika Sina. nima Očetovega odobravanja. Kdor pa priznava Sina. ima Očetovo odobravanje.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:24,1._Janezovo:"Kar se pa tiče vas. naj to. kar ste slišali že na začetku. ostane v vašem srcu. Če bo to. kar ste slišali na začetku. ostalo v vašem srcu. boste tudi vi ostali povezani s Sinom in Očetom.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:25,1._Janezovo:"In obljubil nam je večno življenje.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:26,1._Janezovo:"Vse to vam pišem. ker vas skušajo nekateri zavesti.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:27,1._Janezovo:"Toda maziljenje. ki ste ga prejeli od njega. ostaja v vas in ne potrebujete nikogar. da bi vas učil. Z maziljenjem. ki ste ga dobili od njega in ki je resnično in ni laž. ste poučeni o vsem. Ostanite povezani z njim. tako kot ste bili z maziljenjem poučeni.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:28,1._Janezovo:"Zato. dragi otroci. ostanite povezani z njim. da bomo lahko. ko bo on razodet. govorili brez zadržkov in da se ob njegovi navzočnosti ne bomo osramočeni umikali od njega.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:2,V:29,1._Janezovo:"Če veste. da je pravičen. potem tudi veste. da je iz njega rojen vsak. ki ravna pravično.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:3,V:0,1._Janezovo:"1. Janezovo 3. poglavje",K:"",NZ:""},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:1,1._Janezovo:"Poglejte. kakšno ljubezen nam je izkazal Oče – imenujemo se lahko Božji otroci! In to tudi smo. Toda svet nas ne pozna. ker ni spoznal njega.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:2,1._Janezovo:"Ljubljeni bratje. čeprav smo zdaj Božji otroci. se še ni razodelo. kaj bomo v prihodnosti. Vemo pa. da bomo. ko se bo on razodel. podobni njemu. ker ga bomo videli prav takšnega. kakršen je.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:3,1._Janezovo:"Vsak. ki ima to upanje in ga opira nanj. se očiščuje. saj je on čist.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:4,1._Janezovo:"Vsak. ki se vdaja grehu. krši zakon  greh je kršenje zakona.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:5,1._Janezovo:"Prav tako veste. da je bil on razodet zato. da bi nam odvzel grehe. in v njem ni greha.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:6,1._Janezovo:"Kdor ostaja z njim povezan. se ne vdaja grehu. Nihče. ki se vdaja grehu. ga ni ne videl ne spoznal.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:7,1._Janezovo:"Dragi otroci. naj vas nihče ne zavede. Kdor ravna pravično. je pravičen. tako kot je pravičen on.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:8,1._Janezovo:"Kdor se vdaja grehu. izvira od Hudiča. ker Hudič greši že od začetka. Božji Sin pa je bil razodet prav zato. da bi razdrl Hudičeva dela.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:9,1._Janezovo:"Nihče. ki je rojen iz Boga. se ne vdaja grehu. ker v takšnem ostaja Božje seme. Ne more se vdajati grehu. ker je rojen iz Boga.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:10,1._Janezovo:"Božje otroke in Hudičeve otroke se prepozna po tem: tisti. ki ne ravna pravično. ne izvira od Boga pa tudi tisti ne. ki nima rad svojega brata.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:11,1._Janezovo:"Že na začetku ste namreč slišali. da moramo imeti radi drug drugega.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:12,1._Janezovo:"Ne bodimo kakor Kajn. ki je izviral od Hudobnega in je svojega brata ubil. In zakaj ga je ubil? Ker so bila njegova dela hudobna. bratova pa pravična.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:13,1._Janezovo:"Bratje. naj vas ne preseneča. da vas svet sovraži.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:14,1._Janezovo:"Vemo. da smo bili mrtvi. ampak zdaj smo oživeli. ker imamo radi svoje brate. Kdor nima ljubezni. je tako. kot da je mrtev.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:15,1._Janezovo:"Vsak. ki svojega brata sovraži. je ubijalec. Vi pa veste. da noben ubijalec ne bo dobil večnega življenja.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:16,1._Janezovo:"To. kaj je ljubezen. razumemo zato. ker je Jezus Kristus dal svoje življenje za nas. Tudi mi smo dolžni dati življenje za svoje brate.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:17,1._Janezovo:"Če ima človek materialna sredstva za preživljanje. ampak noče izkazati sočutja bratu. čeprav vidi. da je v pomanjkanju. kako lahko reče. da ljubi Boga?",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:18,1._Janezovo:"Dragi otroci. naj nam ljubezen ne bo samo na jeziku in je ne kažimo samo z besedami. ampak naj bo iskrena in jo kažimo z dejanji.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:19,1._Janezovo:"Tako bomo vedeli. da izviramo od resnice. in bomo prepričali svoje srce. da nas Bog ljubi.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:20,1._Janezovo:"če bi nas srce morda zaradi česar koli obsojalo. Bog je namreč večji od našega srca in ve vse.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:21,1._Janezovo:"Ljubljeni bratje. če nas srce ne obsoja. lahko z Bogom govorimo brez zadržkov.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:22,1._Janezovo:"In ker izpolnjujemo njegove zapovedi in delamo. kar mu je všeč. dobimo od njega vse. kar ga prosimo.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:23,1._Janezovo:"Njegova zapoved pa je. da naj verujemo v njegovega Sina. Jezusa Kristusa. in imamo radi drug drugega. tako kot nam je to zapovedal.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:3,V:24,1._Janezovo:"Človek. ki izpolnjuje Božje zapovedi. je povezan z Bogom in Bog je povezan z njim. In to. da je povezan z nami. vemo zato. ker imamo duha. ki nam ga je dal.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:4,V:0,1._Janezovo:"1. Janezovo 4. poglavje",K:"",NZ:""},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:1,1._Janezovo:"Ljubljeni bratje. ne verjemite vsaki navdihnjeni izjavi. ampak navdihnjene izjave preverjajte. da boste ugotovili. ali izvirajo od Boga. Na svetu se je namreč pojavilo že veliko lažnih prerokov.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:2,1._Janezovo:"To. katera navdihnjena izjava je od Boga. boste ugotovili takole: Vsaka navdihnjena izjava. ki priznava. da je Jezus Kristus prišel kot človek. izvira od Boga.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:3,1._Janezovo:"Toda nobena navdihnjena izjava. ki Jezusa ne priznava. ne izvira od Boga. ampak izvira od antikrista. Slišali ste. da bo do takšnih izjav prišlo in zdaj so se že razširile po svetu.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:4,1._Janezovo:"Dragi otroci. vi izvirate od Boga in ste lažne preroke premagali. ker je ta. ki je povezan z vami. večji od tistega. ki je povezan s svetom.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:5,1._Janezovo:"Ti lažni preroki izvirajo od sveta. zato govorijo to. kar govori svet. in svet jih posluša.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:6,1._Janezovo:"Mi izviramo od Boga. Kdor spozna Boga. nas posluša. kdor pa ne izvira od Boga. nas ne posluša. Po tem razločimo. katera navdihnjena izjava je pravilna in katera je napačna.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:7,1._Janezovo:"Ljubljeni bratje. imejmo radi drug drugega! Ljubezen je namreč od Boga in vsak. ki ljubi. je rojen iz Boga in je Boga spoznal.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:8,1._Janezovo:"Kdor ne ljubi. Boga ni spoznal. ker Bog je ljubezen.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:9,1._Janezovo:"Bog nam je ljubezen izkazal s tem. da je na svet poslal svojega edinorojenega Sina. da bi po njem lahko dobili večno življenje.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:10,1._Janezovo:"Vendar ne gre za to. da smo mi ljubili Boga. ampak za to. da je on ljubil nas in je poslal svojega Sina kot spravno žrtev za naše grehe.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:11,1._Janezovo:"Ljubljeni bratje. če nas je Bog tako ljubil. smo tudi mi dolžni imeti radi drug drugega.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:12,1._Janezovo:"Boga ni nikoli nihče videl. Če imamo radi drug drugega. ostaja Bog z nami in je njegova ljubezen med nami popolna.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:13,1._Janezovo:"To. da smo povezani z njim in on z nami. vemo zato. ker nam je dal svojega duha.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:14,1._Janezovo:"Poleg tega smo sami videli in pričamo. da je Oče poslal svojega Sina za rešitelja sveta.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:15,1._Janezovo:"Človek. ki priznava. da je Jezus Božji Sin. ostaja povezan z Bogom in Bog z njim.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:16,1._Janezovo:"Spoznali smo. da nas Bog ljubi. in smo o tem prepričani.<br>Bog je ljubezen in kdor ostaja v ljubezni. ostaja povezan z Bogom in Bog ostaja povezan z njim.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:17,1._Janezovo:"Tako je ljubezen med nami popolna. da bomo na dan sodbe lahko govorili brez zadržkov. ker prav takšni. kakršen je Jezus Kristus. smo tudi mi v tem svetu.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:18,1._Janezovo:"V ljubezni ni strahu. ampak popolna ljubezen strah odganja. saj nas strah ovira. Kdor se boji. nima popolne ljubezni.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:19,1._Janezovo:"Mi ljubimo. ker nas je prvi ljubil Bog.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:20,1._Janezovo:"Če kdo reče. da ljubi Boga. ampak sovraži svojega brata. je lažnivec. Kdor namreč nima rad svojega brata. katerega vidi. ne more ljubiti Boga. katerega ne vidi.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:4,V:21,1._Janezovo:"In on nam je zapovedal. da mora tisti. ki ljubi Boga. imeti rad tudi svojega brata.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:5,V:0,1._Janezovo:"1. Janezovo 5. poglavje",K:"",NZ:""},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:1,1._Janezovo:"Vsak. ki veruje. da je Jezus res Kristus. je Božji otrok in vsak. ki ljubi Boga. ima rad tudi njegove otroke.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:2,1._Janezovo:"Božje otroke imamo radi. če ljubimo Boga in izpolnjujemo njegove zapovedi.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:3,1._Janezovo:"Ljubiti Boga namreč pomeni izpolnjevati njegove zapovedi. Njegove zapovedi pa niso v breme.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:4,1._Janezovo:"saj vsak. ki je Božji otrok. premaga svet. In to. kar nam pomaga premagati svet. je naša vera.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:5,1._Janezovo:"Kdo lahko premaga svet? Ali ne tisti. ki veruje. da je Jezus Božji Sin?",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:6,1._Janezovo:"Jezus Kristus je ta. ki je prišel z vodo in krvjo – ne samo z vodo. ampak z vodo in krvjo. Duh pa za to pričuje. ker duh odkriva resnico.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:7,1._Janezovo:"So namreč tri priče:",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:8,1._Janezovo:"duh. voda in kri. In te tri priče so med seboj v soglasju.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:9,1._Janezovo:"Če sprejemamo to. kar pričujejo ljudje. koliko bolj bi morali sprejemati to. kar pričuje Bog. saj je to še toliko bolj vzvišeno. Bog namreč oznanja. kdo je njegov Sin.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:10,1._Janezovo:"Kdor veruje v Božjega Sina. v svojem srcu sprejema Božje pričevanje. Kdor pa ne veruje Bogu. je tako. kot bi rekel. da je Bog lažnivec. ker ne veruje temu. kar je Bog povedal o svojem Sinu.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:11,1._Janezovo:"Bog pričuje takole: dal nam je večno življenje in to življenje dobimo po njegovem Sinu.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:12,1._Janezovo:"Kdor sprejema Sina. ima upanje na večno življenje. kdor pa ne sprejema Božjega Sina. tudi upanja na večno življenje nima.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:13,1._Janezovo:"To pišem vam. ki verujete v Božjega Sina. Pišem vam zato. da bi vedeli. da imate upanje na večno življenje.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:14,1._Janezovo:"Prepričani smo. da Bog sliši vse. kar koli ga prosimo. če je to v skladu z njegovo voljo.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:15,1._Janezovo:"In ker vemo. da sliši vse. kar koli ga prosimo. vemo. da bomo tudi dobili to. kar smo ga prosili.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:16,1._Janezovo:"Če kdo vidi svojega brata. da greši. vendar ne gre za greh. ki vodi v smrt. potem naj moli zanj in Bog bo temu bratu dal življenje. To velja za tiste. ki ne grešijo tako. da bi si s tem zaslužili smrt. Toda obstaja greh. ki vodi v smrt. Glede takšnega greha nikomur ne pravim. naj moli.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:17,1._Janezovo:"Vsako nepravično dejanje je greh. pa vendar obstaja greh. ki ne vodi v smrt.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:18,1._Janezovo:"Vemo. da se nihče. ki je Božji otrok. ne vdaja grehu. Nanj pazi ta. ki je rojen iz Boga. zato ga Hudobni ne more dobiti v svoj prijem.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:19,1._Janezovo:"Vemo. da mi izviramo od Boga. ves svet pa je pod oblastjo Hudobnega.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:20,1._Janezovo:"Vemo pa. da je Božji Sin prišel in nam dal sposobnost razumevanja. da bi lahko spoznali tistega. ki je resničen. In mi smo po njegovem Sinu. Jezusu Kristusu. povezani z njim. On je resnični Bog in vir večnega življenja.",K:"",NZ:"YQ"},
+{Knjiga:"1Janezovo",Kr:"1Jn",P:5,V:21,1._Janezovo:"Dragi otroci. varujte se malikov!",K:"",NZ:"YQ"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

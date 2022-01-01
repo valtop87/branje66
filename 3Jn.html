@@ -1,77 +1,139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>3. Janezovo</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Jaz,  starec,  pišem to pismo tebi,  dragi Gaj,  ki te imam resnično rad.</TD>
-</TR>
-<TR>
-<TD >Dragi prijatelj,  molim zate,  da bi ostal zdrav in da bi ti v vsem šlo še naprej dobro,  tako kot ti gre dobro zdaj.</TD>
-</TR>
-<TR>
-<TD >Zelo sem se razveselil,  ko so prišli bratje in povedali,  da se zvesto držiš resnice in živiš po njej.</TD>
-</TR>
-<TR>
-<TD >Nič drugega me ne navdaja z večjim veseljem kakor to,  da slišim,  da moji otroci živijo po resnici.</TD>
-</TR>
-<TR>
-<TD >Dragi prijatelj,  tvoja zvestoba se vidi v vsem,  kar delaš za brate,  čeprav jih ne poznaš.</TD>
-</TR>
-<TR>
-<TD >Ti bratje o tvoji ljubezni govorijo občini. Ko bodo šli na pot,  te prosim,  da poskrbiš zanje,  tako kot je to všeč Bogu.</TD>
-</TR>
-<TR>
-<TD >Na pot so namreč odšli zaradi njegovega imena,  ne da bi kaj pričakovali od ljudi iz sveta.</TD>
-</TR>
-<TR>
-<TD >Zato smo takim dolžni izkazovati gostoljubnost,  da bomo lahko postali sodelavci pri širjenju resnice.</TD>
-</TR>
-<TR>
-<TD >Občini sem napisal pismo,  toda Diotref,  ki med vami vedno hoče biti glavni,  ne spoštuje ničesar,  kar rečemo.</TD>
-</TR>
-<TR>
-<TD >Zato bom,  če pridem,  opozoril na to,  kar počne,  ko o nas širi zlobne govorice. Ampak to mu še ni dovolj. Bratov,  ki pridejo,  sam ne spoštuje in ne sprejema,  tistim,  ki jih hočejo sprejeti,  pa skuša to preprečiti in jih vreči iz občine.</TD>
-</TR>
-<TR>
-<TD >Dragi prijatelj,  ne posnemaj slabega,  ampak to,  kar je dobro. Kdor dela dobro,  izvira od Boga. Kdor pa dela slabo,  Boga ni spoznal.</TD>
-</TR>
-<TR>
-<TD >O Demetriju vsi dobro govorijo in njihove besede potrjuje dejstvo,  da živi skladno z resnico. Tudi mi o njem lepo govorimo in ti veš,  da je to,  kar govorimo,  resnično.</TD>
-</TR>
-<TR>
-<TD >Še marsikaj bi ti moral povedati,  ampak ne želim o tem pisati s peresom in črnilom.</TD>
-</TR>
-<TR>
-<TD >Upam,  da te bom kmalu videl in govoril s teboj iz oči v oči.<br>Mir s teboj.<br>Pozdravljajo te prijatelji. Pozdravi prijatelje,  vsakega posebej!</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','3._Janezovo','K','NZ'];
+var Lokacije = [
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:1,3._Janezovo:"Jaz. starec. pišem to pismo tebi. dragi Gaj. ki te imam resnično rad.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:2,3._Janezovo:"Dragi prijatelj. molim zate. da bi ostal zdrav in da bi ti v vsem šlo še naprej dobro. tako kot ti gre dobro zdaj.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:3,3._Janezovo:"Zelo sem se razveselil. ko so prišli bratje in povedali. da se zvesto držiš resnice in živiš po njej.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:4,3._Janezovo:"Nič drugega me ne navdaja z večjim veseljem kakor to. da slišim. da moji otroci živijo po resnici.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:5,3._Janezovo:"Dragi prijatelj. tvoja zvestoba se vidi v vsem. kar delaš za brate. čeprav jih ne poznaš.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:6,3._Janezovo:"Ti bratje o tvoji ljubezni govorijo občini. Ko bodo šli na pot. te prosim. da poskrbiš zanje. tako kot je to všeč Bogu.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:7,3._Janezovo:"Na pot so namreč odšli zaradi njegovega imena. ne da bi kaj pričakovali od ljudi iz sveta.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:8,3._Janezovo:"Zato smo takim dolžni izkazovati gostoljubnost. da bomo lahko postali sodelavci pri širjenju resnice.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:9,3._Janezovo:"Občini sem napisal pismo. toda Diotref. ki med vami vedno hoče biti glavni. ne spoštuje ničesar. kar rečemo.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:10,3._Janezovo:"Zato bom. če pridem. opozoril na to. kar počne. ko o nas širi zlobne govorice. Ampak to mu še ni dovolj. Bratov. ki pridejo. sam ne spoštuje in ne sprejema. tistim. ki jih hočejo sprejeti. pa skuša to preprečiti in jih vreči iz občine.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:11,3._Janezovo:"Dragi prijatelj. ne posnemaj slabega. ampak to. kar je dobro. Kdor dela dobro. izvira od Boga. Kdor pa dela slabo. Boga ni spoznal.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:12,3._Janezovo:"O Demetriju vsi dobro govorijo in njihove besede potrjuje dejstvo. da živi skladno z resnico. Tudi mi o njem lepo govorimo in ti veš. da je to. kar govorimo. resnično.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:13,3._Janezovo:"Še marsikaj bi ti moral povedati. ampak ne želim o tem pisati s peresom in črnilom.",K:"",NZ:"YQ"},
+{Knjiga:"3Janezovo",Kr:"3Jn",P:1,V:14,3._Janezovo:"Upam. da te bom kmalu videl in govoril s teboj iz oči v oči.<br>Mir s teboj.<br>Pozdravljajo te prijatelji. Pozdravi prijatelje. vsakega posebej!",K:"",NZ:"YQ"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

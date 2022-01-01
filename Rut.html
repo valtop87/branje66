@@ -1,302 +1,214 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Ruta</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Ruta 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >V času,  ko so pravico uveljavljali sodniki,  je v deželi zavladala lakota. Neki moški je s svojo ženo in sinovoma odšel iz Betlehema na Judovem,  da bi se naselil v moabski deželi.</TD>
-</TR>
-<TR>
-<TD >Njemu je bilo ime Elimelek,  njegovi ženi Naomi,  sinovoma pa Mahlon in Kiljon. Bili so iz Efrate,  torej iz Betlehema na Judovem. Prišli so v moabsko deželo in se tam naselili.</TD>
-</TR>
-<TR>
-<TD >Čez nekaj časa je Elimelek umrl in njegova žena Naomi je ostala sama s sinovoma.</TD>
-</TR>
-<TR>
-<TD >Ta sta se kasneje poročila z Moabkama. Eni je bilo ime Orfa,  drugi pa Ruta. V moabski deželi so živeli kakih deset let.</TD>
-</TR>
-<TR>
-<TD >Nato sta umrla tudi Mahlon in Kiljon,  tako da je Naomi ostala brez obeh sinov in moža.</TD>
-</TR>
-<TR>
-<TD >S snahama se je odpravila iz moabske dežele,  saj je slišala,  da se je Jehova usmilil svojega ljudstva in mu priskrbel hrano.</TD>
-</TR>
-<TR>
-<TD >Tako je s snahama odšla iz kraja,  kjer so živele. Ko so hodile po poti proti Judovem, </TD>
-</TR>
-<TR>
-<TD >je Naomi snahama rekla: »Pojdita,  vrnita se vsaka na dom svoje mame. Naj bo Jehova dober do vaju,  kot sta bili tudi vidve do svojih,  zdaj že pokojnih mož in do mene.</TD>
-</TR>
-<TR>
-<TD >Naj Jehova poskrbi,  da se bosta poročili in bosta mirno živeli.« Nato ju je poljubila,  onidve pa sta glasno zajokali</TD>
-</TR>
-<TR>
-<TD >in ji govorili: »Ne,  s teboj bova šli k tvojemu ljudstvu.«</TD>
-</TR>
-<TR>
-<TD >Toda Naomi jima je rekla: »Vrnita se,  moji hčeri. Zakaj bi šli z menoj? Ne morem več roditi sinov,  s katerima bi se lahko poročili.</TD>
-</TR>
-<TR>
-<TD >Vrnita se,  moji hčeri. Pojdita,  saj sem že prestara,  da bi se poročila. Pa tudi če bi bilo kaj upanja,  da še danes najdem moža in rodim sinova, </TD>
-</TR>
-<TR>
-<TD >ali bosta čakali nanju,  da odrasteta? Ali bosta zaradi njiju ostali neporočeni? Ne,  moji hčeri. Jehova se je obrnil proti meni in me kaznoval. Ko pomislim,  kaj vse sta zaradi tega doživeli,  mi je zelo hudo.«</TD>
-</TR>
-<TR>
-<TD >Znova sta glasno zajokali. Nato je Orfa poljubila svojo taščo in odšla,  Ruta pa je ostala z Naomi.</TD>
-</TR>
-<TR>
-<TD >Zato ji je Naomi rekla: »Glej,  tvoja ovdovela svakinja se je vrnila k svojemu ljudstvu in svojim bogovom. Vrni se tudi ti z njo.«</TD>
-</TR>
-<TR>
-<TD >Ruta pa je odgovorila: »Nikar me ne prosi,  naj te zapustim in odidem od tebe. Kamor boš šla ti,  bom šla tudi jaz,  in kjer boš prenočila ti,  bom prenočila tudi jaz. Tvoje ljudstvo bo moje ljudstvo in tvoj Bog bo moj Bog.</TD>
-</TR>
-<TR>
-<TD >Kjer boš umrla ti,  bom umrla tudi jaz in bom tam pokopana. Naj me Jehova strogo kaznuje,  če bom dovolila,  da me kaj drugega razen smrti loči od tebe.«</TD>
-</TR>
-<TR>
-<TD >Ko je Naomi videla,  da je Ruta odločena iti z njo,  jo je nehala prepričevati.</TD>
-</TR>
-<TR>
-<TD >Tako sta skupaj nadaljevali pot,  dokler nista prispeli v Betlehem. Takoj ko sta prišli v mesto,  je med ljudmi kar završalo. Ženske so spraševale: »Ali je to Naomi?«</TD>
-</TR>
-<TR>
-<TD >Ona pa jim je govorila: »Ne kličite me Naomi,  ampak Mara,  saj je Vsemogočni dovolil,  da je moje življenje zdaj polno grenkobe.</TD>
-</TR>
-<TR>
-<TD >Ko sem odšla,  sem imela vse,  ampak Jehova me je nazaj pripeljal praznih rok. Zakaj bi me klicali Naomi,  ko pa se je Vsemogočni Bog Jehova obrnil proti meni in me spravil v nesrečo?«</TD>
-</TR>
-<TR>
-<TD >Tako se je Naomi vrnila iz moabske dežele skupaj s svojo snaho Moabko Ruto. V Betlehem sta prišli na začetku ječmenove žetve.</TD>
-</TR>
-<TR>
-<TD >Ruta 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Naomi je po moževi strani imela sorodnika,  ki je bil zelo bogat. Ime mu je bilo Boaz in je bil iz Elimelekove družine.</TD>
-</TR>
-<TR>
-<TD >Moabka Ruta je Naomi rekla: »Prosim,  dovoli mi,  da grem na polja in paberkujem žitno klasje za tistim,  ki bo prijazen do mene.« Naomi ji je odgovorila: »Pojdi,  moja hči.«</TD>
-</TR>
-<TR>
-<TD >Tako je Ruta odšla na polje in začela paberkovati za žanjci. Po naključju je prišla na njivo,  ki je pripadala Elimelekovemu sorodniku Boazu.</TD>
-</TR>
-<TR>
-<TD >Ravno takrat je iz Betlehema prišel Boaz in žanjce pozdravil: »Jehova z vami!« Oni pa so mu odzdravili: »Jehova naj te blagoslovi!«</TD>
-</TR>
-<TR>
-<TD >Boaz je služabnika,  ki je nadzoroval žanjce,  vprašal: »Čigavo je to dekle?«</TD>
-</TR>
-<TR>
-<TD >Služabnik mu je odgovoril: »To je mlada Moabka,  ki je z Naomi prišla iz moabske dežele.</TD>
-</TR>
-<TR>
-<TD >Prosila me je,  ali lahko pobira požete klase,  ki bodo ostali za žanjci. Na nogah je bila vse od zjutraj,  ko je prišla,  pa do zdaj,  ko se je usedla v senco,  da se malo odpočije.«</TD>
-</TR>
-<TR>
-<TD >Potem je Boaz rekel Ruti: »Poslušaj,  moja hči. Ne hodi paberkovat na drugo njivo. Ne odhajaj drugam,  ampak ostani pri mojih delavkah.</TD>
-</TR>
-<TR>
-<TD >Opazuj,  na kateri njivi bodo žele,  in se jih drži. Služabnikom sem ukazal,  naj te ne nadlegujejo. Ko boš žejna,  lahko greš pit vodo,  ki jo bodo zajeli moji služabniki.«</TD>
-</TR>
-<TR>
-<TD >Ruta je padla na kolena,  se priklonila do tal in ga vprašala: »Zakaj si tako prijazen z menoj in zakaj skrbiš zame,  ko pa sem tujka?«</TD>
-</TR>
-<TR>
-<TD >Boaz ji je odgovoril: »Povedali so mi čisto vse,  kar si po smrti moža naredila za svojo taščo,  in kako si zapustila očeta,  mamo in deželo svojih sorodnikov ter odšla k ljudstvu,  ki ga prej nisi poznala.</TD>
-</TR>
-<TR>
-<TD >Naj te Jehova nagradi za tvoje ravnanje in naj ti Izraelov Bog Jehova da popolno plačilo,  ker si poiskala zavetje pod njegovimi perutmi.«</TD>
-</TR>
-<TR>
-<TD >Ona pa mu je rekla: »Potolažil si me in me s svojimi besedami pomiril,  čeprav nisem niti tvoja služabnica. Moj gospod,  bodi še naprej prijazen z menoj.«</TD>
-</TR>
-<TR>
-<TD >Ko je bil čas za kosilo,  ji je Boaz rekel: »Pridi sem,  vzemi si kruh in ga pomakaj v kis.« Prisedla je k žanjcem in Boaz ji je ponudil nekaj praženega zrnja. Ruta se je najedla,  pa še nekaj ji je ostalo.</TD>
-</TR>
-<TR>
-<TD >Ko je šla nazaj paberkovat,  je Boaz svojim služabnikom ukazal: »Pustite ji,  da pobira požete klase,  in je ne nadlegujte.</TD>
-</TR>
-<TR>
-<TD >Poleg tega vlecite klase iz šopov žita in jih puščajte za seboj,  da jih bo lahko pobirala,  in ji ne recite nič takega,  zaradi česar bi nehala paberkovati.«</TD>
-</TR>
-<TR>
-<TD >Tako je Ruta na polju paberkovala vse do večera,  potem pa je to,  kar je nabrala,  omlatila. Ječmena je bilo skoraj za eno efo.</TD>
-</TR>
-<TR>
-<TD >Vzela ga je,  odšla v mesto in tašči pokazala to,  kar je nabrala. Dala ji je tudi praženo zrnje,  ki ji je ostalo od kosila.</TD>
-</TR>
-<TR>
-<TD >Tašča jo je vprašala: »Kje si danes paberkovala? Kje si delala? Naj bo blagoslovljen tisti,  ki je bil tako prijazen do tebe.« Ruta ji je povedala,  pri kom je delala. Rekla je: »Delala sem pri moškem,  ki mu je ime Boaz.«</TD>
-</TR>
-<TR>
-<TD >Naomi ji je rekla: »Naj ga blagoslovi Jehova,  ki vdano ljubi tako žive kot mrtve.« Dodala je še: »Ta moški je najin sorodnik. Je eden izmed najinih odkupiteljev.«</TD>
-</TR>
-<TR>
-<TD >Moabka Ruta je nato povedala: »Med drugim mi je rekel: ‚Drži se mojih delavcev,  dokler ne požanjejo vsega mojega žita.«</TD>
-</TR>
-<TR>
-<TD >Naomi je svoji snahi svetovala: »Moja hči,  boljše je,  da si z njegovimi delavkami,  kakor pa da bi te na kaki drugi njivi nadlegovali.«</TD>
-</TR>
-<TR>
-<TD >Tako se je držala Boazovih delavk in paberkovala,  dokler se ni končala žetev ječmena in pšenice. Še naprej je živela pri svoji tašči.</TD>
-</TR>
-<TR>
-<TD >Ruta 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Ruti je njena tašča Naomi rekla: »Moja hči,  ali ne bi bilo prav,  da ti poiščem moža,  pri katerem boš lahko našla varnost in ti bo šlo dobro?</TD>
-</TR>
-<TR>
-<TD >Ali ni Boaz,  ki ti je dovolil,  da si delala z njegovimi delavkami,  najin sorodnik? Danes zvečer veja ječmen na mlatišču.</TD>
-</TR>
-<TR>
-<TD >Zato se umij in se namaži z dišečim oljem. Potem se lepo obleci in pojdi na mlatišče. Ne kaži se mu,  dokler ne bo nehal jesti in piti.</TD>
-</TR>
-<TR>
-<TD >Ko bo šel počivat,  dobro glej,  kam se bo ulegel. Nato pojdi do njega,  mu odgrni noge in se ulezi. On pa ti bo povedal,  kaj narediti.«</TD>
-</TR>
-<TR>
-<TD >Ruta ji je odgovorila: »Naredila bom vse,  kar si mi rekla.«</TD>
-</TR>
-<TR>
-<TD >Tako je odšla na mlatišče in naredila vse,  kar ji je naročila tašča.</TD>
-</TR>
-<TR>
-<TD >Boaz je medtem jedel in pil in njegovo srce je bilo veselo. Zatem je šel h kupu žita in se ulegel. Ruta pa se je po tiho približala,  mu odgrnila noge in se ulegla zraven.</TD>
-</TR>
-<TR>
-<TD >Ob polnoči se je Boaz ves tresoč zbudil. Usedel se je in videl,  da mu pri nogah leži ženska.</TD>
-</TR>
-<TR>
-<TD >Vprašal jo je: »Kdo si?« Odgovorila mu je: »Ruta sem,  tvoja služabnica. Razgrni svoj plašč čez mene,  moj gospod,  saj si odkupitelj.«</TD>
-</TR>
-<TR>
-<TD >Nato ji je rekel: »Moja hči,  naj te Jehova blagoslovi. Zdaj si pokazala še večjo vdano ljubezen kakor prej,  ker si ne iščeš moža med mladeniči,  ne revnimi ne bogatimi.</TD>
-</TR>
-<TR>
-<TD >Moja hči,  ne boj se. Naredil bom vse,  kar mi rečeš,  saj vsakdo v mestu ve,  da si izjemna ženska.</TD>
-</TR>
-<TR>
-<TD >Res je,  da sem odkupitelj,  ampak obstaja odkupitelj,  ki je s teboj v še bližjem sorodstvu kot jaz.</TD>
-</TR>
-<TR>
-<TD >Ostani tu čez noč. In če te bo zjutraj odkupil,  prav,  naj te odkupi. Če pa te ne bo hotel odkupiti,  prisegam pri Jehovu,  živem Bogu,  da te bom odkupil jaz. Spi tukaj do jutra.«</TD>
-</TR>
-<TR>
-<TD >Ležala je torej pri njegovih nogah do jutra,  nato pa vstala,  še preden je bilo dovolj svetlo,  da bi se lahko koga prepoznalo. Boaz ni hotel,  da bi se izvedelo,  da je ženska prišla na mlatišče.</TD>
-</TR>
-<TR>
-<TD >Nato je Ruti rekel: »Daj mi ogrinjalo,  ki ga imaš na sebi,  in ga pridrži.« Držala ga je,  on pa je vanj nasul šest mernikov ječmena in ji ga nato pomagal naložiti na glavo. Potem se je vrnil v mesto.</TD>
-</TR>
-<TR>
-<TD >Ko se je Ruta vrnila k tašči,  jo je ta vprašala: »Kako je šlo,  moja hči?« Ruta ji je povedala vse,  kar je Boaz storil zanjo.</TD>
-</TR>
-<TR>
-<TD >Povedala je tudi: »Dal mi je teh šest mernikov ječmena in rekel: ‚K svoji tašči ne smeš priti praznih rok.«</TD>
-</TR>
-<TR>
-<TD >Nato ji je Naomi rekla: »Počakaj tu,  moja hči,  dokler ne izveš,  kako se bodo stvari iztekle,  saj bo Boaz naredil vse,  kar lahko,  da bi stvari še danes uredil.«</TD>
-</TR>
-<TR>
-<TD >Ruta 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >Boaz je šel k mestnim vratom in se tam usedel. Mimo je prišel odkupitelj,  o katerem je Boaz govoril Ruti. Boaz mu je rekel: »Hej,  ti,  pridi sem in prisedi.« Prišel je torej in se usedel.</TD>
-</TR>
-<TR>
-<TD >Zatem je Boaz poklical deset mestnih starešin in jih prosil: »Usedite se sem.« In so se usedli.</TD>
-</TR>
-<TR>
-<TD >Nato je odkupitelju rekel: »Naomi,  ki se je vrnila iz moabske dežele,  je prisiljena prodati kos polja,  ki je bil last našega brata Elimeleka.</TD>
-</TR>
-<TR>
-<TD >Mislil sem,  da bi te moral o tem obvestiti in ti reči: ‚Kupi ga pred prebivalci mesta in starešinami mojega ljudstva. Če ga hočeš odkupiti,  ga odkupi. Če pa ga ne boš,  mi to povej,  da bom vedel,  saj imaš ti prvi pravico do odkupa,  za teboj pa sem jaz.« Rekel je: »Prav,  odkupil ga bom.«</TD>
-</TR>
-<TR>
-<TD >Boaz mu je še rekel: »Tisti dan,  ko boš kupil polje od Naomi,  ga boš pravzaprav kupil tudi od Moabke Rute,  žene umrlega,  da bo polje ostalo v lasti njegovih potomcev.«</TD>
-</TR>
-<TR>
-<TD >Odkupitelj pa mu je rekel: »Ne morem ga odkupiti,  da morda ne bom na izgubi. Ker ga torej jaz ne morem odkupiti,  ga odkupi ti zase z mojo pravico do odkupa.«</TD>
-</TR>
-<TR>
-<TD >V starih časih so Izraelci vsak prenos,  povezan s pravico do odkupa in menjave lastništva,  potrdili takole: človek si je moral sezuti sandalo in jo dati drugemu. To je v Izraelu veljalo kot potrdilo.</TD>
-</TR>
-<TR>
-<TD >Ko je torej odkupitelj Boazu rekel,  naj kupi polje,  si je sezul sandalo.</TD>
-</TR>
-<TR>
-<TD >Nato je Boaz starešinam in vsem zbranim rekel: »Vi ste danes priče,  da bom od Naomi kupil vse,  kar je bilo last Elimeleka,  in vse,  kar je bilo last Kiljona in Mahlona.</TD>
-</TR>
-<TR>
-<TD >Poleg tega se bom poročil z Moabko Ruto,  ženo pokojnega Mahlona. Tako bo polje,  ki je pripadalo Mahlonu,  ostalo v lasti njegovih potomcev,  njegovi bratje in prebivalci mesta pa ne bodo pozabili njegovega imena. Vi ste danes priče.«</TD>
-</TR>
-<TR>
-<TD >Zatem so vsi,  ki so bili pri mestnih vratih,  in starešine,  rekli: »Priče smo! Naj Jehova blagoslovi ženo,  ki bo prišla v tvojo hišo,  da bo kakor Rahela in kakor Leja,  ki sta postali prednici izraelskega naroda. Naj ti gre dobro v Efrati in ustvari si dobro ime v Betlehemu.</TD>
-</TR>
-<TR>
-<TD >Naj iz potomstva,  ki ti ga bo Jehova dal po tej mladi ženski,  tvoja družina postane kakor družina Pereza,  ki ga je Tamara rodila Judu.«</TD>
-</TR>
-<TR>
-<TD >Tako se je Boaz poročil z Ruto. Spal je z njo,  Jehova pa jo je blagoslovil,  da je zanosila,  in rodila je sina.</TD>
-</TR>
-<TR>
-<TD >Ženske so Naomi rekle: »Naj bo slavljen Jehova,  ki te danes ni pustil brez odkupitelja. Naj se ime tega otroka razglasi po vsem Izraelu!</TD>
-</TR>
-<TR>
-<TD >Ta je dal tvojemu življenju nov začetek in te bo podpiral v starosti,  saj ga je rodila snaha,  ki te ima rada in je zate boljša kakor sedem sinov.«</TD>
-</TR>
-<TR>
-<TD >Naomi je vzela otroka v naročje in začela skrbeti zanj.</TD>
-</TR>
-<TR>
-<TD >Sosede pa so mu dale ime. Govorile so: »Naomi se je rodil sin.« Poimenovale so ga Obed. Ta je oče Jeseja,  Davidovega očeta.</TD>
-</TR>
-<TR>
-<TD >In to so Perezovi potomci: Perezu se je rodil Hezron, </TD>
-</TR>
-<TR>
-<TD >Hezronu se je rodil Ram,  Ramu se je rodil Aminadab, </TD>
-</TR>
-<TR>
-<TD >Aminadabu se je rodil Nahšon,  Nahšonu se je rodil Salmon, </TD>
-</TR>
-<TR>
-<TD >Salmonu se je rodil Boaz,  Boazu se je rodil Obed, </TD>
-</TR>
-<TR>
-<TD >Obedu se je rodil Jesej,  Jeseju pa se je rodil David.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Ruta','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Ruta:"Ruta 1. poglavje",K:"",NZ:""},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:1,Ruta:"V času. ko so pravico uveljavljali sodniki. je v deželi zavladala lakota. Neki moški je s svojo ženo in sinovoma odšel iz Betlehema na Judovem. da bi se naselil v moabski deželi.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:2,Ruta:"Njemu je bilo ime Elimelek. njegovi ženi Naomi. sinovoma pa Mahlon in Kiljon. Bili so iz Efrate. torej iz Betlehema na Judovem. Prišli so v moabsko deželo in se tam naselili.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:3,Ruta:"Čez nekaj časa je Elimelek umrl in njegova žena Naomi je ostala sama s sinovoma.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:4,Ruta:"Ta sta se kasneje poročila z Moabkama. Eni je bilo ime Orfa. drugi pa Ruta. V moabski deželi so živeli kakih deset let.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:5,Ruta:"Nato sta umrla tudi Mahlon in Kiljon. tako da je Naomi ostala brez obeh sinov in moža.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:6,Ruta:"S snahama se je odpravila iz moabske dežele. saj je slišala. da se je Jehova usmilil svojega ljudstva in mu priskrbel hrano.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:7,Ruta:"Tako je s snahama odšla iz kraja. kjer so živele. Ko so hodile po poti proti Judovem.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:8,Ruta:"je Naomi snahama rekla: »Pojdita. vrnita se vsaka na dom svoje mame. Naj bo Jehova dober do vaju. kot sta bili tudi vidve do svojih. zdaj že pokojnih mož in do mene.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:9,Ruta:"Naj Jehova poskrbi. da se bosta poročili in bosta mirno živeli.« Nato ju je poljubila. onidve pa sta glasno zajokali",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:10,Ruta:"in ji govorili: »Ne. s teboj bova šli k tvojemu ljudstvu.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:11,Ruta:"Toda Naomi jima je rekla: »Vrnita se. moji hčeri. Zakaj bi šli z menoj? Ne morem več roditi sinov. s katerima bi se lahko poročili.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:12,Ruta:"Vrnita se. moji hčeri. Pojdita. saj sem že prestara. da bi se poročila. Pa tudi če bi bilo kaj upanja. da še danes najdem moža in rodim sinova.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:13,Ruta:"ali bosta čakali nanju. da odrasteta? Ali bosta zaradi njiju ostali neporočeni? Ne. moji hčeri. Jehova se je obrnil proti meni in me kaznoval. Ko pomislim. kaj vse sta zaradi tega doživeli. mi je zelo hudo.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:14,Ruta:"Znova sta glasno zajokali. Nato je Orfa poljubila svojo taščo in odšla. Ruta pa je ostala z Naomi.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:15,Ruta:"Zato ji je Naomi rekla: »Glej. tvoja ovdovela svakinja se je vrnila k svojemu ljudstvu in svojim bogovom. Vrni se tudi ti z njo.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:16,Ruta:"Ruta pa je odgovorila: »Nikar me ne prosi. naj te zapustim in odidem od tebe. Kamor boš šla ti. bom šla tudi jaz. in kjer boš prenočila ti. bom prenočila tudi jaz. Tvoje ljudstvo bo moje ljudstvo in tvoj Bog bo moj Bog.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:17,Ruta:"Kjer boš umrla ti. bom umrla tudi jaz in bom tam pokopana. Naj me Jehova strogo kaznuje. če bom dovolila. da me kaj drugega razen smrti loči od tebe.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:18,Ruta:"Ko je Naomi videla. da je Ruta odločena iti z njo. jo je nehala prepričevati.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:19,Ruta:"Tako sta skupaj nadaljevali pot. dokler nista prispeli v Betlehem. Takoj ko sta prišli v mesto. je med ljudmi kar završalo. Ženske so spraševale: »Ali je to Naomi?«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:20,Ruta:"Ona pa jim je govorila: »Ne kličite me Naomi. ampak Mara. saj je Vsemogočni dovolil. da je moje življenje zdaj polno grenkobe.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:21,Ruta:"Ko sem odšla. sem imela vse. ampak Jehova me je nazaj pripeljal praznih rok. Zakaj bi me klicali Naomi. ko pa se je Vsemogočni Bog Jehova obrnil proti meni in me spravil v nesrečo?«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:1,V:22,Ruta:"Tako se je Naomi vrnila iz moabske dežele skupaj s svojo snaho Moabko Ruto. V Betlehem sta prišli na začetku ječmenove žetve.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Ruta:"Ruta 2. poglavje",K:"",NZ:""},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:1,Ruta:"Naomi je po moževi strani imela sorodnika. ki je bil zelo bogat. Ime mu je bilo Boaz in je bil iz Elimelekove družine.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:2,Ruta:"Moabka Ruta je Naomi rekla: »Prosim. dovoli mi. da grem na polja in paberkujem žitno klasje za tistim. ki bo prijazen do mene.« Naomi ji je odgovorila: »Pojdi. moja hči.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:3,Ruta:"Tako je Ruta odšla na polje in začela paberkovati za žanjci. Po naključju je prišla na njivo. ki je pripadala Elimelekovemu sorodniku Boazu.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:4,Ruta:"Ravno takrat je iz Betlehema prišel Boaz in žanjce pozdravil: »Jehova z vami!« Oni pa so mu odzdravili: »Jehova naj te blagoslovi!«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:5,Ruta:"Boaz je služabnika. ki je nadzoroval žanjce. vprašal: »Čigavo je to dekle?«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:6,Ruta:"Služabnik mu je odgovoril: »To je mlada Moabka. ki je z Naomi prišla iz moabske dežele.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:7,Ruta:"Prosila me je. ali lahko pobira požete klase. ki bodo ostali za žanjci. Na nogah je bila vse od zjutraj. ko je prišla. pa do zdaj. ko se je usedla v senco. da se malo odpočije.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:8,Ruta:"Potem je Boaz rekel Ruti: »Poslušaj. moja hči. Ne hodi paberkovat na drugo njivo. Ne odhajaj drugam. ampak ostani pri mojih delavkah.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:9,Ruta:"Opazuj. na kateri njivi bodo žele. in se jih drži. Služabnikom sem ukazal. naj te ne nadlegujejo. Ko boš žejna. lahko greš pit vodo. ki jo bodo zajeli moji služabniki.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:10,Ruta:"Ruta je padla na kolena. se priklonila do tal in ga vprašala: »Zakaj si tako prijazen z menoj in zakaj skrbiš zame. ko pa sem tujka?«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:11,Ruta:"Boaz ji je odgovoril: »Povedali so mi čisto vse. kar si po smrti moža naredila za svojo taščo. in kako si zapustila očeta. mamo in deželo svojih sorodnikov ter odšla k ljudstvu. ki ga prej nisi poznala.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:12,Ruta:"Naj te Jehova nagradi za tvoje ravnanje in naj ti Izraelov Bog Jehova da popolno plačilo. ker si poiskala zavetje pod njegovimi perutmi.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:13,Ruta:"Ona pa mu je rekla: »Potolažil si me in me s svojimi besedami pomiril. čeprav nisem niti tvoja služabnica. Moj gospod. bodi še naprej prijazen z menoj.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:14,Ruta:"Ko je bil čas za kosilo. ji je Boaz rekel: »Pridi sem. vzemi si kruh in ga pomakaj v kis.« Prisedla je k žanjcem in Boaz ji je ponudil nekaj praženega zrnja. Ruta se je najedla. pa še nekaj ji je ostalo.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:15,Ruta:"Ko je šla nazaj paberkovat. je Boaz svojim služabnikom ukazal: »Pustite ji. da pobira požete klase. in je ne nadlegujte.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:16,Ruta:"Poleg tega vlecite klase iz šopov žita in jih puščajte za seboj. da jih bo lahko pobirala. in ji ne recite nič takega. zaradi česar bi nehala paberkovati.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:17,Ruta:"Tako je Ruta na polju paberkovala vse do večera. potem pa je to. kar je nabrala. omlatila. Ječmena je bilo skoraj za eno efo.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:18,Ruta:"Vzela ga je. odšla v mesto in tašči pokazala to. kar je nabrala. Dala ji je tudi praženo zrnje. ki ji je ostalo od kosila.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:19,Ruta:"Tašča jo je vprašala: »Kje si danes paberkovala? Kje si delala? Naj bo blagoslovljen tisti. ki je bil tako prijazen do tebe.« Ruta ji je povedala. pri kom je delala. Rekla je: »Delala sem pri moškem. ki mu je ime Boaz.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:20,Ruta:"Naomi ji je rekla: »Naj ga blagoslovi Jehova. ki vdano ljubi tako žive kot mrtve.« Dodala je še: »Ta moški je najin sorodnik. Je eden izmed najinih odkupiteljev.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:21,Ruta:"Moabka Ruta je nato povedala: »Med drugim mi je rekel: ‚Drži se mojih delavcev. dokler ne požanjejo vsega mojega žita.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:22,Ruta:"Naomi je svoji snahi svetovala: »Moja hči. boljše je. da si z njegovimi delavkami. kakor pa da bi te na kaki drugi njivi nadlegovali.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:2,V:23,Ruta:"Tako se je držala Boazovih delavk in paberkovala. dokler se ni končala žetev ječmena in pšenice. Še naprej je živela pri svoji tašči.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Ruta:"Ruta 3. poglavje",K:"",NZ:""},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:1,Ruta:"Ruti je njena tašča Naomi rekla: »Moja hči. ali ne bi bilo prav. da ti poiščem moža. pri katerem boš lahko našla varnost in ti bo šlo dobro?",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:2,Ruta:"Ali ni Boaz. ki ti je dovolil. da si delala z njegovimi delavkami. najin sorodnik? Danes zvečer veja ječmen na mlatišču.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:3,Ruta:"Zato se umij in se namaži z dišečim oljem. Potem se lepo obleci in pojdi na mlatišče. Ne kaži se mu. dokler ne bo nehal jesti in piti.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:4,Ruta:"Ko bo šel počivat. dobro glej. kam se bo ulegel. Nato pojdi do njega. mu odgrni noge in se ulezi. On pa ti bo povedal. kaj narediti.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:5,Ruta:"Ruta ji je odgovorila: »Naredila bom vse. kar si mi rekla.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:6,Ruta:"Tako je odšla na mlatišče in naredila vse. kar ji je naročila tašča.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:7,Ruta:"Boaz je medtem jedel in pil in njegovo srce je bilo veselo. Zatem je šel h kupu žita in se ulegel. Ruta pa se je po tiho približala. mu odgrnila noge in se ulegla zraven.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:8,Ruta:"Ob polnoči se je Boaz ves tresoč zbudil. Usedel se je in videl. da mu pri nogah leži ženska.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:9,Ruta:"Vprašal jo je: »Kdo si?« Odgovorila mu je: »Ruta sem. tvoja služabnica. Razgrni svoj plašč čez mene. moj gospod. saj si odkupitelj.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:10,Ruta:"Nato ji je rekel: »Moja hči. naj te Jehova blagoslovi. Zdaj si pokazala še večjo vdano ljubezen kakor prej. ker si ne iščeš moža med mladeniči. ne revnimi ne bogatimi.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:11,Ruta:"Moja hči. ne boj se. Naredil bom vse. kar mi rečeš. saj vsakdo v mestu ve. da si izjemna ženska.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:12,Ruta:"Res je. da sem odkupitelj. ampak obstaja odkupitelj. ki je s teboj v še bližjem sorodstvu kot jaz.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:13,Ruta:"Ostani tu čez noč. In če te bo zjutraj odkupil. prav. naj te odkupi. Če pa te ne bo hotel odkupiti. prisegam pri Jehovu. živem Bogu. da te bom odkupil jaz. Spi tukaj do jutra.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:14,Ruta:"Ležala je torej pri njegovih nogah do jutra. nato pa vstala. še preden je bilo dovolj svetlo. da bi se lahko koga prepoznalo. Boaz ni hotel. da bi se izvedelo. da je ženska prišla na mlatišče.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:15,Ruta:"Nato je Ruti rekel: »Daj mi ogrinjalo. ki ga imaš na sebi. in ga pridrži.« Držala ga je. on pa je vanj nasul šest mernikov ječmena in ji ga nato pomagal naložiti na glavo. Potem se je vrnil v mesto.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:16,Ruta:"Ko se je Ruta vrnila k tašči. jo je ta vprašala: »Kako je šlo. moja hči?« Ruta ji je povedala vse. kar je Boaz storil zanjo.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:17,Ruta:"Povedala je tudi: »Dal mi je teh šest mernikov ječmena in rekel: ‚K svoji tašči ne smeš priti praznih rok.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:3,V:18,Ruta:"Nato ji je Naomi rekla: »Počakaj tu. moja hči. dokler ne izveš. kako se bodo stvari iztekle. saj bo Boaz naredil vse. kar lahko. da bi stvari še danes uredil.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Ruta:"Ruta 4. poglavje",K:"",NZ:""},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:1,Ruta:"Boaz je šel k mestnim vratom in se tam usedel. Mimo je prišel odkupitelj. o katerem je Boaz govoril Ruti. Boaz mu je rekel: »Hej. ti. pridi sem in prisedi.« Prišel je torej in se usedel.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:2,Ruta:"Zatem je Boaz poklical deset mestnih starešin in jih prosil: »Usedite se sem.« In so se usedli.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:3,Ruta:"Nato je odkupitelju rekel: »Naomi. ki se je vrnila iz moabske dežele. je prisiljena prodati kos polja. ki je bil last našega brata Elimeleka.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:4,Ruta:"Mislil sem. da bi te moral o tem obvestiti in ti reči: ‚Kupi ga pred prebivalci mesta in starešinami mojega ljudstva. Če ga hočeš odkupiti. ga odkupi. Če pa ga ne boš. mi to povej. da bom vedel. saj imaš ti prvi pravico do odkupa. za teboj pa sem jaz.« Rekel je: »Prav. odkupil ga bom.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:5,Ruta:"Boaz mu je še rekel: »Tisti dan. ko boš kupil polje od Naomi. ga boš pravzaprav kupil tudi od Moabke Rute. žene umrlega. da bo polje ostalo v lasti njegovih potomcev.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:6,Ruta:"Odkupitelj pa mu je rekel: »Ne morem ga odkupiti. da morda ne bom na izgubi. Ker ga torej jaz ne morem odkupiti. ga odkupi ti zase z mojo pravico do odkupa.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:7,Ruta:"V starih časih so Izraelci vsak prenos. povezan s pravico do odkupa in menjave lastništva. potrdili takole: človek si je moral sezuti sandalo in jo dati drugemu. To je v Izraelu veljalo kot potrdilo.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:8,Ruta:"Ko je torej odkupitelj Boazu rekel. naj kupi polje. si je sezul sandalo.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:9,Ruta:"Nato je Boaz starešinam in vsem zbranim rekel: »Vi ste danes priče. da bom od Naomi kupil vse. kar je bilo last Elimeleka. in vse. kar je bilo last Kiljona in Mahlona.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:10,Ruta:"Poleg tega se bom poročil z Moabko Ruto. ženo pokojnega Mahlona. Tako bo polje. ki je pripadalo Mahlonu. ostalo v lasti njegovih potomcev. njegovi bratje in prebivalci mesta pa ne bodo pozabili njegovega imena. Vi ste danes priče.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:11,Ruta:"Zatem so vsi. ki so bili pri mestnih vratih. in starešine. rekli: »Priče smo! Naj Jehova blagoslovi ženo. ki bo prišla v tvojo hišo. da bo kakor Rahela in kakor Leja. ki sta postali prednici izraelskega naroda. Naj ti gre dobro v Efrati in ustvari si dobro ime v Betlehemu.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:12,Ruta:"Naj iz potomstva. ki ti ga bo Jehova dal po tej mladi ženski. tvoja družina postane kakor družina Pereza. ki ga je Tamara rodila Judu.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:13,Ruta:"Tako se je Boaz poročil z Ruto. Spal je z njo. Jehova pa jo je blagoslovil. da je zanosila. in rodila je sina.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:14,Ruta:"Ženske so Naomi rekle: »Naj bo slavljen Jehova. ki te danes ni pustil brez odkupitelja. Naj se ime tega otroka razglasi po vsem Izraelu!",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:15,Ruta:"Ta je dal tvojemu življenju nov začetek in te bo podpiral v starosti. saj ga je rodila snaha. ki te ima rada in je zate boljša kakor sedem sinov.«",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:16,Ruta:"Naomi je vzela otroka v naročje in začela skrbeti zanj.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:17,Ruta:"Sosede pa so mu dale ime. Govorile so: »Naomi se je rodil sin.« Poimenovale so ga Obed. Ta je oče Jeseja. Davidovega očeta.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:18,Ruta:"In to so Perezovi potomci: Perezu se je rodil Hezron.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:19,Ruta:"Hezronu se je rodil Ram. Ramu se je rodil Aminadab.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:20,Ruta:"Aminadabu se je rodil Nahšon. Nahšonu se je rodil Salmon.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:21,Ruta:"Salmonu se je rodil Boaz. Boazu se je rodil Obed.",K:"",NZ:"X"},
+{Knjiga:"Ruta",Kr:"Rut",P:4,V:22,Ruta:"Obedu se je rodil Jesej. Jeseju pa se je rodil David.",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

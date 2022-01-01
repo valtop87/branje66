@@ -1,518 +1,286 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Efežanom</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Efežanom 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jaz,  Pavel,  ki sem po Božji volji apostol Kristusa Jezusa,  pišem to pismo svetim,  ki so v Efezu in so zvesti učenci Kristusa Jezusa.</TD>
-</TR>
-<TR>
-<TD >Naj vam Bog,  naš Oče,  in Gospod Jezus Kristus izkažeta nezasluženo dobroto in naklonita mir.</TD>
-</TR>
-<TR>
-<TD >Naj bo hvaljen Bog in Oče našega Gospoda Jezusa Kristusa,  ker nas je kot Kristusove učence blagoslovil z vsakovrstnimi duhovnimi blagoslovi v nebesih.</TD>
-</TR>
-<TR>
-<TD >Bog nas je že pred nastankom sveta izbral,  da bi bili združeni s Kristusom. Izbral nas je,  da bi izkazovali ljubezen in da bi bili v njegovih očeh sveti in brez madeža.</TD>
-</TR>
-<TR>
-<TD >Že vnaprej je namreč odredil,  da nas bo po Jezusu Kristusu posvojil za svoje otroke,  ker ga je to veselilo in ker je bila takšna njegova volja.</TD>
-</TR>
-<TR>
-<TD >To je naredil zato,  da bi ljudje hvalili njegovo veličastno nezasluženo dobroto,  ki nam jo je prijazno izkazal po svojem ljubljenem Sinu.</TD>
-</TR>
-<TR>
-<TD >Zaradi odkupnine,  ki jo je Sin plačal s svojo krvjo,  smo osvobojeni,  da,  zaradi Božje velike nezaslužene dobrote so nam odpuščeni prestopki.</TD>
-</TR>
-<TR>
-<TD >Bog nam je to nezasluženo dobroto naklonil v obilju skupaj z vso modrostjo in sposobnostjo razumevanja, </TD>
-</TR>
-<TR>
-<TD >ko nam je razodel sveto skrivnost svoje volje. Ta skrivnost je v soglasju z njegovo željo in namenom, </TD>
-</TR>
-<TR>
-<TD >da se vse uredi,  ko pride za to določeni čas,  in se tako vse – to,  kar je v nebesih,  in to,  kar je na zemlji – zbere,  da bi bilo združeno s Kristusom. Da,  vse se bo zbralo,  da bi bilo združeno z njim, </TD>
-</TR>
-<TR>
-<TD >s katerim smo povezani in skupaj s katerim smo bili izbrani za dediče. Bog,  ki vse svoje odločitve izpelje skladno s svojo voljo,  nas je vnaprej izbral,  tako kot se je namenil, </TD>
-</TR>
-<TR>
-<TD >da bi po nas,  ki smo prvi zaupali v Kristusa,  drugi ljudje slavili in hvalili Boga.</TD>
-</TR>
-<TR>
-<TD >Tudi vi ste začeli zaupati vanj,  potem ko ste slišali resnico,  torej dobro novico o svoji rešitvi. In potem ko ste začeli verovati,  ste bili po Kristusu zapečateni z obljubljenim svetim duhom.</TD>
-</TR>
-<TR>
-<TD >Ta duh je vnaprejšnje zagotovilo,  da bomo prejeli našo dediščino. Bog je vse to naredil zato,  da bi z odkupnino osvobodil svoje ljudstvo sebi v hvalo in slavo.</TD>
-</TR>
-<TR>
-<TD >Zato se tudi jaz,  odkar sem slišal o veri,  ki jo imate v Gospoda Jezusa,  in o ljubezni,  ki jo kažete s tem,  kako ravnate z vsemi svetimi, </TD>
-</TR>
-<TR>
-<TD >Bogu nenehno zahvaljujem za vas. Stalno vas omenjam v svojih molitvah, </TD>
-</TR>
-<TR>
-<TD >da bi vam Bog našega Gospoda Jezusa Kristusa,  veličastni Oče,  dal modrost in sposobnost,  da bi razumeli stvari,  ki jih razodeva,  in bi si tako pridobili točno spoznanje o njem.</TD>
-</TR>
-<TR>
-<TD >Odprl vam je srce,  da bi videli in spoznali,  h kateremu upanju vas je poklical,  kakšno veličastno bogastvo hrani kot dediščino za svete</TD>
-</TR>
-<TR>
-<TD >in kako izjemno velika je njegova moč,  ki deluje na nas,  ki verujemo. Veličina njegove moči se je videla, </TD>
-</TR>
-<TR>
-<TD >ko je Kristusa obudil od mrtvih in ga v nebesih posadil sebi na desno.</TD>
-</TR>
-<TR>
-<TD >Povišal ga je visoko nad vsako vladavino,  oblast,  moč,  kraljestvo in nad vsako ime,  pa ne le v tej stvarnosti,  ampak tudi v prihodnji.</TD>
-</TR>
-<TR>
-<TD >Prav tako je vse podredil pod njegove noge in ga postavil za glavo nad vsem,  kar je povezano z občino.</TD>
-</TR>
-<TR>
-<TD >Občina je njegovo telo in je prežeta z vsem,  kar je povezano z njim,  in on v vseh pogledih napolnjuje vse.</TD>
-</TR>
-<TR>
-<TD >Efežanom 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Poleg tega vas je Bog oživil,  čeprav ste bili mrtvi zaradi svojih prestopkov in grehov.</TD>
-</TR>
-<TR>
-<TD >Nekoč ste živeli tako,  kot živi ta svet,  kot hoče vladar,  ki ima oblast nad zrakom oziroma duhom,  ki zdaj deluje v neposlušnih ljudeh.</TD>
-</TR>
-<TR>
-<TD >Res je,  nekoč smo se vsi mi vedli kot oni. Živeli smo v skladu s telesnimi željami,  tako da smo ubogali svoje telo in misli,  ter smo bili,  tako kot vsi drugi,  po naravi ljudje,  ki si zaslužijo Božjo jezo.</TD>
-</TR>
-<TR>
-<TD >Toda Bog je neizmerno usmiljen in nas je zaradi svoje velike ljubezni,  ki nam jo je izkazal, </TD>
-</TR>
-<TR>
-<TD >oživil in nas združil s Kristusom,  ko smo bili še mrtvi zaradi prestopkov. Rešil vas je po svoji nezasluženi dobroti.</TD>
-</TR>
-<TR>
-<TD >Poleg tega nas je kot učence Kristusa Jezusa oživil in nas posadil v nebesa, </TD>
-</TR>
-<TR>
-<TD >da bi nam v prihodnosti z naklonjenostjo,  ki jo čuti do nas,  učencev Kristusa Jezusa,  izkazal svojo izjemno nezasluženo dobroto.</TD>
-</TR>
-<TR>
-<TD >S to nezasluženo dobroto ste bili rešeni zaradi svoje vere. Vendar to ni vaša zasluga,  ampak je to Božji dar.</TD>
-</TR>
-<TR>
-<TD >Ne,  to ni zaradi tega,  kar delate,  da ne bi nihče imel razloga za hvaljenje.</TD>
-</TR>
-<TR>
-<TD >Mi smo delo Božjih rok,  in ker smo učenci Kristusa Jezusa,  smo bili ustvarjeni za dobra dela,  ki jih je Bog že vnaprej določil,  da bi jih opravljali.</TD>
-</TR>
-<TR>
-<TD >Zato ne pozabite: po rodu ste iz drugih narodov in nekoč so vas tisti,  ki so jih imenovali obrezani,  ker so bili obrezani na telesu,  imenovali neobrezanci.</TD>
-</TR>
-<TR>
-<TD >Takrat niste poznali Kristusa,  bili ste odtujeni od izraelskega naroda in niste bili del zavez,  ki so temeljile na Božji obljubi. V svetu ste bili brez upanja in niste poznali Boga.</TD>
-</TR>
-<TR>
-<TD >Toda čeprav ste bili nekoč daleč od Boga,  ste se kot učenci Kristusa Jezusa približali Bogu zaradi Kristusove krvi.</TD>
-</TR>
-<TR>
-<TD >Kristus nam je namreč prinesel mir. On je iz dveh skupin naredil eno in podrl vmesni zid,  ki ju je ločeval.</TD>
-</TR>
-<TR>
-<TD >S svojim telesom je odpravil vzrok za sovraštvo,  namreč Zakonik,  ki je sestavljen iz zapovedi in odredb,  da bi iz dveh skupin,  ki sta združeni z njim,  ustvaril eno novo ljudstvo in vzpostavil mir.</TD>
-</TR>
-<TR>
-<TD >Poleg tega je s svojo smrtjo na mučilnem kolu obema skupinama omogočil povsem miren odnos z Bogom,  da bi tako postali eno telo. S svojo smrtjo je namreč odstranil vzrok za sovraštvo.</TD>
-</TR>
-<TR>
-<TD >Prišel je in oznanil dobro novico miru vam,  ki ste bili daleč od Boga,  in tem,  ki so mu bili blizu.</TD>
-</TR>
-<TR>
-<TD >Po njem imamo namreč pripadniki obeh ljudstev neoviran dostop do Očeta,  ker vsi prejemamo istega duha.</TD>
-</TR>
-<TR>
-<TD >Zato niste več tujci in priseljenci,  ampak ste sodržavljani svetih in člani Božje družine.</TD>
-</TR>
-<TR>
-<TD >Zgrajeni ste bili na temelju apostolov in prerokov,  temeljni vogelni kamen pa je sam Kristus Jezus.</TD>
-</TR>
-<TR>
-<TD >V enotnosti z njim je vsa zgradba skladno sestavljena in raste v svet tempelj za Jehova.</TD>
-</TR>
-<TR>
-<TD >Ker ste povezani s Kristusom,  se tako iz vas kot iz drugih gradi prostor,  v katerem prebiva Bog,  ker je tam njegov duh.</TD>
-</TR>
-<TR>
-<TD >Efežanom 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jaz,  Pavel,  sem v ječi zato,  ker pripadam Kristusu Jezusu in ker sem pomagal vam,  ki ste iz drugih narodov.</TD>
-</TR>
-<TR>
-<TD >Gotovo ste slišali o tem,  da mi je bila zaupana odgovornost,  da vam pomagam imeti koristi od Božje nezaslužene dobrote.</TD>
-</TR>
-<TR>
-<TD >Razodeta mi je bila namreč sveta skrivnost,  kot sem to že prej na kratko napisal.</TD>
-</TR>
-<TR>
-<TD >Ko torej to berete,  lahko ugotovite,  kako jaz dojemam sveto skrivnost o Kristusu.</TD>
-</TR>
-<TR>
-<TD >Bog te skrivnosti ni razkril prejšnjim rodovom,  jo je pa zdaj po svojem duhu razkril svetim apostolom in prerokom.</TD>
-</TR>
-<TR>
-<TD >Skrivnost je ta,  da bodo ljudje iz drugih narodov,  ki so zaradi dobre novice povezani s Kristusom Jezusom,  dediči skupaj z nami in deli istega telesa. Poleg tega se bo na njih izpolnila ista Božja obljuba kot na nas.</TD>
-</TR>
-<TR>
-<TD >Jaz sem zdaj tisti,  ki vam pomaga razumeti to skrivnost,  in sicer zaradi Božje nezaslužene dobrote,  ki sem jo po delovanju Božje moči prejel kot brezplačni dar.</TD>
-</TR>
-<TR>
-<TD >Meni,  ki sem od vseh svetih najmanj pomemben,  je bila izkazana ta nezaslužena dobrota,  da ljudem iz drugih narodov oznanjam dobro novico o nedoumljivem Kristusovem bogastvu</TD>
-</TR>
-<TR>
-<TD >in vsem omogočim videti,  kako je Bog,  ki je vse ustvaril,  uredil,  da se razodeva sveta skrivnost,  ki jo je dolge veke skrival.</TD>
-</TR>
-<TR>
-<TD >To pa je bilo zato,  da bi zdaj vlade in oblasti v nebesih po občini spoznale mnoge vidike Božje modrosti, </TD>
-</TR>
-<TR>
-<TD >kar je skladno z večnim namenom,  ki ga ima Bog v zvezi z našim Gospodom Kristusom Jezusom.</TD>
-</TR>
-<TR>
-<TD >Zaradi vere v Kristusa lahko brez zadržkov govorimo in se neovirano bližamo Bogu.</TD>
-</TR>
-<TR>
-<TD >Zato vas prosim,  da zaradi mojih stisk,  ki jih doživljam v vaše dobro,  ne obupate,  saj vam prinašajo slavo.</TD>
-</TR>
-<TR>
-<TD >Zaradi tega upogibam kolena pred Očetom, </TD>
-</TR>
-<TR>
-<TD >ki mu dolguje svoj obstoj vsaka družina v nebesih in na zemlji.</TD>
-</TR>
-<TR>
-<TD >Molim,  da bi vas Bog v svoji veliki slavi z močjo svojega duha ojačal kot ljudi,  kakršni ste znotraj, </TD>
-</TR>
-<TR>
-<TD >in da bi zaradi vaše vere Kristus prebival v vašem srcu skupaj z ljubeznijo. Bodite ukoreninjeni in stojte na trdnem temelju, </TD>
-</TR>
-<TR>
-<TD >da bi tako lahko skupaj z vsemi svetimi popolnoma dojeli,  kaj so širina,  dolžina,  višina in globina resnice, </TD>
-</TR>
-<TR>
-<TD >ter da bi spoznali Kristusovo ljubezen,  ki je pomembnejša od znanja. Tako boste lahko dobili polno mero dobrih lastnosti,  ki jih daje Bog.</TD>
-</TR>
-<TR>
-<TD >Bog lahko po svoji moči,  ki deluje v nas,  naredi neizmerno več od vsega tega,  kar prosimo ali kar si zamišljamo.</TD>
-</TR>
-<TR>
-<TD >Njemu naj gre slava po občini in po Kristusu Jezusu iz roda v rod,  v vso večnost. Amen.</TD>
-</TR>
-<TR>
-<TD >Efežanom 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >Zato vas jaz,  ki sem v ječi,  ker sem Gospodov učenec,  rotim: Živite vredno tega,  za kar ste bili poklicani, </TD>
-</TR>
-<TR>
-<TD >tako da ste vedno ponižni,  blagi in potrpežljivi. Med seboj se prenašajte z ljubeznijo</TD>
-</TR>
-<TR>
-<TD >in si na vso moč prizadevajte ohranjati enotnost,  ki izvira iz svetega duha,  in živeti v miru.</TD>
-</TR>
-<TR>
-<TD >Telo je eno in duh je en,  tako kot je tudi upanje,  h kateremu ste bili poklicani,  samo eno;</TD>
-</TR>
-<TR>
-<TD >en Gospod,  ena vera,  en krst, </TD>
-</TR>
-<TR>
-<TD >en Bog in Oče vseh,  ki je nad vsemi in deluje po vseh in v vseh.</TD>
-</TR>
-<TR>
-<TD >Vsakemu od nas je bila izkazana nezaslužena dobrota in ta brezplačni dar nam je podelil Kristus.</TD>
-</TR>
-<TR>
-<TD >V Svetih spisih namreč piše: »Ko se je povzpel na višavo,  je odpeljal ujetnike. Dal je darove v obliki ljudi.«</TD>
-</TR>
-<TR>
-<TD >Kaj pa pomeni besedna zveza »se je povzpel«,  če ne tega,  da se je prej spustil v nižje kraje,  to je na zemljo?</TD>
-</TR>
-<TR>
-<TD >In prav ta,  ki se je spustil,  je tudi tisti,  ki se je povzpel daleč nad vsa nebesa,  da bi bilo po njem vse izpolnjeno.</TD>
-</TR>
-<TR>
-<TD >Nekatere je postavil za apostole,  nekatere za preroke,  nekatere za oznanjevalce dobre novice,  nekatere za pastirje in učitelje.</TD>
-</TR>
-<TR>
-<TD >Postavil jih je,  da bi usposabljali svete,  služili drugim in krepili Kristusovo telo, </TD>
-</TR>
-<TR>
-<TD >dokler ne pridemo vsi do enotnosti v veri in si ne pridobimo točnega spoznanja o Božjem Sinu,  dokler ne odrastemo in postanemo popolnoma zreli kakor Kristus.</TD>
-</TR>
-<TR>
-<TD >Zato ne bodimo več otroci,  ki jih premetava kakor na valovih in jih sem ter tja nosi vsak veter nauka,  ker poslušajo ljudi,  ki se zatekajo k prevari in druge zvijačno vodijo v zmoto.</TD>
-</TR>
-<TR>
-<TD >Nasprotno,  govorimo resnico in iz ljubezni rastimo v vsem,  da bi bili podobni Kristusu,  ki je glava.</TD>
-</TR>
-<TR>
-<TD >Zaradi njega so vsi telesni deli skladno sestavljeni in narejeni tako,  da med seboj sodelujejo s pomočjo vsakega sklepa,  ki opravlja svojo nalogo. Ko vsak posamezni del telesa deluje,  kot je treba,  to prispeva k temu,  da telo raste in se krepi z ljubeznijo.</TD>
-</TR>
-<TR>
-<TD >Zato vam pravim in vas rotim v imenu Gospoda: ne živite več tako,  kot živijo neverniki,  ki jih vodi samo njihovo nekoristno razmišljanje.</TD>
-</TR>
-<TR>
-<TD >Njihov um je v temi in življenje,  ki ga ponuja Bog,  jim je tuje,  saj so po svoji lastni volji v nevednosti in imajo nedovzetno srce.</TD>
-</TR>
-<TR>
-<TD >Izgubili so vsak čut za to,  kaj je moralno,  vedejo se predrzno in nenasitno počenjajo vsakršno nečistost.</TD>
-</TR>
-<TR>
-<TD >Toda vi ste se naučili,  da Kristus ni takšen, </TD>
-</TR>
-<TR>
-<TD >če je seveda bilo to,  kar ste slišali in o čemer ste bili poučeni,  skladno z resnico,  ki jo je Jezus učil.</TD>
-</TR>
-<TR>
-<TD >Poučeni ste bili,  da morate odložiti staro osebnost,  ki se je oblikovala pod vplivom vašega prejšnjega vedenja in jo kvarijo njene varljive želje.</TD>
-</TR>
-<TR>
-<TD >Še naprej morate obnavljati svoj način razmišljanja</TD>
-</TR>
-<TR>
-<TD >in si oblačiti novo osebnost,  ki je bila ustvarjena po Božji volji in odseva resnično pravičnost ter vdanost.</TD>
-</TR>
-<TR>
-<TD >Zato zdaj,  ko ste odložili laž,  govorite resnico drug z drugim,  saj smo deli telesa,  ki so odvisni drug od drugega.</TD>
-</TR>
-<TR>
-<TD >Če se razjezite,  nikar ne grešite. Naj se ne zgodi,  da bi sonce zašlo,  vi pa bi bili še vedno jezni;</TD>
-</TR>
-<TR>
-<TD >ne dajte Hudiču priložnosti,  da vpliva na vas.</TD>
-</TR>
-<TR>
-<TD >Kdor krade,  naj ne krade več,  ampak naj raje krepko poprime za delo in pošteno dela s svojimi rokami,  da bo lahko kaj dal tistemu,  ki je v stiski.</TD>
-</TR>
-<TR>
-<TD >Naj iz vaših ust ne pride nobena pokvarjena beseda,  ampak le to,  kar bo za poslušalce koristno in jih bo okrepilo,  ko bo to potrebno.</TD>
-</TR>
-<TR>
-<TD >Prav tako ne žalostite Božjega svetega duha,  s katerim ste bili zapečateni za dan,  ko boste osvobojeni z odkupnino.</TD>
-</TR>
-<TR>
-<TD >Znebite se vsakršne škodoželjne zagrenjenosti,  jeze,  besa,  vpitja in žaljivega govorjenja pa tudi vseh drugih škodljivih stvari.</TD>
-</TR>
-<TR>
-<TD >Raje bodite drug do drugega prijazni in polni najgloblje sočutnosti ter si velikodušno odpuščajte,  tako kot je tudi Bog po Kristusu velikodušno odpustil vam.</TD>
-</TR>
-<TR>
-<TD >Efežanom 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >Zato kot Božji ljubljeni otroci posnemajte Boga</TD>
-</TR>
-<TR>
-<TD >in izkazujte ljubezen,  kakršno je izkazoval Kristus. On nas je ljubil in dal samega sebe za nas kot daritev in žrtev,  v prijeten vonj Bogu.</TD>
-</TR>
-<TR>
-<TD >Spolna nemorala,  kakršna koli nečistost in pohlep naj se med vami niti ne omenjajo,  saj se to za svete ne spodobi.</TD>
-</TR>
-<TR>
-<TD >Prav tako naj med vami ne bo sramotnega vedenja,  ne nespametnega govorjenja,  ne vulgarnega šaljenja,  kar je vse nespodobno,  ampak se raje zahvaljujte Bogu.</TD>
-</TR>
-<TR>
-<TD >Vi namreč veste in se tudi zavedate,  da noben človek,  ki se vdaja spolni nemorali,  ali nečist človek,  ali pohlepnež (pohlep je namreč oblika malikovanja) nima dediščine v Kristusovem in Božjem kraljestvu.</TD>
-</TR>
-<TR>
-<TD >Naj vas nihče ne zavaja s praznimi besedami,  saj bo zaradi prej omenjenega neposlušne ljudi zadela Božja jeza.</TD>
-</TR>
-<TR>
-<TD >Zato ne imejte z njimi nič skupnega.</TD>
-</TR>
-<TR>
-<TD >Nekoč ste namreč bili v temi,  zdaj pa ste v svetlobi,  ker pripadate Gospodu. Živite kot otroci svetlobe, </TD>
-</TR>
-<TR>
-<TD >saj je sad svetlobe sestavljen iz vsakršne dobrote,  pravičnosti in resnice.</TD>
-</TR>
-<TR>
-<TD >Nenehno preverjajte,  kaj ugaja Gospodu, </TD>
-</TR>
-<TR>
-<TD >in ne sodelujte več pri nekoristnih delih,  ki pripadajo temi,  ampak raje razkrijte,  kakšna v resnici so.</TD>
-</TR>
-<TR>
-<TD >To,  kar ljudje skrivaj počenjajo,  je namreč sramotno celo omenjati.</TD>
-</TR>
-<TR>
-<TD >Vse,  kar je izpostavljeno svetlobi,  je razkrito,  in vse,  kar je razkrito,  postane svetloba.</TD>
-</TR>
-<TR>
-<TD >Zato je rečeno: »Zbudi se,  ti,  ki spiš,  vstani od mrtvih in Kristus te bo obsijal.«</TD>
-</TR>
-<TR>
-<TD >Skrbno torej pazite,  kako živite. Ne živite kot nemodri,  ampak kot modri, </TD>
-</TR>
-<TR>
-<TD >in kar najbolje izrabljajte svoj čas,  ker so dnevi,  v katerih živimo,  hudi.</TD>
-</TR>
-<TR>
-<TD >Zato ne bodite več nerazumni,  ampak si prizadevajte razumeti,  kaj je Jehovova volja.</TD>
-</TR>
-<TR>
-<TD >Poleg tega se ne opijajte z vinom,  saj to vodi v razbrzdanost,  ampak se napolnjujte s svetim duhom.</TD>
-</TR>
-<TR>
-<TD >Drug drugega spodbujajte s psalmi,  hvalnicami Bogu in duhovnimi pesmimi. Iz vsega srca pojte in igrajte Jehovu.</TD>
-</TR>
-<TR>
-<TD >V imenu našega Gospoda Jezusa Kristusa se vedno za vse zahvaljujte našemu Bogu in Očetu.</TD>
-</TR>
-<TR>
-<TD >Podrejajte se drug drugemu iz globokega spoštovanja do Kristusa.</TD>
-</TR>
-<TR>
-<TD >Žene naj se podrejajo svojemu možu,  kakor se podrejajo Gospodu.</TD>
-</TR>
-<TR>
-<TD >Mož je namreč glava svoji ženi,  kakor je tudi Kristus glava občini,  torej svojemu telesu,  katerega rešitelj je.</TD>
-</TR>
-<TR>
-<TD >Kakor je občina podrejena Kristusu,  tako naj bodo tudi žene vedno podrejene svojemu možu.</TD>
-</TR>
-<TR>
-<TD >Možje,  ljubite svojo ženo,  kakor je tudi Kristus ljubil občino in dal samega sebe zanjo, </TD>
-</TR>
-<TR>
-<TD >da bi jo posvetil,  tako da bi jo očistil z vodo,  torej z Božjo besedo.</TD>
-</TR>
-<TR>
-<TD >Kristus je to naredil zato,  da bi občina pred njim stala v vsem svojem sijaju,  sveta in neomadeževana – brez madeža,  hibe ali česa podobnega.</TD>
-</TR>
-<TR>
-<TD >Enako bi morali tudi možje ljubiti svojo ženo kakor svoje telo. Kdor ljubi svojo ženo,  ljubi sebe, </TD>
-</TR>
-<TR>
-<TD >saj ni nihče nikoli sovražil svojega telesa,  ampak ga neguje in ljubeče skrbi zanj kakor Kristus za občino.</TD>
-</TR>
-<TR>
-<TD >Mi smo namreč deli njegovega telesa.</TD>
-</TR>
-<TR>
-<TD >V Svetih spisih piše: »Zato bo moški zapustil očeta in mamo ter se bo držal svoje žene in postala bosta eno.«</TD>
-</TR>
-<TR>
-<TD >Ta sveta skrivnost je velika. Res je,  da govorim o Kristusu in občini, </TD>
-</TR>
-<TR>
-<TD >vendar mora tudi vsak od vas ljubiti svojo ženo,  tako kakor ljubi sebe. Žena pa naj svojega moža globoko spoštuje.</TD>
-</TR>
-<TR>
-<TD >Efežanom 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >Otroci,  bodite poslušni svojim staršem,  kakor to želi Gospod,  ker je tako prav.</TD>
-</TR>
-<TR>
-<TD >Zapoved »Spoštuj svojega očeta in svojo mamo« je prva zapoved,  skupaj s katero je bila dana tudi obljuba:</TD>
-</TR>
-<TR>
-<TD >»Da ti bo šlo dobro in boš dolgo živel na zemlji.«</TD>
-</TR>
-<TR>
-<TD >In vi,  očetje,  ne dražite svojih otrok,  ampak jih vzgajajte v skladu z Jehovovimi merili in napotki.</TD>
-</TR>
-<TR>
-<TD >Vi,  sužnji,  bodite svojim zemeljskim gospodarjem poslušni z globokim spoštovanjem in iz vsega srca,  kakor ste poslušni Kristusu.</TD>
-</TR>
-<TR>
-<TD >Takšni ne bodite samo takrat,  kadar vas kdo opazuje,  in tega ne delajte zato,  da bi ugajali ljudem,  ampak bodite poslušni kot Kristusovi sužnji,  ki izpolnjujejo Božjo voljo iz vsega srca.</TD>
-</TR>
-<TR>
-<TD >Svojemu gospodarju sužnjujte s pravim stališčem,  kot bi sužnjevali Jehovu,  ne pa ljudem, </TD>
-</TR>
-<TR>
-<TD >saj veste,  da bo Jehova vsakega,  pa naj je suženj ali svoboden,  nagradil za vse,  kar dela dobrega.</TD>
-</TR>
-<TR>
-<TD >Tudi vi,  gospodarji,  ravnajte enako s svojimi sužnji in jim ne grozite,  saj veste,  da imate tako vi kot oni istega Gospodarja v nebesih,  in ta ni pristranski.</TD>
-</TR>
-<TR>
-<TD >Nazadnje vas še spodbujam: še naprej črpajte moč od Gospoda,  saj je zelo močan.</TD>
-</TR>
-<TR>
-<TD >Nadenite si celotno Božjo bojno opremo,  da boste lahko kljub Hudičevim zvijačam ostali neomajni.</TD>
-</TR>
-<TR>
-<TD >Ne bojujemo se namreč proti ljudem iz mesa in krvi,  ampak proti vladam,  oblastem in vladarjem tega temačnega sveta,  proti hudobnim duhovnim silam v območju nebes.</TD>
-</TR>
-<TR>
-<TD >Zato si nadenite celotno Božjo bojno opremo,  da se boste lahko uprli sovražniku,  ko vas bo napadel,  in da boste lahko,  potem ko se boste povsem pripravili,  ostali neomajni.</TD>
-</TR>
-<TR>
-<TD >Bodite torej neomajni,  tako da imate na sebi pas resnice,  da imate na prsih oklep pravičnosti</TD>
-</TR>
-<TR>
-<TD >in da ste obuti v pripravljenost oznanjati dobro novico miru.</TD>
-</TR>
-<TR>
-<TD >Poleg vsega tega vzemite velik ščit vere,  s katerim boste lahko pogasili vse goreče puščice Hudobnega.</TD>
-</TR>
-<TR>
-<TD >Nadenite si tudi čelado rešitve in vzemite v roko meč duha,  ki je Božja beseda.</TD>
-</TR>
-<TR>
-<TD >Hkrati pa z vsakršno molitvijo in gorečo prošnjo ob vsaki priložnosti pod vodstvom svetega duha molite. Zato ostanite budni in vztrajno goreče prosite za vse svete.</TD>
-</TR>
-<TR>
-<TD >Molite tudi zame,  da bi mi bile dane prave besede,  ko bom govoril. Tako bom lahko pogumno razodeval sveto skrivnost dobre novice, </TD>
-</TR>
-<TR>
-<TD >zaradi katere služim kot veleposlanik v verigah,  in bom o njej neustrašno govoril,  kot je tudi prav,  da govorim.</TD>
-</TR>
-<TR>
-<TD >Tihik,  ljubljeni brat in Gospodov zvesti služabnik,  vam bo več povedal o tem,  kaj delam in kako se imam.</TD>
-</TR>
-<TR>
-<TD >Njega pošiljam k vam prav zato,  da boste izvedeli,  kako je z nami,  in da bo potolažil vaše srce.</TD>
-</TR>
-<TR>
-<TD >Naj Bog,  Oče,  in Gospod Jezus Kristus naklonita bratom mir in ljubezen skupaj z vero.</TD>
-</TR>
-<TR>
-<TD >Naj bo Božja nezaslužena dobrota z vsemi,  ki imajo neugasljivo ljubezen do našega Gospoda Jezusa Kristusa.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Efežanom','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Efežanom:"Efežanom 1. poglavje",K:"",NZ:""},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:1,Efežanom:"Jaz. Pavel. ki sem po Božji volji apostol Kristusa Jezusa. pišem to pismo svetim. ki so v Efezu in so zvesti učenci Kristusa Jezusa.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:2,Efežanom:"Naj vam Bog. naš Oče. in Gospod Jezus Kristus izkažeta nezasluženo dobroto in naklonita mir.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:3,Efežanom:"Naj bo hvaljen Bog in Oče našega Gospoda Jezusa Kristusa. ker nas je kot Kristusove učence blagoslovil z vsakovrstnimi duhovnimi blagoslovi v nebesih.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:4,Efežanom:"Bog nas je že pred nastankom sveta izbral. da bi bili združeni s Kristusom. Izbral nas je. da bi izkazovali ljubezen in da bi bili v njegovih očeh sveti in brez madeža.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:5,Efežanom:"Že vnaprej je namreč odredil. da nas bo po Jezusu Kristusu posvojil za svoje otroke. ker ga je to veselilo in ker je bila takšna njegova volja.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:6,Efežanom:"To je naredil zato. da bi ljudje hvalili njegovo veličastno nezasluženo dobroto. ki nam jo je prijazno izkazal po svojem ljubljenem Sinu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:7,Efežanom:"Zaradi odkupnine. ki jo je Sin plačal s svojo krvjo. smo osvobojeni. da. zaradi Božje velike nezaslužene dobrote so nam odpuščeni prestopki.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:8,Efežanom:"Bog nam je to nezasluženo dobroto naklonil v obilju skupaj z vso modrostjo in sposobnostjo razumevanja.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:9,Efežanom:"ko nam je razodel sveto skrivnost svoje volje. Ta skrivnost je v soglasju z njegovo željo in namenom.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:10,Efežanom:"da se vse uredi. ko pride za to določeni čas. in se tako vse – to. kar je v nebesih. in to. kar je na zemlji – zbere. da bi bilo združeno s Kristusom. Da. vse se bo zbralo. da bi bilo združeno z njim.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:11,Efežanom:"s katerim smo povezani in skupaj s katerim smo bili izbrani za dediče. Bog. ki vse svoje odločitve izpelje skladno s svojo voljo. nas je vnaprej izbral. tako kot se je namenil.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:12,Efežanom:"da bi po nas. ki smo prvi zaupali v Kristusa. drugi ljudje slavili in hvalili Boga.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:13,Efežanom:"Tudi vi ste začeli zaupati vanj. potem ko ste slišali resnico. torej dobro novico o svoji rešitvi. In potem ko ste začeli verovati. ste bili po Kristusu zapečateni z obljubljenim svetim duhom.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:14,Efežanom:"Ta duh je vnaprejšnje zagotovilo. da bomo prejeli našo dediščino. Bog je vse to naredil zato. da bi z odkupnino osvobodil svoje ljudstvo sebi v hvalo in slavo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:15,Efežanom:"Zato se tudi jaz. odkar sem slišal o veri. ki jo imate v Gospoda Jezusa. in o ljubezni. ki jo kažete s tem. kako ravnate z vsemi svetimi.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:16,Efežanom:"Bogu nenehno zahvaljujem za vas. Stalno vas omenjam v svojih molitvah.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:17,Efežanom:"da bi vam Bog našega Gospoda Jezusa Kristusa. veličastni Oče. dal modrost in sposobnost. da bi razumeli stvari. ki jih razodeva. in bi si tako pridobili točno spoznanje o njem.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:18,Efežanom:"Odprl vam je srce. da bi videli in spoznali. h kateremu upanju vas je poklical. kakšno veličastno bogastvo hrani kot dediščino za svete",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:19,Efežanom:"in kako izjemno velika je njegova moč. ki deluje na nas. ki verujemo. Veličina njegove moči se je videla.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:20,Efežanom:"ko je Kristusa obudil od mrtvih in ga v nebesih posadil sebi na desno.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:21,Efežanom:"Povišal ga je visoko nad vsako vladavino. oblast. moč. kraljestvo in nad vsako ime. pa ne le v tej stvarnosti. ampak tudi v prihodnji.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:22,Efežanom:"Prav tako je vse podredil pod njegove noge in ga postavil za glavo nad vsem. kar je povezano z občino.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:1,V:23,Efežanom:"Občina je njegovo telo in je prežeta z vsem. kar je povezano z njim. in on v vseh pogledih napolnjuje vse.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:2,V:0,Efežanom:"Efežanom 2. poglavje",K:"",NZ:""},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:1,Efežanom:"Poleg tega vas je Bog oživil. čeprav ste bili mrtvi zaradi svojih prestopkov in grehov.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:2,Efežanom:"Nekoč ste živeli tako. kot živi ta svet. kot hoče vladar. ki ima oblast nad zrakom oziroma duhom. ki zdaj deluje v neposlušnih ljudeh.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:3,Efežanom:"Res je. nekoč smo se vsi mi vedli kot oni. Živeli smo v skladu s telesnimi željami. tako da smo ubogali svoje telo in misli. ter smo bili. tako kot vsi drugi. po naravi ljudje. ki si zaslužijo Božjo jezo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:4,Efežanom:"Toda Bog je neizmerno usmiljen in nas je zaradi svoje velike ljubezni. ki nam jo je izkazal.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:5,Efežanom:"oživil in nas združil s Kristusom. ko smo bili še mrtvi zaradi prestopkov. Rešil vas je po svoji nezasluženi dobroti.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:6,Efežanom:"Poleg tega nas je kot učence Kristusa Jezusa oživil in nas posadil v nebesa.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:7,Efežanom:"da bi nam v prihodnosti z naklonjenostjo. ki jo čuti do nas. učencev Kristusa Jezusa. izkazal svojo izjemno nezasluženo dobroto.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:8,Efežanom:"S to nezasluženo dobroto ste bili rešeni zaradi svoje vere. Vendar to ni vaša zasluga. ampak je to Božji dar.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:9,Efežanom:"Ne. to ni zaradi tega. kar delate. da ne bi nihče imel razloga za hvaljenje.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:10,Efežanom:"Mi smo delo Božjih rok. in ker smo učenci Kristusa Jezusa. smo bili ustvarjeni za dobra dela. ki jih je Bog že vnaprej določil. da bi jih opravljali.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:11,Efežanom:"Zato ne pozabite: po rodu ste iz drugih narodov in nekoč so vas tisti. ki so jih imenovali obrezani. ker so bili obrezani na telesu. imenovali neobrezanci.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:12,Efežanom:"Takrat niste poznali Kristusa. bili ste odtujeni od izraelskega naroda in niste bili del zavez. ki so temeljile na Božji obljubi. V svetu ste bili brez upanja in niste poznali Boga.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:13,Efežanom:"Toda čeprav ste bili nekoč daleč od Boga. ste se kot učenci Kristusa Jezusa približali Bogu zaradi Kristusove krvi.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:14,Efežanom:"Kristus nam je namreč prinesel mir. On je iz dveh skupin naredil eno in podrl vmesni zid. ki ju je ločeval.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:15,Efežanom:"S svojim telesom je odpravil vzrok za sovraštvo. namreč Zakonik. ki je sestavljen iz zapovedi in odredb. da bi iz dveh skupin. ki sta združeni z njim. ustvaril eno novo ljudstvo in vzpostavil mir.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:16,Efežanom:"Poleg tega je s svojo smrtjo na mučilnem kolu obema skupinama omogočil povsem miren odnos z Bogom. da bi tako postali eno telo. S svojo smrtjo je namreč odstranil vzrok za sovraštvo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:17,Efežanom:"Prišel je in oznanil dobro novico miru vam. ki ste bili daleč od Boga. in tem. ki so mu bili blizu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:18,Efežanom:"Po njem imamo namreč pripadniki obeh ljudstev neoviran dostop do Očeta. ker vsi prejemamo istega duha.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:19,Efežanom:"Zato niste več tujci in priseljenci. ampak ste sodržavljani svetih in člani Božje družine.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:20,Efežanom:"Zgrajeni ste bili na temelju apostolov in prerokov. temeljni vogelni kamen pa je sam Kristus Jezus.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:21,Efežanom:"V enotnosti z njim je vsa zgradba skladno sestavljena in raste v svet tempelj za Jehova.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:2,V:22,Efežanom:"Ker ste povezani s Kristusom. se tako iz vas kot iz drugih gradi prostor. v katerem prebiva Bog. ker je tam njegov duh.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:3,V:0,Efežanom:"Efežanom 3. poglavje",K:"",NZ:""},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:1,Efežanom:"Jaz. Pavel. sem v ječi zato. ker pripadam Kristusu Jezusu in ker sem pomagal vam. ki ste iz drugih narodov.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:2,Efežanom:"Gotovo ste slišali o tem. da mi je bila zaupana odgovornost. da vam pomagam imeti koristi od Božje nezaslužene dobrote.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:3,Efežanom:"Razodeta mi je bila namreč sveta skrivnost. kot sem to že prej na kratko napisal.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:4,Efežanom:"Ko torej to berete. lahko ugotovite. kako jaz dojemam sveto skrivnost o Kristusu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:5,Efežanom:"Bog te skrivnosti ni razkril prejšnjim rodovom. jo je pa zdaj po svojem duhu razkril svetim apostolom in prerokom.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:6,Efežanom:"Skrivnost je ta. da bodo ljudje iz drugih narodov. ki so zaradi dobre novice povezani s Kristusom Jezusom. dediči skupaj z nami in deli istega telesa. Poleg tega se bo na njih izpolnila ista Božja obljuba kot na nas.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:7,Efežanom:"Jaz sem zdaj tisti. ki vam pomaga razumeti to skrivnost. in sicer zaradi Božje nezaslužene dobrote. ki sem jo po delovanju Božje moči prejel kot brezplačni dar.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:8,Efežanom:"Meni. ki sem od vseh svetih najmanj pomemben. je bila izkazana ta nezaslužena dobrota. da ljudem iz drugih narodov oznanjam dobro novico o nedoumljivem Kristusovem bogastvu",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:9,Efežanom:"in vsem omogočim videti. kako je Bog. ki je vse ustvaril. uredil. da se razodeva sveta skrivnost. ki jo je dolge veke skrival.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:10,Efežanom:"To pa je bilo zato. da bi zdaj vlade in oblasti v nebesih po občini spoznale mnoge vidike Božje modrosti.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:11,Efežanom:"kar je skladno z večnim namenom. ki ga ima Bog v zvezi z našim Gospodom Kristusom Jezusom.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:12,Efežanom:"Zaradi vere v Kristusa lahko brez zadržkov govorimo in se neovirano bližamo Bogu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:13,Efežanom:"Zato vas prosim. da zaradi mojih stisk. ki jih doživljam v vaše dobro. ne obupate. saj vam prinašajo slavo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:14,Efežanom:"Zaradi tega upogibam kolena pred Očetom.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:15,Efežanom:"ki mu dolguje svoj obstoj vsaka družina v nebesih in na zemlji.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:16,Efežanom:"Molim. da bi vas Bog v svoji veliki slavi z močjo svojega duha ojačal kot ljudi. kakršni ste znotraj.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:17,Efežanom:"in da bi zaradi vaše vere Kristus prebival v vašem srcu skupaj z ljubeznijo. Bodite ukoreninjeni in stojte na trdnem temelju.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:18,Efežanom:"da bi tako lahko skupaj z vsemi svetimi popolnoma dojeli. kaj so širina. dolžina. višina in globina resnice.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:19,Efežanom:"ter da bi spoznali Kristusovo ljubezen. ki je pomembnejša od znanja. Tako boste lahko dobili polno mero dobrih lastnosti. ki jih daje Bog.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:20,Efežanom:"Bog lahko po svoji moči. ki deluje v nas. naredi neizmerno več od vsega tega. kar prosimo ali kar si zamišljamo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:3,V:21,Efežanom:"Njemu naj gre slava po občini in po Kristusu Jezusu iz roda v rod. v vso večnost. Amen.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:4,V:0,Efežanom:"Efežanom 4. poglavje",K:"",NZ:""},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:1,Efežanom:"Zato vas jaz. ki sem v ječi. ker sem Gospodov učenec. rotim: Živite vredno tega. za kar ste bili poklicani.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:2,Efežanom:"tako da ste vedno ponižni. blagi in potrpežljivi. Med seboj se prenašajte z ljubeznijo",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:3,Efežanom:"in si na vso moč prizadevajte ohranjati enotnost. ki izvira iz svetega duha. in živeti v miru.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:4,Efežanom:"Telo je eno in duh je en. tako kot je tudi upanje. h kateremu ste bili poklicani. samo eno",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:5,Efežanom:"en Gospod. ena vera. en krst.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:6,Efežanom:"en Bog in Oče vseh. ki je nad vsemi in deluje po vseh in v vseh.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:7,Efežanom:"Vsakemu od nas je bila izkazana nezaslužena dobrota in ta brezplačni dar nam je podelil Kristus.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:8,Efežanom:"V Svetih spisih namreč piše: »Ko se je povzpel na višavo. je odpeljal ujetnike. Dal je darove v obliki ljudi.«",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:9,Efežanom:"Kaj pa pomeni besedna zveza »se je povzpel«. če ne tega. da se je prej spustil v nižje kraje. to je na zemljo?",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:10,Efežanom:"In prav ta. ki se je spustil. je tudi tisti. ki se je povzpel daleč nad vsa nebesa. da bi bilo po njem vse izpolnjeno.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:11,Efežanom:"Nekatere je postavil za apostole. nekatere za preroke. nekatere za oznanjevalce dobre novice. nekatere za pastirje in učitelje.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:12,Efežanom:"Postavil jih je. da bi usposabljali svete. služili drugim in krepili Kristusovo telo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:13,Efežanom:"dokler ne pridemo vsi do enotnosti v veri in si ne pridobimo točnega spoznanja o Božjem Sinu. dokler ne odrastemo in postanemo popolnoma zreli kakor Kristus.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:14,Efežanom:"Zato ne bodimo več otroci. ki jih premetava kakor na valovih in jih sem ter tja nosi vsak veter nauka. ker poslušajo ljudi. ki se zatekajo k prevari in druge zvijačno vodijo v zmoto.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:15,Efežanom:"Nasprotno. govorimo resnico in iz ljubezni rastimo v vsem. da bi bili podobni Kristusu. ki je glava.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:16,Efežanom:"Zaradi njega so vsi telesni deli skladno sestavljeni in narejeni tako. da med seboj sodelujejo s pomočjo vsakega sklepa. ki opravlja svojo nalogo. Ko vsak posamezni del telesa deluje. kot je treba. to prispeva k temu. da telo raste in se krepi z ljubeznijo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:17,Efežanom:"Zato vam pravim in vas rotim v imenu Gospoda: ne živite več tako. kot živijo neverniki. ki jih vodi samo njihovo nekoristno razmišljanje.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:18,Efežanom:"Njihov um je v temi in življenje. ki ga ponuja Bog. jim je tuje. saj so po svoji lastni volji v nevednosti in imajo nedovzetno srce.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:19,Efežanom:"Izgubili so vsak čut za to. kaj je moralno. vedejo se predrzno in nenasitno počenjajo vsakršno nečistost.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:20,Efežanom:"Toda vi ste se naučili. da Kristus ni takšen.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:21,Efežanom:"če je seveda bilo to. kar ste slišali in o čemer ste bili poučeni. skladno z resnico. ki jo je Jezus učil.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:22,Efežanom:"Poučeni ste bili. da morate odložiti staro osebnost. ki se je oblikovala pod vplivom vašega prejšnjega vedenja in jo kvarijo njene varljive želje.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:23,Efežanom:"Še naprej morate obnavljati svoj način razmišljanja",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:24,Efežanom:"in si oblačiti novo osebnost. ki je bila ustvarjena po Božji volji in odseva resnično pravičnost ter vdanost.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:25,Efežanom:"Zato zdaj. ko ste odložili laž. govorite resnico drug z drugim. saj smo deli telesa. ki so odvisni drug od drugega.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:26,Efežanom:"Če se razjezite. nikar ne grešite. Naj se ne zgodi. da bi sonce zašlo. vi pa bi bili še vedno jezni",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:27,Efežanom:"ne dajte Hudiču priložnosti. da vpliva na vas.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:28,Efežanom:"Kdor krade. naj ne krade več. ampak naj raje krepko poprime za delo in pošteno dela s svojimi rokami. da bo lahko kaj dal tistemu. ki je v stiski.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:29,Efežanom:"Naj iz vaših ust ne pride nobena pokvarjena beseda. ampak le to. kar bo za poslušalce koristno in jih bo okrepilo. ko bo to potrebno.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:30,Efežanom:"Prav tako ne žalostite Božjega svetega duha. s katerim ste bili zapečateni za dan. ko boste osvobojeni z odkupnino.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:31,Efežanom:"Znebite se vsakršne škodoželjne zagrenjenosti. jeze. besa. vpitja in žaljivega govorjenja pa tudi vseh drugih škodljivih stvari.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:4,V:32,Efežanom:"Raje bodite drug do drugega prijazni in polni najgloblje sočutnosti ter si velikodušno odpuščajte. tako kot je tudi Bog po Kristusu velikodušno odpustil vam.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:5,V:0,Efežanom:"Efežanom 5. poglavje",K:"",NZ:""},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:1,Efežanom:"Zato kot Božji ljubljeni otroci posnemajte Boga",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:2,Efežanom:"in izkazujte ljubezen. kakršno je izkazoval Kristus. On nas je ljubil in dal samega sebe za nas kot daritev in žrtev. v prijeten vonj Bogu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:3,Efežanom:"Spolna nemorala. kakršna koli nečistost in pohlep naj se med vami niti ne omenjajo. saj se to za svete ne spodobi.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:4,Efežanom:"Prav tako naj med vami ne bo sramotnega vedenja. ne nespametnega govorjenja. ne vulgarnega šaljenja. kar je vse nespodobno. ampak se raje zahvaljujte Bogu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:5,Efežanom:"Vi namreč veste in se tudi zavedate. da noben človek. ki se vdaja spolni nemorali. ali nečist človek. ali pohlepnež (pohlep je namreč oblika malikovanja) nima dediščine v Kristusovem in Božjem kraljestvu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:6,Efežanom:"Naj vas nihče ne zavaja s praznimi besedami. saj bo zaradi prej omenjenega neposlušne ljudi zadela Božja jeza.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:7,Efežanom:"Zato ne imejte z njimi nič skupnega.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:8,Efežanom:"Nekoč ste namreč bili v temi. zdaj pa ste v svetlobi. ker pripadate Gospodu. Živite kot otroci svetlobe.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:9,Efežanom:"saj je sad svetlobe sestavljen iz vsakršne dobrote. pravičnosti in resnice.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:10,Efežanom:"Nenehno preverjajte. kaj ugaja Gospodu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:11,Efežanom:"in ne sodelujte več pri nekoristnih delih. ki pripadajo temi. ampak raje razkrijte. kakšna v resnici so.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:12,Efežanom:"To. kar ljudje skrivaj počenjajo. je namreč sramotno celo omenjati.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:13,Efežanom:"Vse. kar je izpostavljeno svetlobi. je razkrito. in vse. kar je razkrito. postane svetloba.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:14,Efežanom:"Zato je rečeno: »Zbudi se. ti. ki spiš. vstani od mrtvih in Kristus te bo obsijal.«",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:15,Efežanom:"Skrbno torej pazite. kako živite. Ne živite kot nemodri. ampak kot modri.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:16,Efežanom:"in kar najbolje izrabljajte svoj čas. ker so dnevi. v katerih živimo. hudi.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:17,Efežanom:"Zato ne bodite več nerazumni. ampak si prizadevajte razumeti. kaj je Jehovova volja.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:18,Efežanom:"Poleg tega se ne opijajte z vinom. saj to vodi v razbrzdanost. ampak se napolnjujte s svetim duhom.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:19,Efežanom:"Drug drugega spodbujajte s psalmi. hvalnicami Bogu in duhovnimi pesmimi. Iz vsega srca pojte in igrajte Jehovu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:20,Efežanom:"V imenu našega Gospoda Jezusa Kristusa se vedno za vse zahvaljujte našemu Bogu in Očetu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:21,Efežanom:"Podrejajte se drug drugemu iz globokega spoštovanja do Kristusa.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:22,Efežanom:"Žene naj se podrejajo svojemu možu. kakor se podrejajo Gospodu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:23,Efežanom:"Mož je namreč glava svoji ženi. kakor je tudi Kristus glava občini. torej svojemu telesu. katerega rešitelj je.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:24,Efežanom:"Kakor je občina podrejena Kristusu. tako naj bodo tudi žene vedno podrejene svojemu možu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:25,Efežanom:"Možje. ljubite svojo ženo. kakor je tudi Kristus ljubil občino in dal samega sebe zanjo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:26,Efežanom:"da bi jo posvetil. tako da bi jo očistil z vodo. torej z Božjo besedo.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:27,Efežanom:"Kristus je to naredil zato. da bi občina pred njim stala v vsem svojem sijaju. sveta in neomadeževana – brez madeža. hibe ali česa podobnega.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:28,Efežanom:"Enako bi morali tudi možje ljubiti svojo ženo kakor svoje telo. Kdor ljubi svojo ženo. ljubi sebe.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:29,Efežanom:"saj ni nihče nikoli sovražil svojega telesa. ampak ga neguje in ljubeče skrbi zanj kakor Kristus za občino.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:30,Efežanom:"Mi smo namreč deli njegovega telesa.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:31,Efežanom:"V Svetih spisih piše: »Zato bo moški zapustil očeta in mamo ter se bo držal svoje žene in postala bosta eno.«",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:32,Efežanom:"Ta sveta skrivnost je velika. Res je. da govorim o Kristusu in občini.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:5,V:33,Efežanom:"vendar mora tudi vsak od vas ljubiti svojo ženo. tako kakor ljubi sebe. Žena pa naj svojega moža globoko spoštuje.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:6,V:0,Efežanom:"Efežanom 6. poglavje",K:"",NZ:""},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:1,Efežanom:"Otroci. bodite poslušni svojim staršem. kakor to želi Gospod. ker je tako prav.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:2,Efežanom:"Zapoved »Spoštuj svojega očeta in svojo mamo« je prva zapoved. skupaj s katero je bila dana tudi obljuba:",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:3,Efežanom:"»Da ti bo šlo dobro in boš dolgo živel na zemlji.«",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:4,Efežanom:"In vi. očetje. ne dražite svojih otrok. ampak jih vzgajajte v skladu z Jehovovimi merili in napotki.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:5,Efežanom:"Vi. sužnji. bodite svojim zemeljskim gospodarjem poslušni z globokim spoštovanjem in iz vsega srca. kakor ste poslušni Kristusu.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:6,Efežanom:"Takšni ne bodite samo takrat. kadar vas kdo opazuje. in tega ne delajte zato. da bi ugajali ljudem. ampak bodite poslušni kot Kristusovi sužnji. ki izpolnjujejo Božjo voljo iz vsega srca.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:7,Efežanom:"Svojemu gospodarju sužnjujte s pravim stališčem. kot bi sužnjevali Jehovu. ne pa ljudem.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:8,Efežanom:"saj veste. da bo Jehova vsakega. pa naj je suženj ali svoboden. nagradil za vse. kar dela dobrega.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:9,Efežanom:"Tudi vi. gospodarji. ravnajte enako s svojimi sužnji in jim ne grozite. saj veste. da imate tako vi kot oni istega Gospodarja v nebesih. in ta ni pristranski.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:10,Efežanom:"Nazadnje vas še spodbujam: še naprej črpajte moč od Gospoda. saj je zelo močan.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:11,Efežanom:"Nadenite si celotno Božjo bojno opremo. da boste lahko kljub Hudičevim zvijačam ostali neomajni.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:12,Efežanom:"Ne bojujemo se namreč proti ljudem iz mesa in krvi. ampak proti vladam. oblastem in vladarjem tega temačnega sveta. proti hudobnim duhovnim silam v območju nebes.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:13,Efežanom:"Zato si nadenite celotno Božjo bojno opremo. da se boste lahko uprli sovražniku. ko vas bo napadel. in da boste lahko. potem ko se boste povsem pripravili. ostali neomajni.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:14,Efežanom:"Bodite torej neomajni. tako da imate na sebi pas resnice. da imate na prsih oklep pravičnosti",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:15,Efežanom:"in da ste obuti v pripravljenost oznanjati dobro novico miru.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:16,Efežanom:"Poleg vsega tega vzemite velik ščit vere. s katerim boste lahko pogasili vse goreče puščice Hudobnega.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:17,Efežanom:"Nadenite si tudi čelado rešitve in vzemite v roko meč duha. ki je Božja beseda.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:18,Efežanom:"Hkrati pa z vsakršno molitvijo in gorečo prošnjo ob vsaki priložnosti pod vodstvom svetega duha molite. Zato ostanite budni in vztrajno goreče prosite za vse svete.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:19,Efežanom:"Molite tudi zame. da bi mi bile dane prave besede. ko bom govoril. Tako bom lahko pogumno razodeval sveto skrivnost dobre novice.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:20,Efežanom:"zaradi katere služim kot veleposlanik v verigah. in bom o njej neustrašno govoril. kot je tudi prav. da govorim.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:21,Efežanom:"Tihik. ljubljeni brat in Gospodov zvesti služabnik. vam bo več povedal o tem. kaj delam in kako se imam.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:22,Efežanom:"Njega pošiljam k vam prav zato. da boste izvedeli. kako je z nami. in da bo potolažil vaše srce.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:23,Efežanom:"Naj Bog. Oče. in Gospod Jezus Kristus naklonita bratom mir in ljubezen skupaj z vero.",K:"",NZ:"YQ"},
+{Knjiga:"Efežanom",Kr:"Ef",P:6,V:24,Efežanom:"Naj bo Božja nezaslužena dobrota z vsemi. ki imajo neugasljivo ljubezen do našega Gospoda Jezusa Kristusa.",K:"",NZ:"YQ"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

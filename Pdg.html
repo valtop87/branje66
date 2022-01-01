@@ -1,737 +1,359 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Pridigar</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Pridigar 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Besede pridigarja,  Davidovega sina,  kralja v Jeruzalemu.</TD>
-</TR>
-<TR>
-<TD >»To je popolnoma nesmiselno!« govori pridigar.<br>»To je popolnoma nesmiselno! Vse je nesmiselno!«</TD>
-</TR>
-<TR>
-<TD >Kakšno korist ima človek od vsega napornega dela, <br>s katerim se muči pod soncem?</TD>
-</TR>
-<TR>
-<TD >En rod odide,  drug rod pride, <br>zemlja pa ostane za večno.</TD>
-</TR>
-<TR>
-<TD >Sonce vzide in sonce zaide, <br>nato pa se hitro vrne na kraj,  kjer spet vzide.</TD>
-</TR>
-<TR>
-<TD >Veter piha proti jugu in se vrača na sever.<br>Ves čas kroži in kroži,  njegovo kroženje se ne ustavi.</TD>
-</TR>
-<TR>
-<TD >Vse reke tečejo v morje,  vendar se morje ne prenapolni.<br>Vračajo se tja,  od koder so pritekle,  da bi lahko znova tekle.</TD>
-</TR>
-<TR>
-<TD >Vse je utrujajoče, <br>nihče ne more tega niti opisati.<br>Oko gleda,  vendar mu ni dovolj, <br>in uho posluša,  vendar mu še vedno nekaj manjka.</TD>
-</TR>
-<TR>
-<TD >Kar je bilo,  se bo ponovilo, <br>in kar se je zgodilo,  se bo spet zgodilo.<br>Nič novega ni pod soncem.</TD>
-</TR>
-<TR>
-<TD >Ali je kje kaj,  za kar bi se lahko reklo »Poglej,  to je novo«?<br>Vse obstaja že od zdavnaj, <br>obstajalo je že pred nami.</TD>
-</TR>
-<TR>
-<TD >Nihče se ne spominja ljudi,  ki so živeli nekoč, <br>in nihče se ne bo spominjal tistih,  ki bodo šele prišli, <br>pa tudi teh se ne bo spominjal nihče od tistih,  ki bodo živeli še kasneje.</TD>
-</TR>
-<TR>
-<TD >Jaz,  pridigar,  sem bil v Jeruzalemu postavljen za kralja Izraelcem.</TD>
-</TR>
-<TR>
-<TD >Odločil sem se,  da bom z vso modrostjo,  ki jo premorem,  preučil in preiskal vse,  kar se dogaja na zemlji – da bom raziskal nesrečna opravila,  s katerimi je Bog zaposlil ljudi.</TD>
-</TR>
-<TR>
-<TD >Videl sem vse,  kar se dela pod soncem, <br>in ugotovil,  da je vse tako nesmiselno kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Tega,  kar je krivo,  ni mogoče zravnati<br>in tega,  česar ni,  ni mogoče prešteti.</TD>
-</TR>
-<TR>
-<TD >Nato sem sam pri sebi rekel: »Postal sem modrejši od vseh,  ki so bili pred menoj v Jeruzalemu. Moje srce si je pridobilo veliko modrosti in znanja.«</TD>
-</TR>
-<TR>
-<TD >Prizadeval sem si raziskati modrost pa tudi norost in neumnost,  vendar sem videl,  da je tudi to kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Veliko modrosti s seboj prinaša veliko razočaranja.<br>Tako si človek s kopičenjem znanja kopiči tudi bolečino.</TD>
-</TR>
-<TR>
-<TD >Pridigar 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Potem sem si rekel: »Preizkusil bom,  kakšne užitke prinaša življenje,  in videl,  ali me bo to osrečilo.« Ampak tudi to je bilo nesmiselno.</TD>
-</TR>
-<TR>
-<TD >O smehu sem rekel »Kakšna norost!«<br>in o užitkih »Od njih ni nobene koristi!«.</TD>
-</TR>
-<TR>
-<TD >Odločil sem se preiskati,  kaj dobrega prinese pitje vina,  vendar nisem nikoli popil toliko,  da bi izgubil razsodnost. Predajal sem se celo neumnostim. Hotel sem namreč ugotoviti,  kaj je za človeka najboljše,  da dela teh nekaj dni svojega življenja pod nebom.</TD>
-</TR>
-<TR>
-<TD >Lotil sem se velikih del. Zgradil sem si hiše in zasadil vinograde.</TD>
-</TR>
-<TR>
-<TD >Uredil sem si vrtove in parke ter v njih zasadil najrazličnejše sadno drevje.</TD>
-</TR>
-<TR>
-<TD >Naredil sem si zbiralnike vode,  da sem z njo namakal nasad mladih dreves.</TD>
-</TR>
-<TR>
-<TD >Priskrbel sem si služabnike in služabnice ter imel doma rojene služabnike. Nabavil sem si tudi veliko živine – tako velike kot male živali – več od vseh,  ki so bili pred menoj v Jeruzalemu.</TD>
-</TR>
-<TR>
-<TD >Nakopičil sem si srebro in zlato,  zaklade,  kakršne imajo le kralji in province. Priskrbel sem si pevce in pevke ter to,  kar je moškim v veliko veselje – družbo ženske,  da,  mnogih žensk.</TD>
-</TR>
-<TR>
-<TD >Postal sem velik,  večji od vseh,  ki so bili pred menoj v Jeruzalemu. Še naprej sem bil moder.</TD>
-</TR>
-<TR>
-<TD >Odrekel se nisem ničemur,  kar sem si zaželel. Prikrajšal se nisem za noben užitek. Moje srce se je veselilo zaradi vsega mojega dela in to je bilo plačilo za ves moj trud.</TD>
-</TR>
-<TR>
-<TD >Ko pa sem razmišljal o vsem,  kar sem s svojimi rokami naredil,  in o vsem,  kar sem z velikim trudom dosegel,  sem ugotovil,  da je vse tako nesmiselno kot lovljenje vetra. Nič pod soncem nima prave vrednosti.</TD>
-</TR>
-<TR>
-<TD >Potem sem se odločil preiskati modrost,  norost in neumnost. (Kaj lahko namreč še naredi človek,  ki pride za kraljem? Samo to,  kar je že bilo narejeno.)</TD>
-</TR>
-<TR>
-<TD >Ugotovil sem,  da ima modrost prednost pred neumnostjo,  tako kakor ima svetloba prednost pred temo.</TD>
-</TR>
-<TR>
-<TD >Modri ima odprte oči,  neumni pa hodi v temi. Ugotovil sem tudi to,  da bosta oba končala enako.</TD>
-</TR>
-<TR>
-<TD >Potem sem pomislil: »Končal bom enako kot neumnež. Kaj mi potem koristi tolikšna modrost?« Zato sem si rekel: »Tudi to je nesmiselno.«</TD>
-</TR>
-<TR>
-<TD >Niti spomin na modrega niti spomin na neumneža ni trajen. V dnevih,  ki prihajajo,  bo vsak pozabljen. In kako bo umrl moder človek? Tako kakor neumnež.</TD>
-</TR>
-<TR>
-<TD >Zato sem zasovražil življenje,  saj sem dobil občutek,  da vsako delo,  ki se opravlja pod soncem,  spremljajo težave. Vse je namreč tako nesmiselno kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Zasovražil sem vse,  za kar sem se toliko trudil,  ker bom moral to zapustiti človeku,  ki bo prišel za menoj.</TD>
-</TR>
-<TR>
-<TD >Kdove ali bo moder ali neumen. Pa vendar bo prevzel oblast nad vsem,  kar sem si z velikim trudom in modrostjo pridobil v življenju. Tudi to je nesmiselno.</TD>
-</TR>
-<TR>
-<TD >Zato sem začel obupavati nad vsem,  za kar sem se toliko trudil in si prizadeval.</TD>
-</TR>
-<TR>
-<TD >Naj človek še tako pridno dela in si pri tem pomaga z modrostjo,  znanjem in spretnostmi,  mora potem vse prepustiti nekomu,  ki se za to ni trudil. Tudi to je nesmiselno in velika tragedija.</TD>
-</TR>
-<TR>
-<TD >Kakšno korist ima človek od vsega svojega dela in zagnanosti,  ki ga žene,  da se toliko trudi pod soncem?</TD>
-</TR>
-<TR>
-<TD >Vse življenje mu namreč njegovo delo prinaša bolečine in nezadovoljstvo; še ponoči njegovo srce nima miru. Tudi to je nesmiselno.</TD>
-</TR>
-<TR>
-<TD >Za človeka ni nič boljšega,  kot da je in pije ter uživa pri svojem delu. Ugotovil sem,  da je tudi to od pravega Boga, </TD>
-</TR>
-<TR>
-<TD >saj ni nikogar,  ki bi jedel ali pil boljše kot jaz.</TD>
-</TR>
-<TR>
-<TD >Pravi Bog daje človeku,  ki mu ugaja,  modrost,  znanje in veselje,  grešnika pa zaposli s tem,  da zbira in spravlja skupaj imetje,  ki ga na koncu dobi tisti,  ki Bogu ugaja. Tudi to je tako nesmiselno kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Pridigar 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Vse ima svoj čas, <br>vsaka dejavnost pod nebom ima svoj čas:</TD>
-</TR>
-<TR>
-<TD >je čas rojevanja in čas umiranja, <br>čas sajenja in čas,  da se zasajeno izruva, </TD>
-</TR>
-<TR>
-<TD >je čas ubijanja in čas zdravljenja, <br>čas podiranja in čas zidanja, </TD>
-</TR>
-<TR>
-<TD >je čas jokanja in čas smejanja, <br>čas žalovanja in čas plesanja, </TD>
-</TR>
-<TR>
-<TD >je čas odstranjevanja kamnov in čas zbiranja kamnov, <br>čas objemanja in čas,  ko se ne objema, </TD>
-</TR>
-<TR>
-<TD >je čas iskanja in čas,  ko se človek sprijazni z izgubo, <br>čas spravljanja in čas,  ko se meče proč, </TD>
-</TR>
-<TR>
-<TD >je čas paranja in čas šivanja, <br>čas molčanja in čas govorjenja, </TD>
-</TR>
-<TR>
-<TD >je čas ljubezni in čas sovraštva, <br>čas vojne in čas miru.</TD>
-</TR>
-<TR>
-<TD >Kakšno korist ima delavec od vsega svojega truda?</TD>
-</TR>
-<TR>
-<TD >Opazoval sem opravila,  s katerimi je Bog zaposlil ljudi.</TD>
-</TR>
-<TR>
-<TD >Pravi Bog vse dela lepo,  in to ob pravem času. Ljudem je dal v srce celo željo po večnem življenju. Kljub temu ti ne bodo nikoli povsem doumeli njegovih del.</TD>
-</TR>
-<TR>
-<TD >Ugotovil sem,  da ni za ljudi nič boljšega,  kot da se veselijo in delajo dobro v svojem življenju, </TD>
-</TR>
-<TR>
-<TD >in da bi moral vsak človek jesti in piti ter pri vsem svojem delu uživati. To je Božji dar.</TD>
-</TR>
-<TR>
-<TD >Spoznal sem,  da vse,  kar pravi Bog naredi,  ostane za večno. Nič se ne more k temu dodati in nič se ne more odvzeti. Pravi Bog vse to dela zato,  da bi pri ljudeh vzbudil strahospoštovanje.</TD>
-</TR>
-<TR>
-<TD >Kar je,  je bilo že prej,  in kar bo,  je od nekdaj. Pravi Bog pa izpelje to,  za kar si ljudje prizadevajo.</TD>
-</TR>
-<TR>
-<TD >Opazil sem še,  da tam,  kjer bi morali biti pravica in pravičnost,  vlada hudobija.</TD>
-</TR>
-<TR>
-<TD >Rekel sem si: »Pravi Bog bo sodil pravičnega in hudobnega,  saj za vsako dejavnost in vsako dejanje pride čas.«</TD>
-</TR>
-<TR>
-<TD >Poleg tega sem si glede ljudi še rekel: »Pravi Bog jih preiskuje in jim odkriva,  da niso prav nič drugačni od živali.«</TD>
-</TR>
-<TR>
-<TD >Kakršen je namreč konec ljudi,  takšen je tudi konec živali – vsi končajo enako. Kakor umrejo živali,  tako umrejo tudi ljudje. In vsi imajo isto življenjsko silo,  tako da človek nima prednosti pred živalmi. Vse je nesmiselno!</TD>
-</TR>
-<TR>
-<TD >Vsi odhajajo na isti kraj. Vsi so nastali iz prahu in vsi se vračajo v prah.</TD>
-</TR>
-<TR>
-<TD >Kdo zares ve,  ali se življenjska sila ljudi dviga navzgor in ali gre življenjska sila živali dol v zemljo?</TD>
-</TR>
-<TR>
-<TD >Ugotovil sem,  da ni za ljudi nič boljšega,  kakor da uživajo pri svojem delu,  ker je to njihovo plačilo. Kdo jim namreč lahko pomaga videti,  kaj se dogaja,  ko jih ni več?</TD>
-</TR>
-<TR>
-<TD >Pridigar 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >Spet sem začel razmišljati o vsem zatiranju,  ki se dogaja pod soncem. Videl sem solze zatiranih,  toda ni bilo nikogar,  ki bi jih potolažil. Njihovi zatiralci so imeli moč,  toda ni bilo nikogar,  ki bi zatirane potolažil.</TD>
-</TR>
-<TR>
-<TD >Zato imam tiste,  ki so že umrli,  za srečnejše od tistih,  ki še živijo.</TD>
-</TR>
-<TR>
-<TD >Toda od obojih je na boljšem tisti,  ki se sploh še ni rodil in še ni videl slabih stvari,  ki se dogajajo pod soncem.</TD>
-</TR>
-<TR>
-<TD >Videl sem,  kako zelo se ljudje zaradi tekmovalnosti trudijo spretno opravljati svoje delo. Tudi to je tako nesmiselno kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Neumnež sedi križemrok,  medtem pa mu telo propada.</TD>
-</TR>
-<TR>
-<TD >Boljše je malo počitka kakor veliko truda in lovljenja vetra.</TD>
-</TR>
-<TR>
-<TD >Začel sem razmišljati še o enem nesmislu,  ki se dogaja pod soncem:</TD>
-</TR>
-<TR>
-<TD >Je človek,  ki je povsem sam in nima ne prijatelja,  ne sina,  ne brata. Pa vendar ne neha garati in mu nikoli ni dovolj bogastva. Ampak ali se sploh kdaj vpraša: »Le za koga se toliko trudim in se odrekam dobrim stvarem?« Tudi to je nesmisel in ena sama žalost.</TD>
-</TR>
-<TR>
-<TD >Boljše je dvema kakor enemu,  ker imata od svojega truda večjo korist.</TD>
-</TR>
-<TR>
-<TD >Če namreč eden pade,  mu lahko drugi pomaga vstati. Toda kaj,  če pade kdo,  ki je sam in nima nikogar,  ki bi mu pomagal vstati?</TD>
-</TR>
-<TR>
-<TD >Če dva ležita skupaj,  se ogrejeta. Toda kako naj se ogreje tisti,  ki je sam?</TD>
-</TR>
-<TR>
-<TD >Enega je mogoče premagati,  dva pa se lahko uspešno postavita po robu. Trojna vrvica se ne pretrga zlahka.</TD>
-</TR>
-<TR>
-<TD >Boljši je reven otrok,  ki je moder,  kakor star kralj,  ki je neumen in noče več poslušati opozoril.</TD>
-</TR>
-<TR>
-<TD >On je namreč prišel iz ječe,  da bi zakraljeval,  čeprav se je v kraljestvu tistega starega kralja rodil kot revež.</TD>
-</TR>
-<TR>
-<TD >Premišljeval sem o vseh,  ki živijo na zemlji,  in o tem,  kar se dogaja z mladim kraljem,  ki prevzame mesto predhodnika.</TD>
-</TR>
-<TR>
-<TD >Čeprav je teh,  ki ga podpirajo,  na začetku zelo veliko,  kasneje ljudje ne bodo zadovoljni z njim. Tudi to je tako nesmiselno kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Pridigar 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >Pazi na svoje korake,  kadar greš v hišo pravega Boga. Boljše je,  da greš tja poslušat kot pa darovat žrtve tako,  kot jih darujejo neumneži,  saj ne vedo,  da je to,  kar delajo,  slabo.</TD>
-</TR>
-<TR>
-<TD >Ust ne odpiraj prenagljeno in tvoje srce naj ne govori nepremišljeno pred pravim Bogom,  saj je pravi Bog v nebesih,  ti pa si na zemlji. Zato naj bo tvojih besed malo.</TD>
-</TR>
-<TR>
-<TD >Ljudje začnejo zaradi preobremenjenosti sanjati in zaradi preveč besed blebetati neumnosti.</TD>
-</TR>
-<TR>
-<TD >Kadar se zaobljubiš Bogu,  se zaobljube ne obotavljaj izpolniti,  saj mu neumneži niso v veselje. To,  kar obljubiš,  tudi izpolni.</TD>
-</TR>
-<TR>
-<TD >Boljše je,  da se ne zaobljubiš,  kot pa da se zaobljubiš in zaobljube ne izpolniš.</TD>
-</TR>
-<TR>
-<TD >Ne dovoli svojim ustom,  da bi te navedla na greh,  in ne govori pred angelom,  da je bila tvoja zaobljuba pomota. Zakaj bi s svojimi besedami razjezil pravega Boga in ga s tem primoral,  da uniči delo tvojih rok?</TD>
-</TR>
-<TR>
-<TD >Tako kot zaradi preobremenjenosti ljudje začnejo sanjati,  tako tudi zaradi mnogo besed začnejo prazno govoriti. Zato globoko spoštuj pravega Boga.</TD>
-</TR>
-<TR>
-<TD >Če v svoji deželi vidiš oblastnika,  ki zatira reveže,  ljudem krati pravico in ravna krivično,  ne bodi nad tem presenečen. Tega oblastnika namreč opazuje tisti,  ki je višji od njega,  nad njima pa so drugi,  ki imajo še višji položaj.</TD>
-</TR>
-<TR>
-<TD >Vsi ti ljudje imajo korist od pridelka dežele. Z obdelovanjem polja je poskrbljeno tudi za kraljeve potrebe.</TD>
-</TR>
-<TR>
-<TD >Kdor ljubi srebro,  mu srebra ni nikoli dovolj,  in kdor ljubi bogastvo,  ni z dobičkom nikoli zadovoljen. Tudi to je nesmisel.</TD>
-</TR>
-<TR>
-<TD >Večje ko je bogastvo,  več je tistih,  ki ga porabljajo. In kakšno korist ima človek od svojega bogastva,  razen tega,  da ga lahko gleda?</TD>
-</TR>
-<TR>
-<TD >Delavcu je spanje sladko,  pa naj je jedel malo ali veliko,  bogatašu pa njegovo bogastvo ne da spati.</TD>
-</TR>
-<TR>
-<TD >Videl sem veliko tragedijo,  ki se dogaja pod soncem: Človek si kopiči bogastvo sebi v nesrečo.</TD>
-</TR>
-<TR>
-<TD >Zaradi tveganega posla to svoje bogastvo izgubi,  in ko se mu rodi sin,  mu nima kaj zapustiti.</TD>
-</TR>
-<TR>
-<TD >Tako kot je človek iz maminega telesa prišel gol,  tako bo tudi odšel; odšel bo takšen,  kot je prišel. Ničesar od tega,  za kar se je toliko trudil,  ne more odnesti s seboj.</TD>
-</TR>
-<TR>
-<TD >Tudi to je velika tragedija: Človek odide takšen,  kot je prišel. In kakšno korist ima od tega,  da se toliko trudi za prazen nič?</TD>
-</TR>
-<TR>
-<TD >Poleg tega so vsi njegovi dnevi temačni; preživi jih ves razočaran,  bolan in jezen.</TD>
-</TR>
-<TR>
-<TD >Ugotovil sem,  da je za človeka dobro in primerno to,  da je in pije ter uživa pri vsem svojem napornem delu,  s katerim se teh nekaj dni svojega življenja,  ki mu ga je dal pravi Bog,  muči pod soncem. To je namreč človekovo plačilo.</TD>
-</TR>
-<TR>
-<TD >In če pravi Bog da človeku bogastvo in imetje ter mu omogoči,  da uživa v vsem tem,  bi moral človek sprejeti to svoje plačilo ter se veseliti pri svojem napornem delu. To je Božji dar.</TD>
-</TR>
-<TR>
-<TD >Tako bo komaj opazil,  kako hitro mineva njegovo življenje,  ker ga bo pravi Bog zaposlil s tem,  kar veseli njegovo srce.</TD>
-</TR>
-<TR>
-<TD >Pridigar 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >Opazil sem še eno tragedijo,  ki se dogaja pod soncem in je nekaj običajnega med ljudmi:</TD>
-</TR>
-<TR>
-<TD >pravi Bog daje nekomu bogastvo,  imetje in slavo,  tako da ima vse,  kar si želi,  pa vendar mu pravi Bog ne omogoči,  da bi to užival,  ampak pusti,  da to uživa drug človek. To je nesmiselno in zelo žalostno.</TD>
-</TR>
-<TR>
-<TD >Če bi človek imel sto otrok in bi živel mnogo let,  če bi dočakal visoko starost,  vendar bi umrl prej,  preden bi lahko užival v vsem dobrem,  kar ima,  potem moram reči,  da je mrtvorojeni otrok na boljšem kakor on.</TD>
-</TR>
-<TR>
-<TD >Ta otrok se je zaman rodil. Odšel je v temo in tema ovija njegovo ime.</TD>
-</TR>
-<TR>
-<TD >Čeprav ni nikoli videl sonca niti česar koli doživel,  je še vedno na boljšem kakor ta človek.</TD>
-</TR>
-<TR>
-<TD >Kaj človeku koristi,  če bi živel dvakrat po tisoč let,  pa v življenju ne bi nič užival? Ali ne odidejo na koncu vsi na isti kraj?</TD>
-</TR>
-<TR>
-<TD >Človek naporno dela samo zato,  da si napolni želodec,  pa vendar njegov tek ni nikoli potešen.</TD>
-</TR>
-<TR>
-<TD >Kakšno prednost ima modri pred neumnim in kaj ubogemu koristi,  da ve,  kako preživeti?</TD>
-</TR>
-<TR>
-<TD >Boljše je uživati v tem,  kar vidijo oči,  kot pa hrepeneti po nečem,  česar ni mogoče imeti. Tudi to je tako nesmiselno kot lovljenje vetra.</TD>
-</TR>
-<TR>
-<TD >Vse,  kar obstaja,  že ima svoje ime in prava narava človeka je znana. Človek se ne more prepirati z močnejšim od sebe.</TD>
-</TR>
-<TR>
-<TD >Več ko je besed,  več je praznega govorjenja. Kaj človeku sploh koristijo?</TD>
-</TR>
-<TR>
-<TD >Kdo ve,  kaj je najboljše,  da človek dela teh nekaj dni svojega nesmiselnega življenja,  ki minejo kakor senca? Kdo lahko človeku pove,  kaj se bo dogajalo pod soncem,  ko njega ne bo več?</TD>
-</TR>
-<TR>
-<TD >Pridigar 7. Poglavje</TD>
-</TR>
-<TR>
-<TD >Dobro ime je boljše od dragocenega olja in dan smrti je boljši od dneva rojstva.</TD>
-</TR>
-<TR>
-<TD >Boljše je iti v hišo,  v kateri žalujejo,  kakor v hišo,  v kateri imajo gostijo,  ker vsak človek dočaka svoj konec. Živi naj si to vzamejo k srcu.</TD>
-</TR>
-<TR>
-<TD >Boljša je žalost kakor smeh,  saj žalosten obraz izboljša srce.</TD>
-</TR>
-<TR>
-<TD >Srce modrih je v hiši,  v kateri žalujejo,  srce neumnih pa v hiši,  v kateri se veselijo.</TD>
-</TR>
-<TR>
-<TD >Boljše je poslušati opominjanje modrega kakor poslušati laskanje neumnih.</TD>
-</TR>
-<TR>
-<TD >Smeh neumneža je kakor prasketanje trnja,  ki gori pod loncem. Tudi to je nesmiselno.</TD>
-</TR>
-<TR>
-<TD >Zatiranje lahko modrega navede,  da ravna neumno,  in podkupnina pokvari srce.</TD>
-</TR>
-<TR>
-<TD >Boljši je konec nečesa kakor začetek. Boljše je biti potrpežljiv kakor ošaben.</TD>
-</TR>
-<TR>
-<TD >Ne bodi hitro užaljen,  saj užaljenost počiva v srcu neumnežev.</TD>
-</TR>
-<TR>
-<TD >Ne govori: »Včasih je bilo boljše,  kot je zdaj.« Ni namreč modro,  da to govoriš.</TD>
-</TR>
-<TR>
-<TD >Modrost skupaj z dediščino je nekaj dobrega. Koristna je za vse ljudi na zemlji.</TD>
-</TR>
-<TR>
-<TD >Modrost je namreč v zaščito in tudi denar je v zaščito,  toda prednost znanja in modrosti je v tem,  da ohranita pri življenju tistega,  ki ju ima.</TD>
-</TR>
-<TR>
-<TD >Razmisli o delih pravega Boga: kdo lahko zravna to,  kar je on skrivil?</TD>
-</TR>
-<TR>
-<TD >Ob dobrem dnevu izkazuj dobroto,  ob slabem dnevu pa pomisli,  da Bog dopušča tako dobre kot slabe dneve,  da ljudje ne bi mogli z gotovostjo vedeti,  kaj se jim bo zgodilo v prihodnosti.</TD>
-</TR>
-<TR>
-<TD >V svojem nesmiselnem življenju sem videl marsikaj – videl sem pravičnega,  ki je kljub svoji pravičnosti prezgodaj umrl,  in hudobnega,  ki je kljub svoji hudobnosti dolgo živel.</TD>
-</TR>
-<TR>
-<TD >Ne bodi prepravičen in ne kaži se pretirano modrega. Zakaj bi sam sebe spravljal v nesrečo?</TD>
-</TR>
-<TR>
-<TD >Ne dovoli,  da bi preveč podlegel grešnosti,  in ne bodi neumen. Zakaj bi prezgodaj umrl?</TD>
-</TR>
-<TR>
-<TD >Najboljše je,  da poslušaš tako prvo kot drugo svarilo. Tisti,  ki globoko spoštuje Boga,  se namreč ravna po obeh.</TD>
-</TR>
-<TR>
-<TD >Modremu modrost daje več moči kakor mestu deset mogočnih ljudi,  ki so v njem.</TD>
-</TR>
-<TR>
-<TD >Na zemlji ni pravičnega človeka,  ki bi vedno delal dobro in ne bi nikoli grešil.</TD>
-</TR>
-<TR>
-<TD >Ne zanimaj se za vse,  kar ljudje govorijo,  sicer se lahko zgodi,  da boš slišal svojega služabnika govoriti grde stvari o tebi.</TD>
-</TR>
-<TR>
-<TD >Globoko v sebi namreč dobro veš,  da si velikokrat tudi ti govoril grde stvari o drugih.</TD>
-</TR>
-<TR>
-<TD >Vse to sem preizkusil z vso modrostjo,  ki jo premorem,  in rekel: »Postal bom še modrejši.« Toda ni mi uspelo.</TD>
-</TR>
-<TR>
-<TD >Vse,  kar je in kar je bilo,  je nedoumljivo in zelo globoko. Kdo lahko to razume?</TD>
-</TR>
-<TR>
-<TD >Odločil sem se spoznati,  preiskati in najti modrost ter razlog,  zakaj so stvari takšne,  kot so. Odločil pa sem se tudi razumeti hudobno vedenje neumnih in nespametno ravnanje norcev.</TD>
-</TR>
-<TR>
-<TD >In ugotovil sem tole: ženska,  ki je kakor lovilna mreža,  ženska s srcem,  ki je kakor ribiška mreža,  in z rokami,  ki so kakor okovi,  je grenkejša od smrti. Kdor želi ugajati pravemu Bogu,  bo zbežal od nje,  grešnik pa se ji bo pustil ujeti.</TD>
-</TR>
-<TR>
-<TD >»Ugotovil sem naslednje, « govori pridigar. »Preiskoval sem stvari,  drugo za drugo,  da bi prišel do sklepa, </TD>
-</TR>
-<TR>
-<TD >toda tega,  kar sem iskal,  nisem našel. Med tisoč ljudmi sem našel enega pravičnega moškega,  toda pravične ženske med njimi nisem našel.</TD>
-</TR>
-<TR>
-<TD >Ugotovil sem samo to,  da je pravi Bog ustvaril ljudi poštene,  ampak oni so ubrali svojo pot.«</TD>
-</TR>
-<TR>
-<TD >Pridigar 8. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kdo je kakor moder človek? Kdo pozna rešitev težave? Zaradi modrosti človeku zasije obraz in strog videz se mu omehča.</TD>
-</TR>
-<TR>
-<TD >Jaz ti pravim: »Ubogaj kraljeve ukaze,  ker si to prisegel Bogu.</TD>
-</TR>
-<TR>
-<TD >Ko si pred kraljem,  ne odvihraj proč od njega. Ne zapletaj se v nič slabega,  saj lahko kralj naredi,  kar koli hoče.</TD>
-</TR>
-<TR>
-<TD >Kralj ima namreč zadnjo besedo. Kdo mu lahko očita: ‚Kaj pa delaš?«</TD>
-</TR>
-<TR>
-<TD >Tistega,  ki izpolnjuje ukaze,  ne bo doletelo nič slabega,  in kdor je modrega srca,  bo vedel,  kdaj in kako ukrepati.</TD>
-</TR>
-<TR>
-<TD >Ljudje imajo zelo veliko težav,  zato bi se morali vsega lotiti ob pravem času in na pravi način.</TD>
-</TR>
-<TR>
-<TD >Nihče ne ve,  kaj se bo zgodilo,  kaj šele to,  kako se bo zgodilo.</TD>
-</TR>
-<TR>
-<TD >Tako kot nihče nima v oblasti svoje življenjske sile in ji ne more preprečiti,  da bi ga zapustila,  tako tudi nihče nima oblasti nad dnevom smrti. Tako kot nikomur ni dovoljeno oditi sredi boja,  tako tudi hudobni ljudje ne bodo mogli ubežati posledicam svojega ravnanja.</TD>
-</TR>
-<TR>
-<TD >Vse to sem videl in razmislil o vsem,  kar se dogaja pod soncem,  medtem ko človek vlada človeku v njegovo škodo.</TD>
-</TR>
-<TR>
-<TD >Videl sem,  kako so pokopavali hudobne,  tiste,  ki so nekoč prihajali na sveti kraj in odhajali z njega. Toda kmalu zatem so jih v mestu,  v katerem so ravnali hudobno,  pozabili. Tudi to je nesmiselno.</TD>
-</TR>
-<TR>
-<TD >Ker se obsodbe za napačna dejanja ne izvršijo hitro,  si ljudje upajo delati to,  kar ni prav.</TD>
-</TR>
-<TR>
-<TD >Tudi če grešnik stokrat naredi kaj slabega in kljub temu dolgo živi,  vem,  da se bo za tiste,  ki globoko spoštujejo pravega Boga,  dobro izšlo,  zato ker ga spoštujejo.</TD>
-</TR>
-<TR>
-<TD >Toda za hudobnega se ne bo dobro izšlo in ne bo podaljšal svojega življenja,  ki je kakor senca,  zato ker ne spoštuje Boga.</TD>
-</TR>
-<TR>
-<TD >Na zemlji se dogaja še nekaj nesmiselnega: so pravični,  s katerimi se ravna,  kakor da bi bili hudobni,  in so hudobni,  s katerimi se ravna,  kakor da bi bili pravični. Jaz pravim,  da je tudi to nesmiselno.</TD>
-</TR>
-<TR>
-<TD >Zato ljudem priporočam,  naj se veselijo,  saj zanje ni nič boljšega pod soncem,  kakor da jedo,  pijejo in se veselijo. To naj jih spremlja pri njihovem pridnem delu vse dni njihovega življenja,  ki jim ga je dal pravi Bog.</TD>
-</TR>
-<TR>
-<TD >Odločen sem bil,  da si pridobim modrost in doumem vse dejavnosti na zemlji. Zaradi tega nisem spal ne podnevi ne ponoči.</TD>
-</TR>
-<TR>
-<TD >Nato sem razmislil o vseh delih pravega Boga in ugotovil naslednje: Ljudje ne morejo doumeti tega,  kar se dogaja pod soncem. Naj se še tako trudijo,  tega ne morejo doumeti. Tudi če trdijo,  da so dovolj modri,  da bi to spoznali,  tega ne morejo zares doumeti.</TD>
-</TR>
-<TR>
-<TD >Pridigar 9. Poglavje</TD>
-</TR>
-<TR>
-<TD >O vsem tem sem skrbno razmislil in prišel do naslednjega sklepa: Pravični in modri ter njihova dela so v rokah pravega Boga. Ljudje ne vedo nič o tem,  koliko ljubezni in sovraštva je obstajalo med tistimi,  ki so živeli pred njimi.</TD>
-</TR>
-<TR>
-<TD >Vse čaka enak konec – pravičnega in hudobnega,  dobrega,  čistega in nečistega,  tistega,  ki daruje žrtve,  in tistega,  ki jih ne daruje. Dober človek je na istem kot grešnik in tisti,  ki nepremišljeno prisega,  je na istem kot tisti,  ki je glede priseganja previden.</TD>
-</TR>
-<TR>
-<TD >Ena od žalostnih stvari,  ki se dogajajo pod soncem,  je ta: Ker vse čaka enak konec,  je srce ljudi polno hudobije. Dokler so živi,  je v njihovem srcu neumnost,  potem pa umrejo.</TD>
-</TR>
-<TR>
-<TD >Za tistega,  ki je živ,  še obstaja upanje,  saj je živ pes na boljšem kakor mrtev lev.</TD>
-</TR>
-<TR>
-<TD >Živi se zavedajo,  da bodo umrli,  mrtvi pa se ne zavedajo ničesar in ne prejemajo nobenega plačila več,  saj je ves spomin nanje izginil.</TD>
-</TR>
-<TR>
-<TD >Nič več ne čutijo ljubezni,  sovraštva in ljubosumnosti in ne sodelujejo več pri ničemer,  kar se dogaja pod soncem.</TD>
-</TR>
-<TR>
-<TD >Pojdi,  z veseljem jej hrano in veselega srca pij vino,  saj je to,  kar delaš,  pravemu Bogu všeč.</TD>
-</TR>
-<TR>
-<TD >Vedno imej na sebi bela oblačila in na glavo si vedno dajaj olje.</TD>
-</TR>
-<TR>
-<TD >Uživaj življenje s svojo ljubljeno ženo vse dni svojega nesmiselnega življenja,  ki ti ga je dal Bog – vse dni svojega nesmiselnega obstoja. To je namreč tvoje plačilo v življenju,  plačilo za vse tvoje naporno delo,  s katerim se mučiš pod soncem.</TD>
-</TR>
-<TR>
-<TD >Kar koli lahko narediš,  naredi po svojih najboljših močeh,  ker v grobu,  kamor odhajaš,  ni ne dela,  ne načrtovanja,  ne znanja,  ne modrosti.</TD>
-</TR>
-<TR>
-<TD >Še nekaj sem opazil na zemlji: hitrim ni zagotovljena zmaga v teku,  ne junakom zmaga v boju,  ne modrim hrana,  ne pametnim bogastvo,  ne tistim z znanjem uspeh,  saj vsakega od njih doletijo nepredvideni dogodki ob nepričakovanem času.</TD>
-</TR>
-<TR>
-<TD >Človek namreč ne ve,  kdaj bo prišel njegov čas. Tako kakor se ribe ujamejo v smrtonosno mrežo in kakor se ptice ujamejo v past,  tako tudi ljudi nesreča doleti nenadoma,  kakor bi se ujeli v zanko.</TD>
-</TR>
-<TR>
-<TD >Na zemlji sem videl še en primer modrosti,  ki je name naredil velik vtis:</TD>
-</TR>
-<TR>
-<TD >Bilo je majhno mesto in v njem malo ljudi. Potem pa je prišel mogočen kralj,  mesto obkolil in ga začel oblegati.</TD>
-</TR>
-<TR>
-<TD >V mestu je živel tudi neki reven človek,  ki je bil moder,  in ta je s svojo modrostjo rešil mesto. Vendar so kasneje na tega revnega človeka vsi pozabili.</TD>
-</TR>
-<TR>
-<TD >Rekel sem si: »Modrost je boljša od moči,  toda če je človek reven,  njegovo modrost prezirajo in njegovih besed ne poslušajo.«</TD>
-</TR>
-<TR>
-<TD >Boljše je poslušati blage besede modrih kakor vpitje tistega,  ki vlada neumnežem.</TD>
-</TR>
-<TR>
-<TD >Modrost je boljša od orožja,  en grešnik pa lahko uniči veliko dobrega.</TD>
-</TR>
-<TR>
-<TD >Pridigar 10. Poglavje</TD>
-</TR>
-<TR>
-<TD >Tako kot se zaradi mrtvih muh pokvari in usmradi dišeče olje,  tako tudi malo neumnosti pokvari ugled modrega človeka.</TD>
-</TR>
-<TR>
-<TD >Modrega njegovo srce vodi na pravo pot,  neumnega pa njegovo srce vodi na krivo pot.</TD>
-</TR>
-<TR>
-<TD >Neumnež pri vsem,  kar dela,  kaže,  da mu manjka modre presoje,  in vsakemu da vedeti,  da je neumen.</TD>
-</TR>
-<TR>
-<TD >Če vladarja zaradi tebe pograbi jeza,  ne zapuščaj svojega mesta,  saj mirnost odvrača človeka od velikih grehov.</TD>
-</TR>
-<TR>
-<TD >Še eno žalostno stvar sem videl na zemlji. Videl sem napako,  ki jo delajo tisti,  ki so na oblasti:</TD>
-</TR>
-<TR>
-<TD >neumneže postavljajo na visoke položaje,  sposobni pa ostanejo na nizkih položajih.</TD>
-</TR>
-<TR>
-<TD >Videl sem,  kako so služabniki jezdili na konjih,  dostojanstveniki pa so šli peš kakor služabniki.</TD>
-</TR>
-<TR>
-<TD >Tisti,  ki koplje jamo,  lahko sam pade vanjo in tistega,  ki podira kamnit zid,  lahko piči kača.</TD>
-</TR>
-<TR>
-<TD >Tisti,  ki lomi kamenje,  se lahko poškoduje in tisti,  ki cepi drva,  se izpostavlja nevarnosti.</TD>
-</TR>
-<TR>
-<TD >Če človek uporablja topo železno orodje in ga ne nabrusi,  porabi več moči. Človeku do uspeha pomaga modrost.</TD>
-</TR>
-<TR>
-<TD >Če človeka piči kača,  preden jo ukroti,  mu to,  da ima sposobnosti krotilca,  nič ne koristi.</TD>
-</TR>
-<TR>
-<TD >Modri si z besedami iz svojih ust pridobi naklonjenost,  neumneža pa njegove ustnice vodijo v nesrečo.</TD>
-</TR>
-<TR>
-<TD >Prve besede,  ki pridejo iz njegovih ust,  so neumnost in zadnje,  kar reče,  je katastrofalna norost.</TD>
-</TR>
-<TR>
-<TD >Toda neumnež kar naprej govori.<br>Človek ne ve,  kaj se bo zgodilo. Kdo mu lahko pove,  kaj bo takrat,  ko njega več ne bo?</TD>
-</TR>
-<TR>
-<TD >Neumnež se s trdim delom samo utruja,  saj ne ve niti tega,  kako se pride v mesto.</TD>
-</TR>
-<TR>
-<TD >Deželi se slabo piše,  če je njen kralj deček in se dostojanstveniki začnejo gostiti že zjutraj.</TD>
-</TR>
-<TR>
-<TD >Toda deželi se dobro piše,  če je njen kralj plemiškega rodu in dostojanstveniki jedo in pijejo ob pravem času,  da se okrepijo,  ne pa da se napijejo.</TD>
-</TR>
-<TR>
-<TD >Zaradi skrajne lenobe se strešno tramovje povesi in zaradi brezdelnih rok streha pušča.</TD>
-</TR>
-<TR>
-<TD >Hrana prinaša veselje in vino dela življenje prijetno,  denar pa zadovolji vse potrebe.</TD>
-</TR>
-<TR>
-<TD >Ne govori čez kralja niti v svojih mislih in čez bogataša niti v svoji spalnici,  ker se lahko zgodi,  da bodo ptice odnesle tvoj glas in ponovile to,  kar si rekel.</TD>
-</TR>
-<TR>
-<TD >Pridigar 11. Poglavje</TD>
-</TR>
-<TR>
-<TD >Meči svoj kruh po vodi,  saj ga boš čez mnogo dni spet našel.</TD>
-</TR>
-<TR>
-<TD >Del svojega imetja razdeli sedmim ali celo osmim ljudem,  ker ne veš,  kakšna nesreča se bo zgodila na zemlji.</TD>
-</TR>
-<TR>
-<TD >Če so oblaki polni vode,  se iz njih na zemljo izlije dež. In če drevo pade proti jugu ali proti severu,  bo tam tudi obležalo.</TD>
-</TR>
-<TR>
-<TD >Kdor pazi na veter,  ne bo sejal,  in kdor gleda na oblake,  ne bo žel.</TD>
-</TR>
-<TR>
-<TD >Tako kot ne veš,  kako deluje življenjska sila v kosteh otroka v trebuhu noseče ženske,  tako tudi ne poznaš del pravega Boga,  ki dela vse.</TD>
-</TR>
-<TR>
-<TD >Zjutraj sej seme in vse do večera ne daj počivati svoji roki,  ker ne veš,  katero seme bo obrodilo,  ali tisto od zjutraj ali tisto od zvečer ali pa bosta obrodili obe.</TD>
-</TR>
-<TR>
-<TD >Svetloba je prijetna in dobro je,  da oči vidijo sonce.</TD>
-</TR>
-<TR>
-<TD >Če človek živi mnogo let,  naj v vseh uživa. Vendar se mora zavedati,  da lahko pride tudi veliko temnih dni. Vse,  kar še pride,  je nesmiselno.</TD>
-</TR>
-<TR>
-<TD >Veseli se,  dokler si mlad,  in prekipevaj od sreče v svojih mladih dneh. Pojdi,  kamor te vleče srce in kamor te vodijo oči. Ampak zavedaj se,  da te bo pravi Bog za vse to poklical na odgovornost.</TD>
-</TR>
-<TR>
-<TD >Zato se ogibaj vsemu,  kar bi tvojemu srcu zadajalo bolečine,  in vsemu,  kar bi tvojemu telesu škodovalo,  saj sta mladost in cvet življenja minljiva.</TD>
-</TR>
-<TR>
-<TD >Pridigar 12. Poglavje</TD>
-</TR>
-<TR>
-<TD >Spominjaj se svojega Velikega stvarnika v dnevih svoje mladosti,  preden pridejo težki dnevi in se približajo leta,  o katerih boš rekel »Niso mi všeč«;</TD>
-</TR>
-<TR>
-<TD >preden potemni svetloba sonca,  lune in zvezd ter se začnejo po vsakem nalivu spet vračati oblaki;</TD>
-</TR>
-<TR>
-<TD >preden pride dan,  ko se stražarji hiše začnejo tresti,  ko močni možje oslabijo,  ko ženske nehajo mleti,  ker jih je malo,  in ko gospe,  ki gledajo skozi okna,  vidijo le temo;</TD>
-</TR>
-<TR>
-<TD >preden se vrata na ulico zaprejo in se stiša zvok mlina,  ki melje; preden človek začne vstajati ob ptičjem petju in vse hčere začnejo peti s šibkim glasom;</TD>
-</TR>
-<TR>
-<TD >preden človeka postane strah višine in se začne bati nevarnosti na ulici; preden mandljevec začne cveteti in se kobilica začne vleči naokrog ter kapra ne učinkuje več; preden gre človek v hišo,  v kateri bo dolgo počival,  in žalujoči začnejo hoditi po ulici.</TD>
-</TR>
-<TR>
-<TD >Spominjaj se svojega Stvarnika,  preden se pretrga srebrna vrvica in se razbije zlata posoda,  preden se razbije vrč pri studencu in zlomi črpalno kolo nad vodnjakom.</TD>
-</TR>
-<TR>
-<TD >Potem se prah vrne v zemljo,  v kateri je bil prej,  življenjska sila pa se vrne k pravemu Bogu,  ki jo je dal.</TD>
-</TR>
-<TR>
-<TD >»To je popolnoma nesmiselno!« govori pridigar. »Vse je nesmiselno!«</TD>
-</TR>
-<TR>
-<TD >Poleg tega,  da je bil pridigar moder,  je tudi prenašal svoje znanje na ljudstvo,  premišljeval je in temeljito preiskoval,  da bi zbral mnogo pregovorov.</TD>
-</TR>
-<TR>
-<TD >Pridigar si je prizadeval najti prijetne besede in zapisati to,  kar je točno in resnično.</TD>
-</TR>
-<TR>
-<TD >Besede modrih so kakor ostni in njihovi izbrani izreki so kakor dobro zabiti žeblji. Vse to prihaja od enega pastirja.</TD>
-</TR>
-<TR>
-<TD >Glede vsega drugega,  moj sin,  pa si vzemi k srcu naslednje svarilo: pisanju mnogih knjig ni konca in prekomerno ukvarjanje z njimi utruja človeka.</TD>
-</TR>
-<TR>
-<TD >Na koncu sem prišel do naslednjega sklepa: globoko spoštuj pravega Boga in izpolnjuj njegove zapovedi,  saj je to najpomembnejše v človekovem življenju.</TD>
-</TR>
-<TR>
-<TD >Pravi Bog bo namreč presojal vsako dejanje,  tudi vse,  kar je skrito,  da bi ugotovil,  ali je dobro ali slabo.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Pridigar','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Pridigar:"Pridigar 1. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:1,Pridigar:"Besede pridigarja. Davidovega sina. kralja v Jeruzalemu.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:2,Pridigar:"»To je popolnoma nesmiselno!« govori pridigar.<br>»To je popolnoma nesmiselno! Vse je nesmiselno!«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:3,Pridigar:"Kakšno korist ima človek od vsega napornega dela.<br>s katerim se muči pod soncem?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:4,Pridigar:"En rod odide. drug rod pride.<br>zemlja pa ostane za večno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:5,Pridigar:"Sonce vzide in sonce zaide.<br>nato pa se hitro vrne na kraj. kjer spet vzide.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:6,Pridigar:"Veter piha proti jugu in se vrača na sever.<br>Ves čas kroži in kroži. njegovo kroženje se ne ustavi.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:7,Pridigar:"Vse reke tečejo v morje. vendar se morje ne prenapolni.<br>Vračajo se tja. od koder so pritekle. da bi lahko znova tekle.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:8,Pridigar:"Vse je utrujajoče.<br>nihče ne more tega niti opisati.<br>Oko gleda. vendar mu ni dovolj.<br>in uho posluša. vendar mu še vedno nekaj manjka.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:9,Pridigar:"Kar je bilo. se bo ponovilo.<br>in kar se je zgodilo. se bo spet zgodilo.<br>Nič novega ni pod soncem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:10,Pridigar:"Ali je kje kaj. za kar bi se lahko reklo »Poglej. to je novo«?<br>Vse obstaja že od zdavnaj.<br>obstajalo je že pred nami.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:11,Pridigar:"Nihče se ne spominja ljudi. ki so živeli nekoč.<br>in nihče se ne bo spominjal tistih. ki bodo šele prišli.<br>pa tudi teh se ne bo spominjal nihče od tistih. ki bodo živeli še kasneje.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:12,Pridigar:"Jaz. pridigar. sem bil v Jeruzalemu postavljen za kralja Izraelcem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:13,Pridigar:"Odločil sem se. da bom z vso modrostjo. ki jo premorem. preučil in preiskal vse. kar se dogaja na zemlji – da bom raziskal nesrečna opravila. s katerimi je Bog zaposlil ljudi.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:14,Pridigar:"Videl sem vse. kar se dela pod soncem.<br>in ugotovil. da je vse tako nesmiselno kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:15,Pridigar:"Tega. kar je krivo. ni mogoče zravnati<br>in tega. česar ni. ni mogoče prešteti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:16,Pridigar:"Nato sem sam pri sebi rekel: »Postal sem modrejši od vseh. ki so bili pred menoj v Jeruzalemu. Moje srce si je pridobilo veliko modrosti in znanja.«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:17,Pridigar:"Prizadeval sem si raziskati modrost pa tudi norost in neumnost. vendar sem videl. da je tudi to kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:1,V:18,Pridigar:"Veliko modrosti s seboj prinaša veliko razočaranja.<br>Tako si človek s kopičenjem znanja kopiči tudi bolečino.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Pridigar:"Pridigar 2. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:1,Pridigar:"Potem sem si rekel: »Preizkusil bom. kakšne užitke prinaša življenje. in videl. ali me bo to osrečilo.« Ampak tudi to je bilo nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:2,Pridigar:"O smehu sem rekel »Kakšna norost!«<br>in o užitkih »Od njih ni nobene koristi!«.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:3,Pridigar:"Odločil sem se preiskati. kaj dobrega prinese pitje vina. vendar nisem nikoli popil toliko. da bi izgubil razsodnost. Predajal sem se celo neumnostim. Hotel sem namreč ugotoviti. kaj je za človeka najboljše. da dela teh nekaj dni svojega življenja pod nebom.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:4,Pridigar:"Lotil sem se velikih del. Zgradil sem si hiše in zasadil vinograde.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:5,Pridigar:"Uredil sem si vrtove in parke ter v njih zasadil najrazličnejše sadno drevje.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:6,Pridigar:"Naredil sem si zbiralnike vode. da sem z njo namakal nasad mladih dreves.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:7,Pridigar:"Priskrbel sem si služabnike in služabnice ter imel doma rojene služabnike. Nabavil sem si tudi veliko živine – tako velike kot male živali – več od vseh. ki so bili pred menoj v Jeruzalemu.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:8,Pridigar:"Nakopičil sem si srebro in zlato. zaklade. kakršne imajo le kralji in province. Priskrbel sem si pevce in pevke ter to. kar je moškim v veliko veselje – družbo ženske. da. mnogih žensk.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:9,Pridigar:"Postal sem velik. večji od vseh. ki so bili pred menoj v Jeruzalemu. Še naprej sem bil moder.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:10,Pridigar:"Odrekel se nisem ničemur. kar sem si zaželel. Prikrajšal se nisem za noben užitek. Moje srce se je veselilo zaradi vsega mojega dela in to je bilo plačilo za ves moj trud.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:11,Pridigar:"Ko pa sem razmišljal o vsem. kar sem s svojimi rokami naredil. in o vsem. kar sem z velikim trudom dosegel. sem ugotovil. da je vse tako nesmiselno kot lovljenje vetra. Nič pod soncem nima prave vrednosti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:12,Pridigar:"Potem sem se odločil preiskati modrost. norost in neumnost. (Kaj lahko namreč še naredi človek. ki pride za kraljem? Samo to. kar je že bilo narejeno.)",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:13,Pridigar:"Ugotovil sem. da ima modrost prednost pred neumnostjo. tako kakor ima svetloba prednost pred temo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:14,Pridigar:"Modri ima odprte oči. neumni pa hodi v temi. Ugotovil sem tudi to. da bosta oba končala enako.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:15,Pridigar:"Potem sem pomislil: »Končal bom enako kot neumnež. Kaj mi potem koristi tolikšna modrost?« Zato sem si rekel: »Tudi to je nesmiselno.«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:16,Pridigar:"Niti spomin na modrega niti spomin na neumneža ni trajen. V dnevih. ki prihajajo. bo vsak pozabljen. In kako bo umrl moder človek? Tako kakor neumnež.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:17,Pridigar:"Zato sem zasovražil življenje. saj sem dobil občutek. da vsako delo. ki se opravlja pod soncem. spremljajo težave. Vse je namreč tako nesmiselno kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:18,Pridigar:"Zasovražil sem vse. za kar sem se toliko trudil. ker bom moral to zapustiti človeku. ki bo prišel za menoj.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:19,Pridigar:"Kdove ali bo moder ali neumen. Pa vendar bo prevzel oblast nad vsem. kar sem si z velikim trudom in modrostjo pridobil v življenju. Tudi to je nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:20,Pridigar:"Zato sem začel obupavati nad vsem. za kar sem se toliko trudil in si prizadeval.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:21,Pridigar:"Naj človek še tako pridno dela in si pri tem pomaga z modrostjo. znanjem in spretnostmi. mora potem vse prepustiti nekomu. ki se za to ni trudil. Tudi to je nesmiselno in velika tragedija.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:22,Pridigar:"Kakšno korist ima človek od vsega svojega dela in zagnanosti. ki ga žene. da se toliko trudi pod soncem?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:23,Pridigar:"Vse življenje mu namreč njegovo delo prinaša bolečine in nezadovoljstvo  še ponoči njegovo srce nima miru. Tudi to je nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:24,Pridigar:"Za človeka ni nič boljšega. kot da je in pije ter uživa pri svojem delu. Ugotovil sem. da je tudi to od pravega Boga.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:25,Pridigar:"saj ni nikogar. ki bi jedel ali pil boljše kot jaz.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:2,V:26,Pridigar:"Pravi Bog daje človeku. ki mu ugaja. modrost. znanje in veselje. grešnika pa zaposli s tem. da zbira in spravlja skupaj imetje. ki ga na koncu dobi tisti. ki Bogu ugaja. Tudi to je tako nesmiselno kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Pridigar:"Pridigar 3. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:1,Pridigar:"Vse ima svoj čas.<br>vsaka dejavnost pod nebom ima svoj čas:",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:2,Pridigar:"je čas rojevanja in čas umiranja.<br>čas sajenja in čas. da se zasajeno izruva.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:3,Pridigar:"je čas ubijanja in čas zdravljenja.<br>čas podiranja in čas zidanja.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:4,Pridigar:"je čas jokanja in čas smejanja.<br>čas žalovanja in čas plesanja.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:5,Pridigar:"je čas odstranjevanja kamnov in čas zbiranja kamnov.<br>čas objemanja in čas. ko se ne objema.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:6,Pridigar:"je čas iskanja in čas. ko se človek sprijazni z izgubo.<br>čas spravljanja in čas. ko se meče proč.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:7,Pridigar:"je čas paranja in čas šivanja.<br>čas molčanja in čas govorjenja.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:8,Pridigar:"je čas ljubezni in čas sovraštva.<br>čas vojne in čas miru.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:9,Pridigar:"Kakšno korist ima delavec od vsega svojega truda?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:10,Pridigar:"Opazoval sem opravila. s katerimi je Bog zaposlil ljudi.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:11,Pridigar:"Pravi Bog vse dela lepo. in to ob pravem času. Ljudem je dal v srce celo željo po večnem življenju. Kljub temu ti ne bodo nikoli povsem doumeli njegovih del.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:12,Pridigar:"Ugotovil sem. da ni za ljudi nič boljšega. kot da se veselijo in delajo dobro v svojem življenju.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:13,Pridigar:"in da bi moral vsak človek jesti in piti ter pri vsem svojem delu uživati. To je Božji dar.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:14,Pridigar:"Spoznal sem. da vse. kar pravi Bog naredi. ostane za večno. Nič se ne more k temu dodati in nič se ne more odvzeti. Pravi Bog vse to dela zato. da bi pri ljudeh vzbudil strahospoštovanje.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:15,Pridigar:"Kar je. je bilo že prej. in kar bo. je od nekdaj. Pravi Bog pa izpelje to. za kar si ljudje prizadevajo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:16,Pridigar:"Opazil sem še. da tam. kjer bi morali biti pravica in pravičnost. vlada hudobija.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:17,Pridigar:"Rekel sem si: »Pravi Bog bo sodil pravičnega in hudobnega. saj za vsako dejavnost in vsako dejanje pride čas.«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:18,Pridigar:"Poleg tega sem si glede ljudi še rekel: »Pravi Bog jih preiskuje in jim odkriva. da niso prav nič drugačni od živali.«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:19,Pridigar:"Kakršen je namreč konec ljudi. takšen je tudi konec živali – vsi končajo enako. Kakor umrejo živali. tako umrejo tudi ljudje. In vsi imajo isto življenjsko silo. tako da človek nima prednosti pred živalmi. Vse je nesmiselno!",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:20,Pridigar:"Vsi odhajajo na isti kraj. Vsi so nastali iz prahu in vsi se vračajo v prah.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:21,Pridigar:"Kdo zares ve. ali se življenjska sila ljudi dviga navzgor in ali gre življenjska sila živali dol v zemljo?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:3,V:22,Pridigar:"Ugotovil sem. da ni za ljudi nič boljšega. kakor da uživajo pri svojem delu. ker je to njihovo plačilo. Kdo jim namreč lahko pomaga videti. kaj se dogaja. ko jih ni več?",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Pridigar:"Pridigar 4. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:1,Pridigar:"Spet sem začel razmišljati o vsem zatiranju. ki se dogaja pod soncem. Videl sem solze zatiranih. toda ni bilo nikogar. ki bi jih potolažil. Njihovi zatiralci so imeli moč. toda ni bilo nikogar. ki bi zatirane potolažil.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:2,Pridigar:"Zato imam tiste. ki so že umrli. za srečnejše od tistih. ki še živijo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:3,Pridigar:"Toda od obojih je na boljšem tisti. ki se sploh še ni rodil in še ni videl slabih stvari. ki se dogajajo pod soncem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:4,Pridigar:"Videl sem. kako zelo se ljudje zaradi tekmovalnosti trudijo spretno opravljati svoje delo. Tudi to je tako nesmiselno kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:5,Pridigar:"Neumnež sedi križemrok. medtem pa mu telo propada.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:6,Pridigar:"Boljše je malo počitka kakor veliko truda in lovljenja vetra.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:7,Pridigar:"Začel sem razmišljati še o enem nesmislu. ki se dogaja pod soncem:",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:8,Pridigar:"Je človek. ki je povsem sam in nima ne prijatelja. ne sina. ne brata. Pa vendar ne neha garati in mu nikoli ni dovolj bogastva. Ampak ali se sploh kdaj vpraša: »Le za koga se toliko trudim in se odrekam dobrim stvarem?« Tudi to je nesmisel in ena sama žalost.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:9,Pridigar:"Boljše je dvema kakor enemu. ker imata od svojega truda večjo korist.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:10,Pridigar:"Če namreč eden pade. mu lahko drugi pomaga vstati. Toda kaj. če pade kdo. ki je sam in nima nikogar. ki bi mu pomagal vstati?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:11,Pridigar:"Če dva ležita skupaj. se ogrejeta. Toda kako naj se ogreje tisti. ki je sam?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:12,Pridigar:"Enega je mogoče premagati. dva pa se lahko uspešno postavita po robu. Trojna vrvica se ne pretrga zlahka.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:13,Pridigar:"Boljši je reven otrok. ki je moder. kakor star kralj. ki je neumen in noče več poslušati opozoril.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:14,Pridigar:"On je namreč prišel iz ječe. da bi zakraljeval. čeprav se je v kraljestvu tistega starega kralja rodil kot revež.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:15,Pridigar:"Premišljeval sem o vseh. ki živijo na zemlji. in o tem. kar se dogaja z mladim kraljem. ki prevzame mesto predhodnika.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:4,V:16,Pridigar:"Čeprav je teh. ki ga podpirajo. na začetku zelo veliko. kasneje ljudje ne bodo zadovoljni z njim. Tudi to je tako nesmiselno kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:5,V:0,Pridigar:"Pridigar 5. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:1,Pridigar:"Pazi na svoje korake. kadar greš v hišo pravega Boga. Boljše je. da greš tja poslušat kot pa darovat žrtve tako. kot jih darujejo neumneži. saj ne vedo. da je to. kar delajo. slabo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:2,Pridigar:"Ust ne odpiraj prenagljeno in tvoje srce naj ne govori nepremišljeno pred pravim Bogom. saj je pravi Bog v nebesih. ti pa si na zemlji. Zato naj bo tvojih besed malo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:3,Pridigar:"Ljudje začnejo zaradi preobremenjenosti sanjati in zaradi preveč besed blebetati neumnosti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:4,Pridigar:"Kadar se zaobljubiš Bogu. se zaobljube ne obotavljaj izpolniti. saj mu neumneži niso v veselje. To. kar obljubiš. tudi izpolni.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:5,Pridigar:"Boljše je. da se ne zaobljubiš. kot pa da se zaobljubiš in zaobljube ne izpolniš.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:6,Pridigar:"Ne dovoli svojim ustom. da bi te navedla na greh. in ne govori pred angelom. da je bila tvoja zaobljuba pomota. Zakaj bi s svojimi besedami razjezil pravega Boga in ga s tem primoral. da uniči delo tvojih rok?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:7,Pridigar:"Tako kot zaradi preobremenjenosti ljudje začnejo sanjati. tako tudi zaradi mnogo besed začnejo prazno govoriti. Zato globoko spoštuj pravega Boga.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:8,Pridigar:"Če v svoji deželi vidiš oblastnika. ki zatira reveže. ljudem krati pravico in ravna krivično. ne bodi nad tem presenečen. Tega oblastnika namreč opazuje tisti. ki je višji od njega. nad njima pa so drugi. ki imajo še višji položaj.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:9,Pridigar:"Vsi ti ljudje imajo korist od pridelka dežele. Z obdelovanjem polja je poskrbljeno tudi za kraljeve potrebe.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:10,Pridigar:"Kdor ljubi srebro. mu srebra ni nikoli dovolj. in kdor ljubi bogastvo. ni z dobičkom nikoli zadovoljen. Tudi to je nesmisel.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:11,Pridigar:"Večje ko je bogastvo. več je tistih. ki ga porabljajo. In kakšno korist ima človek od svojega bogastva. razen tega. da ga lahko gleda?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:12,Pridigar:"Delavcu je spanje sladko. pa naj je jedel malo ali veliko. bogatašu pa njegovo bogastvo ne da spati.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:13,Pridigar:"Videl sem veliko tragedijo. ki se dogaja pod soncem: Človek si kopiči bogastvo sebi v nesrečo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:14,Pridigar:"Zaradi tveganega posla to svoje bogastvo izgubi. in ko se mu rodi sin. mu nima kaj zapustiti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:15,Pridigar:"Tako kot je človek iz maminega telesa prišel gol. tako bo tudi odšel  odšel bo takšen. kot je prišel. Ničesar od tega. za kar se je toliko trudil. ne more odnesti s seboj.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:16,Pridigar:"Tudi to je velika tragedija: Človek odide takšen. kot je prišel. In kakšno korist ima od tega. da se toliko trudi za prazen nič?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:17,Pridigar:"Poleg tega so vsi njegovi dnevi temačni  preživi jih ves razočaran. bolan in jezen.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:18,Pridigar:"Ugotovil sem. da je za človeka dobro in primerno to. da je in pije ter uživa pri vsem svojem napornem delu. s katerim se teh nekaj dni svojega življenja. ki mu ga je dal pravi Bog. muči pod soncem. To je namreč človekovo plačilo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:19,Pridigar:"In če pravi Bog da človeku bogastvo in imetje ter mu omogoči. da uživa v vsem tem. bi moral človek sprejeti to svoje plačilo ter se veseliti pri svojem napornem delu. To je Božji dar.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:5,V:20,Pridigar:"Tako bo komaj opazil. kako hitro mineva njegovo življenje. ker ga bo pravi Bog zaposlil s tem. kar veseli njegovo srce.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:6,V:0,Pridigar:"Pridigar 6. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:1,Pridigar:"Opazil sem še eno tragedijo. ki se dogaja pod soncem in je nekaj običajnega med ljudmi:",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:2,Pridigar:"pravi Bog daje nekomu bogastvo. imetje in slavo. tako da ima vse. kar si želi. pa vendar mu pravi Bog ne omogoči. da bi to užival. ampak pusti. da to uživa drug človek. To je nesmiselno in zelo žalostno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:3,Pridigar:"Če bi človek imel sto otrok in bi živel mnogo let. če bi dočakal visoko starost. vendar bi umrl prej. preden bi lahko užival v vsem dobrem. kar ima. potem moram reči. da je mrtvorojeni otrok na boljšem kakor on.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:4,Pridigar:"Ta otrok se je zaman rodil. Odšel je v temo in tema ovija njegovo ime.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:5,Pridigar:"Čeprav ni nikoli videl sonca niti česar koli doživel. je še vedno na boljšem kakor ta človek.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:6,Pridigar:"Kaj človeku koristi. če bi živel dvakrat po tisoč let. pa v življenju ne bi nič užival? Ali ne odidejo na koncu vsi na isti kraj?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:7,Pridigar:"Človek naporno dela samo zato. da si napolni želodec. pa vendar njegov tek ni nikoli potešen.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:8,Pridigar:"Kakšno prednost ima modri pred neumnim in kaj ubogemu koristi. da ve. kako preživeti?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:9,Pridigar:"Boljše je uživati v tem. kar vidijo oči. kot pa hrepeneti po nečem. česar ni mogoče imeti. Tudi to je tako nesmiselno kot lovljenje vetra.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:10,Pridigar:"Vse. kar obstaja. že ima svoje ime in prava narava človeka je znana. Človek se ne more prepirati z močnejšim od sebe.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:11,Pridigar:"Več ko je besed. več je praznega govorjenja. Kaj človeku sploh koristijo?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:6,V:12,Pridigar:"Kdo ve. kaj je najboljše. da človek dela teh nekaj dni svojega nesmiselnega življenja. ki minejo kakor senca? Kdo lahko človeku pove. kaj se bo dogajalo pod soncem. ko njega ne bo več?",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:7,V:0,Pridigar:"Pridigar 7. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:1,Pridigar:"Dobro ime je boljše od dragocenega olja in dan smrti je boljši od dneva rojstva.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:2,Pridigar:"Boljše je iti v hišo. v kateri žalujejo. kakor v hišo. v kateri imajo gostijo. ker vsak človek dočaka svoj konec. Živi naj si to vzamejo k srcu.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:3,Pridigar:"Boljša je žalost kakor smeh. saj žalosten obraz izboljša srce.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:4,Pridigar:"Srce modrih je v hiši. v kateri žalujejo. srce neumnih pa v hiši. v kateri se veselijo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:5,Pridigar:"Boljše je poslušati opominjanje modrega kakor poslušati laskanje neumnih.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:6,Pridigar:"Smeh neumneža je kakor prasketanje trnja. ki gori pod loncem. Tudi to je nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:7,Pridigar:"Zatiranje lahko modrega navede. da ravna neumno. in podkupnina pokvari srce.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:8,Pridigar:"Boljši je konec nečesa kakor začetek. Boljše je biti potrpežljiv kakor ošaben.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:9,Pridigar:"Ne bodi hitro užaljen. saj užaljenost počiva v srcu neumnežev.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:10,Pridigar:"Ne govori: »Včasih je bilo boljše. kot je zdaj.« Ni namreč modro. da to govoriš.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:11,Pridigar:"Modrost skupaj z dediščino je nekaj dobrega. Koristna je za vse ljudi na zemlji.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:12,Pridigar:"Modrost je namreč v zaščito in tudi denar je v zaščito. toda prednost znanja in modrosti je v tem. da ohranita pri življenju tistega. ki ju ima.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:13,Pridigar:"Razmisli o delih pravega Boga: kdo lahko zravna to. kar je on skrivil?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:14,Pridigar:"Ob dobrem dnevu izkazuj dobroto. ob slabem dnevu pa pomisli. da Bog dopušča tako dobre kot slabe dneve. da ljudje ne bi mogli z gotovostjo vedeti. kaj se jim bo zgodilo v prihodnosti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:15,Pridigar:"V svojem nesmiselnem življenju sem videl marsikaj – videl sem pravičnega. ki je kljub svoji pravičnosti prezgodaj umrl. in hudobnega. ki je kljub svoji hudobnosti dolgo živel.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:16,Pridigar:"Ne bodi prepravičen in ne kaži se pretirano modrega. Zakaj bi sam sebe spravljal v nesrečo?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:17,Pridigar:"Ne dovoli. da bi preveč podlegel grešnosti. in ne bodi neumen. Zakaj bi prezgodaj umrl?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:18,Pridigar:"Najboljše je. da poslušaš tako prvo kot drugo svarilo. Tisti. ki globoko spoštuje Boga. se namreč ravna po obeh.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:19,Pridigar:"Modremu modrost daje več moči kakor mestu deset mogočnih ljudi. ki so v njem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:20,Pridigar:"Na zemlji ni pravičnega človeka. ki bi vedno delal dobro in ne bi nikoli grešil.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:21,Pridigar:"Ne zanimaj se za vse. kar ljudje govorijo. sicer se lahko zgodi. da boš slišal svojega služabnika govoriti grde stvari o tebi.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:22,Pridigar:"Globoko v sebi namreč dobro veš. da si velikokrat tudi ti govoril grde stvari o drugih.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:23,Pridigar:"Vse to sem preizkusil z vso modrostjo. ki jo premorem. in rekel: »Postal bom še modrejši.« Toda ni mi uspelo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:24,Pridigar:"Vse. kar je in kar je bilo. je nedoumljivo in zelo globoko. Kdo lahko to razume?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:25,Pridigar:"Odločil sem se spoznati. preiskati in najti modrost ter razlog. zakaj so stvari takšne. kot so. Odločil pa sem se tudi razumeti hudobno vedenje neumnih in nespametno ravnanje norcev.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:26,Pridigar:"In ugotovil sem tole: ženska. ki je kakor lovilna mreža. ženska s srcem. ki je kakor ribiška mreža. in z rokami. ki so kakor okovi. je grenkejša od smrti. Kdor želi ugajati pravemu Bogu. bo zbežal od nje. grešnik pa se ji bo pustil ujeti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:27,Pridigar:"»Ugotovil sem naslednje.« govori pridigar. »Preiskoval sem stvari. drugo za drugo. da bi prišel do sklepa.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:28,Pridigar:"toda tega. kar sem iskal. nisem našel. Med tisoč ljudmi sem našel enega pravičnega moškega. toda pravične ženske med njimi nisem našel.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:7,V:29,Pridigar:"Ugotovil sem samo to. da je pravi Bog ustvaril ljudi poštene. ampak oni so ubrali svojo pot.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:8,V:0,Pridigar:"Pridigar 8. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:1,Pridigar:"Kdo je kakor moder človek? Kdo pozna rešitev težave? Zaradi modrosti človeku zasije obraz in strog videz se mu omehča.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:2,Pridigar:"Jaz ti pravim: »Ubogaj kraljeve ukaze. ker si to prisegel Bogu.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:3,Pridigar:"Ko si pred kraljem. ne odvihraj proč od njega. Ne zapletaj se v nič slabega. saj lahko kralj naredi. kar koli hoče.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:4,Pridigar:"Kralj ima namreč zadnjo besedo. Kdo mu lahko očita: ‚Kaj pa delaš?«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:5,Pridigar:"Tistega. ki izpolnjuje ukaze. ne bo doletelo nič slabega. in kdor je modrega srca. bo vedel. kdaj in kako ukrepati.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:6,Pridigar:"Ljudje imajo zelo veliko težav. zato bi se morali vsega lotiti ob pravem času in na pravi način.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:7,Pridigar:"Nihče ne ve. kaj se bo zgodilo. kaj šele to. kako se bo zgodilo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:8,Pridigar:"Tako kot nihče nima v oblasti svoje življenjske sile in ji ne more preprečiti. da bi ga zapustila. tako tudi nihče nima oblasti nad dnevom smrti. Tako kot nikomur ni dovoljeno oditi sredi boja. tako tudi hudobni ljudje ne bodo mogli ubežati posledicam svojega ravnanja.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:9,Pridigar:"Vse to sem videl in razmislil o vsem. kar se dogaja pod soncem. medtem ko človek vlada človeku v njegovo škodo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:10,Pridigar:"Videl sem. kako so pokopavali hudobne. tiste. ki so nekoč prihajali na sveti kraj in odhajali z njega. Toda kmalu zatem so jih v mestu. v katerem so ravnali hudobno. pozabili. Tudi to je nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:11,Pridigar:"Ker se obsodbe za napačna dejanja ne izvršijo hitro. si ljudje upajo delati to. kar ni prav.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:12,Pridigar:"Tudi če grešnik stokrat naredi kaj slabega in kljub temu dolgo živi. vem. da se bo za tiste. ki globoko spoštujejo pravega Boga. dobro izšlo. zato ker ga spoštujejo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:13,Pridigar:"Toda za hudobnega se ne bo dobro izšlo in ne bo podaljšal svojega življenja. ki je kakor senca. zato ker ne spoštuje Boga.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:14,Pridigar:"Na zemlji se dogaja še nekaj nesmiselnega: so pravični. s katerimi se ravna. kakor da bi bili hudobni. in so hudobni. s katerimi se ravna. kakor da bi bili pravični. Jaz pravim. da je tudi to nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:15,Pridigar:"Zato ljudem priporočam. naj se veselijo. saj zanje ni nič boljšega pod soncem. kakor da jedo. pijejo in se veselijo. To naj jih spremlja pri njihovem pridnem delu vse dni njihovega življenja. ki jim ga je dal pravi Bog.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:16,Pridigar:"Odločen sem bil. da si pridobim modrost in doumem vse dejavnosti na zemlji. Zaradi tega nisem spal ne podnevi ne ponoči.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:8,V:17,Pridigar:"Nato sem razmislil o vseh delih pravega Boga in ugotovil naslednje: Ljudje ne morejo doumeti tega. kar se dogaja pod soncem. Naj se še tako trudijo. tega ne morejo doumeti. Tudi če trdijo. da so dovolj modri. da bi to spoznali. tega ne morejo zares doumeti.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:9,V:0,Pridigar:"Pridigar 9. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:1,Pridigar:"O vsem tem sem skrbno razmislil in prišel do naslednjega sklepa: Pravični in modri ter njihova dela so v rokah pravega Boga. Ljudje ne vedo nič o tem. koliko ljubezni in sovraštva je obstajalo med tistimi. ki so živeli pred njimi.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:2,Pridigar:"Vse čaka enak konec – pravičnega in hudobnega. dobrega. čistega in nečistega. tistega. ki daruje žrtve. in tistega. ki jih ne daruje. Dober človek je na istem kot grešnik in tisti. ki nepremišljeno prisega. je na istem kot tisti. ki je glede priseganja previden.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:3,Pridigar:"Ena od žalostnih stvari. ki se dogajajo pod soncem. je ta: Ker vse čaka enak konec. je srce ljudi polno hudobije. Dokler so živi. je v njihovem srcu neumnost. potem pa umrejo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:4,Pridigar:"Za tistega. ki je živ. še obstaja upanje. saj je živ pes na boljšem kakor mrtev lev.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:5,Pridigar:"Živi se zavedajo. da bodo umrli. mrtvi pa se ne zavedajo ničesar in ne prejemajo nobenega plačila več. saj je ves spomin nanje izginil.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:6,Pridigar:"Nič več ne čutijo ljubezni. sovraštva in ljubosumnosti in ne sodelujejo več pri ničemer. kar se dogaja pod soncem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:7,Pridigar:"Pojdi. z veseljem jej hrano in veselega srca pij vino. saj je to. kar delaš. pravemu Bogu všeč.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:8,Pridigar:"Vedno imej na sebi bela oblačila in na glavo si vedno dajaj olje.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:9,Pridigar:"Uživaj življenje s svojo ljubljeno ženo vse dni svojega nesmiselnega življenja. ki ti ga je dal Bog – vse dni svojega nesmiselnega obstoja. To je namreč tvoje plačilo v življenju. plačilo za vse tvoje naporno delo. s katerim se mučiš pod soncem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:10,Pridigar:"Kar koli lahko narediš. naredi po svojih najboljših močeh. ker v grobu. kamor odhajaš. ni ne dela. ne načrtovanja. ne znanja. ne modrosti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:11,Pridigar:"Še nekaj sem opazil na zemlji: hitrim ni zagotovljena zmaga v teku. ne junakom zmaga v boju. ne modrim hrana. ne pametnim bogastvo. ne tistim z znanjem uspeh. saj vsakega od njih doletijo nepredvideni dogodki ob nepričakovanem času.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:12,Pridigar:"Človek namreč ne ve. kdaj bo prišel njegov čas. Tako kakor se ribe ujamejo v smrtonosno mrežo in kakor se ptice ujamejo v past. tako tudi ljudi nesreča doleti nenadoma. kakor bi se ujeli v zanko.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:13,Pridigar:"Na zemlji sem videl še en primer modrosti. ki je name naredil velik vtis:",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:14,Pridigar:"Bilo je majhno mesto in v njem malo ljudi. Potem pa je prišel mogočen kralj. mesto obkolil in ga začel oblegati.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:15,Pridigar:"V mestu je živel tudi neki reven človek. ki je bil moder. in ta je s svojo modrostjo rešil mesto. Vendar so kasneje na tega revnega človeka vsi pozabili.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:16,Pridigar:"Rekel sem si: »Modrost je boljša od moči. toda če je človek reven. njegovo modrost prezirajo in njegovih besed ne poslušajo.«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:17,Pridigar:"Boljše je poslušati blage besede modrih kakor vpitje tistega. ki vlada neumnežem.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:9,V:18,Pridigar:"Modrost je boljša od orožja. en grešnik pa lahko uniči veliko dobrega.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:10,V:0,Pridigar:"Pridigar 10. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:1,Pridigar:"Tako kot se zaradi mrtvih muh pokvari in usmradi dišeče olje. tako tudi malo neumnosti pokvari ugled modrega človeka.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:2,Pridigar:"Modrega njegovo srce vodi na pravo pot. neumnega pa njegovo srce vodi na krivo pot.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:3,Pridigar:"Neumnež pri vsem. kar dela. kaže. da mu manjka modre presoje. in vsakemu da vedeti. da je neumen.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:4,Pridigar:"Če vladarja zaradi tebe pograbi jeza. ne zapuščaj svojega mesta. saj mirnost odvrača človeka od velikih grehov.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:5,Pridigar:"Še eno žalostno stvar sem videl na zemlji. Videl sem napako. ki jo delajo tisti. ki so na oblasti:",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:6,Pridigar:"neumneže postavljajo na visoke položaje. sposobni pa ostanejo na nizkih položajih.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:7,Pridigar:"Videl sem. kako so služabniki jezdili na konjih. dostojanstveniki pa so šli peš kakor služabniki.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:8,Pridigar:"Tisti. ki koplje jamo. lahko sam pade vanjo in tistega. ki podira kamnit zid. lahko piči kača.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:9,Pridigar:"Tisti. ki lomi kamenje. se lahko poškoduje in tisti. ki cepi drva. se izpostavlja nevarnosti.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:10,Pridigar:"Če človek uporablja topo železno orodje in ga ne nabrusi. porabi več moči. Človeku do uspeha pomaga modrost.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:11,Pridigar:"Če človeka piči kača. preden jo ukroti. mu to. da ima sposobnosti krotilca. nič ne koristi.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:12,Pridigar:"Modri si z besedami iz svojih ust pridobi naklonjenost. neumneža pa njegove ustnice vodijo v nesrečo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:13,Pridigar:"Prve besede. ki pridejo iz njegovih ust. so neumnost in zadnje. kar reče. je katastrofalna norost.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:14,Pridigar:"Toda neumnež kar naprej govori.<br>Človek ne ve. kaj se bo zgodilo. Kdo mu lahko pove. kaj bo takrat. ko njega več ne bo?",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:15,Pridigar:"Neumnež se s trdim delom samo utruja. saj ne ve niti tega. kako se pride v mesto.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:16,Pridigar:"Deželi se slabo piše. če je njen kralj deček in se dostojanstveniki začnejo gostiti že zjutraj.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:17,Pridigar:"Toda deželi se dobro piše. če je njen kralj plemiškega rodu in dostojanstveniki jedo in pijejo ob pravem času. da se okrepijo. ne pa da se napijejo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:18,Pridigar:"Zaradi skrajne lenobe se strešno tramovje povesi in zaradi brezdelnih rok streha pušča.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:19,Pridigar:"Hrana prinaša veselje in vino dela življenje prijetno. denar pa zadovolji vse potrebe.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:10,V:20,Pridigar:"Ne govori čez kralja niti v svojih mislih in čez bogataša niti v svoji spalnici. ker se lahko zgodi. da bodo ptice odnesle tvoj glas in ponovile to. kar si rekel.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:11,V:0,Pridigar:"Pridigar 11. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:1,Pridigar:"Meči svoj kruh po vodi. saj ga boš čez mnogo dni spet našel.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:2,Pridigar:"Del svojega imetja razdeli sedmim ali celo osmim ljudem. ker ne veš. kakšna nesreča se bo zgodila na zemlji.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:3,Pridigar:"Če so oblaki polni vode. se iz njih na zemljo izlije dež. In če drevo pade proti jugu ali proti severu. bo tam tudi obležalo.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:4,Pridigar:"Kdor pazi na veter. ne bo sejal. in kdor gleda na oblake. ne bo žel.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:5,Pridigar:"Tako kot ne veš. kako deluje življenjska sila v kosteh otroka v trebuhu noseče ženske. tako tudi ne poznaš del pravega Boga. ki dela vse.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:6,Pridigar:"Zjutraj sej seme in vse do večera ne daj počivati svoji roki. ker ne veš. katero seme bo obrodilo. ali tisto od zjutraj ali tisto od zvečer ali pa bosta obrodili obe.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:7,Pridigar:"Svetloba je prijetna in dobro je. da oči vidijo sonce.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:8,Pridigar:"Če človek živi mnogo let. naj v vseh uživa. Vendar se mora zavedati. da lahko pride tudi veliko temnih dni. Vse. kar še pride. je nesmiselno.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:9,Pridigar:"Veseli se. dokler si mlad. in prekipevaj od sreče v svojih mladih dneh. Pojdi. kamor te vleče srce in kamor te vodijo oči. Ampak zavedaj se. da te bo pravi Bog za vse to poklical na odgovornost.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:11,V:10,Pridigar:"Zato se ogibaj vsemu. kar bi tvojemu srcu zadajalo bolečine. in vsemu. kar bi tvojemu telesu škodovalo. saj sta mladost in cvet življenja minljiva.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:12,V:0,Pridigar:"Pridigar 12. poglavje",K:"",NZ:""},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:1,Pridigar:"Spominjaj se svojega Velikega stvarnika v dnevih svoje mladosti. preden pridejo težki dnevi in se približajo leta. o katerih boš rekel »Niso mi všeč«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:2,Pridigar:"preden potemni svetloba sonca. lune in zvezd ter se začnejo po vsakem nalivu spet vračati oblaki",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:3,Pridigar:"preden pride dan. ko se stražarji hiše začnejo tresti. ko močni možje oslabijo. ko ženske nehajo mleti. ker jih je malo. in ko gospe. ki gledajo skozi okna. vidijo le temo",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:4,Pridigar:"preden se vrata na ulico zaprejo in se stiša zvok mlina. ki melje  preden človek začne vstajati ob ptičjem petju in vse hčere začnejo peti s šibkim glasom",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:5,Pridigar:"preden človeka postane strah višine in se začne bati nevarnosti na ulici  preden mandljevec začne cveteti in se kobilica začne vleči naokrog ter kapra ne učinkuje več  preden gre človek v hišo. v kateri bo dolgo počival. in žalujoči začnejo hoditi po ulici.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:6,Pridigar:"Spominjaj se svojega Stvarnika. preden se pretrga srebrna vrvica in se razbije zlata posoda. preden se razbije vrč pri studencu in zlomi črpalno kolo nad vodnjakom.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:7,Pridigar:"Potem se prah vrne v zemljo. v kateri je bil prej. življenjska sila pa se vrne k pravemu Bogu. ki jo je dal.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:8,Pridigar:"»To je popolnoma nesmiselno!« govori pridigar. »Vse je nesmiselno!«",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:9,Pridigar:"Poleg tega. da je bil pridigar moder. je tudi prenašal svoje znanje na ljudstvo. premišljeval je in temeljito preiskoval. da bi zbral mnogo pregovorov.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:10,Pridigar:"Pridigar si je prizadeval najti prijetne besede in zapisati to. kar je točno in resnično.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:11,Pridigar:"Besede modrih so kakor ostni in njihovi izbrani izreki so kakor dobro zabiti žeblji. Vse to prihaja od enega pastirja.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:12,Pridigar:"Glede vsega drugega. moj sin. pa si vzemi k srcu naslednje svarilo: pisanju mnogih knjig ni konca in prekomerno ukvarjanje z njimi utruja človeka.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:13,Pridigar:"Na koncu sem prišel do naslednjega sklepa: globoko spoštuj pravega Boga in izpolnjuj njegove zapovedi. saj je to najpomembnejše v človekovem življenju.",K:"",NZ:"X"},
+{Knjiga:"Pridigar",Kr:"Pdg",P:12,V:14,Pridigar:"Pravi Bog bo namreč presojal vsako dejanje. tudi vse. kar je skrito. da bi ugotovil. ali je dobro ali slabo.",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

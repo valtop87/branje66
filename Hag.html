@@ -1,155 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Hagaj</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Hagaj 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Prvi dan šestega meseca v drugem letu vladanja kralja Dareja je prerok Hagaj dobil od Jehova sporočilo za Šealtielovega sina Zerubabela,  ki je bil upravitelj na Judovem,  in za Jozadakovega sina Jozueta,  ki je bil veliki duhovnik. Sporočilo se je glasilo:</TD>
-</TR>
-<TR>
-<TD >»Jehova nad vojskami govori: ‚To ljudstvo pravi: »Ni še prišel čas,  da se ponovno zgradi Jehovova hiša.««</TD>
-</TR>
-<TR>
-<TD >Jehova je po preroku Hagaju še sporočil:</TD>
-</TR>
-<TR>
-<TD >»Ali je zdaj že čas,  da živite v svojih hišah,  okrašenih z lepim lesom,  ko pa vidite,  da je ta hiša v ruševinah?</TD>
-</TR>
-<TR>
-<TD >Zato Jehova nad vojskami pravi: ‚Skrbno premislite o tem,  kaj delate.</TD>
-</TR>
-<TR>
-<TD >Veliko sejete,  vendar malo žanjete. Jeste,  vendar se ne morete nasititi. Pijete,  vendar se ne morete napiti. Oblačite se,  vendar se nihče od vas ne more ogreti. Najeti delavec spravlja svoje plačilo v raztrgan mošnjiček.«</TD>
-</TR>
-<TR>
-<TD >»Jehova nad vojskami pravi: ‚Skrbno premislite o tem,  kaj delate.</TD>
-</TR>
-<TR>
-<TD >‚Povzpnite se na goro in prinesite les. Zgradite mojo hišo,  da mi bo prinašala veselje in se bom z njo oslavil,  govori Jehova.«</TD>
-</TR>
-<TR>
-<TD >»‚Veliko pričakujete,  vendar malo dobite. To,  kar prinašate domov,  jaz odpihnem. Zakaj delam to? govori Jehova nad vojskami. ‚Zato ker je moja hiša v ruševinah,  vi pa tekate naokrog,  da bi poskrbeli vsak za svojo hišo.</TD>
-</TR>
-<TR>
-<TD >Zato vam nebo ne daje svoje rose ne zemlja svojega pridelka.</TD>
-</TR>
-<TR>
-<TD >Poslal sem sušo na polja,  na gore,  na žito,  na novo vino,  na olje,  na vse,  kar zraste iz tal,  na ljudi,  na živino in na vse,  za kar se trudite.«</TD>
-</TR>
-<TR>
-<TD >Šealtielov sin Zerubabel in Jozadakov sin Jozue,  ki je bil veliki duhovnik,  ter vsi drugi so ubogali to,  kar je rekel njihov Bog Jehova. Ubogali so tudi to,  kar je rekel prerok Hagaj,  saj ga je poslal njihov Bog Jehova. Ljudi je prevzelo strahospoštovanje do Jehova.</TD>
-</TR>
-<TR>
-<TD >Jehovov sel Hagaj je takrat po Jehovovem naročilu sporočil ljudstvu: »‚Jaz sem z vami,  govori Jehova.«</TD>
-</TR>
-<TR>
-<TD >Jehova je spodbudil Šealtielovega sina Zerubabela,  ki je bil upravitelj na Judovem,  Jozadakovega sina Jozueta,  ki je bil veliki duhovnik,  in vse druge,  da so se lotili dela. Tako so spet začeli z deli pri hiši svojega Boga,  Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >To je bilo 24. dne šestega meseca v drugem letu vladanja kralja Dareja.</TD>
-</TR>
-<TR>
-<TD >Hagaj 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Enaindvajsetega dne sedmega meseca je prerok Hagaj dobil sporočilo od Jehova:</TD>
-</TR>
-<TR>
-<TD >»Šealtielovega sina Zerubabela,  ki je upravitelj na Judovem,  Jozadakovega sina Jozueta,  ki je veliki duhovnik,  in vse druge,  prosim,  vprašaj:</TD>
-</TR>
-<TR>
-<TD >‚Kdo med vami se še spomni,  kako lepa je bila nekoč ta hiša? Kakšna pa se vam zdi zdaj? Ali ni zdaj videti kot nič posebnega v primerjavi s prej?</TD>
-</TR>
-<TR>
-<TD >Reci še: ‚»Toda zdaj,  Zerubabel,  bodi pogumen, « govori Jehova,  »in tudi ti,  Jozadakov sin Jozue,  veliki duhovnik,  bodi pogumen.«<br>»Vsi vi,  ki živite v tej deželi,  bodite pogumni, « govori Jehova,  »in se lotite dela.«<br>»Jaz sem z vami, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Spomnite se,  kaj sem vam obljubil,  ko ste prišli iz Egipta,  in bodite prepričani,  da je moj duh še vedno med vami. Ne bojte se!««</TD>
-</TR>
-<TR>
-<TD >»Jehova nad vojskami govori: ‚Še enkrat,  in to kmalu,  bom pretresel nebo in zemljo,  morje in kopno.</TD>
-</TR>
-<TR>
-<TD >‚Pretresel bom vse narode in dragocenosti vseh narodov bodo prišle v to hišo in napolnil jo bom s slavo,  govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >‚Vse srebro in tudi vse zlato je moje,  govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >‚Prihodnja slava te hiše bo večja od njene prejšnje slave,  govori Jehova nad vojskami.<br>‚In temu kraju bom naklonil mir,  govori Jehova nad vojskami.«</TD>
-</TR>
-<TR>
-<TD >Štiriindvajsetega dne devetega meseca v drugem letu Darejevega vladanja je prerok Hagaj dobil sporočilo od Jehova:</TD>
-</TR>
-<TR>
-<TD >»Jehova nad vojskami govori: ‚Prosim,  postavi duhovnikom naslednje vprašanje glede Zakonika:</TD>
-</TR>
-<TR>
-<TD >»Če kdo nosi sveto meso v svojem oblačilu,  pa se s tem oblačilom dotakne kruha,  enolončnice,  vina,  olja ali katere koli druge hrane,  ali bo ta hrana postala sveta?««<br>In ko je to vprašal,  so duhovniki odgovorili: »Ne!«</TD>
-</TR>
-<TR>
-<TD >Hagaj je zatem vprašal: »Če se te hrane dotakne kdo,  ki je nečist,  ker se je prej dotaknil mrliča,  ali bo ta hrana postala nečista?«<br>Duhovniki so odgovorili: »Postala bo nečista.«</TD>
-</TR>
-<TR>
-<TD >Hagaj je rekel: »‚Takšno je to ljudstvo in ta narod v mojih očeh,  govori Jehova,  ‚takšno je vse,  kar naredijo. Vse,  kar darujejo,  je nečisto.</TD>
-</TR>
-<TR>
-<TD >‚Zdaj pa vas prosim,  da od danes naprej skrbno premišljujete o naslednjem: Kako je bilo,  preden se je začela ponovna gradnja Jehovovega templja?</TD>
-</TR>
-<TR>
-<TD >Ko je kdo prišel h kupu žita,  iz katerega bi moral dobiti 20 mernikov zrnja,  jih je dobil le 10,  in ko je kdo prišel k vinski kadi,  da bi iz nje zajel 50 mernikov vina,  jih je zajel le 20.</TD>
-</TR>
-<TR>
-<TD >Nad vas – nad vse,  za kar ste se trudili – sem poslal sušo,  plesen in točo,  toda nihče od vas se ni vrnil k meni,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Prosim vas,  bodite pozorni na to,  kar se bo dogajalo od danes naprej,  od 24. dne devetega meseca,  od dneva,  ko je bil položen temelj Jehovovega templja. Bodite pozorni na to:</TD>
-</TR>
-<TR>
-<TD >V žitnici ni več semena. Trta,  figa,  granatovec in oljka še niso obrodili. Toda od tega dneva naprej vas bom blagoslavljal.«</TD>
-</TR>
-<TR>
-<TD >Štiriindvajsetega dne istega meseca je Hagaj znova dobil sporočilo od Jehova:</TD>
-</TR>
-<TR>
-<TD >»Zerubabelu,  upravitelju na Judovem,  reci: ‚»Pretresel bom nebo in zemljo.</TD>
-</TR>
-<TR>
-<TD >Prevrnil bom prestole kraljestev in uničil moč narodov. Prevrnil bom bojne vozove in tiste,  ki jih vozijo. Konji in jezdeci bodo popadali. Možje se bodo med seboj pobili z mečem.«</TD>
-</TR>
-<TR>
-<TD >»O moj služabnik Zerubabel,  Šealtielov sin, « govori Jehova nad vojskami. »Tisti dan te bom uporabil, « govori Jehova. »Naredil te bom za pečatni prstan,  saj si ti tisti,  ki sem ga izbral, « govori Jehova nad vojskami.«</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Hagaj','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Hagaj:"Hagaj 1. poglavje",K:"",NZ:""},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:1,Hagaj:"Prvi dan šestega meseca v drugem letu vladanja kralja Dareja je prerok Hagaj dobil od Jehova sporočilo za Šealtielovega sina Zerubabela. ki je bil upravitelj na Judovem. in za Jozadakovega sina Jozueta. ki je bil veliki duhovnik. Sporočilo se je glasilo:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:2,Hagaj:"»Jehova nad vojskami govori: ‚To ljudstvo pravi: »Ni še prišel čas. da se ponovno zgradi Jehovova hiša.««",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:3,Hagaj:"Jehova je po preroku Hagaju še sporočil:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:4,Hagaj:"»Ali je zdaj že čas. da živite v svojih hišah. okrašenih z lepim lesom. ko pa vidite. da je ta hiša v ruševinah?",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:5,Hagaj:"Zato Jehova nad vojskami pravi: ‚Skrbno premislite o tem. kaj delate.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:6,Hagaj:"Veliko sejete. vendar malo žanjete. Jeste. vendar se ne morete nasititi. Pijete. vendar se ne morete napiti. Oblačite se. vendar se nihče od vas ne more ogreti. Najeti delavec spravlja svoje plačilo v raztrgan mošnjiček.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:7,Hagaj:"»Jehova nad vojskami pravi: ‚Skrbno premislite o tem. kaj delate.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:8,Hagaj:"‚Povzpnite se na goro in prinesite les. Zgradite mojo hišo. da mi bo prinašala veselje in se bom z njo oslavil. govori Jehova.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:9,Hagaj:"»‚Veliko pričakujete. vendar malo dobite. To. kar prinašate domov. jaz odpihnem. Zakaj delam to? govori Jehova nad vojskami. ‚Zato ker je moja hiša v ruševinah. vi pa tekate naokrog. da bi poskrbeli vsak za svojo hišo.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:10,Hagaj:"Zato vam nebo ne daje svoje rose ne zemlja svojega pridelka.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:11,Hagaj:"Poslal sem sušo na polja. na gore. na žito. na novo vino. na olje. na vse. kar zraste iz tal. na ljudi. na živino in na vse. za kar se trudite.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:12,Hagaj:"Šealtielov sin Zerubabel in Jozadakov sin Jozue. ki je bil veliki duhovnik. ter vsi drugi so ubogali to. kar je rekel njihov Bog Jehova. Ubogali so tudi to. kar je rekel prerok Hagaj. saj ga je poslal njihov Bog Jehova. Ljudi je prevzelo strahospoštovanje do Jehova.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:13,Hagaj:"Jehovov sel Hagaj je takrat po Jehovovem naročilu sporočil ljudstvu: »‚Jaz sem z vami. govori Jehova.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:14,Hagaj:"Jehova je spodbudil Šealtielovega sina Zerubabela. ki je bil upravitelj na Judovem. Jozadakovega sina Jozueta. ki je bil veliki duhovnik. in vse druge. da so se lotili dela. Tako so spet začeli z deli pri hiši svojega Boga. Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:1,V:15,Hagaj:"To je bilo 24. dne šestega meseca v drugem letu vladanja kralja Dareja.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Hagaj:"Hagaj 2. poglavje",K:"",NZ:""},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:1,Hagaj:"Enaindvajsetega dne sedmega meseca je prerok Hagaj dobil sporočilo od Jehova:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:2,Hagaj:"»Šealtielovega sina Zerubabela. ki je upravitelj na Judovem. Jozadakovega sina Jozueta. ki je veliki duhovnik. in vse druge. prosim. vprašaj:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:3,Hagaj:"‚Kdo med vami se še spomni. kako lepa je bila nekoč ta hiša? Kakšna pa se vam zdi zdaj? Ali ni zdaj videti kot nič posebnega v primerjavi s prej?",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:4,Hagaj:"Reci še: ‚»Toda zdaj. Zerubabel. bodi pogumen.« govori Jehova. »in tudi ti. Jozadakov sin Jozue. veliki duhovnik. bodi pogumen.«<br>»Vsi vi. ki živite v tej deželi. bodite pogumni.« govori Jehova. »in se lotite dela.«<br>»Jaz sem z vami.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:5,Hagaj:"»Spomnite se. kaj sem vam obljubil. ko ste prišli iz Egipta. in bodite prepričani. da je moj duh še vedno med vami. Ne bojte se!««",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:6,Hagaj:"»Jehova nad vojskami govori: ‚Še enkrat. in to kmalu. bom pretresel nebo in zemljo. morje in kopno.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:7,Hagaj:"‚Pretresel bom vse narode in dragocenosti vseh narodov bodo prišle v to hišo in napolnil jo bom s slavo. govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:8,Hagaj:"‚Vse srebro in tudi vse zlato je moje. govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:9,Hagaj:"‚Prihodnja slava te hiše bo večja od njene prejšnje slave. govori Jehova nad vojskami.<br>‚In temu kraju bom naklonil mir. govori Jehova nad vojskami.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:10,Hagaj:"Štiriindvajsetega dne devetega meseca v drugem letu Darejevega vladanja je prerok Hagaj dobil sporočilo od Jehova:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:11,Hagaj:"»Jehova nad vojskami govori: ‚Prosim. postavi duhovnikom naslednje vprašanje glede Zakonika:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:12,Hagaj:"»Če kdo nosi sveto meso v svojem oblačilu. pa se s tem oblačilom dotakne kruha. enolončnice. vina. olja ali katere koli druge hrane. ali bo ta hrana postala sveta?««<br>In ko je to vprašal. so duhovniki odgovorili: »Ne!«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:13,Hagaj:"Hagaj je zatem vprašal: »Če se te hrane dotakne kdo. ki je nečist. ker se je prej dotaknil mrliča. ali bo ta hrana postala nečista?«<br>Duhovniki so odgovorili: »Postala bo nečista.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:14,Hagaj:"Hagaj je rekel: »‚Takšno je to ljudstvo in ta narod v mojih očeh. govori Jehova. ‚takšno je vse. kar naredijo. Vse. kar darujejo. je nečisto.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:15,Hagaj:"‚Zdaj pa vas prosim. da od danes naprej skrbno premišljujete o naslednjem: Kako je bilo. preden se je začela ponovna gradnja Jehovovega templja?",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:16,Hagaj:"Ko je kdo prišel h kupu žita. iz katerega bi moral dobiti 20 mernikov zrnja. jih je dobil le 10. in ko je kdo prišel k vinski kadi. da bi iz nje zajel 50 mernikov vina. jih je zajel le 20.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:17,Hagaj:"Nad vas – nad vse. za kar ste se trudili – sem poslal sušo. plesen in točo. toda nihče od vas se ni vrnil k meni. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:18,Hagaj:"‚Prosim vas. bodite pozorni na to. kar se bo dogajalo od danes naprej. od 24. dne devetega meseca. od dneva. ko je bil položen temelj Jehovovega templja. Bodite pozorni na to:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:19,Hagaj:"V žitnici ni več semena. Trta. figa. granatovec in oljka še niso obrodili. Toda od tega dneva naprej vas bom blagoslavljal.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:20,Hagaj:"Štiriindvajsetega dne istega meseca je Hagaj znova dobil sporočilo od Jehova:",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:21,Hagaj:"»Zerubabelu. upravitelju na Judovem. reci: ‚»Pretresel bom nebo in zemljo.",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:22,Hagaj:"Prevrnil bom prestole kraljestev in uničil moč narodov. Prevrnil bom bojne vozove in tiste. ki jih vozijo. Konji in jezdeci bodo popadali. Možje se bodo med seboj pobili z mečem.«",K:"",NZ:"X"},
+{Knjiga:"Hagaj",Kr:"Hag",P:2,V:23,Hagaj:"»O moj služabnik Zerubabel. Šealtielov sin.« govori Jehova nad vojskami. »Tisti dan te bom uporabil.« govori Jehova. »Naredil te bom za pečatni prstan. saj si ti tisti. ki sem ga izbral.« govori Jehova nad vojskami.«",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

@@ -1,668 +1,336 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Ozej</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Ozej 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >To so besede,  ki jih je Jehova povedal Beerijevemu sinu Ozeju v času Judovih kraljev Uzija,  Jotama,  Ahaza in Ezekija ter v času Izraelovega kralja Jeroboama,  ki je bil Joašev sin.</TD>
-</TR>
-<TR>
-<TD >To je začetek sporočila,  ki ga je Jehova oznanil po Ozeju. Jehova je Ozeju rekel: »Pojdi,  poroči se z žensko,  ki bo prešuštvovala in bo imela otroke z drugimi moškimi. Podobno bo namreč dežela zaradi prešuštvovanja zapustila mene,  Jehova.«</TD>
-</TR>
-<TR>
-<TD >Ozej se je poročil z Diblajimovo hčerjo Gomero. Zanosila je in mu rodila sina.</TD>
-</TR>
-<TR>
-<TD >Takrat mu je Jehova rekel: »Daj mu ime Jezreel. Še malo namreč in Jehujeva hiša mi bo odgovarjala za prelito jezreelsko kri in naredil bom konec Izraelovemu kraljestvu.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bom zlomil Izraelov lok v Jezreelski dolini.«</TD>
-</TR>
-<TR>
-<TD >Gomera pa je znova zanosila in rodila hčerko. Bog je Ozeju rekel: »Daj ji ime Lo Ruhama,  saj se Izraelovega ljudstva ne bom več usmilil,  ampak ga bom pregnal.</TD>
-</TR>
-<TR>
-<TD >Toda Judovega ljudstva se bom usmilil. Jaz,  njegov Bog Jehova,  ga bom rešil,  vendar ne z lokom,  mečem,  vojskovanjem,  konji ali konjeniki.«</TD>
-</TR>
-<TR>
-<TD >Ko je Gomera nehala dojiti Lo Ruhamo,  je zanosila in rodila sina.</TD>
-</TR>
-<TR>
-<TD >Bog je Ozeju rekel: »Daj mu ime Lo Ami. Vi namreč niste moje ljudstvo in jaz ne bom vaš Bog.</TD>
-</TR>
-<TR>
-<TD >Izraelcev bo toliko,  kot je morskega peska,  ki ga ni mogoče ne izmeriti ne prešteti. Tam,  kjer sem jim prej rekel ‚Vi niste moje ljudstvo,  jim bom zdaj rekel ‚Vi ste moji otroci,  otroci živega Boga.</TD>
-</TR>
-<TR>
-<TD >Judovo ljudstvo in Izraelovo ljudstvo se bosta združila,  si izbrala enega poglavarja in odšla iz dežele. Jezreelski dan bo namreč velik.</TD>
-</TR>
-<TR>
-<TD >Ozej 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Svojim bratom recite ‚Moje ljudstvo<br>in svojim sestram ‚Ve,  ki vam je bilo izkazano usmiljenje.</TD>
-</TR>
-<TR>
-<TD >Obtožite svojo mater,  obtožite jo, <br>ker ona ni moja žena in jaz nisem njen mož.<br>Naj se neha prostituirati<br>in naj mi ne bo več nezvesta, </TD>
-</TR>
-<TR>
-<TD >drugače jo bom slekel do golega in povzročil,  da bo takšna,  kakršna je bila ob rojstvu, <br>da bo kakor pustinja, <br>da se bo spremenila v sušno deželo<br>in umrla od žeje.</TD>
-</TR>
-<TR>
-<TD >Njenih otrok se ne bom usmilil, <br>ker so se rodili zaradi njenega prostituiranja.</TD>
-</TR>
-<TR>
-<TD >Njihova mati se je prostituirala.<br>Tista,  ki jih je nosila v svojem telesu,  je ravnala sramotno. Govorila je:<br>‚Šla bom za svojimi strastnimi ljubimci, <br>ki mi dajejo hrano in vodo, <br>volno in lan,  olje in pijačo.</TD>
-</TR>
-<TR>
-<TD >Zato ji bom pot zaprl s trnovo ograjo.<br>Pred njo bom postavil kamnit zid, <br>da ne bo mogla najti izhoda.</TD>
-</TR>
-<TR>
-<TD >Tekla bo za svojimi strastnimi ljubimci,  vendar jih ne bo dohitela, <br>iskala jih bo,  vendar jih ne bo našla.<br>Takrat bo rekla: ‚Vrnila se bom k svojemu prvemu možu, <br>saj mi je bilo takrat boljše,  kot mi je zdaj.</TD>
-</TR>
-<TR>
-<TD >Ni spoznala,  da sem ji jaz dajal žito,  novo vino in olje, <br>da sem ji jaz v izobilju dajal srebra in zlata, <br>ki so ju potem uporabljali za Baala.</TD>
-</TR>
-<TR>
-<TD >‚Zato se bom vrnil in ob žetvi vzel nazaj svoje žito<br>in ob trgatvi svoje novo vino.<br>Odvzel ji bom svojo volno in lan,  s čimer si je pokrivala goloto.</TD>
-</TR>
-<TR>
-<TD >Pred očmi njenih strastnih ljubimcev bom razkril njene intimne dele<br>in nikogar ne bo,  ki bi jo rešil iz mojih rok.</TD>
-</TR>
-<TR>
-<TD >Naredil bom konec vsemu njenemu veselju, <br>njenim praznikom in njenim mlajem,  njenim šabatom in vsem njenim praznovanjem.</TD>
-</TR>
-<TR>
-<TD >Uničil bom njene trte in njene fige,  o katerih je govorila:<br>»To sem za plačilo dobila od svojih strastnih ljubimcev.«<br>Spremenil jih bom v goščavo<br>in bodo za hrano divjim živalim.</TD>
-</TR>
-<TR>
-<TD >Odgovarjala mi bo za dneve,  ko je Baalovim podobam darovala žrtve, <br>ko se je okraševala z uhani in drugim nakitom in ko je tekala za svojimi strastnimi ljubimci, <br>mene pa je pozabila,  govorim jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Zato jo bom pregovoril, <br>popeljal jo bom v pustinjo<br>in ji govoril tako,  da ji bom segel do srca.</TD>
-</TR>
-<TR>
-<TD >Potem ji bom vrnil vinograde<br>in Ahorsko dolino kot vrata upanja.<br>Tam se bo odzvala na moje besede kakor v dneh svoje mladosti<br>in kakor tisti dan,  ko je odšla iz egiptovske dežele.</TD>
-</TR>
-<TR>
-<TD >Tisti dan,  govorim jaz,  Jehova, <br>‚me bo imenovala Moj mož,  ne bo me več imenovala Moj gospodar.</TD>
-</TR>
-<TR>
-<TD >‚Ne bom ji več dovolil omenjati imen Baalovih podob, <br>njihovih imen se ne bo več spominjala.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bom v prid svojemu ljudstvu sklenil zavezo z divjimi živalmi, <br>pticami in plazečimi se živalmi na zemlji.<br>Iz dežele bom odstranil lok,  meč in vojno<br>in poskrbel,  da bo moje ljudstvo živelo brez strahu.</TD>
-</TR>
-<TR>
-<TD >S teboj se bom zaročil,  da boš moja za vedno.<br>Obljubim ti,  da bom s teboj ravnal tako,  kot je prav in pravično, <br>da ti bom vdan v ljubezni in usmiljen s teboj.</TD>
-</TR>
-<TR>
-<TD >Obljubim ti,  da ti bom zvest.<br>Takrat boš spoznala mene,  Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Tisti dan,  govorim jaz,  Jehova, <br>‚bom uslišal nebo<br>in nebo bo uslišalo zemljo.</TD>
-</TR>
-<TR>
-<TD >Zemlja bo uslišala žito,  novo vino in olje, <br>ti pa bodo uslišali Jezreela.</TD>
-</TR>
-<TR>
-<TD >Jezreel bom posejal kakor seme po zemlji<br>in se usmilil tistih,  ki jim ni bilo izkazano usmiljenje.<br>Tistim,  ki niso moje ljudstvo,  bom rekel »Vi ste moje ljudstvo«, <br>oni pa bodo rekli »Ti si naš Bog«.«</TD>
-</TR>
-<TR>
-<TD >Ozej 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jehova mi je še rekel: »Pojdi in spet ljubi svojo ženo,  ki ima ljubimca in prešuštvuje. Ljubi jo tako,  kot jaz,  Jehova,  ljubim Izraelce,  ki častijo druge bogove in imajo radi rozinove hlebčke.«</TD>
-</TR>
-<TR>
-<TD >Tako sem Gomero kupil za 15 šeklov srebra in za homer in pol ječmena.</TD>
-</TR>
-<TR>
-<TD >Potem sem ji rekel: »Mnogo dni živi kot moja žena. Ne prostituiraj se. Ne imej spolnih odnosov z drugimi moškimi in tudi jaz ne bom imel spolnih odnosov s teboj.«</TD>
-</TR>
-<TR>
-<TD >Izraelci bodo namreč dolgo časa živeli brez kralja in poglavarja,  brez žrtev in svetih stebrov,  brez duhovnika in hišnih bogov.</TD>
-</TR>
-<TR>
-<TD >Potem pa si bodo prizadevali vrniti se k svojemu Bogu Jehovu in svojemu kralju Davidu. V zadnjih dneh bodo polni strahospoštovanja prišli k Jehovu,  da bi občutili njegovo dobroto.</TD>
-</TR>
-<TR>
-<TD >Ozej 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >Izraelci,  poslušajte Jehovove besede!<br>Jehova je prebivalce te dežele postavil pred sodišče, <br>saj v deželi ni ne resnice,  ne vdane ljubezni,  ne spoznanja o Bogu.</TD>
-</TR>
-<TR>
-<TD >Po deželi so razširjene krive prisege,  prevare,  umori, <br>kraje in prešuštvovanje.<br>Ljudje ne nehajo prelivati krvi.</TD>
-</TR>
-<TR>
-<TD >Zato bo dežela žalovala;<br>izginili bodo vsi njeni prebivalci<br>pa tudi divje živali in ptice.<br>Celo ribe v morju bodo poginile.</TD>
-</TR>
-<TR>
-<TD >»Toda naj vam nihče ne svetuje,  nihče naj vas ne opominja, <br>saj ste podobni tistim,  ki se prepirajo z duhovnikom.</TD>
-</TR>
-<TR>
-<TD >Podnevi se boste spotikali,  kakor da bi bila noč, <br>pa tudi preroki se bodo spotikali.<br>Utišal bom vašo mater.</TD>
-</TR>
-<TR>
-<TD >Moje ljudstvo bo utišano,  ker nima spoznanja.<br>Ker ste zavrgli spoznanje, <br>bom tudi jaz zavrgel vas,  da mi ne boste več služili kot duhovniki.<br>In ker pozabljate moj zakon,  zakon svojega Boga, <br>bom tudi jaz pozabil vaše sinove.</TD>
-</TR>
-<TR>
-<TD >Več ko je bilo duhovnikov,  bolj so grešili proti meni.<br>Njihovo slavo bom spremenil v sramoto.</TD>
-</TR>
-<TR>
-<TD >Hranijo se z grehom mojega ljudstva, <br>želijo si,  da bi ljudstvo vse več grešilo.</TD>
-</TR>
-<TR>
-<TD >Ljudstvo in duhovnike<br>bom poklical na odgovornost zaradi njihovega ravnanja, <br>poskrbel bom,  da bodo nosili posledice svojih dejanj.</TD>
-</TR>
-<TR>
-<TD >Jedli bodo,  vendar se ne bodo najedli.<br>Živeli bodo razvratno,  vendar se ne bodo namnožili, <br>saj ne ubogajo več mene,  Jehova.</TD>
-</TR>
-<TR>
-<TD >Prostituiranje,  staro vino in novo vino<br>človeku zadušijo željo,  da bi delal dobro.</TD>
-</TR>
-<TR>
-<TD >Moje ljudstvo išče nasvete pri svojih lesenih malikih, <br>delajo to,  kar jim govori njihova palica.<br>Zaradi želje po prostituiranju so zašli na krivo pot, <br>zaradi prostituiranja se nočejo podrediti meni,  svojemu Bogu.</TD>
-</TR>
-<TR>
-<TD >Žrtve darujejo po vrhovih gora, <br>daritve zažigajo po hribih, <br>pod hrasti in stiraksovimi drevesi,  pod vsemi velikimi drevesi, <br>ker dajejo prijetno senco.<br>Zato se vaše hčere prostituirajo<br>in vaše snahe prešuštvujejo.</TD>
-</TR>
-<TR>
-<TD >Vaših hčera ne bom poklical na odgovornost za njihovo prostituiranje<br>in vaših snah za njihovo prešuštvovanje.<br>Moški so namreč tisti,  ki hodijo k prostitutkam<br>in darujejo žrtve s tempeljskimi prostitutkami.<br>Ljudstvo,  ki mu manjka razumnosti,  bo uničeno.</TD>
-</TR>
-<TR>
-<TD >Če se ti,  Izraelovo ljudstvo,  prostituiraš, <br>naj ne bo krivo tudi Judovo ljudstvo.<br>Ne prihajajte v Gilgal ali v Bet Aven<br>in ne govorite: ‚Prisegam pri Jehovu,  živem Bogu!</TD>
-</TR>
-<TR>
-<TD >Izraelovo ljudstvo je namreč postalo trmasto kakor trmasta krava.<br>Ali ga bom jaz,  Jehova,  zdaj pasel kakor mladega ovna na prostranih travnikih?</TD>
-</TR>
-<TR>
-<TD >Efraim časti malike.<br>Pusti ga pri miru!</TD>
-</TR>
-<TR>
-<TD >Ko mu zmanjka piva, <br>začne živeti razvratno.<br>Njegovi voditelji radi počnejo sramotna dejanja.</TD>
-</TR>
-<TR>
-<TD >Veter ga bo odnesel s svojimi krili.<br>Ljudje se bodo sramovali svojih žrtev.«</TD>
-</TR>
-<TR>
-<TD >Ozej 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Poslušajte to,  duhovniki!<br>Prisluhni,  izraelsko ljudstvo!<br>Pozorno poslušajte,  vsi,  ki živite v kraljevi palači!<br>Sodba je namenjena vam, <br>ker ste postali past za Micpo<br>in mreža,  razpeta čez Tabor.</TD>
-</TR>
-<TR>
-<TD >Uporniki so pri pobijanju globoko zabredli, <br>čeprav jih jaz vse opozarjam.</TD>
-</TR>
-<TR>
-<TD >Jaz poznam Efraima, <br>Izrael se ne more skriti pred menoj.<br>Ti,  o Efraim,  živiš razvratno, <br>Izrael se je onečastil.</TD>
-</TR>
-<TR>
-<TD >Njihova dejanja jim ne dopuščajo,  da bi se vrnili k meni,  svojemu Bogu.<br>Želijo se namreč prostituirati<br>in nočejo priznati,  da sem jaz,  Jehova,  njihov Bog.</TD>
-</TR>
-<TR>
-<TD >Izrael s svojo ošabnostjo obtožuje sam sebe.<br>Izrael in Efraim se spotikata zaradi svojih grehov<br>in z njima se spotika tudi Juda.</TD>
-</TR>
-<TR>
-<TD >S svojo drobnico in govedom so si želeli pridobiti mojo,  Jehovovo naklonjenost, <br>vendar si je niso pridobili.<br>Umaknil sem se od njih.</TD>
-</TR>
-<TR>
-<TD >Meni,  Jehovu,  so se izneverili, <br>saj so imeli otroke,  ki so mi tuji.<br>Zato bodo v enem mesecu požrti s svojimi polji vred.</TD>
-</TR>
-<TR>
-<TD >Zatrobite na rog v Gibei,  na trobento v Rami!<br>Zaženite bojni krik v Bet Avenu! Vodi nas,  Benjamin!</TD>
-</TR>
-<TR>
-<TD >Efraim,  tisti dan,  ko boš kaznovan,  se bodo ljudje ob pogledu nate zgrozili.<br>Izraelovim rodovom sem oznanil to,  kar se jim bo res zgodilo.</TD>
-</TR>
-<TR>
-<TD >Judovi poglavarji so kakor tisti,  ki prestavljajo mejnike.<br>Nanje bom izlil svoj bes kakor vodo.</TD>
-</TR>
-<TR>
-<TD >Efraim je zatrt,  po pravici je uničen, <br>ker je bil odločen skleniti zavezništvo s svojim nasprotnikom.</TD>
-</TR>
-<TR>
-<TD >Zato sem Efraimu postal kakor molj<br>in Judovemu ljudstvu kakor gniloba.</TD>
-</TR>
-<TR>
-<TD >Ko je Efraim videl svojo bolezen in Juda svojo razjedo, <br>je Efraim šel v Asirijo in poslal sle k velikemu kralju.<br>Toda ta kralj vas ni mogel ozdraviti, <br>ni vam mogel ozdraviti razjede.</TD>
-</TR>
-<TR>
-<TD >Jaz bom napadel Efraima kakor mlad lev<br>in Judovo ljudstvo kakor močan lev.<br>Jaz jih bom raztrgal in odšel, <br>jaz jih bom odnesel in nihče jih ne bo rešil.</TD>
-</TR>
-<TR>
-<TD >Vrnil se bom na svoje mesto,  dokler ne bodo plačali za svoj greh.<br>Iskali bodo mojo naklonjenost.<br>Ko bodo v stiski,  me bodo iskali.«</TD>
-</TR>
-<TR>
-<TD >Ozej 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Pridite,  vrnimo se k Jehovu!<br>On nas je raztrgal,  vendar nas bo tudi ozdravil.<br>On nas je udaril,  vendar nam bo tudi obvezal rane.</TD>
-</TR>
-<TR>
-<TD >Po dveh dneh nas bo oživil.<br>Tretji dan nas bo dvignil<br>– živeli bomo in imeli njegovo odobravanje.</TD>
-</TR>
-<TR>
-<TD >Spoznavali bomo Jehova,  vneto se ga bomo trudili spoznati.<br>Njegov prihod je zanesljiv kakor prihod zore.<br>K nam bo prišel kakor dež, <br>kakor spomladanski dež,  ki namaka zemljo.«</TD>
-</TR>
-<TR>
-<TD >»Kaj lahko še naredim,  da bi ti pomagal,  o Efraim?<br>In kaj lahko še naredim,  da bi pomagal tebi,  o Juda?<br>Vaša vdana ljubezen je namreč podobna jutranjim oblakom, <br>podobna je rosi,  ki hitro izgine.</TD>
-</TR>
-<TR>
-<TD >Zato vas bom udaril z besedami prerokov, <br>usmrtil vas bom z besedami svojih ust.<br>Obsodbe nad vami bodo svetile kakor luč.</TD>
-</TR>
-<TR>
-<TD >Ne veselim se žrtev,  ampak vdane ljubezni, <br>ne veselim se žgalnih daritev,  ampak tega,  da spoznavate mene,  Boga.</TD>
-</TR>
-<TR>
-<TD >Toda moje ljudstvo je kakor grešen človek pretrgalo zavezo.<br>V svoji deželi se mi je izneverilo.</TD>
-</TR>
-<TR>
-<TD >Gilead je mesto zločincev, <br>prekrito je s krvavimi stopinjami.</TD>
-</TR>
-<TR>
-<TD >Duhovniki so kakor tolpa razbojnikov,  ki prežijo na človeka.<br>Ob poti v Sihem ubijajo.<br>Njihovo ravnanje je sramotno.</TD>
-</TR>
-<TR>
-<TD >Med izraelskim ljudstvom vidim grozne reči.<br>Efraim se prostituira, <br>Izrael se je onečastil.</TD>
-</TR>
-<TR>
-<TD >Tebe,  o Juda,  pa čaka žetev, <br>ko bom svoje ljudstvo pripeljal iz ujetništva.«</TD>
-</TR>
-<TR>
-<TD >Ozej 7. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Kadar želim Izraela ozdraviti, <br>se razkrijejo Efraimovi grehi<br>in hudobija Samarije.<br>Ravnajo namreč zvijačno.<br>Tatovi vlamljajo v hiše,  zunaj pa razbojniške tolpe napadajo ljudi.</TD>
-</TR>
-<TR>
-<TD >V svojem srcu ne pomislijo,  da si bom zapomnil vso njihovo hudobijo.<br>Zdaj so jih njihova dejanja ujela v zanko.<br>Nobeno od njih ni skrito mojim očem.</TD>
-</TR>
-<TR>
-<TD >S svojo hudobijo razveseljujejo kralja<br>in s svojimi prevarami poglavarje.</TD>
-</TR>
-<TR>
-<TD >Vsi so prešuštniki.<br>Gorijo kakor peč,  v kateri je pek zanetil tako močen ogenj, <br>da mu ga ni treba več podpihovati,  medtem ko mesi testo in ga pusti vzhajati.</TD>
-</TR>
-<TR>
-<TD >Ob prazniku našega kralja so poglavarji zboleli<br>– vino je v njih vzbudilo jezo.<br>Kralj se je spoprijateljil s posmehljivci.</TD>
-</TR>
-<TR>
-<TD >Srce jim gori kakor peč.<br>Pek spi vso noč, <br>zjutraj pa se peč razžari kakor plameneč ogenj.</TD>
-</TR>
-<TR>
-<TD >Prav vsi so se razvneli kakor peč<br>in požirajo svoje voditelje.<br>Vsi njihovi kralji so padli, <br>nihče od njih me ne kliče na pomoč.</TD>
-</TR>
-<TR>
-<TD >Efraim se meša z ljudmi iz drugih narodov.<br>Postal je kakor hlebec,  ki ga med peko ne obrnejo na drugo stran.</TD>
-</TR>
-<TR>
-<TD >Tujci so mu vzeli moč,  vendar se tega ne zaveda.<br>Njegovi lasje so osiveli,  vendar tega ne opazi.</TD>
-</TR>
-<TR>
-<TD >Izrael s svojo ošabnostjo obtožuje sam sebe, <br>toda ne vrne se k meni,  svojemu Bogu Jehovu.<br>Čeprav se mu je vse to zgodilo,  me ne prosi za pomoč.</TD>
-</TR>
-<TR>
-<TD >Efraim je kakor golob,  ki je neumen in nima razuma.<br>Na pomoč kliče Egipt,  hodi v Asirijo.</TD>
-</TR>
-<TR>
-<TD >Kamor koli bodo šli,  bom čez njih razpel svojo mrežo.<br>Ujel jih bom kakor ptice.<br>Kaznoval jih bom,  tako kot sem jih opozarjal.</TD>
-</TR>
-<TR>
-<TD >Gorje jim,  ker so zbežali od mene!<br>Naj jih doleti opustošenje,  ker so grešili proti meni!<br>Hotel sem jih odkupiti,  vendar so o meni govorili laži.</TD>
-</TR>
-<TR>
-<TD >Čeprav so žalovali na svojih posteljah, <br>me niso z vsem srcem klicali na pomoč.<br>Delali so si zareze v telo v upanju,  da bodo dobili žito in novo vino.<br>Postali so uporniki.</TD>
-</TR>
-<TR>
-<TD >Čeprav sem jih poučeval in jim dajal moč, <br>so spletkarili proti meni.</TD>
-</TR>
-<TR>
-<TD >Spremenili so se,  toda niso se vrnili k temu,  kar je vzvišeno.<br>Bili so nezanesljivi kakor nenapet lok.<br>Njihovi poglavarji bodo padli pod mečem zaradi svojega uporniškega govorjenja.<br>Zato bodo v egiptovski deželi postali tarča posmeha.«</TD>
-</TR>
-<TR>
-<TD >Ozej 8. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Zatrobi na rog!<br>Sovražnik kakor orel prihaja nad moje,  Jehovovo ljudstvo, <br>ker je prelomilo mojo zavezo in prekršilo moj zakon.</TD>
-</TR>
-<TR>
-<TD >K meni vpijejo: ‚O naš Bog,  mi,  Izraelci,  te poznamo!</TD>
-</TR>
-<TR>
-<TD >Izraelci so zavrgli to,  kar je dobro.<br>Naj jih preganja sovražnik.</TD>
-</TR>
-<TR>
-<TD >Postavljajo si kralje,  toda ne v skladu z mojo voljo.<br>Postavljajo si poglavarje,  toda brez mojega odobravanja.<br>Iz svojega srebra in zlata si izdelujejo malike, <br>zato bodo uničeni.</TD>
-</TR>
-<TR>
-<TD >O Samarija,  zavrgel sem podobo teleta,  ki jo častiš.<br>Zelo sem se razjezil nate.<br>Koliko časa bo trajalo,  preden boš spet očiščena krivde?</TD>
-</TR>
-<TR>
-<TD >To tele so namreč izdelali Izraelci.<br>To tele ni Bog,  rokodelec ga je naredil;<br>samarijsko tele bo zdrobljeno.</TD>
-</TR>
-<TR>
-<TD >Sejejo namreč veter, <br>toda želi bodo vihar.<br>Na žitnih steblih ni klasov.<br>To,  kar zraste,  ne da moke, <br>pa tudi če bi jo dalo,  bi jo pogoltnili tujci.</TD>
-</TR>
-<TR>
-<TD >Izrael bo uničen.<br>Razkropljen bo med narode, <br>bo kakor posoda,  ki je nihče ne mara.</TD>
-</TR>
-<TR>
-<TD >Šel je namreč gor v Asirijo kakor samotarski divji osel.<br>Efraim si najema ljubimce.</TD>
-</TR>
-<TR>
-<TD >Čeprav si ljubimce najemajo med narodi, <br>jih bom zbral skupaj za sodbo.<br>Trpeli bodo zaradi bremena,  ki jim ga bodo naložili kralj in poglavarji.</TD>
-</TR>
-<TR>
-<TD >Efraim je namnožil oltarje,  da bi grešil.<br>S svojimi oltarji greši.</TD>
-</TR>
-<TR>
-<TD >Napisal sem mu mnogo zakonov, <br>vendar se zanje ni zmenil.</TD>
-</TR>
-<TR>
-<TD >Prinaša mi žrtve in je meso, <br>ampak meni,  Jehovu,  to ne ugaja.<br>Spomnil se bom njegovih prestopkov in ga kaznoval za njegove grehe.<br>Obrnil se je na Egipt.</TD>
-</TR>
-<TR>
-<TD >Izrael je pozabil svojega Stvarnika in zgradil templje, <br>Juda pa je namnožil utrjena mesta.<br>Toda jaz bom v njegova mesta poslal ogenj, <br>ki bo požrl mestne stolpe.«</TD>
-</TR>
-<TR>
-<TD >Ozej 9. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Ne vriskaj od veselja,  Izrael!<br>Ne veseli se kakor druga ljudstva!<br>Zaradi prostituiranja si se namreč oddaljil od svojega Boga.<br>Ljubil si plačilo,  ki si ga na vseh mlatiščih za žito prejemal za svoje prostituiranje.</TD>
-</TR>
-<TR>
-<TD >Mlatišče in stiskalnica za grozdje te ne bosta nahranila, <br>novega vina ti bo primanjkovalo.</TD>
-</TR>
-<TR>
-<TD >Ne boš več živel v Jehovovi deželi.<br>Efraim se bo vrnil v Egipt<br>in v Asiriji bo jedel hrano,  ki je nečista.</TD>
-</TR>
-<TR>
-<TD >Izraelci ne bodo več darovali vina Jehovu;<br>njihove žrtve mu ne bodo ugajale.<br>Njihove žrtve bodo kakor hrana,  ki se uživa v času žalovanja;<br>vsi,  ki jo bodo jedli,  se bodo omadeževali.<br>Njihova hrana bo samo za njih;<br>ne bo darovana v Jehovovi hiši.</TD>
-</TR>
-<TR>
-<TD >Kaj boste naredili,  ko bo prišel čas,  da se zberete, <br>da praznujete praznik v čast Jehovu?</TD>
-</TR>
-<TR>
-<TD >Zaradi uničenja dežele bodo morali pobegniti.<br>Egipt jih bo zbral skupaj in Memfis jih bo pokopal.<br>Njihove srebrne dragocenosti si bodo prisvojile koprive, <br>v njihovih šotorih bo raslo trnasto grmičevje.</TD>
-</TR>
-<TR>
-<TD >Prišli bodo dnevi obračuna, <br>prišli bodo dnevi povračila<br>in Izrael bo to vedel.<br>Prerok bo neumen,  človek,  ki govori po navdihnjenju,  bo znorel.<br>Zaradi obilja svojih grehov boš zelo osovražen.«</TD>
-</TR>
-<TR>
-<TD >Nekoč se je Efraimov stražar zvesto držal mojega Boga.<br>Zdaj pa so vsa dejanja njegovih prerokov podobna ptičarjevim pastem.<br>V Božji hiši vlada sovraštvo.</TD>
-</TR>
-<TR>
-<TD >Izraelci so popolnoma pokvarjeni,  tako kot so bili nekoč prebivalci Gibee.<br>Spomnil se bo njihovih prestopkov in jih kaznoval za njihove grehe.</TD>
-</TR>
-<TR>
-<TD >»Ko sem našel Izraelce,  je bilo,  kakor da bi našel grozdje v pustinji.<br>Ko sem videl vaše praočete,  je bilo,  kakor da bi opazil prvi sadež na figi.<br>Toda oni so šli k peorskemu Baalu<br>in se posvetili temu sramotnemu bogu<br>ter postali nagnusni kakor bog,  ki so ga častili.</TD>
-</TR>
-<TR>
-<TD >Efraimova slava bo odletela kakor ptica.<br>Nobena ženska ne bo rodila,  ne bo noseča niti ne bo zanosila.</TD>
-</TR>
-<TR>
-<TD >Tudi če bi Efraim vzgojil svoje otroke, <br>bi mu jih vzel vse do zadnjega.<br>Gorje mu,  ko ga bom zapustil!</TD>
-</TR>
-<TR>
-<TD >Efraim,  ki je zasajen na pašniku,  je bil v mojih očeh kakor Tir.<br>Zdaj pa bo moral svoje sinove pripeljati pred ubijalca.«</TD>
-</TR>
-<TR>
-<TD >Jehova,  daj jim to,  kar si zaslužijo.<br>Daj jim maternico,  ki splavlja,  in prsi,  ki nimajo mleka.</TD>
-</TR>
-<TR>
-<TD >»Vsa njihova hudobna dela so bila storjena v Gilgalu,  zato sem jih tam zasovražil.<br>Zaradi njihovih hudobnih dejanj jih bom nagnal iz svoje dežele.<br>Moja ljubezen do njih bo ugasnila.<br>Vsi njihovi poglavarji so trmasti.</TD>
-</TR>
-<TR>
-<TD >Efraim bo potolčen na tla.<br>Njegova korenina se bo posušila. Obrodil ne bo nobenega sadu.<br>Pa tudi če bo rodil otroke,  bom te njegove dragocene potomce pokončal.«</TD>
-</TR>
-<TR>
-<TD >Moj Bog bo Izraelce zavrgel, <br>ker ga niso poslušali, <br>in postali bodo begunci med narodi.</TD>
-</TR>
-<TR>
-<TD >Ozej 10. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Izraelci so kakor izrojena trta,  ki rojeva slab sad.<br>Več ko imajo sadu,  več oltarjev si gradijo.<br>Bolj ko je njihova dežela rodovitna,  lepše svete stebre si postavljajo.</TD>
-</TR>
-<TR>
-<TD >Njihovo srce je hinavsko, <br>zato bodo spoznani za krive.<br>Njihovi oltarji bodo razbiti in njihovi sveti stebri uničeni.</TD>
-</TR>
-<TR>
-<TD >Oni pa bodo rekli: ‚Nimamo kralja,  ker nismo spoštovali Jehova.<br>Kaj pa bi kralj sploh lahko naredil za nas?</TD>
-</TR>
-<TR>
-<TD >Govorijo prazne reči,  krivo prisegajo in sklepajo zaveze, <br>zato nepravičnost poganja kakor strupen plevel na zorani njivi.</TD>
-</TR>
-<TR>
-<TD >Prebivalci Samarije se bodo bali za mališko tele iz Bet Avena.<br>Odšlo bo v pregnanstvo, <br>zato bodo za njim žalovali tako ljudje kot tudi duhovniki tujih bogov, <br>ki so se veselili njega in njegove slave.</TD>
-</TR>
-<TR>
-<TD >Odnesli ga bodo v Asirijo v dar velikemu kralju.<br>Efraim bo osramočen, <br>Izrael bo ponižan,  ker je upošteval nespameten nasvet.</TD>
-</TR>
-<TR>
-<TD >Samarija in njen kralj bosta uničena, <br>bosta kakor odtrgana veja na vodni gladini.</TD>
-</TR>
-<TR>
-<TD >Betavenske višave,  ki Izraelce navajajo na greh,  bodo uničene.<br>Na njihovih oltarjih bo zraslo trnje in osat.<br>Ljudstvo bo goram govorilo ‚Pokrijte nas!<br>in hribom ‚Padite na nas!.</TD>
-</TR>
-<TR>
-<TD >O Izraelci,  grešite že vse od tistega dogodka v Gibei, <br>niste se spremenili.<br>Vojna v Gibei ni iztrebila nepravičnih ljudi.</TD>
-</TR>
-<TR>
-<TD >Ko bom hotel,  jih bom kaznoval.<br>Ko jih bom vpregel,  da bodo vlekli svoja dva greha, <br>se bodo ljudstva zbrala proti njim.</TD>
-</TR>
-<TR>
-<TD >Efraim je bil telica,  ki je bila izučena za mlatenje žita in je to rada počela, <br>zato sem se usmilil njenega lepega vratu.<br>Zdaj pa bom nanjo posadil jezdeca.<br>Juda bo oral,  Jakob bo branal.«</TD>
-</TR>
-<TR>
-<TD >Sejte pravičnost in žanjite vdano ljubezen.<br>Orjite si rodovitno zemljo, <br>dokler je še čas,  da se vrnete k Jehovu, <br>dokler ne pride in vas pouči o pravičnosti.</TD>
-</TR>
-<TR>
-<TD >Toda vi orjete hudobnost<br>in žanjete nepravičnost.<br>Ker se zanašate sami nase, <br>na svoje mnoge bojevnike, <br>čutite posledice svojih prevar.</TD>
-</TR>
-<TR>
-<TD >Zagnali bodo bojni krik za napad na vaše ljudstvo<br>in vsa vaša utrjena mesta bodo opustošena, <br>tako kot je Šalman opustošil Bet Arbeel na dan boja, <br>ko so matere raztreščili z njihovimi otroki vred.</TD>
-</TR>
-<TR>
-<TD >To se vam bo zgodilo,  o prebivalci Betela,  zaradi vaše skrajne hudobnosti.<br>Ob zori bo Izraelov kralj pokončan.</TD>
-</TR>
-<TR>
-<TD >Ozej 11. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Ko je bil Izrael še deček,  sem ga imel rad<br>in iz Egipta sem poklical svojega sina.</TD>
-</TR>
-<TR>
-<TD >Bolj ko so klicali Izraelce, <br>bolj so se ti oddaljevali od njih<br>in še naprej prinašali žrtve Baalovim podobam<br>ter zažigali daritve izrezljanim podobam.</TD>
-</TR>
-<TR>
-<TD >Jaz sem Efraima učil hoditi in ga jemal v naročje, <br>toda on ni dojel,  da sem ga ozdravil.</TD>
-</TR>
-<TR>
-<TD >Kakor z vrvmi sem jih pritegnil k sebi,  pritegnil sem jih z dobroto in ljubeznijo.<br>Z njimi sem ravnal kakor tisti,  ki živali odmika jarem od čeljusti, <br>vsakega od njih sem nežno hranil.</TD>
-</TR>
-<TR>
-<TD >Vendar se niso hoteli vrniti k meni, <br>zato se ne bodo vrnili v egiptovsko deželo,  ampak jim bo kraljevala Asirija.</TD>
-</TR>
-<TR>
-<TD >Zaradi njihovih spletk bo meč divjal po njihovih mestih, <br>uničil bo zapahe na mestnih vratih in požrl prebivalce.</TD>
-</TR>
-<TR>
-<TD >Moje ljudstvo je nagnjeno k temu,  da mi je nezvesto.<br>Klicali so jih,  naj se vrnejo k temu,  kar je vzvišeno,  toda nihče se ni odzval.</TD>
-</TR>
-<TR>
-<TD >Kako bi se ti lahko odrekel,  o Efraim?<br>Kako bi te lahko izročil sovražniku,  o Izrael?<br>Kako bi lahko ravnal s teboj,  kakor sem z Admo?<br>Kako bi ti lahko naredil to,  kar sem Zebojimu?<br>Moji občutki so se spremenili<br>in v meni se je prebudilo sočutje do tebe.</TD>
-</TR>
-<TR>
-<TD >Ne bom dal duška svoji goreči jezi.<br>Efraim,  ne bom te znova uničil, <br>ker nisem človek,  ampak Bog, <br>Sveti Bog,  ki sem sredi tebe.<br>Ne bom te v jezi kaznoval.</TD>
-</TR>
-<TR>
-<TD >Spet bodo častili mene,  Jehova,  in rjovel bom kakor lev.<br>Ko bom zarjovel,  bodo moji otroci polni strahospoštovanja prišli z zahoda.</TD>
-</TR>
-<TR>
-<TD >Trepetali bodo kakor ptica,  ko bodo prišli iz Egipta, <br>kakor golob,  ko bodo prišli iz asirske dežele.<br>Naselil jih bom v njihovih hišah, « govori Jehova.</TD>
-</TR>
-<TR>
-<TD >»Efraim me je zasipal z lažmi<br>in Izrael s prevarami.<br>Toda Juda se še naprej drži mene,  svojega Boga, <br>in je zvest meni,  Najsvetejšemu.«</TD>
-</TR>
-<TR>
-<TD >Ozej 12. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Efraim se hrani z vetrom, <br>ves dan lovi vzhodnik.<br>Njegovim lažem in nasilnim dejanjem ni konca.<br>Sklepa zavezo z Asirijo in nosi olje v Egipt.</TD>
-</TR>
-<TR>
-<TD >Jehova je v sodnem sporu z Judom, <br>Jakoba bo poklical na odgovornost zaradi njegovega ravnanja, <br>povrnil mu bo v skladu z njegovimi deli.</TD>
-</TR>
-<TR>
-<TD >V maminem trebuhu je Jakob zgrabil svojega brata za peto.<br>Z vso svojo močjo se je bojeval z Bogom.</TD>
-</TR>
-<TR>
-<TD >Bojeval se je z angelom in zmagal.<br>Jokal je in prosil za blagoslov.«<br>Bog ga je našel v Betelu in tam je govoril z nami.</TD>
-</TR>
-<TR>
-<TD >Ta Bog je Jehova,  Bog nad vojskami.<br>Jehova je ime,  po katerem se ga spominjamo.</TD>
-</TR>
-<TR>
-<TD >»Vrni se torej k meni,  svojemu Bogu, <br>bodi vdan v ljubezni in pravičen.<br>Vedno zaupaj vame.</TD>
-</TR>
-<TR>
-<TD >Toda tvoji trgovci sleparijo pri tehtanju, <br>radi goljufajo.</TD>
-</TR>
-<TR>
-<TD >Efraim govori: ‚Res sem obogatel, <br>pridobil sem si premoženje.<br>Vse to sem si prislužil s svojim trudom,  nihče mi ne more očitati,  da sem naredil kaj narobe ali grešil.</TD>
-</TR>
-<TR>
-<TD >Toda jaz sem Jehova,  tvoj Bog,  še iz egiptovske dežele.<br>Spet te bom naselil v šotore, <br>da boš živel kot ob predpisanih dneh.</TD>
-</TR>
-<TR>
-<TD >Govoril sem prerokom, <br>dajal sem jim videnje za videnjem, <br>po njih sem govoril poučne pripovedi.</TD>
-</TR>
-<TR>
-<TD >V Gileadu se dogaja prevara in sliši neresnica.<br>V Gilgalu žrtvujejo bike.<br>Njihovi oltarji so kakor kupi kamenja na zorani njivi.</TD>
-</TR>
-<TR>
-<TD >Jakob je zbežal na ozemlje Arama, <br>Izrael je tam služil,  da bi dobil ženo, <br>za ženo je čuval ovce.</TD>
-</TR>
-<TR>
-<TD >Jaz,  Jehova,  sem po preroku odpeljal Izraelce iz Egipta<br>in po preroku sem jih varoval.</TD>
-</TR>
-<TR>
-<TD >Efraim me je hudo žalil, <br>še naprej bo nosil krivdo za prelito kri.<br>Jaz,  njegov Gospod,  mu bom povrnil za sramoto,  ki mi jo je nakopal.«</TD>
-</TR>
-<TR>
-<TD >Ozej 13. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Ko je Efraim govoril,  so ljudje trepetali;<br>bil je pomemben v Izraelu.<br>Vendar si je nakopal krivdo zaradi čaščenja Baala in umrl.</TD>
-</TR>
-<TR>
-<TD >Zdaj pa še bolj grešijo<br>in si izdelujejo ulite kipe iz srebra, <br>mojstrsko izdelane malike – vse to je delo rokodelcev.<br>Govorijo: ‚Naj ljudje,  ki prinašajo žrtve,  poljubljajo kipe teleta.</TD>
-</TR>
-<TR>
-<TD >Zato bodo postali kakor jutranji oblaki, <br>kakor rosa,  ki zgodaj izgine, <br>kakor pleve,  ki jih veter odnese z mlatišča, <br>in kakor dim,  ki se dviga iz dimnika.</TD>
-</TR>
-<TR>
-<TD >Toda jaz sem Jehova,  tvoj Bog,  še iz egiptovske dežele.<br>Spoznal si,  da ni drugega Boga razen mene.<br>Razen mene ni rešitelja.</TD>
-</TR>
-<TR>
-<TD >Skrbel sem zate v pustinji,  v sušni deželi.</TD>
-</TR>
-<TR>
-<TD >Na svojem pašniku so se nasitili.<br>Ko so se nasitili, <br>so se prevzeli in me pozabili.</TD>
-</TR>
-<TR>
-<TD >Napadel jih bom kakor mlad lev, <br>kakor leopard,  ki preži ob poti.</TD>
-</TR>
-<TR>
-<TD >Nanje bom planil kakor medvedka,  ki je izgubila svoje mladiče, <br>razparal jim bom prsni koš.<br>Tam jih bom požrl kakor lev.<br>Zver jih bo raztrgala.</TD>
-</TR>
-<TR>
-<TD >O Izrael,  takšen bo tvoj konec, <br>ker si se obrnil proti meni,  ki ti pomagam.</TD>
-</TR>
-<TR>
-<TD >Kje je zdaj tvoj kralj,  da bi te rešil v vseh tvojih mestih?<br>Kje so tvoji voditelji?<br>Za njih si me prosil,  ko si rekel: ‚Daj mi kralja in poglavarje.</TD>
-</TR>
-<TR>
-<TD >V svoji jezi sem ti dal kralja<br>in v svojem besu ga bom vzel.</TD>
-</TR>
-<TR>
-<TD >Efraimov prestopek je spravljen, <br>njegov greh je shranjen.</TD>
-</TR>
-<TR>
-<TD >Efraim bo imel bolečine,  kakršne ima ženska,  ki rojeva.<br>Nespameten otrok je, <br>saj noče priti ven,  ko pride čas,  da se rodi.</TD>
-</TR>
-<TR>
-<TD >Osvobodil jih bom iz groba, <br>rešil jih bom smrti.<br>Smrt,  kje so tvoja žela?<br>Grob,  kje je tvoja uničevalna moč?<br>Vendar še ne bom pokazal sočutja.</TD>
-</TR>
-<TR>
-<TD >Tudi če bo uspeval kakor trstje, <br>bo prišel vzhodni veter,  ki ga bom poslal jaz,  Jehova.<br>Prišel bo iz puščave,  da izsuši njegov vodnjak in njegov izvir.<br>Izropal bo njegovo zakladnico,  odnesel bo vse njegove dragocenosti.</TD>
-</TR>
-<TR>
-<TD >Samarija bo morala odgovarjati,  ker se je uprla meni,  svojemu Bogu.<br>Njene prebivalce bodo pobili z mečem.<br>Njene otroke bodo raztreščili<br>in njene nosečnice razparali.«</TD>
-</TR>
-<TR>
-<TD >Ozej 14. Poglavje</TD>
-</TR>
-<TR>
-<TD >Izraelsko ljudstvo,  vrni se k svojemu Bogu Jehovu, <br>ker si zašlo in padlo zaradi svojega greha.</TD>
-</TR>
-<TR>
-<TD >Vrnite se k Jehovu in mu recite:<br>»Prosimo,  oprosti nam naš greh in poglej naša dobra dela, <br>mi pa ti bomo s svojimi usti darovali hvalo,  kot bi ti darovali mlade bike.</TD>
-</TR>
-<TR>
-<TD >Asirija nas ne bo mogla rešiti.<br>Ne bomo se zanašali na konje.<br>Izdelka svojih rok ne bomo več imenovali ‚Naš Bog!, <br>saj si ti tisti,  ki siroti izkazuješ usmiljenje.«</TD>
-</TR>
-<TR>
-<TD >»Ozdravil jih bom,  da mi ne bodo več nezvesti.<br>Ljubil jih bom iz vsega srca, <br>ker sem se nehal jeziti nanje.</TD>
-</TR>
-<TR>
-<TD >Za izraelsko ljudstvo bom postal kakor rosa.<br>Cvetelo bo kakor lilija<br>in poganjalo korenine kakor libanonska drevesa.</TD>
-</TR>
-<TR>
-<TD >Njegove mladike se bodo široko razprostirale, <br>veličastno bo kakor oljka<br>in dišalo bo kakor libanonska drevesa.</TD>
-</TR>
-<TR>
-<TD >Moje ljudstvo bo spet uživalo mojo zaščito.<br>Pridelovali bodo žito in brsteli bodo kakor trta.<br>O meni bodo govorili,  kot govorijo o libanonskem vinu.</TD>
-</TR>
-<TR>
-<TD >Efraim bo rekel: ‚Kaj mi bodo ti maliki?<br>Jaz mu bom odgovoril in pazil nanj.<br>Jaz bom kakor košato brinovo drevo.<br>Na meni se bo našel sad zanj.«</TD>
-</TR>
-<TR>
-<TD >Kdo je moder? Naj razume vse to.<br>Kdo je preudaren? Naj vse to spozna.<br>Jehovove poti so namreč ravne<br>in pravični bodo hodili po njih, <br>prestopniki pa bodo zašli z njih in padli.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Ozej','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Ozej:"Ozej 1. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:1,Ozej:"To so besede. ki jih je Jehova povedal Beerijevemu sinu Ozeju v času Judovih kraljev Uzija. Jotama. Ahaza in Ezekija ter v času Izraelovega kralja Jeroboama. ki je bil Joašev sin.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:2,Ozej:"To je začetek sporočila. ki ga je Jehova oznanil po Ozeju. Jehova je Ozeju rekel: »Pojdi. poroči se z žensko. ki bo prešuštvovala in bo imela otroke z drugimi moškimi. Podobno bo namreč dežela zaradi prešuštvovanja zapustila mene. Jehova.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:3,Ozej:"Ozej se je poročil z Diblajimovo hčerjo Gomero. Zanosila je in mu rodila sina.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:4,Ozej:"Takrat mu je Jehova rekel: »Daj mu ime Jezreel. Še malo namreč in Jehujeva hiša mi bo odgovarjala za prelito jezreelsko kri in naredil bom konec Izraelovemu kraljestvu.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:5,Ozej:"Tisti dan bom zlomil Izraelov lok v Jezreelski dolini.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:6,Ozej:"Gomera pa je znova zanosila in rodila hčerko. Bog je Ozeju rekel: »Daj ji ime Lo Ruhama. saj se Izraelovega ljudstva ne bom več usmilil. ampak ga bom pregnal.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:7,Ozej:"Toda Judovega ljudstva se bom usmilil. Jaz. njegov Bog Jehova. ga bom rešil. vendar ne z lokom. mečem. vojskovanjem. konji ali konjeniki.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:8,Ozej:"Ko je Gomera nehala dojiti Lo Ruhamo. je zanosila in rodila sina.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:9,Ozej:"Bog je Ozeju rekel: »Daj mu ime Lo Ami. Vi namreč niste moje ljudstvo in jaz ne bom vaš Bog.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:10,Ozej:"Izraelcev bo toliko. kot je morskega peska. ki ga ni mogoče ne izmeriti ne prešteti. Tam. kjer sem jim prej rekel ‚Vi niste moje ljudstvo. jim bom zdaj rekel ‚Vi ste moji otroci. otroci živega Boga.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:1,V:11,Ozej:"Judovo ljudstvo in Izraelovo ljudstvo se bosta združila. si izbrala enega poglavarja in odšla iz dežele. Jezreelski dan bo namreč velik.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Ozej:"Ozej 2. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:1,Ozej:"Svojim bratom recite ‚Moje ljudstvo<br>in svojim sestram ‚Ve. ki vam je bilo izkazano usmiljenje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:2,Ozej:"Obtožite svojo mater. obtožite jo.<br>ker ona ni moja žena in jaz nisem njen mož.<br>Naj se neha prostituirati<br>in naj mi ne bo več nezvesta.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:3,Ozej:"drugače jo bom slekel do golega in povzročil. da bo takšna. kakršna je bila ob rojstvu.<br>da bo kakor pustinja.<br>da se bo spremenila v sušno deželo<br>in umrla od žeje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:4,Ozej:"Njenih otrok se ne bom usmilil.<br>ker so se rodili zaradi njenega prostituiranja.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:5,Ozej:"Njihova mati se je prostituirala.<br>Tista. ki jih je nosila v svojem telesu. je ravnala sramotno. Govorila je:<br>‚Šla bom za svojimi strastnimi ljubimci.<br>ki mi dajejo hrano in vodo.<br>volno in lan. olje in pijačo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:6,Ozej:"Zato ji bom pot zaprl s trnovo ograjo.<br>Pred njo bom postavil kamnit zid.<br>da ne bo mogla najti izhoda.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:7,Ozej:"Tekla bo za svojimi strastnimi ljubimci. vendar jih ne bo dohitela.<br>iskala jih bo. vendar jih ne bo našla.<br>Takrat bo rekla: ‚Vrnila se bom k svojemu prvemu možu.<br>saj mi je bilo takrat boljše. kot mi je zdaj.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:8,Ozej:"Ni spoznala. da sem ji jaz dajal žito. novo vino in olje.<br>da sem ji jaz v izobilju dajal srebra in zlata.<br>ki so ju potem uporabljali za Baala.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:9,Ozej:"‚Zato se bom vrnil in ob žetvi vzel nazaj svoje žito<br>in ob trgatvi svoje novo vino.<br>Odvzel ji bom svojo volno in lan. s čimer si je pokrivala goloto.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:10,Ozej:"Pred očmi njenih strastnih ljubimcev bom razkril njene intimne dele<br>in nikogar ne bo. ki bi jo rešil iz mojih rok.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:11,Ozej:"Naredil bom konec vsemu njenemu veselju.<br>njenim praznikom in njenim mlajem. njenim šabatom in vsem njenim praznovanjem.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:12,Ozej:"Uničil bom njene trte in njene fige. o katerih je govorila:<br>»To sem za plačilo dobila od svojih strastnih ljubimcev.«<br>Spremenil jih bom v goščavo<br>in bodo za hrano divjim živalim.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:13,Ozej:"Odgovarjala mi bo za dneve. ko je Baalovim podobam darovala žrtve.<br>ko se je okraševala z uhani in drugim nakitom in ko je tekala za svojimi strastnimi ljubimci.<br>mene pa je pozabila. govorim jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:14,Ozej:"‚Zato jo bom pregovoril.<br>popeljal jo bom v pustinjo<br>in ji govoril tako. da ji bom segel do srca.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:15,Ozej:"Potem ji bom vrnil vinograde<br>in Ahorsko dolino kot vrata upanja.<br>Tam se bo odzvala na moje besede kakor v dneh svoje mladosti<br>in kakor tisti dan. ko je odšla iz egiptovske dežele.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:16,Ozej:"Tisti dan. govorim jaz. Jehova.<br>‚me bo imenovala Moj mož. ne bo me več imenovala Moj gospodar.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:17,Ozej:"‚Ne bom ji več dovolil omenjati imen Baalovih podob.<br>njihovih imen se ne bo več spominjala.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:18,Ozej:"Tisti dan bom v prid svojemu ljudstvu sklenil zavezo z divjimi živalmi.<br>pticami in plazečimi se živalmi na zemlji.<br>Iz dežele bom odstranil lok. meč in vojno<br>in poskrbel. da bo moje ljudstvo živelo brez strahu.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:19,Ozej:"S teboj se bom zaročil. da boš moja za vedno.<br>Obljubim ti. da bom s teboj ravnal tako. kot je prav in pravično.<br>da ti bom vdan v ljubezni in usmiljen s teboj.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:20,Ozej:"Obljubim ti. da ti bom zvest.<br>Takrat boš spoznala mene. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:21,Ozej:"‚Tisti dan. govorim jaz. Jehova.<br>‚bom uslišal nebo<br>in nebo bo uslišalo zemljo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:22,Ozej:"Zemlja bo uslišala žito. novo vino in olje.<br>ti pa bodo uslišali Jezreela.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:2,V:23,Ozej:"Jezreel bom posejal kakor seme po zemlji<br>in se usmilil tistih. ki jim ni bilo izkazano usmiljenje.<br>Tistim. ki niso moje ljudstvo. bom rekel »Vi ste moje ljudstvo«.<br>oni pa bodo rekli »Ti si naš Bog«.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Ozej:"Ozej 3. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:3,V:1,Ozej:"Jehova mi je še rekel: »Pojdi in spet ljubi svojo ženo. ki ima ljubimca in prešuštvuje. Ljubi jo tako. kot jaz. Jehova. ljubim Izraelce. ki častijo druge bogove in imajo radi rozinove hlebčke.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:3,V:2,Ozej:"Tako sem Gomero kupil za 15 šeklov srebra in za homer in pol ječmena.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:3,V:3,Ozej:"Potem sem ji rekel: »Mnogo dni živi kot moja žena. Ne prostituiraj se. Ne imej spolnih odnosov z drugimi moškimi in tudi jaz ne bom imel spolnih odnosov s teboj.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:3,V:4,Ozej:"Izraelci bodo namreč dolgo časa živeli brez kralja in poglavarja. brez žrtev in svetih stebrov. brez duhovnika in hišnih bogov.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:3,V:5,Ozej:"Potem pa si bodo prizadevali vrniti se k svojemu Bogu Jehovu in svojemu kralju Davidu. V zadnjih dneh bodo polni strahospoštovanja prišli k Jehovu. da bi občutili njegovo dobroto.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Ozej:"Ozej 4. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:1,Ozej:"Izraelci. poslušajte Jehovove besede!<br>Jehova je prebivalce te dežele postavil pred sodišče.<br>saj v deželi ni ne resnice. ne vdane ljubezni. ne spoznanja o Bogu.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:2,Ozej:"Po deželi so razširjene krive prisege. prevare. umori.<br>kraje in prešuštvovanje.<br>Ljudje ne nehajo prelivati krvi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:3,Ozej:"Zato bo dežela žalovala <br>izginili bodo vsi njeni prebivalci<br>pa tudi divje živali in ptice.<br>Celo ribe v morju bodo poginile.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:4,Ozej:"»Toda naj vam nihče ne svetuje. nihče naj vas ne opominja.<br>saj ste podobni tistim. ki se prepirajo z duhovnikom.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:5,Ozej:"Podnevi se boste spotikali. kakor da bi bila noč.<br>pa tudi preroki se bodo spotikali.<br>Utišal bom vašo mater.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:6,Ozej:"Moje ljudstvo bo utišano. ker nima spoznanja.<br>Ker ste zavrgli spoznanje.<br>bom tudi jaz zavrgel vas. da mi ne boste več služili kot duhovniki.<br>In ker pozabljate moj zakon. zakon svojega Boga.<br>bom tudi jaz pozabil vaše sinove.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:7,Ozej:"Več ko je bilo duhovnikov. bolj so grešili proti meni.<br>Njihovo slavo bom spremenil v sramoto.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:8,Ozej:"Hranijo se z grehom mojega ljudstva.<br>želijo si. da bi ljudstvo vse več grešilo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:9,Ozej:"Ljudstvo in duhovnike<br>bom poklical na odgovornost zaradi njihovega ravnanja.<br>poskrbel bom. da bodo nosili posledice svojih dejanj.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:10,Ozej:"Jedli bodo. vendar se ne bodo najedli.<br>Živeli bodo razvratno. vendar se ne bodo namnožili.<br>saj ne ubogajo več mene. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:11,Ozej:"Prostituiranje. staro vino in novo vino<br>človeku zadušijo željo. da bi delal dobro.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:12,Ozej:"Moje ljudstvo išče nasvete pri svojih lesenih malikih.<br>delajo to. kar jim govori njihova palica.<br>Zaradi želje po prostituiranju so zašli na krivo pot.<br>zaradi prostituiranja se nočejo podrediti meni. svojemu Bogu.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:13,Ozej:"Žrtve darujejo po vrhovih gora.<br>daritve zažigajo po hribih.<br>pod hrasti in stiraksovimi drevesi. pod vsemi velikimi drevesi.<br>ker dajejo prijetno senco.<br>Zato se vaše hčere prostituirajo<br>in vaše snahe prešuštvujejo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:14,Ozej:"Vaših hčera ne bom poklical na odgovornost za njihovo prostituiranje<br>in vaših snah za njihovo prešuštvovanje.<br>Moški so namreč tisti. ki hodijo k prostitutkam<br>in darujejo žrtve s tempeljskimi prostitutkami.<br>Ljudstvo. ki mu manjka razumnosti. bo uničeno.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:15,Ozej:"Če se ti. Izraelovo ljudstvo. prostituiraš.<br>naj ne bo krivo tudi Judovo ljudstvo.<br>Ne prihajajte v Gilgal ali v Bet Aven<br>in ne govorite: ‚Prisegam pri Jehovu. živem Bogu!",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:16,Ozej:"Izraelovo ljudstvo je namreč postalo trmasto kakor trmasta krava.<br>Ali ga bom jaz. Jehova. zdaj pasel kakor mladega ovna na prostranih travnikih?",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:17,Ozej:"Efraim časti malike.<br>Pusti ga pri miru!",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:18,Ozej:"Ko mu zmanjka piva.<br>začne živeti razvratno.<br>Njegovi voditelji radi počnejo sramotna dejanja.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:4,V:19,Ozej:"Veter ga bo odnesel s svojimi krili.<br>Ljudje se bodo sramovali svojih žrtev.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:5,V:0,Ozej:"Ozej 5. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:1,Ozej:"»Poslušajte to. duhovniki!<br>Prisluhni. izraelsko ljudstvo!<br>Pozorno poslušajte. vsi. ki živite v kraljevi palači!<br>Sodba je namenjena vam.<br>ker ste postali past za Micpo<br>in mreža. razpeta čez Tabor.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:2,Ozej:"Uporniki so pri pobijanju globoko zabredli.<br>čeprav jih jaz vse opozarjam.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:3,Ozej:"Jaz poznam Efraima.<br>Izrael se ne more skriti pred menoj.<br>Ti. o Efraim. živiš razvratno.<br>Izrael se je onečastil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:4,Ozej:"Njihova dejanja jim ne dopuščajo. da bi se vrnili k meni. svojemu Bogu.<br>Želijo se namreč prostituirati<br>in nočejo priznati. da sem jaz. Jehova. njihov Bog.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:5,Ozej:"Izrael s svojo ošabnostjo obtožuje sam sebe.<br>Izrael in Efraim se spotikata zaradi svojih grehov<br>in z njima se spotika tudi Juda.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:6,Ozej:"S svojo drobnico in govedom so si želeli pridobiti mojo. Jehovovo naklonjenost.<br>vendar si je niso pridobili.<br>Umaknil sem se od njih.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:7,Ozej:"Meni. Jehovu. so se izneverili.<br>saj so imeli otroke. ki so mi tuji.<br>Zato bodo v enem mesecu požrti s svojimi polji vred.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:8,Ozej:"Zatrobite na rog v Gibei. na trobento v Rami!<br>Zaženite bojni krik v Bet Avenu! Vodi nas. Benjamin!",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:9,Ozej:"Efraim. tisti dan. ko boš kaznovan. se bodo ljudje ob pogledu nate zgrozili.<br>Izraelovim rodovom sem oznanil to. kar se jim bo res zgodilo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:10,Ozej:"Judovi poglavarji so kakor tisti. ki prestavljajo mejnike.<br>Nanje bom izlil svoj bes kakor vodo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:11,Ozej:"Efraim je zatrt. po pravici je uničen.<br>ker je bil odločen skleniti zavezništvo s svojim nasprotnikom.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:12,Ozej:"Zato sem Efraimu postal kakor molj<br>in Judovemu ljudstvu kakor gniloba.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:13,Ozej:"Ko je Efraim videl svojo bolezen in Juda svojo razjedo.<br>je Efraim šel v Asirijo in poslal sle k velikemu kralju.<br>Toda ta kralj vas ni mogel ozdraviti.<br>ni vam mogel ozdraviti razjede.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:14,Ozej:"Jaz bom napadel Efraima kakor mlad lev<br>in Judovo ljudstvo kakor močan lev.<br>Jaz jih bom raztrgal in odšel.<br>jaz jih bom odnesel in nihče jih ne bo rešil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:5,V:15,Ozej:"Vrnil se bom na svoje mesto. dokler ne bodo plačali za svoj greh.<br>Iskali bodo mojo naklonjenost.<br>Ko bodo v stiski. me bodo iskali.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:6,V:0,Ozej:"Ozej 6. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:1,Ozej:"»Pridite. vrnimo se k Jehovu!<br>On nas je raztrgal. vendar nas bo tudi ozdravil.<br>On nas je udaril. vendar nam bo tudi obvezal rane.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:2,Ozej:"Po dveh dneh nas bo oživil.<br>Tretji dan nas bo dvignil<br>– živeli bomo in imeli njegovo odobravanje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:3,Ozej:"Spoznavali bomo Jehova. vneto se ga bomo trudili spoznati.<br>Njegov prihod je zanesljiv kakor prihod zore.<br>K nam bo prišel kakor dež.<br>kakor spomladanski dež. ki namaka zemljo.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:4,Ozej:"»Kaj lahko še naredim. da bi ti pomagal. o Efraim?<br>In kaj lahko še naredim. da bi pomagal tebi. o Juda?<br>Vaša vdana ljubezen je namreč podobna jutranjim oblakom.<br>podobna je rosi. ki hitro izgine.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:5,Ozej:"Zato vas bom udaril z besedami prerokov.<br>usmrtil vas bom z besedami svojih ust.<br>Obsodbe nad vami bodo svetile kakor luč.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:6,Ozej:"Ne veselim se žrtev. ampak vdane ljubezni.<br>ne veselim se žgalnih daritev. ampak tega. da spoznavate mene. Boga.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:7,Ozej:"Toda moje ljudstvo je kakor grešen človek pretrgalo zavezo.<br>V svoji deželi se mi je izneverilo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:8,Ozej:"Gilead je mesto zločincev.<br>prekrito je s krvavimi stopinjami.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:9,Ozej:"Duhovniki so kakor tolpa razbojnikov. ki prežijo na človeka.<br>Ob poti v Sihem ubijajo.<br>Njihovo ravnanje je sramotno.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:10,Ozej:"Med izraelskim ljudstvom vidim grozne reči.<br>Efraim se prostituira.<br>Izrael se je onečastil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:6,V:11,Ozej:"Tebe. o Juda. pa čaka žetev.<br>ko bom svoje ljudstvo pripeljal iz ujetništva.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:7,V:0,Ozej:"Ozej 7. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:1,Ozej:"»Kadar želim Izraela ozdraviti.<br>se razkrijejo Efraimovi grehi<br>in hudobija Samarije.<br>Ravnajo namreč zvijačno.<br>Tatovi vlamljajo v hiše. zunaj pa razbojniške tolpe napadajo ljudi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:2,Ozej:"V svojem srcu ne pomislijo. da si bom zapomnil vso njihovo hudobijo.<br>Zdaj so jih njihova dejanja ujela v zanko.<br>Nobeno od njih ni skrito mojim očem.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:3,Ozej:"S svojo hudobijo razveseljujejo kralja<br>in s svojimi prevarami poglavarje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:4,Ozej:"Vsi so prešuštniki.<br>Gorijo kakor peč. v kateri je pek zanetil tako močen ogenj.<br>da mu ga ni treba več podpihovati. medtem ko mesi testo in ga pusti vzhajati.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:5,Ozej:"Ob prazniku našega kralja so poglavarji zboleli<br>– vino je v njih vzbudilo jezo.<br>Kralj se je spoprijateljil s posmehljivci.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:6,Ozej:"Srce jim gori kakor peč.<br>Pek spi vso noč.<br>zjutraj pa se peč razžari kakor plameneč ogenj.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:7,Ozej:"Prav vsi so se razvneli kakor peč<br>in požirajo svoje voditelje.<br>Vsi njihovi kralji so padli.<br>nihče od njih me ne kliče na pomoč.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:8,Ozej:"Efraim se meša z ljudmi iz drugih narodov.<br>Postal je kakor hlebec. ki ga med peko ne obrnejo na drugo stran.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:9,Ozej:"Tujci so mu vzeli moč. vendar se tega ne zaveda.<br>Njegovi lasje so osiveli. vendar tega ne opazi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:10,Ozej:"Izrael s svojo ošabnostjo obtožuje sam sebe.<br>toda ne vrne se k meni. svojemu Bogu Jehovu.<br>Čeprav se mu je vse to zgodilo. me ne prosi za pomoč.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:11,Ozej:"Efraim je kakor golob. ki je neumen in nima razuma.<br>Na pomoč kliče Egipt. hodi v Asirijo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:12,Ozej:"Kamor koli bodo šli. bom čez njih razpel svojo mrežo.<br>Ujel jih bom kakor ptice.<br>Kaznoval jih bom. tako kot sem jih opozarjal.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:13,Ozej:"Gorje jim. ker so zbežali od mene!<br>Naj jih doleti opustošenje. ker so grešili proti meni!<br>Hotel sem jih odkupiti. vendar so o meni govorili laži.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:14,Ozej:"Čeprav so žalovali na svojih posteljah.<br>me niso z vsem srcem klicali na pomoč.<br>Delali so si zareze v telo v upanju. da bodo dobili žito in novo vino.<br>Postali so uporniki.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:15,Ozej:"Čeprav sem jih poučeval in jim dajal moč.<br>so spletkarili proti meni.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:7,V:16,Ozej:"Spremenili so se. toda niso se vrnili k temu. kar je vzvišeno.<br>Bili so nezanesljivi kakor nenapet lok.<br>Njihovi poglavarji bodo padli pod mečem zaradi svojega uporniškega govorjenja.<br>Zato bodo v egiptovski deželi postali tarča posmeha.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:8,V:0,Ozej:"Ozej 8. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:1,Ozej:"»Zatrobi na rog!<br>Sovražnik kakor orel prihaja nad moje. Jehovovo ljudstvo.<br>ker je prelomilo mojo zavezo in prekršilo moj zakon.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:2,Ozej:"K meni vpijejo: ‚O naš Bog. mi. Izraelci. te poznamo!",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:3,Ozej:"Izraelci so zavrgli to. kar je dobro.<br>Naj jih preganja sovražnik.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:4,Ozej:"Postavljajo si kralje. toda ne v skladu z mojo voljo.<br>Postavljajo si poglavarje. toda brez mojega odobravanja.<br>Iz svojega srebra in zlata si izdelujejo malike.<br>zato bodo uničeni.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:5,Ozej:"O Samarija. zavrgel sem podobo teleta. ki jo častiš.<br>Zelo sem se razjezil nate.<br>Koliko časa bo trajalo. preden boš spet očiščena krivde?",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:6,Ozej:"To tele so namreč izdelali Izraelci.<br>To tele ni Bog. rokodelec ga je naredil <br>samarijsko tele bo zdrobljeno.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:7,Ozej:"Sejejo namreč veter.<br>toda želi bodo vihar.<br>Na žitnih steblih ni klasov.<br>To. kar zraste. ne da moke.<br>pa tudi če bi jo dalo. bi jo pogoltnili tujci.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:8,Ozej:"Izrael bo uničen.<br>Razkropljen bo med narode.<br>bo kakor posoda. ki je nihče ne mara.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:9,Ozej:"Šel je namreč gor v Asirijo kakor samotarski divji osel.<br>Efraim si najema ljubimce.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:10,Ozej:"Čeprav si ljubimce najemajo med narodi.<br>jih bom zbral skupaj za sodbo.<br>Trpeli bodo zaradi bremena. ki jim ga bodo naložili kralj in poglavarji.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:11,Ozej:"Efraim je namnožil oltarje. da bi grešil.<br>S svojimi oltarji greši.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:12,Ozej:"Napisal sem mu mnogo zakonov.<br>vendar se zanje ni zmenil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:13,Ozej:"Prinaša mi žrtve in je meso.<br>ampak meni. Jehovu. to ne ugaja.<br>Spomnil se bom njegovih prestopkov in ga kaznoval za njegove grehe.<br>Obrnil se je na Egipt.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:8,V:14,Ozej:"Izrael je pozabil svojega Stvarnika in zgradil templje.<br>Juda pa je namnožil utrjena mesta.<br>Toda jaz bom v njegova mesta poslal ogenj.<br>ki bo požrl mestne stolpe.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:9,V:0,Ozej:"Ozej 9. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:1,Ozej:"»Ne vriskaj od veselja. Izrael!<br>Ne veseli se kakor druga ljudstva!<br>Zaradi prostituiranja si se namreč oddaljil od svojega Boga.<br>Ljubil si plačilo. ki si ga na vseh mlatiščih za žito prejemal za svoje prostituiranje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:2,Ozej:"Mlatišče in stiskalnica za grozdje te ne bosta nahranila.<br>novega vina ti bo primanjkovalo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:3,Ozej:"Ne boš več živel v Jehovovi deželi.<br>Efraim se bo vrnil v Egipt<br>in v Asiriji bo jedel hrano. ki je nečista.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:4,Ozej:"Izraelci ne bodo več darovali vina Jehovu <br>njihove žrtve mu ne bodo ugajale.<br>Njihove žrtve bodo kakor hrana. ki se uživa v času žalovanja <br>vsi. ki jo bodo jedli. se bodo omadeževali.<br>Njihova hrana bo samo za njih <br>ne bo darovana v Jehovovi hiši.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:5,Ozej:"Kaj boste naredili. ko bo prišel čas. da se zberete.<br>da praznujete praznik v čast Jehovu?",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:6,Ozej:"Zaradi uničenja dežele bodo morali pobegniti.<br>Egipt jih bo zbral skupaj in Memfis jih bo pokopal.<br>Njihove srebrne dragocenosti si bodo prisvojile koprive.<br>v njihovih šotorih bo raslo trnasto grmičevje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:7,Ozej:"Prišli bodo dnevi obračuna.<br>prišli bodo dnevi povračila<br>in Izrael bo to vedel.<br>Prerok bo neumen. človek. ki govori po navdihnjenju. bo znorel.<br>Zaradi obilja svojih grehov boš zelo osovražen.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:8,Ozej:"Nekoč se je Efraimov stražar zvesto držal mojega Boga.<br>Zdaj pa so vsa dejanja njegovih prerokov podobna ptičarjevim pastem.<br>V Božji hiši vlada sovraštvo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:9,Ozej:"Izraelci so popolnoma pokvarjeni. tako kot so bili nekoč prebivalci Gibee.<br>Spomnil se bo njihovih prestopkov in jih kaznoval za njihove grehe.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:10,Ozej:"»Ko sem našel Izraelce. je bilo. kakor da bi našel grozdje v pustinji.<br>Ko sem videl vaše praočete. je bilo. kakor da bi opazil prvi sadež na figi.<br>Toda oni so šli k peorskemu Baalu<br>in se posvetili temu sramotnemu bogu<br>ter postali nagnusni kakor bog. ki so ga častili.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:11,Ozej:"Efraimova slava bo odletela kakor ptica.<br>Nobena ženska ne bo rodila. ne bo noseča niti ne bo zanosila.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:12,Ozej:"Tudi če bi Efraim vzgojil svoje otroke.<br>bi mu jih vzel vse do zadnjega.<br>Gorje mu. ko ga bom zapustil!",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:13,Ozej:"Efraim. ki je zasajen na pašniku. je bil v mojih očeh kakor Tir.<br>Zdaj pa bo moral svoje sinove pripeljati pred ubijalca.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:14,Ozej:"Jehova. daj jim to. kar si zaslužijo.<br>Daj jim maternico. ki splavlja. in prsi. ki nimajo mleka.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:15,Ozej:"»Vsa njihova hudobna dela so bila storjena v Gilgalu. zato sem jih tam zasovražil.<br>Zaradi njihovih hudobnih dejanj jih bom nagnal iz svoje dežele.<br>Moja ljubezen do njih bo ugasnila.<br>Vsi njihovi poglavarji so trmasti.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:16,Ozej:"Efraim bo potolčen na tla.<br>Njegova korenina se bo posušila. Obrodil ne bo nobenega sadu.<br>Pa tudi če bo rodil otroke. bom te njegove dragocene potomce pokončal.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:9,V:17,Ozej:"Moj Bog bo Izraelce zavrgel.<br>ker ga niso poslušali.<br>in postali bodo begunci med narodi.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:10,V:0,Ozej:"Ozej 10. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:1,Ozej:"»Izraelci so kakor izrojena trta. ki rojeva slab sad.<br>Več ko imajo sadu. več oltarjev si gradijo.<br>Bolj ko je njihova dežela rodovitna. lepše svete stebre si postavljajo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:2,Ozej:"Njihovo srce je hinavsko.<br>zato bodo spoznani za krive.<br>Njihovi oltarji bodo razbiti in njihovi sveti stebri uničeni.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:3,Ozej:"Oni pa bodo rekli: ‚Nimamo kralja. ker nismo spoštovali Jehova.<br>Kaj pa bi kralj sploh lahko naredil za nas?",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:4,Ozej:"Govorijo prazne reči. krivo prisegajo in sklepajo zaveze.<br>zato nepravičnost poganja kakor strupen plevel na zorani njivi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:5,Ozej:"Prebivalci Samarije se bodo bali za mališko tele iz Bet Avena.<br>Odšlo bo v pregnanstvo.<br>zato bodo za njim žalovali tako ljudje kot tudi duhovniki tujih bogov.<br>ki so se veselili njega in njegove slave.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:6,Ozej:"Odnesli ga bodo v Asirijo v dar velikemu kralju.<br>Efraim bo osramočen.<br>Izrael bo ponižan. ker je upošteval nespameten nasvet.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:7,Ozej:"Samarija in njen kralj bosta uničena.<br>bosta kakor odtrgana veja na vodni gladini.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:8,Ozej:"Betavenske višave. ki Izraelce navajajo na greh. bodo uničene.<br>Na njihovih oltarjih bo zraslo trnje in osat.<br>Ljudstvo bo goram govorilo ‚Pokrijte nas!<br>in hribom ‚Padite na nas!.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:9,Ozej:"O Izraelci. grešite že vse od tistega dogodka v Gibei.<br>niste se spremenili.<br>Vojna v Gibei ni iztrebila nepravičnih ljudi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:10,Ozej:"Ko bom hotel. jih bom kaznoval.<br>Ko jih bom vpregel. da bodo vlekli svoja dva greha.<br>se bodo ljudstva zbrala proti njim.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:11,Ozej:"Efraim je bil telica. ki je bila izučena za mlatenje žita in je to rada počela.<br>zato sem se usmilil njenega lepega vratu.<br>Zdaj pa bom nanjo posadil jezdeca.<br>Juda bo oral. Jakob bo branal.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:12,Ozej:"Sejte pravičnost in žanjite vdano ljubezen.<br>Orjite si rodovitno zemljo.<br>dokler je še čas. da se vrnete k Jehovu.<br>dokler ne pride in vas pouči o pravičnosti.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:13,Ozej:"Toda vi orjete hudobnost<br>in žanjete nepravičnost.<br>Ker se zanašate sami nase.<br>na svoje mnoge bojevnike.<br>čutite posledice svojih prevar.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:14,Ozej:"Zagnali bodo bojni krik za napad na vaše ljudstvo<br>in vsa vaša utrjena mesta bodo opustošena.<br>tako kot je Šalman opustošil Bet Arbeel na dan boja.<br>ko so matere raztreščili z njihovimi otroki vred.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:10,V:15,Ozej:"To se vam bo zgodilo. o prebivalci Betela. zaradi vaše skrajne hudobnosti.<br>Ob zori bo Izraelov kralj pokončan.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:11,V:0,Ozej:"Ozej 11. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:1,Ozej:"»Ko je bil Izrael še deček. sem ga imel rad<br>in iz Egipta sem poklical svojega sina.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:2,Ozej:"Bolj ko so klicali Izraelce.<br>bolj so se ti oddaljevali od njih<br>in še naprej prinašali žrtve Baalovim podobam<br>ter zažigali daritve izrezljanim podobam.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:3,Ozej:"Jaz sem Efraima učil hoditi in ga jemal v naročje.<br>toda on ni dojel. da sem ga ozdravil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:4,Ozej:"Kakor z vrvmi sem jih pritegnil k sebi. pritegnil sem jih z dobroto in ljubeznijo.<br>Z njimi sem ravnal kakor tisti. ki živali odmika jarem od čeljusti.<br>vsakega od njih sem nežno hranil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:5,Ozej:"Vendar se niso hoteli vrniti k meni.<br>zato se ne bodo vrnili v egiptovsko deželo. ampak jim bo kraljevala Asirija.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:6,Ozej:"Zaradi njihovih spletk bo meč divjal po njihovih mestih.<br>uničil bo zapahe na mestnih vratih in požrl prebivalce.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:7,Ozej:"Moje ljudstvo je nagnjeno k temu. da mi je nezvesto.<br>Klicali so jih. naj se vrnejo k temu. kar je vzvišeno. toda nihče se ni odzval.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:8,Ozej:"Kako bi se ti lahko odrekel. o Efraim?<br>Kako bi te lahko izročil sovražniku. o Izrael?<br>Kako bi lahko ravnal s teboj. kakor sem z Admo?<br>Kako bi ti lahko naredil to. kar sem Zebojimu?<br>Moji občutki so se spremenili<br>in v meni se je prebudilo sočutje do tebe.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:9,Ozej:"Ne bom dal duška svoji goreči jezi.<br>Efraim. ne bom te znova uničil.<br>ker nisem človek. ampak Bog.<br>Sveti Bog. ki sem sredi tebe.<br>Ne bom te v jezi kaznoval.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:10,Ozej:"Spet bodo častili mene. Jehova. in rjovel bom kakor lev.<br>Ko bom zarjovel. bodo moji otroci polni strahospoštovanja prišli z zahoda.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:11,Ozej:"Trepetali bodo kakor ptica. ko bodo prišli iz Egipta.<br>kakor golob. ko bodo prišli iz asirske dežele.<br>Naselil jih bom v njihovih hišah.« govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:11,V:12,Ozej:"»Efraim me je zasipal z lažmi<br>in Izrael s prevarami.<br>Toda Juda se še naprej drži mene. svojega Boga.<br>in je zvest meni. Najsvetejšemu.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:12,V:0,Ozej:"Ozej 12. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:1,Ozej:"»Efraim se hrani z vetrom.<br>ves dan lovi vzhodnik.<br>Njegovim lažem in nasilnim dejanjem ni konca.<br>Sklepa zavezo z Asirijo in nosi olje v Egipt.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:2,Ozej:"Jehova je v sodnem sporu z Judom.<br>Jakoba bo poklical na odgovornost zaradi njegovega ravnanja.<br>povrnil mu bo v skladu z njegovimi deli.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:3,Ozej:"V maminem trebuhu je Jakob zgrabil svojega brata za peto.<br>Z vso svojo močjo se je bojeval z Bogom.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:4,Ozej:"Bojeval se je z angelom in zmagal.<br>Jokal je in prosil za blagoslov.«<br>Bog ga je našel v Betelu in tam je govoril z nami.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:5,Ozej:"Ta Bog je Jehova. Bog nad vojskami.<br>Jehova je ime. po katerem se ga spominjamo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:6,Ozej:"»Vrni se torej k meni. svojemu Bogu.<br>bodi vdan v ljubezni in pravičen.<br>Vedno zaupaj vame.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:7,Ozej:"Toda tvoji trgovci sleparijo pri tehtanju.<br>radi goljufajo.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:8,Ozej:"Efraim govori: ‚Res sem obogatel.<br>pridobil sem si premoženje.<br>Vse to sem si prislužil s svojim trudom. nihče mi ne more očitati. da sem naredil kaj narobe ali grešil.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:9,Ozej:"Toda jaz sem Jehova. tvoj Bog. še iz egiptovske dežele.<br>Spet te bom naselil v šotore.<br>da boš živel kot ob predpisanih dneh.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:10,Ozej:"Govoril sem prerokom.<br>dajal sem jim videnje za videnjem.<br>po njih sem govoril poučne pripovedi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:11,Ozej:"V Gileadu se dogaja prevara in sliši neresnica.<br>V Gilgalu žrtvujejo bike.<br>Njihovi oltarji so kakor kupi kamenja na zorani njivi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:12,Ozej:"Jakob je zbežal na ozemlje Arama.<br>Izrael je tam služil. da bi dobil ženo.<br>za ženo je čuval ovce.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:13,Ozej:"Jaz. Jehova. sem po preroku odpeljal Izraelce iz Egipta<br>in po preroku sem jih varoval.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:12,V:14,Ozej:"Efraim me je hudo žalil.<br>še naprej bo nosil krivdo za prelito kri.<br>Jaz. njegov Gospod. mu bom povrnil za sramoto. ki mi jo je nakopal.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:13,V:0,Ozej:"Ozej 13. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:1,Ozej:"»Ko je Efraim govoril. so ljudje trepetali <br>bil je pomemben v Izraelu.<br>Vendar si je nakopal krivdo zaradi čaščenja Baala in umrl.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:2,Ozej:"Zdaj pa še bolj grešijo<br>in si izdelujejo ulite kipe iz srebra.<br>mojstrsko izdelane malike – vse to je delo rokodelcev.<br>Govorijo: ‚Naj ljudje. ki prinašajo žrtve. poljubljajo kipe teleta.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:3,Ozej:"Zato bodo postali kakor jutranji oblaki.<br>kakor rosa. ki zgodaj izgine.<br>kakor pleve. ki jih veter odnese z mlatišča.<br>in kakor dim. ki se dviga iz dimnika.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:4,Ozej:"Toda jaz sem Jehova. tvoj Bog. še iz egiptovske dežele.<br>Spoznal si. da ni drugega Boga razen mene.<br>Razen mene ni rešitelja.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:5,Ozej:"Skrbel sem zate v pustinji. v sušni deželi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:6,Ozej:"Na svojem pašniku so se nasitili.<br>Ko so se nasitili.<br>so se prevzeli in me pozabili.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:7,Ozej:"Napadel jih bom kakor mlad lev.<br>kakor leopard. ki preži ob poti.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:8,Ozej:"Nanje bom planil kakor medvedka. ki je izgubila svoje mladiče.<br>razparal jim bom prsni koš.<br>Tam jih bom požrl kakor lev.<br>Zver jih bo raztrgala.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:9,Ozej:"O Izrael. takšen bo tvoj konec.<br>ker si se obrnil proti meni. ki ti pomagam.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:10,Ozej:"Kje je zdaj tvoj kralj. da bi te rešil v vseh tvojih mestih?<br>Kje so tvoji voditelji?<br>Za njih si me prosil. ko si rekel: ‚Daj mi kralja in poglavarje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:11,Ozej:"V svoji jezi sem ti dal kralja<br>in v svojem besu ga bom vzel.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:12,Ozej:"Efraimov prestopek je spravljen.<br>njegov greh je shranjen.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:13,Ozej:"Efraim bo imel bolečine. kakršne ima ženska. ki rojeva.<br>Nespameten otrok je.<br>saj noče priti ven. ko pride čas. da se rodi.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:14,Ozej:"Osvobodil jih bom iz groba.<br>rešil jih bom smrti.<br>Smrt. kje so tvoja žela?<br>Grob. kje je tvoja uničevalna moč?<br>Vendar še ne bom pokazal sočutja.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:15,Ozej:"Tudi če bo uspeval kakor trstje.<br>bo prišel vzhodni veter. ki ga bom poslal jaz. Jehova.<br>Prišel bo iz puščave. da izsuši njegov vodnjak in njegov izvir.<br>Izropal bo njegovo zakladnico. odnesel bo vse njegove dragocenosti.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:13,V:16,Ozej:"Samarija bo morala odgovarjati. ker se je uprla meni. svojemu Bogu.<br>Njene prebivalce bodo pobili z mečem.<br>Njene otroke bodo raztreščili<br>in njene nosečnice razparali.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:14,V:0,Ozej:"Ozej 14. poglavje",K:"",NZ:""},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:1,Ozej:"Izraelsko ljudstvo. vrni se k svojemu Bogu Jehovu.<br>ker si zašlo in padlo zaradi svojega greha.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:2,Ozej:"Vrnite se k Jehovu in mu recite:<br>»Prosimo. oprosti nam naš greh in poglej naša dobra dela.<br>mi pa ti bomo s svojimi usti darovali hvalo. kot bi ti darovali mlade bike.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:3,Ozej:"Asirija nas ne bo mogla rešiti.<br>Ne bomo se zanašali na konje.<br>Izdelka svojih rok ne bomo več imenovali ‚Naš Bog!.<br>saj si ti tisti. ki siroti izkazuješ usmiljenje.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:4,Ozej:"»Ozdravil jih bom. da mi ne bodo več nezvesti.<br>Ljubil jih bom iz vsega srca.<br>ker sem se nehal jeziti nanje.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:5,Ozej:"Za izraelsko ljudstvo bom postal kakor rosa.<br>Cvetelo bo kakor lilija<br>in poganjalo korenine kakor libanonska drevesa.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:6,Ozej:"Njegove mladike se bodo široko razprostirale.<br>veličastno bo kakor oljka<br>in dišalo bo kakor libanonska drevesa.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:7,Ozej:"Moje ljudstvo bo spet uživalo mojo zaščito.<br>Pridelovali bodo žito in brsteli bodo kakor trta.<br>O meni bodo govorili. kot govorijo o libanonskem vinu.",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:8,Ozej:"Efraim bo rekel: ‚Kaj mi bodo ti maliki?<br>Jaz mu bom odgovoril in pazil nanj.<br>Jaz bom kakor košato brinovo drevo.<br>Na meni se bo našel sad zanj.«",K:"",NZ:"X"},
+{Knjiga:"Ozej",Kr:"Oz",P:14,V:9,Ozej:"Kdo je moder? Naj razume vse to.<br>Kdo je preudaren? Naj vse to spozna.<br>Jehovove poti so namreč ravne<br>in pravični bodo hodili po njih.<br>prestopniki pa bodo zašli z njih in padli.",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

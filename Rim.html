@@ -1,1382 +1,574 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Rimljanom</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Rimljanom 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jaz,  Pavel,  sem suženj Kristusa Jezusa in poklican za apostola,  izbran za to,  da oznanjam Božjo dobro novico, </TD>
-</TR>
-<TR>
-<TD >ki jo je Bog že vnaprej po svojih prerokih obljubil v Svetih spisih.</TD>
-</TR>
-<TR>
-<TD >Ta novica govori o njegovem Sinu,  ki se je na zemlji rodil kot Davidov potomec</TD>
-</TR>
-<TR>
-<TD >in ki je bil z močjo svetega duha razglašen za Božjega Sina,  ko je bil obujen od mrtvih. Ta Sin je Jezus Kristus,  naš Gospod.</TD>
-</TR>
-<TR>
-<TD >Izkazal mi je nezasluženo dobroto in me poklical za apostola,  da bi v slavo njegovemu imenu vanj začeli verovati in mu bili poslušni ljudje iz vseh narodov, </TD>
-</TR>
-<TR>
-<TD >izmed katerih ste bili tudi vi poklicani,  da postanete sledilci Jezusa Kristusa.</TD>
-</TR>
-<TR>
-<TD >Te besede pišem vsem v Rimu,  ki jih Bog ljubi in so poklicani za svete:<br>Naj vam Bog,  naš Oče,  in Gospod Jezus Kristus izkažeta nezasluženo dobroto in naklonita mir.</TD>
-</TR>
-<TR>
-<TD >Najprej se svojemu Bogu po Jezusu Kristusu zahvaljujem za vse vas,  ker se o vaši veri govori po vsem svetu.</TD>
-</TR>
-<TR>
-<TD >Bog,  ki mu z vsem srcem služim,  tako da oznanjam dobro novico o njegovem Sinu,  mi je priča,  da vas vedno omenjam v svojih molitvah</TD>
-</TR>
-<TR>
-<TD >in ga prosim,  da bi mi zdaj končno uspelo priti k vam,  če bo to le mogoče in če bo takšna njegova volja.</TD>
-</TR>
-<TR>
-<TD >Hrepenim namreč po tem,  da bi vas videl in vam tako podelil kak duhovni dar,  ki bi vas okrepil.</TD>
-</TR>
-<TR>
-<TD >Pravzaprav si želim,  da bi spodbudili drug drugega – vi mene s svojo vero in jaz vas s svojo.</TD>
-</TR>
-<TR>
-<TD >Bratje,  rad bi,  da veste,  da sem že velikokrat nameraval priti k vam,  vendar sem bil do zdaj vedno zadržan. Nameraval sem priti k vam,  da bi moje oznanjevanje tudi med vami obrodilo sadove,  tako kot ga je med drugimi narodi.</TD>
-</TR>
-<TR>
-<TD >Dolžnik sem vsem,  tako Grkom kot tujcem,  tako izobraženim kot neizobraženim, </TD>
-</TR>
-<TR>
-<TD >zato si nadvse želim oznaniti dobro novico tudi vam v Rimu.</TD>
-</TR>
-<TR>
-<TD >Ne sramujem se namreč dobre novice; po njej pravzaprav Bog s svojo močjo omogoča rešitev vsakemu,  ki veruje,  najprej Judu,  potem pa tudi Grku.</TD>
-</TR>
-<TR>
-<TD >Tisti namreč,  ki verujejo,  vidijo,  da Bog po dobri novici razkriva svojo pravičnost,  in to jim krepi vero,  tako kot piše v Svetih spisih: »Pravični bo živel zaradi vere.«</TD>
-</TR>
-<TR>
-<TD >Bog iz nebes izliva svojo jezo na vse brezbožne in nepravične ljudi,  ki s svojo nepravičnostjo zakrivajo resnico.</TD>
-</TR>
-<TR>
-<TD >Dal jim je namreč dovolj dokazov,  da bi ga lahko spoznali.</TD>
-</TR>
-<TR>
-<TD >Njegove nevidne lastnosti,  tudi njegova večna moč in božanskost,  so jasno vidne od ustvaritve sveta naprej,  saj jih je mogoče spoznati po stvareh,  ki jih je naredil. Tako ti ljudje nimajo nobenega izgovora.</TD>
-</TR>
-<TR>
-<TD >Čeprav so Boga poznali,  ga niso slavili kot Boga niti se mu niso zahvaljevali,  ampak so začeli razmišljati o praznih stvareh in njihovo nerazumno srce je napolnila tema.</TD>
-</TR>
-<TR>
-<TD >Trdili so sicer,  da so modri,  toda postali so neumni.</TD>
-</TR>
-<TR>
-<TD >Slavo,  ki pripada netrohljivemu Bogu,  so začeli izkazovati nekakšni podobi trohljivega človeka,  ptic,  štirinožnih bitij in plazilcev.</TD>
-</TR>
-<TR>
-<TD >Ker so torej hoteli živeti tako,  kot želi njihovo srce,  jim je Bog pustil,  da so ravnali nečisto in tako svoje telo spravili v sramoto.</TD>
-</TR>
-<TR>
-<TD >Takšni so Božjo resnico zamenjali z lažjo ter oboževali in častili stvarstvo namesto Stvarnika,  ki si edini zasluži večno hvalo. Amen.</TD>
-</TR>
-<TR>
-<TD >Zato jih je Bog prepustil sramotnim spolnim strastem,  saj so ženske naravne spolne odnose zamenjale s protinaravnimi.</TD>
-</TR>
-<TR>
-<TD >Podobno so tudi moški opustili naravne spolne odnose z žensko ter se v svojem velikem poželenju vneli drug za drugega. Tako so moški med seboj počeli,  kar je nagnusno,  in prejemali sami na sebi polno kazen,  ki so si jo zaslužili za svoje napačno početje.</TD>
-</TR>
-<TR>
-<TD >Ker se jim ni zdelo vredno spoznati Boga,  jim je Bog pustil,  da jih vodi razmišljanje,  ki ga on ne odobrava,  in da tako počnejo,  kar se ne spodobi.</TD>
-</TR>
-<TR>
-<TD >Takšni so skrajno nepravični,  hudobni,  pohlepni,  pokvarjeni in zavistni. Poleg tega ubijajo,  se prepirajo,  varajo in so škodoželjni. Takšni tudi širijo govorice, </TD>
-</TR>
-<TR>
-<TD >obrekujejo,  sovražijo Boga,  so predrzni,  ošabni,  se bahajo,  si izmišljajo škodljive reči,  so neposlušni staršem, </TD>
-</TR>
-<TR>
-<TD >nerazumni,  ne spoštujejo dogovorov,  do drugih ne kažejo nobene naravne naklonjenosti in so neusmiljeni.</TD>
-</TR>
-<TR>
-<TD >Čeprav zelo dobro poznajo Božjo pravično odredbo,  namreč da si tisti,  ki počnejo takšne stvari,  zaslužijo smrt,  to delajo še naprej,  poleg tega pa takšno početje drugih celo odobravajo.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kljub temu,  o človek,  nimaš nobenega opravičila za to,  da sodiš druge,  ne glede na to,  kdo si. Če namreč sodiš drugega,  obsojaš sebe,  ker ti,  ki sodiš,  počneš iste stvari.</TD>
-</TR>
-<TR>
-<TD >Zdaj vemo,  da Bog sodi tistim,  ki počnejo takšne stvari,  in da je njegova sodba pravična.</TD>
-</TR>
-<TR>
-<TD >Toda,  o človek,  ki sodiš tiste,  ki počnejo takšne stvari,  delaš pa jih tudi sam – ali misliš,  da boš ušel Božji sodbi?</TD>
-</TR>
-<TR>
-<TD >Ali zaničuješ Božjo veliko prijaznost,  prizanesljivost in potrpežljivost? Ali ne veš,  da ti Bog s svojo prijaznostjo skuša pomagati do kesanja?</TD>
-</TR>
-<TR>
-<TD >Toda ker si trmast in se v srcu nočeš pokesati,  si nakopavaš Božjo jezo,  ki jo bo Bog razkril na dan svoje pravične sodbe.</TD>
-</TR>
-<TR>
-<TD >Bog bo vsakemu povrnil po njegovih delih:</TD>
-</TR>
-<TR>
-<TD >Tistim,  ki iščejo slavo,  čast in netrohljivost,  tako da vztrajno delajo dobro,  bo dal večno življenje.</TD>
-</TR>
-<TR>
-<TD >Na tiste,  ki so prepirljivi in niso poslušni resnici,  ampak ravnajo nepravično,  pa bo izlil svojo jezo in bes.</TD>
-</TR>
-<TR>
-<TD >Vsakega,  ki dela slabo,  bodo doletele stiske in težave,  najprej Juda in potem še Grka, </TD>
-</TR>
-<TR>
-<TD >vsak,  ki dela dobro,  pa bo prejel slavo,  čast in mir,  najprej Jud in potem še Grk.</TD>
-</TR>
-<TR>
-<TD >Bog namreč ni pristranski.</TD>
-</TR>
-<TR>
-<TD >Vsi tisti,  ki so grešili,  ne da bi poznali Božje zakone,  bodo umrli,  čeprav ne poznajo teh zakonov. Vsi tisti,  ki so grešili in so poznali Božje zakone,  pa bodo po teh zakonih sojeni.</TD>
-</TR>
-<TR>
-<TD >Bog namreč za pravične ne bo razglasil tistih,  ki zakone samo slišijo,  ampak bo za pravične razglasil tiste,  ki zakone tudi izpolnjujejo.</TD>
-</TR>
-<TR>
-<TD >Kadar ljudje iz drugih narodov,  ki ne poznajo Božjih zakonov,  sami od sebe izpolnjujejo to,  kar ti zakoni določajo,  s tem pokažejo,  da imajo te zakone v srcu,  čeprav jih ne poznajo.</TD>
-</TR>
-<TR>
-<TD >S svojimi deli dokazujejo,  da je vsebina zakonov zapisana v njihovem srcu,  in za to priča tudi njihova vest. Poleg tega jih njihove lastne misli obtožujejo ali pa celo opravičujejo.</TD>
-</TR>
-<TR>
-<TD >Vse to bo jasno vidno tisti dan,  ko bo Bog po Kristusu Jezusu sodil to,  kar je skrito v ljudeh. To je tudi v skladu z dobro novico,  ki jo razglašam.</TD>
-</TR>
-<TR>
-<TD >Če se imaš za Juda in se zanašaš na Zakonik ter si ponosen,  da si del Božjega ljudstva, </TD>
-</TR>
-<TR>
-<TD >če poznaš Božjo voljo in znaš prepoznati,  kaj je res vredno,  ker si poučen iz Zakonika, </TD>
-</TR>
-<TR>
-<TD >če si prepričan,  da si vodnik slepih,  luč tem,  ki so v temi, </TD>
-</TR>
-<TR>
-<TD >vzgojitelj nerazumnih,  učitelj majhnih otrok in da razumeš osnovne nauke in resnice iz Zakonika</TD>
-</TR>
-<TR>
-<TD >– zakaj potem ti,  ki učiš druge,  sebe ne učiš? Zakaj ti,  ki drugim govoriš »Ne kradi«,  kradeš?</TD>
-</TR>
-<TR>
-<TD >Zakaj ti,  ki govoriš »Ne prešuštvuj«,  prešuštvuješ? Zakaj ti,  ki preziraš malike,  ropaš templje?</TD>
-</TR>
-<TR>
-<TD >Zakaj ti,  ki si ponosen na Zakonik,  sramotiš Boga s kršenjem Zakonika?</TD>
-</TR>
-<TR>
-<TD >Tako je,  kot piše v Svetih spisih: »Zaradi vas se med narodi sramoti Božje ime.«</TD>
-</TR>
-<TR>
-<TD >Dejansko je obreza koristna le,  če ravnaš v skladu z Zakonikom,  če pa ga kršiš,  je tako,  kot da ne bi bil obrezan.</TD>
-</TR>
-<TR>
-<TD >Če torej kdo od neobrezanih ravna po pravičnih zahtevah Zakonika,  bo,  čeprav je neobrezan,  veljal za obrezanega,  kajne?</TD>
-</TR>
-<TR>
-<TD >In kdor fizično ni obrezan,  bo z izpolnjevanjem tega,  kar piše v Zakoniku sodil tebe,  ki kljub temu,  da imaš napisane zakone in si obrezan,  kršiš Zakonik.</TD>
-</TR>
-<TR>
-<TD >Pravi Jud namreč ni tisti,  ki je to na zunaj,  in prava obreza ni to,  kar je zunaj na telesu, </TD>
-</TR>
-<TR>
-<TD >ampak je pravi Jud tisti,  ki je to znotraj,  in njegova obreza je obreza srca po svetem duhu,  ne pa po napisanih zakonih. Takšnega ne hvalijo ljudje,  ampak Bog.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >V čem imajo torej Judje prednost pred drugimi oziroma kakšna je korist obreze?</TD>
-</TR>
-<TR>
-<TD >Prednosti je veliko. Najpomembnejša je ta,  da jim je Bog zaupal svete izreke.</TD>
-</TR>
-<TR>
-<TD >Kaj lahko torej rečemo o Judih,  ki nimajo vere? Ali to,  da nimajo vere,  pomeni,  da Bogu ni več mogoče zaupati?</TD>
-</TR>
-<TR>
-<TD >Nikakor ne! Tudi če se bo izkazalo,  da je vsak človek lažnivec,  se bo pokazalo,  da Bog govori resnico,  tako kot to piše v Svetih spisih: »To,  kar govoriš,  je prav,  in ko te bodo česa obtožili,  boš dokazal,  da se motijo.«</TD>
-</TR>
-<TR>
-<TD >Pravijo,  da zaradi naše nepravičnosti pride do izraza Božja pravičnost. Ali to potem pomeni,  da je Bog krivičen,  ko izrazi svojo jezo,  kot to mislijo nekateri?</TD>
-</TR>
-<TR>
-<TD >Nikakor ne! Če Bog ne bi bil pravičen,  kako bi potem sodil svet?</TD>
-</TR>
-<TR>
-<TD >Če bi jaz lagal in bi bilo zaradi tega še bolj očitno,  da Bog govori resnico,  in bi mu to prineslo slavo,  zakaj bi se mi potem sodilo kot grešniku?</TD>
-</TR>
-<TR>
-<TD >In zakaj ne bi potem kar rekli »Delajmo slabo,  da bo iz tega prišlo dobro«,  kot nekateri lažno trdijo,  da govorimo? Ti ljudje si zaslužijo obsodbo.</TD>
-</TR>
-<TR>
-<TD >Ali smo torej mi kaj na boljšem od drugih? Nikakor ne! Kot sem že omenil,  so tako Judje kot Grki pod oblastjo greha.</TD>
-</TR>
-<TR>
-<TD >Tako piše tudi v Svetih spisih: »Nikogar ni,  ki bi bil pravičen,  niti enega ne;</TD>
-</TR>
-<TR>
-<TD >nikogar ni,  ki bi bil moder,  nikogar ni,  ki bi iskal Božje vodstvo.</TD>
-</TR>
-<TR>
-<TD >Vsi ljudje so skrenili s poti,  vsi skupaj so postali ničvredni; nikogar ni,  ki bi delal dobro,  niti enega ne.«</TD>
-</TR>
-<TR>
-<TD >»Njihovo grlo je odprt grob,  s svojimi jeziki varajo.« »V njihovih ustih je gadji strup.«</TD>
-</TR>
-<TR>
-<TD >»Njihova usta so polna prekletstev in grenkobe.«</TD>
-</TR>
-<TR>
-<TD >»S svojimi nogami hitijo ubijat druge.«</TD>
-</TR>
-<TR>
-<TD >»S svojim ravnanjem povzročajo uničenje in bedo</TD>
-</TR>
-<TR>
-<TD >ter ne vedo,  kako biti v miru z drugimi.«</TD>
-</TR>
-<TR>
-<TD >»Nimajo strahospoštovanja do Boga.«</TD>
-</TR>
-<TR>
-<TD >Zdaj vemo,  da je vse,  kar piše v Zakoniku,  namenjeno tistim,  ki so podrejeni Zakoniku,  da nihče od njih ne bi mogel trditi,  da je nedolžen,  in da bi Bog ves svet spoznal za krivega.</TD>
-</TR>
-<TR>
-<TD >Zato ne bo pred Bogom nihče razglašen za pravičnega,  če ravna v skladu z Zakonikom,  saj nam Zakonik zgolj pomaga dobro razumeti,  kaj je greh.</TD>
-</TR>
-<TR>
-<TD >Zdaj pa je postalo očitno,  da je pravičnost pred Bogom mogoče doseči neodvisno od Zakonika. To dejstvo je omenjeno tudi v Zakoniku in Preroških spisih.</TD>
-</TR>
-<TR>
-<TD >Pravičnost pred Bogom lahko z vero v Jezusa Kristusa dosežejo vsi,  ki verujejo. Ni namreč nobene razlike, </TD>
-</TR>
-<TR>
-<TD >saj vsi grešijo in ne morejo odsevati Božje slave.</TD>
-</TR>
-<TR>
-<TD >Bog jih je po svoji nezasluženi dobroti osvobodil z odkupnino,  ki jo je plačal Kristus Jezus. S tem jih je razglasil za pravične,  kar je brezplačen dar.</TD>
-</TR>
-<TR>
-<TD >Bog je Kristusa predstavil kot spravno daritev za tiste,  ki verujejo v njegovo kri. S tem je hotel pokazati,  da je bil pravičen,  ko je v svoji prizanesljivosti odpuščal grehe,  ki so jih ljudje delali v preteklosti.</TD>
-</TR>
-<TR>
-<TD >Hotel pa je pokazati tudi to,  da je pravičen v sedanjem času,  ko za pravičnega razglasi človeka,  ki veruje v Jezusa.</TD>
-</TR>
-<TR>
-<TD >Ali imamo potem kak razlog za to,  da se hvalimo? Nimamo ga. Po katerem zakoniku ga nimamo? Po zakoniku,  ki se tiče naših dejanj? Ne,  ampak po zakoniku,  ki se tiče naše vere.</TD>
-</TR>
-<TR>
-<TD >Menimo namreč,  da je človek razglašen za pravičnega zaradi vere,  ne pa zaradi ravnanja po Zakoniku.</TD>
-</TR>
-<TR>
-<TD >Ali je Bog samo Bog Judov? Ali ni on tudi Bog ljudi iz drugih narodov? Da,  on je tudi Bog ljudi iz drugih narodov.</TD>
-</TR>
-<TR>
-<TD >Ker je Bog samo eden,  bo obrezane in neobrezane ljudi razglasil za pravične na podlagi njihove vere.</TD>
-</TR>
-<TR>
-<TD >Ali potem s svojo vero jemljemo Zakoniku veljavo? Nikakor ne! Nasprotno,  Zakonik potrjujemo.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kaj bomo glede na vse to rekli o Abrahamu,  praočetu našega rodu? Kaj je on dobil?</TD>
-</TR>
-<TR>
-<TD >Če bi bil Abraham razglašen za pravičnega zaradi del,  bi imel razlog,  da se hvali pred drugimi,  vendar ne pred Bogom.</TD>
-</TR>
-<TR>
-<TD >Kaj piše v Svetih spisih? »Abraham je verjel Jehovu in zaradi tega je bil štet za pravičnega.«</TD>
-</TR>
-<TR>
-<TD >Človek,  ki opravi delo,  plačila ne prejme zato,  ker bi mu delodajalec izkazal nezasluženo dobroto,  ampak zato,  ker si je to plačilo zaslužil.</TD>
-</TR>
-<TR>
-<TD >Toda človeka,  ki verjame Bogu in se ne zanaša na svoja dela,  Bog šteje za pravičnega zaradi njegove vere. Bog je ta,  ki lahko grešnike šteje za pravične.</TD>
-</TR>
-<TR>
-<TD >Tudi David je povedal,  da je srečen tisti,  ki ga Bog neodvisno od njegovih del priznava za pravičnega. Rekel je:</TD>
-</TR>
-<TR>
-<TD >»Srečni tisti,  ki so jim bila njihova nezakonita dejanja oproščena in so jim bili grehi izbrisani;</TD>
-</TR>
-<TR>
-<TD >srečen tisti človek,  čigar grehov se Jehova ne bo spominjal.«</TD>
-</TR>
-<TR>
-<TD >Ali so potem te sreče deležni samo obrezani ljudje ali tudi neobrezani? Že prej smo rekli: »Abraham je bil zaradi vere štet za pravičnega.«</TD>
-</TR>
-<TR>
-<TD >Kdaj ga je torej Bog začel šteti za pravičnega? Ko je bil obrezan ali ko še ni bil obrezan? Takrat ko še ni bil obrezan.</TD>
-</TR>
-<TR>
-<TD >Kasneje pa je dobil znamenje,  namreč obrezo,  kot potrdilo,  da ga je Bog štel za pravičnega zaradi vere,  ki jo je imel,  ko še ni bil obrezan. Tako je lahko postal oče vseh neobrezanih,  ki verujejo,  zato da bi bili tudi oni šteti za pravične.</TD>
-</TR>
-<TR>
-<TD >Lahko je postal tudi oče obrezanih,  pa ne le teh,  ki se držijo obreze,  ampak tudi teh,  ki imajo takšno vero,  kot jo je imel naš oče Abraham,  ko še ni bil obrezan.</TD>
-</TR>
-<TR>
-<TD >Obljuba,  ki je bila dana Abrahamu oziroma njegovemu potomstvu,  namreč da bo dedič sveta,  ni bila dana zaradi upoštevanja Zakonika,  ampak zato,  ker je bil Abraham zaradi svoje vere štet za pravičnega.</TD>
-</TR>
-<TR>
-<TD >Če so namreč dediči tisti,  ki se ravnajo po Zakoniku,  potem je vera nekoristna in obljuba prazna.</TD>
-</TR>
-<TR>
-<TD >Zakonik dejansko povzroča Božjo jezo,  toda če ni Zakonika,  tudi nobenega prestopka ni.</TD>
-</TR>
-<TR>
-<TD >Zato je Abraham obljubo dobil na podlagi vere in na temelju nezaslužene dobrote,  da bi se gotovo izpolnila na vseh njegovih potomcih – ne le na teh,  ki se ravnajo po Zakoniku,  ampak tudi na teh,  ki imajo takšno vero,  kot jo je imel on. Abraham pa je oče vseh nas.</TD>
-</TR>
-<TR>
-<TD >(To piše tudi v Svetih spisih: »Postavil sem te za očeta mnogih narodov.«) Abraham je verjel v Boga,  ki obuja mrtve in ki na to,  česar ni,  gleda,  kakor da je.</TD>
-</TR>
-<TR>
-<TD >Upal je in veroval,  da lahko postane oče mnogih narodov,  čeprav se je to zdelo nemogoče. Temu je verjel zato,  ker mu je bilo rečeno: »Toliko bo tvojega potomstva.«</TD>
-</TR>
-<TR>
-<TD >Vera mu sicer ni oslabela,  vendar se je zavedal,  da je njegovo telo tako rekoč že mrtvo (takrat je bil namreč star okoli 100 let) pa tudi da Sara ne more več imeti otrok.</TD>
-</TR>
-<TR>
-<TD >Toda ker mu je Bog dal obljubo,  mu vera ni oslabela,  ampak mu je dala moči. S tem je dal Bogu slavo</TD>
-</TR>
-<TR>
-<TD >in bil popolnoma prepričan,  da je Bog to,  kar je obljubil,  tudi zmožen izpolniti.</TD>
-</TR>
-<TR>
-<TD >Zato »je bil zaradi tega štet za pravičnega«.</TD>
-</TR>
-<TR>
-<TD >Besede,  da »je bil štet za pravičnega«,  pa niso bile napisane samo zaradi njega, </TD>
-</TR>
-<TR>
-<TD >ampak tudi zaradi nas,  ki bomo šteti za pravične,  ker verjamemo v tistega,  ki je od mrtvih obudil našega Gospoda Jezusa.</TD>
-</TR>
-<TR>
-<TD >Jezus je bil izročen v smrt zaradi naših prestopkov in je bil obujen zato,  da bi bili mi razglašeni za pravične.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >Zdaj torej,  ko smo bili zaradi vere razglašeni za pravične,  ostanimo v miru z Bogom. To je mogoče zaradi tega,  kar je naredil naš Gospod Jezus Kristus, </TD>
-</TR>
-<TR>
-<TD >po katerem se nam je zaradi naše vere odprla pot,  da nam Bog izkaže nezasluženo dobroto – in Bog nam to dobroto že zdaj izkazuje. Zato bodimo veseli,  medtem ko čakamo,  da nas bo Bog povišal.</TD>
-</TR>
-<TR>
-<TD >Veseli pa bodimo tudi takrat,  ko smo v stiskah,  ker vemo,  da si v stiski pridobimo zdržljivost, </TD>
-</TR>
-<TR>
-<TD >zdržljivost nam potem pomaga pridobiti si Božje odobravanje,  Božje odobravanje nam daje upanje, </TD>
-</TR>
-<TR>
-<TD >upanje pa nas ne bo razočaralo. Bog nam namreč po svetem duhu,  ki smo ga dobili,  zagotavlja,  da nas ljubi.</TD>
-</TR>
-<TR>
-<TD >Kristus je umrl za brezbožne ljudi ob za to določenem času. Umrl je za nas,  ko smo bili še šibki.</TD>
-</TR>
-<TR>
-<TD >Težko bi kdo umrl za pravičnega; morda bi bil pripravljen umreti za dobrega človeka.</TD>
-</TR>
-<TR>
-<TD >Toda Bog nam je svojo ljubezen izkazal s tem,  da je Kristus umrl za nas,  ko smo bili še grešniki.</TD>
-</TR>
-<TR>
-<TD >Zdaj smo torej po Kristusovi krvi razglašeni za pravične,  zato smo lahko prepričani,  da bomo po njem rešeni pred Božjo jezo.</TD>
-</TR>
-<TR>
-<TD >Če smo namreč z Bogom prišli v miren odnos,  ker je njegov Sin umrl za nas,  ko smo bili še Božji sovražniki,  smo zdaj,  ko smo z Bogom že v mirnem odnosu,  lahko prepričani,  da bomo rešeni zato,  ker je Kristus živ.</TD>
-</TR>
-<TR>
-<TD >Poleg tega nam to,  da smo z Bogom v mirnem odnosu,  kar nam je omogočil naš Gospod Jezus Kristus,  prinaša veselje.</TD>
-</TR>
-<TR>
-<TD >Torej,  zaradi enega človeka je na svet prišel greh in zaradi greha smrt; tako se je smrt razširila na vse ljudi,  ker so vsi postali grešni.</TD>
-</TR>
-<TR>
-<TD >Greh je bil namreč na svetu,  še preden je bil Zakonik,  toda če ni nobenega zakona,  se za greh ne obtožuje nikogar.</TD>
-</TR>
-<TR>
-<TD >Kljub temu je smrt kraljevala od Adama pa vse do Mojzesa tudi nad tistimi,  ki niso zagrešili enakega prestopka kakor Adam,  ki je bil v nekaterih pogledih podoben tistemu,  ki je še moral priti.</TD>
-</TR>
-<TR>
-<TD >Toda z Božjim darom ni tako kot z Adamovim prestopkom. Zaradi prestopka enega človeka so mnogi umrli,  toda po nezasluženi dobroti Jezusa Kristusa so mnogi deležni Božje nezaslužene dobrote in Božjega brezplačnega daru.</TD>
-</TR>
-<TR>
-<TD >Božji brezplačni dar in greh enega človeka se razlikujeta tudi v tem: en prestopek je privedel do tega,  da so bili vsi ljudje spoznani za krive,  toda dar,  ki je bil dan zaradi mnogih prestopkov,  je privedel do tega,  da so mnogi razglašeni za pravične.</TD>
-</TR>
-<TR>
-<TD >Nobenega dvoma ni,  da je smrt kraljevala zaradi prestopka enega človeka. Še bolj gotovo pa je,  da bodo tisti,  ki jim Bog izkazuje obilno nezasluženo dobroto in daje velik brezplačen dar pravičnosti,  živeli in kraljevali po enem človeku,  Jezusu Kristusu.</TD>
-</TR>
-<TR>
-<TD >Tako kot so bili torej vsakršni ljudje zaradi enega prestopka obsojeni,  tako so tudi zaradi enega pravičnega dejanja razglašeni za pravične in dobijo življenje.</TD>
-</TR>
-<TR>
-<TD >Tako kot so zaradi neposlušnosti enega človeka mnogi postali grešni,  tako bodo tudi zaradi poslušnosti enega človeka mnogi postali pravični.</TD>
-</TR>
-<TR>
-<TD >Zakonik se je pojavil zato,  da bi se ljudje zavedali svojih mnogih prestopkov. Toda kjer je veliko grehov,  Bog še bolj kaže svojo nezasluženo dobroto.</TD>
-</TR>
-<TR>
-<TD >Zakaj? Zato da bi,  kakor je greh kraljeval skupaj s smrtjo,  tudi nezaslužena dobrota lahko kraljevala v pravičnosti in tako omogočila večno življenje po našem Gospodu Jezusu Kristusu.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kaj naj torej rečemo? Ali naj še naprej grešimo,  zato da bomo imeli od Božje nezaslužene dobrote še več koristi?</TD>
-</TR>
-<TR>
-<TD >Nikakor ne! Glede na to,  da smo,  kar se tiče greha,  umrli,  kako bi potem lahko v grehu živeli še naprej?</TD>
-</TR>
-<TR>
-<TD >Ali ne veste,  da smo se vsi,  ki smo se krstili v Kristusa Jezusa,  krstili tudi v njegovo smrt?</TD>
-</TR>
-<TR>
-<TD >Zato smo bili s svojim krstom v njegovo smrt skupaj z njim pokopani,  da bi tudi mi živeli novo življenje,  enako kakor ga živi Kristus,  potem ko je bil po Očetovi sijajni moči obujen od mrtvih.</TD>
-</TR>
-<TR>
-<TD >Če smo namreč z njim eno v tem,  da umremo,  tako kot je umrl on,  potem smo z njim eno tudi v tem,  da smo obujeni,  tako kot je bil obujen on.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da je bila naša stara osebnost z njim vred pribita na kol zato,  da naše grešno telo ne bi imelo več oblasti nad nami in tako ne bi več sužnjevali grehu.</TD>
-</TR>
-<TR>
-<TD >Ko namreč kdo umre,  je oproščen svojega greha.</TD>
-</TR>
-<TR>
-<TD >Če smo s Kristusom umrli,  verjamemo,  da bomo z njim tudi živeli.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da Kristus zdaj,  ko je bil obujen od mrtvih,  ne bo več umrl; smrt nad njim nima več oblasti.</TD>
-</TR>
-<TR>
-<TD >Umrl je namreč enkrat za vselej,  in to zato,  da bi odstranil greh. Živi pa zato,  da lahko izpolnjuje Božjo voljo.</TD>
-</TR>
-<TR>
-<TD >Tako tudi vi: kar se tiče greha,  imejte sami sebe za mrtve,  kar se tiče izpolnjevanja Božje volje,  pa imejte sami sebe za žive po Kristusu Jezusu.</TD>
-</TR>
-<TR>
-<TD >Zato ne dovolite,  da bi v vašem umrljivem telesu greh še naprej kraljeval,  tako da bi ubogali želje telesa.</TD>
-</TR>
-<TR>
-<TD >Niti ne izročajte svojega telesa grehu,  da bi ravnali nepravično,  ampak se kot taki,  ki ste bili mrtvi in ste oživeli,  izročite Bogu. Svoje telo izročite Bogu,  da bi ravnali pravično.</TD>
-</TR>
-<TR>
-<TD >Ker niste več podrejeni Zakoniku,  ampak ste prejeli Božjo nezasluženo dobroto,  vas greh ne sme imeti v oblasti.</TD>
-</TR>
-<TR>
-<TD >Kaj torej? Ali naj grešimo,  ker nismo več podrejeni Zakoniku,  ampak smo prejeli Božjo nezasluženo dobroto? Nikakor ne!</TD>
-</TR>
-<TR>
-<TD >Ali ne veste,  da če se komu izročite za sužnja in mu obljubite poslušnost,  postanete njegov suženj prav zato,  ker ga poslušate? Lahko ste sužnji greha,  ki vodi v smrt,  ali pa sužnji poslušnosti,  ki vodi v pravičnost.</TD>
-</TR>
-<TR>
-<TD >Toda Bogu naj gre hvala,  da ste postali iz srca poslušni nauku,  ki ste ga prejeli,  čeprav ste bili nekoč sužnji greha.</TD>
-</TR>
-<TR>
-<TD >Ker ste bili osvobojeni greha,  ste postali sužnji pravičnosti.</TD>
-</TR>
-<TR>
-<TD >Zaradi vaše nepopolnosti se izražam z besedami,  ki so razumljive ljudem. Prej ste kakor sužnji svoje telo izročili nečistosti in hudobnosti,  da bi ravnali hudobno,  zdaj pa svoje telo izročite pravičnosti,  da bi delali to,  kar je sveto.</TD>
-</TR>
-<TR>
-<TD >Ko ste namreč bili sužnji greha,  niste bili pod oblastjo pravičnosti.</TD>
-</TR>
-<TR>
-<TD >Kakšne pa so bile posledice vaših takratnih dejanj? To,  česar se zdaj sramujete in vodi v smrt.</TD>
-</TR>
-<TR>
-<TD >Vendar ker ste bili osvobojeni greha in ste postali sužnji Bogu,  vaša dejanja zdaj prinašajo svetost in vodijo v večno življenje.</TD>
-</TR>
-<TR>
-<TD >Plačilo za greh je namreč smrt,  toda dar,  ki ga daje Bog,  je večno življenje po našem Gospodu Kristusu Jezusu.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 7. Poglavje</TD>
-</TR>
-<TR>
-<TD >Ali je mogoče,  bratje,  da ne veste,  da je človek podrejen Zakoniku,  dokler je živ? (Govorim namreč tistim,  ki poznajo zakone.)</TD>
-</TR>
-<TR>
-<TD >Poročena ženska,  denimo,  je po Zakoniku vezana na svojega moža,  dokler je živ,  če pa ji mož umre,  se ni več dolžna podrejati zakonu,  ki se tiče njenega moža.</TD>
-</TR>
-<TR>
-<TD >Če bi se torej poročila z drugim moškim,  dokler bi bil njen mož še živ,  bi zagrešila prešuštvo. Če pa ji mož umre,  je osvobojena zakona,  ki se tiče njenega moža,  zato ne bi zagrešila prešuštva,  če bi se poročila z drugim moškim.</TD>
-</TR>
-<TR>
-<TD >Tako ste bili tudi vi,  moji bratje,  po Kristusovi žrtvi osvobojeni Zakonika in zdaj pripadate Kristusu,  ki je bil obujen od mrtvih. Tako lahko obrodimo sad,  ki je Bogu v slavo.</TD>
-</TR>
-<TR>
-<TD >Ko smo namreč še živeli v skladu s svojimi telesnimi željami,  je Zakonik odkril,  da so te slabe želje navedle naše telo,  da je grešilo. In ta greh vodi v smrt.</TD>
-</TR>
-<TR>
-<TD >Toda zdaj smo osvobojeni Zakonika,  saj nas ne omejuje več. Zato smo lahko sužnji Bogu v novem pomenu,  po svetem duhu,  ne pa v starem pomenu,  po napisanih zakonih.</TD>
-</TR>
-<TR>
-<TD >Kaj naj torej rečemo? Ali je Zakonik greh? Nikakor ne! Pravzaprav nikoli ne bi vedel,  kaj je greh,  če ne bi bilo Zakonika. Ne bi na primer vedel,  kaj je pohlep,  če v Zakoniku ne bi pisalo: »Ne želi si tega,  kar pripada drugemu.«</TD>
-</TR>
-<TR>
-<TD >Toda zaradi te zapovedi je greh našel priložnost,  da v meni vzbudi vsakovrsten pohlep,  saj je bil greh brez Zakonika mrtev.</TD>
-</TR>
-<TR>
-<TD >Pravzaprav sem bil živ,  dokler ni bilo Zakonika,  ko pa je nastopila ta zapoved,  je greh spet oživel,  jaz pa sem umrl.</TD>
-</TR>
-<TR>
-<TD >In ugotovil sem,  da ta zapoved,  ki naj bi vodila v življenje,  vodi v smrt.</TD>
-</TR>
-<TR>
-<TD >Zaradi te zapovedi je namreč greh našel priložnost,  da me zapelje in ubije.</TD>
-</TR>
-<TR>
-<TD >Kljub vsemu je Zakonik svet in ta zapoved je sveta,  pravična in dobra.</TD>
-</TR>
-<TR>
-<TD >Ali mi je potem smrt prinesel Božji Zakonik,  ki je dober? Nikakor ne! Prinesel jo je greh. Prinesel mi jo je po Božjem Zakoniku,  ki je dober,  zato da bi se jasno pokazalo,  kaj je greh. Zapoved je odkrila,  kako veliko škodo povzroča greh.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da je Zakonik od Boga,  jaz pa sem iz mesa in krvi,  prodan grehu.</TD>
-</TR>
-<TR>
-<TD >Tega,  kar delam,  ne razumem,  saj ne delam tega,  kar želim,  ampak delam to,  kar sovražim.</TD>
-</TR>
-<TR>
-<TD >Če pa mi to,  kar delam,  ni všeč,  priznavam,  da je Zakonik dober.</TD>
-</TR>
-<TR>
-<TD >Torej vsega tega ne delam več jaz,  ampak greh,  ki je v meni.</TD>
-</TR>
-<TR>
-<TD >Vem,  da v meni,  to je v mojem telesu,  ni nič dobrega. Želim delati dobro,  vendar tega nisem zmožen.</TD>
-</TR>
-<TR>
-<TD >Dobrega namreč,  kar želim delati,  ne delam,  ampak počnem slabo,  prav to,  česar ne želim.</TD>
-</TR>
-<TR>
-<TD >Če pa delam to,  česar ne želim,  potem tega ne delam več jaz,  ampak greh,  ki je v meni.</TD>
-</TR>
-<TR>
-<TD >Ugotavljam torej,  da name vpliva naslednji zakon: kadar želim delati,  kar je prav,  v sebi vidim nagnjenje,  da delam,  kar je slabo.</TD>
-</TR>
-<TR>
-<TD >V srcu se zares veselim v Božjih zakonih, </TD>
-</TR>
-<TR>
-<TD >toda zavedam se,  da je v mojem telesu drug zakon,  ki se bojuje z zakonom,  ki vodi moj um. Ta drugi zakon je zakon greha,  ki me ima v svojem ujetništvu.</TD>
-</TR>
-<TR>
-<TD >O jaz nesrečnik! Kdo me bo rešil telesa,  ki me vodi v takšno smrt?</TD>
-</TR>
-<TR>
-<TD >Zahvaljujem se Bogu,  ki me je rešil po našem Gospodu Jezusu Kristusu! S svojim umom sem torej suženj Božjih zakonov,  s telesom pa sem suženj zakona greha.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 8. Poglavje</TD>
-</TR>
-<TR>
-<TD >Tisti,  ki so povezani s Kristusom Jezusom,  torej niso obsojeni.</TD>
-</TR>
-<TR>
-<TD >Zakon svetega duha,  ki daje življenje tistim,  ki so povezani s Kristusom Jezusom,  vas je osvobodil zakona greha in smrti.</TD>
-</TR>
-<TR>
-<TD >To,  česar Zakonik ni mogel doseči,  ker je bil zaradi nepopolnosti ljudi brez moči,  je dosegel Bog,  ko je poslal svojega Sina v človeški podobi,  da bi odpravil greh. Tako je obsodil greh,  ki je v telesu, </TD>
-</TR>
-<TR>
-<TD >da bi se na nas,  ki nas ne vodijo telesne želje,  ampak sveti duh,  izpolnile pravične zahteve Zakonika.</TD>
-</TR>
-<TR>
-<TD >Tisti namreč,  ki jih vodijo telesne želje,  razmišljajo o tem,  kar je telesno,  tisti,  ki jih vodi sveti duh,  pa razmišljajo o duhovnih rečeh.</TD>
-</TR>
-<TR>
-<TD >Telesno razmišljanje vodi v smrt,  duhovno razmišljanje pa vodi v življenje in mir, </TD>
-</TR>
-<TR>
-<TD >saj tisti,  ki razmišljajo telesno,  postanejo Božji sovražniki. Telo namreč ni podrejeno Božjim zakonom in jim tudi ne more biti.</TD>
-</TR>
-<TR>
-<TD >Zato tisti,  ki jih vodijo telesne želje,  ne morejo ugajati Bogu.</TD>
-</TR>
-<TR>
-<TD >Vendar če je v vas res Božji duh,  vas ne vodijo telesne želje,  ampak Božji duh. Če pa kdo nima Kristusovega stališča,  ni Kristusov.</TD>
-</TR>
-<TR>
-<TD >Če ste povezani s Kristusom,  je vaše telo zaradi greha sicer mrtvo,  toda sveti duh vam prinaša življenje,  ker ste bili razglašeni za pravične.</TD>
-</TR>
-<TR>
-<TD >Če je torej v vas duh tistega,  ki je Jezusa obudil od mrtvih,  bo ta,  ki je Kristusa Jezusa obudil od mrtvih,  po svojem duhu oživil tudi vaše umrljivo telo.</TD>
-</TR>
-<TR>
-<TD >Tako torej,  bratje,  nikakor nismo dolžni ubogati telesnih želja.</TD>
-</TR>
-<TR>
-<TD >Če vas vodijo telesne želje,  boste gotovo umrli. Če pa s pomočjo svetega duha usmrtite grešna dejanja telesa,  boste živeli, </TD>
-</TR>
-<TR>
-<TD >saj so vsi,  ki jih vodi Božji duh,  Božji otroci.</TD>
-</TR>
-<TR>
-<TD >Niste namreč prejeli duha,  ki bi vas zasužnjil in bi v vas spet povzročil strah,  ampak ste prejeli duha,  ki nas posvoji,  duha,  ki nas spodbuja,  da kličemo: »Aba,  Oče!«</TD>
-</TR>
-<TR>
-<TD >Ta duh skupaj z našim duhom potrjuje,  da smo Božji otroci.</TD>
-</TR>
-<TR>
-<TD >Če pa smo otroci,  bomo prejeli tudi dediščino,  in sicer dediščino od Boga. To dediščino bomo prejeli skupaj s Kristusom. Da pa bi bili skupaj z njim oslavljeni,  moramo skupaj z njim tudi trpeti.</TD>
-</TR>
-<TR>
-<TD >Zato menim,  da trpljenje,  ki ga zdaj doživljamo,  ni nič v primerjavi s slavo,  ki se bo razodela na nas.</TD>
-</TR>
-<TR>
-<TD >Stvarstvo namreč željno pričakuje razodetje Božjih otrok, </TD>
-</TR>
-<TR>
-<TD >saj je bilo obsojeno na prazno življenje,  pa ne po svoji volji,  ampak po volji Boga,  ki ga je obsodil. Vendar je Bog obenem dal upanje, </TD>
-</TR>
-<TR>
-<TD >da bo tudi stvarstvo rešeno sužnjevanja trohljivosti in da bo dobilo veličastno svobodo Božjih otrok.</TD>
-</TR>
-<TR>
-<TD >Vemo namreč,  da vse stvarstvo prav do zdaj skupaj vzdihuje in trpi bolečine.</TD>
-</TR>
-<TR>
-<TD >Pa ne le stvarstvo,  ampak tudi mi sami,  ki smo prejeli svetega duha,  znamenje naše dediščine,  v sebi vzdihujemo. Medtem pa željno čakamo,  da nas Bog posvoji in nas na podlagi odkupnine osvobodi našega telesa.</TD>
-</TR>
-<TR>
-<TD >To upanje smo prejeli,  ko smo bili rešeni. Toda ko človek vidi,  da se je to,  v kar upa,  izpolnilo,  mu v to ni treba več upati.</TD>
-</TR>
-<TR>
-<TD >Če pa izpolnitve upanja še ne vidimo,  potem jo še naprej vztrajno čakamo.</TD>
-</TR>
-<TR>
-<TD >Podobno nam sveti duh pride na pomoč tudi,  kadar smo šibki. Vemo,  da bi morali moliti,  ampak ne vemo,  za kaj naj molimo. Ko tako vzdihujemo,  vendar ne najdemo pravih besed,  lahko sveti duh prosi za nas.</TD>
-</TR>
-<TR>
-<TD >Bog,  ki preiskuje srca,  pa razume,  kaj prosi sveti duh,  saj ta prosi za svete v soglasju z Božjo voljo.</TD>
-</TR>
-<TR>
-<TD >Vemo,  da Bog skrbi,  da je vse,  kar dela,  med seboj usklajeno v dobro teh,  ki ga ljubijo,  teh,  ki so poklicani skladno z njegovim namenom.</TD>
-</TR>
-<TR>
-<TD >Vnaprej je namreč določil,  da bodo ti,  ki jim je najprej posvetil pozornost,  odsev njegovega Sina. Tako je njegov Sin postal prvorojenec med mnogimi brati.</TD>
-</TR>
-<TR>
-<TD >Te,  ki jih je vnaprej določil,  je tudi poklical in te,  ki jih je poklical,  je tudi razglasil za pravične. Te,  ki jih je razglasil za pravične,  pa je tudi oslavil.</TD>
-</TR>
-<TR>
-<TD >Kaj naj torej rečemo na vse to? Če je Bog z nami,  kdo je proti nam?</TD>
-</TR>
-<TR>
-<TD >Zakaj nam ne bi ta,  ki celo lastnemu Sinu ni prizanesel,  ampak ga je dal za vse nas,  poleg njega prijazno dal tudi vse drugo?</TD>
-</TR>
-<TR>
-<TD >Kdo lahko obtoži te,  ki jih je Bog izbral? Nihče. Bog je namreč ta,  ki jih razglaša za pravične.</TD>
-</TR>
-<TR>
-<TD >Kdo jih lahko obsodi? Nihče. Kristus Jezus je namreč ta,  ki je umrl zanje. In ne samo to. On je bil tudi obujen od mrtvih,  je na Božji desni in prosi za nas.</TD>
-</TR>
-<TR>
-<TD >Ali nas lahko kaj loči od Kristusove ljubezni? Ali nas lahko od nje ločijo težave,  stiska,  preganjanje,  lakota,  revščina,  nevarnost ali meč?</TD>
-</TR>
-<TR>
-<TD >V Svetih spisih namreč piše: »Zaradi tebe nas vsak dan pobijajo,  zanje smo kakor ovce za zakol.«</TD>
-</TR>
-<TR>
-<TD >Toda s pomočjo tistega,  ki nas ljubi,  iz vsega tega izhajamo kot popolni zmagovalci.</TD>
-</TR>
-<TR>
-<TD >Prepričan sem namreč,  da nas ne smrt,  ne življenje,  ne angeli,  ne vlade,  ne sedanje reči,  ne prihodnje reči,  ne sile, </TD>
-</TR>
-<TR>
-<TD >ne višina,  ne globina,  niti kar koli drugega,  kar je bilo ustvarjeno,  ne bo moglo ločiti od Božje ljubezni,  ki nam je bila izkazana po našem Gospodu Kristusu Jezusu.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 9. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kot Kristusov sledilec govorim resnico in ne lažem. Moja vest,  ki jo vodi sveti duh,  je priča, </TD>
-</TR>
-<TR>
-<TD >da sta v mojem srcu velika žalost in nenehna bolečina.</TD>
-</TR>
-<TR>
-<TD >Pripravljen sem biti celo preklet in ločen od Kristusa,  če bi to le koristilo mojim bratom,  mojim rojakom, </TD>
-</TR>
-<TR>
-<TD >Izraelcem,  ki jih je Bog posvojil za svoje otroke. Povišal jih je,  z njimi sklenil zaveze in jim dal Zakonik,  obljube in čast,  da mu služijo.</TD>
-</TR>
-<TR>
-<TD >Oni so potomci naših praočetov in iz njih je kot človek izšel Kristus. Naj bo Bog,  ki je nad vsem,  večno hvaljen. Amen.</TD>
-</TR>
-<TR>
-<TD >Vendar to ne pomeni,  da se Božja beseda ni izpolnila. Niso namreč vsi,  ki so potomci Izraela,  tudi res Izraelci.</TD>
-</TR>
-<TR>
-<TD >Niti niso vsi,  ki so potomci Abrahama,  tudi res njegovi otroci. V Svetih spisih namreč piše: »Obljubljeno potomstvo boš dobil po Izaku.«</TD>
-</TR>
-<TR>
-<TD >To pomeni,  da naravni potomci niso v resnici Božji otroci,  ampak se za resnične potomce štejejo otroci,  rojeni zaradi Božje obljube.</TD>
-</TR>
-<TR>
-<TD >Obljuba se je namreč glasila: »Ob tem času bom prišel in Sara bo imela sina.«</TD>
-</TR>
-<TR>
-<TD >Enako je bilo z Rebeko,  ko je z našim praočetom Izakom zanosila dvojčka.</TD>
-</TR>
-<TR>
-<TD >Ko se dvojčka še nista rodila in še nista storila nič dobrega ali slabega,  je Bog povedal,  katerega bo izbral. Bog se namreč glede tega,  koga bo izbral,  odloča na podlagi svojega namena,  ne pa na podlagi posameznikovih del.</TD>
-</TR>
-<TR>
-<TD >Rebeki je rekel: »Starejši sin bo sužnjeval mlajšemu.«</TD>
-</TR>
-<TR>
-<TD >Tako kot piše v Svetih spisih: »Jakoba sem ljubil,  Ezava pa sovražil.«</TD>
-</TR>
-<TR>
-<TD >Kaj naj torej rečemo? Ali je Bog krivičen? Nikakor ne!</TD>
-</TR>
-<TR>
-<TD >Mojzesu namreč pravi: »Usmilil se bom tistega,  kogar se bom želel usmiliti,  in sočuten bom do tistega,  do kogar bom želel biti sočuten.«</TD>
-</TR>
-<TR>
-<TD >To torej ni odvisno od posameznikove želje ali truda,  ampak od Boga,  ki je usmiljen.</TD>
-</TR>
-<TR>
-<TD >Bog namreč v Svetih spisih faraonu govori: »Prav zato sem te pustil pri življenju,  da bi lahko na tebi pokazal svojo moč in da bi se po vsej zemlji razglasilo moje ime.«</TD>
-</TR>
-<TR>
-<TD >Kogar se torej želi usmiliti,  se ga usmili,  in komur želi pustiti,  da postane zakrknjen,  mu to pusti.</TD>
-</TR>
-<TR>
-<TD >Morda mi bo zdaj kdo rekel: »Če se nihče ne more upreti njegovi volji,  zakaj potem še vedno krivi ljudi?«</TD>
-</TR>
-<TR>
-<TD >O človek,  kdo pa sploh si,  da si upaš ugovarjati Bogu? Ali izdelek svojemu oblikovalcu reče »Zakaj si me naredil tako?«?</TD>
-</TR>
-<TR>
-<TD >Kaj? Ali nima lončar pravice,  da iz iste kepe gline naredi eno posodo za časten namen,  drugo pa za nečasten?</TD>
-</TR>
-<TR>
-<TD >Kaj zato,  če je Bog,  čeprav je hotel pokazati svojo jezo in razodeti svojo moč,  z veliko potrpežljivostjo prenašal posode jeze,  ki so pripravljene za uničenje?</TD>
-</TR>
-<TR>
-<TD >In kaj potem,  če je to naredil zato,  da bi razodel svojo veliko slavo na posodah usmiljenja,  ki jih je vnaprej pripravil,  da bi bile oslavljene, </TD>
-</TR>
-<TR>
-<TD >namreč na nas,  ki nas ni poklical le izmed Judov,  ampak tudi izmed drugih narodov?</TD>
-</TR>
-<TR>
-<TD >Tako je,  kot je rekel tudi v Ozejevi knjigi: »Tiste,  ki niso moje ljudstvo,  bom imenoval ‚moje ljudstvo in njo,  ki ni bila ljubljena,  bom imenoval ‚ljubljena;</TD>
-</TR>
-<TR>
-<TD >in prav tam,  kjer sem jim prej rekel ‚Vi niste moje ljudstvo,  jih bom zdaj imenoval ‚otroci živega Boga.«</TD>
-</TR>
-<TR>
-<TD >Poleg tega Izaija glede Izraelcev oznanja: »Tudi če bi bilo Izraelcev toliko,  kot je morskega peska,  jih bo rešenih samo malo.</TD>
-</TR>
-<TR>
-<TD >Jehova bo namreč na zemlji brez odlašanja naredil dokončen obračun.«</TD>
-</TR>
-<TR>
-<TD >Izaija je tudi napovedal: »Če nam Jehova nad vojskami ne bi pustil potomstva,  bi doživeli enak konec kot Sodoma in Gomora.«</TD>
-</TR>
-<TR>
-<TD >Kaj naj torej rečemo? To,  da so bili ljudje iz drugih narodov,  čeprav si niso prizadevali ravnati pravično,  razglašeni za pravične,  in to na podlagi vere.</TD>
-</TR>
-<TR>
-<TD >Izraelcem,  ki so si z ravnanjem po Zakoniku prizadevali,  da bi bili razglašeni za pravične,  pa to ni uspelo.</TD>
-</TR>
-<TR>
-<TD >In zakaj ne? Ker si za to niso prizadevali z vero,  ampak z deli. Spotaknili so se ob »kamen spotike«, </TD>
-</TR>
-<TR>
-<TD >tako kot to piše v Svetih spisih: »Glej! Na Sionu polagam kamen in skalo spotike,  toda nihče,  ki verjame vanj,  ne bo razočaran.«</TD>
-</TR>
-<TR>
-<TD >Rimljanom 10. Poglavje</TD>
-</TR>
-<TR>
-<TD >Bratje,  iz srca si želim in Boga goreče prosim za Izraelce,  da bi se rešili.</TD>
-</TR>
-<TR>
-<TD >Potrdim lahko,  da goreče služijo Bogu,  toda ne po točnem spoznanju.</TD>
-</TR>
-<TR>
-<TD >Božjih pravičnih meril ne poznajo,  prizadevajo pa si uveljavljati svoja,  zato se Božjim pravičnim merilom ne podrejajo.</TD>
-</TR>
-<TR>
-<TD >S Kristusom se je namreč Zakonik končal,  da bi za pravičnega veljal vsak,  ki veruje.</TD>
-</TR>
-<TR>
-<TD >Mojzes je glede tega,  kako je mogoče z ravnanjem po Zakoniku doseči pravičnost,  napisal: »Kdor izpolnjuje,  kar v njem piše,  bo po njem imel življenje.«</TD>
-</TR>
-<TR>
-<TD >O tem,  da je pravičnost mogoče doseči z vero,  pa je rečeno takole: »Ne govori v svojem srcu ‚Kdo se bo povzpel v nebo? (zato da bi Kristusa privedel na zemljo);</TD>
-</TR>
-<TR>
-<TD >ali ‚Kdo se bo spustil v brezno? (zato da bi Kristusa privedel gor od mrtvih).«</TD>
-</TR>
-<TR>
-<TD >Kaj pravijo Sveti spisi? »Te besede so blizu vas,  v vaših ustih in v vašem srcu«,  in sicer »besede« vere,  ki jih oznanjamo.</TD>
-</TR>
-<TR>
-<TD >Če namreč s svojimi usti javno razglašaš,  da je Jezus tvoj Gospod,  in če v svojem srcu verjameš,  da ga je Bog obudil od mrtvih,  boš rešen.</TD>
-</TR>
-<TR>
-<TD >S srcem mora človek verovati,  da bi postal pravičen,  z usti pa vero javno razglašati,  da bi dosegel rešitev.</TD>
-</TR>
-<TR>
-<TD >Saj v Svetih spisih piše: »Nihče,  ki verjame vanj,  ne bo razočaran.«</TD>
-</TR>
-<TR>
-<TD >Nobene razlike ni med Judom in Grkom. Nad vsemi je isti Gospod,  ki bogato daje vsem,  ki ga kličejo.</TD>
-</TR>
-<TR>
-<TD >Piše namreč: »Vsak,  ki bo klical moje ime Jehova,  bo rešen.«</TD>
-</TR>
-<TR>
-<TD >Toda kako bodo klicali tega,  v katerega ne verjamejo? In kako bodo verjeli v tega,  o katerem še niso slišali? In kako bodo slišali zanj,  če jim tega nihče ne oznani?</TD>
-</TR>
-<TR>
-<TD >Kako pa bodo oznanjevali,  če niso bili poslani? Tako je,  kot piše v Svetih spisih: »Kako lepe so noge tistih,  ki oznanjajo dobro novico o nečem boljšem!«</TD>
-</TR>
-<TR>
-<TD >Kljub temu dobri novici niso bili poslušni vsi. Izaija namreč pravi: »Jehova,  ali je kdo verjel temu,  kar je slišal od nas?«</TD>
-</TR>
-<TR>
-<TD >Človek mora najprej slišati sporočilo,  da si lahko pridobi vero. Sliši pa ga lahko,  ko kdo govori o Kristusu.</TD>
-</TR>
-<TR>
-<TD >Ali to pomeni,  da Izraelci niso slišali sporočila? Seveda so ga. Saj se je pravzaprav »po vsej zemlji,  do skrajnega konca zemlje,  razširilo sporočilo«.</TD>
-</TR>
-<TR>
-<TD >Ali to pomeni,  da ga Izraelci niso razumeli? Seveda so ga razumeli. Mojzes je rekel: »V vas bom vzbujal ljubosumnost s tistimi,  ki niso narod; močno vas bom razjezil z neumnim narodom.«</TD>
-</TR>
-<TR>
-<TD >Izaija pa je pogumno rekel: »Našli so me tisti,  ki me niso iskali. Razkril sem se tistim,  ki po meni niso povpraševali.«</TD>
-</TR>
-<TR>
-<TD >Toda glede Izraelcev je rekel: »Neposlušno in trmasto ljudstvo sem ves dan z odprtimi rokami vabil,  naj se vrne k meni.«</TD>
-</TR>
-<TR>
-<TD >Rimljanom 11. Poglavje</TD>
-</TR>
-<TR>
-<TD >Ali to pomeni,  da je Bog svoje ljudstvo zavrgel? Nikakor ne! Saj sem tudi jaz Izraelec,  Abrahamov potomec iz Benjaminovega rodu.</TD>
-</TR>
-<TR>
-<TD >Bog ni zavrgel svojega ljudstva,  ki ga je izbral kot prvega. Ali ne veste,  kaj odlomek iz Svetih spisov pravi glede tega,  kako se je Elija Bogu pritoževal nad Izraelci?</TD>
-</TR>
-<TR>
-<TD >»Jehova,  pobijajo tvoje preroke in podirajo tvoje oltarje. Ostal sem sam,  zdaj pa skušajo ubiti tudi mene.«</TD>
-</TR>
-<TR>
-<TD >In kaj mu je odgovoril Bog? »Ostalo mi je 7000 ljudi,  ki niso pokleknili pred Baalom.«</TD>
-</TR>
-<TR>
-<TD >Ravno tako tudi danes obstaja ostanek,  ki ga je Bog izbral zaradi svoje nezaslužene dobrote.</TD>
-</TR>
-<TR>
-<TD >Če pa ga je izbral zaradi nezaslužene dobrote,  potem ga ni izbral zaradi njegovih del,  sicer nezaslužena dobrota ne bi bila več nezaslužena dobrota.</TD>
-</TR>
-<TR>
-<TD >Kaj torej? Prav tistega,  za kar si Izraelci tako vneto prizadevajo,  niso dobili vsi med njimi,  ampak samo izbrani. Ostalim pa je srce otopelo, </TD>
-</TR>
-<TR>
-<TD >tako kot piše v Svetih spisih: »Bog je povzročil,  da so se pogreznili v trden spanec,  da vse do danes s svojimi očmi ne vidijo in s svojimi ušesi ne slišijo.«</TD>
-</TR>
-<TR>
-<TD >David pa pravi: »Naj jim njihova miza postane zanka,  past,  ovira in povračilo.</TD>
-</TR>
-<TR>
-<TD >Naj jim oči potemnijo,  da ne bodo mogli videti,  in naj bo njihov hrbet pod težkim bremenom stalno upognjen.«</TD>
-</TR>
-<TR>
-<TD >Ali to pomeni,  da so se tako spotaknili in padli,  da ne morejo več vstati? Nikakor ne! Toda zaradi njihovega napačnega koraka so bili ljudje iz drugih narodov rešeni. To je v Izraelcih vzbudilo ljubosumnost.</TD>
-</TR>
-<TR>
-<TD >Če torej njihov napačni korak pomeni blagoslov za svet in zmanjšanje njihovega števila blagoslov za ljudi iz drugih narodov,  koliko več bo šele blagoslovov,  ko bo njihovo število dopolnjeno!</TD>
-</TR>
-<TR>
-<TD >Zdaj govorim vam,  ljudem iz drugih narodov. Glede na to,  da sem res apostol narodom,  zelo cenim svojo službo Bogu</TD>
-</TR>
-<TR>
-<TD >in upam,  da bom v svojih rojakih vendarle nekako vzbudil ljubosumnost in nekatere od njih rešil.</TD>
-</TR>
-<TR>
-<TD >Če namreč že to,  da so bili zavrženi,  pomeni,  da svet lahko pride v miren odnos z Bogom,  kaj bo potem pomenilo šele to,  da bodo sprejeti! Nič drugega kot vrnitev iz smrti v življenje.</TD>
-</TR>
-<TR>
-<TD >In če je tisti del testa,  ki je darovan kot prvi,  svet,  je sveta tudi celota,  in če je sveta korenina,  so svete tudi veje.</TD>
-</TR>
-<TR>
-<TD >Vendar so bile nekatere veje gojene oljke odlomljene in ti si bil,  čeprav si veja divje oljke,  vcepljen med preostale veje ter se zdaj lahko hraniš s sokovi oljkine korenine.</TD>
-</TR>
-<TR>
-<TD >Toda ne glej zviška na odlomljene veje. Če nanje gledaš zviška,  ne pozabi,  da ne nosiš ti korenine,  ampak korenina tebe.</TD>
-</TR>
-<TR>
-<TD >Morda boš zdaj rekel: »Veje so bile odlomljene,  zato da bi bil jaz vcepljen.«</TD>
-</TR>
-<TR>
-<TD >Res je! Odlomljene so bile,  ker niso imele vere,  ti pa si še vedno na svojem mestu zaradi svoje vere. Ne bodi prevzeten,  bodi previden.</TD>
-</TR>
-<TR>
-<TD >Če namreč Bog ni prizanesel naravnim vejam,  ne bo prizanesel niti tebi.</TD>
-</TR>
-<TR>
-<TD >Vidiš torej lahko,  da je Bog prijazen pa tudi strog. Do tistih,  ki so odpadli,  je strog,  do tebe pa prijazen,  če boš le še naprej ravnal tako,  da boš vreden njegove prijaznosti,  drugače boš tudi ti odsekan.</TD>
-</TR>
-<TR>
-<TD >In oni bodo,  če si bodo spet pridobili vero,  ravno tako vcepljeni. Bog jih namreč lahko spet vcepi.</TD>
-</TR>
-<TR>
-<TD >Če si bil namreč odrezan od divje oljke in bil v nasprotju s tem,  kar je naravno,  vcepljen na gojeno oljko,  koliko lažje bodo na lastno oljko vcepljeni ti,  ki so že po naravi njeni!</TD>
-</TR>
-<TR>
-<TD >Hočem namreč,  bratje,  da veste za to sveto skrivnost,  zato da se sami sebi ne boste zdeli modri: nekaterim Izraelcem je srce otopelo,  dokler se ne zbere polno število ljudi iz drugih narodov.</TD>
-</TR>
-<TR>
-<TD >Tako bo rešen ves Izrael,  kot to piše v Svetih spisih: »Rešitelj bo prišel s Siona in bo Jakobove potomce odvrnil od brezbožnega početja.</TD>
-</TR>
-<TR>
-<TD >Ko jim bom odpustil grehe,  bom z njimi sklenil zavezo.«</TD>
-</TR>
-<TR>
-<TD >Res je,  da so Božji sovražniki,  ker so zavrnili dobro novico,  in od tega imate vi korist. Toda Bog jih je izbral in jih ljubi zaradi obljube,  ki jo je dal njihovim praočetom.</TD>
-</TR>
-<TR>
-<TD >Bog namreč tega,  da je kaj podaril,  in tega,  da je koga poklical,  ne bo obžaloval.</TD>
-</TR>
-<TR>
-<TD >Vi ste bili nekdaj neposlušni Bogu,  vendar se vam je zdaj,  ker so bili Izraelci neposlušni,  izkazalo usmiljenje.</TD>
-</TR>
-<TR>
-<TD >Zdaj so torej Izraelci neposlušni,  vam pa je izkazano usmiljenje. Toda tudi njim je lahko izkazano usmiljenje,  tako kot je bilo vam.</TD>
-</TR>
-<TR>
-<TD >Bog je namreč dovolil,  da so vsi ljudje sužnji neposlušnosti,  da bi jim vsem lahko izkazal usmiljenje.</TD>
-</TR>
-<TR>
-<TD >Kako brezmejna je Božja velikodušnost,  modrost in znanje! Kako nedoumljive so njegove sodbe in kako nepredstavljiva so njegova dela!</TD>
-</TR>
-<TR>
-<TD >V Svetih spisih namreč piše: »Kdo lahko ugotovi,  kako razmišlja Jehova,  in kdo lahko postane njegov svetovalec?«</TD>
-</TR>
-<TR>
-<TD >In »kdo mu je kaj dal,  da bi mu moral to vrniti«?</TD>
-</TR>
-<TR>
-<TD >Vse je namreč od njega,  po njem in zaradi njega. Njemu naj gre slava na večne čase. Amen.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 12. Poglavje</TD>
-</TR>
-<TR>
-<TD >Ker je Bog tako usmiljen,  vas prosim,  bratje,  da svoje telo izročite kot živo,  sveto žrtev,  sprejemljivo Bogu. Tako mu boste služili z razumom.</TD>
-</TR>
-<TR>
-<TD >Ne dovolite,  da vas še naprej oblikujejo ljudje te stvarnosti,  ampak se preobrazite,  tako da spremenite svoj način razmišljanja,  da bi se lahko prepričali,  kaj Bog želi od vas,  namreč kaj je dobro,  sprejemljivo in popolno.</TD>
-</TR>
-<TR>
-<TD >Zaradi nezaslužene dobrote,  ki mi je bila izkazana,  govorim vsakemu od vas,  naj o sebi nima previsokega mnenja,  ampak naj o sebi misli razumno,  vsak pač na podlagi vere,  ki mu jo je dal Bog.</TD>
-</TR>
-<TR>
-<TD >Tako kot je namreč eno telo sestavljeno iz mnogo delov,  pa nimajo vsi iste funkcije, </TD>
-</TR>
-<TR>
-<TD >tako smo tudi mi,  čeprav nas je mnogo,  eno telo,  ker smo povezani s Kristusom. Toda kot posamezniki smo deli telesa,  ki so odvisni drug od drugega.</TD>
-</TR>
-<TR>
-<TD >Vsi imamo torej v skladu z nezasluženo dobroto,  ki nam je izkazana,  darove,  ki se med seboj razlikujejo. Zato,  če je ta dar prerokovanje,  prerokujmo po veri,  ki nam je bila dana;</TD>
-</TR>
-<TR>
-<TD >če je ta dar služenje drugim,  se posvetimo temu služenju. Kdor poučuje,  naj se posveti poučevanju;</TD>
-</TR>
-<TR>
-<TD >kdor spodbuja druge,  naj se posveti spodbujanju; kdor daje,  naj daje velikodušno; kdor predseduje občini,  naj predseduje marljivo; in kdor je usmiljen,  naj bo usmiljen z veseljem.</TD>
-</TR>
-<TR>
-<TD >Vaša ljubezen naj bo nehinavska. Močno sovražite hudo,  oklepajte pa se dobrega.</TD>
-</TR>
-<TR>
-<TD >Kot bratje imejte radi drug drugega in si bodite naklonjeni iz vsega srca. V medsebojnem izkazovanju časti prevzemajte pobudo.</TD>
-</TR>
-<TR>
-<TD >Ne bodite leni,  ampak marljivi. Naj vas sveti duh napolnjuje z gorečnostjo. Sužnjujte Jehovu.</TD>
-</TR>
-<TR>
-<TD >Veselite se,  ker imate upanje. Potrpite v stiski. Vztrajajte v molitvi.</TD>
-</TR>
-<TR>
-<TD >Kar imate,  delite s soverniki,  ki potrebujejo pomoč. Naj vam preide v navado,  da ste gostoljubni.</TD>
-</TR>
-<TR>
-<TD >Prosite Boga,  naj blagoslovi tiste,  ki vas preganjajo. Ne preklinjajte jih,  ampak prosite zanje.</TD>
-</TR>
-<TR>
-<TD >Veselite se s tistimi,  ki se veselijo,  in jokajte s tistimi,  ki jokajo.</TD>
-</TR>
-<TR>
-<TD >Na druge glejte enako kot na sebe. Ne bodite vzvišeni,  ampak naj vas vodi ponižnost. Ne imejte sami sebe za modre.</TD>
-</TR>
-<TR>
-<TD >Nikomur ne vračajte hudega s hudim. Prizadevajte si za to,  kar je dobro v očeh vseh ljudi.</TD>
-</TR>
-<TR>
-<TD >Če je mogoče,  bodite,  kolikor je od vas odvisno,  v miru z vsemi ljudmi.</TD>
-</TR>
-<TR>
-<TD >Ne maščujte se,  ljubljeni bratje,  ampak pustite Bogu,  naj on pokaže svojo jezo,  saj v Svetih spisih piše: »‚Maščevanje je moje,  jaz bom povrnil,  govori Jehova.«</TD>
-</TR>
-<TR>
-<TD >Ampak »če je tvoj sovražnik lačen,  ga nahrani,  in če je žejen,  mu daj piti,  saj mu boš s tem na glavo nasul žerjavico«.</TD>
-</TR>
-<TR>
-<TD >Ne pustite,  da vas hudo premaga,  ampak premagujte hudo z dobrim.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 13. Poglavje</TD>
-</TR>
-<TR>
-<TD >Vsa oblast je od Boga. Zato naj bo vsak podrejen višjim oblastem,  saj so te svojo relativno oblast prejele od Boga.</TD>
-</TR>
-<TR>
-<TD >Torej se vsak,  ki nasprotuje oblasti,  postavlja po robu Božji ureditvi. Tisti,  ki se tej ureditvi postavljajo po robu,  pa si bodo nakopali obsodbo.</TD>
-</TR>
-<TR>
-<TD >Človeku se tistih na oblasti ni treba bati,  kadar dela dobro,  ampak kadar dela slabo. Ali bi se rad osvobodil strahu pred oblastjo? Še naprej delaj dobro,  pa te bo hvalila, </TD>
-</TR>
-<TR>
-<TD >saj je Božja služabnica tebi v dobro. Če pa boš delal slabo,  se boj,  ker ne nosi meča kar tako. Je namreč Božja služabnica,  maščevalka,  ki kaznuje tiste,  ki počenjajo slabo.</TD>
-</TR>
-<TR>
-<TD >Morali bi se torej podrejati,  pa ne le zato,  da se izognete kazni,  ampak tudi zaradi svoje vesti.</TD>
-</TR>
-<TR>
-<TD >Iz istega razloga tudi plačujete davke. Oblasti so namreč Božje javne služabnice,  ki stalno opravljajo svoje dolžnosti.</TD>
-</TR>
-<TR>
-<TD >Dajte vsakemu,  kar mu pripada: tistemu,  ki zahteva davek,  dajte davek; tistemu,  ki zahteva dajatev,  dajte dajatev; tistemu,  ki zahteva spoštovanje,  izkažite spoštovanje; tistemu,  ki zahteva čast,  pa izkažite čast.</TD>
-</TR>
-<TR>
-<TD >Nikomur ne bodite ničesar dolžni,  razen tega,  da imate drug drugega radi. Kdor ima namreč svojega bližnjega rad,  ravna v skladu z Zakonikom.</TD>
-</TR>
-<TR>
-<TD >Zapovedi iz Zakonika »Ne prešuštvuj,  ne ubijaj,  ne kradi,  ne želi si tega,  kar pripada drugemu« pa tudi vse druge zapovedi so namreč strnjene v teh besedah: »Svojega bližnjega imej rad kakor samega sebe.«</TD>
-</TR>
-<TR>
-<TD >Ljubezen bližnjemu ne dela slabega,  zato tisti,  ki ima druge rad,  ravna v skladu z Zakonikom.</TD>
-</TR>
-<TR>
-<TD >Ravnajte tako zato,  ker veste,  v kakšnem času živite. Veste,  da je že prišla ura,  da se zbudite. Zdaj je namreč naša rešitev bliže kakor takrat,  ko smo začeli verovati.</TD>
-</TR>
-<TR>
-<TD >Precejšen del noči je že mimo in dan se je približal. Zato opustimo dela,  ki se počnejo v temi,  in si nadenimo orožje svetlobe.</TD>
-</TR>
-<TR>
-<TD >Naj bo naše življenje spodobno kakor podnevi – brez divjih zabav in popivanja,  brez spolne nemorale in predrznega vedenja,  brez sporov in ljubosumnosti.</TD>
-</TR>
-<TR>
-<TD >Posnemajte Gospoda Jezusa Kristusa in ne razmišljajte,  kako bi zadovoljili telesne želje.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 14. Poglavje</TD>
-</TR>
-<TR>
-<TD >Človeka,  ki ima šibko vero,  prisrčno sprejmite in ne obsojajte tistih,  ki imajo drugačno mnenje od vas.</TD>
-</TR>
-<TR>
-<TD >Eden ima močno vero in je vse,  drugi,  ki ima šibko vero,  pa je samo zelenjavo.</TD>
-</TR>
-<TR>
-<TD >Naj tisti,  ki je vse,  ne gleda zviška na tistega,  ki ne je vsega,  in tisti,  ki ne je vsega,  naj ne obsoja tistega,  ki je vse,  saj ga je Bog prisrčno sprejel.</TD>
-</TR>
-<TR>
-<TD >Kdo si ti,  da obsojaš tujega služabnika? O tem,  ali bo stal ali padel,  odloča njegov gospodar. In služabnik bo stal,  ker mu Jehova lahko pomaga,  da stoji.</TD>
-</TR>
-<TR>
-<TD >Eden meni,  da je en dan pomembnejši od drugega,  drugi pa meni,  da so vsi dnevi enaki. Vsak naj bo popolnoma prepričan,  da je to,  kar verjame,  prav.</TD>
-</TR>
-<TR>
-<TD >Kdor praznuje določen dan,  tako ravna na čast Jehovu. Kdor je vse,  tako ravna na čast Jehovu,  saj se zahvaljuje Bogu. In kdor ne je vsega,  tako ravna na čast Jehovu in se Bogu vseeno zahvaljuje.</TD>
-</TR>
-<TR>
-<TD >Nihče od nas pravzaprav ne živi samo zase in nihče ne umre samo zase.</TD>
-</TR>
-<TR>
-<TD >Če namreč živimo,  živimo za Jehova,  in če umremo,  umremo za Jehova. Če torej živimo ali če umremo,  pripadamo Jehovu.</TD>
-</TR>
-<TR>
-<TD >Kristus je namreč umrl in spet oživel zato,  da bi bil Gospodar mrtvih in živih.</TD>
-</TR>
-<TR>
-<TD >Toda zakaj obsojaš svojega brata? Ali zakaj gledaš zviška na svojega brata? Saj bomo vsi stopili pred Božji sodni stol.</TD>
-</TR>
-<TR>
-<TD >V Svetih spisih namreč piše: »‚Kot je gotovo to,  da živim,  pravi Jehova,  ‚tako je gotovo to,  da se bo pred menoj upognilo vsako koleno in da bo vsak jezik javno priznaval,  da sem jaz Bog.«</TD>
-</TR>
-<TR>
-<TD >Vsak od nas bo torej zase dajal odgovor Bogu.</TD>
-</TR>
-<TR>
-<TD >Zato ne obsojajmo več drug drugega. Raje bodite odločeni,  da bratu ne boste nastavljali ovir ali preprek.</TD>
-</TR>
-<TR>
-<TD >Kot sledilec Gospoda Jezusa vem in sem prepričan,  da ni samo po sebi nič nečisto. Če pa je že komu kaj nečisto,  je to pač nečisto njemu.</TD>
-</TR>
-<TR>
-<TD >Če s tem,  kar ješ,  vznemiriš svojega brata,  ne ravnaš več v skladu z ljubeznijo. S tem,  kar ješ,  nikar ne uniči vere tistega,  za katerega je Kristus umrl.</TD>
-</TR>
-<TR>
-<TD >Tudi če se vam nekaj zdi dobro,  tega ne delajte,  če bi drugi zaradi tega o vas slabo govorili.</TD>
-</TR>
-<TR>
-<TD >Pri Božjem kraljestvu namreč ne gre za to,  kaj jemo in pijemo,  ampak za pravičnost,  mir in veselje po svetem duhu.</TD>
-</TR>
-<TR>
-<TD >Kdor namreč ima te lastnosti in sužnjuje Kristusu,  ugaja Bogu in je priznan pri ljudeh.</TD>
-</TR>
-<TR>
-<TD >Zato si torej prizadevajmo za to,  kar prispeva k miru,  in za to,  kar je v medsebojno spodbudo.</TD>
-</TR>
-<TR>
-<TD >Nehajte uničevati delo Božjih rok zaradi hrane. Res je,  da so vse stvari čiste,  vendar ni prav,  če kdo je in s tem oslabi vero drugega.</TD>
-</TR>
-<TR>
-<TD >Najboljše je,  da ne jeste mesa,  ne pijete vina,  niti ne počnete ničesar,  kar bi lahko oslabilo vero vašega brata.</TD>
-</TR>
-<TR>
-<TD >To,  kar glede teh stvari verjamete,  je med vami in Bogom. Srečen tisti,  ki se ne obsoja za to,  kako se je odločil ravnati.</TD>
-</TR>
-<TR>
-<TD >Če pa dvomi in je,  je že obsojen,  ker je jedel,  ne da bi se prej prepričal,  ali je to sprejemljivo. Torej,  vse,  kar kdo naredi,  pa se prej ne prepriča,  ali je to sprejemljivo,  je greh.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 15. Poglavje</TD>
-</TR>
-<TR>
-<TD >Mi,  ki imamo močno vero,  bi morali nositi šibkosti tistih,  ki nimajo močne vere,  ne pa delati samo to,  kar nam ugaja.</TD>
-</TR>
-<TR>
-<TD >Naj vsak svojemu bližnjemu dela to,  kar je dobro,  da bi ga s tem okrepil.</TD>
-</TR>
-<TR>
-<TD >Tudi Kristus ni skušal ugoditi samemu sebi,  ampak je ravnal v skladu s tem,  kar piše v Svetih spisih: »Tako kot so ljudje žalili tebe,  žalijo tudi mene.«</TD>
-</TR>
-<TR>
-<TD >Vse namreč,  kar je bilo prej napisano v Svetih spisih,  je bilo napisano zato,  da bi se mi iz tega kaj naučili in bi potem zaradi svoje zdržljivosti in tolažbe iz Svetih spisov imeli upanje.</TD>
-</TR>
-<TR>
-<TD >Bog,  ki nas krepi,  da zdržimo,  in nas tolaži,  naj vsem vam pomaga,  da boste imeli isto stališče,  kakršno je imel Kristus Jezus.</TD>
-</TR>
-<TR>
-<TD >Tako boste lahko enotno,  v en glas slavili Boga in Očeta našega Gospoda Jezusa Kristusa.</TD>
-</TR>
-<TR>
-<TD >Zato prisrčno sprejemajte drug drugega Bogu v slavo,  kakor je tudi vas prisrčno sprejel Kristus.</TD>
-</TR>
-<TR>
-<TD >Reči hočem,  da je Kristus res stregel obrezanim. To je delal zato,  da bi potrdil,  da Bog vedno govori resnico in da so obljube,  ki jih je Bog dal njihovim praočetom,  zanesljive.</TD>
-</TR>
-<TR>
-<TD >To je delal tudi zato,  da bi narodi lahko slavili Boga za njegovo usmiljenje. Tako je,  kot piše v Svetih spisih: »Zato te bom javno priznal med narodi in opeval tvoje ime.«</TD>
-</TR>
-<TR>
-<TD >Poleg tega piše: »Veselite se,  narodi,  z njegovim ljudstvom!«</TD>
-</TR>
-<TR>
-<TD >Piše še: »Hvalite Jehova,  vsi narodi,  in hvalijo naj ga vsa ljudstva!«</TD>
-</TR>
-<TR>
-<TD >Izaija pa pravi: »Pojavila se bo Jesejeva korenina,  tisti,  ki bo vstal,  da bi vladal narodom; ta bo narodom vir upanja.«</TD>
-</TR>
-<TR>
-<TD >Naj vas Bog,  ki daje upanje,  napolni z velikim veseljem in mirom,  ker zaupate vanj. Tako se bo vaše upanje z močjo svetega duha še okrepilo.</TD>
-</TR>
-<TR>
-<TD >Prepričan sem,  moji bratje,  da ste polni dobrote in spoznanja ter usposobljeni,  da opominjate drug drugega.</TD>
-</TR>
-<TR>
-<TD >Vendar vam kljub temu o nekaterih stvareh pišem bolj odkrito. Rad bi vas ponovno spomnil nanje,  in to zato,  ker mi je Bog izkazal nezasluženo dobroto, </TD>
-</TR>
-<TR>
-<TD >da lahko kot javni služabnik Kristusa Jezusa oznanjujem Božjo dobro novico drugim narodom. V tem svetem delu sodelujem zato,  da bi se ti narodi izkazali za sprejemljivo daritev Bogu,  posvečeno s svetim duhom.</TD>
-</TR>
-<TR>
-<TD >Vesel sem,  da sem učenec Kristusa Jezusa in da opravljam delo,  ki mi ga je dal Bog.</TD>
-</TR>
-<TR>
-<TD >Ne bom si dovolil govoriti o ničemer drugem kot o tem,  kar je Kristus naredil po meni,  da bi mu bili narodi poslušni. To je naredil po mojih besedah in dejanjih, </TD>
-</TR>
-<TR>
-<TD >z močjo znamenj in čudežev ter z močjo Božjega duha. Tako sem od Jeruzalema pa vse tja do Ilirika temeljito oznanil dobro novico o Kristusu.</TD>
-</TR>
-<TR>
-<TD >Postavil sem si za cilj,  da ne bom oznanjal dobre novice tam,  kjer se je o Kristusu že oznanjalo,  da ne bi morda zidal na temelju koga drugega, </TD>
-</TR>
-<TR>
-<TD >ampak sem ravnal v skladu s tem,  kar piše v Svetih spisih: »Tisti,  ki jim ni bilo o njem nič oznanjeno,  ga bodo videli in tisti,  ki zanj niso slišali,  bodo razumeli.«</TD>
-</TR>
-<TR>
-<TD >Zato mi do zdaj še ni uspelo priti k vam,  čeprav sem to že velikokrat nameraval.</TD>
-</TR>
-<TR>
-<TD >Zdaj pa tu ni več kraja,  kjer še ne bi oznanjeval. Poleg tega že veliko let hrepenim po tem,  da bi prišel k vam.</TD>
-</TR>
-<TR>
-<TD >Zato upam,  da vas bom obiskal,  ko bom potoval v Španijo,  in da bomo nekaj časa preživeli skupaj. Upam tudi,  da me boste potem del poti tja spremljali.</TD>
-</TR>
-<TR>
-<TD >Zdaj pa se odpravljam v Jeruzalem,  da bi pomagal bratom.</TD>
-</TR>
-<TR>
-<TD >Bratje v Makedoniji in Ahaji so namreč to,  kar imajo,  radi prispevali za revne med brati v Jeruzalemu.</TD>
-</TR>
-<TR>
-<TD >Res,  to so naredili z veseljem,  res pa je tudi,  da so bili njihovi dolžniki. Če so namreč bratje iz Jeruzalema drugim narodom pomagali v duhovnem pogledu,  potem so ti dolžni njim pomagati v materialnem pogledu.</TD>
-</TR>
-<TR>
-<TD >Ko jim bom torej prinesel ta prispevek in jim ga varno izročil,  se bom odpravil v Španijo in spotoma prišel do vas.</TD>
-</TR>
-<TR>
-<TD >Poleg tega vem,  da bom takrat,  ko bom res prišel k vam,  prišel z veliko Kristusovega blagoslova.</TD>
-</TR>
-<TR>
-<TD >Bratje,  zaradi vere,  ki jo imamo v našega Gospoda Jezusa Kristusa,  in medsebojne ljubezni,  ki izvira od svetega duha,  vas zdaj spodbujam,  da skupaj z menoj goreče molite k Bogu zame.</TD>
-</TR>
-<TR>
-<TD >Molite,  da bi bil v Judeji rešen pred neverniki in da bi bratje v Jeruzalemu mojo pomoč lepo sprejeli.</TD>
-</TR>
-<TR>
-<TD >Tako bom,  če bo Božja volja,  poln veselja prišel k vam in bom skupaj z vami osvežen.</TD>
-</TR>
-<TR>
-<TD >Naj bo z vsemi vami Bog,  ki daje mir. Amen.</TD>
-</TR>
-<TR>
-<TD >Rimljanom 16. Poglavje</TD>
-</TR>
-<TR>
-<TD >Rad bi vam predstavil našo sestro Fojbo,  ki služi v občini v Kenhrejah.</TD>
-</TR>
-<TR>
-<TD >Prisrčno jo sprejmite v Gospodovem imenu,  tako kot se za svete spodobi,  in ji pomagajte pri vsem,  pri čemer bi vas potrebovala,  saj je tudi sama pomagala mnogim,  tudi meni.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Prisko in Akvila,  ki skupaj z menoj opravljata delo za Kristusa Jezusa</TD>
-</TR>
-<TR>
-<TD >in sta zame tvegala svojo glavo. Njima se ne zahvaljujem samo jaz,  ampak tudi vse občine izmed drugih narodov.</TD>
-</TR>
-<TR>
-<TD >Pozdravite tudi občino,  ki se zbira v njuni hiši. Pozdravite mojega dragega brata Epajneta,  ki je med prvimi v provinci Aziji postal Kristusov sledilec.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Marijo,  ki se je zelo trudila za vas.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Andronika in Junija,  moja sorodnika,  ki sta bila z menoj v ječi. O njiju imajo apostoli zelo dobro mnenje in sta Kristusova sledilca že dlje od mene.</TD>
-</TR>
-<TR>
-<TD >Pozdravite mojega dragega brata in Gospodovega sledilca Ampliata.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Urbana,  ki skupaj z nami opravlja delo za Kristusa,  in mojega dragega brata Stahija.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Apela,  ki ga Kristus odobrava. Pozdravite Aristobulove domače.</TD>
-</TR>
-<TR>
-<TD >Pozdravite mojega sorodnika Herodiona. Pozdravite Narcisove domače,  ki so Gospodovi sledilci.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Trifajno in Trifozo,  ki se zelo trudita v delu za Gospoda. Pozdravite našo drago Persido,  ker se je tudi ona zelo trudila v delu za Gospoda.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Rufa,  izjemnega Gospodovega služabnika,  in njegovo mamo,  ki je tudi meni kot mama.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Asinkrita,  Flegona,  Hermesa,  Patrobaja,  Hermaja in brate,  ki so z njimi.</TD>
-</TR>
-<TR>
-<TD >Pozdravite Filologa in Julijo,  Nereja in njegovo sestro in Olimpaja ter vse svete,  ki so z njimi.</TD>
-</TR>
-<TR>
-<TD >Pozdravite drug drugega s svetim poljubom. Pozdravljajo vas vse Kristusove občine.</TD>
-</TR>
-<TR>
-<TD >Zdaj pa vas,  bratje,  prosim: bodite previdni glede tistih,  ki v nasprotju z naukom,  ki ste se ga naučili,  povzročajo razdore in nastavljajo ovire,  in se jih ogibajte.</TD>
-</TR>
-<TR>
-<TD >Takšni namreč ne sužnjujejo našemu Gospodu Kristusu,  ampak željam lastnega telesa,  in z dobrikavimi besedami in laskanjem zapeljujejo srce nič hudega slutečih.</TD>
-</TR>
-<TR>
-<TD >Vsi vedo,  da ste poslušni,  zato sem vesel zaradi vas. Toda želim,  da ste modri v tem,  kar je dobro,  in neizkušeni v tem,  kar je slabo.</TD>
-</TR>
-<TR>
-<TD >Bog,  ki daje mir,  pa bo v kratkem vrgel Satana pod vaše noge in ga strl. Naj vam naš Gospod Jezus izkaže nezasluženo dobroto.</TD>
-</TR>
-<TR>
-<TD >Pozdravljajo vas moj sodelavec Timotej pa tudi moji sorodniki Lukij,  Jazon in Sozipater.</TD>
-</TR>
-<TR>
-<TD >Tudi jaz,  Tertij,  ki sem to pismo napisal,  vas pozdravljam v Gospodovem imenu.</TD>
-</TR>
-<TR>
-<TD >Pozdravlja vas moj gostitelj Gaj,  pri katerem se zbira vsa občina. Pozdravljata vas Erast,  ki je mestni blagajnik,  in njegov brat Kvart.</TD>
-</TR>
-<TR>
-<TD >——</TD>
-</TR>
-<TR>
-<TD >Bog vas lahko utrdi z dobro novico,  ki jo oznanjam,  in sporočilom o Jezusu Kristusu. Ta dobra novica se sklada z razodeto sveto skrivnostjo,  o kateri se je dolgo molčalo.</TD>
-</TR>
-<TR>
-<TD >Toda zdaj je ta skrivnost razkrita in je skladno z zapovedjo večnega Boga po prerokbah iz Svetih spisov oznanjena med vsemi narodi,  da bi ti začeli verjeti Bogu in mu bili poslušni.</TD>
-</TR>
-<TR>
-<TD >Bogu,  ki je edini moder,  naj gre na večne čase slava po Jezusu Kristusu. Amen.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Rimljanom','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Rimljanom:"Rimljanom 1. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:1,Rimljanom:"Jaz. Pavel. sem suženj Kristusa Jezusa in poklican za apostola. izbran za to. da oznanjam Božjo dobro novico.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:2,Rimljanom:"ki jo je Bog že vnaprej po svojih prerokih obljubil v Svetih spisih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:3,Rimljanom:"Ta novica govori o njegovem Sinu. ki se je na zemlji rodil kot Davidov potomec",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:4,Rimljanom:"in ki je bil z močjo svetega duha razglašen za Božjega Sina. ko je bil obujen od mrtvih. Ta Sin je Jezus Kristus. naš Gospod.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:5,Rimljanom:"Izkazal mi je nezasluženo dobroto in me poklical za apostola. da bi v slavo njegovemu imenu vanj začeli verovati in mu bili poslušni ljudje iz vseh narodov.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:6,Rimljanom:"izmed katerih ste bili tudi vi poklicani. da postanete sledilci Jezusa Kristusa.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:7,Rimljanom:"Te besede pišem vsem v Rimu. ki jih Bog ljubi in so poklicani za svete:<br>Naj vam Bog. naš Oče. in Gospod Jezus Kristus izkažeta nezasluženo dobroto in naklonita mir.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:8,Rimljanom:"Najprej se svojemu Bogu po Jezusu Kristusu zahvaljujem za vse vas. ker se o vaši veri govori po vsem svetu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:9,Rimljanom:"Bog. ki mu z vsem srcem služim. tako da oznanjam dobro novico o njegovem Sinu. mi je priča. da vas vedno omenjam v svojih molitvah",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:10,Rimljanom:"in ga prosim. da bi mi zdaj končno uspelo priti k vam. če bo to le mogoče in če bo takšna njegova volja.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:11,Rimljanom:"Hrepenim namreč po tem. da bi vas videl in vam tako podelil kak duhovni dar. ki bi vas okrepil.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:12,Rimljanom:"Pravzaprav si želim. da bi spodbudili drug drugega – vi mene s svojo vero in jaz vas s svojo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:13,Rimljanom:"Bratje. rad bi. da veste. da sem že velikokrat nameraval priti k vam. vendar sem bil do zdaj vedno zadržan. Nameraval sem priti k vam. da bi moje oznanjevanje tudi med vami obrodilo sadove. tako kot ga je med drugimi narodi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:14,Rimljanom:"Dolžnik sem vsem. tako Grkom kot tujcem. tako izobraženim kot neizobraženim.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:15,Rimljanom:"zato si nadvse želim oznaniti dobro novico tudi vam v Rimu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:16,Rimljanom:"Ne sramujem se namreč dobre novice  po njej pravzaprav Bog s svojo močjo omogoča rešitev vsakemu. ki veruje. najprej Judu. potem pa tudi Grku.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:17,Rimljanom:"Tisti namreč. ki verujejo. vidijo. da Bog po dobri novici razkriva svojo pravičnost. in to jim krepi vero. tako kot piše v Svetih spisih: »Pravični bo živel zaradi vere.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:18,Rimljanom:"Bog iz nebes izliva svojo jezo na vse brezbožne in nepravične ljudi. ki s svojo nepravičnostjo zakrivajo resnico.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:19,Rimljanom:"Dal jim je namreč dovolj dokazov. da bi ga lahko spoznali.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:20,Rimljanom:"Njegove nevidne lastnosti. tudi njegova večna moč in božanskost. so jasno vidne od ustvaritve sveta naprej. saj jih je mogoče spoznati po stvareh. ki jih je naredil. Tako ti ljudje nimajo nobenega izgovora.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:21,Rimljanom:"Čeprav so Boga poznali. ga niso slavili kot Boga niti se mu niso zahvaljevali. ampak so začeli razmišljati o praznih stvareh in njihovo nerazumno srce je napolnila tema.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:22,Rimljanom:"Trdili so sicer. da so modri. toda postali so neumni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:23,Rimljanom:"Slavo. ki pripada netrohljivemu Bogu. so začeli izkazovati nekakšni podobi trohljivega človeka. ptic. štirinožnih bitij in plazilcev.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:24,Rimljanom:"Ker so torej hoteli živeti tako. kot želi njihovo srce. jim je Bog pustil. da so ravnali nečisto in tako svoje telo spravili v sramoto.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:25,Rimljanom:"Takšni so Božjo resnico zamenjali z lažjo ter oboževali in častili stvarstvo namesto Stvarnika. ki si edini zasluži večno hvalo. Amen.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:26,Rimljanom:"Zato jih je Bog prepustil sramotnim spolnim strastem. saj so ženske naravne spolne odnose zamenjale s protinaravnimi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:27,Rimljanom:"Podobno so tudi moški opustili naravne spolne odnose z žensko ter se v svojem velikem poželenju vneli drug za drugega. Tako so moški med seboj počeli. kar je nagnusno. in prejemali sami na sebi polno kazen. ki so si jo zaslužili za svoje napačno početje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:28,Rimljanom:"Ker se jim ni zdelo vredno spoznati Boga. jim je Bog pustil. da jih vodi razmišljanje. ki ga on ne odobrava. in da tako počnejo. kar se ne spodobi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:29,Rimljanom:"Takšni so skrajno nepravični. hudobni. pohlepni. pokvarjeni in zavistni. Poleg tega ubijajo. se prepirajo. varajo in so škodoželjni. Takšni tudi širijo govorice.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:30,Rimljanom:"obrekujejo. sovražijo Boga. so predrzni. ošabni. se bahajo. si izmišljajo škodljive reči. so neposlušni staršem.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:31,Rimljanom:"nerazumni. ne spoštujejo dogovorov. do drugih ne kažejo nobene naravne naklonjenosti in so neusmiljeni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:1,V:32,Rimljanom:"Čeprav zelo dobro poznajo Božjo pravično odredbo. namreč da si tisti. ki počnejo takšne stvari. zaslužijo smrt. to delajo še naprej. poleg tega pa takšno početje drugih celo odobravajo.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:2,V:0,Rimljanom:"Rimljanom 2. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:1,Rimljanom:"Kljub temu. o človek. nimaš nobenega opravičila za to. da sodiš druge. ne glede na to. kdo si. Če namreč sodiš drugega. obsojaš sebe. ker ti. ki sodiš. počneš iste stvari.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:2,Rimljanom:"Zdaj vemo. da Bog sodi tistim. ki počnejo takšne stvari. in da je njegova sodba pravična.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:3,Rimljanom:"Toda. o človek. ki sodiš tiste. ki počnejo takšne stvari. delaš pa jih tudi sam – ali misliš. da boš ušel Božji sodbi?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:4,Rimljanom:"Ali zaničuješ Božjo veliko prijaznost. prizanesljivost in potrpežljivost? Ali ne veš. da ti Bog s svojo prijaznostjo skuša pomagati do kesanja?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:5,Rimljanom:"Toda ker si trmast in se v srcu nočeš pokesati. si nakopavaš Božjo jezo. ki jo bo Bog razkril na dan svoje pravične sodbe.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:6,Rimljanom:"Bog bo vsakemu povrnil po njegovih delih:",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:7,Rimljanom:"Tistim. ki iščejo slavo. čast in netrohljivost. tako da vztrajno delajo dobro. bo dal večno življenje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:8,Rimljanom:"Na tiste. ki so prepirljivi in niso poslušni resnici. ampak ravnajo nepravično. pa bo izlil svojo jezo in bes.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:9,Rimljanom:"Vsakega. ki dela slabo. bodo doletele stiske in težave. najprej Juda in potem še Grka.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:10,Rimljanom:"vsak. ki dela dobro. pa bo prejel slavo. čast in mir. najprej Jud in potem še Grk.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:11,Rimljanom:"Bog namreč ni pristranski.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:12,Rimljanom:"Vsi tisti. ki so grešili. ne da bi poznali Božje zakone. bodo umrli. čeprav ne poznajo teh zakonov. Vsi tisti. ki so grešili in so poznali Božje zakone. pa bodo po teh zakonih sojeni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:13,Rimljanom:"Bog namreč za pravične ne bo razglasil tistih. ki zakone samo slišijo. ampak bo za pravične razglasil tiste. ki zakone tudi izpolnjujejo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:14,Rimljanom:"Kadar ljudje iz drugih narodov. ki ne poznajo Božjih zakonov. sami od sebe izpolnjujejo to. kar ti zakoni določajo. s tem pokažejo. da imajo te zakone v srcu. čeprav jih ne poznajo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:15,Rimljanom:"S svojimi deli dokazujejo. da je vsebina zakonov zapisana v njihovem srcu. in za to priča tudi njihova vest. Poleg tega jih njihove lastne misli obtožujejo ali pa celo opravičujejo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:16,Rimljanom:"Vse to bo jasno vidno tisti dan. ko bo Bog po Kristusu Jezusu sodil to. kar je skrito v ljudeh. To je tudi v skladu z dobro novico. ki jo razglašam.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:17,Rimljanom:"Če se imaš za Juda in se zanašaš na Zakonik ter si ponosen. da si del Božjega ljudstva.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:18,Rimljanom:"če poznaš Božjo voljo in znaš prepoznati. kaj je res vredno. ker si poučen iz Zakonika.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:19,Rimljanom:"če si prepričan. da si vodnik slepih. luč tem. ki so v temi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:20,Rimljanom:"vzgojitelj nerazumnih. učitelj majhnih otrok in da razumeš osnovne nauke in resnice iz Zakonika",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:21,Rimljanom:"– zakaj potem ti. ki učiš druge. sebe ne učiš? Zakaj ti. ki drugim govoriš »Ne kradi«. kradeš?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:22,Rimljanom:"Zakaj ti. ki govoriš »Ne prešuštvuj«. prešuštvuješ? Zakaj ti. ki preziraš malike. ropaš templje?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:23,Rimljanom:"Zakaj ti. ki si ponosen na Zakonik. sramotiš Boga s kršenjem Zakonika?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:24,Rimljanom:"Tako je. kot piše v Svetih spisih: »Zaradi vas se med narodi sramoti Božje ime.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:25,Rimljanom:"Dejansko je obreza koristna le. če ravnaš v skladu z Zakonikom. če pa ga kršiš. je tako. kot da ne bi bil obrezan.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:26,Rimljanom:"Če torej kdo od neobrezanih ravna po pravičnih zahtevah Zakonika. bo. čeprav je neobrezan. veljal za obrezanega. kajne?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:27,Rimljanom:"In kdor fizično ni obrezan. bo z izpolnjevanjem tega. kar piše v Zakoniku sodil tebe. ki kljub temu. da imaš napisane zakone in si obrezan. kršiš Zakonik.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:28,Rimljanom:"Pravi Jud namreč ni tisti. ki je to na zunaj. in prava obreza ni to. kar je zunaj na telesu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:2,V:29,Rimljanom:"ampak je pravi Jud tisti. ki je to znotraj. in njegova obreza je obreza srca po svetem duhu. ne pa po napisanih zakonih. Takšnega ne hvalijo ljudje. ampak Bog.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:3,V:0,Rimljanom:"Rimljanom 3. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:1,Rimljanom:"V čem imajo torej Judje prednost pred drugimi oziroma kakšna je korist obreze?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:2,Rimljanom:"Prednosti je veliko. Najpomembnejša je ta. da jim je Bog zaupal svete izreke.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:3,Rimljanom:"Kaj lahko torej rečemo o Judih. ki nimajo vere? Ali to. da nimajo vere. pomeni. da Bogu ni več mogoče zaupati?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:4,Rimljanom:"Nikakor ne! Tudi če se bo izkazalo. da je vsak človek lažnivec. se bo pokazalo. da Bog govori resnico. tako kot to piše v Svetih spisih: »To. kar govoriš. je prav. in ko te bodo česa obtožili. boš dokazal. da se motijo.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:5,Rimljanom:"Pravijo. da zaradi naše nepravičnosti pride do izraza Božja pravičnost. Ali to potem pomeni. da je Bog krivičen. ko izrazi svojo jezo. kot to mislijo nekateri?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:6,Rimljanom:"Nikakor ne! Če Bog ne bi bil pravičen. kako bi potem sodil svet?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:7,Rimljanom:"Če bi jaz lagal in bi bilo zaradi tega še bolj očitno. da Bog govori resnico. in bi mu to prineslo slavo. zakaj bi se mi potem sodilo kot grešniku?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:8,Rimljanom:"In zakaj ne bi potem kar rekli »Delajmo slabo. da bo iz tega prišlo dobro«. kot nekateri lažno trdijo. da govorimo? Ti ljudje si zaslužijo obsodbo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:9,Rimljanom:"Ali smo torej mi kaj na boljšem od drugih? Nikakor ne! Kot sem že omenil. so tako Judje kot Grki pod oblastjo greha.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:10,Rimljanom:"Tako piše tudi v Svetih spisih: »Nikogar ni. ki bi bil pravičen. niti enega ne",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:11,Rimljanom:"nikogar ni. ki bi bil moder. nikogar ni. ki bi iskal Božje vodstvo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:12,Rimljanom:"Vsi ljudje so skrenili s poti. vsi skupaj so postali ničvredni  nikogar ni. ki bi delal dobro. niti enega ne.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:13,Rimljanom:"»Njihovo grlo je odprt grob. s svojimi jeziki varajo.« »V njihovih ustih je gadji strup.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:14,Rimljanom:"»Njihova usta so polna prekletstev in grenkobe.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:15,Rimljanom:"»S svojimi nogami hitijo ubijat druge.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:16,Rimljanom:"»S svojim ravnanjem povzročajo uničenje in bedo",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:17,Rimljanom:"ter ne vedo. kako biti v miru z drugimi.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:18,Rimljanom:"»Nimajo strahospoštovanja do Boga.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:19,Rimljanom:"Zdaj vemo. da je vse. kar piše v Zakoniku. namenjeno tistim. ki so podrejeni Zakoniku. da nihče od njih ne bi mogel trditi. da je nedolžen. in da bi Bog ves svet spoznal za krivega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:20,Rimljanom:"Zato ne bo pred Bogom nihče razglašen za pravičnega. če ravna v skladu z Zakonikom. saj nam Zakonik zgolj pomaga dobro razumeti. kaj je greh.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:21,Rimljanom:"Zdaj pa je postalo očitno. da je pravičnost pred Bogom mogoče doseči neodvisno od Zakonika. To dejstvo je omenjeno tudi v Zakoniku in Preroških spisih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:22,Rimljanom:"Pravičnost pred Bogom lahko z vero v Jezusa Kristusa dosežejo vsi. ki verujejo. Ni namreč nobene razlike.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:23,Rimljanom:"saj vsi grešijo in ne morejo odsevati Božje slave.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:24,Rimljanom:"Bog jih je po svoji nezasluženi dobroti osvobodil z odkupnino. ki jo je plačal Kristus Jezus. S tem jih je razglasil za pravične. kar je brezplačen dar.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:25,Rimljanom:"Bog je Kristusa predstavil kot spravno daritev za tiste. ki verujejo v njegovo kri. S tem je hotel pokazati. da je bil pravičen. ko je v svoji prizanesljivosti odpuščal grehe. ki so jih ljudje delali v preteklosti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:26,Rimljanom:"Hotel pa je pokazati tudi to. da je pravičen v sedanjem času. ko za pravičnega razglasi človeka. ki veruje v Jezusa.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:27,Rimljanom:"Ali imamo potem kak razlog za to. da se hvalimo? Nimamo ga. Po katerem zakoniku ga nimamo? Po zakoniku. ki se tiče naših dejanj? Ne. ampak po zakoniku. ki se tiče naše vere.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:28,Rimljanom:"Menimo namreč. da je človek razglašen za pravičnega zaradi vere. ne pa zaradi ravnanja po Zakoniku.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:29,Rimljanom:"Ali je Bog samo Bog Judov? Ali ni on tudi Bog ljudi iz drugih narodov? Da. on je tudi Bog ljudi iz drugih narodov.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:30,Rimljanom:"Ker je Bog samo eden. bo obrezane in neobrezane ljudi razglasil za pravične na podlagi njihove vere.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:3,V:31,Rimljanom:"Ali potem s svojo vero jemljemo Zakoniku veljavo? Nikakor ne! Nasprotno. Zakonik potrjujemo.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:4,V:0,Rimljanom:"Rimljanom 4. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:1,Rimljanom:"Kaj bomo glede na vse to rekli o Abrahamu. praočetu našega rodu? Kaj je on dobil?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:2,Rimljanom:"Če bi bil Abraham razglašen za pravičnega zaradi del. bi imel razlog. da se hvali pred drugimi. vendar ne pred Bogom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:3,Rimljanom:"Kaj piše v Svetih spisih? »Abraham je verjel Jehovu in zaradi tega je bil štet za pravičnega.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:4,Rimljanom:"Človek. ki opravi delo. plačila ne prejme zato. ker bi mu delodajalec izkazal nezasluženo dobroto. ampak zato. ker si je to plačilo zaslužil.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:5,Rimljanom:"Toda človeka. ki verjame Bogu in se ne zanaša na svoja dela. Bog šteje za pravičnega zaradi njegove vere. Bog je ta. ki lahko grešnike šteje za pravične.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:6,Rimljanom:"Tudi David je povedal. da je srečen tisti. ki ga Bog neodvisno od njegovih del priznava za pravičnega. Rekel je:",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:7,Rimljanom:"»Srečni tisti. ki so jim bila njihova nezakonita dejanja oproščena in so jim bili grehi izbrisani",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:8,Rimljanom:"srečen tisti človek. čigar grehov se Jehova ne bo spominjal.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:9,Rimljanom:"Ali so potem te sreče deležni samo obrezani ljudje ali tudi neobrezani? Že prej smo rekli: »Abraham je bil zaradi vere štet za pravičnega.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:10,Rimljanom:"Kdaj ga je torej Bog začel šteti za pravičnega? Ko je bil obrezan ali ko še ni bil obrezan? Takrat ko še ni bil obrezan.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:11,Rimljanom:"Kasneje pa je dobil znamenje. namreč obrezo. kot potrdilo. da ga je Bog štel za pravičnega zaradi vere. ki jo je imel. ko še ni bil obrezan. Tako je lahko postal oče vseh neobrezanih. ki verujejo. zato da bi bili tudi oni šteti za pravične.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:12,Rimljanom:"Lahko je postal tudi oče obrezanih. pa ne le teh. ki se držijo obreze. ampak tudi teh. ki imajo takšno vero. kot jo je imel naš oče Abraham. ko še ni bil obrezan.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:13,Rimljanom:"Obljuba. ki je bila dana Abrahamu oziroma njegovemu potomstvu. namreč da bo dedič sveta. ni bila dana zaradi upoštevanja Zakonika. ampak zato. ker je bil Abraham zaradi svoje vere štet za pravičnega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:14,Rimljanom:"Če so namreč dediči tisti. ki se ravnajo po Zakoniku. potem je vera nekoristna in obljuba prazna.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:15,Rimljanom:"Zakonik dejansko povzroča Božjo jezo. toda če ni Zakonika. tudi nobenega prestopka ni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:16,Rimljanom:"Zato je Abraham obljubo dobil na podlagi vere in na temelju nezaslužene dobrote. da bi se gotovo izpolnila na vseh njegovih potomcih – ne le na teh. ki se ravnajo po Zakoniku. ampak tudi na teh. ki imajo takšno vero. kot jo je imel on. Abraham pa je oče vseh nas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:17,Rimljanom:"(To piše tudi v Svetih spisih: »Postavil sem te za očeta mnogih narodov.«) Abraham je verjel v Boga. ki obuja mrtve in ki na to. česar ni. gleda. kakor da je.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:18,Rimljanom:"Upal je in veroval. da lahko postane oče mnogih narodov. čeprav se je to zdelo nemogoče. Temu je verjel zato. ker mu je bilo rečeno: »Toliko bo tvojega potomstva.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:19,Rimljanom:"Vera mu sicer ni oslabela. vendar se je zavedal. da je njegovo telo tako rekoč že mrtvo (takrat je bil namreč star okoli 100 let) pa tudi da Sara ne more več imeti otrok.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:20,Rimljanom:"Toda ker mu je Bog dal obljubo. mu vera ni oslabela. ampak mu je dala moči. S tem je dal Bogu slavo",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:21,Rimljanom:"in bil popolnoma prepričan. da je Bog to. kar je obljubil. tudi zmožen izpolniti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:22,Rimljanom:"Zato »je bil zaradi tega štet za pravičnega«.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:23,Rimljanom:"Besede. da »je bil štet za pravičnega«. pa niso bile napisane samo zaradi njega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:24,Rimljanom:"ampak tudi zaradi nas. ki bomo šteti za pravične. ker verjamemo v tistega. ki je od mrtvih obudil našega Gospoda Jezusa.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:4,V:25,Rimljanom:"Jezus je bil izročen v smrt zaradi naših prestopkov in je bil obujen zato. da bi bili mi razglašeni za pravične.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:5,V:0,Rimljanom:"Rimljanom 5. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:1,Rimljanom:"Zdaj torej. ko smo bili zaradi vere razglašeni za pravične. ostanimo v miru z Bogom. To je mogoče zaradi tega. kar je naredil naš Gospod Jezus Kristus.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:2,Rimljanom:"po katerem se nam je zaradi naše vere odprla pot. da nam Bog izkaže nezasluženo dobroto – in Bog nam to dobroto že zdaj izkazuje. Zato bodimo veseli. medtem ko čakamo. da nas bo Bog povišal.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:3,Rimljanom:"Veseli pa bodimo tudi takrat. ko smo v stiskah. ker vemo. da si v stiski pridobimo zdržljivost.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:4,Rimljanom:"zdržljivost nam potem pomaga pridobiti si Božje odobravanje. Božje odobravanje nam daje upanje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:5,Rimljanom:"upanje pa nas ne bo razočaralo. Bog nam namreč po svetem duhu. ki smo ga dobili. zagotavlja. da nas ljubi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:6,Rimljanom:"Kristus je umrl za brezbožne ljudi ob za to določenem času. Umrl je za nas. ko smo bili še šibki.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:7,Rimljanom:"Težko bi kdo umrl za pravičnega  morda bi bil pripravljen umreti za dobrega človeka.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:8,Rimljanom:"Toda Bog nam je svojo ljubezen izkazal s tem. da je Kristus umrl za nas. ko smo bili še grešniki.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:9,Rimljanom:"Zdaj smo torej po Kristusovi krvi razglašeni za pravične. zato smo lahko prepričani. da bomo po njem rešeni pred Božjo jezo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:10,Rimljanom:"Če smo namreč z Bogom prišli v miren odnos. ker je njegov Sin umrl za nas. ko smo bili še Božji sovražniki. smo zdaj. ko smo z Bogom že v mirnem odnosu. lahko prepričani. da bomo rešeni zato. ker je Kristus živ.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:11,Rimljanom:"Poleg tega nam to. da smo z Bogom v mirnem odnosu. kar nam je omogočil naš Gospod Jezus Kristus. prinaša veselje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:12,Rimljanom:"Torej. zaradi enega človeka je na svet prišel greh in zaradi greha smrt  tako se je smrt razširila na vse ljudi. ker so vsi postali grešni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:13,Rimljanom:"Greh je bil namreč na svetu. še preden je bil Zakonik. toda če ni nobenega zakona. se za greh ne obtožuje nikogar.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:14,Rimljanom:"Kljub temu je smrt kraljevala od Adama pa vse do Mojzesa tudi nad tistimi. ki niso zagrešili enakega prestopka kakor Adam. ki je bil v nekaterih pogledih podoben tistemu. ki je še moral priti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:15,Rimljanom:"Toda z Božjim darom ni tako kot z Adamovim prestopkom. Zaradi prestopka enega človeka so mnogi umrli. toda po nezasluženi dobroti Jezusa Kristusa so mnogi deležni Božje nezaslužene dobrote in Božjega brezplačnega daru.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:16,Rimljanom:"Božji brezplačni dar in greh enega človeka se razlikujeta tudi v tem: en prestopek je privedel do tega. da so bili vsi ljudje spoznani za krive. toda dar. ki je bil dan zaradi mnogih prestopkov. je privedel do tega. da so mnogi razglašeni za pravične.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:17,Rimljanom:"Nobenega dvoma ni. da je smrt kraljevala zaradi prestopka enega človeka. Še bolj gotovo pa je. da bodo tisti. ki jim Bog izkazuje obilno nezasluženo dobroto in daje velik brezplačen dar pravičnosti. živeli in kraljevali po enem človeku. Jezusu Kristusu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:18,Rimljanom:"Tako kot so bili torej vsakršni ljudje zaradi enega prestopka obsojeni. tako so tudi zaradi enega pravičnega dejanja razglašeni za pravične in dobijo življenje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:19,Rimljanom:"Tako kot so zaradi neposlušnosti enega človeka mnogi postali grešni. tako bodo tudi zaradi poslušnosti enega človeka mnogi postali pravični.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:20,Rimljanom:"Zakonik se je pojavil zato. da bi se ljudje zavedali svojih mnogih prestopkov. Toda kjer je veliko grehov. Bog še bolj kaže svojo nezasluženo dobroto.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:5,V:21,Rimljanom:"Zakaj? Zato da bi. kakor je greh kraljeval skupaj s smrtjo. tudi nezaslužena dobrota lahko kraljevala v pravičnosti in tako omogočila večno življenje po našem Gospodu Jezusu Kristusu.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:6,V:0,Rimljanom:"Rimljanom 6. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:1,Rimljanom:"Kaj naj torej rečemo? Ali naj še naprej grešimo. zato da bomo imeli od Božje nezaslužene dobrote še več koristi?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:2,Rimljanom:"Nikakor ne! Glede na to. da smo. kar se tiče greha. umrli. kako bi potem lahko v grehu živeli še naprej?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:3,Rimljanom:"Ali ne veste. da smo se vsi. ki smo se krstili v Kristusa Jezusa. krstili tudi v njegovo smrt?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:4,Rimljanom:"Zato smo bili s svojim krstom v njegovo smrt skupaj z njim pokopani. da bi tudi mi živeli novo življenje. enako kakor ga živi Kristus. potem ko je bil po Očetovi sijajni moči obujen od mrtvih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:5,Rimljanom:"Če smo namreč z njim eno v tem. da umremo. tako kot je umrl on. potem smo z njim eno tudi v tem. da smo obujeni. tako kot je bil obujen on.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:6,Rimljanom:"Vemo. da je bila naša stara osebnost z njim vred pribita na kol zato. da naše grešno telo ne bi imelo več oblasti nad nami in tako ne bi več sužnjevali grehu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:7,Rimljanom:"Ko namreč kdo umre. je oproščen svojega greha.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:8,Rimljanom:"Če smo s Kristusom umrli. verjamemo. da bomo z njim tudi živeli.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:9,Rimljanom:"Vemo. da Kristus zdaj. ko je bil obujen od mrtvih. ne bo več umrl  smrt nad njim nima več oblasti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:10,Rimljanom:"Umrl je namreč enkrat za vselej. in to zato. da bi odstranil greh. Živi pa zato. da lahko izpolnjuje Božjo voljo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:11,Rimljanom:"Tako tudi vi: kar se tiče greha. imejte sami sebe za mrtve. kar se tiče izpolnjevanja Božje volje. pa imejte sami sebe za žive po Kristusu Jezusu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:12,Rimljanom:"Zato ne dovolite. da bi v vašem umrljivem telesu greh še naprej kraljeval. tako da bi ubogali želje telesa.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:13,Rimljanom:"Niti ne izročajte svojega telesa grehu. da bi ravnali nepravično. ampak se kot taki. ki ste bili mrtvi in ste oživeli. izročite Bogu. Svoje telo izročite Bogu. da bi ravnali pravično.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:14,Rimljanom:"Ker niste več podrejeni Zakoniku. ampak ste prejeli Božjo nezasluženo dobroto. vas greh ne sme imeti v oblasti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:15,Rimljanom:"Kaj torej? Ali naj grešimo. ker nismo več podrejeni Zakoniku. ampak smo prejeli Božjo nezasluženo dobroto? Nikakor ne!",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:16,Rimljanom:"Ali ne veste. da če se komu izročite za sužnja in mu obljubite poslušnost. postanete njegov suženj prav zato. ker ga poslušate? Lahko ste sužnji greha. ki vodi v smrt. ali pa sužnji poslušnosti. ki vodi v pravičnost.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:17,Rimljanom:"Toda Bogu naj gre hvala. da ste postali iz srca poslušni nauku. ki ste ga prejeli. čeprav ste bili nekoč sužnji greha.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:18,Rimljanom:"Ker ste bili osvobojeni greha. ste postali sužnji pravičnosti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:19,Rimljanom:"Zaradi vaše nepopolnosti se izražam z besedami. ki so razumljive ljudem. Prej ste kakor sužnji svoje telo izročili nečistosti in hudobnosti. da bi ravnali hudobno. zdaj pa svoje telo izročite pravičnosti. da bi delali to. kar je sveto.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:20,Rimljanom:"Ko ste namreč bili sužnji greha. niste bili pod oblastjo pravičnosti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:21,Rimljanom:"Kakšne pa so bile posledice vaših takratnih dejanj? To. česar se zdaj sramujete in vodi v smrt.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:22,Rimljanom:"Vendar ker ste bili osvobojeni greha in ste postali sužnji Bogu. vaša dejanja zdaj prinašajo svetost in vodijo v večno življenje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:6,V:23,Rimljanom:"Plačilo za greh je namreč smrt. toda dar. ki ga daje Bog. je večno življenje po našem Gospodu Kristusu Jezusu.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:7,V:0,Rimljanom:"Rimljanom 7. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:1,Rimljanom:"Ali je mogoče. bratje. da ne veste. da je človek podrejen Zakoniku. dokler je živ? (Govorim namreč tistim. ki poznajo zakone.)",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:2,Rimljanom:"Poročena ženska. denimo. je po Zakoniku vezana na svojega moža. dokler je živ. če pa ji mož umre. se ni več dolžna podrejati zakonu. ki se tiče njenega moža.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:3,Rimljanom:"Če bi se torej poročila z drugim moškim. dokler bi bil njen mož še živ. bi zagrešila prešuštvo. Če pa ji mož umre. je osvobojena zakona. ki se tiče njenega moža. zato ne bi zagrešila prešuštva. če bi se poročila z drugim moškim.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:4,Rimljanom:"Tako ste bili tudi vi. moji bratje. po Kristusovi žrtvi osvobojeni Zakonika in zdaj pripadate Kristusu. ki je bil obujen od mrtvih. Tako lahko obrodimo sad. ki je Bogu v slavo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:5,Rimljanom:"Ko smo namreč še živeli v skladu s svojimi telesnimi željami. je Zakonik odkril. da so te slabe želje navedle naše telo. da je grešilo. In ta greh vodi v smrt.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:6,Rimljanom:"Toda zdaj smo osvobojeni Zakonika. saj nas ne omejuje več. Zato smo lahko sužnji Bogu v novem pomenu. po svetem duhu. ne pa v starem pomenu. po napisanih zakonih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:7,Rimljanom:"Kaj naj torej rečemo? Ali je Zakonik greh? Nikakor ne! Pravzaprav nikoli ne bi vedel. kaj je greh. če ne bi bilo Zakonika. Ne bi na primer vedel. kaj je pohlep. če v Zakoniku ne bi pisalo: »Ne želi si tega. kar pripada drugemu.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:8,Rimljanom:"Toda zaradi te zapovedi je greh našel priložnost. da v meni vzbudi vsakovrsten pohlep. saj je bil greh brez Zakonika mrtev.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:9,Rimljanom:"Pravzaprav sem bil živ. dokler ni bilo Zakonika. ko pa je nastopila ta zapoved. je greh spet oživel. jaz pa sem umrl.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:10,Rimljanom:"In ugotovil sem. da ta zapoved. ki naj bi vodila v življenje. vodi v smrt.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:11,Rimljanom:"Zaradi te zapovedi je namreč greh našel priložnost. da me zapelje in ubije.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:12,Rimljanom:"Kljub vsemu je Zakonik svet in ta zapoved je sveta. pravična in dobra.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:13,Rimljanom:"Ali mi je potem smrt prinesel Božji Zakonik. ki je dober? Nikakor ne! Prinesel jo je greh. Prinesel mi jo je po Božjem Zakoniku. ki je dober. zato da bi se jasno pokazalo. kaj je greh. Zapoved je odkrila. kako veliko škodo povzroča greh.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:14,Rimljanom:"Vemo. da je Zakonik od Boga. jaz pa sem iz mesa in krvi. prodan grehu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:15,Rimljanom:"Tega. kar delam. ne razumem. saj ne delam tega. kar želim. ampak delam to. kar sovražim.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:16,Rimljanom:"Če pa mi to. kar delam. ni všeč. priznavam. da je Zakonik dober.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:17,Rimljanom:"Torej vsega tega ne delam več jaz. ampak greh. ki je v meni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:18,Rimljanom:"Vem. da v meni. to je v mojem telesu. ni nič dobrega. Želim delati dobro. vendar tega nisem zmožen.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:19,Rimljanom:"Dobrega namreč. kar želim delati. ne delam. ampak počnem slabo. prav to. česar ne želim.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:20,Rimljanom:"Če pa delam to. česar ne želim. potem tega ne delam več jaz. ampak greh. ki je v meni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:21,Rimljanom:"Ugotavljam torej. da name vpliva naslednji zakon: kadar želim delati. kar je prav. v sebi vidim nagnjenje. da delam. kar je slabo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:22,Rimljanom:"V srcu se zares veselim v Božjih zakonih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:23,Rimljanom:"toda zavedam se. da je v mojem telesu drug zakon. ki se bojuje z zakonom. ki vodi moj um. Ta drugi zakon je zakon greha. ki me ima v svojem ujetništvu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:24,Rimljanom:"O jaz nesrečnik! Kdo me bo rešil telesa. ki me vodi v takšno smrt?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:7,V:25,Rimljanom:"Zahvaljujem se Bogu. ki me je rešil po našem Gospodu Jezusu Kristusu! S svojim umom sem torej suženj Božjih zakonov. s telesom pa sem suženj zakona greha.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:8,V:0,Rimljanom:"Rimljanom 8. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:1,Rimljanom:"Tisti. ki so povezani s Kristusom Jezusom. torej niso obsojeni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:2,Rimljanom:"Zakon svetega duha. ki daje življenje tistim. ki so povezani s Kristusom Jezusom. vas je osvobodil zakona greha in smrti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:3,Rimljanom:"To. česar Zakonik ni mogel doseči. ker je bil zaradi nepopolnosti ljudi brez moči. je dosegel Bog. ko je poslal svojega Sina v človeški podobi. da bi odpravil greh. Tako je obsodil greh. ki je v telesu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:4,Rimljanom:"da bi se na nas. ki nas ne vodijo telesne želje. ampak sveti duh. izpolnile pravične zahteve Zakonika.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:5,Rimljanom:"Tisti namreč. ki jih vodijo telesne želje. razmišljajo o tem. kar je telesno. tisti. ki jih vodi sveti duh. pa razmišljajo o duhovnih rečeh.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:6,Rimljanom:"Telesno razmišljanje vodi v smrt. duhovno razmišljanje pa vodi v življenje in mir.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:7,Rimljanom:"saj tisti. ki razmišljajo telesno. postanejo Božji sovražniki. Telo namreč ni podrejeno Božjim zakonom in jim tudi ne more biti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:8,Rimljanom:"Zato tisti. ki jih vodijo telesne želje. ne morejo ugajati Bogu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:9,Rimljanom:"Vendar če je v vas res Božji duh. vas ne vodijo telesne želje. ampak Božji duh. Če pa kdo nima Kristusovega stališča. ni Kristusov.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:10,Rimljanom:"Če ste povezani s Kristusom. je vaše telo zaradi greha sicer mrtvo. toda sveti duh vam prinaša življenje. ker ste bili razglašeni za pravične.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:11,Rimljanom:"Če je torej v vas duh tistega. ki je Jezusa obudil od mrtvih. bo ta. ki je Kristusa Jezusa obudil od mrtvih. po svojem duhu oživil tudi vaše umrljivo telo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:12,Rimljanom:"Tako torej. bratje. nikakor nismo dolžni ubogati telesnih želja.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:13,Rimljanom:"Če vas vodijo telesne želje. boste gotovo umrli. Če pa s pomočjo svetega duha usmrtite grešna dejanja telesa. boste živeli.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:14,Rimljanom:"saj so vsi. ki jih vodi Božji duh. Božji otroci.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:15,Rimljanom:"Niste namreč prejeli duha. ki bi vas zasužnjil in bi v vas spet povzročil strah. ampak ste prejeli duha. ki nas posvoji. duha. ki nas spodbuja. da kličemo: »Aba. Oče!«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:16,Rimljanom:"Ta duh skupaj z našim duhom potrjuje. da smo Božji otroci.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:17,Rimljanom:"Če pa smo otroci. bomo prejeli tudi dediščino. in sicer dediščino od Boga. To dediščino bomo prejeli skupaj s Kristusom. Da pa bi bili skupaj z njim oslavljeni. moramo skupaj z njim tudi trpeti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:18,Rimljanom:"Zato menim. da trpljenje. ki ga zdaj doživljamo. ni nič v primerjavi s slavo. ki se bo razodela na nas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:19,Rimljanom:"Stvarstvo namreč željno pričakuje razodetje Božjih otrok.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:20,Rimljanom:"saj je bilo obsojeno na prazno življenje. pa ne po svoji volji. ampak po volji Boga. ki ga je obsodil. Vendar je Bog obenem dal upanje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:21,Rimljanom:"da bo tudi stvarstvo rešeno sužnjevanja trohljivosti in da bo dobilo veličastno svobodo Božjih otrok.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:22,Rimljanom:"Vemo namreč. da vse stvarstvo prav do zdaj skupaj vzdihuje in trpi bolečine.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:23,Rimljanom:"Pa ne le stvarstvo. ampak tudi mi sami. ki smo prejeli svetega duha. znamenje naše dediščine. v sebi vzdihujemo. Medtem pa željno čakamo. da nas Bog posvoji in nas na podlagi odkupnine osvobodi našega telesa.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:24,Rimljanom:"To upanje smo prejeli. ko smo bili rešeni. Toda ko človek vidi. da se je to. v kar upa. izpolnilo. mu v to ni treba več upati.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:25,Rimljanom:"Če pa izpolnitve upanja še ne vidimo. potem jo še naprej vztrajno čakamo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:26,Rimljanom:"Podobno nam sveti duh pride na pomoč tudi. kadar smo šibki. Vemo. da bi morali moliti. ampak ne vemo. za kaj naj molimo. Ko tako vzdihujemo. vendar ne najdemo pravih besed. lahko sveti duh prosi za nas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:27,Rimljanom:"Bog. ki preiskuje srca. pa razume. kaj prosi sveti duh. saj ta prosi za svete v soglasju z Božjo voljo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:28,Rimljanom:"Vemo. da Bog skrbi. da je vse. kar dela. med seboj usklajeno v dobro teh. ki ga ljubijo. teh. ki so poklicani skladno z njegovim namenom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:29,Rimljanom:"Vnaprej je namreč določil. da bodo ti. ki jim je najprej posvetil pozornost. odsev njegovega Sina. Tako je njegov Sin postal prvorojenec med mnogimi brati.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:30,Rimljanom:"Te. ki jih je vnaprej določil. je tudi poklical in te. ki jih je poklical. je tudi razglasil za pravične. Te. ki jih je razglasil za pravične. pa je tudi oslavil.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:31,Rimljanom:"Kaj naj torej rečemo na vse to? Če je Bog z nami. kdo je proti nam?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:32,Rimljanom:"Zakaj nam ne bi ta. ki celo lastnemu Sinu ni prizanesel. ampak ga je dal za vse nas. poleg njega prijazno dal tudi vse drugo?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:33,Rimljanom:"Kdo lahko obtoži te. ki jih je Bog izbral? Nihče. Bog je namreč ta. ki jih razglaša za pravične.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:34,Rimljanom:"Kdo jih lahko obsodi? Nihče. Kristus Jezus je namreč ta. ki je umrl zanje. In ne samo to. On je bil tudi obujen od mrtvih. je na Božji desni in prosi za nas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:35,Rimljanom:"Ali nas lahko kaj loči od Kristusove ljubezni? Ali nas lahko od nje ločijo težave. stiska. preganjanje. lakota. revščina. nevarnost ali meč?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:36,Rimljanom:"V Svetih spisih namreč piše: »Zaradi tebe nas vsak dan pobijajo. zanje smo kakor ovce za zakol.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:37,Rimljanom:"Toda s pomočjo tistega. ki nas ljubi. iz vsega tega izhajamo kot popolni zmagovalci.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:38,Rimljanom:"Prepričan sem namreč. da nas ne smrt. ne življenje. ne angeli. ne vlade. ne sedanje reči. ne prihodnje reči. ne sile.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:8,V:39,Rimljanom:"ne višina. ne globina. niti kar koli drugega. kar je bilo ustvarjeno. ne bo moglo ločiti od Božje ljubezni. ki nam je bila izkazana po našem Gospodu Kristusu Jezusu.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:9,V:0,Rimljanom:"Rimljanom 9. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:1,Rimljanom:"Kot Kristusov sledilec govorim resnico in ne lažem. Moja vest. ki jo vodi sveti duh. je priča.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:2,Rimljanom:"da sta v mojem srcu velika žalost in nenehna bolečina.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:3,Rimljanom:"Pripravljen sem biti celo preklet in ločen od Kristusa. če bi to le koristilo mojim bratom. mojim rojakom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:4,Rimljanom:"Izraelcem. ki jih je Bog posvojil za svoje otroke. Povišal jih je. z njimi sklenil zaveze in jim dal Zakonik. obljube in čast. da mu služijo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:5,Rimljanom:"Oni so potomci naših praočetov in iz njih je kot človek izšel Kristus. Naj bo Bog. ki je nad vsem. večno hvaljen. Amen.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:6,Rimljanom:"Vendar to ne pomeni. da se Božja beseda ni izpolnila. Niso namreč vsi. ki so potomci Izraela. tudi res Izraelci.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:7,Rimljanom:"Niti niso vsi. ki so potomci Abrahama. tudi res njegovi otroci. V Svetih spisih namreč piše: »Obljubljeno potomstvo boš dobil po Izaku.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:8,Rimljanom:"To pomeni. da naravni potomci niso v resnici Božji otroci. ampak se za resnične potomce štejejo otroci. rojeni zaradi Božje obljube.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:9,Rimljanom:"Obljuba se je namreč glasila: »Ob tem času bom prišel in Sara bo imela sina.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:10,Rimljanom:"Enako je bilo z Rebeko. ko je z našim praočetom Izakom zanosila dvojčka.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:11,Rimljanom:"Ko se dvojčka še nista rodila in še nista storila nič dobrega ali slabega. je Bog povedal. katerega bo izbral. Bog se namreč glede tega. koga bo izbral. odloča na podlagi svojega namena. ne pa na podlagi posameznikovih del.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:12,Rimljanom:"Rebeki je rekel: »Starejši sin bo sužnjeval mlajšemu.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:13,Rimljanom:"Tako kot piše v Svetih spisih: »Jakoba sem ljubil. Ezava pa sovražil.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:14,Rimljanom:"Kaj naj torej rečemo? Ali je Bog krivičen? Nikakor ne!",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:15,Rimljanom:"Mojzesu namreč pravi: »Usmilil se bom tistega. kogar se bom želel usmiliti. in sočuten bom do tistega. do kogar bom želel biti sočuten.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:16,Rimljanom:"To torej ni odvisno od posameznikove želje ali truda. ampak od Boga. ki je usmiljen.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:17,Rimljanom:"Bog namreč v Svetih spisih faraonu govori: »Prav zato sem te pustil pri življenju. da bi lahko na tebi pokazal svojo moč in da bi se po vsej zemlji razglasilo moje ime.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:18,Rimljanom:"Kogar se torej želi usmiliti. se ga usmili. in komur želi pustiti. da postane zakrknjen. mu to pusti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:19,Rimljanom:"Morda mi bo zdaj kdo rekel: »Če se nihče ne more upreti njegovi volji. zakaj potem še vedno krivi ljudi?«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:20,Rimljanom:"O človek. kdo pa sploh si. da si upaš ugovarjati Bogu? Ali izdelek svojemu oblikovalcu reče »Zakaj si me naredil tako?«?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:21,Rimljanom:"Kaj? Ali nima lončar pravice. da iz iste kepe gline naredi eno posodo za časten namen. drugo pa za nečasten?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:22,Rimljanom:"Kaj zato. če je Bog. čeprav je hotel pokazati svojo jezo in razodeti svojo moč. z veliko potrpežljivostjo prenašal posode jeze. ki so pripravljene za uničenje?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:23,Rimljanom:"In kaj potem. če je to naredil zato. da bi razodel svojo veliko slavo na posodah usmiljenja. ki jih je vnaprej pripravil. da bi bile oslavljene.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:24,Rimljanom:"namreč na nas. ki nas ni poklical le izmed Judov. ampak tudi izmed drugih narodov?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:25,Rimljanom:"Tako je. kot je rekel tudi v Ozejevi knjigi: »Tiste. ki niso moje ljudstvo. bom imenoval ‚moje ljudstvo in njo. ki ni bila ljubljena. bom imenoval ‚ljubljena",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:26,Rimljanom:"in prav tam. kjer sem jim prej rekel ‚Vi niste moje ljudstvo. jih bom zdaj imenoval ‚otroci živega Boga.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:27,Rimljanom:"Poleg tega Izaija glede Izraelcev oznanja: »Tudi če bi bilo Izraelcev toliko. kot je morskega peska. jih bo rešenih samo malo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:28,Rimljanom:"Jehova bo namreč na zemlji brez odlašanja naredil dokončen obračun.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:29,Rimljanom:"Izaija je tudi napovedal: »Če nam Jehova nad vojskami ne bi pustil potomstva. bi doživeli enak konec kot Sodoma in Gomora.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:30,Rimljanom:"Kaj naj torej rečemo? To. da so bili ljudje iz drugih narodov. čeprav si niso prizadevali ravnati pravično. razglašeni za pravične. in to na podlagi vere.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:31,Rimljanom:"Izraelcem. ki so si z ravnanjem po Zakoniku prizadevali. da bi bili razglašeni za pravične. pa to ni uspelo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:32,Rimljanom:"In zakaj ne? Ker si za to niso prizadevali z vero. ampak z deli. Spotaknili so se ob »kamen spotike«.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:9,V:33,Rimljanom:"tako kot to piše v Svetih spisih: »Glej! Na Sionu polagam kamen in skalo spotike. toda nihče. ki verjame vanj. ne bo razočaran.«",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:10,V:0,Rimljanom:"Rimljanom 10. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:1,Rimljanom:"Bratje. iz srca si želim in Boga goreče prosim za Izraelce. da bi se rešili.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:2,Rimljanom:"Potrdim lahko. da goreče služijo Bogu. toda ne po točnem spoznanju.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:3,Rimljanom:"Božjih pravičnih meril ne poznajo. prizadevajo pa si uveljavljati svoja. zato se Božjim pravičnim merilom ne podrejajo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:4,Rimljanom:"S Kristusom se je namreč Zakonik končal. da bi za pravičnega veljal vsak. ki veruje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:5,Rimljanom:"Mojzes je glede tega. kako je mogoče z ravnanjem po Zakoniku doseči pravičnost. napisal: »Kdor izpolnjuje. kar v njem piše. bo po njem imel življenje.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:6,Rimljanom:"O tem. da je pravičnost mogoče doseči z vero. pa je rečeno takole: »Ne govori v svojem srcu ‚Kdo se bo povzpel v nebo? (zato da bi Kristusa privedel na zemljo)",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:7,Rimljanom:"ali ‚Kdo se bo spustil v brezno? (zato da bi Kristusa privedel gor od mrtvih).«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:8,Rimljanom:"Kaj pravijo Sveti spisi? »Te besede so blizu vas. v vaših ustih in v vašem srcu«. in sicer »besede« vere. ki jih oznanjamo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:9,Rimljanom:"Če namreč s svojimi usti javno razglašaš. da je Jezus tvoj Gospod. in če v svojem srcu verjameš. da ga je Bog obudil od mrtvih. boš rešen.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:10,Rimljanom:"S srcem mora človek verovati. da bi postal pravičen. z usti pa vero javno razglašati. da bi dosegel rešitev.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:11,Rimljanom:"Saj v Svetih spisih piše: »Nihče. ki verjame vanj. ne bo razočaran.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:12,Rimljanom:"Nobene razlike ni med Judom in Grkom. Nad vsemi je isti Gospod. ki bogato daje vsem. ki ga kličejo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:13,Rimljanom:"Piše namreč: »Vsak. ki bo klical moje ime Jehova. bo rešen.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:14,Rimljanom:"Toda kako bodo klicali tega. v katerega ne verjamejo? In kako bodo verjeli v tega. o katerem še niso slišali? In kako bodo slišali zanj. če jim tega nihče ne oznani?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:15,Rimljanom:"Kako pa bodo oznanjevali. če niso bili poslani? Tako je. kot piše v Svetih spisih: »Kako lepe so noge tistih. ki oznanjajo dobro novico o nečem boljšem!«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:16,Rimljanom:"Kljub temu dobri novici niso bili poslušni vsi. Izaija namreč pravi: »Jehova. ali je kdo verjel temu. kar je slišal od nas?«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:17,Rimljanom:"Človek mora najprej slišati sporočilo. da si lahko pridobi vero. Sliši pa ga lahko. ko kdo govori o Kristusu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:18,Rimljanom:"Ali to pomeni. da Izraelci niso slišali sporočila? Seveda so ga. Saj se je pravzaprav »po vsej zemlji. do skrajnega konca zemlje. razširilo sporočilo«.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:19,Rimljanom:"Ali to pomeni. da ga Izraelci niso razumeli? Seveda so ga razumeli. Mojzes je rekel: »V vas bom vzbujal ljubosumnost s tistimi. ki niso narod  močno vas bom razjezil z neumnim narodom.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:20,Rimljanom:"Izaija pa je pogumno rekel: »Našli so me tisti. ki me niso iskali. Razkril sem se tistim. ki po meni niso povpraševali.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:10,V:21,Rimljanom:"Toda glede Izraelcev je rekel: »Neposlušno in trmasto ljudstvo sem ves dan z odprtimi rokami vabil. naj se vrne k meni.«",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:11,V:0,Rimljanom:"Rimljanom 11. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:1,Rimljanom:"Ali to pomeni. da je Bog svoje ljudstvo zavrgel? Nikakor ne! Saj sem tudi jaz Izraelec. Abrahamov potomec iz Benjaminovega rodu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:2,Rimljanom:"Bog ni zavrgel svojega ljudstva. ki ga je izbral kot prvega. Ali ne veste. kaj odlomek iz Svetih spisov pravi glede tega. kako se je Elija Bogu pritoževal nad Izraelci?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:3,Rimljanom:"»Jehova. pobijajo tvoje preroke in podirajo tvoje oltarje. Ostal sem sam. zdaj pa skušajo ubiti tudi mene.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:4,Rimljanom:"In kaj mu je odgovoril Bog? »Ostalo mi je 7000 ljudi. ki niso pokleknili pred Baalom.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:5,Rimljanom:"Ravno tako tudi danes obstaja ostanek. ki ga je Bog izbral zaradi svoje nezaslužene dobrote.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:6,Rimljanom:"Če pa ga je izbral zaradi nezaslužene dobrote. potem ga ni izbral zaradi njegovih del. sicer nezaslužena dobrota ne bi bila več nezaslužena dobrota.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:7,Rimljanom:"Kaj torej? Prav tistega. za kar si Izraelci tako vneto prizadevajo. niso dobili vsi med njimi. ampak samo izbrani. Ostalim pa je srce otopelo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:8,Rimljanom:"tako kot piše v Svetih spisih: »Bog je povzročil. da so se pogreznili v trden spanec. da vse do danes s svojimi očmi ne vidijo in s svojimi ušesi ne slišijo.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:9,Rimljanom:"David pa pravi: »Naj jim njihova miza postane zanka. past. ovira in povračilo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:10,Rimljanom:"Naj jim oči potemnijo. da ne bodo mogli videti. in naj bo njihov hrbet pod težkim bremenom stalno upognjen.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:11,Rimljanom:"Ali to pomeni. da so se tako spotaknili in padli. da ne morejo več vstati? Nikakor ne! Toda zaradi njihovega napačnega koraka so bili ljudje iz drugih narodov rešeni. To je v Izraelcih vzbudilo ljubosumnost.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:12,Rimljanom:"Če torej njihov napačni korak pomeni blagoslov za svet in zmanjšanje njihovega števila blagoslov za ljudi iz drugih narodov. koliko več bo šele blagoslovov. ko bo njihovo število dopolnjeno!",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:13,Rimljanom:"Zdaj govorim vam. ljudem iz drugih narodov. Glede na to. da sem res apostol narodom. zelo cenim svojo službo Bogu",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:14,Rimljanom:"in upam. da bom v svojih rojakih vendarle nekako vzbudil ljubosumnost in nekatere od njih rešil.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:15,Rimljanom:"Če namreč že to. da so bili zavrženi. pomeni. da svet lahko pride v miren odnos z Bogom. kaj bo potem pomenilo šele to. da bodo sprejeti! Nič drugega kot vrnitev iz smrti v življenje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:16,Rimljanom:"In če je tisti del testa. ki je darovan kot prvi. svet. je sveta tudi celota. in če je sveta korenina. so svete tudi veje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:17,Rimljanom:"Vendar so bile nekatere veje gojene oljke odlomljene in ti si bil. čeprav si veja divje oljke. vcepljen med preostale veje ter se zdaj lahko hraniš s sokovi oljkine korenine.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:18,Rimljanom:"Toda ne glej zviška na odlomljene veje. Če nanje gledaš zviška. ne pozabi. da ne nosiš ti korenine. ampak korenina tebe.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:19,Rimljanom:"Morda boš zdaj rekel: »Veje so bile odlomljene. zato da bi bil jaz vcepljen.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:20,Rimljanom:"Res je! Odlomljene so bile. ker niso imele vere. ti pa si še vedno na svojem mestu zaradi svoje vere. Ne bodi prevzeten. bodi previden.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:21,Rimljanom:"Če namreč Bog ni prizanesel naravnim vejam. ne bo prizanesel niti tebi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:22,Rimljanom:"Vidiš torej lahko. da je Bog prijazen pa tudi strog. Do tistih. ki so odpadli. je strog. do tebe pa prijazen. če boš le še naprej ravnal tako. da boš vreden njegove prijaznosti. drugače boš tudi ti odsekan.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:23,Rimljanom:"In oni bodo. če si bodo spet pridobili vero. ravno tako vcepljeni. Bog jih namreč lahko spet vcepi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:24,Rimljanom:"Če si bil namreč odrezan od divje oljke in bil v nasprotju s tem. kar je naravno. vcepljen na gojeno oljko. koliko lažje bodo na lastno oljko vcepljeni ti. ki so že po naravi njeni!",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:25,Rimljanom:"Hočem namreč. bratje. da veste za to sveto skrivnost. zato da se sami sebi ne boste zdeli modri: nekaterim Izraelcem je srce otopelo. dokler se ne zbere polno število ljudi iz drugih narodov.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:26,Rimljanom:"Tako bo rešen ves Izrael. kot to piše v Svetih spisih: »Rešitelj bo prišel s Siona in bo Jakobove potomce odvrnil od brezbožnega početja.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:27,Rimljanom:"Ko jim bom odpustil grehe. bom z njimi sklenil zavezo.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:28,Rimljanom:"Res je. da so Božji sovražniki. ker so zavrnili dobro novico. in od tega imate vi korist. Toda Bog jih je izbral in jih ljubi zaradi obljube. ki jo je dal njihovim praočetom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:29,Rimljanom:"Bog namreč tega. da je kaj podaril. in tega. da je koga poklical. ne bo obžaloval.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:30,Rimljanom:"Vi ste bili nekdaj neposlušni Bogu. vendar se vam je zdaj. ker so bili Izraelci neposlušni. izkazalo usmiljenje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:31,Rimljanom:"Zdaj so torej Izraelci neposlušni. vam pa je izkazano usmiljenje. Toda tudi njim je lahko izkazano usmiljenje. tako kot je bilo vam.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:32,Rimljanom:"Bog je namreč dovolil. da so vsi ljudje sužnji neposlušnosti. da bi jim vsem lahko izkazal usmiljenje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:33,Rimljanom:"Kako brezmejna je Božja velikodušnost. modrost in znanje! Kako nedoumljive so njegove sodbe in kako nepredstavljiva so njegova dela!",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:34,Rimljanom:"V Svetih spisih namreč piše: »Kdo lahko ugotovi. kako razmišlja Jehova. in kdo lahko postane njegov svetovalec?«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:35,Rimljanom:"In »kdo mu je kaj dal. da bi mu moral to vrniti«?",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:11,V:36,Rimljanom:"Vse je namreč od njega. po njem in zaradi njega. Njemu naj gre slava na večne čase. Amen.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:12,V:0,Rimljanom:"Rimljanom 12. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:1,Rimljanom:"Ker je Bog tako usmiljen. vas prosim. bratje. da svoje telo izročite kot živo. sveto žrtev. sprejemljivo Bogu. Tako mu boste služili z razumom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:2,Rimljanom:"Ne dovolite. da vas še naprej oblikujejo ljudje te stvarnosti. ampak se preobrazite. tako da spremenite svoj način razmišljanja. da bi se lahko prepričali. kaj Bog želi od vas. namreč kaj je dobro. sprejemljivo in popolno.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:3,Rimljanom:"Zaradi nezaslužene dobrote. ki mi je bila izkazana. govorim vsakemu od vas. naj o sebi nima previsokega mnenja. ampak naj o sebi misli razumno. vsak pač na podlagi vere. ki mu jo je dal Bog.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:4,Rimljanom:"Tako kot je namreč eno telo sestavljeno iz mnogo delov. pa nimajo vsi iste funkcije.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:5,Rimljanom:"tako smo tudi mi. čeprav nas je mnogo. eno telo. ker smo povezani s Kristusom. Toda kot posamezniki smo deli telesa. ki so odvisni drug od drugega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:6,Rimljanom:"Vsi imamo torej v skladu z nezasluženo dobroto. ki nam je izkazana. darove. ki se med seboj razlikujejo. Zato. če je ta dar prerokovanje. prerokujmo po veri. ki nam je bila dana",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:7,Rimljanom:"če je ta dar služenje drugim. se posvetimo temu služenju. Kdor poučuje. naj se posveti poučevanju",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:8,Rimljanom:"kdor spodbuja druge. naj se posveti spodbujanju  kdor daje. naj daje velikodušno  kdor predseduje občini. naj predseduje marljivo  in kdor je usmiljen. naj bo usmiljen z veseljem.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:9,Rimljanom:"Vaša ljubezen naj bo nehinavska. Močno sovražite hudo. oklepajte pa se dobrega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:10,Rimljanom:"Kot bratje imejte radi drug drugega in si bodite naklonjeni iz vsega srca. V medsebojnem izkazovanju časti prevzemajte pobudo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:11,Rimljanom:"Ne bodite leni. ampak marljivi. Naj vas sveti duh napolnjuje z gorečnostjo. Sužnjujte Jehovu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:12,Rimljanom:"Veselite se. ker imate upanje. Potrpite v stiski. Vztrajajte v molitvi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:13,Rimljanom:"Kar imate. delite s soverniki. ki potrebujejo pomoč. Naj vam preide v navado. da ste gostoljubni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:14,Rimljanom:"Prosite Boga. naj blagoslovi tiste. ki vas preganjajo. Ne preklinjajte jih. ampak prosite zanje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:15,Rimljanom:"Veselite se s tistimi. ki se veselijo. in jokajte s tistimi. ki jokajo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:16,Rimljanom:"Na druge glejte enako kot na sebe. Ne bodite vzvišeni. ampak naj vas vodi ponižnost. Ne imejte sami sebe za modre.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:17,Rimljanom:"Nikomur ne vračajte hudega s hudim. Prizadevajte si za to. kar je dobro v očeh vseh ljudi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:18,Rimljanom:"Če je mogoče. bodite. kolikor je od vas odvisno. v miru z vsemi ljudmi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:19,Rimljanom:"Ne maščujte se. ljubljeni bratje. ampak pustite Bogu. naj on pokaže svojo jezo. saj v Svetih spisih piše: »‚Maščevanje je moje. jaz bom povrnil. govori Jehova.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:20,Rimljanom:"Ampak »če je tvoj sovražnik lačen. ga nahrani. in če je žejen. mu daj piti. saj mu boš s tem na glavo nasul žerjavico«.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:12,V:21,Rimljanom:"Ne pustite. da vas hudo premaga. ampak premagujte hudo z dobrim.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:13,V:0,Rimljanom:"Rimljanom 13. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:1,Rimljanom:"Vsa oblast je od Boga. Zato naj bo vsak podrejen višjim oblastem. saj so te svojo relativno oblast prejele od Boga.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:2,Rimljanom:"Torej se vsak. ki nasprotuje oblasti. postavlja po robu Božji ureditvi. Tisti. ki se tej ureditvi postavljajo po robu. pa si bodo nakopali obsodbo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:3,Rimljanom:"Človeku se tistih na oblasti ni treba bati. kadar dela dobro. ampak kadar dela slabo. Ali bi se rad osvobodil strahu pred oblastjo? Še naprej delaj dobro. pa te bo hvalila.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:4,Rimljanom:"saj je Božja služabnica tebi v dobro. Če pa boš delal slabo. se boj. ker ne nosi meča kar tako. Je namreč Božja služabnica. maščevalka. ki kaznuje tiste. ki počenjajo slabo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:5,Rimljanom:"Morali bi se torej podrejati. pa ne le zato. da se izognete kazni. ampak tudi zaradi svoje vesti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:6,Rimljanom:"Iz istega razloga tudi plačujete davke. Oblasti so namreč Božje javne služabnice. ki stalno opravljajo svoje dolžnosti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:7,Rimljanom:"Dajte vsakemu. kar mu pripada: tistemu. ki zahteva davek. dajte davek  tistemu. ki zahteva dajatev. dajte dajatev  tistemu. ki zahteva spoštovanje. izkažite spoštovanje  tistemu. ki zahteva čast. pa izkažite čast.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:8,Rimljanom:"Nikomur ne bodite ničesar dolžni. razen tega. da imate drug drugega radi. Kdor ima namreč svojega bližnjega rad. ravna v skladu z Zakonikom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:9,Rimljanom:"Zapovedi iz Zakonika »Ne prešuštvuj. ne ubijaj. ne kradi. ne želi si tega. kar pripada drugemu« pa tudi vse druge zapovedi so namreč strnjene v teh besedah: »Svojega bližnjega imej rad kakor samega sebe.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:10,Rimljanom:"Ljubezen bližnjemu ne dela slabega. zato tisti. ki ima druge rad. ravna v skladu z Zakonikom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:11,Rimljanom:"Ravnajte tako zato. ker veste. v kakšnem času živite. Veste. da je že prišla ura. da se zbudite. Zdaj je namreč naša rešitev bliže kakor takrat. ko smo začeli verovati.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:12,Rimljanom:"Precejšen del noči je že mimo in dan se je približal. Zato opustimo dela. ki se počnejo v temi. in si nadenimo orožje svetlobe.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:13,Rimljanom:"Naj bo naše življenje spodobno kakor podnevi – brez divjih zabav in popivanja. brez spolne nemorale in predrznega vedenja. brez sporov in ljubosumnosti.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:13,V:14,Rimljanom:"Posnemajte Gospoda Jezusa Kristusa in ne razmišljajte. kako bi zadovoljili telesne želje.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:14,V:0,Rimljanom:"Rimljanom 14. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:1,Rimljanom:"Človeka. ki ima šibko vero. prisrčno sprejmite in ne obsojajte tistih. ki imajo drugačno mnenje od vas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:2,Rimljanom:"Eden ima močno vero in je vse. drugi. ki ima šibko vero. pa je samo zelenjavo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:3,Rimljanom:"Naj tisti. ki je vse. ne gleda zviška na tistega. ki ne je vsega. in tisti. ki ne je vsega. naj ne obsoja tistega. ki je vse. saj ga je Bog prisrčno sprejel.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:4,Rimljanom:"Kdo si ti. da obsojaš tujega služabnika? O tem. ali bo stal ali padel. odloča njegov gospodar. In služabnik bo stal. ker mu Jehova lahko pomaga. da stoji.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:5,Rimljanom:"Eden meni. da je en dan pomembnejši od drugega. drugi pa meni. da so vsi dnevi enaki. Vsak naj bo popolnoma prepričan. da je to. kar verjame. prav.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:6,Rimljanom:"Kdor praznuje določen dan. tako ravna na čast Jehovu. Kdor je vse. tako ravna na čast Jehovu. saj se zahvaljuje Bogu. In kdor ne je vsega. tako ravna na čast Jehovu in se Bogu vseeno zahvaljuje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:7,Rimljanom:"Nihče od nas pravzaprav ne živi samo zase in nihče ne umre samo zase.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:8,Rimljanom:"Če namreč živimo. živimo za Jehova. in če umremo. umremo za Jehova. Če torej živimo ali če umremo. pripadamo Jehovu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:9,Rimljanom:"Kristus je namreč umrl in spet oživel zato. da bi bil Gospodar mrtvih in živih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:10,Rimljanom:"Toda zakaj obsojaš svojega brata? Ali zakaj gledaš zviška na svojega brata? Saj bomo vsi stopili pred Božji sodni stol.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:11,Rimljanom:"V Svetih spisih namreč piše: »‚Kot je gotovo to. da živim. pravi Jehova. ‚tako je gotovo to. da se bo pred menoj upognilo vsako koleno in da bo vsak jezik javno priznaval. da sem jaz Bog.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:12,Rimljanom:"Vsak od nas bo torej zase dajal odgovor Bogu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:13,Rimljanom:"Zato ne obsojajmo več drug drugega. Raje bodite odločeni. da bratu ne boste nastavljali ovir ali preprek.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:14,Rimljanom:"Kot sledilec Gospoda Jezusa vem in sem prepričan. da ni samo po sebi nič nečisto. Če pa je že komu kaj nečisto. je to pač nečisto njemu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:15,Rimljanom:"Če s tem. kar ješ. vznemiriš svojega brata. ne ravnaš več v skladu z ljubeznijo. S tem. kar ješ. nikar ne uniči vere tistega. za katerega je Kristus umrl.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:16,Rimljanom:"Tudi če se vam nekaj zdi dobro. tega ne delajte. če bi drugi zaradi tega o vas slabo govorili.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:17,Rimljanom:"Pri Božjem kraljestvu namreč ne gre za to. kaj jemo in pijemo. ampak za pravičnost. mir in veselje po svetem duhu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:18,Rimljanom:"Kdor namreč ima te lastnosti in sužnjuje Kristusu. ugaja Bogu in je priznan pri ljudeh.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:19,Rimljanom:"Zato si torej prizadevajmo za to. kar prispeva k miru. in za to. kar je v medsebojno spodbudo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:20,Rimljanom:"Nehajte uničevati delo Božjih rok zaradi hrane. Res je. da so vse stvari čiste. vendar ni prav. če kdo je in s tem oslabi vero drugega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:21,Rimljanom:"Najboljše je. da ne jeste mesa. ne pijete vina. niti ne počnete ničesar. kar bi lahko oslabilo vero vašega brata.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:22,Rimljanom:"To. kar glede teh stvari verjamete. je med vami in Bogom. Srečen tisti. ki se ne obsoja za to. kako se je odločil ravnati.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:14,V:23,Rimljanom:"Če pa dvomi in je. je že obsojen. ker je jedel. ne da bi se prej prepričal. ali je to sprejemljivo. Torej. vse. kar kdo naredi. pa se prej ne prepriča. ali je to sprejemljivo. je greh.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:15,V:0,Rimljanom:"Rimljanom 15. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:1,Rimljanom:"Mi. ki imamo močno vero. bi morali nositi šibkosti tistih. ki nimajo močne vere. ne pa delati samo to. kar nam ugaja.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:2,Rimljanom:"Naj vsak svojemu bližnjemu dela to. kar je dobro. da bi ga s tem okrepil.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:3,Rimljanom:"Tudi Kristus ni skušal ugoditi samemu sebi. ampak je ravnal v skladu s tem. kar piše v Svetih spisih: »Tako kot so ljudje žalili tebe. žalijo tudi mene.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:4,Rimljanom:"Vse namreč. kar je bilo prej napisano v Svetih spisih. je bilo napisano zato. da bi se mi iz tega kaj naučili in bi potem zaradi svoje zdržljivosti in tolažbe iz Svetih spisov imeli upanje.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:5,Rimljanom:"Bog. ki nas krepi. da zdržimo. in nas tolaži. naj vsem vam pomaga. da boste imeli isto stališče. kakršno je imel Kristus Jezus.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:6,Rimljanom:"Tako boste lahko enotno. v en glas slavili Boga in Očeta našega Gospoda Jezusa Kristusa.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:7,Rimljanom:"Zato prisrčno sprejemajte drug drugega Bogu v slavo. kakor je tudi vas prisrčno sprejel Kristus.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:8,Rimljanom:"Reči hočem. da je Kristus res stregel obrezanim. To je delal zato. da bi potrdil. da Bog vedno govori resnico in da so obljube. ki jih je Bog dal njihovim praočetom. zanesljive.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:9,Rimljanom:"To je delal tudi zato. da bi narodi lahko slavili Boga za njegovo usmiljenje. Tako je. kot piše v Svetih spisih: »Zato te bom javno priznal med narodi in opeval tvoje ime.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:10,Rimljanom:"Poleg tega piše: »Veselite se. narodi. z njegovim ljudstvom!«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:11,Rimljanom:"Piše še: »Hvalite Jehova. vsi narodi. in hvalijo naj ga vsa ljudstva!«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:12,Rimljanom:"Izaija pa pravi: »Pojavila se bo Jesejeva korenina. tisti. ki bo vstal. da bi vladal narodom  ta bo narodom vir upanja.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:13,Rimljanom:"Naj vas Bog. ki daje upanje. napolni z velikim veseljem in mirom. ker zaupate vanj. Tako se bo vaše upanje z močjo svetega duha še okrepilo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:14,Rimljanom:"Prepričan sem. moji bratje. da ste polni dobrote in spoznanja ter usposobljeni. da opominjate drug drugega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:15,Rimljanom:"Vendar vam kljub temu o nekaterih stvareh pišem bolj odkrito. Rad bi vas ponovno spomnil nanje. in to zato. ker mi je Bog izkazal nezasluženo dobroto.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:16,Rimljanom:"da lahko kot javni služabnik Kristusa Jezusa oznanjujem Božjo dobro novico drugim narodom. V tem svetem delu sodelujem zato. da bi se ti narodi izkazali za sprejemljivo daritev Bogu. posvečeno s svetim duhom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:17,Rimljanom:"Vesel sem. da sem učenec Kristusa Jezusa in da opravljam delo. ki mi ga je dal Bog.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:18,Rimljanom:"Ne bom si dovolil govoriti o ničemer drugem kot o tem. kar je Kristus naredil po meni. da bi mu bili narodi poslušni. To je naredil po mojih besedah in dejanjih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:19,Rimljanom:"z močjo znamenj in čudežev ter z močjo Božjega duha. Tako sem od Jeruzalema pa vse tja do Ilirika temeljito oznanil dobro novico o Kristusu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:20,Rimljanom:"Postavil sem si za cilj. da ne bom oznanjal dobre novice tam. kjer se je o Kristusu že oznanjalo. da ne bi morda zidal na temelju koga drugega.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:21,Rimljanom:"ampak sem ravnal v skladu s tem. kar piše v Svetih spisih: »Tisti. ki jim ni bilo o njem nič oznanjeno. ga bodo videli in tisti. ki zanj niso slišali. bodo razumeli.«",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:22,Rimljanom:"Zato mi do zdaj še ni uspelo priti k vam. čeprav sem to že velikokrat nameraval.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:23,Rimljanom:"Zdaj pa tu ni več kraja. kjer še ne bi oznanjeval. Poleg tega že veliko let hrepenim po tem. da bi prišel k vam.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:24,Rimljanom:"Zato upam. da vas bom obiskal. ko bom potoval v Španijo. in da bomo nekaj časa preživeli skupaj. Upam tudi. da me boste potem del poti tja spremljali.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:25,Rimljanom:"Zdaj pa se odpravljam v Jeruzalem. da bi pomagal bratom.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:26,Rimljanom:"Bratje v Makedoniji in Ahaji so namreč to. kar imajo. radi prispevali za revne med brati v Jeruzalemu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:27,Rimljanom:"Res. to so naredili z veseljem. res pa je tudi. da so bili njihovi dolžniki. Če so namreč bratje iz Jeruzalema drugim narodom pomagali v duhovnem pogledu. potem so ti dolžni njim pomagati v materialnem pogledu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:28,Rimljanom:"Ko jim bom torej prinesel ta prispevek in jim ga varno izročil. se bom odpravil v Španijo in spotoma prišel do vas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:29,Rimljanom:"Poleg tega vem. da bom takrat. ko bom res prišel k vam. prišel z veliko Kristusovega blagoslova.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:30,Rimljanom:"Bratje. zaradi vere. ki jo imamo v našega Gospoda Jezusa Kristusa. in medsebojne ljubezni. ki izvira od svetega duha. vas zdaj spodbujam. da skupaj z menoj goreče molite k Bogu zame.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:31,Rimljanom:"Molite. da bi bil v Judeji rešen pred neverniki in da bi bratje v Jeruzalemu mojo pomoč lepo sprejeli.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:32,Rimljanom:"Tako bom. če bo Božja volja. poln veselja prišel k vam in bom skupaj z vami osvežen.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:15,V:33,Rimljanom:"Naj bo z vsemi vami Bog. ki daje mir. Amen.",K:"",NZ:"YQ"},
+{Knjiga:"",Kr:"",P:16,V:0,Rimljanom:"Rimljanom 16. poglavje",K:"",NZ:""},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:1,Rimljanom:"Rad bi vam predstavil našo sestro Fojbo. ki služi v občini v Kenhrejah.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:2,Rimljanom:"Prisrčno jo sprejmite v Gospodovem imenu. tako kot se za svete spodobi. in ji pomagajte pri vsem. pri čemer bi vas potrebovala. saj je tudi sama pomagala mnogim. tudi meni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:3,Rimljanom:"Pozdravite Prisko in Akvila. ki skupaj z menoj opravljata delo za Kristusa Jezusa",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:4,Rimljanom:"in sta zame tvegala svojo glavo. Njima se ne zahvaljujem samo jaz. ampak tudi vse občine izmed drugih narodov.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:5,Rimljanom:"Pozdravite tudi občino. ki se zbira v njuni hiši. Pozdravite mojega dragega brata Epajneta. ki je med prvimi v provinci Aziji postal Kristusov sledilec.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:6,Rimljanom:"Pozdravite Marijo. ki se je zelo trudila za vas.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:7,Rimljanom:"Pozdravite Andronika in Junija. moja sorodnika. ki sta bila z menoj v ječi. O njiju imajo apostoli zelo dobro mnenje in sta Kristusova sledilca že dlje od mene.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:8,Rimljanom:"Pozdravite mojega dragega brata in Gospodovega sledilca Ampliata.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:9,Rimljanom:"Pozdravite Urbana. ki skupaj z nami opravlja delo za Kristusa. in mojega dragega brata Stahija.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:10,Rimljanom:"Pozdravite Apela. ki ga Kristus odobrava. Pozdravite Aristobulove domače.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:11,Rimljanom:"Pozdravite mojega sorodnika Herodiona. Pozdravite Narcisove domače. ki so Gospodovi sledilci.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:12,Rimljanom:"Pozdravite Trifajno in Trifozo. ki se zelo trudita v delu za Gospoda. Pozdravite našo drago Persido. ker se je tudi ona zelo trudila v delu za Gospoda.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:13,Rimljanom:"Pozdravite Rufa. izjemnega Gospodovega služabnika. in njegovo mamo. ki je tudi meni kot mama.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:14,Rimljanom:"Pozdravite Asinkrita. Flegona. Hermesa. Patrobaja. Hermaja in brate. ki so z njimi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:15,Rimljanom:"Pozdravite Filologa in Julijo. Nereja in njegovo sestro in Olimpaja ter vse svete. ki so z njimi.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:16,Rimljanom:"Pozdravite drug drugega s svetim poljubom. Pozdravljajo vas vse Kristusove občine.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:17,Rimljanom:"Zdaj pa vas. bratje. prosim: bodite previdni glede tistih. ki v nasprotju z naukom. ki ste se ga naučili. povzročajo razdore in nastavljajo ovire. in se jih ogibajte.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:18,Rimljanom:"Takšni namreč ne sužnjujejo našemu Gospodu Kristusu. ampak željam lastnega telesa. in z dobrikavimi besedami in laskanjem zapeljujejo srce nič hudega slutečih.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:19,Rimljanom:"Vsi vedo. da ste poslušni. zato sem vesel zaradi vas. Toda želim. da ste modri v tem. kar je dobro. in neizkušeni v tem. kar je slabo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:20,Rimljanom:"Bog. ki daje mir. pa bo v kratkem vrgel Satana pod vaše noge in ga strl. Naj vam naš Gospod Jezus izkaže nezasluženo dobroto.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:21,Rimljanom:"Pozdravljajo vas moj sodelavec Timotej pa tudi moji sorodniki Lukij. Jazon in Sozipater.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:22,Rimljanom:"Tudi jaz. Tertij. ki sem to pismo napisal. vas pozdravljam v Gospodovem imenu.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:23,Rimljanom:"Pozdravlja vas moj gostitelj Gaj. pri katerem se zbira vsa občina. Pozdravljata vas Erast. ki je mestni blagajnik. in njegov brat Kvart.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:24,Rimljanom:"——",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:25,Rimljanom:"Bog vas lahko utrdi z dobro novico. ki jo oznanjam. in sporočilom o Jezusu Kristusu. Ta dobra novica se sklada z razodeto sveto skrivnostjo. o kateri se je dolgo molčalo.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:26,Rimljanom:"Toda zdaj je ta skrivnost razkrita in je skladno z zapovedjo večnega Boga po prerokbah iz Svetih spisov oznanjena med vsemi narodi. da bi ti začeli verjeti Bogu in mu bili poslušni.",K:"",NZ:"YQ"},
+{Knjiga:"Rimljanom",Kr:"Rim",P:16,V:27,Rimljanom:"Bogu. ki je edini moder. naj gre na večne čase slava po Jezusu Kristusu. Amen.",K:"",NZ:"YQ"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

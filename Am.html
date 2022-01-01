@@ -1,500 +1,280 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Amos</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Amos 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >To je sporočilo,  ki ga je Amos,  pastir iz Tekoe,  v videnju prejel glede izraelskega ljudstva v času Judovega kralja Uzija in Izraelovega kralja Jeroboama,  Joaševega sina,  in sicer dve leti pred potresom.</TD>
-</TR>
-<TR>
-<TD >Rekel je:<br>»Jehova bo rjovel s Siona, <br>glasno bo vpil iz Jeruzalema.<br>Pašniki bodo žalovali, <br>rastlinje na vrhu Karmela se bo posušilo.«</TD>
-</TR>
-<TR>
-<TD >»Jehova govori takole:<br>‚»Ker je Damask vedno znova grešil,  ne bom odstopil od svoje odločitve.<br>Gilead so namreč mlatili,  kot se z železnimi mlatilnimi sanmi mlati žito.</TD>
-</TR>
-<TR>
-<TD >Nad Hazaelovo hišo bom poslal ogenj<br>in pogoltnil bo utrjene stolpe Ben Hadada.</TD>
-</TR>
-<TR>
-<TD >Zlomil bom zapahe v Damasku, <br>pobil prebivalce Bikat Avena<br>in vladarja Bet Edena.<br>Sirsko ljudstvo bo šlo v pregnanstvo v Kir, « govorim jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚»Ker je Gaza vedno znova grešila,  ne bom odstopil od svoje odločitve.<br>Vse zajete ujetnike so namreč izročili Edomcem.</TD>
-</TR>
-<TR>
-<TD >Nad obzidje Gaze bom poslal ogenj<br>in pogoltnil bo njene utrjene stolpe.</TD>
-</TR>
-<TR>
-<TD >Pobil bom prebivalce Ašdoda<br>in vladarja Aškelona.<br>Kaznoval bom Ekron<br>in preostanek Filistejcev bo izginil, « govorim jaz,  Vrhovni gospod Jehova.</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚Ker je Tir vedno znova grešil,  ne bom odstopil od svoje odločitve.<br>Vse ujetnike so namreč izročili Edomcem<br>in pozabili na bratsko zavezo.</TD>
-</TR>
-<TR>
-<TD >Nad obzidje Tira bom poslal ogenj<br>in pogoltnil bo njegove utrjene stolpe.</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚Ker so Edomci vedno znova grešili,  ne bom odstopil od svoje odločitve.<br>Svoje brate so namreč preganjali z mečem<br>in se jih niso hoteli usmiliti.<br>V svoji jezi jih neizprosno trgajo,  kakor zver trga svoj plen, <br>nenehno so besni nanje.</TD>
-</TR>
-<TR>
-<TD >V Teman bom poslal ogenj<br>in pogoltnil bo utrjene stolpe v Bozri.</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚»Ker so Amonci vedno znova grešili,  ne bom odstopil od svoje odločitve.<br>Gileadskim nosečnicam so namreč parali trebuhe,  da bi razširili svoje ozemlje.</TD>
-</TR>
-<TR>
-<TD >Zažgal bom obzidje Rabe<br>in ogenj bo pogoltnil njene utrjene stolpe.<br>Na dan bitke se bo slišal bojni krik, <br>na dan nevihte bo divjal vihar.</TD>
-</TR>
-<TR>
-<TD >Njihov kralj in njegovi vodilni možje bodo odšli v pregnanstvo, « govorim jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >Amos 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚»Ker so Moabci vedno znova grešili,  ne bom odstopil od svoje odločitve.<br>Kosti edomskega kralja so namreč sežgali in jih spremenili v apno.</TD>
-</TR>
-<TR>
-<TD >V Moab bom poslal ogenj<br>in pogoltnil bo utrjene stolpe v Kerijotu.<br>Moab bo padel sredi trušča, <br>ob bojnem kriku in ob zvoku roga.</TD>
-</TR>
-<TR>
-<TD >Odstranil bom njegovega vladarja, <br>skupaj z njim bom pobil vse njegove vodilne može, « govorim jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚Ker je Judovo ljudstvo vedno znova grešilo,  ne bom odstopil od svoje odločitve.<br>Zakone,  ki sem jim jih dal jaz,  Jehova,  so namreč zavrgli<br>in niso izpolnjevali mojih uredb.<br>Zapeljale so jih iste laži,  ki so zapeljale že njihove prednike.</TD>
-</TR>
-<TR>
-<TD >Na Judovo bom poslal ogenj<br>in pogoltnil bo utrjene stolpe v Jeruzalemu.</TD>
-</TR>
-<TR>
-<TD >Jehova govori takole:<br>‚Ker je izraelsko ljudstvo vedno znova grešilo,  ne bom odstopil od svoje odločitve.<br>Pravične namreč prodajajo za srebro<br>in reveže za en par sandal.</TD>
-</TR>
-<TR>
-<TD >Uboge teptajo in potiskajo v prah, <br>krotke ovirajo na poti do pravice.<br>Oče in sin imata spolne odnose z istim dekletom, <br>s čimer skrunita moje sveto ime.</TD>
-</TR>
-<TR>
-<TD >Ob vsakem oltarju se leže pretegujejo na oblačilih,  ki so jih vzeli kot jamstvo za posojilo, <br>in v templju svojih bogov pijejo vino,  ki so ga kupili s pobranimi denarnimi kaznimi.</TD>
-</TR>
-<TR>
-<TD >‚Jaz pa sem vam s poti spravil Amorejce, <br>ki so bili visoki kakor cedre in močni kakor hrasti.<br>Popolnoma sem jih uničil,  kot če bi uničil drevo s sadovi in koreninami.</TD>
-</TR>
-<TR>
-<TD >Odpeljal sem vas iz egiptovske dežele<br>in vas 40 let vodil po pustinji, <br>da bi zavzeli deželo Amorejcev.</TD>
-</TR>
-<TR>
-<TD >Nekatere vaše sinove sem postavil za preroke<br>in nekatere vaše mladeniče za nazirce.<br>Ali ni tako,  o Izraelci? govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Toda vi ste nazircem dajali piti vino<br>in prerokom ukazovali: »Ne prerokujte!«</TD>
-</TR>
-<TR>
-<TD >Na vaši zemlji vas bom zdrobil, <br>tako kot voz,  poln požetega žita,  drobi vse pod seboj.</TD>
-</TR>
-<TR>
-<TD >Hitri ne bo imel kam pobegniti, <br>močni ne bo ostal pri močeh, <br>noben bojevnik si ne bo rešil življenja.</TD>
-</TR>
-<TR>
-<TD >Lokostrelec ne bo preživel, <br>hitri ne bo ubežal, <br>konjenik si ne bo rešil življenja.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bo celo najpogumnejši bojevnik<br>bežal napol gol,  govori Jehova.«</TD>
-</TR>
-<TR>
-<TD >Amos 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >»O Izraelci,  poslušajte,  kaj Jehova govori o vas,  o celotnem ljudstvu,  ki ga je odpeljal iz egiptovske dežele:</TD>
-</TR>
-<TR>
-<TD >‚Na zemlji je veliko ljudstev,  ampak samo vas poznam osebno.<br>Zato vas bom poklical na odgovornost za vse vaše grehe.</TD>
-</TR>
-<TR>
-<TD >Ali se dva lahko skupaj odpravita na pot,  če se nista pred tem dogovorila,  da se bosta srečala?</TD>
-</TR>
-<TR>
-<TD >Ali lev rjove v gozdu,  če nima plena?<br>Ali se mlad lev oglaša iz brloga,  če ničesar ne ujame?</TD>
-</TR>
-<TR>
-<TD >Ali se ptica ujame v past na tleh,  če past ni nastavljena?<br>Ali se past sproži,  če se vanjo nič ne ujame?</TD>
-</TR>
-<TR>
-<TD >Če se v mestu zasliši rog,  ali se prebivalci ne prestrašijo?<br>Če mesto doleti nesreča,  ali ne povzroči tega Jehova?</TD>
-</TR>
-<TR>
-<TD >Vrhovni gospod Jehova ne naredi nič, <br>ne da bi prej svojim služabnikom prerokom razkril,  kaj namerava narediti.</TD>
-</TR>
-<TR>
-<TD >Ko rjove lev,  le kdo se ne bi bal?<br>Ko Vrhovni gospod Jehova izreče ukaz,  le kdo ne bi prerokoval?</TD>
-</TR>
-<TR>
-<TD >‚Po utrjenih stolpih v Ašdodu<br>in po utrjenih stolpih v Egiptu objavite:<br>»Zberite se na samarijskih gorah<br>in poglejte,  kakšna zmešnjava vlada tam<br>in koliko je goljufanja.</TD>
-</TR>
-<TR>
-<TD >Ne znajo delati tega,  kar je prav, « govori Jehova, <br>»z nasiljem in uničevanjem polnijo svoje utrjene stolpe.«</TD>
-</TR>
-<TR>
-<TD >Zato Vrhovni gospod Jehova govori:<br>‚Nasprotnik bo obkolil deželo<br>in vam odvzel moč, <br>vaši utrjeni stolpi bodo izropani.</TD>
-</TR>
-<TR>
-<TD >Jehova govori:<br>‚Tako kot pastir iztrga iz levjega gobca samo dve nogi od ovce ali kos njenega uhlja, <br>tako bo preživelo samo nekaj Izraelcev, <br>ki zdaj v Samariji posedajo na prekrasnih posteljah in na lepih počivalnikih.</TD>
-</TR>
-<TR>
-<TD >‚Poslušajte in posvarite Jakobove potomce,  govori Vrhovni gospod Jehova,  Bog nad vojskami.</TD>
-</TR>
-<TR>
-<TD >‚Tisti dan,  ko bom obračunal z izraelskim ljudstvom zaradi vseh njegovih grehov, <br>bom obračunal tudi z oltarji v Betelu<br>– rogovi oltarja bodo odsekani in bodo popadali na tla.</TD>
-</TR>
-<TR>
-<TD >Podrl bom zimske hiše in poletne hiše.<br>‚Slonokoščene hiše bodo propadle, <br>velike hiše bodo izginile,  govori Jehova.«</TD>
-</TR>
-<TR>
-<TD >Amos 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Prisluhnite,  bašanske krave, <br>ki ste na samarijski gori.<br>Prisluhnite,  ženske,  ki goljufate uboge in zatirate revne, <br>ki svojim možem govorite: ‚Prinesi mi pijačo!</TD>
-</TR>
-<TR>
-<TD >Vrhovni gospod Jehova je pri svoji svetosti prisegel naslednje:<br>‚»Vedite,  da prihajajo dnevi,  ko bodo nekatere od vas dvignili z mesarskimi kavlji, <br>druge pa s trnki.</TD>
-</TR>
-<TR>
-<TD >Odšle boste skozi vrzeli v obzidju,  vsaka naravnost naprej, <br>izgnane boste ven v Harmon, « govorim jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Pridite v Betel in grešite!<br>Pridite v Gilgal in še bolj grešite!<br>Zjutraj prinesite svoje žrtve<br>in tretjega dne svoje desetine.</TD>
-</TR>
-<TR>
-<TD >Zažigajte kvašen kruh kot zahvalno žrtev.<br>Glasno razglašajte,  kaj ste prostovoljno darovali.<br>O Izraelci,  saj to radi delate,  kajne? govori Vrhovni gospod Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Jaz pa sem povzročil lakoto v vseh vaših mestih, <br>pomanjkanje hrane v vseh vaših hišah.<br>Toda niste se vrnili k meni,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Ko so bili trije meseci do žetve,  sem vam odrekel tudi dež.<br>Na eno mesto sem poslal dež,  na drugo mesto pa ne.<br>Eno polje je namakal dež, <br>drugo polje,  na katero ni deževalo,  pa se je posušilo.</TD>
-</TR>
-<TR>
-<TD >Ljudje iz dveh ali treh mest so se privlekli k enemu mestu,  da bi pili vodo, <br>vendar se niso mogli odžejati.<br>Toda niste se vrnili k meni,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Vaša polja sem udaril z žgočo vročino in plesnijo.<br>Zasadili ste veliko vrtov in vinogradov, <br>vendar so vam fige in oljke požrle kobilice.<br>Toda vseeno se niste vrnili k meni,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Med vas sem poslal kugo,  kakršna je udarila Egipt.<br>Vaše mladeniče sem pobil z mečem in vaše konje sem zaplenil.<br>Nosnice sem vam napolnil s smradom trupel,  ki so ležala v vaših taborih.<br>Toda niste se vrnili k meni,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Vašo deželo sem opustošil, <br>tako kot sem opustošil Sodomo in Gomoro.<br>Bili ste kakor poleno,  potegnjeno iz ognja.<br>Toda niste se vrnili k meni,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Zato bom spet ukrepal proti vam,  o Izraelci.<br>Ker bom spet ukrepal proti vam,  o Izraelci, <br>se pripravite na srečanje z menoj,  s svojim Bogom.</TD>
-</TR>
-<TR>
-<TD >On je oblikoval gore in ustvaril veter, <br>on človeku razkriva svoje misli, <br>on spreminja zoro v temo<br>in stopa po zemeljskih vrhovih<br>– njegovo ime je Jehova,  Bog nad vojskami.«</TD>
-</TR>
-<TR>
-<TD >Amos 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >»O izraelsko ljudstvo,  poslušaj žalostinko,  ki jo govorim o tebi:</TD>
-</TR>
-<TR>
-<TD >‚Devica Izrael je padla na svoji zemlji, <br>ne more več vstati.<br>Vsi so jo zapustili, <br>nikogar ni,  ki bi jo dvignil.</TD>
-</TR>
-<TR>
-<TD >Vrhovni gospod Jehova govori takole:<br>‚To čaka izraelsko ljudstvo: mestu,  ki bo šlo v boj s 1000 vojaki,  bo ostalo 100 vojakov<br>in mestu,  ki bo šlo v boj s 100 vojaki,  bo ostalo 10 vojakov.</TD>
-</TR>
-<TR>
-<TD >Jehova izraelskemu ljudstvu sporoča:<br>‚Vrnite se k meni in boste živeli.</TD>
-</TR>
-<TR>
-<TD >Ne zahajajte v Betel, <br>ne hodite v Gilgal in ne odhajajte čez mejo v Beeršebo, <br>saj bo Gilgal odpeljan v pregnanstvo<br>in Betel bo opustošen.</TD>
-</TR>
-<TR>
-<TD >O Jožefovi potomci,  vrnite se k Jehovu in boste živeli, <br>da vas ne bo pogoltnil kakor ogenj, <br>da ne bo pogoltnil Betela – nikogar ne bo,  ki bi ta ogenj pogasil.</TD>
-</TR>
-<TR>
-<TD >Pravico spreminjate v pelin, <br>pravičnost teptate pod nogami.</TD>
-</TR>
-<TR>
-<TD >On je tisti,  ki je ustvaril ozvezdji Kima in Kesil, <br>tisti,  ki spreminja gosto temo v jutranjo svetlobo, <br>tisti,  ki spreminja dan v temno noč, <br>tisti,  ki zbira vodo iz morja, <br>da bi jo izlil po površju zemlje<br>– Jehova je njegovo ime.</TD>
-</TR>
-<TR>
-<TD >On bo povzročil,  da bo močne v hipu doletelo uničenje<br>– utrdbe bodo uničene.</TD>
-</TR>
-<TR>
-<TD >Vi sovražite sodnike,  ki grajajo pri mestnih vratih, <br>in čutite odpor do tistih,  ki govorijo resnico.</TD>
-</TR>
-<TR>
-<TD >Ker od revnih terjate najemnino za zemljo<br>in od njih jemljete dajatev v žitu, <br>ne boste živeli v svojih hišah iz obdelanega kamna<br>niti pili vina iz svojih izvrstnih vinogradov.</TD>
-</TR>
-<TR>
-<TD >‚Jaz namreč vem,  kako zelo se upirate<br>in kako hudo grešite<br>– grdo ravnate s pravičnimi, <br>sprejemate podkupnine<br>in pri mestnih vratih revežem kratite pravice.</TD>
-</TR>
-<TR>
-<TD >Tisti čas bo čas stiske, <br>zato bodo preudarni takrat raje molčali.</TD>
-</TR>
-<TR>
-<TD >Ne delajte tega,  kar je slabo,  ampak to,  kar je dobro, <br>da boste živeli.<br>Če boste tako delali,  bo Jehova,  Bog nad vojskami,  res z vami, <br>kot že zdaj trdite,  da je.</TD>
-</TR>
-<TR>
-<TD >Sovražite slabo in ljubite dobro, <br>pustite,  da pri mestnih vratih zmaga pravica.<br>Morda se bo Jehova,  Bog nad vojskami, <br>usmilil preživelih Jožefovih potomcev.</TD>
-</TR>
-<TR>
-<TD >Jehova,  Bog nad vojskami,  zato govori.<br>Jehova govori takole: ‚Po vseh trgih bodo vpili od žalosti<br>in po vseh ulicah bodo tarnali: »Gorje nam! Gorje!«<br>K žalovanju bodo povabili kmetovalce<br>in k vpitju poklicne žalovalce.</TD>
-</TR>
-<TR>
-<TD >‚Po vseh vinogradih se bo žalovalo, <br>ker bom šel skozi vašo deželo,  govori Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Gorje tistim,  ki hrepenijo po Jehovovem dnevu!<br>Kaj vam bo prinesel Jehovov dan?<br>Takrat bo tema,  ne pa svetloba.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bo tako,  kot če človek beži pred levom,  pa ga sreča medved.<br>Tako bo,  kot če človek pride domov in se z roko nasloni na steno,  pa ga piči kača.</TD>
-</TR>
-<TR>
-<TD >Jehovov dan bo tema,  ne pa luč, <br>mrak,  ne pa svetloba.</TD>
-</TR>
-<TR>
-<TD >Sovražim vaše praznike,  preziram jih, <br>ne maram vonja,  ki se širi na vaših slovesnih zborih.</TD>
-</TR>
-<TR>
-<TD >Tudi če mi prinašate cele žgalne daritve ali druge daritve, <br>mi te ne ugajajo.<br>Rejenih živali,  ki jih darujete kot mirovne daritve,  ne sprejemam.</TD>
-</TR>
-<TR>
-<TD >Prihranite mi zven vaših pesmi, <br>naj ne slišim zvoka vaših citer.</TD>
-</TR>
-<TR>
-<TD >Naj raje pravica teče kakor potoki v vaši deželi<br>in pravičnost kakor reka,  ki nikoli ne presahne.</TD>
-</TR>
-<TR>
-<TD >O Izraelci,  ali ste mi v tistih 40 letih v pustinji<br>kdaj prinašali žrtve in daritve?</TD>
-</TR>
-<TR>
-<TD >Zdaj pa boste morali odnesti svojega kralja Sikuta in Kijuna, <br>ki sta podobi zvezde,  ki je vaš bog,  podobi,  ki ste ju izdelali.</TD>
-</TR>
-<TR>
-<TD >Poslal vas bom v pregnanstvo daleč naprej od Damaska,  govori on,  ki mu je ime Jehova,  Bog nad vojskami.«</TD>
-</TR>
-<TR>
-<TD >Amos 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Gorje samozavestnim na Sionu, <br>tistim,  ki se počutijo varne na samarijski gori, <br>uglednim možem najpomembnejšega naroda, <br>tistim,  na katere se obrača izraelsko ljudstvo.</TD>
-</TR>
-<TR>
-<TD >Najprej pojdite v Kalne, <br>nato se odpravite v Veliki Hamat<br>in nazadnje se spustite v filistejsko mesto Gat.<br>Poglejte,  ali so oni boljši od teh kraljestev, <br>ali je njihovo ozemlje večje od vašega.</TD>
-</TR>
-<TR>
-<TD >Odganjate misel na dan nesreče<br>in utirate pot vladavini nasilja.</TD>
-</TR>
-<TR>
-<TD >Ležite na slonokoščenih posteljah in se pretegujete na počivalnikih, <br>jeste najboljše ovne in rejena teleta, </TD>
-</TR>
-<TR>
-<TD >ob zvokih harfe si izmišljate pesmi, <br>kot David izumljate glasbila, </TD>
-</TR>
-<TR>
-<TD >pijete vino v velikih količinah<br>in se mažete z najboljšimi olji.<br>Toda propad Jožefovega ljudstva vas nič ne skrbi.</TD>
-</TR>
-<TR>
-<TD >Zato boste med prvimi odšli v pregnanstvo, <br>vaše bučno veseljačenje in poležavanje se bo končalo.</TD>
-</TR>
-<TR>
-<TD >Jehova,  Bog nad vojskami,  govori: ‚Jaz,  Vrhovni gospod Jehova,  sem prisegel pri samem sebi:<br>»Jakobova prevzetnost se mi gnusi<br>in njegove utrjene stolpe sovražim.<br>Mesto in vse v njem bom izročil njegovim sovražnikom.</TD>
-</TR>
-<TR>
-<TD >Tudi če bo v eni hiši ostalo deset ljudi,  ne bodo ubežali smrti.</TD>
-</TR>
-<TR>
-<TD >Sorodnik bo prišel,  jih drugega za drugim odnesel ven in sežgal. Tako bo njihova trupla spravil iz hiše. Tistega,  ki ga bo našel v sobi globoko v notranjosti hiše,  bo vprašal: ‚Ali je še kdo pri tebi? On bo odgovoril: ‚Nihče! Sorodnik mu bo nato rekel: ‚Bodi tiho! Zdaj je prepozno,  da bi klicali ime Jehova.«</TD>
-</TR>
-<TR>
-<TD >Jaz,  Jehova,  sem namreč izdal zapoved, <br>zato se bo velika hiša podrla<br>in mala hiša bo razpadla.</TD>
-</TR>
-<TR>
-<TD >Ali konji tečejo po skalovju?<br>Ali kdo tam orje z govedom?<br>Vi pa ste pravico spremenili v strupeno zelišče<br>in sad pravičnosti v pelin.</TD>
-</TR>
-<TR>
-<TD >Veselite se nečesa,  kar nima vrednosti, <br>in govorite: »Ali se nismo z lastno močjo povzpeli?«</TD>
-</TR>
-<TR>
-<TD >O izraelsko ljudstvo,  nad vas bom poslal narod, <br>ki vas bo zatiral od Lebo Hamata do arabske doline,  govori Jehova,  Bog nad vojskami.«</TD>
-</TR>
-<TR>
-<TD >Amos 7. Poglavje</TD>
-</TR>
-<TR>
-<TD >Vrhovni gospod Jehova mi je dal videnje. Videl sem,  da je poslal roj kobilic v obdobju,  ko je začelo rasti to,  kar je bilo posejano med pozno setvijo. To je bilo posejano za tem,  ko je bila pokošena trava za kralja.</TD>
-</TR>
-<TR>
-<TD >Ko so kobilice požrle vse rastlinje v deželi,  sem rekel: »Vrhovni gospod Jehova,  prosim,  odpusti svojemu ljudstvu! Kako bo Jakobovo ljudstvo preživelo,  ko pa je slabotno?«</TD>
-</TR>
-<TR>
-<TD >Zato si je Jehova premislil. »To se ne bo zgodilo, « je rekel Jehova.</TD>
-</TR>
-<TR>
-<TD >Nato mi je Vrhovni gospod Jehova spet dal videnje. Videl sem,  da je Vrhovni gospod Jehova odredil,  naj bo dežela kaznovana z ognjem. Ogenj je osušil prostrano in globoko morje ter pogoltnil del dežele.</TD>
-</TR>
-<TR>
-<TD >Jaz pa sem rekel: »Vrhovni gospod Jehova,  prosim,  ustavi to! Kako bo Jakobovo ljudstvo preživelo,  ko pa je slabotno?«</TD>
-</TR>
-<TR>
-<TD >Zato si je Jehova premislil. »Tudi to se ne bo zgodilo, « je rekel Vrhovni gospod Jehova.</TD>
-</TR>
-<TR>
-<TD >Nato mi je dal še eno videnje. Videl sem zid,  ki je bil zgrajen s pomočjo svinčnice in je bil zato raven. Na njem je stal Jehova in v roki je držal svinčnico.</TD>
-</TR>
-<TR>
-<TD >Zatem me je Jehova vprašal: »Kaj vidiš,  Amos?« Odgovoril sem: »Svinčnico.« Jehova pa je rekel: »S svinčnico bom preveril svoje ljudstvo,  Izraelce. Ne bom jim več oproščal.</TD>
-</TR>
-<TR>
-<TD >Višave Izakovih potomcev bodo opustošene in izraelska svetišča bodo uničena. Nad Jeroboamovo rodbino bom poslal meč.«</TD>
-</TR>
-<TR>
-<TD >Amazija,  ki je bil duhovnik v Betelu,  je Izraelovemu kralju Jeroboamu sporočil: »Amos je tukaj v Izraelu skoval zaroto proti tebi. Ljudje ne morejo več prenašati njegovega govorjenja.</TD>
-</TR>
-<TR>
-<TD >Rekel je namreč: ‚Jeroboam bo ubit z mečem in izraelsko ljudstvo bo iz svoje dežele odpeljano v pregnanstvo.«</TD>
-</TR>
-<TR>
-<TD >Amazija je nato Amosu rekel: »Videc,  poberi se! Pojdi na Judovo! Tam si služi kruh in tam prerokuj!</TD>
-</TR>
-<TR>
-<TD >V Betelu pa ne smeš več prerokovati,  saj je ta kraj kraljevo svetišče in tempelj celotnega kraljestva.«</TD>
-</TR>
-<TR>
-<TD >Amos mu je odgovoril: »Jaz nisem bil prerok niti sin preroka. Bil sem pastir in sem skrbel za sikomore.</TD>
-</TR>
-<TR>
-<TD >Toda Jehova me je odpeljal od črede,  za katero sem skrbel. Jehova mi je rekel: ‚Pojdi,  prerokuj mojemu ljudstvu Izraelu!</TD>
-</TR>
-<TR>
-<TD >Zdaj pa poslušaj,  kaj sporoča Jehova: ‚Ti govoriš: »Ne prerokuj proti Izraelu in ne oznanjaj obsodbe proti Izakovim potomcem.«</TD>
-</TR>
-<TR>
-<TD >Zato Jehova govori takole: »Tvoja žena bo v mestu postala prostitutka. Tvoji sinovi in hčere bodo ubiti z mečem. Tvoja posest se bo razdelila z merilno vrvjo. Umrl boš v tuji deželi in Izraelci bodo iz svoje dežele odpeljani v pregnanstvo.««</TD>
-</TR>
-<TR>
-<TD >Amos 8. Poglavje</TD>
-</TR>
-<TR>
-<TD >Vrhovni gospod Jehova mi je dal videnje. Videl sem košaro poletnega sadja.</TD>
-</TR>
-<TR>
-<TD >Vprašal me je: »Kaj vidiš,  Amos?« Odgovoril sem: »Košaro poletnega sadja.« Jehova mi je rekel: »Mojemu ljudstvu Izraelu se bliža konec. Ne bom mu več oproščal.</TD>
-</TR>
-<TR>
-<TD >‚Tisti dan se bo petje v templju spremenilo v bridko jokanje,  govorim jaz,  Vrhovni gospod Jehova. ‚Veliko bo trupel,  povsod bodo ležala. Tišina!</TD>
-</TR>
-<TR>
-<TD >Poslušajte to,  vi,  ki teptate revne<br>in zatirate krotke v deželi.</TD>
-</TR>
-<TR>
-<TD >Poslušajte,  vi,  ki govorite: ‚Kdaj bo minil mlaj,  da bomo lahko prodajali svoje žito?<br>Kdaj se bo končal šabat,  da bomo lahko ponujali žito za prodajo, <br>da bomo lahko zmanjšali mero, <br>zvišali ceno<br>in sleparili pri tehtanju, </TD>
-</TR>
-<TR>
-<TD >da bomo lahko uboge kupovali za srebro, <br>revne za ceno enega para sandal<br>in prodajali ničvredno žito?</TD>
-</TR>
-<TR>
-<TD >Jaz,  Jehova,  Jakobov ponos,  prisegam pri samem sebi:<br>‚Nikoli ne bom pozabil niti enega od njihovih del.</TD>
-</TR>
-<TR>
-<TD >Zaradi tega se bo dežela stresla<br>in vsi njeni prebivalci bodo žalovali.<br>Vsa dežela se bo dvignila kakor Nil, <br>narasla in upadla bo kakor Nil v Egiptu.</TD>
-</TR>
-<TR>
-<TD >‚Tisti dan,  govorim jaz,  Vrhovni gospod Jehova, <br>‚bom povzročil,  da bo sonce zašlo opoldne<br>in da bo deželo sredi belega dne prekrila tema.</TD>
-</TR>
-<TR>
-<TD >Vaše praznike bom spremenil v žalovanje<br>in vse vaše pesmi v žalostinke.<br>Vsem bom okoli boka nadel raševino in obril glavo.<br>Tisti dan bo tako,  kot da bi žalovali za edincem.<br>Kako žalosten bo konec tistega dne!</TD>
-</TR>
-<TR>
-<TD >‚Prihajajo dnevi,  govorim jaz,  Vrhovni gospod Jehova, <br>‚ko bom v deželo poslal lakoto, <br>toda ljudje ne bodo hrepeneli po kruhu in vodi, <br>ampak po mojih,  Jehovovih besedah.</TD>
-</TR>
-<TR>
-<TD >Opotekali se bodo od enega morja do drugega<br>in od severa do vzhoda.<br>Hodili bodo naokrog in iskali mojo,  Jehovovo besedo,  vendar je ne bodo našli.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bodo lepe mladenke<br>in mladeniči omedlevali od žeje.</TD>
-</TR>
-<TR>
-<TD >To so tisti,  ki prisegajo pri samarijskih krivih bogovih<br>in govorijo »O Dan,  prisegam pri tvojem živem bogu!«<br>in »Prisegam pri poti v Beeršebo!«.<br>Padli bodo in ne bodo več vstali.«</TD>
-</TR>
-<TR>
-<TD >Amos 9. Poglavje</TD>
-</TR>
-<TR>
-<TD >Videl sem,  da je Jehova stal nad oltarjem. Rekel je: »Udari glavo stebra in pragovi se bodo stresli. Vsem stebrom odsekaj glavo. Jaz pa bom z mečem pobil vse preostale ljudi. Nikomur,  ki se bo pognal v beg,  ne bo uspelo zbežati in nihče,  ki bo skušal uiti,  ne bo ušel.</TD>
-</TR>
-<TR>
-<TD >Če se bodo zakopali v grob, <br>jih bo moja roka izvlekla od tam, <br>in če se bodo povzpeli v nebo, <br>jih bom od tam potegnil dol.</TD>
-</TR>
-<TR>
-<TD >Če se bodo skrili na vrh Karmela, <br>jih bom tam poiskal in odpeljal, <br>in če se bodo pred menoj skrili na dno morja, <br>bom tam ukazal kači,  naj jih piči.</TD>
-</TR>
-<TR>
-<TD >Če jih bodo njihovi sovražniki odpeljali v ujetništvo, <br>bom tam ukazal meču,  naj jih pobije.<br>Poskrbel bom,  da jih bo doletelo hudo,  ne pa dobro.</TD>
-</TR>
-<TR>
-<TD >Ko se jaz,  Vrhovni gospod,  Jehova nad vojskami,  dotaknem dežele, <br>se začne topiti in vsi njeni prebivalci žalujejo.<br>Vsa dežela se dviguje kakor Nil<br>in upada kakor Nil v Egiptu.</TD>
-</TR>
-<TR>
-<TD >‚Jaz sem tisti,  ki gradi stopnice v nebesa<br>in nad zemljo utrjuje nebesni obok, <br>jaz sem tisti,  ki zbira vodo iz morja, <br>da bi jo izlil po površju zemlje<br>– Jehova je moje ime.</TD>
-</TR>
-<TR>
-<TD >‚Izraelci,  ali niste zame kot Kušijevci? govorim jaz,  Jehova.<br>‚Ali nisem Izraelcev odpeljal iz Egipta, <br>Filistejcev s Krete in Sircev iz Kira?</TD>
-</TR>
-<TR>
-<TD >‚Jaz,  Vrhovni gospod Jehova,  upiram svoj pogled v grešno kraljestvo<br>in jaz ga bom izbrisal s površja zemlje.<br>Vseeno pa Jakobovih potomcev ne bom povsem iztrebil,  govorim jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >‚Jaz namreč zapovedujem:<br>izraelsko ljudstvo naj bo raztreseno med vse narode.<br>Pretresel ga bom tako,  kot se žito preseje s sitom, <br>da niti en kamenček ne pade na tla.</TD>
-</TR>
-<TR>
-<TD >Vsi grešniki v mojem ljudstvu bodo pobiti z mečem, <br>pobiti bodo vsi,  ki govorijo: »Nesreča se nam ne bo približala,  ne bo nas dosegla.«</TD>
-</TR>
-<TR>
-<TD >‚Tisti dan bom na novo zgradil podrto Davidovo hišo<br>in zadelal luknje v njej.<br>Pozidal bom njene ruševine<br>in jo obnovil,  da bo takšna,  kot je bila v davnih časih.</TD>
-</TR>
-<TR>
-<TD >To bom naredil zato,  da bo moje ljudstvo dobilo v last preostale Edomce<br>in vse narode,  ki nosijo moje ime,  govorim jaz,  Jehova,  ki delam vse to.</TD>
-</TR>
-<TR>
-<TD >‚Prihajajo dnevi,  govorim jaz,  Jehova, <br>‚ko bo orač dohitel žanjca<br>in tlačilec grozdja sejalca.<br>Novo vino bo kapljalo z gora, <br>teklo bo z vseh hribov.</TD>
-</TR>
-<TR>
-<TD >Izraelce,  svoje ljudstvo,  bom pripeljal iz ujetništva.<br>Obnovili bodo opustošena mesta in se v njih naselili, <br>zasadili bodo vinograde in pili pridelano vino, <br>uredili si bodo vrtove in jedli,  kar bo zraslo na njih.</TD>
-</TR>
-<TR>
-<TD >‚Zasadil jih bom v njihovo zemljo<br>in nikoli več ne bodo izruvani iz zemlje,  ki sem jim jo dal, <br>govorim jaz,  Jehova,  tvoj Bog.«</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Amos','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Amos:"Amos 1. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:1,V:1,Amos:"To je sporočilo. ki ga je Amos. pastir iz Tekoe. v videnju prejel glede izraelskega ljudstva v času Judovega kralja Uzija in Izraelovega kralja Jeroboama. Joaševega sina. in sicer dve leti pred potresom.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:2,Amos:"Rekel je:<br>»Jehova bo rjovel s Siona.<br>glasno bo vpil iz Jeruzalema.<br>Pašniki bodo žalovali.<br>rastlinje na vrhu Karmela se bo posušilo.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:3,Amos:"»Jehova govori takole:<br>‚»Ker je Damask vedno znova grešil. ne bom odstopil od svoje odločitve.<br>Gilead so namreč mlatili. kot se z železnimi mlatilnimi sanmi mlati žito.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:4,Amos:"Nad Hazaelovo hišo bom poslal ogenj<br>in pogoltnil bo utrjene stolpe Ben Hadada.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:5,Amos:"Zlomil bom zapahe v Damasku.<br>pobil prebivalce Bikat Avena<br>in vladarja Bet Edena.<br>Sirsko ljudstvo bo šlo v pregnanstvo v Kir.« govorim jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:6,Amos:"Jehova govori takole:<br>‚»Ker je Gaza vedno znova grešila. ne bom odstopil od svoje odločitve.<br>Vse zajete ujetnike so namreč izročili Edomcem.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:7,Amos:"Nad obzidje Gaze bom poslal ogenj<br>in pogoltnil bo njene utrjene stolpe.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:8,Amos:"Pobil bom prebivalce Ašdoda<br>in vladarja Aškelona.<br>Kaznoval bom Ekron<br>in preostanek Filistejcev bo izginil.« govorim jaz. Vrhovni gospod Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:9,Amos:"Jehova govori takole:<br>‚Ker je Tir vedno znova grešil. ne bom odstopil od svoje odločitve.<br>Vse ujetnike so namreč izročili Edomcem<br>in pozabili na bratsko zavezo.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:10,Amos:"Nad obzidje Tira bom poslal ogenj<br>in pogoltnil bo njegove utrjene stolpe.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:11,Amos:"Jehova govori takole:<br>‚Ker so Edomci vedno znova grešili. ne bom odstopil od svoje odločitve.<br>Svoje brate so namreč preganjali z mečem<br>in se jih niso hoteli usmiliti.<br>V svoji jezi jih neizprosno trgajo. kakor zver trga svoj plen.<br>nenehno so besni nanje.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:12,Amos:"V Teman bom poslal ogenj<br>in pogoltnil bo utrjene stolpe v Bozri.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:13,Amos:"Jehova govori takole:<br>‚»Ker so Amonci vedno znova grešili. ne bom odstopil od svoje odločitve.<br>Gileadskim nosečnicam so namreč parali trebuhe. da bi razširili svoje ozemlje.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:14,Amos:"Zažgal bom obzidje Rabe<br>in ogenj bo pogoltnil njene utrjene stolpe.<br>Na dan bitke se bo slišal bojni krik.<br>na dan nevihte bo divjal vihar.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:1,V:15,Amos:"Njihov kralj in njegovi vodilni možje bodo odšli v pregnanstvo.« govorim jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Amos:"Amos 2. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:2,V:1,Amos:"Jehova govori takole:<br>‚»Ker so Moabci vedno znova grešili. ne bom odstopil od svoje odločitve.<br>Kosti edomskega kralja so namreč sežgali in jih spremenili v apno.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:2,Amos:"V Moab bom poslal ogenj<br>in pogoltnil bo utrjene stolpe v Kerijotu.<br>Moab bo padel sredi trušča.<br>ob bojnem kriku in ob zvoku roga.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:3,Amos:"Odstranil bom njegovega vladarja.<br>skupaj z njim bom pobil vse njegove vodilne može.« govorim jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:4,Amos:"Jehova govori takole:<br>‚Ker je Judovo ljudstvo vedno znova grešilo. ne bom odstopil od svoje odločitve.<br>Zakone. ki sem jim jih dal jaz. Jehova. so namreč zavrgli<br>in niso izpolnjevali mojih uredb.<br>Zapeljale so jih iste laži. ki so zapeljale že njihove prednike.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:5,Amos:"Na Judovo bom poslal ogenj<br>in pogoltnil bo utrjene stolpe v Jeruzalemu.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:6,Amos:"Jehova govori takole:<br>‚Ker je izraelsko ljudstvo vedno znova grešilo. ne bom odstopil od svoje odločitve.<br>Pravične namreč prodajajo za srebro<br>in reveže za en par sandal.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:7,Amos:"Uboge teptajo in potiskajo v prah.<br>krotke ovirajo na poti do pravice.<br>Oče in sin imata spolne odnose z istim dekletom.<br>s čimer skrunita moje sveto ime.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:8,Amos:"Ob vsakem oltarju se leže pretegujejo na oblačilih. ki so jih vzeli kot jamstvo za posojilo.<br>in v templju svojih bogov pijejo vino. ki so ga kupili s pobranimi denarnimi kaznimi.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:9,Amos:"‚Jaz pa sem vam s poti spravil Amorejce.<br>ki so bili visoki kakor cedre in močni kakor hrasti.<br>Popolnoma sem jih uničil. kot če bi uničil drevo s sadovi in koreninami.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:10,Amos:"Odpeljal sem vas iz egiptovske dežele<br>in vas 40 let vodil po pustinji.<br>da bi zavzeli deželo Amorejcev.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:11,Amos:"Nekatere vaše sinove sem postavil za preroke<br>in nekatere vaše mladeniče za nazirce.<br>Ali ni tako. o Izraelci? govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:12,Amos:"‚Toda vi ste nazircem dajali piti vino<br>in prerokom ukazovali: »Ne prerokujte!«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:13,Amos:"Na vaši zemlji vas bom zdrobil.<br>tako kot voz. poln požetega žita. drobi vse pod seboj.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:14,Amos:"Hitri ne bo imel kam pobegniti.<br>močni ne bo ostal pri močeh.<br>noben bojevnik si ne bo rešil življenja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:15,Amos:"Lokostrelec ne bo preživel.<br>hitri ne bo ubežal.<br>konjenik si ne bo rešil življenja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:2,V:16,Amos:"Tisti dan bo celo najpogumnejši bojevnik<br>bežal napol gol. govori Jehova.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Amos:"Amos 3. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:3,V:1,Amos:"»O Izraelci. poslušajte. kaj Jehova govori o vas. o celotnem ljudstvu. ki ga je odpeljal iz egiptovske dežele:",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:2,Amos:"‚Na zemlji je veliko ljudstev. ampak samo vas poznam osebno.<br>Zato vas bom poklical na odgovornost za vse vaše grehe.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:3,Amos:"Ali se dva lahko skupaj odpravita na pot. če se nista pred tem dogovorila. da se bosta srečala?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:4,Amos:"Ali lev rjove v gozdu. če nima plena?<br>Ali se mlad lev oglaša iz brloga. če ničesar ne ujame?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:5,Amos:"Ali se ptica ujame v past na tleh. če past ni nastavljena?<br>Ali se past sproži. če se vanjo nič ne ujame?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:6,Amos:"Če se v mestu zasliši rog. ali se prebivalci ne prestrašijo?<br>Če mesto doleti nesreča. ali ne povzroči tega Jehova?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:7,Amos:"Vrhovni gospod Jehova ne naredi nič.<br>ne da bi prej svojim služabnikom prerokom razkril. kaj namerava narediti.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:8,Amos:"Ko rjove lev. le kdo se ne bi bal?<br>Ko Vrhovni gospod Jehova izreče ukaz. le kdo ne bi prerokoval?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:9,Amos:"‚Po utrjenih stolpih v Ašdodu<br>in po utrjenih stolpih v Egiptu objavite:<br>»Zberite se na samarijskih gorah<br>in poglejte. kakšna zmešnjava vlada tam<br>in koliko je goljufanja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:10,Amos:"Ne znajo delati tega. kar je prav.« govori Jehova.<br>»z nasiljem in uničevanjem polnijo svoje utrjene stolpe.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:11,Amos:"Zato Vrhovni gospod Jehova govori:<br>‚Nasprotnik bo obkolil deželo<br>in vam odvzel moč.<br>vaši utrjeni stolpi bodo izropani.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:12,Amos:"Jehova govori:<br>‚Tako kot pastir iztrga iz levjega gobca samo dve nogi od ovce ali kos njenega uhlja.<br>tako bo preživelo samo nekaj Izraelcev.<br>ki zdaj v Samariji posedajo na prekrasnih posteljah in na lepih počivalnikih.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:13,Amos:"‚Poslušajte in posvarite Jakobove potomce. govori Vrhovni gospod Jehova. Bog nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:14,Amos:"‚Tisti dan. ko bom obračunal z izraelskim ljudstvom zaradi vseh njegovih grehov.<br>bom obračunal tudi z oltarji v Betelu<br>– rogovi oltarja bodo odsekani in bodo popadali na tla.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:3,V:15,Amos:"Podrl bom zimske hiše in poletne hiše.<br>‚Slonokoščene hiše bodo propadle.<br>velike hiše bodo izginile. govori Jehova.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Amos:"Amos 4. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:4,V:1,Amos:"»Prisluhnite. bašanske krave.<br>ki ste na samarijski gori.<br>Prisluhnite. ženske. ki goljufate uboge in zatirate revne.<br>ki svojim možem govorite: ‚Prinesi mi pijačo!",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:2,Amos:"Vrhovni gospod Jehova je pri svoji svetosti prisegel naslednje:<br>‚»Vedite. da prihajajo dnevi. ko bodo nekatere od vas dvignili z mesarskimi kavlji.<br>druge pa s trnki.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:3,Amos:"Odšle boste skozi vrzeli v obzidju. vsaka naravnost naprej.<br>izgnane boste ven v Harmon.« govorim jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:4,Amos:"‚Pridite v Betel in grešite!<br>Pridite v Gilgal in še bolj grešite!<br>Zjutraj prinesite svoje žrtve<br>in tretjega dne svoje desetine.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:5,Amos:"Zažigajte kvašen kruh kot zahvalno žrtev.<br>Glasno razglašajte. kaj ste prostovoljno darovali.<br>O Izraelci. saj to radi delate. kajne? govori Vrhovni gospod Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:6,Amos:"‚Jaz pa sem povzročil lakoto v vseh vaših mestih.<br>pomanjkanje hrane v vseh vaših hišah.<br>Toda niste se vrnili k meni. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:7,Amos:"‚Ko so bili trije meseci do žetve. sem vam odrekel tudi dež.<br>Na eno mesto sem poslal dež. na drugo mesto pa ne.<br>Eno polje je namakal dež.<br>drugo polje. na katero ni deževalo. pa se je posušilo.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:8,Amos:"Ljudje iz dveh ali treh mest so se privlekli k enemu mestu. da bi pili vodo.<br>vendar se niso mogli odžejati.<br>Toda niste se vrnili k meni. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:9,Amos:"‚Vaša polja sem udaril z žgočo vročino in plesnijo.<br>Zasadili ste veliko vrtov in vinogradov.<br>vendar so vam fige in oljke požrle kobilice.<br>Toda vseeno se niste vrnili k meni. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:10,Amos:"‚Med vas sem poslal kugo. kakršna je udarila Egipt.<br>Vaše mladeniče sem pobil z mečem in vaše konje sem zaplenil.<br>Nosnice sem vam napolnil s smradom trupel. ki so ležala v vaših taborih.<br>Toda niste se vrnili k meni. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:11,Amos:"‚Vašo deželo sem opustošil.<br>tako kot sem opustošil Sodomo in Gomoro.<br>Bili ste kakor poleno. potegnjeno iz ognja.<br>Toda niste se vrnili k meni. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:12,Amos:"‚Zato bom spet ukrepal proti vam. o Izraelci.<br>Ker bom spet ukrepal proti vam. o Izraelci.<br>se pripravite na srečanje z menoj. s svojim Bogom.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:4,V:13,Amos:"On je oblikoval gore in ustvaril veter.<br>on človeku razkriva svoje misli.<br>on spreminja zoro v temo<br>in stopa po zemeljskih vrhovih<br>– njegovo ime je Jehova. Bog nad vojskami.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:5,V:0,Amos:"Amos 5. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:5,V:1,Amos:"»O izraelsko ljudstvo. poslušaj žalostinko. ki jo govorim o tebi:",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:2,Amos:"‚Devica Izrael je padla na svoji zemlji.<br>ne more več vstati.<br>Vsi so jo zapustili.<br>nikogar ni. ki bi jo dvignil.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:3,Amos:"Vrhovni gospod Jehova govori takole:<br>‚To čaka izraelsko ljudstvo: mestu. ki bo šlo v boj s 1000 vojaki. bo ostalo 100 vojakov<br>in mestu. ki bo šlo v boj s 100 vojaki. bo ostalo 10 vojakov.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:4,Amos:"Jehova izraelskemu ljudstvu sporoča:<br>‚Vrnite se k meni in boste živeli.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:5,Amos:"Ne zahajajte v Betel.<br>ne hodite v Gilgal in ne odhajajte čez mejo v Beeršebo.<br>saj bo Gilgal odpeljan v pregnanstvo<br>in Betel bo opustošen.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:6,Amos:"O Jožefovi potomci. vrnite se k Jehovu in boste živeli.<br>da vas ne bo pogoltnil kakor ogenj.<br>da ne bo pogoltnil Betela – nikogar ne bo. ki bi ta ogenj pogasil.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:7,Amos:"Pravico spreminjate v pelin.<br>pravičnost teptate pod nogami.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:8,Amos:"On je tisti. ki je ustvaril ozvezdji Kima in Kesil.<br>tisti. ki spreminja gosto temo v jutranjo svetlobo.<br>tisti. ki spreminja dan v temno noč.<br>tisti. ki zbira vodo iz morja.<br>da bi jo izlil po površju zemlje<br>– Jehova je njegovo ime.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:9,Amos:"On bo povzročil. da bo močne v hipu doletelo uničenje<br>– utrdbe bodo uničene.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:10,Amos:"Vi sovražite sodnike. ki grajajo pri mestnih vratih.<br>in čutite odpor do tistih. ki govorijo resnico.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:11,Amos:"Ker od revnih terjate najemnino za zemljo<br>in od njih jemljete dajatev v žitu.<br>ne boste živeli v svojih hišah iz obdelanega kamna<br>niti pili vina iz svojih izvrstnih vinogradov.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:12,Amos:"‚Jaz namreč vem. kako zelo se upirate<br>in kako hudo grešite<br>– grdo ravnate s pravičnimi.<br>sprejemate podkupnine<br>in pri mestnih vratih revežem kratite pravice.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:13,Amos:"Tisti čas bo čas stiske.<br>zato bodo preudarni takrat raje molčali.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:14,Amos:"Ne delajte tega. kar je slabo. ampak to. kar je dobro.<br>da boste živeli.<br>Če boste tako delali. bo Jehova. Bog nad vojskami. res z vami.<br>kot že zdaj trdite. da je.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:15,Amos:"Sovražite slabo in ljubite dobro.<br>pustite. da pri mestnih vratih zmaga pravica.<br>Morda se bo Jehova. Bog nad vojskami.<br>usmilil preživelih Jožefovih potomcev.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:16,Amos:"Jehova. Bog nad vojskami. zato govori.<br>Jehova govori takole: ‚Po vseh trgih bodo vpili od žalosti<br>in po vseh ulicah bodo tarnali: »Gorje nam! Gorje!«<br>K žalovanju bodo povabili kmetovalce<br>in k vpitju poklicne žalovalce.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:17,Amos:"‚Po vseh vinogradih se bo žalovalo.<br>ker bom šel skozi vašo deželo. govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:18,Amos:"‚Gorje tistim. ki hrepenijo po Jehovovem dnevu!<br>Kaj vam bo prinesel Jehovov dan?<br>Takrat bo tema. ne pa svetloba.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:19,Amos:"Tisti dan bo tako. kot če človek beži pred levom. pa ga sreča medved.<br>Tako bo. kot če človek pride domov in se z roko nasloni na steno. pa ga piči kača.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:20,Amos:"Jehovov dan bo tema. ne pa luč.<br>mrak. ne pa svetloba.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:21,Amos:"Sovražim vaše praznike. preziram jih.<br>ne maram vonja. ki se širi na vaših slovesnih zborih.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:22,Amos:"Tudi če mi prinašate cele žgalne daritve ali druge daritve.<br>mi te ne ugajajo.<br>Rejenih živali. ki jih darujete kot mirovne daritve. ne sprejemam.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:23,Amos:"Prihranite mi zven vaših pesmi.<br>naj ne slišim zvoka vaših citer.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:24,Amos:"Naj raje pravica teče kakor potoki v vaši deželi<br>in pravičnost kakor reka. ki nikoli ne presahne.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:25,Amos:"O Izraelci. ali ste mi v tistih 40 letih v pustinji<br>kdaj prinašali žrtve in daritve?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:26,Amos:"Zdaj pa boste morali odnesti svojega kralja Sikuta in Kijuna.<br>ki sta podobi zvezde. ki je vaš bog. podobi. ki ste ju izdelali.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:5,V:27,Amos:"Poslal vas bom v pregnanstvo daleč naprej od Damaska. govori on. ki mu je ime Jehova. Bog nad vojskami.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:6,V:0,Amos:"Amos 6. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:6,V:1,Amos:"»Gorje samozavestnim na Sionu.<br>tistim. ki se počutijo varne na samarijski gori.<br>uglednim možem najpomembnejšega naroda.<br>tistim. na katere se obrača izraelsko ljudstvo.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:2,Amos:"Najprej pojdite v Kalne.<br>nato se odpravite v Veliki Hamat<br>in nazadnje se spustite v filistejsko mesto Gat.<br>Poglejte. ali so oni boljši od teh kraljestev.<br>ali je njihovo ozemlje večje od vašega.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:3,Amos:"Odganjate misel na dan nesreče<br>in utirate pot vladavini nasilja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:4,Amos:"Ležite na slonokoščenih posteljah in se pretegujete na počivalnikih.<br>jeste najboljše ovne in rejena teleta.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:5,Amos:"ob zvokih harfe si izmišljate pesmi.<br>kot David izumljate glasbila.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:6,Amos:"pijete vino v velikih količinah<br>in se mažete z najboljšimi olji.<br>Toda propad Jožefovega ljudstva vas nič ne skrbi.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:7,Amos:"Zato boste med prvimi odšli v pregnanstvo.<br>vaše bučno veseljačenje in poležavanje se bo končalo.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:8,Amos:"Jehova. Bog nad vojskami. govori: ‚Jaz. Vrhovni gospod Jehova. sem prisegel pri samem sebi:<br>»Jakobova prevzetnost se mi gnusi<br>in njegove utrjene stolpe sovražim.<br>Mesto in vse v njem bom izročil njegovim sovražnikom.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:9,Amos:"Tudi če bo v eni hiši ostalo deset ljudi. ne bodo ubežali smrti.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:10,Amos:"Sorodnik bo prišel. jih drugega za drugim odnesel ven in sežgal. Tako bo njihova trupla spravil iz hiše. Tistega. ki ga bo našel v sobi globoko v notranjosti hiše. bo vprašal: ‚Ali je še kdo pri tebi? On bo odgovoril: ‚Nihče! Sorodnik mu bo nato rekel: ‚Bodi tiho! Zdaj je prepozno. da bi klicali ime Jehova.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:11,Amos:"Jaz. Jehova. sem namreč izdal zapoved.<br>zato se bo velika hiša podrla<br>in mala hiša bo razpadla.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:12,Amos:"Ali konji tečejo po skalovju?<br>Ali kdo tam orje z govedom?<br>Vi pa ste pravico spremenili v strupeno zelišče<br>in sad pravičnosti v pelin.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:13,Amos:"Veselite se nečesa. kar nima vrednosti.<br>in govorite: »Ali se nismo z lastno močjo povzpeli?«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:6,V:14,Amos:"O izraelsko ljudstvo. nad vas bom poslal narod.<br>ki vas bo zatiral od Lebo Hamata do arabske doline. govori Jehova. Bog nad vojskami.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:7,V:0,Amos:"Amos 7. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:7,V:1,Amos:"Vrhovni gospod Jehova mi je dal videnje. Videl sem. da je poslal roj kobilic v obdobju. ko je začelo rasti to. kar je bilo posejano med pozno setvijo. To je bilo posejano za tem. ko je bila pokošena trava za kralja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:2,Amos:"Ko so kobilice požrle vse rastlinje v deželi. sem rekel: »Vrhovni gospod Jehova. prosim. odpusti svojemu ljudstvu! Kako bo Jakobovo ljudstvo preživelo. ko pa je slabotno?«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:3,Amos:"Zato si je Jehova premislil. »To se ne bo zgodilo.« je rekel Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:4,Amos:"Nato mi je Vrhovni gospod Jehova spet dal videnje. Videl sem. da je Vrhovni gospod Jehova odredil. naj bo dežela kaznovana z ognjem. Ogenj je osušil prostrano in globoko morje ter pogoltnil del dežele.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:5,Amos:"Jaz pa sem rekel: »Vrhovni gospod Jehova. prosim. ustavi to! Kako bo Jakobovo ljudstvo preživelo. ko pa je slabotno?«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:6,Amos:"Zato si je Jehova premislil. »Tudi to se ne bo zgodilo.« je rekel Vrhovni gospod Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:7,Amos:"Nato mi je dal še eno videnje. Videl sem zid. ki je bil zgrajen s pomočjo svinčnice in je bil zato raven. Na njem je stal Jehova in v roki je držal svinčnico.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:8,Amos:"Zatem me je Jehova vprašal: »Kaj vidiš. Amos?« Odgovoril sem: »Svinčnico.« Jehova pa je rekel: »S svinčnico bom preveril svoje ljudstvo. Izraelce. Ne bom jim več oproščal.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:9,Amos:"Višave Izakovih potomcev bodo opustošene in izraelska svetišča bodo uničena. Nad Jeroboamovo rodbino bom poslal meč.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:10,Amos:"Amazija. ki je bil duhovnik v Betelu. je Izraelovemu kralju Jeroboamu sporočil: »Amos je tukaj v Izraelu skoval zaroto proti tebi. Ljudje ne morejo več prenašati njegovega govorjenja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:11,Amos:"Rekel je namreč: ‚Jeroboam bo ubit z mečem in izraelsko ljudstvo bo iz svoje dežele odpeljano v pregnanstvo.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:12,Amos:"Amazija je nato Amosu rekel: »Videc. poberi se! Pojdi na Judovo! Tam si služi kruh in tam prerokuj!",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:13,Amos:"V Betelu pa ne smeš več prerokovati. saj je ta kraj kraljevo svetišče in tempelj celotnega kraljestva.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:14,Amos:"Amos mu je odgovoril: »Jaz nisem bil prerok niti sin preroka. Bil sem pastir in sem skrbel za sikomore.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:15,Amos:"Toda Jehova me je odpeljal od črede. za katero sem skrbel. Jehova mi je rekel: ‚Pojdi. prerokuj mojemu ljudstvu Izraelu!",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:16,Amos:"Zdaj pa poslušaj. kaj sporoča Jehova: ‚Ti govoriš: »Ne prerokuj proti Izraelu in ne oznanjaj obsodbe proti Izakovim potomcem.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:7,V:17,Amos:"Zato Jehova govori takole: »Tvoja žena bo v mestu postala prostitutka. Tvoji sinovi in hčere bodo ubiti z mečem. Tvoja posest se bo razdelila z merilno vrvjo. Umrl boš v tuji deželi in Izraelci bodo iz svoje dežele odpeljani v pregnanstvo.««",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:8,V:0,Amos:"Amos 8. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:8,V:1,Amos:"Vrhovni gospod Jehova mi je dal videnje. Videl sem košaro poletnega sadja.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:2,Amos:"Vprašal me je: »Kaj vidiš. Amos?« Odgovoril sem: »Košaro poletnega sadja.« Jehova mi je rekel: »Mojemu ljudstvu Izraelu se bliža konec. Ne bom mu več oproščal.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:3,Amos:"‚Tisti dan se bo petje v templju spremenilo v bridko jokanje. govorim jaz. Vrhovni gospod Jehova. ‚Veliko bo trupel. povsod bodo ležala. Tišina!",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:4,Amos:"Poslušajte to. vi. ki teptate revne<br>in zatirate krotke v deželi.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:5,Amos:"Poslušajte. vi. ki govorite: ‚Kdaj bo minil mlaj. da bomo lahko prodajali svoje žito?<br>Kdaj se bo končal šabat. da bomo lahko ponujali žito za prodajo.<br>da bomo lahko zmanjšali mero.<br>zvišali ceno<br>in sleparili pri tehtanju.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:6,Amos:"da bomo lahko uboge kupovali za srebro.<br>revne za ceno enega para sandal<br>in prodajali ničvredno žito?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:7,Amos:"Jaz. Jehova. Jakobov ponos. prisegam pri samem sebi:<br>‚Nikoli ne bom pozabil niti enega od njihovih del.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:8,Amos:"Zaradi tega se bo dežela stresla<br>in vsi njeni prebivalci bodo žalovali.<br>Vsa dežela se bo dvignila kakor Nil.<br>narasla in upadla bo kakor Nil v Egiptu.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:9,Amos:"‚Tisti dan. govorim jaz. Vrhovni gospod Jehova.<br>‚bom povzročil. da bo sonce zašlo opoldne<br>in da bo deželo sredi belega dne prekrila tema.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:10,Amos:"Vaše praznike bom spremenil v žalovanje<br>in vse vaše pesmi v žalostinke.<br>Vsem bom okoli boka nadel raševino in obril glavo.<br>Tisti dan bo tako. kot da bi žalovali za edincem.<br>Kako žalosten bo konec tistega dne!",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:11,Amos:"‚Prihajajo dnevi. govorim jaz. Vrhovni gospod Jehova.<br>‚ko bom v deželo poslal lakoto.<br>toda ljudje ne bodo hrepeneli po kruhu in vodi.<br>ampak po mojih. Jehovovih besedah.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:12,Amos:"Opotekali se bodo od enega morja do drugega<br>in od severa do vzhoda.<br>Hodili bodo naokrog in iskali mojo. Jehovovo besedo. vendar je ne bodo našli.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:13,Amos:"Tisti dan bodo lepe mladenke<br>in mladeniči omedlevali od žeje.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:8,V:14,Amos:"To so tisti. ki prisegajo pri samarijskih krivih bogovih<br>in govorijo »O Dan. prisegam pri tvojem živem bogu!«<br>in »Prisegam pri poti v Beeršebo!«.<br>Padli bodo in ne bodo več vstali.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:9,V:0,Amos:"Amos 9. poglavje",K:"",NZ:""},
+{Knjiga:"Amos",Kr:"Am",P:9,V:1,Amos:"Videl sem. da je Jehova stal nad oltarjem. Rekel je: »Udari glavo stebra in pragovi se bodo stresli. Vsem stebrom odsekaj glavo. Jaz pa bom z mečem pobil vse preostale ljudi. Nikomur. ki se bo pognal v beg. ne bo uspelo zbežati in nihče. ki bo skušal uiti. ne bo ušel.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:2,Amos:"Če se bodo zakopali v grob.<br>jih bo moja roka izvlekla od tam.<br>in če se bodo povzpeli v nebo.<br>jih bom od tam potegnil dol.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:3,Amos:"Če se bodo skrili na vrh Karmela.<br>jih bom tam poiskal in odpeljal.<br>in če se bodo pred menoj skrili na dno morja.<br>bom tam ukazal kači. naj jih piči.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:4,Amos:"Če jih bodo njihovi sovražniki odpeljali v ujetništvo.<br>bom tam ukazal meču. naj jih pobije.<br>Poskrbel bom. da jih bo doletelo hudo. ne pa dobro.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:5,Amos:"Ko se jaz. Vrhovni gospod. Jehova nad vojskami. dotaknem dežele.<br>se začne topiti in vsi njeni prebivalci žalujejo.<br>Vsa dežela se dviguje kakor Nil<br>in upada kakor Nil v Egiptu.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:6,Amos:"‚Jaz sem tisti. ki gradi stopnice v nebesa<br>in nad zemljo utrjuje nebesni obok.<br>jaz sem tisti. ki zbira vodo iz morja.<br>da bi jo izlil po površju zemlje<br>– Jehova je moje ime.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:7,Amos:"‚Izraelci. ali niste zame kot Kušijevci? govorim jaz. Jehova.<br>‚Ali nisem Izraelcev odpeljal iz Egipta.<br>Filistejcev s Krete in Sircev iz Kira?",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:8,Amos:"‚Jaz. Vrhovni gospod Jehova. upiram svoj pogled v grešno kraljestvo<br>in jaz ga bom izbrisal s površja zemlje.<br>Vseeno pa Jakobovih potomcev ne bom povsem iztrebil. govorim jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:9,Amos:"‚Jaz namreč zapovedujem:<br>izraelsko ljudstvo naj bo raztreseno med vse narode.<br>Pretresel ga bom tako. kot se žito preseje s sitom.<br>da niti en kamenček ne pade na tla.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:10,Amos:"Vsi grešniki v mojem ljudstvu bodo pobiti z mečem.<br>pobiti bodo vsi. ki govorijo: »Nesreča se nam ne bo približala. ne bo nas dosegla.«",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:11,Amos:"‚Tisti dan bom na novo zgradil podrto Davidovo hišo<br>in zadelal luknje v njej.<br>Pozidal bom njene ruševine<br>in jo obnovil. da bo takšna. kot je bila v davnih časih.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:12,Amos:"To bom naredil zato. da bo moje ljudstvo dobilo v last preostale Edomce<br>in vse narode. ki nosijo moje ime. govorim jaz. Jehova. ki delam vse to.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:13,Amos:"‚Prihajajo dnevi. govorim jaz. Jehova.<br>‚ko bo orač dohitel žanjca<br>in tlačilec grozdja sejalca.<br>Novo vino bo kapljalo z gora.<br>teklo bo z vseh hribov.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:14,Amos:"Izraelce. svoje ljudstvo. bom pripeljal iz ujetništva.<br>Obnovili bodo opustošena mesta in se v njih naselili.<br>zasadili bodo vinograde in pili pridelano vino.<br>uredili si bodo vrtove in jedli. kar bo zraslo na njih.",K:"",NZ:"X"},
+{Knjiga:"Amos",Kr:"Am",P:9,V:15,Amos:"‚Zasadil jih bom v njihovo zemljo<br>in nikoli več ne bodo izruvani iz zemlje. ki sem jim jo dal.<br>govorim jaz. Jehova. tvoj Bog.«",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

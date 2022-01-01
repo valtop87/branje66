@@ -1,203 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Zefanija</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Zefanija 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >To je sporočilo,  ki ga je med vladanjem Judovega kralja Josija,  Amonovega sina,  od Jehova dobil Zefanija,  ki je bil Kušijev sin,  Gedalijev vnuk,  Amarjajev pravnuk in Ezekijev prapravnuk:</TD>
-</TR>
-<TR>
-<TD >»S površja zemlje bom pometel čisto vse, « govori Jehova.</TD>
-</TR>
-<TR>
-<TD >»Odstranil bom ljudi in živali.<br>Odstranil bom ptice in ribe, <br>kamne spotike s hudobneži vred.<br>Iztrebil bom ljudi s površja zemlje, « govori Jehova.</TD>
-</TR>
-<TR>
-<TD >»Ukrepal bom proti prebivalcem Judovega<br>in proti vsem prebivalcem Jeruzalema.<br>Od tukaj bom odstranil vse sledi čaščenja Baala, <br>imena duhovnikov tujih bogov z drugimi malikovalskimi duhovniki vred.</TD>
-</TR>
-<TR>
-<TD >Odstranil bom ljudi,  ki se na strehah hiš priklanjajo vojski nebesnih teles, <br>ljudi,  ki se klanjajo meni,  Jehovu,  in mi prisegajo zvestobo, <br>obenem pa prisegajo zvestobo Malkamu, </TD>
-</TR>
-<TR>
-<TD >ljudi,  ki mene,  Jehova,  zapuščajo, <br>ki nočejo priti k meni,  Jehovu,  in se za nasvete ne obračajo name.«</TD>
-</TR>
-<TR>
-<TD >Molčite pred Vrhovnim gospodom Jehovom,  saj je Jehovov dan blizu.<br>Jehova je pripravil žrtvovanje,  izbral je svoje povabljence.</TD>
-</TR>
-<TR>
-<TD >»Ko bo prišel dan žrtvovanja,  bom jaz,  Jehova,  poklical na odgovornost vodilne može, <br>kraljeve sinove in vse,  ki se oblačijo kakor tujci.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bom poklical na odgovornost vse,  ki se vzpenjajo na oder, <br>tiste,  ki hišo svojega gospodarja polnijo z nasiljem in prevaro.</TD>
-</TR>
-<TR>
-<TD >Tisti dan, « govori Jehova, <br>»se bo slišalo vpitje od Ribjih vrat, <br>žalovanje iz novega dela mesta<br>in glasen trušč s hribov.</TD>
-</TR>
-<TR>
-<TD >Prebivalci Makteša,  žalujte!<br>Pobiti so bili namreč vsi trgovci, <br>uničeni so bili vsi,  ki tehtajo srebro.</TD>
-</TR>
-<TR>
-<TD >Takrat bom Jeruzalem skrbno preiskal s svetilkami, <br>da bi našel in poklical na odgovornost tiste,  ki so zadovoljni sami s seboj in v svojem srcu govorijo:<br>‚Jehova ne bo naredil nič dobrega in nič slabega.</TD>
-</TR>
-<TR>
-<TD >Njihovo bogastvo bo zaplenjeno in njihove hiše bodo opustošene.<br>Gradili bodo hiše,  vendar v njih ne bodo živeli, <br>zasajali bodo vinograde,  vendar vina ne bodo pili.</TD>
-</TR>
-<TR>
-<TD >Blizu je Jehovov veliki dan!<br>Blizu je in se hitro približuje!<br>Hrup Jehovovega dneva bo grozljiv.<br>Takrat bodo bojevniki vpili.</TD>
-</TR>
-<TR>
-<TD >To bo dan besa, <br>dan stiske in tesnobe, <br>dan nevihte in pustošenja, <br>dan teme in mraka, <br>dan oblakov in goste teme, </TD>
-</TR>
-<TR>
-<TD >dan,  ko bo slišati zvok roga in bojni krik za napad<br>na utrjena mesta in na visoke stolpe na vogalih obzidja.</TD>
-</TR>
-<TR>
-<TD >Jaz,  Jehova,  bom ljudi spravil v stisko, <br>tako da bodo hodili naokrog kakor slepi, <br>ker so grešili proti meni.<br>Njihova kri se bo razlivala,  kakor se razsipava prah, <br>in njihovo črevesje se bo razsulo,  kakor se raztrese gnoj.</TD>
-</TR>
-<TR>
-<TD >Ob dnevu,  ko bom jaz,  Jehova,  pokazal svoj bes,  jih ne bo moglo rešiti niti njihovo srebro niti njihovo zlato.<br>Ogenj moje gorečnosti bo namreč pogoltnil vso zemljo, <br>ko bom s strašnim pobojem iztrebil vse njene prebivalce.«</TD>
-</TR>
-<TR>
-<TD >Zefanija 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Zberi se,  zberi se,  narod, <br>ki ne poznaš nobenega sramu.</TD>
-</TR>
-<TR>
-<TD >Preden se bo izvršila odrejena sodba, <br>preden bo tisti dan odletel kakor pleve v vetru, <br>preden boste občutili Jehovovo gorečo jezo, <br>preden vas bo doletel dan Jehovove jeze, </TD>
-</TR>
-<TR>
-<TD >pridite k Jehovu,  vsi krotki na zemlji, <br>ki upoštevate njegove pravične odloke.<br>Prizadevajte si delati to,  kar je prav,  in biti krotki.<br>Verjetno boste našli zavetje ob dnevu Jehovove jeze.</TD>
-</TR>
-<TR>
-<TD >Gaza bo namreč zapuščena, <br>Aškelon bo opustošen.<br>Prebivalci Ašdoda bodo pregnani sredi belega dne, <br>Ekron bo popolnoma uničen.</TD>
-</TR>
-<TR>
-<TD >Gorje vam,  Keretejci,  ki živite ob morju!<br>Jehova vas je obsodil:<br>»O Kanaan,  dežela Filistejcev,  uničil te bom, <br>da boš ostal brez prebivalcev!«</TD>
-</TR>
-<TR>
-<TD >Morska obala se bo spremenila v pašnike<br>z vodnjaki za pastirje in s kamnitimi ogradami za ovce.</TD>
-</TR>
-<TR>
-<TD >Ta pokrajina bo za preostale od Judovega ljudstva,  ki so kakor ovce, <br>in tam se bodo pasli.<br>V hišah v Aškelonu bodo zvečer počivali, <br>ker bo njihov Bog Jehova poskrbel zanje<br>in jih pripeljal iz ujetništva.</TD>
-</TR>
-<TR>
-<TD >»Slišal sem,  kako Moabci sramotijo moje ljudstvo in kako o njem Amonci žaljivo govorijo, <br>posmehujejo se mu in v svoji ošabnosti grozijo,  da bodo zavzeli njegovo ozemlje.</TD>
-</TR>
-<TR>
-<TD >Zato prisegam pri samem sebi, « govori Jehova nad vojskami,  Izraelov Bog, <br>»da bo dežela Moabcev postala kakor Sodoma<br>in dežela Amoncev kakor Gomora, <br>kraj,  preraščen s koprivami,  solna jama,  puščava za večne čase.<br>Preostali iz mojega ljudstva jim bodo pobrali imetje, <br>ostanek mojega naroda bo zavzel njihovo deželo.«</TD>
-</TR>
-<TR>
-<TD >To jih bo doletelo zaradi njihove ošabnosti, <br>saj so zasmehovali ljudstvo Jehova nad vojskami in se šopirili.</TD>
-</TR>
-<TR>
-<TD >Jehova jih bo navdal s strahospoštovanjem, <br>saj bo uničil vse bogove na zemlji.<br>Vsi otoški narodi se mu bodo klanjali, <br>vsak s svojega kraja.</TD>
-</TR>
-<TR>
-<TD >»Etiopijci,  tudi vas bo pokosil moj meč.«</TD>
-</TR>
-<TR>
-<TD >Bog bo iztegnil svojo roko proti severu in uničil Asirijo, <br>Ninive bo spremenil v pustinjo,  suho kakor puščava.</TD>
-</TR>
-<TR>
-<TD >Sredi mesta bodo počivale črede,  vsakovrstne divje živali.<br>Med glavami njegovih porušenih stebrov bosta prenočevala pelikan in ježevec.<br>Z okna se bo slišal otožen glas.<br>Prag bo zasut z ruševinami.<br>Stenski opaž iz cedrovine bo izpostavljen soncu in dežju.</TD>
-</TR>
-<TR>
-<TD >To je tisto ošabno mesto,  ki je živelo brez strahu<br>in je v svojem srcu govorilo: »Jaz sem eno in edino,  ni mi enakega.«<br>Spremenilo se je v res grozljiv prizor, <br>v počivališče divjih živali!<br>Vsak,  ki bo šel mimo,  bo zažvižgal in zažugal s pestjo.</TD>
-</TR>
-<TR>
-<TD >Zefanija 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Gorje upornemu mestu,  ki je omadeževano in zatira svoje prebivalce!</TD>
-</TR>
-<TR>
-<TD >Noče poslušati,  ne pusti se poučiti.<br>Jehovu ne zaupa,  svojemu Bogu se ne bliža.</TD>
-</TR>
-<TR>
-<TD >Njegovi vodilni možje so kakor rjoveči levi.<br>Njegovi sodniki so kakor volkovi,  ki ponoči lovijo<br>in do jutra ne pustijo niti ene kosti.</TD>
-</TR>
-<TR>
-<TD >Njegovi preroki so predrzni in zahrbtni.<br>Njegovi duhovniki skrunijo svete stvari, <br>kršijo zakone.</TD>
-</TR>
-<TR>
-<TD >Jehova prebiva v mestu in je pravičen,  nič napačnega ne dela.<br>Jutro za jutrom oznanja svojo pravico, <br>njegova pravica tako kot zora nikoli ne izostane.<br>Toda nepravičnež ne pozna sramu.</TD>
-</TR>
-<TR>
-<TD >»Uničil sem narode,  njihovi stolpi na vogalih obzidja so opustošeni.<br>Opustošil sem njihove ulice,  tako da po njih nihče več ne hodi.<br>Njihova mesta so razrušena in prazna,  nihče ne živi tam.</TD>
-</TR>
-<TR>
-<TD >Mestu sem rekel ‚O,  da bi imelo strahospoštovanje do mene in bi se pustilo poučiti, <br>zato da ga ne bi poklical na odgovornost za vse njegove grehe<br>in da ne bi bilo uničeno.<br>Toda njegovi prebivalci so še bolj zagnano počeli pokvarjene stvari.</TD>
-</TR>
-<TR>
-<TD >‚Zato me potrpežljivo čakajte,  govorim jaz,  Jehova, <br>‚do dneva,  ko bom prišel po plen.<br>Sklenil sem zbrati narode in kraljestva, <br>zato da na njih izlijem svoj bes,  vso svojo gorečo jezo.<br>Ogenj moje gorečnosti bo namreč pogoltnil vso zemljo.</TD>
-</TR>
-<TR>
-<TD >Takrat bom ljudstva naučil čist jezik, <br>da bodo vsi klicali moje ime Jehova<br>in mi služili z ramo ob rami.</TD>
-</TR>
-<TR>
-<TD >Moje razkropljeno ljudstvo,  ki se s prošnjami obrača name, <br>mi bo z območja etiopskih rek prineslo darilo.</TD>
-</TR>
-<TR>
-<TD >Čeprav si se mi upirala, <br>tisti dan ne boš osramočena, <br>saj bom takrat iz tvoje sredine odstranil ošabne bahače.<br>Nikoli več se ne boš ošabno povzdigovala na moji sveti gori.</TD>
-</TR>
-<TR>
-<TD >Ponižnim in skromnim ljudem bom pustil ostati v tebi<br>in zatekali se bodo k meni,  k Jehovu.</TD>
-</TR>
-<TR>
-<TD >Preživeli Izraelci ne bodo ravnali nepravično, <br>ne bodo lagali niti ne bodo s svojim jezikom varali.<br>Kakor ovce bodo počivali in jedli in nihče jim ne bo vlival strahu.«</TD>
-</TR>
-<TR>
-<TD >O sionska hči,  vriskaj od veselja!<br>O izraelsko ljudstvo,  zmagoslavno vzklikaj!<br>O jeruzalemska hči,  veseli se,  veseli se iz vsega svojega srca!</TD>
-</TR>
-<TR>
-<TD >Jehova te je rešil kazni,  ki si jo prestajala.<br>Odgnal je tvojega sovražnika.<br>Izraelov kralj Jehova je s teboj.<br>Ne boš se več bala nesreče.</TD>
-</TR>
-<TR>
-<TD >Tisti dan bo Jeruzalemu rečeno naslednje:<br>»Ne boj se,  o Sion.<br>Naj ti ne upade pogum.</TD>
-</TR>
-<TR>
-<TD >Jaz,  tvoj Bog Jehova,  sem s teboj.<br>Jaz sem močan,  jaz te bom rešil.<br>Zaradi tebe se bom veselil,  prekipeval bom od veselja.<br>Ko ti bom izkazal ljubezen,  bom začutil mir.<br>Zaradi tebe se bom veselil,  vriskal bom od veselja.</TD>
-</TR>
-<TR>
-<TD >Zbral bom tiste,  ki se jim toži po tvojih praznikih.<br>Bili so ločeni od tebe,  v ujetništvu,  in osramočeni.</TD>
-</TR>
-<TR>
-<TD >V tistem času bom ukrepal proti vsem tvojim zatiralcem.<br>Rešil bom šepajoče<br>in zbral razkropljene.<br>Poskrbel bom,  da jih bodo v vseh deželah, <br>v katerih so jih prej sramotili,  potem hvalili in slavili.</TD>
-</TR>
-<TR>
-<TD >V tistem času vas bom pripeljal iz ujetništva, <br>takrat vas bom zbral skupaj.<br>Ko vas bom pripeljal iz ujetništva – to boste videli na lastne oči –<br>bom poskrbel,  da se vas bo slavilo in hvalilo med vsemi ljudstvi na zemlji, « govori Jehova.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Zefanija','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Zefanija:"Zefanija 1. poglavje",K:"",NZ:""},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:1,Zefanija:"To je sporočilo. ki ga je med vladanjem Judovega kralja Josija. Amonovega sina. od Jehova dobil Zefanija. ki je bil Kušijev sin. Gedalijev vnuk. Amarjajev pravnuk in Ezekijev prapravnuk:",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:2,Zefanija:"»S površja zemlje bom pometel čisto vse.« govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:3,Zefanija:"»Odstranil bom ljudi in živali.<br>Odstranil bom ptice in ribe.<br>kamne spotike s hudobneži vred.<br>Iztrebil bom ljudi s površja zemlje.« govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:4,Zefanija:"»Ukrepal bom proti prebivalcem Judovega<br>in proti vsem prebivalcem Jeruzalema.<br>Od tukaj bom odstranil vse sledi čaščenja Baala.<br>imena duhovnikov tujih bogov z drugimi malikovalskimi duhovniki vred.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:5,Zefanija:"Odstranil bom ljudi. ki se na strehah hiš priklanjajo vojski nebesnih teles.<br>ljudi. ki se klanjajo meni. Jehovu. in mi prisegajo zvestobo.<br>obenem pa prisegajo zvestobo Malkamu.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:6,Zefanija:"ljudi. ki mene. Jehova. zapuščajo.<br>ki nočejo priti k meni. Jehovu. in se za nasvete ne obračajo name.«",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:7,Zefanija:"Molčite pred Vrhovnim gospodom Jehovom. saj je Jehovov dan blizu.<br>Jehova je pripravil žrtvovanje. izbral je svoje povabljence.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:8,Zefanija:"»Ko bo prišel dan žrtvovanja. bom jaz. Jehova. poklical na odgovornost vodilne može.<br>kraljeve sinove in vse. ki se oblačijo kakor tujci.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:9,Zefanija:"Tisti dan bom poklical na odgovornost vse. ki se vzpenjajo na oder.<br>tiste. ki hišo svojega gospodarja polnijo z nasiljem in prevaro.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:10,Zefanija:"Tisti dan.« govori Jehova.<br>»se bo slišalo vpitje od Ribjih vrat.<br>žalovanje iz novega dela mesta<br>in glasen trušč s hribov.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:11,Zefanija:"Prebivalci Makteša. žalujte!<br>Pobiti so bili namreč vsi trgovci.<br>uničeni so bili vsi. ki tehtajo srebro.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:12,Zefanija:"Takrat bom Jeruzalem skrbno preiskal s svetilkami.<br>da bi našel in poklical na odgovornost tiste. ki so zadovoljni sami s seboj in v svojem srcu govorijo:<br>‚Jehova ne bo naredil nič dobrega in nič slabega.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:13,Zefanija:"Njihovo bogastvo bo zaplenjeno in njihove hiše bodo opustošene.<br>Gradili bodo hiše. vendar v njih ne bodo živeli.<br>zasajali bodo vinograde. vendar vina ne bodo pili.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:14,Zefanija:"Blizu je Jehovov veliki dan!<br>Blizu je in se hitro približuje!<br>Hrup Jehovovega dneva bo grozljiv.<br>Takrat bodo bojevniki vpili.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:15,Zefanija:"To bo dan besa.<br>dan stiske in tesnobe.<br>dan nevihte in pustošenja.<br>dan teme in mraka.<br>dan oblakov in goste teme.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:16,Zefanija:"dan. ko bo slišati zvok roga in bojni krik za napad<br>na utrjena mesta in na visoke stolpe na vogalih obzidja.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:17,Zefanija:"Jaz. Jehova. bom ljudi spravil v stisko.<br>tako da bodo hodili naokrog kakor slepi.<br>ker so grešili proti meni.<br>Njihova kri se bo razlivala. kakor se razsipava prah.<br>in njihovo črevesje se bo razsulo. kakor se raztrese gnoj.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:1,V:18,Zefanija:"Ob dnevu. ko bom jaz. Jehova. pokazal svoj bes. jih ne bo moglo rešiti niti njihovo srebro niti njihovo zlato.<br>Ogenj moje gorečnosti bo namreč pogoltnil vso zemljo.<br>ko bom s strašnim pobojem iztrebil vse njene prebivalce.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Zefanija:"Zefanija 2. poglavje",K:"",NZ:""},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:1,Zefanija:"Zberi se. zberi se. narod.<br>ki ne poznaš nobenega sramu.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:2,Zefanija:"Preden se bo izvršila odrejena sodba.<br>preden bo tisti dan odletel kakor pleve v vetru.<br>preden boste občutili Jehovovo gorečo jezo.<br>preden vas bo doletel dan Jehovove jeze.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:3,Zefanija:"pridite k Jehovu. vsi krotki na zemlji.<br>ki upoštevate njegove pravične odloke.<br>Prizadevajte si delati to. kar je prav. in biti krotki.<br>Verjetno boste našli zavetje ob dnevu Jehovove jeze.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:4,Zefanija:"Gaza bo namreč zapuščena.<br>Aškelon bo opustošen.<br>Prebivalci Ašdoda bodo pregnani sredi belega dne.<br>Ekron bo popolnoma uničen.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:5,Zefanija:"Gorje vam. Keretejci. ki živite ob morju!<br>Jehova vas je obsodil:<br>»O Kanaan. dežela Filistejcev. uničil te bom.<br>da boš ostal brez prebivalcev!«",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:6,Zefanija:"Morska obala se bo spremenila v pašnike<br>z vodnjaki za pastirje in s kamnitimi ogradami za ovce.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:7,Zefanija:"Ta pokrajina bo za preostale od Judovega ljudstva. ki so kakor ovce.<br>in tam se bodo pasli.<br>V hišah v Aškelonu bodo zvečer počivali.<br>ker bo njihov Bog Jehova poskrbel zanje<br>in jih pripeljal iz ujetništva.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:8,Zefanija:"»Slišal sem. kako Moabci sramotijo moje ljudstvo in kako o njem Amonci žaljivo govorijo.<br>posmehujejo se mu in v svoji ošabnosti grozijo. da bodo zavzeli njegovo ozemlje.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:9,Zefanija:"Zato prisegam pri samem sebi.« govori Jehova nad vojskami. Izraelov Bog.<br>»da bo dežela Moabcev postala kakor Sodoma<br>in dežela Amoncev kakor Gomora.<br>kraj. preraščen s koprivami. solna jama. puščava za večne čase.<br>Preostali iz mojega ljudstva jim bodo pobrali imetje.<br>ostanek mojega naroda bo zavzel njihovo deželo.«",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:10,Zefanija:"To jih bo doletelo zaradi njihove ošabnosti.<br>saj so zasmehovali ljudstvo Jehova nad vojskami in se šopirili.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:11,Zefanija:"Jehova jih bo navdal s strahospoštovanjem.<br>saj bo uničil vse bogove na zemlji.<br>Vsi otoški narodi se mu bodo klanjali.<br>vsak s svojega kraja.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:12,Zefanija:"»Etiopijci. tudi vas bo pokosil moj meč.«",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:13,Zefanija:"Bog bo iztegnil svojo roko proti severu in uničil Asirijo.<br>Ninive bo spremenil v pustinjo. suho kakor puščava.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:14,Zefanija:"Sredi mesta bodo počivale črede. vsakovrstne divje živali.<br>Med glavami njegovih porušenih stebrov bosta prenočevala pelikan in ježevec.<br>Z okna se bo slišal otožen glas.<br>Prag bo zasut z ruševinami.<br>Stenski opaž iz cedrovine bo izpostavljen soncu in dežju.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:2,V:15,Zefanija:"To je tisto ošabno mesto. ki je živelo brez strahu<br>in je v svojem srcu govorilo: »Jaz sem eno in edino. ni mi enakega.«<br>Spremenilo se je v res grozljiv prizor.<br>v počivališče divjih živali!<br>Vsak. ki bo šel mimo. bo zažvižgal in zažugal s pestjo.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Zefanija:"Zefanija 3. poglavje",K:"",NZ:""},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:1,Zefanija:"Gorje upornemu mestu. ki je omadeževano in zatira svoje prebivalce!",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:2,Zefanija:"Noče poslušati. ne pusti se poučiti.<br>Jehovu ne zaupa. svojemu Bogu se ne bliža.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:3,Zefanija:"Njegovi vodilni možje so kakor rjoveči levi.<br>Njegovi sodniki so kakor volkovi. ki ponoči lovijo<br>in do jutra ne pustijo niti ene kosti.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:4,Zefanija:"Njegovi preroki so predrzni in zahrbtni.<br>Njegovi duhovniki skrunijo svete stvari.<br>kršijo zakone.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:5,Zefanija:"Jehova prebiva v mestu in je pravičen. nič napačnega ne dela.<br>Jutro za jutrom oznanja svojo pravico.<br>njegova pravica tako kot zora nikoli ne izostane.<br>Toda nepravičnež ne pozna sramu.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:6,Zefanija:"»Uničil sem narode. njihovi stolpi na vogalih obzidja so opustošeni.<br>Opustošil sem njihove ulice. tako da po njih nihče več ne hodi.<br>Njihova mesta so razrušena in prazna. nihče ne živi tam.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:7,Zefanija:"Mestu sem rekel ‚O. da bi imelo strahospoštovanje do mene in bi se pustilo poučiti.<br>zato da ga ne bi poklical na odgovornost za vse njegove grehe<br>in da ne bi bilo uničeno.<br>Toda njegovi prebivalci so še bolj zagnano počeli pokvarjene stvari.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:8,Zefanija:"‚Zato me potrpežljivo čakajte. govorim jaz. Jehova.<br>‚do dneva. ko bom prišel po plen.<br>Sklenil sem zbrati narode in kraljestva.<br>zato da na njih izlijem svoj bes. vso svojo gorečo jezo.<br>Ogenj moje gorečnosti bo namreč pogoltnil vso zemljo.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:9,Zefanija:"Takrat bom ljudstva naučil čist jezik.<br>da bodo vsi klicali moje ime Jehova<br>in mi služili z ramo ob rami.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:10,Zefanija:"Moje razkropljeno ljudstvo. ki se s prošnjami obrača name.<br>mi bo z območja etiopskih rek prineslo darilo.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:11,Zefanija:"Čeprav si se mi upirala.<br>tisti dan ne boš osramočena.<br>saj bom takrat iz tvoje sredine odstranil ošabne bahače.<br>Nikoli več se ne boš ošabno povzdigovala na moji sveti gori.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:12,Zefanija:"Ponižnim in skromnim ljudem bom pustil ostati v tebi<br>in zatekali se bodo k meni. k Jehovu.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:13,Zefanija:"Preživeli Izraelci ne bodo ravnali nepravično.<br>ne bodo lagali niti ne bodo s svojim jezikom varali.<br>Kakor ovce bodo počivali in jedli in nihče jim ne bo vlival strahu.«",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:14,Zefanija:"O sionska hči. vriskaj od veselja!<br>O izraelsko ljudstvo. zmagoslavno vzklikaj!<br>O jeruzalemska hči. veseli se. veseli se iz vsega svojega srca!",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:15,Zefanija:"Jehova te je rešil kazni. ki si jo prestajala.<br>Odgnal je tvojega sovražnika.<br>Izraelov kralj Jehova je s teboj.<br>Ne boš se več bala nesreče.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:16,Zefanija:"Tisti dan bo Jeruzalemu rečeno naslednje:<br>»Ne boj se. o Sion.<br>Naj ti ne upade pogum.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:17,Zefanija:"Jaz. tvoj Bog Jehova. sem s teboj.<br>Jaz sem močan. jaz te bom rešil.<br>Zaradi tebe se bom veselil. prekipeval bom od veselja.<br>Ko ti bom izkazal ljubezen. bom začutil mir.<br>Zaradi tebe se bom veselil. vriskal bom od veselja.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:18,Zefanija:"Zbral bom tiste. ki se jim toži po tvojih praznikih.<br>Bili so ločeni od tebe. v ujetništvu. in osramočeni.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:19,Zefanija:"V tistem času bom ukrepal proti vsem tvojim zatiralcem.<br>Rešil bom šepajoče<br>in zbral razkropljene.<br>Poskrbel bom. da jih bodo v vseh deželah.<br>v katerih so jih prej sramotili. potem hvalili in slavili.",K:"",NZ:"X"},
+{Knjiga:"Zefanija",Kr:"Zef",P:3,V:20,Zefanija:"V tistem času vas bom pripeljal iz ujetništva.<br>takrat vas bom zbral skupaj.<br>Ko vas bom pripeljal iz ujetništva – to boste videli na lastne oči –<br>bom poskrbel. da se vas bo slavilo in hvalilo med vsemi ljudstvi na zemlji.« govori Jehova.",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

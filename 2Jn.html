@@ -1,77 +1,139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>2. Janezovo</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >2. Janezovo 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jaz,  starec,  pišem to pismo tebi,  izbrana gospa,  in tvojim otrokom,  ki jih imam resnično rad. Nimam pa jih rad samo jaz,  ampak tudi vsi,  ki so spoznali resnico.</TD>
-</TR>
-<TR>
-<TD >Radi vas imamo zaradi resnice,  ki je v našem srcu in ki bo večno ostala z nami.</TD>
-</TR>
-<TR>
-<TD >Bog,  nebeški Oče,  in njegov Sin,  Jezus Kristus,  nam bosta podarila nezasluženo dobroto,  usmiljenje in mir skupaj z resnico in ljubeznijo.</TD>
-</TR>
-<TR>
-<TD >Zelo sem vesel,  ker sem izvedel,  da nekateri od tvojih otrok hodijo po poti resnice,  tako kot nam je to zapovedal Oče.</TD>
-</TR>
-<TR>
-<TD >Zato ti zdaj pišem,  izbrana gospa,  in te prosim,  da se držiš zapovedi,  ki ni nova,  ampak jo imamo že od začetka: imejmo radi drug drugega.</TD>
-</TR>
-<TR>
-<TD >Ljubezen pomeni to,  da živimo po njegovih zapovedih. In kot ste slišali že na začetku,  vam je zapovedano,  da morate vedno izkazovati ljubezen.</TD>
-</TR>
-<TR>
-<TD >Na svetu se je namreč pojavilo že mnogo sleparjev,  ki ne priznavajo,  da je Jezus Kristus prišel kot človek. Ti so sleparji in antikristi.</TD>
-</TR>
-<TR>
-<TD >Pazite,  da ne boste izgubili tega,  za kar smo se trudili,  ampak da boste prejeli polno nagrado.</TD>
-</TR>
-<TR>
-<TD >Kdor ne ravna po Kristusovem nauku in ne uči skladno z njim,  nima Božjega odobravanja. Kdor pa ravna po tem nauku,  ima Očetovo in Sinovo odobravanje.</TD>
-</TR>
-<TR>
-<TD >Če kdo pride k vam,  vendar ne uči skladno s tem naukom,  ga ne sprejemajte v svoj dom niti ga ne pozdravljajte.</TD>
-</TR>
-<TR>
-<TD >Kdor ga namreč pozdravi,  je soudeležen pri njegovih hudobnih delih.</TD>
-</TR>
-<TR>
-<TD >Čeprav bi vam moral še marsikaj povedati,  ne želim o tem pisati s črnilom na papir,  ampak upam,  da bom prišel k vam in govoril z vami iz oči v oči,  da bo vaše veselje popolno.</TD>
-</TR>
-<TR>
-<TD >Pozdravljajo te otroci tvoje sestre,  ki je izbrana.</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','2._Janezovo','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,2._Janezovo:"2. Janezovo 1. poglavje",K:"",NZ:""},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:1,2._Janezovo:"Jaz. starec. pišem to pismo tebi. izbrana gospa. in tvojim otrokom. ki jih imam resnično rad. Nimam pa jih rad samo jaz. ampak tudi vsi. ki so spoznali resnico.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:2,2._Janezovo:"Radi vas imamo zaradi resnice. ki je v našem srcu in ki bo večno ostala z nami.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:3,2._Janezovo:"Bog. nebeški Oče. in njegov Sin. Jezus Kristus. nam bosta podarila nezasluženo dobroto. usmiljenje in mir skupaj z resnico in ljubeznijo.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:4,2._Janezovo:"Zelo sem vesel. ker sem izvedel. da nekateri od tvojih otrok hodijo po poti resnice. tako kot nam je to zapovedal Oče.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:5,2._Janezovo:"Zato ti zdaj pišem. izbrana gospa. in te prosim. da se držiš zapovedi. ki ni nova. ampak jo imamo že od začetka: imejmo radi drug drugega.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:6,2._Janezovo:"Ljubezen pomeni to. da živimo po njegovih zapovedih. In kot ste slišali že na začetku. vam je zapovedano. da morate vedno izkazovati ljubezen.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:7,2._Janezovo:"Na svetu se je namreč pojavilo že mnogo sleparjev. ki ne priznavajo. da je Jezus Kristus prišel kot človek. Ti so sleparji in antikristi.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:8,2._Janezovo:"Pazite. da ne boste izgubili tega. za kar smo se trudili. ampak da boste prejeli polno nagrado.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:9,2._Janezovo:"Kdor ne ravna po Kristusovem nauku in ne uči skladno z njim. nima Božjega odobravanja. Kdor pa ravna po tem nauku. ima Očetovo in Sinovo odobravanje.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:10,2._Janezovo:"Če kdo pride k vam. vendar ne uči skladno s tem naukom. ga ne sprejemajte v svoj dom niti ga ne pozdravljajte.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:11,2._Janezovo:"Kdor ga namreč pozdravi. je soudeležen pri njegovih hudobnih delih.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:12,2._Janezovo:"Čeprav bi vam moral še marsikaj povedati. ne želim o tem pisati s črnilom na papir. ampak upam. da bom prišel k vam in govoril z vami iz oči v oči. da bo vaše veselje popolno.",K:"",NZ:"YQ"},
+{Knjiga:"2Janezovo",Kr:"2Jn",P:1,V:13,2._Janezovo:"Pozdravljajo te otroci tvoje sestre. ki je izbrana.",K:"",NZ:"YQ"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

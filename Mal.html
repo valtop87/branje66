@@ -1,212 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Malahija</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Malahija 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Objava.<br>To je Jehovovo sporočilo,  ki ga je Malahija posredoval izraelskemu ljudstvu.</TD>
-</TR>
-<TR>
-<TD >»Ljubeč sem z vami, « govori Jehova.<br>Vi pa pravite: »S čim si to pokazal?«<br>»Ali ni bil Ezav Jakobov brat?« govori Jehova. »Kljub temu sem Jakoba ljubil, </TD>
-</TR>
-<TR>
-<TD >Ezava pa sovražil. Njegove gore sem spremenil v puščavo in njegovo dediščino sem prepustil pustinjskim šakalom.«</TD>
-</TR>
-<TR>
-<TD >Edomci govorijo: »Uničeni smo,  vendar se bomo vrnili in obnovili porušene kraje.« Zato Jehova nad vojskami govori: »Oni bodo gradili,  jaz pa bom podiral. Imenovali jih bodo ‚dežela hudobnosti in ‚ljudstvo,  ki mu je Jehova izrekel večno obsodbo.</TD>
-</TR>
-<TR>
-<TD >Izraelci,  na lastne oči boste to videli in rekli: ‚Naj bo Jehova poveličan po vsej izraelski deželi.«</TD>
-</TR>
-<TR>
-<TD >»‚Sin spoštuje svojega očeta in služabnik svojega gospodarja. Če sem torej jaz vaš oče,  zakaj me ne spoštujete? In če sem jaz vaš gospodar,  zakaj se me ne bojite? govorim jaz,  Jehova nad vojskami,  vam,  duhovniki,  ki prezirate moje ime.<br>‚Vi pa sprašujete: »S čim preziramo tvoje ime?«</TD>
-</TR>
-<TR>
-<TD >‚S tem da na moj oltar prinašate omadeževano hrano.<br>‚Vi pa sprašujete: »S čim te omadežujemo?«<br>‚S tem da pravite: »Jehovove mize nam ni treba spoštovati.«</TD>
-</TR>
-<TR>
-<TD >Ko pripeljete kot daritev slepo žival,  govorite: »To ni nič takega.« In ko pripeljete žival,  ki šepa ali je bolna,  govorite: »To ni nič takega.««<br>»Pripelji pa takšne živali upravitelju province. Ali bo zadovoljen s teboj? Ali te bo sprejel z odobravanjem?« govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >Prosim,  rotite zdaj Boga,  da bo dober z nami. Jehova nad vojskami govori: »Le kako bi vas lahko sprejel z odobravanjem,  ko pa darujete takšne žrtve?!«</TD>
-</TR>
-<TR>
-<TD >»Kdo med vami bi hotel zastonj zapreti vrata? Še ognja na mojem oltarju ne prižigate brezplačno. Nisem zadovoljen z vami, « govori Jehova nad vojskami,  »in vaše daritve mi niso všeč.«</TD>
-</TR>
-<TR>
-<TD >»Od vzhoda do zahoda bo moje ime veliko med narodi. Na vsakem kraju se bodo zažigale žrtve in opravljale daritve v čast mojemu imenu – vsi ti darovi bodo sprejemljivi. Moje ime bo namreč veliko med narodi, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Toda vi oskrunjate moje ime,  ko govorite: ‚Jehovova miza je nečista in ni pomembno,  kakšne daritve so na njej.</TD>
-</TR>
-<TR>
-<TD >Govorite tudi ‚Naveličali smo se tega! in zaničljivo vzdihujete, « govori Jehova nad vojskami. »Darujete ukradene,  šepave in bolne živali. Da,  to prinašate v dar. Kako naj sprejmem takšno daritev od vas?!« govori Jehova.</TD>
-</TR>
-<TR>
-<TD >»Preklet naj bo zvijačnež,  ki ima v čredi brezhibnega samca,  toda ko se zaobljubi,  žrtvuje meni,  Jehovu,  žival s hibo. Jaz sem namreč velik Kralj, « govori Jehova nad vojskami,  »in moje ime bo med narodi vzbujalo strahospoštovanje.«</TD>
-</TR>
-<TR>
-<TD >Malahija 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Duhovniki,  ta odredba je namenjena vam.</TD>
-</TR>
-<TR>
-<TD >Če ne boste hoteli poslušati in če si ne boste hoteli vzeti k srcu tega,  da morate slaviti moje ime, « govori Jehova nad vojskami,  »bom nad vas poslal prekletstvo. Vaše blagoslove bom spremenil v prekletstvo. Pravzaprav sem jih že spremenil v prekletstvo,  ker si tega ne jemljete k srcu.«</TD>
-</TR>
-<TR>
-<TD >»Zaradi vaših dejanj bom uničil posejano seme in vam v obraz nametal iztrebke,  iztrebke živali,  žrtvovanih na vaših praznikih. Odnesli vas bodo skupaj z njimi.</TD>
-</TR>
-<TR>
-<TD >Takrat boste vedeli,  da sem vam jaz dal to odredbo,  zato da bi se moja zaveza z Levijevci ohranila, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Moja zaveza z njimi je bila zaveza za življenje in mir. To dvoje sem jim tudi dal,  da bi me globoko spoštovali. In oni so me globoko spoštovali,  do mojega imena so čutili strahospoštovanje.</TD>
-</TR>
-<TR>
-<TD >Učili so zakon resnice in nikoli niso govorili nepravično. Bili so v miru z menoj in so ravnali pošteno. Mnogim so pomagali,  da so nehali grešiti.</TD>
-</TR>
-<TR>
-<TD >Duhovniki bi morali ljudi poučevati o meni in ljudje bi se morali glede zakonov obračati na njih,  saj so oni moji sli,  sli Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >Toda vi ste skrenili s prave poti in zaradi vas mnogi odstopajo od zakonov. Prekršili ste mojo zavezo,  sklenjeno z Levijevci, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Nehali ste ravnati tako,  kot je meni všeč,  in ste bili pri uveljavljanju zakonov pristranski. Zato bom povzročil,  da vas bo vse ljudstvo zaničevalo in vas imelo za nepomembne.«</TD>
-</TR>
-<TR>
-<TD >Ali nimamo vsi enega očeta? Ali nas ni ustvaril en Bog? Zakaj smo potem drug do drugega zahrbtni in kršimo zavezo svojih prednikov?</TD>
-</TR>
-<TR>
-<TD >Na Judovem se ravna zahrbtno,  v Izraelu in Jeruzalemu se počnejo gnusne reči. Ljudje na Judovem so namreč nespoštljivi do Jehova,  ki mu je pri srcu svetost,  in se poročajo s častilkami tujega boga.</TD>
-</TR>
-<TR>
-<TD >Jehova bo iz Jakobovih šotorov odstranil vsakega,  ki to počne,  ne glede na to,  kdo je,  pa tudi če prinaša daritev Jehovu nad vojskami.</TD>
-</TR>
-<TR>
-<TD >Delate pa še nekaj drugega,  zaradi česar je Jehovov oltar prekrit s solzami in vzdihi. Zato mu vaše daritve niso več sprejemljive,  ničesar,  kar prihaja iz vaših rok,  ne sprejema z odobravanjem.</TD>
-</TR>
-<TR>
-<TD >Vi pa govorite: »Zakaj ne?« Zato ker je Jehova priča,  da z ženo,  ki jo imaš že vse od svoje mladosti,  ravnaš zahrbtno,  čeprav je tvoja življenjska sopotnica in tvoja zakonita žena.</TD>
-</TR>
-<TR>
-<TD >Ampak med vami so še vedno nekateri,  ki ne ravnajo tako,  saj še imajo nekaj Božjega duha. In kaj je njihova želja? Želijo si otroke,  ki bi bili res del Božjega ljudstva. Zato pazite na svoje stališče in ne ravnajte zahrbtno z ženo,  ki jo imate že vse od svoje mladosti.</TD>
-</TR>
-<TR>
-<TD >Izraelov Bog Jehova govori: »Jaz sovražim razvezo in vsakega,  ki je nasilen.« To govori Jehova nad vojskami. Pazite na svoje stališče in ne ravnajte zahrbtno.</TD>
-</TR>
-<TR>
-<TD >S svojim govorjenjem utrujate Jehova,  toda vi pravite: »S čim ga utrujamo?« S tem da govorite »Vsak,  ki dela slabo,  je dober v očeh Jehova in on se takšnih veseli« in da govorite »Kje je Bog pravice?«.</TD>
-</TR>
-<TR>
-<TD >Malahija 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Glej,  pošiljam svojega sla,  da bi očistil pot pred menoj. Nenadoma bo v svoj tempelj vstopil Gospod,  na katerega se obračate. Prišel pa bo tudi sel zaveze,  ki se ga veselite. Glej,  zagotovo bo prišel, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Toda kdo bo prestal dan njegovega prihoda? Kdo bo lahko obstal,  ko se bo pojavil? On bo kakor ogenj,  ki prečiščuje kovino,  in kakor milo,  ki čisti perilo.</TD>
-</TR>
-<TR>
-<TD >Sedel bo kakor tisti,  ki tali in prečiščuje srebro,  in bo očistil Levijeve potomce. Prečistil jih bo kakor zlato in kakor srebro,  da bodo meni,  Jehovu,  prinašali daritve v pravičnosti.</TD>
-</TR>
-<TR>
-<TD >Daritve Judovega ljudstva in Jeruzalemčanov bodo meni,  Jehovu,  ugajale,  kot so mi v starih časih,  kot so mi v preteklosti.</TD>
-</TR>
-<TR>
-<TD >Prišel vas bom sodit in bom brez obotavljanja pričal proti čarovnikom,  proti prešuštnikom,  proti tistim,  ki krivo prisegajo,  proti tistim,  ki goljufajo najetega delavca,  vdovo in siroto,  ter proti tistim,  ki nočejo pomagati tujcu. Takšni ljudje nimajo strahospoštovanja do mene, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Jaz sem namreč Jehova,  jaz se ne spreminjam. In vi ste Jakobovi potomci,  zato še niste izginili.</TD>
-</TR>
-<TR>
-<TD >Vse od dni svojih prednikov odstopate od mojih uredb in jih ne izpolnjujete. Vrnite se k meni in jaz se bom vrnil k vam, « govori Jehova nad vojskami.<br>Vi pa pravite: »Kaj pomeni to,  da naj se vrnemo?«</TD>
-</TR>
-<TR>
-<TD >»Ali lahko človek ropa Boga? Toda vi me ropate.«<br>Vendar govorite: »V kakšnem smislu te ropamo?«<br>»Ne prinašate desetin in prispevkov.</TD>
-</TR>
-<TR>
-<TD >Prekleti ste,  da,  prekleti ste,  ker me ropate – ves narod to počne!</TD>
-</TR>
-<TR>
-<TD >Prinesite v shrambo vso desetino,  tako da bo v moji hiši hrana. Prosim,  preizkusite me na ta način, « govori Jehova nad vojskami,  »pa boste videli,  da vam bom odprl nebesne zapornice in na vas izlil blagoslov do preobilja.«</TD>
-</TR>
-<TR>
-<TD >»Škodljivec vam ne bo uničeval pridelka,  saj bom jaz to preprečil,  pa tudi trta v vašem vinogradu ne bo ostala brez sadu, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Vsi narodi vas bodo šteli za srečne,  ker bo vaša dežela postala dežela veselja, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Predrzno govorite proti meni, « govori Jehova.<br>Vi pa pravite: »Kaj govorimo proti tebi?«</TD>
-</TR>
-<TR>
-<TD >»Govorite: ‚Nima smisla služiti Bogu. Kaj imamo od tega,  da izpolnjujemo svoje dolžnosti do njega? Kaj nam koristi,  da hodimo skesani pred Jehovom nad vojskami?</TD>
-</TR>
-<TR>
-<TD >Od zdaj naprej bomo predrzneže šteli za srečne in hudobneže za uspešne. Vsi ti brez sramu preizkušajo Boga in se izmuznejo kazni.«</TD>
-</TR>
-<TR>
-<TD >Takrat so tisti,  ki globoko spoštujejo Jehova,  govorili drug z drugim,  vsak s svojim prijateljem. Jehova je bil pozoren na njihove besede in je poslušal,  kaj govorijo. Pred Jehovom je bila napisana spominska knjiga z imeni tistih,  ki ga globoko spoštujejo,  in tistih,  ki premišljujejo o njegovem imenu.</TD>
-</TR>
-<TR>
-<TD >»Ti bodo postali moji,  ko jih bom naredil za svojo posebno lastnino, « govori Jehova nad vojskami. »Usmilil se jih bom,  tako kot se oče rad usmili svojega poslušnega sina.</TD>
-</TR>
-<TR>
-<TD >Spet boste videli razliko med pravičnim in hudobnim,  med človekom,  ki služi Bogu,  in človekom,  ki mu ne služi.«</TD>
-</TR>
-<TR>
-<TD >Malahija 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Glej,  prihaja dan,  ki bo razžarjen kakor peč. Tisti dan bodo vsi predrzneži in hudobneži postali kakor slama in bodo uničeni, « govori Jehova nad vojskami. »Od njih ne bo ostala ne korenina ne veja.</TD>
-</TR>
-<TR>
-<TD >Na vas,  ki spoštujete moje ime,  pa bo sijalo sonce pravičnosti in njegovi žarki vam bodo prinesli ozdravljenje. Poskakovali boste kakor zdrava teleta.«</TD>
-</TR>
-<TR>
-<TD >»Tisti dan,  ko bom ukrepal,  boste teptali hudobne,  saj bodo kakor prah pod vašimi nogami, « govori Jehova nad vojskami.</TD>
-</TR>
-<TR>
-<TD >»Ne pozabite Zakonika,  ki sem ga v horebski pokrajini dal svojemu služabniku Mojzesu za celotno izraelsko ljudstvo – ne pozabite vseh teh uredb in odlokov.</TD>
-</TR>
-<TR>
-<TD >Glejte,  preden pride Jehovov dan,  ki je velik in vzbuja strahospoštovanje,  bom k vam poslal preroka Elija.</TD>
-</TR>
-<TR>
-<TD >Po njegovi zaslugi bo srce očetov postalo kot srce otrok in srce otrok kot srce očetov. Tako ne bom prišel kaznovat zemlje z uničenjem.«</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Malahija','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Malahija:"Malahija 1. poglavje",K:"",NZ:""},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:1,Malahija:"Objava.<br>To je Jehovovo sporočilo. ki ga je Malahija posredoval izraelskemu ljudstvu.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:2,Malahija:"»Ljubeč sem z vami.« govori Jehova.<br>Vi pa pravite: »S čim si to pokazal?«<br>»Ali ni bil Ezav Jakobov brat?« govori Jehova. »Kljub temu sem Jakoba ljubil.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:3,Malahija:"Ezava pa sovražil. Njegove gore sem spremenil v puščavo in njegovo dediščino sem prepustil pustinjskim šakalom.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:4,Malahija:"Edomci govorijo: »Uničeni smo. vendar se bomo vrnili in obnovili porušene kraje.« Zato Jehova nad vojskami govori: »Oni bodo gradili. jaz pa bom podiral. Imenovali jih bodo ‚dežela hudobnosti in ‚ljudstvo. ki mu je Jehova izrekel večno obsodbo.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:5,Malahija:"Izraelci. na lastne oči boste to videli in rekli: ‚Naj bo Jehova poveličan po vsej izraelski deželi.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:6,Malahija:"»‚Sin spoštuje svojega očeta in služabnik svojega gospodarja. Če sem torej jaz vaš oče. zakaj me ne spoštujete? In če sem jaz vaš gospodar. zakaj se me ne bojite? govorim jaz. Jehova nad vojskami. vam. duhovniki. ki prezirate moje ime.<br>‚Vi pa sprašujete: »S čim preziramo tvoje ime?«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:7,Malahija:"‚S tem da na moj oltar prinašate omadeževano hrano.<br>‚Vi pa sprašujete: »S čim te omadežujemo?«<br>‚S tem da pravite: »Jehovove mize nam ni treba spoštovati.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:8,Malahija:"Ko pripeljete kot daritev slepo žival. govorite: »To ni nič takega.« In ko pripeljete žival. ki šepa ali je bolna. govorite: »To ni nič takega.««<br>»Pripelji pa takšne živali upravitelju province. Ali bo zadovoljen s teboj? Ali te bo sprejel z odobravanjem?« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:9,Malahija:"Prosim. rotite zdaj Boga. da bo dober z nami. Jehova nad vojskami govori: »Le kako bi vas lahko sprejel z odobravanjem. ko pa darujete takšne žrtve?!«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:10,Malahija:"»Kdo med vami bi hotel zastonj zapreti vrata? Še ognja na mojem oltarju ne prižigate brezplačno. Nisem zadovoljen z vami.« govori Jehova nad vojskami. »in vaše daritve mi niso všeč.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:11,Malahija:"»Od vzhoda do zahoda bo moje ime veliko med narodi. Na vsakem kraju se bodo zažigale žrtve in opravljale daritve v čast mojemu imenu – vsi ti darovi bodo sprejemljivi. Moje ime bo namreč veliko med narodi.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:12,Malahija:"»Toda vi oskrunjate moje ime. ko govorite: ‚Jehovova miza je nečista in ni pomembno. kakšne daritve so na njej.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:13,Malahija:"Govorite tudi ‚Naveličali smo se tega! in zaničljivo vzdihujete.« govori Jehova nad vojskami. »Darujete ukradene. šepave in bolne živali. Da. to prinašate v dar. Kako naj sprejmem takšno daritev od vas?!« govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:1,V:14,Malahija:"»Preklet naj bo zvijačnež. ki ima v čredi brezhibnega samca. toda ko se zaobljubi. žrtvuje meni. Jehovu. žival s hibo. Jaz sem namreč velik Kralj.« govori Jehova nad vojskami. »in moje ime bo med narodi vzbujalo strahospoštovanje.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Malahija:"Malahija 2. poglavje",K:"",NZ:""},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:1,Malahija:"»Duhovniki. ta odredba je namenjena vam.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:2,Malahija:"Če ne boste hoteli poslušati in če si ne boste hoteli vzeti k srcu tega. da morate slaviti moje ime.« govori Jehova nad vojskami. »bom nad vas poslal prekletstvo. Vaše blagoslove bom spremenil v prekletstvo. Pravzaprav sem jih že spremenil v prekletstvo. ker si tega ne jemljete k srcu.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:3,Malahija:"»Zaradi vaših dejanj bom uničil posejano seme in vam v obraz nametal iztrebke. iztrebke živali. žrtvovanih na vaših praznikih. Odnesli vas bodo skupaj z njimi.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:4,Malahija:"Takrat boste vedeli. da sem vam jaz dal to odredbo. zato da bi se moja zaveza z Levijevci ohranila.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:5,Malahija:"»Moja zaveza z njimi je bila zaveza za življenje in mir. To dvoje sem jim tudi dal. da bi me globoko spoštovali. In oni so me globoko spoštovali. do mojega imena so čutili strahospoštovanje.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:6,Malahija:"Učili so zakon resnice in nikoli niso govorili nepravično. Bili so v miru z menoj in so ravnali pošteno. Mnogim so pomagali. da so nehali grešiti.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:7,Malahija:"Duhovniki bi morali ljudi poučevati o meni in ljudje bi se morali glede zakonov obračati na njih. saj so oni moji sli. sli Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:8,Malahija:"Toda vi ste skrenili s prave poti in zaradi vas mnogi odstopajo od zakonov. Prekršili ste mojo zavezo. sklenjeno z Levijevci.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:9,Malahija:"»Nehali ste ravnati tako. kot je meni všeč. in ste bili pri uveljavljanju zakonov pristranski. Zato bom povzročil. da vas bo vse ljudstvo zaničevalo in vas imelo za nepomembne.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:10,Malahija:"Ali nimamo vsi enega očeta? Ali nas ni ustvaril en Bog? Zakaj smo potem drug do drugega zahrbtni in kršimo zavezo svojih prednikov?",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:11,Malahija:"Na Judovem se ravna zahrbtno. v Izraelu in Jeruzalemu se počnejo gnusne reči. Ljudje na Judovem so namreč nespoštljivi do Jehova. ki mu je pri srcu svetost. in se poročajo s častilkami tujega boga.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:12,Malahija:"Jehova bo iz Jakobovih šotorov odstranil vsakega. ki to počne. ne glede na to. kdo je. pa tudi če prinaša daritev Jehovu nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:13,Malahija:"Delate pa še nekaj drugega. zaradi česar je Jehovov oltar prekrit s solzami in vzdihi. Zato mu vaše daritve niso več sprejemljive. ničesar. kar prihaja iz vaših rok. ne sprejema z odobravanjem.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:14,Malahija:"Vi pa govorite: »Zakaj ne?« Zato ker je Jehova priča. da z ženo. ki jo imaš že vse od svoje mladosti. ravnaš zahrbtno. čeprav je tvoja življenjska sopotnica in tvoja zakonita žena.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:15,Malahija:"Ampak med vami so še vedno nekateri. ki ne ravnajo tako. saj še imajo nekaj Božjega duha. In kaj je njihova želja? Želijo si otroke. ki bi bili res del Božjega ljudstva. Zato pazite na svoje stališče in ne ravnajte zahrbtno z ženo. ki jo imate že vse od svoje mladosti.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:16,Malahija:"Izraelov Bog Jehova govori: »Jaz sovražim razvezo in vsakega. ki je nasilen.« To govori Jehova nad vojskami. Pazite na svoje stališče in ne ravnajte zahrbtno.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:2,V:17,Malahija:"S svojim govorjenjem utrujate Jehova. toda vi pravite: »S čim ga utrujamo?« S tem da govorite »Vsak. ki dela slabo. je dober v očeh Jehova in on se takšnih veseli« in da govorite »Kje je Bog pravice?«.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Malahija:"Malahija 3. poglavje",K:"",NZ:""},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:1,Malahija:"»Glej. pošiljam svojega sla. da bi očistil pot pred menoj. Nenadoma bo v svoj tempelj vstopil Gospod. na katerega se obračate. Prišel pa bo tudi sel zaveze. ki se ga veselite. Glej. zagotovo bo prišel.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:2,Malahija:"»Toda kdo bo prestal dan njegovega prihoda? Kdo bo lahko obstal. ko se bo pojavil? On bo kakor ogenj. ki prečiščuje kovino. in kakor milo. ki čisti perilo.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:3,Malahija:"Sedel bo kakor tisti. ki tali in prečiščuje srebro. in bo očistil Levijeve potomce. Prečistil jih bo kakor zlato in kakor srebro. da bodo meni. Jehovu. prinašali daritve v pravičnosti.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:4,Malahija:"Daritve Judovega ljudstva in Jeruzalemčanov bodo meni. Jehovu. ugajale. kot so mi v starih časih. kot so mi v preteklosti.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:5,Malahija:"Prišel vas bom sodit in bom brez obotavljanja pričal proti čarovnikom. proti prešuštnikom. proti tistim. ki krivo prisegajo. proti tistim. ki goljufajo najetega delavca. vdovo in siroto. ter proti tistim. ki nočejo pomagati tujcu. Takšni ljudje nimajo strahospoštovanja do mene.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:6,Malahija:"»Jaz sem namreč Jehova. jaz se ne spreminjam. In vi ste Jakobovi potomci. zato še niste izginili.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:7,Malahija:"Vse od dni svojih prednikov odstopate od mojih uredb in jih ne izpolnjujete. Vrnite se k meni in jaz se bom vrnil k vam.« govori Jehova nad vojskami.<br>Vi pa pravite: »Kaj pomeni to. da naj se vrnemo?«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:8,Malahija:"»Ali lahko človek ropa Boga? Toda vi me ropate.«<br>Vendar govorite: »V kakšnem smislu te ropamo?«<br>»Ne prinašate desetin in prispevkov.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:9,Malahija:"Prekleti ste. da. prekleti ste. ker me ropate – ves narod to počne!",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:10,Malahija:"Prinesite v shrambo vso desetino. tako da bo v moji hiši hrana. Prosim. preizkusite me na ta način.« govori Jehova nad vojskami. »pa boste videli. da vam bom odprl nebesne zapornice in na vas izlil blagoslov do preobilja.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:11,Malahija:"»Škodljivec vam ne bo uničeval pridelka. saj bom jaz to preprečil. pa tudi trta v vašem vinogradu ne bo ostala brez sadu.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:12,Malahija:"»Vsi narodi vas bodo šteli za srečne. ker bo vaša dežela postala dežela veselja.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:13,Malahija:"»Predrzno govorite proti meni.« govori Jehova.<br>Vi pa pravite: »Kaj govorimo proti tebi?«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:14,Malahija:"»Govorite: ‚Nima smisla služiti Bogu. Kaj imamo od tega. da izpolnjujemo svoje dolžnosti do njega? Kaj nam koristi. da hodimo skesani pred Jehovom nad vojskami?",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:15,Malahija:"Od zdaj naprej bomo predrzneže šteli za srečne in hudobneže za uspešne. Vsi ti brez sramu preizkušajo Boga in se izmuznejo kazni.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:16,Malahija:"Takrat so tisti. ki globoko spoštujejo Jehova. govorili drug z drugim. vsak s svojim prijateljem. Jehova je bil pozoren na njihove besede in je poslušal. kaj govorijo. Pred Jehovom je bila napisana spominska knjiga z imeni tistih. ki ga globoko spoštujejo. in tistih. ki premišljujejo o njegovem imenu.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:17,Malahija:"»Ti bodo postali moji. ko jih bom naredil za svojo posebno lastnino.« govori Jehova nad vojskami. »Usmilil se jih bom. tako kot se oče rad usmili svojega poslušnega sina.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:3,V:18,Malahija:"Spet boste videli razliko med pravičnim in hudobnim. med človekom. ki služi Bogu. in človekom. ki mu ne služi.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Malahija:"Malahija 4. poglavje",K:"",NZ:""},
+{Knjiga:"Malahija",Kr:"Mal",P:4,V:1,Malahija:"»Glej. prihaja dan. ki bo razžarjen kakor peč. Tisti dan bodo vsi predrzneži in hudobneži postali kakor slama in bodo uničeni.« govori Jehova nad vojskami. »Od njih ne bo ostala ne korenina ne veja.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:4,V:2,Malahija:"Na vas. ki spoštujete moje ime. pa bo sijalo sonce pravičnosti in njegovi žarki vam bodo prinesli ozdravljenje. Poskakovali boste kakor zdrava teleta.«",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:4,V:3,Malahija:"»Tisti dan. ko bom ukrepal. boste teptali hudobne. saj bodo kakor prah pod vašimi nogami.« govori Jehova nad vojskami.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:4,V:4,Malahija:"»Ne pozabite Zakonika. ki sem ga v horebski pokrajini dal svojemu služabniku Mojzesu za celotno izraelsko ljudstvo – ne pozabite vseh teh uredb in odlokov.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:4,V:5,Malahija:"Glejte. preden pride Jehovov dan. ki je velik in vzbuja strahospoštovanje. bom k vam poslal preroka Elija.",K:"",NZ:"X"},
+{Knjiga:"Malahija",Kr:"Mal",P:4,V:6,Malahija:"Po njegovi zaslugi bo srce očetov postalo kot srce otrok in srce otrok kot srce očetov. Tako ne bom prišel kaznovat zemlje z uničenjem.«",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

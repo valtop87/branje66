@@ -1,101 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Obadija</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Obadija 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Obadijevo videnje.<br>Obadija o sporočilu,  ki ga je glede Edoma dobil od Vrhovnega gospoda Jehova,  pravi takole:<br>»Od Jehova smo slišali novico, <br>med narode je bil poslan sel:<br>‚Vstanite! Pripravimo se za bitko proti njemu!«</TD>
-</TR>
-<TR>
-<TD >»Glej,  spremenil te bom v nepomembnega med narodi.<br>Zelo boš zaničevan.</TD>
-</TR>
-<TR>
-<TD >O ti,  ki živiš v skalnih zavetjih<br>in si doma visoko v gorah, <br>nadutost tvojega srca te je zavedla.<br>V svojem srcu govoriš: ‚Kdo me bo potegnil dol?</TD>
-</TR>
-<TR>
-<TD >Tudi če bi se nastanil visoko kakor orel<br>ali si naredil gnezdo med zvezdami, <br>bi te od tam potegnil dol, « govori Jehova.</TD>
-</TR>
-<TR>
-<TD >»Če bi k tebi prišli tatovi,  če bi ponoči prišli roparji, <br>ali ne bi pokradli le tistega,  kar hočejo?<br>In če bi k tebi prišli obiralci grozdja, <br>ali ne bi za seboj pustili nekaj grozdja za paberkovanje?<br>Sovražniki pa te bodo popolnoma uničili!</TD>
-</TR>
-<TR>
-<TD >O Ezav,  kako te bodo preiskali, <br>kako vneto bodo iskali tvoje skrite zaklade!</TD>
-</TR>
-<TR>
-<TD >Vsi tvoji zavezniki te bodo prevarali.<br>Odgnali te bodo do meje.<br>Tisti,  ki so v miru s teboj,  te bodo premagali.<br>Tisti,  ki jedo s teboj,  ti bodo nastavili past, <br>vendar ti tega ne boš dojel.</TD>
-</TR>
-<TR>
-<TD >Ali ne bom tisti dan, « govori Jehova, <br>»iztrebil modrih iz Edoma<br>in preudarnih iz Ezavovega gorovja?</TD>
-</TR>
-<TR>
-<TD >O Teman,  tvoji bojevniki se bodo prestrašili, <br>ker bodo pobiti vsi prebivalci Ezavovega gorovja.</TD>
-</TR>
-<TR>
-<TD >Ker si bil nasilen do svojega brata Jakoba, <br>te bo prekrila sramota, <br>za vedno boš izginil.</TD>
-</TR>
-<TR>
-<TD >Tistega dne,  ko so neznanci odpeljali njegovo vojsko v ujetništvo, <br>ko so tujci vstopili skozi njegova vrata in metali žreb za Jeruzalem, <br>si samo stal in gledal, <br>nič boljši nisi bil od njih.</TD>
-</TR>
-<TR>
-<TD >Kako si se lahko naslajal nad tem,  kar je doletelo tvojega brata na dan njegove nesreče?!<br>Kako si se lahko veselil tega,  kar je doletelo Judovo ljudstvo na dan njegovega propada, <br>in se širokoustil na dan njegove stiske?!</TD>
-</TR>
-<TR>
-<TD >Kako si lahko stopil skozi vrata mojega ljudstva na dan njegove nesreče?!<br>Kako si se lahko naslajal nad njegovo stisko na dan njegove nesreče?!<br>Kako si si lahko prisvojil njegovo bogastvo na dan njegove nesreče?!</TD>
-</TR>
-<TR>
-<TD >Kako si lahko stal na razpotjih in pobijal begunce z Judovega?!<br>In kako si lahko preživele izročil njihovim sovražnikom na dan stiske?!</TD>
-</TR>
-<TR>
-<TD >Blizu je dan,  ko bom jaz,  Jehova,  ukrepal proti vsem narodom.<br>Tako kot si z drugimi ravnal ti,  tako se bo ravnalo s teboj.<br>Za svoje ravnanje z drugimi boš plačal.</TD>
-</TR>
-<TR>
-<TD >Tako kot si na moji sveti gori pil ti, <br>tako bodo nenehno pili vsi narodi.<br>Pili bodo čašo moje jeze in jo popili do dna.<br>Izginili bodo in videti bo,  kot da jih nikoli ni bilo.</TD>
-</TR>
-<TR>
-<TD >Moje ljudstvo,  ki se bo rešilo,  pa bo na gori Sion<br>in ta bo postala sveta.<br>Jakobovi potomci bodo vzeli nazaj,  kar jim pripada.</TD>
-</TR>
-<TR>
-<TD >Jakobovi potomci bodo postali kakor ogenj<br>in Jožefovi potomci kakor plamen, <br>Ezavovi potomci pa kakor slama.<br>Zažgali jih bodo in njihov ogenj jih bo požrl.<br>Nihče od Ezavovih potomcev ne bo preživel.<br>Tako se bo zgodilo,  ker sem to rekel jaz,  Jehova.</TD>
-</TR>
-<TR>
-<TD >Zavzeli bodo Negeb in Ezavovo gorovje, <br>Šefelo in filistejsko deželo.<br>Zavzeli bodo ozemlje Efraima in Samarije, <br>Benjamin pa bo zavzel Gilead.</TD>
-</TR>
-<TR>
-<TD >Pregnancem iz te utrdbe,  Izraelcem, <br>bo pripadlo ozemlje Kanaancev vse do Sarepte.<br>Pregnanci iz Jeruzalema,  ki so bili v Sefaradu,  bodo poselili mesta v Negebu.</TD>
-</TR>
-<TR>
-<TD >Rešitelji se bodo povzpeli na goro Sion, <br>da bi sodili prebivalcem Ezavovega gorovja, <br>in jaz,  Jehova,  bom zakraljeval.«</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Obadija','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Obadija:"Obadija 1. poglavje",K:"",NZ:""},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:1,Obadija:"Obadijevo videnje.<br>Obadija o sporočilu. ki ga je glede Edoma dobil od Vrhovnega gospoda Jehova. pravi takole:<br>»Od Jehova smo slišali novico.<br>med narode je bil poslan sel:<br>‚Vstanite! Pripravimo se za bitko proti njemu!«",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:2,Obadija:"»Glej. spremenil te bom v nepomembnega med narodi.<br>Zelo boš zaničevan.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:3,Obadija:"O ti. ki živiš v skalnih zavetjih<br>in si doma visoko v gorah.<br>nadutost tvojega srca te je zavedla.<br>V svojem srcu govoriš: ‚Kdo me bo potegnil dol?",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:4,Obadija:"Tudi če bi se nastanil visoko kakor orel<br>ali si naredil gnezdo med zvezdami.<br>bi te od tam potegnil dol.« govori Jehova.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:5,Obadija:"»Če bi k tebi prišli tatovi. če bi ponoči prišli roparji.<br>ali ne bi pokradli le tistega. kar hočejo?<br>In če bi k tebi prišli obiralci grozdja.<br>ali ne bi za seboj pustili nekaj grozdja za paberkovanje?<br>Sovražniki pa te bodo popolnoma uničili!",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:6,Obadija:"O Ezav. kako te bodo preiskali.<br>kako vneto bodo iskali tvoje skrite zaklade!",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:7,Obadija:"Vsi tvoji zavezniki te bodo prevarali.<br>Odgnali te bodo do meje.<br>Tisti. ki so v miru s teboj. te bodo premagali.<br>Tisti. ki jedo s teboj. ti bodo nastavili past.<br>vendar ti tega ne boš dojel.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:8,Obadija:"Ali ne bom tisti dan.« govori Jehova.<br>»iztrebil modrih iz Edoma<br>in preudarnih iz Ezavovega gorovja?",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:9,Obadija:"O Teman. tvoji bojevniki se bodo prestrašili.<br>ker bodo pobiti vsi prebivalci Ezavovega gorovja.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:10,Obadija:"Ker si bil nasilen do svojega brata Jakoba.<br>te bo prekrila sramota.<br>za vedno boš izginil.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:11,Obadija:"Tistega dne. ko so neznanci odpeljali njegovo vojsko v ujetništvo.<br>ko so tujci vstopili skozi njegova vrata in metali žreb za Jeruzalem.<br>si samo stal in gledal.<br>nič boljši nisi bil od njih.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:12,Obadija:"Kako si se lahko naslajal nad tem. kar je doletelo tvojega brata na dan njegove nesreče?!<br>Kako si se lahko veselil tega. kar je doletelo Judovo ljudstvo na dan njegovega propada.<br>in se širokoustil na dan njegove stiske?!",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:13,Obadija:"Kako si lahko stopil skozi vrata mojega ljudstva na dan njegove nesreče?!<br>Kako si se lahko naslajal nad njegovo stisko na dan njegove nesreče?!<br>Kako si si lahko prisvojil njegovo bogastvo na dan njegove nesreče?!",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:14,Obadija:"Kako si lahko stal na razpotjih in pobijal begunce z Judovega?!<br>In kako si lahko preživele izročil njihovim sovražnikom na dan stiske?!",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:15,Obadija:"Blizu je dan. ko bom jaz. Jehova. ukrepal proti vsem narodom.<br>Tako kot si z drugimi ravnal ti. tako se bo ravnalo s teboj.<br>Za svoje ravnanje z drugimi boš plačal.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:16,Obadija:"Tako kot si na moji sveti gori pil ti.<br>tako bodo nenehno pili vsi narodi.<br>Pili bodo čašo moje jeze in jo popili do dna.<br>Izginili bodo in videti bo. kot da jih nikoli ni bilo.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:17,Obadija:"Moje ljudstvo. ki se bo rešilo. pa bo na gori Sion<br>in ta bo postala sveta.<br>Jakobovi potomci bodo vzeli nazaj. kar jim pripada.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:18,Obadija:"Jakobovi potomci bodo postali kakor ogenj<br>in Jožefovi potomci kakor plamen.<br>Ezavovi potomci pa kakor slama.<br>Zažgali jih bodo in njihov ogenj jih bo požrl.<br>Nihče od Ezavovih potomcev ne bo preživel.<br>Tako se bo zgodilo. ker sem to rekel jaz. Jehova.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:19,Obadija:"Zavzeli bodo Negeb in Ezavovo gorovje.<br>Šefelo in filistejsko deželo.<br>Zavzeli bodo ozemlje Efraima in Samarije.<br>Benjamin pa bo zavzel Gilead.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:20,Obadija:"Pregnancem iz te utrdbe. Izraelcem.<br>bo pripadlo ozemlje Kanaancev vse do Sarepte.<br>Pregnanci iz Jeruzalema. ki so bili v Sefaradu. bodo poselili mesta v Negebu.",K:"",NZ:"X"},
+{Knjiga:"Obadija",Kr:"Ob",P:1,V:21,Obadija:"Rešitelji se bodo povzpeli na goro Sion.<br>da bi sodili prebivalcem Ezavovega gorovja.<br>in jaz. Jehova. bom zakraljeval.«",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

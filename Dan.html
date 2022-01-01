@@ -1,1148 +1,494 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Daniel</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Daniel 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >V tretjem letu kraljevanja Judovega kralja Jojakima je babilonski kralj Nebukadnezar prišel do Jeruzalema in ga začel oblegati.</TD>
-</TR>
-<TR>
-<TD >Jehova mu je dal v roke Judovega kralja Jojakima in nekaj predmetov iz hiše pravega Boga. Te predmete je odnesel v šinarsko deželo v tempelj svojega boga in jih tam dal v zakladnico.</TD>
-</TR>
-<TR>
-<TD >Nato je kralj svojemu glavnemu dvorjanu Ašpenazu naročil,  naj pripelje nekatere izmed Izraelcev,  še posebej tiste iz kraljevega in plemiškega rodu.</TD>
-</TR>
-<TR>
-<TD >Pripeljati je moral lepe mlade fante brez kakršne koli telesne napake,  obdarjene z modrostjo,  znanjem in preudarnostjo ter sposobne služiti v kraljevi palači. Naročil mu je tudi,  naj jih uči pisave in jezika Kaldejcev.</TD>
-</TR>
-<TR>
-<TD >Poleg tega jim je kralj določil dnevni obrok kraljevih dobrot in vina,  ki ga je sam pil. Zapovedal je še,  naj jih šolajo tri leta,  zatem pa naj začnejo opravljati službo za kralja.</TD>
-</TR>
-<TR>
-<TD >Med njimi so bili tudi nekateri iz Judovega rodu,  in sicer Daniel,  Hananija,  Mišael in Azarija.</TD>
-</TR>
-<TR>
-<TD >Te štiri je glavni dvorjan preimenoval: Danielu je dal ime Beltšazar,  Hananiju Šadrah,  Mišaelu Mešah in Azariju Abednego.</TD>
-</TR>
-<TR>
-<TD >Toda Daniel se je v svojem srcu odločil,  da se ne bo omadeževal s kraljevimi dobrotami niti z vinom,  ki ga je pil kralj. Zato je glavnega dvorjana prosil za dovoljenje,  da mu ne bi bilo treba uživati tega,  kar bi ga omadeževalo.</TD>
-</TR>
-<TR>
-<TD >Pravi Bog pa je poskrbel,  da je bil glavni dvorjan z Danielom dober in usmiljen.</TD>
-</TR>
-<TR>
-<TD >Kljub temu je glavni dvorjan Danielu rekel: »Bojim se svojega gospoda kralja,  ki vam je določil hrano in pijačo. Če bo opazil,  da ste videti slabše kot vaši vrstniki,  bo za to krivil mene.«</TD>
-</TR>
-<TR>
-<TD >Toda Daniel se je obrnil na skrbnika,  ki ga je glavni dvorjan postavil nad Daniela,  Hananija,  Mišaela in Azarija. Rekel mu je:</TD>
-</TR>
-<TR>
-<TD >»Prosim,  daj nas,  svoje služabnike,  za deset dni na preizkus. Naj nam dajo jesti zelenjavo in piti vodo.</TD>
-</TR>
-<TR>
-<TD >Potem pa naš videz primerjaj z videzom fantov,  ki jedo kraljeve dobrote. In na podlagi tega,  kar boš videl,  se odloči,  kaj boš naredil z nami.«</TD>
-</TR>
-<TR>
-<TD >Skrbnik se je strinjal z njihovim predlogom in jih dal za deset dni na preizkus.</TD>
-</TR>
-<TR>
-<TD >Po desetih dneh so bili videti lepši in bolj zdravi od vseh mladih fantov,  ki so jedli kraljeve dobrote.</TD>
-</TR>
-<TR>
-<TD >Tako jim je skrbnik še naprej namesto kraljevih dobrot in vina dajal zelenjavo.</TD>
-</TR>
-<TR>
-<TD >Pravi Bog je tem štirim fantom naklonil modrost,  spoznanje in uvid v vsakovrstna besedila. Daniel pa je dobil tudi sposobnost,  da je razumel najrazličnejša videnja in sanje.</TD>
-</TR>
-<TR>
-<TD >Po koncu obdobja,  ki ga je določil kralj Nebukadnezar,  je glavni dvorjan vse fante pripeljal pred kralja.</TD>
-</TR>
-<TR>
-<TD >Ko je kralj govoril z njimi,  je ugotovil,  da se nihče od njih ne more primerjati z Danielom,  Hananijem,  Mišaelom in Azarijem. Zato so ti štirje začeli opravljati službo za kralja.</TD>
-</TR>
-<TR>
-<TD >Kralj je vsakič,  ko jih je spraševal glede zadev,  za katere sta potrebni modrost in sposobnost razumevanja,  ugotovil,  da so desetkrat boljši od vseh svečenikov,  ki so se v njegovem kraljestvu ukvarjali z magijo,  in vseh,  ki so klicali duhove.</TD>
-</TR>
-<TR>
-<TD >Daniel je ostal tam do prvega leta vladanja kralja Kira.</TD>
-</TR>
-<TR>
-<TD >Daniel 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kralj Nebukadnezar je imel v drugem letu svojega kraljevanja sanje. Zaradi tega je bil tako zelo vznemirjen,  da ni mogel več spati.</TD>
-</TR>
-<TR>
-<TD >Zato je dal poklicati svečenike,  ki so se ukvarjali z magijo,  ljudi,  ki so klicali duhove,  ter čarovnike in kaldejce,  da bi mu povedali,  kaj je sanjal. Prišli so torej in se postavili pred kralja.</TD>
-</TR>
-<TR>
-<TD >Kralj jim je rekel: »Imel sem sanje in sem vznemirjen. Zato bi rad vedel,  kaj sem sanjal.«</TD>
-</TR>
-<TR>
-<TD >Kaldejci so kralju po aramejsko rekli: »Naj živi kralj! Povej nam,  svojim služabnikom,  sanje,  pa ti jih bomo razložili.«</TD>
-</TR>
-<TR>
-<TD >Kralj je kaldejcem odgovoril: »Odločil sem se naslednje: Če mi ne boste povedali sanj in jih razložili,  boste razkosani,  vaše hiše pa bodo spremenjene v javna stranišča.</TD>
-</TR>
-<TR>
-<TD >Če pa mi boste sanje povedali in jih razložili,  boste od mene prejeli darove,  nagrado in veliko čast. Zato mi povejte,  kaj sem sanjal,  in mi to razložite.«</TD>
-</TR>
-<TR>
-<TD >Oni pa so mu še enkrat rekli: »Naš gospod kralj,  povej nam sanje,  pa jih bomo razložili.«</TD>
-</TR>
-<TR>
-<TD >Kralj je odgovoril: »Dobro vem,  da hočete pridobiti nekaj časa,  ker veste,  kaj sem se odločil.</TD>
-</TR>
-<TR>
-<TD >Če mi ne boste povedali sanj,  vas vse čaka samo ena kazen. Dogovorili ste se,  da mi boste lagali in me prevarali,  ker upate,  da si bom premislil. Zato mi povejte,  kaj sem sanjal,  in tako bom vedel,  da lahko sanje tudi razložite.«</TD>
-</TR>
-<TR>
-<TD >Kaldejci so kralju odgovorili: »Na zemlji ni človeka,  ki bi bil zmožen narediti to,  kar zahtevaš ti,  o kralj,  saj noben še tako velik kralj ali vladar ni zahteval česa takega od nobenega svečenika,  ki se ukvarja z magijo,  od nikogar,  ki kliče duhove,  niti od kaldejca.</TD>
-</TR>
-<TR>
-<TD >To,  kar zahtevaš,  o kralj,  je pretežko in nikogar ni,  ki bi ti lahko to povedal,  razen bogov,  ti pa ne živijo med navadnimi smrtniki.«</TD>
-</TR>
-<TR>
-<TD >Zaradi tega se je kralj zelo razjezil in naročil,  naj pobijejo vse babilonske modre može.</TD>
-</TR>
-<TR>
-<TD >Ko je bil izdan ukaz o poboju modrih mož,  so iskali tudi Daniela in njegove prijatelje,  da bi jih ubili.</TD>
-</TR>
-<TR>
-<TD >Takrat je Daniel premišljeno in previdno ogovoril Arjoha,  poveljnika kraljeve telesne straže,  ki se je že odpravljal pobijat babilonske modre može.</TD>
-</TR>
-<TR>
-<TD >Poveljnika Arjoha je vprašal: »Zakaj je kralj izdal tako strog ukaz?« Arjoh je Danielu povedal,  za kaj gre.</TD>
-</TR>
-<TR>
-<TD >Daniel je torej šel h kralju in ga prosil,  naj mu da čas,  da mu bo lahko razložil sanje.</TD>
-</TR>
-<TR>
-<TD >Potem je Daniel odšel v svojo hišo in vse to povedal svojim prijateljem Hananiju,  Mišaelu in Azariju.</TD>
-</TR>
-<TR>
-<TD >Prosil jih je,  naj molijo k Bogu nebes,  da se jih usmili in jim razkrije to skrivnost,  tako da Daniel in njegovi prijatelji ne bi bili pobiti skupaj z drugimi babilonskimi modrimi možmi.</TD>
-</TR>
-<TR>
-<TD >Ponoči pa je imel Daniel videnje,  v katerem mu je bila skrivnost razodeta,  zato je Boga nebes začel hvaliti</TD>
-</TR>
-<TR>
-<TD >z besedami:<br>»O Bog,  naj bo tvoje ime hvaljeno vso večnost, <br>saj imaš edino ti modrost in moč.</TD>
-</TR>
-<TR>
-<TD >Ti spreminjaš čase in dobe, <br>odstavljaš in postavljaš kralje, <br>daješ modrost modrim in spoznanje preudarnim.</TD>
-</TR>
-<TR>
-<TD >Razodevaš to,  kar je globoko in skrito, <br>veš,  kaj je v temi, <br>in pri tebi je svetloba.</TD>
-</TR>
-<TR>
-<TD >Tebi,  o Bog mojih praočetov,  se zahvaljujem in te hvalim, <br>ker si mi dal modrost in moč.<br>Razkril si mi to,  za kar smo te prosili, <br>razkril si nam to,  kar zanima kralja.«</TD>
-</TR>
-<TR>
-<TD >Daniel je zatem odšel k Arjohu,  ki ga je kralj določil,  da pobije babilonske modre može,  in mu rekel: »Nikar ne pobij babilonskih modrih mož! Pelji me pred kralja,  da mu razložim sanje.«</TD>
-</TR>
-<TR>
-<TD >Arjoh je Daniela hitro odpeljal pred kralja. Kralju je rekel: »Med judovskimi pregnanci sem našel človeka,  ki ti lahko razloži sanje,  o kralj.«</TD>
-</TR>
-<TR>
-<TD >Kralj je Daniela,  ki mu je bilo ime Beltšazar,  vprašal: »Ali mi res lahko poveš,  kakšne sanje sem imel in kaj pomenijo?«</TD>
-</TR>
-<TR>
-<TD >Daniel je kralju odgovoril: »Skrivnosti,  po kateri sprašuješ,  o kralj,  ti ne morejo odkriti ne modri možje,  ne tisti,  ki kličejo duhove,  ne svečeniki,  ki se ukvarjajo z magijo,  ne astrologi.</TD>
-</TR>
-<TR>
-<TD >Toda v nebesih je Bog,  ki razodeva skrivnosti,  in on oznanja tebi,  o kralj Nebukadnezar,  kaj se bo zgodilo v zadnjih dneh. Sanje in videnja,  ki si jih imel med spanjem,  so:</TD>
-</TR>
-<TR>
-<TD >Ti,  o kralj,  si med spanjem sanjal o tem,  kaj se bo zgodilo v prihodnosti. Tisti,  ki razodeva skrivnosti,  ti oznanja,  kaj se bo zgodilo.</TD>
-</TR>
-<TR>
-<TD >Meni ta skrivnost ni bila razodeta zato,  ker bi bil modrejši od vseh drugih ljudi,  ampak zato,  da se kralju oznani pomen sanj. Tako boš razumel misli,  ki so se ti pojavile.</TD>
-</TR>
-<TR>
-<TD >Ti,  o kralj,  si videl velikanski kip. Ta kip je bil ogromen in se je zelo bleščal. Stal je pred teboj in njegov videz je bil strašljiv.</TD>
-</TR>
-<TR>
-<TD >Glava tega kipa je bila iz čistega zlata,  njegove prsi in roke iz srebra,  njegov trebuh in stegna iz bakra, </TD>
-</TR>
-<TR>
-<TD >njegove noge iz železa,  njegova stopala pa deloma iz železa,  deloma iz gline.</TD>
-</TR>
-<TR>
-<TD >Medtem ko si gledal,  je kamen,  ki ni bil utrgan s človeškimi rokami,  udaril kip v njegova stopala iz železa in gline ter jih zdrobil.</TD>
-</TR>
-<TR>
-<TD >Takrat so se železo,  glina,  baker,  srebro in zlato hkrati zdrobili in postali kakor pleve sredi poletja na mlatišču in veter jih je odnesel,  tako da za njimi ni bilo nobene sledi več. Kamen,  ki je udaril kip,  pa je postal velika gora in je napolnil vso zemljo.</TD>
-</TR>
-<TR>
-<TD >To so bile sanje,  zdaj pa bomo kralju povedali,  kaj pomenijo.</TD>
-</TR>
-<TR>
-<TD >Ti,  o kralj,  kralj kraljev,  ki ti je Bog nebes dal kraljestvo,  oblast,  moč in slavo, </TD>
-</TR>
-<TR>
-<TD >ti,  ki ti je izročil ljudi,  kjer koli živijo,  pa tudi divje živali in ptice na nebu ter te postavil za vladarja nad njimi vsemi,  ti si glava iz zlata.</TD>
-</TR>
-<TR>
-<TD >Za teboj pa bo prišlo drugo kraljestvo,  slabše od tvojega,  in nato tretje kraljestvo,  iz bakra,  ki bo vladalo vsej zemlji.</TD>
-</TR>
-<TR>
-<TD >Četrto kraljestvo bo močno kakor železo. Tako kot železo vse zdrobi in zmelje,  tako bo tudi to kraljestvo zdrobilo in razbilo vsa prejšnja kraljestva.</TD>
-</TR>
-<TR>
-<TD >To,  da si videl,  da so stopala in prsti deloma iz lončarske gline,  deloma iz železa,  pomeni,  da bo kraljestvo razdeljeno,  vseeno pa bo v njem nekaj trdote železa,  saj si videl železo,  pomešano z mehko glino.</TD>
-</TR>
-<TR>
-<TD >To,  da so bili prsti na stopalih deloma iz železa in deloma iz gline,  pomeni,  da bo kraljestvo deloma močno in deloma krhko.</TD>
-</TR>
-<TR>
-<TD >Da si pa videl železo,  pomešano z mehko glino,  pomeni,  da se bodo pomešali z ljudmi,  vendar se ne bodo držali skupaj,  drug z drugim,  tako kot se železo ne meša z glino.</TD>
-</TR>
-<TR>
-<TD >V času teh kraljev bo Bog nebes ustanovil kraljestvo,  ki ne bo nikoli uničeno. To kraljestvo ne bo predano nobenemu drugemu ljudstvu. Vsa ta kraljestva bo zdrobilo in uničilo ter bo kot edino kraljestvo obstajalo večno.</TD>
-</TR>
-<TR>
-<TD >Videl si namreč,  da je bil od gore utrgan kamen,  vendar ne s človeškimi rokami,  ter je zdrobil železo,  baker,  glino,  srebro in zlato. O kralj,  Veliki Bog ti je oznanil,  kaj se bo zgodilo v prihodnosti. Sanje so verodostojne in njihova razlaga zanesljiva.«</TD>
-</TR>
-<TR>
-<TD >Ko je kralj Nebukadnezar to slišal,  je padel na kolena in se priklonil do tal ter tako Danielu izkazal čast. Naročil je,  naj se mu daruje dar in zažge kadilo.</TD>
-</TR>
-<TR>
-<TD >Kralj je Danielu rekel: »Vaš Bog je zares Bog nad bogovi in Gospod nad kralji ter tisti,  ki razodeva skrivnosti,  saj ti je dal sposobnost,  da si mi razodel to skrivnost.«</TD>
-</TR>
-<TR>
-<TD >Nato je Daniela povišal in mu dal mnogo dragocenih darov. Postavil ga je za vladarja nad vso babilonsko provinco in za glavnega predstojnika vseh babilonskih modrih mož.</TD>
-</TR>
-<TR>
-<TD >Upravljanje babilonske province je kralj na Danielovo prošnjo zaupal Šadrahu,  Mešahu in Abednegu,  Daniel pa je ostal na kraljevem dvoru.</TD>
-</TR>
-<TR>
-<TD >Daniel 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kralj Nebukadnezar je naredil zlat kip,  visok 60 komolcev in širok 6 komolcev. Postavil ga je v ravnini Dura v babilonski provinci.</TD>
-</TR>
-<TR>
-<TD >Nato je na praznovanje ob postavitvi kipa,  ki ga je postavil on sam,  dal sklicati satrape,  predstojnike,  deželne upravitelje,  svetovalce,  zakladnike,  sodnike,  sodne uradnike in vse upravnike provinc.</TD>
-</TR>
-<TR>
-<TD >Satrapi,  predstojniki,  deželni upravitelji,  svetovalci,  zakladniki,  sodniki,  sodni uradniki in vsi upravniki provinc so se torej zbrali na praznovanju ob postavitvi kipa,  ki ga je postavil kralj Nebukadnezar,  in stopili pred njega.</TD>
-</TR>
-<TR>
-<TD >Glasnik je z močnim glasom oznanil: »Vam,  pripadniki vseh ljudstev,  narodov in jezikov,  se zapoveduje:</TD>
-</TR>
-<TR>
-<TD >Ko zaslišite zvok roga,  piščali,  citer,  harfe,  lire,  dud in vseh drugih glasbil,  padite na kolena in počastite zlati kip,  ki ga je postavil kralj Nebukadnezar.</TD>
-</TR>
-<TR>
-<TD >Kdor pa ne bo padel na kolena in ga počastil,  bo še tisti trenutek vržen v ognjeno peč.«</TD>
-</TR>
-<TR>
-<TD >Ko so torej pripadniki vseh ljudstev,  narodov in jezikov zaslišali zvok roga,  piščali,  citer,  harfe,  lire in vseh drugih glasbil,  so padli na kolena in počastili zlati kip,  ki ga je postavil kralj Nebukadnezar.</TD>
-</TR>
-<TR>
-<TD >Ravno takrat so pristopili neki Kaldejci in obtožili Jude.</TD>
-</TR>
-<TR>
-<TD >Kralju Nebukadnezarju so rekli: »Naj živi kralj!</TD>
-</TR>
-<TR>
-<TD >Ti,  o kralj,  si izdal zapoved,  naj vsak,  ki zasliši zvok roga,  piščali,  citer,  harfe,  lire,  dud in vseh drugih glasbil,  pade na kolena in počasti zlati kip</TD>
-</TR>
-<TR>
-<TD >ter da naj bo vsak,  ki ne bi padel na kolena in ga počastil,  vržen v ognjeno peč.</TD>
-</TR>
-<TR>
-<TD >Tu so neki Judje,  ki si jim zaupal upravljanje babilonske province – Šadrah,  Mešah in Abednego. Ti moški te niti malo ne spoštujejo,  o kralj. Ne služijo tvojim bogovom in nočejo počastiti zlatega kipa,  ki si ga postavil.«</TD>
-</TR>
-<TR>
-<TD >Takrat je Nebukadnezar ves besen ukazal,  naj pripeljejo Šadraha,  Mešaha in Abednega. Tako so jih pripeljali pred kralja.</TD>
-</TR>
-<TR>
-<TD >Nebukadnezar jim je rekel: »Šadrah,  Mešah in Abednego,  ali je res,  da ne služite mojim bogovom in da nočete počastiti zlatega kipa,  ki sem ga postavil?</TD>
-</TR>
-<TR>
-<TD >Zdaj boste zaslišali zvok roga,  piščali,  citer,  harfe,  lire,  dud in vseh drugih glasbil. Če boste pripravljeni pasti na kolena in počastiti kip,  ki sem ga naredil,  bo v redu. Če pa ga ne boste hoteli počastiti,  boste tisti trenutek vrženi v ognjeno peč. In kateri bog vas bo lahko rešil iz mojih rok?«</TD>
-</TR>
-<TR>
-<TD >Šadrah,  Mešah in Abednego so kralju odgovorili: »O Nebukadnezar,  ni treba,  da se o tem še kaj pogovarjamo.</TD>
-</TR>
-<TR>
-<TD >Če že mora biti tako,  nas naš Bog,  ki mu služimo,  lahko reši iz ognjene peči in iz tvoje roke,  o kralj.</TD>
-</TR>
-<TR>
-<TD >Pa tudi če nas ne bi,  vedi,  o kralj,  da tvojim bogovom ne bomo služili in zlatega kipa,  ki si ga postavil,  ne bomo počastili.«</TD>
-</TR>
-<TR>
-<TD >Zaradi tega se je Nebukadnezar tako zelo razjezil na Šadraha,  Mešaha in Abednega,  da se mu je izraz na obrazu spremenil. Naročil je,  naj peč sedemkrat bolj segrejejo kot običajno.</TD>
-</TR>
-<TR>
-<TD >Nekaterim močnim možem iz svoje vojske pa je ukazal,  naj Šadraha,  Mešaha in Abednega zvežejo ter jih vržejo v ognjeno peč.</TD>
-</TR>
-<TR>
-<TD >Tako so jih,  oblečene v ogrinjala,  obleke,  pokrivala in druga oblačila,  zvezali in vrgli v ognjeno peč.</TD>
-</TR>
-<TR>
-<TD >Ker so na kraljev strogi ukaz peč še posebej razbelili,  so plameni,  ki so švigali iz peči,  ubili može,  ki so pripeljali Šadraha,  Mešaha in Abednega.</TD>
-</TR>
-<TR>
-<TD >Toda ti trije,  Šadrah,  Mešah in Abednego,  so zvezani padli v ognjeno peč.</TD>
-</TR>
-<TR>
-<TD >Nato se je kralj Nebukadnezar prestrašil. Hitro je vstal in svoje višje uradnike vprašal: »Ali nismo zvezali treh ljudi in jih vrgli v ogenj?« Odgovorili so: »Smo,  o kralj.«</TD>
-</TR>
-<TR>
-<TD >Kralj pa je rekel: »Glejte,  vidim štiri moške,  ki razvezani hodijo sredi ognja,  pa jim ni nič hudega,  in četrti je videti kakor sin bogov.«</TD>
-</TR>
-<TR>
-<TD >Nebukadnezar se je približal vratom ognjene peči in rekel: »Šadrah,  Mešah in Abednego,  služabniki Najvišjega Boga,  stopite ven in pridite sem!« Šadrah,  Mešah in Abednego so stopili iz ognja.</TD>
-</TR>
-<TR>
-<TD >Satrapi,  predstojniki,  deželni upravitelji in kraljevi višji uradniki,  ki so bili zbrani,  so videli,  da ogenj tem moškim ni naredil nobene škode. Osmodil se jim ni niti en las na glavi,  navzeli se niso nobenega vonja po dimu in njihova ogrinjala so ostala nedotaknjena.</TD>
-</TR>
-<TR>
-<TD >Zatem je Nebukadnezar oznanil: »Naj bo hvaljen Šadrahov,  Mešahov in Abednegov Bog,  ki je poslal angela in rešil svoje služabnike. Zaupali so svojemu Bogu in se niso podredili temu,  kar sem jaz kot kralj zapovedal. Niso hoteli služiti nobenemu drugemu bogu,  razen svojemu Bogu,  niti niso hoteli počastiti nobenega drugega boga,  razen svojega Boga – za to so bili pripravljeni celo umreti.</TD>
-</TR>
-<TR>
-<TD >Zato zdaj ukazujem: Kdor koli iz katerega koli ljudstva,  naroda ali jezika bi rekel kaj proti Šadrahovemu,  Mešahovemu in Abednegovemu Bogu,  naj bo razkosan in njegova hiša spremenjena v javno stranišče. Ni namreč nobenega drugega boga,  ki bi bil zmožen reševati,  kakor je ta.«</TD>
-</TR>
-<TR>
-<TD >Kralj pa je zatem Šadraha,  Mešaha in Abednega spet postavil na visoke položaje v babilonski provinci.</TD>
-</TR>
-<TR>
-<TD >Daniel 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Jaz,  kralj Nebukadnezar,  pošiljam pripadnikom vseh ljudstev,  narodov in jezikov,  ki živijo po vsej zemlji,  naslednje sporočilo: Želim vam obilo miru!</TD>
-</TR>
-<TR>
-<TD >Vesel sem,  da vam lahko oznanim,  kakšna znamenja in čudeže je Najvišji Bog naredil na meni.</TD>
-</TR>
-<TR>
-<TD >Njegova znamenja so zelo velika in njegovi čudeži nadvse mogočni! Njegovo kraljestvo traja večno in njegova oblast iz roda v rod.</TD>
-</TR>
-<TR>
-<TD >Jaz,  Nebukadnezar,  sem mirno živel v svoji hiši in dobro mi je šlo v moji palači.</TD>
-</TR>
-<TR>
-<TD >Potem pa sem imel sanje,  ki so me navdale s strahom. V spanju so se mi prikazale podobe in videnja. To,  kar sem videl,  me je prestrašilo.</TD>
-</TR>
-<TR>
-<TD >Zato sem ukazal,  naj k meni pripeljejo vse babilonske modre može,  da bi mi sanje razložili.</TD>
-</TR>
-<TR>
-<TD >K meni so prišli svečeniki,  ki se ukvarjajo z magijo,  ljudje,  ki kličejo duhove,  kaldejci in astrologi. Toda ko sem jim povedal sanje,  mi jih niso znali razložiti.</TD>
-</TR>
-<TR>
-<TD >Nazadnje je prišel k meni Daniel,  ki je v čast imenu mojega boga dobil ime Beltšazar in v katerem je duh svetih bogov,  in povedal sem mu sanje:</TD>
-</TR>
-<TR>
-<TD >‚O Beltšazar,  poglavar svečenikov,  ki se ukvarjajo z magijo! Dobro vem,  da je v tebi duh svetih bogov in da je ni skrivnosti,  ki je ne bi znal razodeti. Zato mi pojasni pomen videnj,  ki sem jih imel v sanjah.</TD>
-</TR>
-<TR>
-<TD >V videnjih,  ki sem jih imel v spanju,  sem sredi zemlje videl velikansko drevo.</TD>
-</TR>
-<TR>
-<TD >Drevo je zraslo in postalo močno,  njegov vrh je dosegel nebo in videti ga je bilo do skrajnega konca zemlje.</TD>
-</TR>
-<TR>
-<TD >Njegovo listje je bilo lepo in na njem je bilo toliko plodov,  da jih je bilo dovolj za vse. Pod njim so si iskale senco divje živali,  na njegovih vejah so gnezdile ptice in od njega so se hranila vsa živa bitja.</TD>
-</TR>
-<TR>
-<TD >V videnjih,  ki sem jih imel v spanju,  sem nato videl stražarja,  svetega sla,  ki se je spuščal z neba.</TD>
-</TR>
-<TR>
-<TD >Glasno je zaklical: »Posekajte drevo,  porežite mu veje,  otresite listje z njega in razmečite njegove plodove! Živali,  ki so bile pod njim,  naj zbežijo in ptice naj odletijo z njegovih vej.</TD>
-</TR>
-<TR>
-<TD >Toda njegov štor s koreninami pustite v zemlji. Dajte ga v okove iz železa in bakra ter ga pustite sredi trave na polju. Od rose z neba naj bo moker in z živalmi naj si deli zemeljsko rastlinje.</TD>
-</TR>
-<TR>
-<TD >Srce naj se mu iz človeškega spremeni v živalsko in naj takšno ostane sedem časov.</TD>
-</TR>
-<TR>
-<TD >To je odredba,  ki so jo oznanili stražarji,  in razsodba,  ki so jo razglasili sveti sli,  da bi ljudje vedeli,  da ima Najvišji oblast nad človeškim kraljestvom in da jo lahko da,  komur hoče,  celo najnižjemu med ljudmi.«</TD>
-</TR>
-<TR>
-<TD >To so bile sanje,  ki sem jih imel jaz,  kralj Nebukadnezar. Ti,  o Beltšazar,  pa jih razloži,  ker mi jih ne more razložiti noben drug moder mož v kraljestvu. Toda ti si tega zmožen,  ker je v tebi duh svetih bogov.</TD>
-</TR>
-<TR>
-<TD >Daniel,  ki mu je ime Beltšazar,  je za trenutek otrpnil in se ustrašil svojih lastnih misli.<br>Kralj mu je rekel: ‚O Beltšazar,  naj te sanje in njihova razlaga ne strašijo!<br>Beltšazar je odgovoril: ‚Ah,  moj gospod,  želim si,  da bi se sanje uresničile na tvojih sovražnikih in da bi razlaga veljala tvojim nasprotnikom!</TD>
-</TR>
-<TR>
-<TD >Drevo,  ki si ga videl,  ki je postalo veliko in močno,  njegov vrh pa je dosegel nebo in ga je bilo videti po vsej zemlji, </TD>
-</TR>
-<TR>
-<TD >drevo,  katerega listje je bilo lepo in na katerem je bilo toliko plodov,  da jih je bilo dovolj za vse,  drevo,  pod katerim so bivale divje živali in na katerega vejah so gnezdile ptice</TD>
-</TR>
-<TR>
-<TD >– to si ti,  o kralj. Postal si namreč velik in močan,  tvoja veličina je zrasla in sega do neba,  tvoja oblast pa do skrajnega konca zemlje.</TD>
-</TR>
-<TR>
-<TD >Kralj je videl tudi stražarja,  svetega sla,  ki se je spuščal z neba in govoril: »Posekajte drevo in ga uničite! Toda njegov štor s koreninami pustite v zemlji. Dajte ga v okove iz železa in bakra ter ga pustite sredi trave na polju. Od rose z neba naj bo moker in z divjimi živalmi naj bo,  dokler ne preteče sedem časov.«</TD>
-</TR>
-<TR>
-<TD >To,  o kralj,  pomeni naslednje; to je odredba Najvišjega glede tega,  kaj se bo zgodilo mojemu gospodu kralju:</TD>
-</TR>
-<TR>
-<TD >Pregnali te bodo od ljudi in živel boš med divjimi živalmi. Dajali ti bodo jesti travo kakor govedu in od rose z neba boš moker. Preteklo bo sedem časov,  dokler ne boš spoznal,  da ima Najvišji oblast nad človeškim kraljestvom in da jo lahko da,  komur hoče.</TD>
-</TR>
-<TR>
-<TD >To,  da so rekli,  naj se drevesu pusti štor s koreninami,  pa pomeni,  da boš spet zavladal nad svojim kraljestvom,  potem ko boš spoznal,  da je resnični vladar v nebesih.</TD>
-</TR>
-<TR>
-<TD >Zato te prosim,  o kralj,  sprejmi moj nasvet. Prenehaj s svojimi grehi in delaj to,  kar je prav. Ne ravnaj več krivično in bodi usmiljen do revnih. Mogoče boš potem dlje užival v svoji blaginji.«</TD>
-</TR>
-<TR>
-<TD >Vse to se je kralju Nebukadnezarju res zgodilo.</TD>
-</TR>
-<TR>
-<TD >Dvanajst mesecev kasneje se je sprehajal po strehi kraljeve palače v Babilonu</TD>
-</TR>
-<TR>
-<TD >in govoril: »Ali ni to veliki Babilon,  ki sem ga jaz s svojo veliko močjo zgradil,  da bo kraljeva prestolnica in da bo pričal o moji slavi in veličastnosti?«</TD>
-</TR>
-<TR>
-<TD >Ko je kralj še govoril,  se je z neba zaslišal glas: »Tebi,  o kralj Nebukadnezar,  je namenjeno naslednje sporočilo: ‚Kraljestvo ti je vzeto.</TD>
-</TR>
-<TR>
-<TD >Od ljudi te bodo pregnali in živel boš z divjimi živalmi. Dajali ti bodo jesti travo kakor govedu in preteklo bo sedem časov,  dokler ne boš spoznal,  da ima Najvišji oblast nad človeškim kraljestvom in da jo lahko da,  komur hoče.«</TD>
-</TR>
-<TR>
-<TD >V tistem trenutku so se na Nebukadnezarju te besede izpolnile. Pregnali so ga od ljudi,  začel je jesti travo kakor govedo in njegovo telo je bilo mokro od rose z neba. Njegovi lasje so zrasli in postali kakor orlovo perje in njegovi nohti kakor ptičji kremplji.</TD>
-</TR>
-<TR>
-<TD >»Ko se je to obdobje končalo,  sem jaz,  Nebukadnezar,  pogledal proti nebu in razum se mi je povrnil. Hvalil sem Najvišjega ter izrekal hvalo in čast njemu,  ki večno živi,  saj njegova oblast traja večno in njegovo kraljestvo iz roda v rod.</TD>
-</TR>
-<TR>
-<TD >Vsi prebivalci zemlje so v primerjavi z njim kakor nič in po svoji volji ravna z nebeško vojsko in s prebivalci zemlje. Nikogar ni,  ki bi mu lahko kaj preprečil ali mu rekel ‚Zakaj to delaš?.</TD>
-</TR>
-<TR>
-<TD >Takrat se mi je povrnil razum,  moje kraljestvo je spet postalo slavno in povrnila sta se tudi moja veličastnost in sijaj. Moji svetovalci in dostojanstveniki so me začeli željno iskati in spet sem bil postavljen nad svoje kraljestvo ter postal še bolj slaven kot prej.</TD>
-</TR>
-<TR>
-<TD >Zato jaz,  Nebukadnezar,  zdaj hvalim,  poveličujem in slavim Kralja nebes,  saj so vsa njegova dela v skladu z resnico,  vse,  kar dela,  je pravično in tiste,  ki so ošabni,  lahko poniža.«</TD>
-</TR>
-<TR>
-<TD >Daniel 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >Kralj Belšazar je pripravil veliko pojedino za svojih tisoč dostojanstvenikov in je z njimi pil vino.</TD>
-</TR>
-<TR>
-<TD >Nato je,  opit od vina,  ukazal prinesti zlate in srebrne posode,  ki jih je njegov oče Nebukadnezar vzel iz templja v Jeruzalemu. Hotel je,  da iz njih pijejo on sam,  njegovi dostojanstveniki,  stranske žene in priležnice.</TD>
-</TR>
-<TR>
-<TD >Prinesli so torej zlate posode,  ki so bile odnesene iz svetišča v Božji hiši v Jeruzalemu. Iz njih so pili kralj,  njegovi dostojanstveniki,  njegove stranske žene in priležnice.</TD>
-</TR>
-<TR>
-<TD >Pili so vino in hvalili bogove iz zlata,  srebra,  bakra,  železa,  lesa in kamna.</TD>
-</TR>
-<TR>
-<TD >V tistem trenutku so se pojavili prsti človeške roke in začeli pisati po ometani steni kraljeve palače nasproti svečniku,  tako da je kralj lahko videl roko,  ki je pisala.</TD>
-</TR>
-<TR>
-<TD >Kralj je prebledel,  njegove misli so ga prestrašile,  noge so se mu zašibile in kolena so mu začela trkati druga ob drugo.</TD>
-</TR>
-<TR>
-<TD >Kralj je zavpil,  naj pripeljejo tiste,  ki kličejo duhove,  ter kaldejce in astrologe. Babilonskim modrim možem je rekel: »Tistega,  ki bo prebral ta napis in mi ga razložil,  bodo oblekli v vijoličasto obleko in mu dali zlato verižico okrog vratu. Vladal bo kot tretji v kraljestvu.«</TD>
-</TR>
-<TR>
-<TD >Prišli so vsi kraljevi modri možje,  toda niso znali prebrati napisa niti povedati kralju,  kaj pomeni.</TD>
-</TR>
-<TR>
-<TD >Zato se je kralj Belšazar zelo prestrašil in je ves prebledel,  med njegovimi dostojanstveniki pa je nastala zmeda.</TD>
-</TR>
-<TR>
-<TD >Ko je za to,  o čemer so se pogovarjali kralj in njegovi dostojanstveniki,  izvedela kraljica,  je stopila v dvorano,  v kateri je bila pojedina,  in rekla: »Naj živi kralj! Naj te ne strašijo tvoje misli in tvoj obraz naj ne bo ves bled.</TD>
-</TR>
-<TR>
-<TD >V tvojem kraljestvu je mož,  ki ima duha svetih bogov. V dneh tvojega očeta so odkrili,  da ima spoznanje,  uvid in modrost,  ki je podobna modrosti bogov. Kralj Nebukadnezar,  tvoj oče,  ga je postavil za poglavarja svečenikov,  ki se ukvarjajo z magijo,  za poglavarja ljudi,  ki kličejo duhove,  ter za poglavarja kaldejcev in astrologov. To je naredil tvoj oče,  o kralj.</TD>
-</TR>
-<TR>
-<TD >Daniel,  ki mu je kralj dal ime Beltšazar,  je namreč imel izreden um,  spoznanje in uvid,  da je lahko razlagal sanje,  reševal uganke in odgovarjal na zapletena vprašanja. Daj torej poklicati Daniela in povedal ti bo razlago.«</TD>
-</TR>
-<TR>
-<TD >Tako so Daniela pripeljali pred kralja. Kralj ga je vprašal: »Ali si ti Daniel,  eden od pregnancev,  ki jih je kralj,  moj oče,  pripeljal z Judovega?</TD>
-</TR>
-<TR>
-<TD >Slišal sem tudi,  da imaš v sebi duha bogov in da so pri tebi odkrili spoznanje,  uvid in izredno modrost.</TD>
-</TR>
-<TR>
-<TD >Pred mene so pripeljali modre može in tiste,  ki kličejo duhove,  da bi prebrali ta napis in mi ga razložili,  ampak ga niso znali razložiti.</TD>
-</TR>
-<TR>
-<TD >Zate pa sem slišal,  da lahko razložiš skrivnosti in rešiš zapletena vprašanja. Če torej lahko prebereš ta napis in mi ga razložiš,  te bodo oblekli v vijoličasto obleko in ti okrog vratu dali zlato verižico. Zavladal boš kot tretji v kraljestvu.«</TD>
-</TR>
-<TR>
-<TD >Daniel pa je kralju odgovoril: »Te darove lahko obdržiš in ta darila lahko daš drugim. Toda,  moj gospod kralj,  napis ti bom vseeno prebral in ti ga razložil.</TD>
-</TR>
-<TR>
-<TD >O kralj,  Najvišji Bog je tvojemu očetu Nebukadnezarju podelil kraljestvo,  veličino,  čast in veličastnost.</TD>
-</TR>
-<TR>
-<TD >Zaradi veličine,  ki mu jo je dal,  so vsi pripadniki ljudstev,  narodov in jezikov pred njim trepetali od strahu. Kogar je hotel,  je ubil ali pustil živeti,  in kogar je hotel,  je povišal ali ponižal.</TD>
-</TR>
-<TR>
-<TD >Ko pa je postal ošaben in trmast,  tako da je ravnal predrzno,  je bil vržen s prestola svojega kraljestva in mu je bilo vzeto dostojanstvo.</TD>
-</TR>
-<TR>
-<TD >Pregnali so ga od ljudi,  njegovo srce je postalo kakor živalsko in živel je med divjimi osli. Dajali so mu jesti travo kakor govedu in njegovo telo je bilo mokro od rose z neba,  dokler ni spoznal,  da ima Najvišji Bog oblast nad človeškim kraljestvom in da jo lahko da,  komur hoče.</TD>
-</TR>
-<TR>
-<TD >Ti pa,  njegov sin Belšazar,  se nisi ponižal,  čeprav si vse to vedel.</TD>
-</TR>
-<TR>
-<TD >Celo povzdignil si se nad Gospoda nebes in zahteval,  da ti prinesejo posode iz njegove hiše. Nato ste ti,  tvoji dostojanstveniki,  tvoje stranske žene in priležnice iz njih pili vino in hvalili bogove iz srebra,  zlata,  bakra,  železa,  lesa in kamna,  bogove,  ki nič ne vidijo,  nič ne slišijo in nič ne vedo. Toda Bogu,  od katerega je odvisno tvoje življenje in vse,  kar delaš,  nisi izkazal slave.</TD>
-</TR>
-<TR>
-<TD >Zato je Bog poslal roko,  ki je napisala tale napis.</TD>
-</TR>
-<TR>
-<TD >Napis se torej glasi: MENE,  MENE,  TEKEL in PARSIN.</TD>
-</TR>
-<TR>
-<TD >Pomen teh besed pa je: MENE – Bog je preštel dneve tvojega kraljestva in mu naredil konec.</TD>
-</TR>
-<TR>
-<TD >TEKEL – stehtan si bil na tehtnici in izkazal si se prelahkega.</TD>
-</TR>
-<TR>
-<TD >PERES – tvoje kraljestvo je bilo razdeljeno in izročeno Medijcem in Perzijcem.«</TD>
-</TR>
-<TR>
-<TD >Potem so na Belšazarjevo zapoved Daniela oblekli v vijoličasto obleko,  mu dali zlato verižico okrog vratu in naznanili,  da bo postal tretji vladar v kraljestvu.</TD>
-</TR>
-<TR>
-<TD >Še isto noč so kaldejskega kralja Belšazarja ubili.</TD>
-</TR>
-<TR>
-<TD >Kraljestvo je dobil Medijec Darej,  ki je bil star okoli 62 let.</TD>
-</TR>
-<TR>
-<TD >Daniel 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >Darej se je odločil,  da bo nad celotno kraljestvo postavil 1</TD>
-</TR>
-<TR>
-<TD >0 satrapov. 2  Nad njimi pa je za nadzornike postavil tri višje uradnike. Ti naj bi skrbeli za to,  da kralj ne bi utrpel nobene škode. Eden od teh treh je bil Daniel.</TD>
-</TR>
-<TR>
-<TD >Daniel se je med višjimi uradniki in satrapi odlikoval po izrednem umu,  zato ga je kralj nameraval postaviti nad vse kraljestvo.</TD>
-</TR>
-<TR>
-<TD >Višja uradnika in satrapi pa so iskali razlog,  na podlagi katerega bi lahko Daniela obtožili glede tega,  kako opravlja svoje dolžnosti v kraljestvu. Toda niso mogli najti nobenega razloga za obtožbo niti nobenega dokaza,  da je naredil kaj pokvarjenega. Bil je namreč vreden zaupanja in pri njem ni bilo zaslediti nobene malomarnosti ali pokvarjenosti.</TD>
-</TR>
-<TR>
-<TD >Zato so ti možje rekli: »Nobenega razloga ne bomo našli,  na podlagi katerega bi lahko Daniela obtožili,  razen če najdemo kaj proti njemu v zvezi s čaščenjem njegovega Boga.«</TD>
-</TR>
-<TR>
-<TD >Tako so višja uradnika in satrapi prihrumeli h kralju in mu rekli: »Naj živi kralj Darej!</TD>
-</TR>
-<TR>
-<TD >Vsi kraljevi uradniki,  predstojniki,  satrapi,  kraljevi svetovalci in deželni upravitelji smo po posvetu ugotovili,  da bi bilo treba izdati kraljevo odredbo in uveljaviti naslednjo prepoved: vsakega,  ki bi v 30 dneh kaj prosil katerega koli boga ali človeka razen tebe,  o kralj,  se bo vrglo v levjo jamo.</TD>
-</TR>
-<TR>
-<TD >Zdaj pa,  o kralj,  izdaj to odredbo in jo podpiši,  da se ne bo mogla spremeniti,  saj se zakonov Medijcev in Perzijcev ne da razveljaviti.«</TD>
-</TR>
-<TR>
-<TD >Tako je kralj Darej podpisal odredbo in prepoved.</TD>
-</TR>
-<TR>
-<TD >Ko je Daniel izvedel,  da je odredba podpisana,  je takoj šel v svojo hišo. V strešni sobi je imel okna odprta proti Jeruzalemu. Tam je trikrat na dan pokleknil ter molil k svojemu Bogu in mu izrekal hvalo,  kakor je to redno delal že prej.</TD>
-</TR>
-<TR>
-<TD >Takrat so prihrumeli tisti možje in našli Daniela,  da svojega Boga prosi in roti za milost.</TD>
-</TR>
-<TR>
-<TD >Potem so pristopili h kralju in ga spomnili na prepoved,  ki jo je izdal. Vprašali so ga: »Ali nisi podpisal prepovedi,  na podlagi katere bi se vsakega,  ki bi v 30 dneh prosil kaj katerega koli boga ali človeka razen tebe,  o kralj,  vrglo v levjo jamo?« Kralj je odgovoril: »Tako je odločeno in tega se skladno z zakoni Medijcev in Perzijcev ne da razveljaviti.«</TD>
-</TR>
-<TR>
-<TD >Kralju so takoj povedali: »Daniel,  eden od judovskih pregnancev,  te niti malo ne spoštuje,  o kralj,  niti se ne meni za prepoved,  ki si jo podpisal,  ampak trikrat na dan moli.«</TD>
-</TR>
-<TR>
-<TD >Kralja so te besede zelo razžalostile,  zato se je skušal domisliti,  kako bi Danielu pomagal. Vse do sončnega zahoda si je prizadeval,  da bi ga rešil.</TD>
-</TR>
-<TR>
-<TD >Toda h kralju so prihrumeli tisti možje in mu rekli: »Dobro veš,  o kralj,  da se glede na zakone Medijcev in Perzijcev nobena prepoved ali odredba,  ki jo kralj izda,  ne more spremeniti.«</TD>
-</TR>
-<TR>
-<TD >Tako so na kraljev ukaz Daniela odpeljali in ga vrgli v levjo jamo. Danielu pa je kralj rekel: »Tvoj Bog,  ki mu vztrajno služiš,  te bo rešil.«</TD>
-</TR>
-<TR>
-<TD >Prinesli so kamen,  ga položili k vhodu v jamo in kralj ga je zapečatil s svojim pečatnim prstanom in s pečatnimi prstani svojih dostojanstvenikov,  da se glede Daniela ne bi moglo nič spremeniti.</TD>
-</TR>
-<TR>
-<TD >Nato se je kralj vrnil v svojo palačo. Vso noč se je postil,  zavračal vsakršno razvedrilo in ni mogel spati.</TD>
-</TR>
-<TR>
-<TD >Takoj ko se je začelo daniti,  pa je vstal in odhitel k levji jami.</TD>
-</TR>
-<TR>
-<TD >Približal se je jami in žalostno poklical Daniela. Vprašal ga je: »O Daniel,  služabnik živega Boga,  ali te je mogel tvoj Bog,  ki mu vztrajno služiš,  rešiti levov?«</TD>
-</TR>
-<TR>
-<TD >Daniel pa je kralju takoj odgovoril: »Naj živi kralj!</TD>
-</TR>
-<TR>
-<TD >Moj Bog je poslal svojega angela,  da je zaprl levom žrela,  tako da me niso poškodovali. Pred Bogom sem se namreč izkazal za nedolžnega pa tudi tebi,  o kralj,  nisem naredil nič slabega.«</TD>
-</TR>
-<TR>
-<TD >Kralj je bil presrečen in je zapovedal,  naj Daniela potegnejo iz jame. Ko so ga potegnili ven,  niso na njem našli niti najmanjše praske,  ker je zaupal svojemu Bogu.</TD>
-</TR>
-<TR>
-<TD >Nato so na kraljev ukaz pripeljali može,  ki so obtožili Daniela,  in jih vrgli v levjo jamo skupaj z njihovimi otroki in ženami. Niso se še dotaknili dna jame,  ko so jih levi že napadli in jim zlomili vse kosti.</TD>
-</TR>
-<TR>
-<TD >Nato je kralj Darej pripadnikom vseh ljudstev,  narodov in jezikov,  ki živijo po vsej zemlji,  napisal: »Želim vam obilo miru!</TD>
-</TR>
-<TR>
-<TD >Ljudem po vsem mojem kraljestvu ukazujem,  naj se bojijo Danielovega Boga in ga spoštujejo. Ta Bog je namreč živi Bog,  ki bo večno obstajal. Njegovo kraljestvo ne bo nikoli uničeno in njegova oblast bo večna.</TD>
-</TR>
-<TR>
-<TD >On rešuje,  osvobaja ter dela znamenja in čudeže na nebu in na zemlji,  saj je rešil Daniela iz levjih krempljev.«</TD>
-</TR>
-<TR>
-<TD >Danielu pa je šlo dobro v kraljestvu Dareja in kraljestvu Perzijca Kira.</TD>
-</TR>
-<TR>
-<TD >Daniel 7. Poglavje</TD>
-</TR>
-<TR>
-<TD >V prvem letu vladanja babilonskega kralja Belšazarja je imel Daniel med spanjem sanje in videnja. Nato je te sanje tudi zapisal; zapisal je vse,  kar je videl.</TD>
-</TR>
-<TR>
-<TD >Daniel je povedal:<br>»V svojih videnjih ponoči sem videl vetrove,  ki so pihali iz štirih smeri neba in so razburkali prostrano morje.</TD>
-</TR>
-<TR>
-<TD >Iz morja so prišle štiri velikanske zveri,  vsaka drugačna.</TD>
-</TR>
-<TR>
-<TD >Prva je bila kakor lev in je imela orlje peruti. Medtem ko sem gledal,  so ji bile peruti izpuljene. Dvignjena je bila od tal in postavljena na dve nogi,  da je stala kakor človek,  in dobila je človeško srce.</TD>
-</TR>
-<TR>
-<TD >Videl sem še eno zver,  drugo po vrsti,  ki je bila kakor medved. Dvignila je eno šapo in v ustih je med zobmi imela tri rebra. Rečeno ji je bilo: ‚Daj,  pojej veliko mesa!</TD>
-</TR>
-<TR>
-<TD >Še naprej sem gledal in videl naslednjo zver,  ki je bila kakor leopard,  le da je imela na hrbtu štiri ptičje peruti. Zver je imela štiri glave in izročena ji je bila oblast,  da vlada.</TD>
-</TR>
-<TR>
-<TD >Zatem sem v videnjih ponoči videl še četrto zver,  strašno in grozno ter neobičajno močno. Imela je velike železne zobe. Žrla je in drobila vse okrog sebe,  kar pa je ostalo,  je poteptala z nogami. Razlikovala se je od vseh drugih zveri,  ki so bile pred njo,  in imela je deset rogov.</TD>
-</TR>
-<TR>
-<TD >Ko sem opazoval rogove,  se je med njimi pojavil še en rog,  majhen,  in trije prvotni rogovi so bili pred njim izdrti. Na tem rogu so bile oči,  podobne človeškim,  in usta,  ki so govorila ošabno.</TD>
-</TR>
-<TR>
-<TD >Ko sem tako še gledal,  so bili postavljeni prestoli in usedel se je Pradavni. Njegova obleka je bila bela kakor sneg in lasje na njegovi glavi so bili beli kakor čista volna. Njegov prestol je bil kakor ognjeni plameni in kolesa prestola kakor goreč ogenj.</TD>
-</TR>
-<TR>
-<TD >Od njega je tekla ognjena reka. Tisoči tisočev so mu stregli in desettisočkrat desettisoči so stali pred njim. Sodišče je začelo zasedati in knjige so se odprle.</TD>
-</TR>
-<TR>
-<TD >Takrat so ošabne besede,  ki jih je rog govoril,  pritegnile mojo pozornost. Medtem ko sem gledal,  je bila zver ubita,  njeno truplo pa vrženo v ogenj in uničeno.</TD>
-</TR>
-<TR>
-<TD >Ostalim zverem je bila oblast vzeta,  življenje pa jim je bilo podaljšano za nekaj časa.</TD>
-</TR>
-<TR>
-<TD >Zatem sem v videnjih ponoči videl,  kako je z nebesnimi oblaki prihajal nekdo,  ki je bil kakor sin človekov. Dovoljeno mu je bilo priti do Pradavnega in pripeljali so ga pred njega.</TD>
-</TR>
-<TR>
-<TD >Prejel je oblast,  čast in kraljestvo,  da bi mu služili pripadniki vseh ljudstev,  narodov in jezikov. Njegova oblast je večna,  nikoli se ne bo končala,  in njegovo kraljestvo ne bo nikoli uničeno.</TD>
-</TR>
-<TR>
-<TD >Jaz,  Daniel,  pa sem bil zaskrbljen,  ker so me videnja,  ki sem jih imel,  prestrašila.</TD>
-</TR>
-<TR>
-<TD >Pristopil sem k enemu od tistih,  ki so tam stali,  in ga vprašal,  kaj vse to v resnici pomeni. In on mi je to tudi razložil:</TD>
-</TR>
-<TR>
-<TD >‚Te štiri velikanske zveri so štirje kralji,  ki bodo dobili oblast na zemlji.</TD>
-</TR>
-<TR>
-<TD >Toda kraljestvo bodo dobili sveti,  ki pripadajo Vrhovnemu,  in imeli ga bodo za vedno,  za vso večnost.</TD>
-</TR>
-<TR>
-<TD >Nato sem želel več izvedeti o četrti zveri,  ki je bila drugačna od vseh drugih. Bila je neobičajno strašna,  imela je železne zobe in bakrene kremplje,  žrla in drobila je vse okrog sebe,  kar pa je ostalo,  je poteptala z nogami.</TD>
-</TR>
-<TR>
-<TD >Želel sem več izvedeti tudi o desetih rogovih na njeni glavi in o rogu,  ki se je pojavil in pred katerim so trije odpadli,  o rogu,  ki je imel oči in usta,  ki so govorila ošabno,  in je bil videti večji od ostalih.</TD>
-</TR>
-<TR>
-<TD >Medtem ko sem gledal,  se je ta rog začel vojskovati s svetimi in je zmagoval nad njimi, </TD>
-</TR>
-<TR>
-<TD >dokler ni prišel Pradavni,  dokler ni bilo razsojeno v korist svetih,  ki pripadajo Vrhovnemu,  in dokler ni nastopil čas,  določen za to,  da sveti dobijo v last kraljestvo.</TD>
-</TR>
-<TR>
-<TD >Tisti,  ki mi je razlagal vse to,  je rekel: ‚Četrta zver predstavlja četrto kraljestvo,  ki se bo pojavilo na zemlji. Drugačno bo od vseh drugih kraljestev in bo požrlo vso zemljo,  jo poteptalo in zdrobilo.</TD>
-</TR>
-<TR>
-<TD >Deset rogov predstavlja deset kraljev,  ki bodo prišli iz tega kraljestva. Za njimi pa bo prišel še eden,  ki bo drugačen od njih in bo ponižal tri kralje.</TD>
-</TR>
-<TR>
-<TD >Govoril bo proti Najvišjemu in preganjal svete,  ki pripadajo Vrhovnemu. Hotel bo spremeniti čase in zakon,  sveti pa bodo izročeni v njegove roke za en čas,  dva časa in pol časa.</TD>
-</TR>
-<TR>
-<TD >Toda sodišče je začelo zasedati in mu vzelo oblast,  da bi bil iztrebljen,  popolnoma uničen.</TD>
-</TR>
-<TR>
-<TD >Kraljestvo,  oblast in veličino kraljestev pod vsem nebom pa je dobilo ljudstvo svetih,  ki pripadajo Vrhovnemu. Njihovo kraljestvo je večno kraljestvo in vse vlade jim bodo služile in jih ubogale.</TD>
-</TR>
-<TR>
-<TD >Tu se poročilo konča. Mene,  Daniela,  so moje misli zelo vznemirile,  tako da sem postal ves bled. Toda vse to sem ohranil v svojem srcu.«</TD>
-</TR>
-<TR>
-<TD >Daniel 8. Poglavje</TD>
-</TR>
-<TR>
-<TD >V tretjem letu kraljevanja kralja Belšazarja sem jaz,  Daniel,  prejel še eno videnje.</TD>
-</TR>
-<TR>
-<TD >Medtem ko sem gledal videnje,  sem bil v trdnjavi v Šušanu,  ki je v provinci Elam. Ko sem tako gledal,  sem bil ob reki Ulaj.</TD>
-</TR>
-<TR>
-<TD >Zagledal sem ovna,  ki je imel dva rogova in je stal pred reko. Rogova sta bila visoka,  toda eden je bil višji od drugega. In višji je zrasel kasneje.</TD>
-</TR>
-<TR>
-<TD >Videl sem,  da je oven drezal proti zahodu,  severu in jugu. Po robu se mu ni mogla postaviti nobena od zveri in nikogar ni bilo,  ki bi jih lahko rešil izpod njegove oblasti. Delal je,  kar je hotel,  in se zelo šopiril.</TD>
-</TR>
-<TR>
-<TD >Ko sem tako še naprej opazoval,  sem zagledal kozla,  ki je prihajal z zahoda. Prečkal je vso zemljo,  ne da bi se dotaknil tal. Med očmi pa je imel vpadljiv rog.</TD>
-</TR>
-<TR>
-<TD >Približeval se je ovnu z dvema rogovoma,  ki sem ga prej videl stati pred reko. Ves besen je tekel proti njemu.</TD>
-</TR>
-<TR>
-<TD >Videl sem,  kako se je poln jeze približeval ovnu. Zaletel se je vanj in mu zlomil oba rogova,  tako da oven ni imel moči,  da bi se mu uprl. Ovna je vrgel na tla ter ga poteptal in nikogar ni bilo,  ki bi ovna rešil izpod njegove oblasti.</TD>
-</TR>
-<TR>
-<TD >Kozel se je nato začel pretirano šopiriti. Toda ko je postal mogočen,  se mu je zlomil veliki rog in namesto njega so zrasli štirje vpadljivi rogovi proti štirim smerem neba.</TD>
-</TR>
-<TR>
-<TD >Iz enega od njih pa je zrasel drug,  majhen rog in ta je postal zelo velik – proti jugu,  proti vzhodu in proti Čudoviti deželi.</TD>
-</TR>
-<TR>
-<TD >Postal je tako velik,  da je segal vse do vojske nebesnih teles. Povzročil je,  da je del vojske in nekaj zvezd padlo na zemljo,  on pa jih je poteptal.</TD>
-</TR>
-<TR>
-<TD >Poviševal se je celo nad Poveljnika vojske. Daritve,  ki so se redno darovale Poveljniku,  so bile ustavljene,  in svetišče,  ki ga je ta utrdil,  je bilo podrto.</TD>
-</TR>
-<TR>
-<TD >Zaradi prestopka je bila rogu izročena vojska in redne daritve so bile ukinjene. Resnico je metal na tla in je uspeval v tem,  kar je delal.</TD>
-</TR>
-<TR>
-<TD >Nato sem zaslišal enega od svetih,  da je govoril,  drug sveti pa ga je vprašal: »Kako dolgo bo trajalo to videnje – videnje o rednih daritvah,  o prestopku,  ki povzroča opustošenje,  in o teptanju svetega kraja in vojske?«</TD>
-</TR>
-<TR>
-<TD >Odgovoril mi je: »Dokler ne mine 2300 večerov in juter. Takrat bo sveti kraj povrnjen v svoje pravo stanje.«</TD>
-</TR>
-<TR>
-<TD >Ko sem tako jaz,  Daniel,  gledal videnje in ga skušal razumeti,  se je pred menoj nenadoma pojavil nekdo,  ki je bil videti kot človek.</TD>
-</TR>
-<TR>
-<TD >Zatem sem zaslišal človeka,  ki je bil na sredi Ulaja,  da je zaklical: »Gabriel,  pojasni mu pomen tega,  kar je videl.«</TD>
-</TR>
-<TR>
-<TD >Gabriel se mi je torej približal,  toda ko je prišel do mene,  sem se tako prestrašil,  da sem padel na kolena in se priklonil do tal. Rekel mi je: »Vedi,  sin človekov,  da videnje velja za čas konca.«</TD>
-</TR>
-<TR>
-<TD >Ko je tako govoril z menoj,  sem se zgrudil na tla in trdno zaspal. Zato se me je dotaknil in mi pomagal,  da sem spet vstal.</TD>
-</TR>
-<TR>
-<TD >Potem mi je rekel: »Povedal ti bom,  kaj se bo zgodilo v sklepnem delu izvršitve obsodbe,  saj videnje velja za določeni čas,  za čas konca.</TD>
-</TR>
-<TR>
-<TD >Oven z dvema rogovoma,  ki si ga videl,  predstavlja kralja Medije in kralja Perzije.</TD>
-</TR>
-<TR>
-<TD >Kosmati kozel predstavlja kralja Grčije,  veliki rog,  ki je bil med njegovimi očmi,  pa predstavlja prvega kralja.</TD>
-</TR>
-<TR>
-<TD >To,  da se je rog zlomil in so namesto njega zrasli štirje,  pomeni,  da bodo iz njegovega naroda nastala štiri kraljestva,  vendar ne bodo imela takšne moči,  kakršno je imel on.</TD>
-</TR>
-<TR>
-<TD >V sklepnem delu njihovega kraljevanja,  ko bodo njihovi prestopki dosegli vrhunec,  pa bo zavladal kralj okrutnega videza,  ki bo velik spletkar.</TD>
-</TR>
-<TR>
-<TD >Postal bo mogočen,  vendar ne z lastno močjo. Povzročil bo osupljivo uničenje in bo uspeval v tem,  kar bo delal. Uničil bo mogočne,  tudi ljudstvo svetih.</TD>
-</TR>
-<TR>
-<TD >Zaradi svoje zvitosti bo mnoge uspel prevarati. V srcu se bo zelo šopiril,  in ko se bodo ljudje počutili varne,  bo mnoge uničil. Uprl se bo celo Poveljniku poveljnikov,  toda zlomljen bo brez človeške roke.</TD>
-</TR>
-<TR>
-<TD >To,  kar je bilo v videnju rečeno glede večerov in juter,  je resnica,  vseeno pa naj to videnje ostane skrivnost,  saj se bo izpolnilo šele v daljni prihodnosti.«</TD>
-</TR>
-<TR>
-<TD >Jaz,  Daniel,  pa sem bil povsem izčrpan in bolan več dni. Nato sem vstal in opravljal službo pri kralju. Še vedno pa sem bil zbegan zaradi videnja in nikogar ni bilo,  ki bi ga razumel.</TD>
-</TR>
-<TR>
-<TD >Daniel 9. Poglavje</TD>
-</TR>
-<TR>
-<TD >Bilo je prvo leto kraljevanja Ahasverjevega sina Dareja,  ki je bil iz rodu Medijcev in je bil postavljen za kralja nad kaldejskim kraljestvom.</TD>
-</TR>
-<TR>
-<TD >Torej v tem prvem letu njegovega kraljevanja sem jaz,  Daniel,  iz knjig razumel,  da bo glede na Jehovovo besedo,  ki jo je dobil prerok Jeremija,  Jeruzalem ostal opustošen 70 let.</TD>
-</TR>
-<TR>
-<TD >Zato sem se obrnil k pravemu Bogu Jehovu po pomoč in ga v molitvi goreče prosil ter se postil v raševini in pepelu.</TD>
-</TR>
-<TR>
-<TD >Molil sem k svojemu Bogu Jehovu in mu priznal:<br>»O Jehova,  pravi Bog,  ti si mogočni in veličastni Bog,  ti ravnaš skladno s svojo zavezo in vdano ljubiš tiste,  ki te ljubijo in izpolnjujejo tvoje zapovedi.</TD>
-</TR>
-<TR>
-<TD >Mi pa smo grešili,  ravnali smo krivično in hudobno ter se ti upirali. Nismo ubogali tvojih zapovedi in nismo upoštevali tvojih razsodb.</TD>
-</TR>
-<TR>
-<TD >Nismo poslušali prerokov,  tvojih služabnikov,  ki so v tvojem imenu govorili našim kraljem,  poglavarjem,  praočetom in vsemu ljudstvu naše dežele.</TD>
-</TR>
-<TR>
-<TD >Ti,  o Jehova,  si pravičen,  mi pa smo si nakopali sramoto,  ki nas spremlja vse do danes. Sramota počiva nad Judovci,  prebivalci Jeruzalema in nad vsemi drugimi Izraelci,  ki si jih zaradi njihove nezvestobe razkropil po bližnjih in daljnih deželah.</TD>
-</TR>
-<TR>
-<TD >O Jehova,  spremlja nas sramota – nas,  naše kralje,  poglavarje in praočete – ker smo grešili proti tebi.</TD>
-</TR>
-<TR>
-<TD >Ti,  Jehova,  naš Bog,  si usmiljen in odpuščaš,  mi pa smo se ti uprli.</TD>
-</TR>
-<TR>
-<TD >Nismo te ubogali,  o naš Bog Jehova,  saj se nismo ravnali po tvojih zakonih,  ki si nam jih dajal po svojih služabnikih prerokih.</TD>
-</TR>
-<TR>
-<TD >Ves izraelski narod je prekršil tvoj Zakonik,  bil ti je neposlušen in se tako odvrnil od tebe. Grešili smo proti tebi,  zato si na nas izlil prekletstvo,  ki je podkrepljeno s prisego in zapisano v Zakoniku Mojzesa,  služabnika pravega Boga.</TD>
-</TR>
-<TR>
-<TD >Izpolnil si svoje besede,  ki si jih govoril proti nam in našim vladarjem,  s tem da si nad nas poslal veliko nesrečo. Takšna nesreča,  kakršna se je zgodila v Jeruzalemu,  se do takrat na zemlji še ni zgodila.</TD>
-</TR>
-<TR>
-<TD >Vsa ta nesreča je prišla nad nas,  točno tako kot piše v Mojzesovem Zakoniku. Kljub temu si nismo prizadevali pridobiti tvoje naklonjenosti,  o Jehova,  naš Bog,  saj nismo nehali grešiti in se nismo menili za tvojo resnico.</TD>
-</TR>
-<TR>
-<TD >Ti,  Jehova,  si vse to budno opazoval in na koncu poslal nad nas nesrečo. Ti,  Jehova,  naš Bog,  si namreč pravičen v vsem,  kar delaš,  mi pa te kljub temu nismo ubogali.</TD>
-</TR>
-<TR>
-<TD >O Jehova,  naš Bog,  ti,  ki si z veliko močjo popeljal svoje ljudstvo iz egiptovske dežele in si si naredil ime,  po katerem si poznan še danes – grešili smo in ravnali hudobno.</TD>
-</TR>
-<TR>
-<TD >O Jehova,  tebe,  ki si vedno ravnal pravično,  prosim,  da se nehaš tako hudo jeziti na svoje mesto Jeruzalem,  na svojo sveto goro. Jeruzalem in tvoje ljudstvo sta namreč zaradi naših grehov in zaradi grehov naših praočetov v posmeh vsem okoli nas.</TD>
-</TR>
-<TR>
-<TD >Zdaj torej,  naš Bog,  prisluhni molitvi in rotenju,  ki ti jo izrekam jaz,  tvoj služabnik,  in ukrepaj v korist svojega opustošenega svetišča. O Jehova,  stori to zaradi sebe.</TD>
-</TR>
-<TR>
-<TD >Skloni se,  o moj Bog,  in nam prisluhni. Odpri svoje oči in poglej,  kako opustošeno je naše mesto,  ki se imenuje po tebi. Rotimo te,  pa ne zato,  ker bi mi ravnali pravično,  ampak zaradi tvojega velikega usmiljenja.</TD>
-</TR>
-<TR>
-<TD >O Jehova,  prisluhni nam! O Jehova,  odpusti nam! O Jehova,  bodi pozoren in ukrepaj! Ne odlašaj,  o moj Bog,  zaradi sebe ne odlašaj! Tvoje mesto in tvoje ljudstvo namreč nosita tvoje ime.«</TD>
-</TR>
-<TR>
-<TD >Ko sem še govoril,  molil in priznaval svoje grehe in grehe svojega ljudstva,  Izraelcev,  ter goreče prosil svojega Boga Jehova glede njegove svete gore, </TD>
-</TR>
-<TR>
-<TD >ko sem torej še izgovarjal molitev,  je k meni v človeški podobi prišel Gabriel,  ki sem ga nekoliko prej že videl v videnju. Prišel je ob večerni daritvi,  ko sem bil ves izmučen.</TD>
-</TR>
-<TR>
-<TD >Pomagal mi je razumeti,  kaj se bo zgodilo. Rekel mi je:<br>»O Daniel,  prišel sem,  da bi ti pomagal pridobiti si boljši uvid in razumeti,  kaj se bo zgodilo.</TD>
-</TR>
-<TR>
-<TD >Ko si začel moliti,  sem dobil sporočilo od Boga. Zelo si mu dragocen,  zato sem zdaj prišel k tebi,  da ti to sporočilo oznanim. Skrbno razmisli o tem,  kar ti bom povedal,  in se potrudi,  da boš videnje razumel.</TD>
-</TR>
-<TR>
-<TD >Za tvoje ljudstvo in tvoje sveto mesto je določenih 70 tednov,  da se konča upor,  odpravi greh,  odpusti prestopek,  uvede trajna pravičnost,  potrdi videnja in prerokbe ter da se pomazili Najsvetejše.</TD>
-</TR>
-<TR>
-<TD >Vedeti in razumeti moraš,  da bo od takrat,  ko bo izšla zapoved,  da naj se Jeruzalem ponovno zgradi in vrne v prvotno stanje,  do Mesija,  Voditelja,  preteklo 7 tednov in nato še 62 tednov. Jeruzalem bo ponovno zgrajen in vrnjen v prvotno stanje,  s trgom in jarkom vred,  vendar v času stiske.</TD>
-</TR>
-<TR>
-<TD >Po teh 62 tednih bo Mesija usmrčen in nič mu ne bo ostalo.<br>Vojska voditelja,  ki prihaja,  bo uničila mesto in sveti kraj. Njegov konec bo prišel kakor poplava. Vse do konca bo vojna. Bog je odločil,  da bo prišlo opustošenje.</TD>
-</TR>
-<TR>
-<TD >V korist mnogih bo podaljšal veljavnost zaveze za en teden,  na polovici tega tedna pa bo ukinil žrtev in daritev.<br>Na perutih gnusob bo prišel tisti,  ki bo povzročil opustošenje. In na to,  kar je opustošeno,  se bo vse do popolnega uničenja izlivalo to,  kar je Bog odločil.«</TD>
-</TR>
-<TR>
-<TD >Daniel 10. Poglavje</TD>
-</TR>
-<TR>
-<TD >V tretjem letu vladanja perzijskega kralja Kira je Daniel,  ki so ga imenovali Beltšazar,  dobil sporočilo. Sporočilo je bilo resnično in je govorilo o velikem spopadu. To,  kar je videl,  mu je bilo pojasnjeno in razumel je sporočilo.</TD>
-</TR>
-<TR>
-<TD >Tiste dni sem jaz,  Daniel,  žaloval tri cele tedne.</TD>
-</TR>
-<TR>
-<TD >Te tri tedne nisem jedel nobenih izbranih jedi,  moja usta niso okusila mesa in vina,  niti se nisem mazal z oljem.</TD>
-</TR>
-<TR>
-<TD >Ko pa je nastopil 24. dan prvega meseca in sem bil na bregu velike reke,  reke Tigris, </TD>
-</TR>
-<TR>
-<TD >sem videl moškega,  oblečenega v platno. Moški je imel na sebi pas iz ufaškega zlata.</TD>
-</TR>
-<TR>
-<TD >Njegovo telo je bilo kakor krizolit,  njegov obraz je sijal kakor blisk,  njegove oči so žarele kakor goreče bakle,  njegove roke in noge so bile videti kakor zglajen baker in njegov glas je bil močan kakor zvok množice.</TD>
-</TR>
-<TR>
-<TD >Samo jaz,  Daniel,  sem imel videnje. Drugi,  ki so bili z menoj,  ga niso imeli. Toda vseeno jih je prevzel velik strah,  zato so pobegnili in se skrili.</TD>
-</TR>
-<TR>
-<TD >Nato sem ostal sam. Ko sem videl to osupljivo videnje,  sem povsem oslabel,  moj dostojanstveni videz je izginil in v meni ni bilo več moči.</TD>
-</TR>
-<TR>
-<TD >Moški je začel govoriti,  in ko sem ga zaslišal,  sem se zgrudil na tla in trdno zaspal.</TD>
-</TR>
-<TR>
-<TD >Potem pa se me je dotaknil z roko,  me rahlo stresel in mi pomagal,  da sem se dvignil na dlani in kolena.</TD>
-</TR>
-<TR>
-<TD >Rekel mi je:<br>»O Daniel,  Bogu si zelo dragocen. Pozorno prisluhni temu,  kar ti bom zdaj povedal. Vstani,  saj me je Bog poslal k tebi.«<br>Ko mi je to rekel,  sem tresoč se vstal.</TD>
-</TR>
-<TR>
-<TD >Rekel mi je še: »Ne boj se,  Daniel. Že prvi dan,  ko si pripravil svoje srce,  da bi razumel te reči,  in se ponižal pred svojim Bogom,  je bila tvoja molitev uslišana in jaz sem prišel prav zaradi tvoje molitve.</TD>
-</TR>
-<TR>
-<TD >Toda 21 dni mi je na poti stal poglavar perzijskega kraljestva. Potem pa mi je na pomoč prišel Mihael,  eden najvišjih poglavarjev. Tako sem nekaj časa ostal pri perzijskih kraljih.</TD>
-</TR>
-<TR>
-<TD >K tebi sem prišel,  da bi ti pomagal razumeti,  kaj bo doletelo tvoje ljudstvo v zadnjih dneh,  saj se videnje nanaša na prihodnost.«</TD>
-</TR>
-<TR>
-<TD >Ko mi je govoril vse to,  sem se z obrazom obrnil proti tlom in onemel.</TD>
-</TR>
-<TR>
-<TD >Nato se je ta,  ki je bil videti kakor človek,  dotaknil mojih ustnic. Odprl sem usta in temu,  ki je stal pred menoj,  rekel: »Moj gospod,  zaradi videnja se ves tresem in sem izgubil vso moč.</TD>
-</TR>
-<TR>
-<TD >Kako bi torej jaz,  tvoj služabnik,  lahko govoril s teboj,  moj gospod,  ko pa nimam nobene moči in komaj diham?«</TD>
-</TR>
-<TR>
-<TD >Ta,  ki je bil videti kakor človek,  se me je še enkrat dotaknil in me okrepil.</TD>
-</TR>
-<TR>
-<TD >»Ne boj se, « mi je rekel. »Bogu si zelo dragocen! Vse bo še dobro. Bodi močan,  da,  bodi močan!« Takoj ko je spregovoril z menoj,  sem dobil moč in rekel: »Naj moj gospod govori,  saj si me okrepil.«</TD>
-</TR>
-<TR>
-<TD >Nadaljeval je: »Ali veš,  zakaj sem prišel k tebi? Zdaj se bom vrnil,  da se bom bojeval s poglavarjem Perzije. Ko bom odšel,  pa bo prišel poglavar Grčije.</TD>
-</TR>
-<TR>
-<TD >Vendar ti bom povedal,  kaj piše v knjigi resnice. Nikogar ni,  ki bi me v vsem tem podpiral,  razen vašega poglavarja Mihaela.</TD>
-</TR>
-<TR>
-<TD >Daniel 11. Poglavje</TD>
-</TR>
-<TR>
-<TD >Jaz pa sem prišel,  da bi Mihaela krepil in ščitil. To je bilo v prvem letu vladanja Medijca Dareja.</TD>
-</TR>
-<TR>
-<TD >To,  kar ti bom povedal zdaj,  je resnica:<br>Glej,  v Perziji bodo zavladali še trije kralji in četrti si bo nakopičil več bogastva kakor vsi drugi. In ko se bo zaradi svojega bogastva okrepil,  bo vse naščuval proti grškemu kraljestvu.</TD>
-</TR>
-<TR>
-<TD >Na oblast bo prišel mogočen kralj,  ki bo imel veliko moč in bo delal,  kar bo hotel.</TD>
-</TR>
-<TR>
-<TD >Toda ko bo na vrhuncu svoje moči,  bo njegovo kraljestvo razpadlo in se razdelilo na štiri dele proti štirim smerem neba,  vendar ne med njegove potomce,  in ne bo več imelo takšne moči,  s kakršno je vladal sam. Njegovo kraljestvo bo namreč izkoreninjeno in dano drugim.</TD>
-</TR>
-<TR>
-<TD >Južni kralj,  namreč eden od njegovih vojaških poveljnikov,  bo postal močan. Vendar ga bo nekdo premagal in zavladal z veliko močjo,  večjo od njegove vladarske moči.</TD>
-</TR>
-<TR>
-<TD >Po nekaj letih bosta sklenila zavezništvo. Da bi to zavezništvo potrdila,  bo hči južnega kralja prišla k severnemu kralju,  ampak ne bo obdržala svoje moči. Tudi on se ne bo obdržal,  izgubil bo svojo moč. Hči bo izročena drugim,  z njo pa tudi tisti,  ki jo bodo pripeljali,  njen oče in ta,  ki jo bo nekaj časa podpiral.</TD>
-</TR>
-<TR>
-<TD >Njegov položaj bo zavzel poganjek iz njenih korenin. Šel bo proti vojski in trdnjavi severnega kralja. Napadel jih bo in jih premagal.</TD>
-</TR>
-<TR>
-<TD >Z njihovimi bogovi,  ulitimi podobami,  dragocenostmi iz srebra in zlata ter z ujetniki se bo vrnil v Egipt. Nato se bo nekaj let držal stran od severnega kralja.</TD>
-</TR>
-<TR>
-<TD >Ta bo zatem napadel kraljestvo južnega kralja,  nato pa se vrnil v svojo deželo.</TD>
-</TR>
-<TR>
-<TD >Toda njegovi sinovi se bodo pripravili na vojno in zbrali veliko vojsko. Eden od njih bo napredoval proti deželi in jo preplavil kakor poplava. Ampak odpravil se bo nazaj in se vojskoval vse do svoje trdnjave.</TD>
-</TR>
-<TR>
-<TD >Južni kralj se bo razjezil in se šel bojevat z njim,  namreč s severnim kraljem. Ta pa bo zbral veliko ljudi,  toda ti ljudje bodo izročeni v roke prvemu kralju.</TD>
-</TR>
-<TR>
-<TD >Te ljudi bodo odpeljali. Kralju se bo srce prevzelo in zaradi njega jih bo padlo na desettisoče,  vendar svojega močnega položaja ne bo izkoristil.</TD>
-</TR>
-<TR>
-<TD >Severni kralj pa se bo vrnil in zbral še več ljudi kot prej. Čez nekaj časa,  čez nekaj let,  bo zagotovo prišel z veliko in dobro opremljeno vojsko.</TD>
-</TR>
-<TR>
-<TD >V tistem času se bodo mnogi uprli južnemu kralju.<br>Nasilneži izmed tvojega ljudstva bodo skušali izpolniti videnje,  vendar jim bo spodletelo.</TD>
-</TR>
-<TR>
-<TD >Prišel bo severni kralj,  naredil oblegovalni nasip in zavzel utrjeno mesto. Vojske južnega kralja se ne bodo mogle več bojevati pa tudi njegovi izbrani vojaki ne. Ne bodo imeli moči,  da bi se uprli.</TD>
-</TR>
-<TR>
-<TD >Ta,  ki bo prišel nad južnega kralja,  bo delal,  kar bo hotel,  in nihče se mu ne bo mogel postaviti po robu. Ostal bo v Čudoviti deželi in imel bo moč,  da pokončuje.</TD>
-</TR>
-<TR>
-<TD >Trdno se bo odločil priti z vso silo svojega kraljestva,  toda z njim bo sklenjen dogovor. V svojem početju bo uspešen. Dovoljeno mu bo,  da škodi hčeri. Hči ne bo zdržala,  ne bo ostala na njegovi strani.</TD>
-</TR>
-<TR>
-<TD >Nato se bo obrnil k obmorskim deželam in bo mnoge zavzel. Toda neki poveljnik bo naredil konec njegovemu ošabnemu vedenju. Poskrbel bo,  da mu bo za to njegovo ošabnost povrnjeno.</TD>
-</TR>
-<TR>
-<TD >Zatem se bo vrnil k trdnjavam svoje dežele. Spotaknil se bo in padel in ne bo ga več.</TD>
-</TR>
-<TR>
-<TD >Na njegovo mesto bo prišel nekdo,  ki bo skozi veličastno kraljestvo poslal izterjevalca davkov,  toda kmalu zatem bo umrl,  vendar ne nasilne smrti ali v boju.</TD>
-</TR>
-<TR>
-<TD >Na njegovo mesto bo prišel nekdo,  ki bo zaničevan,  in ne bodo mu izkazali kraljevske časti. Prišel bo v času,  ko se bodo ljudje počutili varne,  in se bo s prilizovanjem dokopal do kraljestva.</TD>
-</TR>
-<TR>
-<TD >Podredil si bo vojske,  ki bodo kakor poplava,  in jih zlomil,  zlomil pa bo tudi Voditelja zaveze.</TD>
-</TR>
-<TR>
-<TD >In ker bo z njim sklenjeno zavezništvo,  bo ravnal zvijačno,  pridobil si bo moč in postal mogočen ob pomoči majhnega naroda.</TD>
-</TR>
-<TR>
-<TD >V času,  ko se bodo ljudje počutili varne,  bo vstopil celo v najboljše dele province in bo delal,  česar ni delal nihče od njegovih prednikov. Ljudem bo delil naropane reči,  plen in imetje. Proti utrjenim krajem bo koval spletke,  toda samo nekaj časa.</TD>
-</TR>
-<TR>
-<TD >Zbral bo moč in pogum ter bo z veliko vojsko šel proti južnemu kralju. Tudi južni kralj se bo pripravil na vojno,  tako da bo zbral zelo veliko in močno vojsko. On pa se ne bo obdržal,  ker bodo proti njemu kovali spletke.</TD>
-</TR>
-<TR>
-<TD >Tisti,  ki bodo jedli njegove izbrane jedi,  bodo povzročili njegov konec.<br>Njegova vojska bo premagana in mnogi bodo pobiti.</TD>
-</TR>
-<TR>
-<TD >Oba kralja bosta v svojem srcu hotela delati slabo. Sedela bosta za isto mizo in drug drugemu govorila laži. Toda vse brez uspeha,  saj bo konec nastopil šele ob za to določenem času.</TD>
-</TR>
-<TR>
-<TD >Vrnil se bo v svojo deželo z velikim bogastvom in se bo odločen bojevati proti sveti zavezi. V svojem početju bo uspešen in vrnil se bo v svojo deželo.</TD>
-</TR>
-<TR>
-<TD >Ob določenem času bo spet napadel južnega kralja. Vendar pa tokrat ne bo tako kot prej, </TD>
-</TR>
-<TR>
-<TD >saj bodo proti njemu prišle ladje s Kitima in bo poražen.<br>Vrnil se bo ter stresel svojo jezo na sveto zavezo in v svojem početju bo uspešen. Vrnil se bo in posvetil pozornost tistim,  ki zapuščajo sveto zavezo.</TD>
-</TR>
-<TR>
-<TD >Poslal bo vojske in te bodo oskrunile svetišče,  namreč trdnjavo,  ter ukinile redno daritev.<br>Postavili bodo gnusobo,  ki povzroča opustošenje.</TD>
-</TR>
-<TR>
-<TD >Tiste,  ki bodo ravnali hudobno in prelomili zavezo,  bo s prilizovanjem navedel na odpad. Toda ljudstvo,  ki pozna svojega Boga,  bo zmagalo in imelo uspeh.</TD>
-</TR>
-<TR>
-<TD >Tisti med ljudmi,  ki bodo imeli uvid,  bodo mnogim pomagali vse to razumeti. Vendar bodo nekaj dni padali kot žrtve meča,  ognja,  ujetništva in ropanja.</TD>
-</TR>
-<TR>
-<TD >Ko pa bodo padali,  bodo dobili majhno pomoč. Mnogi se jim bodo pridružili s prilizovanjem.</TD>
-</TR>
-<TR>
-<TD >Nekateri od teh,  ki bodo imeli uvid,  bodo trpeli,  da bi se opravilo prečiščevanje,  čiščenje in beljenje,  in to do časa konca. To namreč velja šele za čas,  ki je za to določen.</TD>
-</TR>
-<TR>
-<TD >Kralj bo delal,  kar bo hotel,  povzdigoval se bo in poveličeval nad vsakim bogom. Proti Bogu bogov bo govoril predrzno. Uspešen bo,  dokler nad njim ne bo izvršena obsodba. To,  kar je odločeno,  se namreč mora izpolniti.</TD>
-</TR>
-<TR>
-<TD >Ne bo se menil za Boga svojih očetov,  niti se ne bo menil za želje žensk niti za katerega drugega boga,  ampak bo sebe poveličeval nad vsakogar.</TD>
-</TR>
-<TR>
-<TD >Raje bo častil boga trdnjav. Boga,  ki ga njegovi očetje niso poznali,  bo častil z zlatom,  srebrom,  dragimi kamni in dragocenostmi.</TD>
-</TR>
-<TR>
-<TD >S pomočjo tujega boga bo napadal najmočnejše utrdbe. Vse,  ki ga bodo podpirali,  bo zasipal s slavo in jim dal oblast nad mnogimi. Za plačilo bo delil zemljo.</TD>
-</TR>
-<TR>
-<TD >Ob času konca pa se bo z njim spopadel južni kralj. Severni kralj bo prihrumel proti njemu z bojnimi vozovi,  konjeniki in mnogimi ladjami. Prišel bo v druge dežele in jih preplavil kakor poplava.</TD>
-</TR>
-<TR>
-<TD >Prišel bo tudi v Čudovito deželo in mnogo dežel bo premaganih. Toda njegovi roki bodo ubežali Edom,  Moab in najpomembnejši Amonci.</TD>
-</TR>
-<TR>
-<TD >Napadal bo druge dežele; tudi egiptovska dežela mu ne bo mogla ubežati.</TD>
-</TR>
-<TR>
-<TD >Vladal bo nad skritimi zakladi zlata in srebra ter nad vsemi dragocenostmi Egipta. Tudi Libijci in Etiopijci bodo šli po njegovih stopinjah.</TD>
-</TR>
-<TR>
-<TD >Vendar ga bodo vznemirile novice z vzhoda in severa. V velikem besu bo krenil,  da bi mnoge iztrebil in uničil.</TD>
-</TR>
-<TR>
-<TD >Svoje kraljevske šotore bo postavil med velikim morjem in sveto goro v Čudoviti deželi. Prišel bo vse do svojega konca in nikogar ne bo,  da bi mu pomagal.</TD>
-</TR>
-<TR>
-<TD >Daniel 12. Poglavje</TD>
-</TR>
-<TR>
-<TD >Takrat pa bo ukrepal Mihael,  veliki poglavar,  ki dela v korist tvojega ljudstva. Nastopil bo čas stiske,  kakršne še ni bilo,  odkar so narodi,  pa vse do danes. In takrat bo tvoje ljudstvo rešeno,  vsak,  ki ga bodo našli zapisanega v knjigi.</TD>
-</TR>
-<TR>
-<TD >Mnogi od teh,  ki spijo v zemlji,  se bodo prebudili – eni bodo prejeli večno življenje,  drugi pa sramoto in večno zaničevanje.</TD>
-</TR>
-<TR>
-<TD >Tisti,  ki bodo imeli uvid,  bodo sijali tako močno kakor nebesno prostranstvo in tisti,  ki mnogim pomagajo ravnati pravično,  bodo kakor zvezde sijali večno,  vso večnost.</TD>
-</TR>
-<TR>
-<TD >Ti pa,  Daniel,  poskrbi,  da bodo te besede ostale skrivnost,  in zapečati knjigo do časa konca. Mnogi jo bodo preiskovali in pravo spoznanje se bo pomnožilo.«</TD>
-</TR>
-<TR>
-<TD >Jaz,  Daniel,  sem nato videl še dva druga,  ki sta stala ob reki,  eden na tem bregu reke in drugi na drugem bregu.</TD>
-</TR>
-<TR>
-<TD >Eden od njiju je moškega,  ki je bil oblečen v platno in je bil nad vodami reke,  vprašal: »Koliko časa bo minilo do izpolnitve teh osupljivih dogodkov?«</TD>
-</TR>
-<TR>
-<TD >Nato je moški,  ki je bil oblečen v platno in je bil nad vodami reke,  dvignil desnico in levico proti nebu. Slišal sem,  da je pri Bogu,  ki večno živi,  prisegel: »En čas,  dva časa in pol časa. Vsi ti dogodki se bodo končali,  ko se bo končalo razbijanje moči svetega ljudstva.«</TD>
-</TR>
-<TR>
-<TD >Jaz sem to slišal,  vendar nisem mogel razumeti,  zato sem vprašal: »Moj gospod,  kako se bo vse to končalo?«</TD>
-</TR>
-<TR>
-<TD >Odgovoril mi je: »Pojdi,  Daniel. Te besede morajo namreč ostati skrivnost in biti zapečatene do časa konca.</TD>
-</TR>
-<TR>
-<TD >Mnogi se bodo očistili,  pobelili in prečistili. Hudobni pa bodo ravnali hudobno in nihče od njih ne bo razumel teh besed,  toda tisti,  ki bodo imeli uvid,  jih bodo razumeli.</TD>
-</TR>
-<TR>
-<TD >Od takrat,  ko bo ukinjena redna daritev in postavljena gnusoba,  ki povzroča opustošenje,  bo preteklo</TD>
-</TR>
-<TR>
-<TD >90 dni.</TD>
-</TR>
-<TR>
-<TD >Srečen tisti,  ki potrpežljivo čaka do konca</TD>
-</TR>
-<TR>
-<TD >35 dni!</TD>
-</TR>
-<TR>
-<TD >Ti pa vztrajaj do konca. Počival boš,  toda na koncu dni boš vstal,  da prejmeš svoj delež.«</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Daniel','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Daniel:"Daniel 1. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:1,Daniel:"V tretjem letu kraljevanja Judovega kralja Jojakima je babilonski kralj Nebukadnezar prišel do Jeruzalema in ga začel oblegati.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:2,Daniel:"Jehova mu je dal v roke Judovega kralja Jojakima in nekaj predmetov iz hiše pravega Boga. Te predmete je odnesel v šinarsko deželo v tempelj svojega boga in jih tam dal v zakladnico.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:3,Daniel:"Nato je kralj svojemu glavnemu dvorjanu Ašpenazu naročil. naj pripelje nekatere izmed Izraelcev. še posebej tiste iz kraljevega in plemiškega rodu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:4,Daniel:"Pripeljati je moral lepe mlade fante brez kakršne koli telesne napake. obdarjene z modrostjo. znanjem in preudarnostjo ter sposobne služiti v kraljevi palači. Naročil mu je tudi. naj jih uči pisave in jezika Kaldejcev.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:5,Daniel:"Poleg tega jim je kralj določil dnevni obrok kraljevih dobrot in vina. ki ga je sam pil. Zapovedal je še. naj jih šolajo tri leta. zatem pa naj začnejo opravljati službo za kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:6,Daniel:"Med njimi so bili tudi nekateri iz Judovega rodu. in sicer Daniel. Hananija. Mišael in Azarija.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:7,Daniel:"Te štiri je glavni dvorjan preimenoval: Danielu je dal ime Beltšazar. Hananiju Šadrah. Mišaelu Mešah in Azariju Abednego.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:8,Daniel:"Toda Daniel se je v svojem srcu odločil. da se ne bo omadeževal s kraljevimi dobrotami niti z vinom. ki ga je pil kralj. Zato je glavnega dvorjana prosil za dovoljenje. da mu ne bi bilo treba uživati tega. kar bi ga omadeževalo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:9,Daniel:"Pravi Bog pa je poskrbel. da je bil glavni dvorjan z Danielom dober in usmiljen.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:10,Daniel:"Kljub temu je glavni dvorjan Danielu rekel: »Bojim se svojega gospoda kralja. ki vam je določil hrano in pijačo. Če bo opazil. da ste videti slabše kot vaši vrstniki. bo za to krivil mene.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:11,Daniel:"Toda Daniel se je obrnil na skrbnika. ki ga je glavni dvorjan postavil nad Daniela. Hananija. Mišaela in Azarija. Rekel mu je:",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:12,Daniel:"»Prosim. daj nas. svoje služabnike. za deset dni na preizkus. Naj nam dajo jesti zelenjavo in piti vodo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:13,Daniel:"Potem pa naš videz primerjaj z videzom fantov. ki jedo kraljeve dobrote. In na podlagi tega. kar boš videl. se odloči. kaj boš naredil z nami.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:14,Daniel:"Skrbnik se je strinjal z njihovim predlogom in jih dal za deset dni na preizkus.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:15,Daniel:"Po desetih dneh so bili videti lepši in bolj zdravi od vseh mladih fantov. ki so jedli kraljeve dobrote.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:16,Daniel:"Tako jim je skrbnik še naprej namesto kraljevih dobrot in vina dajal zelenjavo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:17,Daniel:"Pravi Bog je tem štirim fantom naklonil modrost. spoznanje in uvid v vsakovrstna besedila. Daniel pa je dobil tudi sposobnost. da je razumel najrazličnejša videnja in sanje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:18,Daniel:"Po koncu obdobja. ki ga je določil kralj Nebukadnezar. je glavni dvorjan vse fante pripeljal pred kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:19,Daniel:"Ko je kralj govoril z njimi. je ugotovil. da se nihče od njih ne more primerjati z Danielom. Hananijem. Mišaelom in Azarijem. Zato so ti štirje začeli opravljati službo za kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:20,Daniel:"Kralj je vsakič. ko jih je spraševal glede zadev. za katere sta potrebni modrost in sposobnost razumevanja. ugotovil. da so desetkrat boljši od vseh svečenikov. ki so se v njegovem kraljestvu ukvarjali z magijo. in vseh. ki so klicali duhove.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:1,V:21,Daniel:"Daniel je ostal tam do prvega leta vladanja kralja Kira.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Daniel:"Daniel 2. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:1,Daniel:"Kralj Nebukadnezar je imel v drugem letu svojega kraljevanja sanje. Zaradi tega je bil tako zelo vznemirjen. da ni mogel več spati.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:2,Daniel:"Zato je dal poklicati svečenike. ki so se ukvarjali z magijo. ljudi. ki so klicali duhove. ter čarovnike in kaldejce. da bi mu povedali. kaj je sanjal. Prišli so torej in se postavili pred kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:3,Daniel:"Kralj jim je rekel: »Imel sem sanje in sem vznemirjen. Zato bi rad vedel. kaj sem sanjal.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:4,Daniel:"Kaldejci so kralju po aramejsko rekli: »Naj živi kralj! Povej nam. svojim služabnikom. sanje. pa ti jih bomo razložili.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:5,Daniel:"Kralj je kaldejcem odgovoril: »Odločil sem se naslednje: Če mi ne boste povedali sanj in jih razložili. boste razkosani. vaše hiše pa bodo spremenjene v javna stranišča.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:6,Daniel:"Če pa mi boste sanje povedali in jih razložili. boste od mene prejeli darove. nagrado in veliko čast. Zato mi povejte. kaj sem sanjal. in mi to razložite.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:7,Daniel:"Oni pa so mu še enkrat rekli: »Naš gospod kralj. povej nam sanje. pa jih bomo razložili.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:8,Daniel:"Kralj je odgovoril: »Dobro vem. da hočete pridobiti nekaj časa. ker veste. kaj sem se odločil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:9,Daniel:"Če mi ne boste povedali sanj. vas vse čaka samo ena kazen. Dogovorili ste se. da mi boste lagali in me prevarali. ker upate. da si bom premislil. Zato mi povejte. kaj sem sanjal. in tako bom vedel. da lahko sanje tudi razložite.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:10,Daniel:"Kaldejci so kralju odgovorili: »Na zemlji ni človeka. ki bi bil zmožen narediti to. kar zahtevaš ti. o kralj. saj noben še tako velik kralj ali vladar ni zahteval česa takega od nobenega svečenika. ki se ukvarja z magijo. od nikogar. ki kliče duhove. niti od kaldejca.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:11,Daniel:"To. kar zahtevaš. o kralj. je pretežko in nikogar ni. ki bi ti lahko to povedal. razen bogov. ti pa ne živijo med navadnimi smrtniki.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:12,Daniel:"Zaradi tega se je kralj zelo razjezil in naročil. naj pobijejo vse babilonske modre može.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:13,Daniel:"Ko je bil izdan ukaz o poboju modrih mož. so iskali tudi Daniela in njegove prijatelje. da bi jih ubili.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:14,Daniel:"Takrat je Daniel premišljeno in previdno ogovoril Arjoha. poveljnika kraljeve telesne straže. ki se je že odpravljal pobijat babilonske modre može.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:15,Daniel:"Poveljnika Arjoha je vprašal: »Zakaj je kralj izdal tako strog ukaz?« Arjoh je Danielu povedal. za kaj gre.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:16,Daniel:"Daniel je torej šel h kralju in ga prosil. naj mu da čas. da mu bo lahko razložil sanje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:17,Daniel:"Potem je Daniel odšel v svojo hišo in vse to povedal svojim prijateljem Hananiju. Mišaelu in Azariju.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:18,Daniel:"Prosil jih je. naj molijo k Bogu nebes. da se jih usmili in jim razkrije to skrivnost. tako da Daniel in njegovi prijatelji ne bi bili pobiti skupaj z drugimi babilonskimi modrimi možmi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:19,Daniel:"Ponoči pa je imel Daniel videnje. v katerem mu je bila skrivnost razodeta. zato je Boga nebes začel hvaliti",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:20,Daniel:"z besedami:<br>»O Bog. naj bo tvoje ime hvaljeno vso večnost.<br>saj imaš edino ti modrost in moč.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:21,Daniel:"Ti spreminjaš čase in dobe.<br>odstavljaš in postavljaš kralje.<br>daješ modrost modrim in spoznanje preudarnim.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:22,Daniel:"Razodevaš to. kar je globoko in skrito.<br>veš. kaj je v temi.<br>in pri tebi je svetloba.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:23,Daniel:"Tebi. o Bog mojih praočetov. se zahvaljujem in te hvalim.<br>ker si mi dal modrost in moč.<br>Razkril si mi to. za kar smo te prosili.<br>razkril si nam to. kar zanima kralja.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:24,Daniel:"Daniel je zatem odšel k Arjohu. ki ga je kralj določil. da pobije babilonske modre može. in mu rekel: »Nikar ne pobij babilonskih modrih mož! Pelji me pred kralja. da mu razložim sanje.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:25,Daniel:"Arjoh je Daniela hitro odpeljal pred kralja. Kralju je rekel: »Med judovskimi pregnanci sem našel človeka. ki ti lahko razloži sanje. o kralj.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:26,Daniel:"Kralj je Daniela. ki mu je bilo ime Beltšazar. vprašal: »Ali mi res lahko poveš. kakšne sanje sem imel in kaj pomenijo?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:27,Daniel:"Daniel je kralju odgovoril: »Skrivnosti. po kateri sprašuješ. o kralj. ti ne morejo odkriti ne modri možje. ne tisti. ki kličejo duhove. ne svečeniki. ki se ukvarjajo z magijo. ne astrologi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:28,Daniel:"Toda v nebesih je Bog. ki razodeva skrivnosti. in on oznanja tebi. o kralj Nebukadnezar. kaj se bo zgodilo v zadnjih dneh. Sanje in videnja. ki si jih imel med spanjem. so:",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:29,Daniel:"Ti. o kralj. si med spanjem sanjal o tem. kaj se bo zgodilo v prihodnosti. Tisti. ki razodeva skrivnosti. ti oznanja. kaj se bo zgodilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:30,Daniel:"Meni ta skrivnost ni bila razodeta zato. ker bi bil modrejši od vseh drugih ljudi. ampak zato. da se kralju oznani pomen sanj. Tako boš razumel misli. ki so se ti pojavile.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:31,Daniel:"Ti. o kralj. si videl velikanski kip. Ta kip je bil ogromen in se je zelo bleščal. Stal je pred teboj in njegov videz je bil strašljiv.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:32,Daniel:"Glava tega kipa je bila iz čistega zlata. njegove prsi in roke iz srebra. njegov trebuh in stegna iz bakra.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:33,Daniel:"njegove noge iz železa. njegova stopala pa deloma iz železa. deloma iz gline.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:34,Daniel:"Medtem ko si gledal. je kamen. ki ni bil utrgan s človeškimi rokami. udaril kip v njegova stopala iz železa in gline ter jih zdrobil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:35,Daniel:"Takrat so se železo. glina. baker. srebro in zlato hkrati zdrobili in postali kakor pleve sredi poletja na mlatišču in veter jih je odnesel. tako da za njimi ni bilo nobene sledi več. Kamen. ki je udaril kip. pa je postal velika gora in je napolnil vso zemljo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:36,Daniel:"To so bile sanje. zdaj pa bomo kralju povedali. kaj pomenijo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:37,Daniel:"Ti. o kralj. kralj kraljev. ki ti je Bog nebes dal kraljestvo. oblast. moč in slavo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:38,Daniel:"ti. ki ti je izročil ljudi. kjer koli živijo. pa tudi divje živali in ptice na nebu ter te postavil za vladarja nad njimi vsemi. ti si glava iz zlata.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:39,Daniel:"Za teboj pa bo prišlo drugo kraljestvo. slabše od tvojega. in nato tretje kraljestvo. iz bakra. ki bo vladalo vsej zemlji.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:40,Daniel:"Četrto kraljestvo bo močno kakor železo. Tako kot železo vse zdrobi in zmelje. tako bo tudi to kraljestvo zdrobilo in razbilo vsa prejšnja kraljestva.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:41,Daniel:"To. da si videl. da so stopala in prsti deloma iz lončarske gline. deloma iz železa. pomeni. da bo kraljestvo razdeljeno. vseeno pa bo v njem nekaj trdote železa. saj si videl železo. pomešano z mehko glino.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:42,Daniel:"To. da so bili prsti na stopalih deloma iz železa in deloma iz gline. pomeni. da bo kraljestvo deloma močno in deloma krhko.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:43,Daniel:"Da si pa videl železo. pomešano z mehko glino. pomeni. da se bodo pomešali z ljudmi. vendar se ne bodo držali skupaj. drug z drugim. tako kot se železo ne meša z glino.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:44,Daniel:"V času teh kraljev bo Bog nebes ustanovil kraljestvo. ki ne bo nikoli uničeno. To kraljestvo ne bo predano nobenemu drugemu ljudstvu. Vsa ta kraljestva bo zdrobilo in uničilo ter bo kot edino kraljestvo obstajalo večno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:45,Daniel:"Videl si namreč. da je bil od gore utrgan kamen. vendar ne s človeškimi rokami. ter je zdrobil železo. baker. glino. srebro in zlato. O kralj. Veliki Bog ti je oznanil. kaj se bo zgodilo v prihodnosti. Sanje so verodostojne in njihova razlaga zanesljiva.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:46,Daniel:"Ko je kralj Nebukadnezar to slišal. je padel na kolena in se priklonil do tal ter tako Danielu izkazal čast. Naročil je. naj se mu daruje dar in zažge kadilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:47,Daniel:"Kralj je Danielu rekel: »Vaš Bog je zares Bog nad bogovi in Gospod nad kralji ter tisti. ki razodeva skrivnosti. saj ti je dal sposobnost. da si mi razodel to skrivnost.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:48,Daniel:"Nato je Daniela povišal in mu dal mnogo dragocenih darov. Postavil ga je za vladarja nad vso babilonsko provinco in za glavnega predstojnika vseh babilonskih modrih mož.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:2,V:49,Daniel:"Upravljanje babilonske province je kralj na Danielovo prošnjo zaupal Šadrahu. Mešahu in Abednegu. Daniel pa je ostal na kraljevem dvoru.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Daniel:"Daniel 3. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:1,Daniel:"Kralj Nebukadnezar je naredil zlat kip. visok 60 komolcev in širok 6 komolcev. Postavil ga je v ravnini Dura v babilonski provinci.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:2,Daniel:"Nato je na praznovanje ob postavitvi kipa. ki ga je postavil on sam. dal sklicati satrape. predstojnike. deželne upravitelje. svetovalce. zakladnike. sodnike. sodne uradnike in vse upravnike provinc.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:3,Daniel:"Satrapi. predstojniki. deželni upravitelji. svetovalci. zakladniki. sodniki. sodni uradniki in vsi upravniki provinc so se torej zbrali na praznovanju ob postavitvi kipa. ki ga je postavil kralj Nebukadnezar. in stopili pred njega.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:4,Daniel:"Glasnik je z močnim glasom oznanil: »Vam. pripadniki vseh ljudstev. narodov in jezikov. se zapoveduje:",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:5,Daniel:"Ko zaslišite zvok roga. piščali. citer. harfe. lire. dud in vseh drugih glasbil. padite na kolena in počastite zlati kip. ki ga je postavil kralj Nebukadnezar.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:6,Daniel:"Kdor pa ne bo padel na kolena in ga počastil. bo še tisti trenutek vržen v ognjeno peč.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:7,Daniel:"Ko so torej pripadniki vseh ljudstev. narodov in jezikov zaslišali zvok roga. piščali. citer. harfe. lire in vseh drugih glasbil. so padli na kolena in počastili zlati kip. ki ga je postavil kralj Nebukadnezar.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:8,Daniel:"Ravno takrat so pristopili neki Kaldejci in obtožili Jude.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:9,Daniel:"Kralju Nebukadnezarju so rekli: »Naj živi kralj!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:10,Daniel:"Ti. o kralj. si izdal zapoved. naj vsak. ki zasliši zvok roga. piščali. citer. harfe. lire. dud in vseh drugih glasbil. pade na kolena in počasti zlati kip",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:11,Daniel:"ter da naj bo vsak. ki ne bi padel na kolena in ga počastil. vržen v ognjeno peč.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:12,Daniel:"Tu so neki Judje. ki si jim zaupal upravljanje babilonske province – Šadrah. Mešah in Abednego. Ti moški te niti malo ne spoštujejo. o kralj. Ne služijo tvojim bogovom in nočejo počastiti zlatega kipa. ki si ga postavil.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:13,Daniel:"Takrat je Nebukadnezar ves besen ukazal. naj pripeljejo Šadraha. Mešaha in Abednega. Tako so jih pripeljali pred kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:14,Daniel:"Nebukadnezar jim je rekel: »Šadrah. Mešah in Abednego. ali je res. da ne služite mojim bogovom in da nočete počastiti zlatega kipa. ki sem ga postavil?",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:15,Daniel:"Zdaj boste zaslišali zvok roga. piščali. citer. harfe. lire. dud in vseh drugih glasbil. Če boste pripravljeni pasti na kolena in počastiti kip. ki sem ga naredil. bo v redu. Če pa ga ne boste hoteli počastiti. boste tisti trenutek vrženi v ognjeno peč. In kateri bog vas bo lahko rešil iz mojih rok?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:16,Daniel:"Šadrah. Mešah in Abednego so kralju odgovorili: »O Nebukadnezar. ni treba. da se o tem še kaj pogovarjamo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:17,Daniel:"Če že mora biti tako. nas naš Bog. ki mu služimo. lahko reši iz ognjene peči in iz tvoje roke. o kralj.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:18,Daniel:"Pa tudi če nas ne bi. vedi. o kralj. da tvojim bogovom ne bomo služili in zlatega kipa. ki si ga postavil. ne bomo počastili.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:19,Daniel:"Zaradi tega se je Nebukadnezar tako zelo razjezil na Šadraha. Mešaha in Abednega. da se mu je izraz na obrazu spremenil. Naročil je. naj peč sedemkrat bolj segrejejo kot običajno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:20,Daniel:"Nekaterim močnim možem iz svoje vojske pa je ukazal. naj Šadraha. Mešaha in Abednega zvežejo ter jih vržejo v ognjeno peč.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:21,Daniel:"Tako so jih. oblečene v ogrinjala. obleke. pokrivala in druga oblačila. zvezali in vrgli v ognjeno peč.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:22,Daniel:"Ker so na kraljev strogi ukaz peč še posebej razbelili. so plameni. ki so švigali iz peči. ubili može. ki so pripeljali Šadraha. Mešaha in Abednega.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:23,Daniel:"Toda ti trije. Šadrah. Mešah in Abednego. so zvezani padli v ognjeno peč.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:24,Daniel:"Nato se je kralj Nebukadnezar prestrašil. Hitro je vstal in svoje višje uradnike vprašal: »Ali nismo zvezali treh ljudi in jih vrgli v ogenj?« Odgovorili so: »Smo. o kralj.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:25,Daniel:"Kralj pa je rekel: »Glejte. vidim štiri moške. ki razvezani hodijo sredi ognja. pa jim ni nič hudega. in četrti je videti kakor sin bogov.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:26,Daniel:"Nebukadnezar se je približal vratom ognjene peči in rekel: »Šadrah. Mešah in Abednego. služabniki Najvišjega Boga. stopite ven in pridite sem!« Šadrah. Mešah in Abednego so stopili iz ognja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:27,Daniel:"Satrapi. predstojniki. deželni upravitelji in kraljevi višji uradniki. ki so bili zbrani. so videli. da ogenj tem moškim ni naredil nobene škode. Osmodil se jim ni niti en las na glavi. navzeli se niso nobenega vonja po dimu in njihova ogrinjala so ostala nedotaknjena.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:28,Daniel:"Zatem je Nebukadnezar oznanil: »Naj bo hvaljen Šadrahov. Mešahov in Abednegov Bog. ki je poslal angela in rešil svoje služabnike. Zaupali so svojemu Bogu in se niso podredili temu. kar sem jaz kot kralj zapovedal. Niso hoteli služiti nobenemu drugemu bogu. razen svojemu Bogu. niti niso hoteli počastiti nobenega drugega boga. razen svojega Boga – za to so bili pripravljeni celo umreti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:29,Daniel:"Zato zdaj ukazujem: Kdor koli iz katerega koli ljudstva. naroda ali jezika bi rekel kaj proti Šadrahovemu. Mešahovemu in Abednegovemu Bogu. naj bo razkosan in njegova hiša spremenjena v javno stranišče. Ni namreč nobenega drugega boga. ki bi bil zmožen reševati. kakor je ta.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:3,V:30,Daniel:"Kralj pa je zatem Šadraha. Mešaha in Abednega spet postavil na visoke položaje v babilonski provinci.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Daniel:"Daniel 4. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:1,Daniel:"»Jaz. kralj Nebukadnezar. pošiljam pripadnikom vseh ljudstev. narodov in jezikov. ki živijo po vsej zemlji. naslednje sporočilo: Želim vam obilo miru!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:2,Daniel:"Vesel sem. da vam lahko oznanim. kakšna znamenja in čudeže je Najvišji Bog naredil na meni.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:3,Daniel:"Njegova znamenja so zelo velika in njegovi čudeži nadvse mogočni! Njegovo kraljestvo traja večno in njegova oblast iz roda v rod.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:4,Daniel:"Jaz. Nebukadnezar. sem mirno živel v svoji hiši in dobro mi je šlo v moji palači.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:5,Daniel:"Potem pa sem imel sanje. ki so me navdale s strahom. V spanju so se mi prikazale podobe in videnja. To. kar sem videl. me je prestrašilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:6,Daniel:"Zato sem ukazal. naj k meni pripeljejo vse babilonske modre može. da bi mi sanje razložili.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:7,Daniel:"K meni so prišli svečeniki. ki se ukvarjajo z magijo. ljudje. ki kličejo duhove. kaldejci in astrologi. Toda ko sem jim povedal sanje. mi jih niso znali razložiti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:8,Daniel:"Nazadnje je prišel k meni Daniel. ki je v čast imenu mojega boga dobil ime Beltšazar in v katerem je duh svetih bogov. in povedal sem mu sanje:",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:9,Daniel:"‚O Beltšazar. poglavar svečenikov. ki se ukvarjajo z magijo! Dobro vem. da je v tebi duh svetih bogov in da je ni skrivnosti. ki je ne bi znal razodeti. Zato mi pojasni pomen videnj. ki sem jih imel v sanjah.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:10,Daniel:"V videnjih. ki sem jih imel v spanju. sem sredi zemlje videl velikansko drevo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:11,Daniel:"Drevo je zraslo in postalo močno. njegov vrh je dosegel nebo in videti ga je bilo do skrajnega konca zemlje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:12,Daniel:"Njegovo listje je bilo lepo in na njem je bilo toliko plodov. da jih je bilo dovolj za vse. Pod njim so si iskale senco divje živali. na njegovih vejah so gnezdile ptice in od njega so se hranila vsa živa bitja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:13,Daniel:"V videnjih. ki sem jih imel v spanju. sem nato videl stražarja. svetega sla. ki se je spuščal z neba.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:14,Daniel:"Glasno je zaklical: »Posekajte drevo. porežite mu veje. otresite listje z njega in razmečite njegove plodove! Živali. ki so bile pod njim. naj zbežijo in ptice naj odletijo z njegovih vej.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:15,Daniel:"Toda njegov štor s koreninami pustite v zemlji. Dajte ga v okove iz železa in bakra ter ga pustite sredi trave na polju. Od rose z neba naj bo moker in z živalmi naj si deli zemeljsko rastlinje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:16,Daniel:"Srce naj se mu iz človeškega spremeni v živalsko in naj takšno ostane sedem časov.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:17,Daniel:"To je odredba. ki so jo oznanili stražarji. in razsodba. ki so jo razglasili sveti sli. da bi ljudje vedeli. da ima Najvišji oblast nad človeškim kraljestvom in da jo lahko da. komur hoče. celo najnižjemu med ljudmi.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:18,Daniel:"To so bile sanje. ki sem jih imel jaz. kralj Nebukadnezar. Ti. o Beltšazar. pa jih razloži. ker mi jih ne more razložiti noben drug moder mož v kraljestvu. Toda ti si tega zmožen. ker je v tebi duh svetih bogov.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:19,Daniel:"Daniel. ki mu je ime Beltšazar. je za trenutek otrpnil in se ustrašil svojih lastnih misli.<br>Kralj mu je rekel: ‚O Beltšazar. naj te sanje in njihova razlaga ne strašijo!<br>Beltšazar je odgovoril: ‚Ah. moj gospod. želim si. da bi se sanje uresničile na tvojih sovražnikih in da bi razlaga veljala tvojim nasprotnikom!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:20,Daniel:"Drevo. ki si ga videl. ki je postalo veliko in močno. njegov vrh pa je dosegel nebo in ga je bilo videti po vsej zemlji.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:21,Daniel:"drevo. katerega listje je bilo lepo in na katerem je bilo toliko plodov. da jih je bilo dovolj za vse. drevo. pod katerim so bivale divje živali in na katerega vejah so gnezdile ptice",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:22,Daniel:"– to si ti. o kralj. Postal si namreč velik in močan. tvoja veličina je zrasla in sega do neba. tvoja oblast pa do skrajnega konca zemlje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:23,Daniel:"Kralj je videl tudi stražarja. svetega sla. ki se je spuščal z neba in govoril: »Posekajte drevo in ga uničite! Toda njegov štor s koreninami pustite v zemlji. Dajte ga v okove iz železa in bakra ter ga pustite sredi trave na polju. Od rose z neba naj bo moker in z divjimi živalmi naj bo. dokler ne preteče sedem časov.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:24,Daniel:"To. o kralj. pomeni naslednje  to je odredba Najvišjega glede tega. kaj se bo zgodilo mojemu gospodu kralju:",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:25,Daniel:"Pregnali te bodo od ljudi in živel boš med divjimi živalmi. Dajali ti bodo jesti travo kakor govedu in od rose z neba boš moker. Preteklo bo sedem časov. dokler ne boš spoznal. da ima Najvišji oblast nad človeškim kraljestvom in da jo lahko da. komur hoče.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:26,Daniel:"To. da so rekli. naj se drevesu pusti štor s koreninami. pa pomeni. da boš spet zavladal nad svojim kraljestvom. potem ko boš spoznal. da je resnični vladar v nebesih.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:27,Daniel:"Zato te prosim. o kralj. sprejmi moj nasvet. Prenehaj s svojimi grehi in delaj to. kar je prav. Ne ravnaj več krivično in bodi usmiljen do revnih. Mogoče boš potem dlje užival v svoji blaginji.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:28,Daniel:"Vse to se je kralju Nebukadnezarju res zgodilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:29,Daniel:"Dvanajst mesecev kasneje se je sprehajal po strehi kraljeve palače v Babilonu",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:30,Daniel:"in govoril: »Ali ni to veliki Babilon. ki sem ga jaz s svojo veliko močjo zgradil. da bo kraljeva prestolnica in da bo pričal o moji slavi in veličastnosti?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:31,Daniel:"Ko je kralj še govoril. se je z neba zaslišal glas: »Tebi. o kralj Nebukadnezar. je namenjeno naslednje sporočilo: ‚Kraljestvo ti je vzeto.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:32,Daniel:"Od ljudi te bodo pregnali in živel boš z divjimi živalmi. Dajali ti bodo jesti travo kakor govedu in preteklo bo sedem časov. dokler ne boš spoznal. da ima Najvišji oblast nad človeškim kraljestvom in da jo lahko da. komur hoče.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:33,Daniel:"V tistem trenutku so se na Nebukadnezarju te besede izpolnile. Pregnali so ga od ljudi. začel je jesti travo kakor govedo in njegovo telo je bilo mokro od rose z neba. Njegovi lasje so zrasli in postali kakor orlovo perje in njegovi nohti kakor ptičji kremplji.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:34,Daniel:"»Ko se je to obdobje končalo. sem jaz. Nebukadnezar. pogledal proti nebu in razum se mi je povrnil. Hvalil sem Najvišjega ter izrekal hvalo in čast njemu. ki večno živi. saj njegova oblast traja večno in njegovo kraljestvo iz roda v rod.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:35,Daniel:"Vsi prebivalci zemlje so v primerjavi z njim kakor nič in po svoji volji ravna z nebeško vojsko in s prebivalci zemlje. Nikogar ni. ki bi mu lahko kaj preprečil ali mu rekel ‚Zakaj to delaš?.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:36,Daniel:"Takrat se mi je povrnil razum. moje kraljestvo je spet postalo slavno in povrnila sta se tudi moja veličastnost in sijaj. Moji svetovalci in dostojanstveniki so me začeli željno iskati in spet sem bil postavljen nad svoje kraljestvo ter postal še bolj slaven kot prej.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:4,V:37,Daniel:"Zato jaz. Nebukadnezar. zdaj hvalim. poveličujem in slavim Kralja nebes. saj so vsa njegova dela v skladu z resnico. vse. kar dela. je pravično in tiste. ki so ošabni. lahko poniža.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:5,V:0,Daniel:"Daniel 5. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:1,Daniel:"Kralj Belšazar je pripravil veliko pojedino za svojih tisoč dostojanstvenikov in je z njimi pil vino.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:2,Daniel:"Nato je. opit od vina. ukazal prinesti zlate in srebrne posode. ki jih je njegov oče Nebukadnezar vzel iz templja v Jeruzalemu. Hotel je. da iz njih pijejo on sam. njegovi dostojanstveniki. stranske žene in priležnice.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:3,Daniel:"Prinesli so torej zlate posode. ki so bile odnesene iz svetišča v Božji hiši v Jeruzalemu. Iz njih so pili kralj. njegovi dostojanstveniki. njegove stranske žene in priležnice.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:4,Daniel:"Pili so vino in hvalili bogove iz zlata. srebra. bakra. železa. lesa in kamna.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:5,Daniel:"V tistem trenutku so se pojavili prsti človeške roke in začeli pisati po ometani steni kraljeve palače nasproti svečniku. tako da je kralj lahko videl roko. ki je pisala.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:6,Daniel:"Kralj je prebledel. njegove misli so ga prestrašile. noge so se mu zašibile in kolena so mu začela trkati druga ob drugo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:7,Daniel:"Kralj je zavpil. naj pripeljejo tiste. ki kličejo duhove. ter kaldejce in astrologe. Babilonskim modrim možem je rekel: »Tistega. ki bo prebral ta napis in mi ga razložil. bodo oblekli v vijoličasto obleko in mu dali zlato verižico okrog vratu. Vladal bo kot tretji v kraljestvu.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:8,Daniel:"Prišli so vsi kraljevi modri možje. toda niso znali prebrati napisa niti povedati kralju. kaj pomeni.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:9,Daniel:"Zato se je kralj Belšazar zelo prestrašil in je ves prebledel. med njegovimi dostojanstveniki pa je nastala zmeda.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:10,Daniel:"Ko je za to. o čemer so se pogovarjali kralj in njegovi dostojanstveniki. izvedela kraljica. je stopila v dvorano. v kateri je bila pojedina. in rekla: »Naj živi kralj! Naj te ne strašijo tvoje misli in tvoj obraz naj ne bo ves bled.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:11,Daniel:"V tvojem kraljestvu je mož. ki ima duha svetih bogov. V dneh tvojega očeta so odkrili. da ima spoznanje. uvid in modrost. ki je podobna modrosti bogov. Kralj Nebukadnezar. tvoj oče. ga je postavil za poglavarja svečenikov. ki se ukvarjajo z magijo. za poglavarja ljudi. ki kličejo duhove. ter za poglavarja kaldejcev in astrologov. To je naredil tvoj oče. o kralj.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:12,Daniel:"Daniel. ki mu je kralj dal ime Beltšazar. je namreč imel izreden um. spoznanje in uvid. da je lahko razlagal sanje. reševal uganke in odgovarjal na zapletena vprašanja. Daj torej poklicati Daniela in povedal ti bo razlago.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:13,Daniel:"Tako so Daniela pripeljali pred kralja. Kralj ga je vprašal: »Ali si ti Daniel. eden od pregnancev. ki jih je kralj. moj oče. pripeljal z Judovega?",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:14,Daniel:"Slišal sem tudi. da imaš v sebi duha bogov in da so pri tebi odkrili spoznanje. uvid in izredno modrost.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:15,Daniel:"Pred mene so pripeljali modre može in tiste. ki kličejo duhove. da bi prebrali ta napis in mi ga razložili. ampak ga niso znali razložiti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:16,Daniel:"Zate pa sem slišal. da lahko razložiš skrivnosti in rešiš zapletena vprašanja. Če torej lahko prebereš ta napis in mi ga razložiš. te bodo oblekli v vijoličasto obleko in ti okrog vratu dali zlato verižico. Zavladal boš kot tretji v kraljestvu.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:17,Daniel:"Daniel pa je kralju odgovoril: »Te darove lahko obdržiš in ta darila lahko daš drugim. Toda. moj gospod kralj. napis ti bom vseeno prebral in ti ga razložil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:18,Daniel:"O kralj. Najvišji Bog je tvojemu očetu Nebukadnezarju podelil kraljestvo. veličino. čast in veličastnost.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:19,Daniel:"Zaradi veličine. ki mu jo je dal. so vsi pripadniki ljudstev. narodov in jezikov pred njim trepetali od strahu. Kogar je hotel. je ubil ali pustil živeti. in kogar je hotel. je povišal ali ponižal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:20,Daniel:"Ko pa je postal ošaben in trmast. tako da je ravnal predrzno. je bil vržen s prestola svojega kraljestva in mu je bilo vzeto dostojanstvo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:21,Daniel:"Pregnali so ga od ljudi. njegovo srce je postalo kakor živalsko in živel je med divjimi osli. Dajali so mu jesti travo kakor govedu in njegovo telo je bilo mokro od rose z neba. dokler ni spoznal. da ima Najvišji Bog oblast nad človeškim kraljestvom in da jo lahko da. komur hoče.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:22,Daniel:"Ti pa. njegov sin Belšazar. se nisi ponižal. čeprav si vse to vedel.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:23,Daniel:"Celo povzdignil si se nad Gospoda nebes in zahteval. da ti prinesejo posode iz njegove hiše. Nato ste ti. tvoji dostojanstveniki. tvoje stranske žene in priležnice iz njih pili vino in hvalili bogove iz srebra. zlata. bakra. železa. lesa in kamna. bogove. ki nič ne vidijo. nič ne slišijo in nič ne vedo. Toda Bogu. od katerega je odvisno tvoje življenje in vse. kar delaš. nisi izkazal slave.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:24,Daniel:"Zato je Bog poslal roko. ki je napisala tale napis.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:25,Daniel:"Napis se torej glasi: MENE. MENE. TEKEL in PARSIN.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:26,Daniel:"Pomen teh besed pa je: MENE – Bog je preštel dneve tvojega kraljestva in mu naredil konec.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:27,Daniel:"TEKEL – stehtan si bil na tehtnici in izkazal si se prelahkega.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:28,Daniel:"PERES – tvoje kraljestvo je bilo razdeljeno in izročeno Medijcem in Perzijcem.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:29,Daniel:"Potem so na Belšazarjevo zapoved Daniela oblekli v vijoličasto obleko. mu dali zlato verižico okrog vratu in naznanili. da bo postal tretji vladar v kraljestvu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:30,Daniel:"Še isto noč so kaldejskega kralja Belšazarja ubili.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:5,V:31,Daniel:"Kraljestvo je dobil Medijec Darej. ki je bil star okoli 62 let.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:6,V:0,Daniel:"Daniel 6. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:1,Daniel:"Darej se je odločil. da bo nad celotno kraljestvo postavil 120 satrapov.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:2,Daniel:"Nad njimi pa je za nadzornike postavil tri višje uradnike. Ti naj bi skrbeli za to. da kralj ne bi utrpel nobene škode. Eden od teh treh je bil Daniel.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:3,Daniel:"Daniel se je med višjimi uradniki in satrapi odlikoval po izrednem umu. zato ga je kralj nameraval postaviti nad vse kraljestvo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:4,Daniel:"Višja uradnika in satrapi pa so iskali razlog. na podlagi katerega bi lahko Daniela obtožili glede tega. kako opravlja svoje dolžnosti v kraljestvu. Toda niso mogli najti nobenega razloga za obtožbo niti nobenega dokaza. da je naredil kaj pokvarjenega. Bil je namreč vreden zaupanja in pri njem ni bilo zaslediti nobene malomarnosti ali pokvarjenosti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:5,Daniel:"Zato so ti možje rekli: »Nobenega razloga ne bomo našli. na podlagi katerega bi lahko Daniela obtožili. razen če najdemo kaj proti njemu v zvezi s čaščenjem njegovega Boga.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:6,Daniel:"Tako so višja uradnika in satrapi prihrumeli h kralju in mu rekli: »Naj živi kralj Darej!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:7,Daniel:"Vsi kraljevi uradniki. predstojniki. satrapi. kraljevi svetovalci in deželni upravitelji smo po posvetu ugotovili. da bi bilo treba izdati kraljevo odredbo in uveljaviti naslednjo prepoved: vsakega. ki bi v 30 dneh kaj prosil katerega koli boga ali človeka razen tebe. o kralj. se bo vrglo v levjo jamo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:8,Daniel:"Zdaj pa. o kralj. izdaj to odredbo in jo podpiši. da se ne bo mogla spremeniti. saj se zakonov Medijcev in Perzijcev ne da razveljaviti.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:9,Daniel:"Tako je kralj Darej podpisal odredbo in prepoved.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:10,Daniel:"Ko je Daniel izvedel. da je odredba podpisana. je takoj šel v svojo hišo. V strešni sobi je imel okna odprta proti Jeruzalemu. Tam je trikrat na dan pokleknil ter molil k svojemu Bogu in mu izrekal hvalo. kakor je to redno delal že prej.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:11,Daniel:"Takrat so prihrumeli tisti možje in našli Daniela. da svojega Boga prosi in roti za milost.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:12,Daniel:"Potem so pristopili h kralju in ga spomnili na prepoved. ki jo je izdal. Vprašali so ga: »Ali nisi podpisal prepovedi. na podlagi katere bi se vsakega. ki bi v 30 dneh prosil kaj katerega koli boga ali človeka razen tebe. o kralj. vrglo v levjo jamo?« Kralj je odgovoril: »Tako je odločeno in tega se skladno z zakoni Medijcev in Perzijcev ne da razveljaviti.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:13,Daniel:"Kralju so takoj povedali: »Daniel. eden od judovskih pregnancev. te niti malo ne spoštuje. o kralj. niti se ne meni za prepoved. ki si jo podpisal. ampak trikrat na dan moli.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:14,Daniel:"Kralja so te besede zelo razžalostile. zato se je skušal domisliti. kako bi Danielu pomagal. Vse do sončnega zahoda si je prizadeval. da bi ga rešil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:15,Daniel:"Toda h kralju so prihrumeli tisti možje in mu rekli: »Dobro veš. o kralj. da se glede na zakone Medijcev in Perzijcev nobena prepoved ali odredba. ki jo kralj izda. ne more spremeniti.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:16,Daniel:"Tako so na kraljev ukaz Daniela odpeljali in ga vrgli v levjo jamo. Danielu pa je kralj rekel: »Tvoj Bog. ki mu vztrajno služiš. te bo rešil.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:17,Daniel:"Prinesli so kamen. ga položili k vhodu v jamo in kralj ga je zapečatil s svojim pečatnim prstanom in s pečatnimi prstani svojih dostojanstvenikov. da se glede Daniela ne bi moglo nič spremeniti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:18,Daniel:"Nato se je kralj vrnil v svojo palačo. Vso noč se je postil. zavračal vsakršno razvedrilo in ni mogel spati.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:19,Daniel:"Takoj ko se je začelo daniti. pa je vstal in odhitel k levji jami.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:20,Daniel:"Približal se je jami in žalostno poklical Daniela. Vprašal ga je: »O Daniel. služabnik živega Boga. ali te je mogel tvoj Bog. ki mu vztrajno služiš. rešiti levov?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:21,Daniel:"Daniel pa je kralju takoj odgovoril: »Naj živi kralj!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:22,Daniel:"Moj Bog je poslal svojega angela. da je zaprl levom žrela. tako da me niso poškodovali. Pred Bogom sem se namreč izkazal za nedolžnega pa tudi tebi. o kralj. nisem naredil nič slabega.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:23,Daniel:"Kralj je bil presrečen in je zapovedal. naj Daniela potegnejo iz jame. Ko so ga potegnili ven. niso na njem našli niti najmanjše praske. ker je zaupal svojemu Bogu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:24,Daniel:"Nato so na kraljev ukaz pripeljali može. ki so obtožili Daniela. in jih vrgli v levjo jamo skupaj z njihovimi otroki in ženami. Niso se še dotaknili dna jame. ko so jih levi že napadli in jim zlomili vse kosti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:25,Daniel:"Nato je kralj Darej pripadnikom vseh ljudstev. narodov in jezikov. ki živijo po vsej zemlji. napisal: »Želim vam obilo miru!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:26,Daniel:"Ljudem po vsem mojem kraljestvu ukazujem. naj se bojijo Danielovega Boga in ga spoštujejo. Ta Bog je namreč živi Bog. ki bo večno obstajal. Njegovo kraljestvo ne bo nikoli uničeno in njegova oblast bo večna.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:27,Daniel:"On rešuje. osvobaja ter dela znamenja in čudeže na nebu in na zemlji. saj je rešil Daniela iz levjih krempljev.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:6,V:28,Daniel:"Danielu pa je šlo dobro v kraljestvu Dareja in kraljestvu Perzijca Kira.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:7,V:0,Daniel:"Daniel 7. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:1,Daniel:"V prvem letu vladanja babilonskega kralja Belšazarja je imel Daniel med spanjem sanje in videnja. Nato je te sanje tudi zapisal  zapisal je vse. kar je videl.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:2,Daniel:"Daniel je povedal:<br>»V svojih videnjih ponoči sem videl vetrove. ki so pihali iz štirih smeri neba in so razburkali prostrano morje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:3,Daniel:"Iz morja so prišle štiri velikanske zveri. vsaka drugačna.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:4,Daniel:"Prva je bila kakor lev in je imela orlje peruti. Medtem ko sem gledal. so ji bile peruti izpuljene. Dvignjena je bila od tal in postavljena na dve nogi. da je stala kakor človek. in dobila je človeško srce.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:5,Daniel:"Videl sem še eno zver. drugo po vrsti. ki je bila kakor medved. Dvignila je eno šapo in v ustih je med zobmi imela tri rebra. Rečeno ji je bilo: ‚Daj. pojej veliko mesa!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:6,Daniel:"Še naprej sem gledal in videl naslednjo zver. ki je bila kakor leopard. le da je imela na hrbtu štiri ptičje peruti. Zver je imela štiri glave in izročena ji je bila oblast. da vlada.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:7,Daniel:"Zatem sem v videnjih ponoči videl še četrto zver. strašno in grozno ter neobičajno močno. Imela je velike železne zobe. Žrla je in drobila vse okrog sebe. kar pa je ostalo. je poteptala z nogami. Razlikovala se je od vseh drugih zveri. ki so bile pred njo. in imela je deset rogov.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:8,Daniel:"Ko sem opazoval rogove. se je med njimi pojavil še en rog. majhen. in trije prvotni rogovi so bili pred njim izdrti. Na tem rogu so bile oči. podobne človeškim. in usta. ki so govorila ošabno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:9,Daniel:"Ko sem tako še gledal. so bili postavljeni prestoli in usedel se je Pradavni. Njegova obleka je bila bela kakor sneg in lasje na njegovi glavi so bili beli kakor čista volna. Njegov prestol je bil kakor ognjeni plameni in kolesa prestola kakor goreč ogenj.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:10,Daniel:"Od njega je tekla ognjena reka. Tisoči tisočev so mu stregli in desettisočkrat desettisoči so stali pred njim. Sodišče je začelo zasedati in knjige so se odprle.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:11,Daniel:"Takrat so ošabne besede. ki jih je rog govoril. pritegnile mojo pozornost. Medtem ko sem gledal. je bila zver ubita. njeno truplo pa vrženo v ogenj in uničeno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:12,Daniel:"Ostalim zverem je bila oblast vzeta. življenje pa jim je bilo podaljšano za nekaj časa.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:13,Daniel:"Zatem sem v videnjih ponoči videl. kako je z nebesnimi oblaki prihajal nekdo. ki je bil kakor sin človekov. Dovoljeno mu je bilo priti do Pradavnega in pripeljali so ga pred njega.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:14,Daniel:"Prejel je oblast. čast in kraljestvo. da bi mu služili pripadniki vseh ljudstev. narodov in jezikov. Njegova oblast je večna. nikoli se ne bo končala. in njegovo kraljestvo ne bo nikoli uničeno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:15,Daniel:"Jaz. Daniel. pa sem bil zaskrbljen. ker so me videnja. ki sem jih imel. prestrašila.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:16,Daniel:"Pristopil sem k enemu od tistih. ki so tam stali. in ga vprašal. kaj vse to v resnici pomeni. In on mi je to tudi razložil:",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:17,Daniel:"‚Te štiri velikanske zveri so štirje kralji. ki bodo dobili oblast na zemlji.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:18,Daniel:"Toda kraljestvo bodo dobili sveti. ki pripadajo Vrhovnemu. in imeli ga bodo za vedno. za vso večnost.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:19,Daniel:"Nato sem želel več izvedeti o četrti zveri. ki je bila drugačna od vseh drugih. Bila je neobičajno strašna. imela je železne zobe in bakrene kremplje. žrla in drobila je vse okrog sebe. kar pa je ostalo. je poteptala z nogami.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:20,Daniel:"Želel sem več izvedeti tudi o desetih rogovih na njeni glavi in o rogu. ki se je pojavil in pred katerim so trije odpadli. o rogu. ki je imel oči in usta. ki so govorila ošabno. in je bil videti večji od ostalih.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:21,Daniel:"Medtem ko sem gledal. se je ta rog začel vojskovati s svetimi in je zmagoval nad njimi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:22,Daniel:"dokler ni prišel Pradavni. dokler ni bilo razsojeno v korist svetih. ki pripadajo Vrhovnemu. in dokler ni nastopil čas. določen za to. da sveti dobijo v last kraljestvo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:23,Daniel:"Tisti. ki mi je razlagal vse to. je rekel: ‚Četrta zver predstavlja četrto kraljestvo. ki se bo pojavilo na zemlji. Drugačno bo od vseh drugih kraljestev in bo požrlo vso zemljo. jo poteptalo in zdrobilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:24,Daniel:"Deset rogov predstavlja deset kraljev. ki bodo prišli iz tega kraljestva. Za njimi pa bo prišel še eden. ki bo drugačen od njih in bo ponižal tri kralje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:25,Daniel:"Govoril bo proti Najvišjemu in preganjal svete. ki pripadajo Vrhovnemu. Hotel bo spremeniti čase in zakon. sveti pa bodo izročeni v njegove roke za en čas. dva časa in pol časa.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:26,Daniel:"Toda sodišče je začelo zasedati in mu vzelo oblast. da bi bil iztrebljen. popolnoma uničen.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:27,Daniel:"Kraljestvo. oblast in veličino kraljestev pod vsem nebom pa je dobilo ljudstvo svetih. ki pripadajo Vrhovnemu. Njihovo kraljestvo je večno kraljestvo in vse vlade jim bodo služile in jih ubogale.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:7,V:28,Daniel:"Tu se poročilo konča. Mene. Daniela. so moje misli zelo vznemirile. tako da sem postal ves bled. Toda vse to sem ohranil v svojem srcu.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:8,V:0,Daniel:"Daniel 8. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:1,Daniel:"V tretjem letu kraljevanja kralja Belšazarja sem jaz. Daniel. prejel še eno videnje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:2,Daniel:"Medtem ko sem gledal videnje. sem bil v trdnjavi v Šušanu. ki je v provinci Elam. Ko sem tako gledal. sem bil ob reki Ulaj.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:3,Daniel:"Zagledal sem ovna. ki je imel dva rogova in je stal pred reko. Rogova sta bila visoka. toda eden je bil višji od drugega. In višji je zrasel kasneje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:4,Daniel:"Videl sem. da je oven drezal proti zahodu. severu in jugu. Po robu se mu ni mogla postaviti nobena od zveri in nikogar ni bilo. ki bi jih lahko rešil izpod njegove oblasti. Delal je. kar je hotel. in se zelo šopiril.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:5,Daniel:"Ko sem tako še naprej opazoval. sem zagledal kozla. ki je prihajal z zahoda. Prečkal je vso zemljo. ne da bi se dotaknil tal. Med očmi pa je imel vpadljiv rog.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:6,Daniel:"Približeval se je ovnu z dvema rogovoma. ki sem ga prej videl stati pred reko. Ves besen je tekel proti njemu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:7,Daniel:"Videl sem. kako se je poln jeze približeval ovnu. Zaletel se je vanj in mu zlomil oba rogova. tako da oven ni imel moči. da bi se mu uprl. Ovna je vrgel na tla ter ga poteptal in nikogar ni bilo. ki bi ovna rešil izpod njegove oblasti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:8,Daniel:"Kozel se je nato začel pretirano šopiriti. Toda ko je postal mogočen. se mu je zlomil veliki rog in namesto njega so zrasli štirje vpadljivi rogovi proti štirim smerem neba.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:9,Daniel:"Iz enega od njih pa je zrasel drug. majhen rog in ta je postal zelo velik – proti jugu. proti vzhodu in proti Čudoviti deželi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:10,Daniel:"Postal je tako velik. da je segal vse do vojske nebesnih teles. Povzročil je. da je del vojske in nekaj zvezd padlo na zemljo. on pa jih je poteptal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:11,Daniel:"Poviševal se je celo nad Poveljnika vojske. Daritve. ki so se redno darovale Poveljniku. so bile ustavljene. in svetišče. ki ga je ta utrdil. je bilo podrto.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:12,Daniel:"Zaradi prestopka je bila rogu izročena vojska in redne daritve so bile ukinjene. Resnico je metal na tla in je uspeval v tem. kar je delal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:13,Daniel:"Nato sem zaslišal enega od svetih. da je govoril. drug sveti pa ga je vprašal: »Kako dolgo bo trajalo to videnje – videnje o rednih daritvah. o prestopku. ki povzroča opustošenje. in o teptanju svetega kraja in vojske?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:14,Daniel:"Odgovoril mi je: »Dokler ne mine 2300 večerov in juter. Takrat bo sveti kraj povrnjen v svoje pravo stanje.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:15,Daniel:"Ko sem tako jaz. Daniel. gledal videnje in ga skušal razumeti. se je pred menoj nenadoma pojavil nekdo. ki je bil videti kot človek.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:16,Daniel:"Zatem sem zaslišal človeka. ki je bil na sredi Ulaja. da je zaklical: »Gabriel. pojasni mu pomen tega. kar je videl.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:17,Daniel:"Gabriel se mi je torej približal. toda ko je prišel do mene. sem se tako prestrašil. da sem padel na kolena in se priklonil do tal. Rekel mi je: »Vedi. sin človekov. da videnje velja za čas konca.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:18,Daniel:"Ko je tako govoril z menoj. sem se zgrudil na tla in trdno zaspal. Zato se me je dotaknil in mi pomagal. da sem spet vstal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:19,Daniel:"Potem mi je rekel: »Povedal ti bom. kaj se bo zgodilo v sklepnem delu izvršitve obsodbe. saj videnje velja za določeni čas. za čas konca.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:20,Daniel:"Oven z dvema rogovoma. ki si ga videl. predstavlja kralja Medije in kralja Perzije.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:21,Daniel:"Kosmati kozel predstavlja kralja Grčije. veliki rog. ki je bil med njegovimi očmi. pa predstavlja prvega kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:22,Daniel:"To. da se je rog zlomil in so namesto njega zrasli štirje. pomeni. da bodo iz njegovega naroda nastala štiri kraljestva. vendar ne bodo imela takšne moči. kakršno je imel on.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:23,Daniel:"V sklepnem delu njihovega kraljevanja. ko bodo njihovi prestopki dosegli vrhunec. pa bo zavladal kralj okrutnega videza. ki bo velik spletkar.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:24,Daniel:"Postal bo mogočen. vendar ne z lastno močjo. Povzročil bo osupljivo uničenje in bo uspeval v tem. kar bo delal. Uničil bo mogočne. tudi ljudstvo svetih.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:25,Daniel:"Zaradi svoje zvitosti bo mnoge uspel prevarati. V srcu se bo zelo šopiril. in ko se bodo ljudje počutili varne. bo mnoge uničil. Uprl se bo celo Poveljniku poveljnikov. toda zlomljen bo brez človeške roke.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:26,Daniel:"To. kar je bilo v videnju rečeno glede večerov in juter. je resnica. vseeno pa naj to videnje ostane skrivnost. saj se bo izpolnilo šele v daljni prihodnosti.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:8,V:27,Daniel:"Jaz. Daniel. pa sem bil povsem izčrpan in bolan več dni. Nato sem vstal in opravljal službo pri kralju. Še vedno pa sem bil zbegan zaradi videnja in nikogar ni bilo. ki bi ga razumel.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:9,V:0,Daniel:"Daniel 9. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:1,Daniel:"Bilo je prvo leto kraljevanja Ahasverjevega sina Dareja. ki je bil iz rodu Medijcev in je bil postavljen za kralja nad kaldejskim kraljestvom.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:2,Daniel:"Torej v tem prvem letu njegovega kraljevanja sem jaz. Daniel. iz knjig razumel. da bo glede na Jehovovo besedo. ki jo je dobil prerok Jeremija. Jeruzalem ostal opustošen 70 let.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:3,Daniel:"Zato sem se obrnil k pravemu Bogu Jehovu po pomoč in ga v molitvi goreče prosil ter se postil v raševini in pepelu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:4,Daniel:"Molil sem k svojemu Bogu Jehovu in mu priznal:<br>»O Jehova. pravi Bog. ti si mogočni in veličastni Bog. ti ravnaš skladno s svojo zavezo in vdano ljubiš tiste. ki te ljubijo in izpolnjujejo tvoje zapovedi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:5,Daniel:"Mi pa smo grešili. ravnali smo krivično in hudobno ter se ti upirali. Nismo ubogali tvojih zapovedi in nismo upoštevali tvojih razsodb.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:6,Daniel:"Nismo poslušali prerokov. tvojih služabnikov. ki so v tvojem imenu govorili našim kraljem. poglavarjem. praočetom in vsemu ljudstvu naše dežele.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:7,Daniel:"Ti. o Jehova. si pravičen. mi pa smo si nakopali sramoto. ki nas spremlja vse do danes. Sramota počiva nad Judovci. prebivalci Jeruzalema in nad vsemi drugimi Izraelci. ki si jih zaradi njihove nezvestobe razkropil po bližnjih in daljnih deželah.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:8,Daniel:"O Jehova. spremlja nas sramota – nas. naše kralje. poglavarje in praočete – ker smo grešili proti tebi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:9,Daniel:"Ti. Jehova. naš Bog. si usmiljen in odpuščaš. mi pa smo se ti uprli.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:10,Daniel:"Nismo te ubogali. o naš Bog Jehova. saj se nismo ravnali po tvojih zakonih. ki si nam jih dajal po svojih služabnikih prerokih.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:11,Daniel:"Ves izraelski narod je prekršil tvoj Zakonik. bil ti je neposlušen in se tako odvrnil od tebe. Grešili smo proti tebi. zato si na nas izlil prekletstvo. ki je podkrepljeno s prisego in zapisano v Zakoniku Mojzesa. služabnika pravega Boga.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:12,Daniel:"Izpolnil si svoje besede. ki si jih govoril proti nam in našim vladarjem. s tem da si nad nas poslal veliko nesrečo. Takšna nesreča. kakršna se je zgodila v Jeruzalemu. se do takrat na zemlji še ni zgodila.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:13,Daniel:"Vsa ta nesreča je prišla nad nas. točno tako kot piše v Mojzesovem Zakoniku. Kljub temu si nismo prizadevali pridobiti tvoje naklonjenosti. o Jehova. naš Bog. saj nismo nehali grešiti in se nismo menili za tvojo resnico.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:14,Daniel:"Ti. Jehova. si vse to budno opazoval in na koncu poslal nad nas nesrečo. Ti. Jehova. naš Bog. si namreč pravičen v vsem. kar delaš. mi pa te kljub temu nismo ubogali.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:15,Daniel:"O Jehova. naš Bog. ti. ki si z veliko močjo popeljal svoje ljudstvo iz egiptovske dežele in si si naredil ime. po katerem si poznan še danes – grešili smo in ravnali hudobno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:16,Daniel:"O Jehova. tebe. ki si vedno ravnal pravično. prosim. da se nehaš tako hudo jeziti na svoje mesto Jeruzalem. na svojo sveto goro. Jeruzalem in tvoje ljudstvo sta namreč zaradi naših grehov in zaradi grehov naših praočetov v posmeh vsem okoli nas.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:17,Daniel:"Zdaj torej. naš Bog. prisluhni molitvi in rotenju. ki ti jo izrekam jaz. tvoj služabnik. in ukrepaj v korist svojega opustošenega svetišča. O Jehova. stori to zaradi sebe.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:18,Daniel:"Skloni se. o moj Bog. in nam prisluhni. Odpri svoje oči in poglej. kako opustošeno je naše mesto. ki se imenuje po tebi. Rotimo te. pa ne zato. ker bi mi ravnali pravično. ampak zaradi tvojega velikega usmiljenja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:19,Daniel:"O Jehova. prisluhni nam! O Jehova. odpusti nam! O Jehova. bodi pozoren in ukrepaj! Ne odlašaj. o moj Bog. zaradi sebe ne odlašaj! Tvoje mesto in tvoje ljudstvo namreč nosita tvoje ime.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:20,Daniel:"Ko sem še govoril. molil in priznaval svoje grehe in grehe svojega ljudstva. Izraelcev. ter goreče prosil svojega Boga Jehova glede njegove svete gore.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:21,Daniel:"ko sem torej še izgovarjal molitev. je k meni v človeški podobi prišel Gabriel. ki sem ga nekoliko prej že videl v videnju. Prišel je ob večerni daritvi. ko sem bil ves izmučen.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:22,Daniel:"Pomagal mi je razumeti. kaj se bo zgodilo. Rekel mi je:<br>»O Daniel. prišel sem. da bi ti pomagal pridobiti si boljši uvid in razumeti. kaj se bo zgodilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:23,Daniel:"Ko si začel moliti. sem dobil sporočilo od Boga. Zelo si mu dragocen. zato sem zdaj prišel k tebi. da ti to sporočilo oznanim. Skrbno razmisli o tem. kar ti bom povedal. in se potrudi. da boš videnje razumel.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:24,Daniel:"Za tvoje ljudstvo in tvoje sveto mesto je določenih 70 tednov. da se konča upor. odpravi greh. odpusti prestopek. uvede trajna pravičnost. potrdi videnja in prerokbe ter da se pomazili Najsvetejše.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:25,Daniel:"Vedeti in razumeti moraš. da bo od takrat. ko bo izšla zapoved. da naj se Jeruzalem ponovno zgradi in vrne v prvotno stanje. do Mesija. Voditelja. preteklo 7 tednov in nato še 62 tednov. Jeruzalem bo ponovno zgrajen in vrnjen v prvotno stanje. s trgom in jarkom vred. vendar v času stiske.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:26,Daniel:"Po teh 62 tednih bo Mesija usmrčen in nič mu ne bo ostalo.<br>Vojska voditelja. ki prihaja. bo uničila mesto in sveti kraj. Njegov konec bo prišel kakor poplava. Vse do konca bo vojna. Bog je odločil. da bo prišlo opustošenje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:9,V:27,Daniel:"V korist mnogih bo podaljšal veljavnost zaveze za en teden. na polovici tega tedna pa bo ukinil žrtev in daritev.<br>Na perutih gnusob bo prišel tisti. ki bo povzročil opustošenje. In na to. kar je opustošeno. se bo vse do popolnega uničenja izlivalo to. kar je Bog odločil.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:10,V:0,Daniel:"Daniel 10. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:1,Daniel:"V tretjem letu vladanja perzijskega kralja Kira je Daniel. ki so ga imenovali Beltšazar. dobil sporočilo. Sporočilo je bilo resnično in je govorilo o velikem spopadu. To. kar je videl. mu je bilo pojasnjeno in razumel je sporočilo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:2,Daniel:"Tiste dni sem jaz. Daniel. žaloval tri cele tedne.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:3,Daniel:"Te tri tedne nisem jedel nobenih izbranih jedi. moja usta niso okusila mesa in vina. niti se nisem mazal z oljem.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:4,Daniel:"Ko pa je nastopil 24. dan prvega meseca in sem bil na bregu velike reke. reke Tigris.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:5,Daniel:"sem videl moškega. oblečenega v platno. Moški je imel na sebi pas iz ufaškega zlata.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:6,Daniel:"Njegovo telo je bilo kakor krizolit. njegov obraz je sijal kakor blisk. njegove oči so žarele kakor goreče bakle. njegove roke in noge so bile videti kakor zglajen baker in njegov glas je bil močan kakor zvok množice.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:7,Daniel:"Samo jaz. Daniel. sem imel videnje. Drugi. ki so bili z menoj. ga niso imeli. Toda vseeno jih je prevzel velik strah. zato so pobegnili in se skrili.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:8,Daniel:"Nato sem ostal sam. Ko sem videl to osupljivo videnje. sem povsem oslabel. moj dostojanstveni videz je izginil in v meni ni bilo več moči.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:9,Daniel:"Moški je začel govoriti. in ko sem ga zaslišal. sem se zgrudil na tla in trdno zaspal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:10,Daniel:"Potem pa se me je dotaknil z roko. me rahlo stresel in mi pomagal. da sem se dvignil na dlani in kolena.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:11,Daniel:"Rekel mi je:<br>»O Daniel. Bogu si zelo dragocen. Pozorno prisluhni temu. kar ti bom zdaj povedal. Vstani. saj me je Bog poslal k tebi.«<br>Ko mi je to rekel. sem tresoč se vstal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:12,Daniel:"Rekel mi je še: »Ne boj se. Daniel. Že prvi dan. ko si pripravil svoje srce. da bi razumel te reči. in se ponižal pred svojim Bogom. je bila tvoja molitev uslišana in jaz sem prišel prav zaradi tvoje molitve.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:13,Daniel:"Toda 21 dni mi je na poti stal poglavar perzijskega kraljestva. Potem pa mi je na pomoč prišel Mihael. eden najvišjih poglavarjev. Tako sem nekaj časa ostal pri perzijskih kraljih.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:14,Daniel:"K tebi sem prišel. da bi ti pomagal razumeti. kaj bo doletelo tvoje ljudstvo v zadnjih dneh. saj se videnje nanaša na prihodnost.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:15,Daniel:"Ko mi je govoril vse to. sem se z obrazom obrnil proti tlom in onemel.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:16,Daniel:"Nato se je ta. ki je bil videti kakor človek. dotaknil mojih ustnic. Odprl sem usta in temu. ki je stal pred menoj. rekel: »Moj gospod. zaradi videnja se ves tresem in sem izgubil vso moč.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:17,Daniel:"Kako bi torej jaz. tvoj služabnik. lahko govoril s teboj. moj gospod. ko pa nimam nobene moči in komaj diham?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:18,Daniel:"Ta. ki je bil videti kakor človek. se me je še enkrat dotaknil in me okrepil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:19,Daniel:"»Ne boj se.« mi je rekel. »Bogu si zelo dragocen! Vse bo še dobro. Bodi močan. da. bodi močan!« Takoj ko je spregovoril z menoj. sem dobil moč in rekel: »Naj moj gospod govori. saj si me okrepil.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:20,Daniel:"Nadaljeval je: »Ali veš. zakaj sem prišel k tebi? Zdaj se bom vrnil. da se bom bojeval s poglavarjem Perzije. Ko bom odšel. pa bo prišel poglavar Grčije.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:10,V:21,Daniel:"Vendar ti bom povedal. kaj piše v knjigi resnice. Nikogar ni. ki bi me v vsem tem podpiral. razen vašega poglavarja Mihaela.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:11,V:0,Daniel:"Daniel 11. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:1,Daniel:"Jaz pa sem prišel. da bi Mihaela krepil in ščitil. To je bilo v prvem letu vladanja Medijca Dareja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:2,Daniel:"To. kar ti bom povedal zdaj. je resnica:<br>Glej. v Perziji bodo zavladali še trije kralji in četrti si bo nakopičil več bogastva kakor vsi drugi. In ko se bo zaradi svojega bogastva okrepil. bo vse naščuval proti grškemu kraljestvu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:3,Daniel:"Na oblast bo prišel mogočen kralj. ki bo imel veliko moč in bo delal. kar bo hotel.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:4,Daniel:"Toda ko bo na vrhuncu svoje moči. bo njegovo kraljestvo razpadlo in se razdelilo na štiri dele proti štirim smerem neba. vendar ne med njegove potomce. in ne bo več imelo takšne moči. s kakršno je vladal sam. Njegovo kraljestvo bo namreč izkoreninjeno in dano drugim.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:5,Daniel:"Južni kralj. namreč eden od njegovih vojaških poveljnikov. bo postal močan. Vendar ga bo nekdo premagal in zavladal z veliko močjo. večjo od njegove vladarske moči.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:6,Daniel:"Po nekaj letih bosta sklenila zavezništvo. Da bi to zavezništvo potrdila. bo hči južnega kralja prišla k severnemu kralju. ampak ne bo obdržala svoje moči. Tudi on se ne bo obdržal. izgubil bo svojo moč. Hči bo izročena drugim. z njo pa tudi tisti. ki jo bodo pripeljali. njen oče in ta. ki jo bo nekaj časa podpiral.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:7,Daniel:"Njegov položaj bo zavzel poganjek iz njenih korenin. Šel bo proti vojski in trdnjavi severnega kralja. Napadel jih bo in jih premagal.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:8,Daniel:"Z njihovimi bogovi. ulitimi podobami. dragocenostmi iz srebra in zlata ter z ujetniki se bo vrnil v Egipt. Nato se bo nekaj let držal stran od severnega kralja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:9,Daniel:"Ta bo zatem napadel kraljestvo južnega kralja. nato pa se vrnil v svojo deželo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:10,Daniel:"Toda njegovi sinovi se bodo pripravili na vojno in zbrali veliko vojsko. Eden od njih bo napredoval proti deželi in jo preplavil kakor poplava. Ampak odpravil se bo nazaj in se vojskoval vse do svoje trdnjave.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:11,Daniel:"Južni kralj se bo razjezil in se šel bojevat z njim. namreč s severnim kraljem. Ta pa bo zbral veliko ljudi. toda ti ljudje bodo izročeni v roke prvemu kralju.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:12,Daniel:"Te ljudi bodo odpeljali. Kralju se bo srce prevzelo in zaradi njega jih bo padlo na desettisoče. vendar svojega močnega položaja ne bo izkoristil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:13,Daniel:"Severni kralj pa se bo vrnil in zbral še več ljudi kot prej. Čez nekaj časa. čez nekaj let. bo zagotovo prišel z veliko in dobro opremljeno vojsko.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:14,Daniel:"V tistem času se bodo mnogi uprli južnemu kralju.<br>Nasilneži izmed tvojega ljudstva bodo skušali izpolniti videnje. vendar jim bo spodletelo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:15,Daniel:"Prišel bo severni kralj. naredil oblegovalni nasip in zavzel utrjeno mesto. Vojske južnega kralja se ne bodo mogle več bojevati pa tudi njegovi izbrani vojaki ne. Ne bodo imeli moči. da bi se uprli.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:16,Daniel:"Ta. ki bo prišel nad južnega kralja. bo delal. kar bo hotel. in nihče se mu ne bo mogel postaviti po robu. Ostal bo v Čudoviti deželi in imel bo moč. da pokončuje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:17,Daniel:"Trdno se bo odločil priti z vso silo svojega kraljestva. toda z njim bo sklenjen dogovor. V svojem početju bo uspešen. Dovoljeno mu bo. da škodi hčeri. Hči ne bo zdržala. ne bo ostala na njegovi strani.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:18,Daniel:"Nato se bo obrnil k obmorskim deželam in bo mnoge zavzel. Toda neki poveljnik bo naredil konec njegovemu ošabnemu vedenju. Poskrbel bo. da mu bo za to njegovo ošabnost povrnjeno.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:19,Daniel:"Zatem se bo vrnil k trdnjavam svoje dežele. Spotaknil se bo in padel in ne bo ga več.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:20,Daniel:"Na njegovo mesto bo prišel nekdo. ki bo skozi veličastno kraljestvo poslal izterjevalca davkov. toda kmalu zatem bo umrl. vendar ne nasilne smrti ali v boju.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:21,Daniel:"Na njegovo mesto bo prišel nekdo. ki bo zaničevan. in ne bodo mu izkazali kraljevske časti. Prišel bo v času. ko se bodo ljudje počutili varne. in se bo s prilizovanjem dokopal do kraljestva.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:22,Daniel:"Podredil si bo vojske. ki bodo kakor poplava. in jih zlomil. zlomil pa bo tudi Voditelja zaveze.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:23,Daniel:"In ker bo z njim sklenjeno zavezništvo. bo ravnal zvijačno. pridobil si bo moč in postal mogočen ob pomoči majhnega naroda.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:24,Daniel:"V času. ko se bodo ljudje počutili varne. bo vstopil celo v najboljše dele province in bo delal. česar ni delal nihče od njegovih prednikov. Ljudem bo delil naropane reči. plen in imetje. Proti utrjenim krajem bo koval spletke. toda samo nekaj časa.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:25,Daniel:"Zbral bo moč in pogum ter bo z veliko vojsko šel proti južnemu kralju. Tudi južni kralj se bo pripravil na vojno. tako da bo zbral zelo veliko in močno vojsko. On pa se ne bo obdržal. ker bodo proti njemu kovali spletke.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:26,Daniel:"Tisti. ki bodo jedli njegove izbrane jedi. bodo povzročili njegov konec.<br>Njegova vojska bo premagana in mnogi bodo pobiti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:27,Daniel:"Oba kralja bosta v svojem srcu hotela delati slabo. Sedela bosta za isto mizo in drug drugemu govorila laži. Toda vse brez uspeha. saj bo konec nastopil šele ob za to določenem času.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:28,Daniel:"Vrnil se bo v svojo deželo z velikim bogastvom in se bo odločen bojevati proti sveti zavezi. V svojem početju bo uspešen in vrnil se bo v svojo deželo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:29,Daniel:"Ob določenem času bo spet napadel južnega kralja. Vendar pa tokrat ne bo tako kot prej.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:30,Daniel:"saj bodo proti njemu prišle ladje s Kitima in bo poražen.<br>Vrnil se bo ter stresel svojo jezo na sveto zavezo in v svojem početju bo uspešen. Vrnil se bo in posvetil pozornost tistim. ki zapuščajo sveto zavezo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:31,Daniel:"Poslal bo vojske in te bodo oskrunile svetišče. namreč trdnjavo. ter ukinile redno daritev.<br>Postavili bodo gnusobo. ki povzroča opustošenje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:32,Daniel:"Tiste. ki bodo ravnali hudobno in prelomili zavezo. bo s prilizovanjem navedel na odpad. Toda ljudstvo. ki pozna svojega Boga. bo zmagalo in imelo uspeh.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:33,Daniel:"Tisti med ljudmi. ki bodo imeli uvid. bodo mnogim pomagali vse to razumeti. Vendar bodo nekaj dni padali kot žrtve meča. ognja. ujetništva in ropanja.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:34,Daniel:"Ko pa bodo padali. bodo dobili majhno pomoč. Mnogi se jim bodo pridružili s prilizovanjem.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:35,Daniel:"Nekateri od teh. ki bodo imeli uvid. bodo trpeli. da bi se opravilo prečiščevanje. čiščenje in beljenje. in to do časa konca. To namreč velja šele za čas. ki je za to določen.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:36,Daniel:"Kralj bo delal. kar bo hotel. povzdigoval se bo in poveličeval nad vsakim bogom. Proti Bogu bogov bo govoril predrzno. Uspešen bo. dokler nad njim ne bo izvršena obsodba. To. kar je odločeno. se namreč mora izpolniti.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:37,Daniel:"Ne bo se menil za Boga svojih očetov. niti se ne bo menil za želje žensk niti za katerega drugega boga. ampak bo sebe poveličeval nad vsakogar.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:38,Daniel:"Raje bo častil boga trdnjav. Boga. ki ga njegovi očetje niso poznali. bo častil z zlatom. srebrom. dragimi kamni in dragocenostmi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:39,Daniel:"S pomočjo tujega boga bo napadal najmočnejše utrdbe. Vse. ki ga bodo podpirali. bo zasipal s slavo in jim dal oblast nad mnogimi. Za plačilo bo delil zemljo.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:40,Daniel:"Ob času konca pa se bo z njim spopadel južni kralj. Severni kralj bo prihrumel proti njemu z bojnimi vozovi. konjeniki in mnogimi ladjami. Prišel bo v druge dežele in jih preplavil kakor poplava.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:41,Daniel:"Prišel bo tudi v Čudovito deželo in mnogo dežel bo premaganih. Toda njegovi roki bodo ubežali Edom. Moab in najpomembnejši Amonci.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:42,Daniel:"Napadal bo druge dežele  tudi egiptovska dežela mu ne bo mogla ubežati.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:43,Daniel:"Vladal bo nad skritimi zakladi zlata in srebra ter nad vsemi dragocenostmi Egipta. Tudi Libijci in Etiopijci bodo šli po njegovih stopinjah.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:44,Daniel:"Vendar ga bodo vznemirile novice z vzhoda in severa. V velikem besu bo krenil. da bi mnoge iztrebil in uničil.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:11,V:45,Daniel:"Svoje kraljevske šotore bo postavil med velikim morjem in sveto goro v Čudoviti deželi. Prišel bo vse do svojega konca in nikogar ne bo. da bi mu pomagal.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:12,V:0,Daniel:"Daniel 12. poglavje",K:"",NZ:""},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:1,Daniel:"Takrat pa bo ukrepal Mihael. veliki poglavar. ki dela v korist tvojega ljudstva. Nastopil bo čas stiske. kakršne še ni bilo. odkar so narodi. pa vse do danes. In takrat bo tvoje ljudstvo rešeno. vsak. ki ga bodo našli zapisanega v knjigi.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:2,Daniel:"Mnogi od teh. ki spijo v zemlji. se bodo prebudili – eni bodo prejeli večno življenje. drugi pa sramoto in večno zaničevanje.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:3,Daniel:"Tisti. ki bodo imeli uvid. bodo sijali tako močno kakor nebesno prostranstvo in tisti. ki mnogim pomagajo ravnati pravično. bodo kakor zvezde sijali večno. vso večnost.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:4,Daniel:"Ti pa. Daniel. poskrbi. da bodo te besede ostale skrivnost. in zapečati knjigo do časa konca. Mnogi jo bodo preiskovali in pravo spoznanje se bo pomnožilo.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:5,Daniel:"Jaz. Daniel. sem nato videl še dva druga. ki sta stala ob reki. eden na tem bregu reke in drugi na drugem bregu.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:6,Daniel:"Eden od njiju je moškega. ki je bil oblečen v platno in je bil nad vodami reke. vprašal: »Koliko časa bo minilo do izpolnitve teh osupljivih dogodkov?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:7,Daniel:"Nato je moški. ki je bil oblečen v platno in je bil nad vodami reke. dvignil desnico in levico proti nebu. Slišal sem. da je pri Bogu. ki večno živi. prisegel: »En čas. dva časa in pol časa. Vsi ti dogodki se bodo končali. ko se bo končalo razbijanje moči svetega ljudstva.«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:8,Daniel:"Jaz sem to slišal. vendar nisem mogel razumeti. zato sem vprašal: »Moj gospod. kako se bo vse to končalo?«",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:9,Daniel:"Odgovoril mi je: »Pojdi. Daniel. Te besede morajo namreč ostati skrivnost in biti zapečatene do časa konca.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:10,Daniel:"Mnogi se bodo očistili. pobelili in prečistili. Hudobni pa bodo ravnali hudobno in nihče od njih ne bo razumel teh besed. toda tisti. ki bodo imeli uvid. jih bodo razumeli.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:11,Daniel:"Od takrat. ko bo ukinjena redna daritev in postavljena gnusoba. ki povzroča opustošenje. bo preteklo 1290 dni.",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:12,Daniel:"Srečen tisti. ki potrpežljivo čaka do konca 1335 dni!",K:"",NZ:"X"},
+{Knjiga:"Daniel",Kr:"Dan",P:12,V:13,Daniel:"Ti pa vztrajaj do konca. Počival boš. toda na koncu dni boš vstal. da prejmeš svoj delež.«",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>

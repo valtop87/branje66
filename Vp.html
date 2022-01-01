@@ -1,413 +1,251 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css'/>
-                <style>
-        /*th{FONT-WEIGHT: bold; background-color:#C0FFFF;}*/
-        .dataTables_wrapper .dataTables_filter {
-            float: left;
-            text-align: left;
-        }
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <title> </title>
+    <style>
+		h2{margin-top:5px;margin-bottom:5px;}
         td,th,#tblOsnova thead th,#tblOsnova tbody td{padding:1px 4px 1px 4px;border: 1px solid #aaa;}
-        table{border-collapse:collapse;border: 2px solid #aaa;}
-    .posameznoIskanje{width:75px}
+        th {background-color:#C0FFFF}
+        td{background-color:#ddffe0;text-align: left;}
+        table{margin-top: 5px;border-collapse:collapse;border: 2px solid #aaa;}
+		#copyStatus{margin-left: 50px;}
+        button{
+            padding: 5px;
+            border-radius: 4px;
+        }
+        input[type='search'] {
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+		td img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        .highlight {
+            color: #cc0000;
+            background-color: yellow;
+        }
+        .highlighted {color: red;}
     </style>
-<TITLE> </TITLE>
 </head>
 <body>
-<H1 id=NSLV></H1>
-<TABLE id=tblOsnova>
-<THEAD ALIGN='CENTER'>
-<TR style='FONT-WEIGHT: bold; background-color:#C0FFFF'>
-<TH NOWRAP>Visoka pesem</TH>
-</TR></THEAD>
-<style>
-td:nth-child(1){background-color:#ddffe0;text-align: left;}
-.prazne > td{background-color:#c7ff9d;FONT-WEIGHT: bold;}
-.highlighted {color: red;}
-</style>
-<tbody>
-<TR>
-<TD >Visoka pesem 1. Poglavje</TD>
-</TR>
-<TR>
-<TD >Pesem vseh pesmi,  Salomonova pesem:</TD>
-</TR>
-<TR>
-<TD >»Poljubi me s svojimi ustnicami, <br>saj je tvoja nežnost boljša od vina.</TD>
-</TR>
-<TR>
-<TD >Vonj dišečih olj na tebi je prijeten.<br>Tvoje ime je kakor dišeče olje,  ki se izliva na glavo.<br>Zato si dekletom všeč.</TD>
-</TR>
-<TR>
-<TD >Vzemi me s seboj,  pobegniva, <br>saj me je kralj pripeljal v svoje sobane!<br>Veseliva se skupaj.<br>Opevajva tvojo nežnost,  ki je slajša od vina.<br>Nič čudnega,  da si dekletom všeč.</TD>
-</TR>
-<TR>
-<TD >Temna sem,  a lepa,  o jeruzalemska dekleta, <br>sem kakor kedarski šotori,  kakor Salomonova šotorska pregrinjala.</TD>
-</TR>
-<TR>
-<TD >Nikar ne strmite vame,  ker sem potemnela, <br>ker sem zagorela od sonca.<br>Moji bratje so se razjezili name.<br>Naročili so mi,  naj varujem vinograde, <br>toda svojega vinograda nisem varovala.</TD>
-</TR>
-<TR>
-<TD >Povej mi,  moj dragi,  ki te tako zelo ljubim, <br>kje paseš svojo čredo, <br>kam jo vodiš počivat opoldne.<br>Zakaj bi med čredami tvojih prijateljev<br>hodila kakor ženska,  zakrita s tančico?«</TD>
-</TR>
-<TR>
-<TD >»Če ne veš,  kje je,  o najlepša med ženskami, <br>pojdi po sledeh črede<br>in pasi svoje kozličke pri pastirskih šotorih.«</TD>
-</TR>
-<TR>
-<TD >»Moja draga,  lepa si kakor žrebica,  vprežena v faraonove vozove.</TD>
-</TR>
-<TR>
-<TD >Tvojim licem se lepo poda nakit<br>in tvojemu vratu ogrlice.</TD>
-</TR>
-<TR>
-<TD >Naredili ti bomo zlat nakit<br>s srebrnimi okraski.«</TD>
-</TR>
-<TR>
-<TD >»Ko kralj sedi za svojo mizo, <br>se širi vonj moje dišave.</TD>
-</TR>
-<TR>
-<TD >Moj dragi je zame kakor dišeča vrečica mire, <br>ki ponoči leži na mojih prsih.</TD>
-</TR>
-<TR>
-<TD >Moj dragi je zame kakor cvetovi hene<br>med engedijskimi vinogradi.«</TD>
-</TR>
-<TR>
-<TD >»Kako si lepa,  moja draga!<br>Kako si lepa! Tvoje oči so kakor golobičje.«</TD>
-</TR>
-<TR>
-<TD >»Tudi ti si lep,  moj dragi,  in prijeten.<br>Najino ležišče je mehko listje.</TD>
-</TR>
-<TR>
-<TD >Tramovi najine hiše so cedre<br>in najina streha so brinova drevesa.</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 2. Poglavje</TD>
-</TR>
-<TR>
-<TD >Navadni žafran z obalne nižine sem, <br>lilija iz dolin.«</TD>
-</TR>
-<TR>
-<TD >»Kakor lilija med trnjem<br>je moja draga med dekleti.«</TD>
-</TR>
-<TR>
-<TD >»Kakor jablana med gozdnim drevjem<br>je moj dragi med mladeniči.<br>Hrepenim po tem,  da bi se usedla v njegovo senco.<br>Njegov sadež je sladek mojim ustom.</TD>
-</TR>
-<TR>
-<TD >Pripeljal me je v hišo,  kjer je gostija, <br>in nad menoj je plapolal prapor njegove ljubezni.</TD>
-</TR>
-<TR>
-<TD >Okrepčajte me z rozinovimi hlebčki, <br>poživite me z jabolki, <br>ker sem bolna od ljubezni.</TD>
-</TR>
-<TR>
-<TD >Njegova levica je pod mojo glavo, <br>njegova desnica me objema.</TD>
-</TR>
-<TR>
-<TD >O jeruzalemska dekleta, <br>prisezite mi pri gazelah in košutah na polju, <br>da ne boste vzbujale in razvnemale v meni ljubezni,  če se sama ne prebudi.</TD>
-</TR>
-<TR>
-<TD >Svojega dragega slišim!<br>Glejte! Prihaja, <br>vzpenja se po gorah,  skače po hribih.</TD>
-</TR>
-<TR>
-<TD >Moj dragi je podoben gazeli,  podoben je mlademu jelenu.<br>Stoji pred našim zidom, <br>gleda skozi okna, <br>pogleduje skozi zamrežena okna.</TD>
-</TR>
-<TR>
-<TD >Moj dragi mi govori:<br>‚Pridi,  moja draga, <br>lepotica moja,  pojdi z menoj!</TD>
-</TR>
-<TR>
-<TD >Zime je konec, <br>nehalo je deževati.</TD>
-</TR>
-<TR>
-<TD >Po deželi se že vse razcveta, <br>čas obrezovanja je prišel<br>in petje grlice se sliši v naši deželi.</TD>
-</TR>
-<TR>
-<TD >Prve fige so dozorele, <br>po zraku se širi prijeten vonj cvetoče vinske trte.<br>Vstani,  moja draga,  in pridi, <br>lepotica moja,  pojdi z menoj!</TD>
-</TR>
-<TR>
-<TD >Golobica moja,  pridi iz skalnega zavetja, <br>zavetja strme pečine.<br>Daj,  da te vidim,  da slišim tvoj glas, <br>saj je tvoj glas prijeten in tvoj videz prikupen.«</TD>
-</TR>
-<TR>
-<TD >»Polovite nam lisice, <br>mlade lisice,  ki uničujejo vinograde, <br>saj so naši vinogradi v cvetju.«</TD>
-</TR>
-<TR>
-<TD >»Moj dragi je moj in jaz sem njegova.<br>Med lilijami pase čredo.</TD>
-</TR>
-<TR>
-<TD >Hitro se vrni,  moj dragi, <br>preden zapiha dnevni vetrič in sence zbežijo.<br>Vrni se hitro kakor gazela,  kakor mlad jelen na gorah,  ki naju ločujejo.</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 3. Poglavje</TD>
-</TR>
-<TR>
-<TD >Noč za nočjo sem na postelji<br>razmišljala o njem,  ki ga ljubim.<br>Hrepenela sem po tem,  da ga vidim,  vendar njega ni bilo.</TD>
-</TR>
-<TR>
-<TD >Zato sem si rekla: ‚Vstala bom in prehodila mesto.<br>Po ulicah in trgih bom šla<br>in iskala njega,  ki ga ljubim.<br>Iskala sem ga,  pa ga nisem našla.</TD>
-</TR>
-<TR>
-<TD >Do mene so prišli stražarji,  ki so delali obhod po mestu, <br>in vprašala sem jih: ‚Ali ste videli njega,  ki ga ljubim?</TD>
-</TR>
-<TR>
-<TD >Ravno sem odšla od njih, <br>že sem našla njega,  ki ga ljubim.<br>Oklenila sem se ga in ga nisem spustila, <br>dokler ga nisem pripeljala v hišo svoje mame, <br>v sobo nje,  ki me je rodila.</TD>
-</TR>
-<TR>
-<TD >O jeruzalemska dekleta, <br>prisezite mi pri gazelah in košutah na polju, <br>da ne boste vzbujale in razvnemale v meni ljubezni,  če se sama ne prebudi.«</TD>
-</TR>
-<TR>
-<TD >»Kaj je to,  kar prihaja iz pustinje kakor dimni stebri<br>in je odišavljeno z miro in kadilno smolo, <br>z vsakovrstnim dišečim prahom,  ki ga prodajajo trgovci?«</TD>
-</TR>
-<TR>
-<TD >»Glej,  to je Salomonova nosilnica.<br>Okoli nje je 60 junaških bojevnikov, <br>izbranih izmed izraelskih junakov.</TD>
-</TR>
-<TR>
-<TD >Vsi so oboroženi z mečem, <br>vsi so izurjeni za boj.<br>Vsak ima ob boku pripasan meč, <br>da bi kralja varoval pred nevarnostmi noči.«</TD>
-</TR>
-<TR>
-<TD >»To je nosilnica kralja Salomona, <br>ki si jo je dal narediti iz libanonskega lesa.</TD>
-</TR>
-<TR>
-<TD >Njene stebriče je dal narediti iz srebra<br>in njena naslonjala iz zlata.<br>Njen sedež je iz vijoličaste volne<br>in njeno notranjost so z ljubeznijo okrasile<br>jeruzalemska dekleta.«</TD>
-</TR>
-<TR>
-<TD >»O sionska dekleta,  pojdite ven<br>in poglejte kralja Salomona.<br>Na glavi ima poročno krono,  ki mu jo je naredila njegova mama<br>za njegov poročni dan, <br>za dan,  ko je njegovo srce prekipevalo od veselja.«</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 4. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Kako si lepa,  moja draga!<br>Kako si lepa!<br>Tvoje oči,  skrite za tančico,  so kakor golobičje.<br>Tvoji lasje so kakor čreda koz, <br>ki se spuščajo z gileadskega gorovja.</TD>
-</TR>
-<TR>
-<TD >Tvoji zobje so kakor čreda pravkar ostriženih<br>in okopanih ovc.<br>Vsaka ima svojega dvojčka, <br>nobena ni sama.</TD>
-</TR>
-<TR>
-<TD >Tvoje ustnice so kakor živo rdeča nit<br>in tvoje besede so prijetne.<br>Tvoja lica,  skrita za tančico, <br>so kakor krhlji granatnega jabolka.</TD>
-</TR>
-<TR>
-<TD >Tvoj vrat je kakor Davidov stolp, <br>skrbno sezidan iz plasti kamenja, <br>na katerem visi tisoč okroglih ščitov, <br>vsi so ščiti junaških bojevnikov.</TD>
-</TR>
-<TR>
-<TD >Tvoji dojki sta kakor dva mladiča, <br>gazelina dvojčka, <br>ki se paseta med lilijami.«</TD>
-</TR>
-<TR>
-<TD >»Preden zapiha dnevni vetrič in sence zbežijo, <br>bom odšla na goro mire<br>in na grič kadilne smole.«</TD>
-</TR>
-<TR>
-<TD >»Vsa si lepa,  moja draga, <br>na tebi ni napake.</TD>
-</TR>
-<TR>
-<TD >Pojdi z menoj z Libanona,  moja nevesta, <br>pojdi z menoj z Libanona.<br>Spusti se z vrha Amane, <br>z vrha Senirja,  z vrha Hermona, <br>z gora,  na katerih domujejo levi in leopardi.</TD>
-</TR>
-<TR>
-<TD >Osvojila si moje srce,  moja draga,  nevesta moja, <br>z enim samim pogledom si osvojila moje srce, <br>z enim samim biserom s svoje ogrlice.</TD>
-</TR>
-<TR>
-<TD >Kako prijetna mi je tvoja nežnost,  moja draga,  nevesta moja!<br>Tvoja nežnost je veliko boljša od vina<br>in vonj tvojih dišav od vsake začimbe!</TD>
-</TR>
-<TR>
-<TD >Nevesta moja,  tvoje ustnice so sladke kakor med iz satovja.<br>Tvoj jezik je kakor med in mleko, <br>vonj tvojih oblačil je kakor vonj Libanona.</TD>
-</TR>
-<TR>
-<TD >Moja draga,  nevesta moja,  si kakor zaklenjen vrt, <br>kakor zaklenjen vrt,  zapečaten izvir.</TD>
-</TR>
-<TR>
-<TD >Si kakor rajski vrt, <br>kjer rastejo granatovci z najžlahtnejšimi sadeži, <br>kjer rastejo hena in narda, </TD>
-</TR>
-<TR>
-<TD >narda in žafran,  dišeči trst in cimet, <br>najrazličnejša drevesa kadilne smole,  mira in aloa<br>ter najboljše dišavnice.</TD>
-</TR>
-<TR>
-<TD >Si kakor izvir na vrtu,  studenec sveže vode, <br>potok,  ki teče z Libanona.</TD>
-</TR>
-<TR>
-<TD >Zbudi se,  o severni veter, <br>pridi,  o južni veter.<br>Nežno zapihaj nad mojim vrtom.<br>Naj se razširijo njegove dišave.«<br>»Moj dragi,  pridi na svoj vrt<br>in uživaj njegove najžlahtnejše sadeže.«</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 5. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Prišel sem na svoj vrt, <br>o moja draga,  nevesta moja.<br>Nabral sem svojo miro in dišavnice.<br>Jedel sem svoje satovje in med, <br>pil sem svoje vino in mleko.«<br>»Jejta,  draga prijatelja!<br>Pijta in opijta se z nežnostjo!«</TD>
-</TR>
-<TR>
-<TD >»Spim,  toda moje srce je budno.<br>Svojega dragega slišim,  da trka in govori:<br>‚Odpri mi,  moja draga,  moja ljubljena, <br>golobica moja,  popolna moja, <br>saj je moja glava mokra od rose, <br>moji kodri od kapljic,  ki padajo ponoči.</TD>
-</TR>
-<TR>
-<TD >Haljo sem si že slekla.<br>Ali naj jo spet oblečem?<br>Noge sem si že umila.<br>Ali naj si jih spet umažem?</TD>
-</TR>
-<TR>
-<TD >Moj dragi je umaknil roko iz odprtine na vratih<br>in srce mi je vztrepetalo od hrepenenja po njem.</TD>
-</TR>
-<TR>
-<TD >Vstala sem,  da bi odprla svojemu dragemu.<br>Z rok se mi je na zapah pocedila mira, <br>s prstov se mi je pocedilo mirino olje.</TD>
-</TR>
-<TR>
-<TD >Odprla sem svojemu dragemu, <br>toda moj dragi se je že obrnil in odšel.<br>Ko je odšel,  me je prevzel obup.<br>Iskala sem ga,  pa ga nisem našla.<br>Klicala sem ga,  pa mi ni odgovoril.</TD>
-</TR>
-<TR>
-<TD >Do mene so prišli stražarji,  ki so delali obhod po mestu.<br>Udarili so me in me ranili.<br>Stražarji na obzidju so mi vzeli ruto.</TD>
-</TR>
-<TR>
-<TD >O jeruzalemska dekleta,  prisezite mi, <br>da boste mojemu dragemu,  če ga najdete, <br>sporočile,  da sem bolna od ljubezni.«</TD>
-</TR>
-<TR>
-<TD >»V čem je tvoj dragi boljši od vseh drugih, <br>o najlepša med ženskami?<br>V čem je tvoj dragi boljši od vseh drugih, <br>da ti moramo to priseči?«</TD>
-</TR>
-<TR>
-<TD >»Moj dragi je zelo lep in kar žari, <br>med deset tisoči mu ni enakega.</TD>
-</TR>
-<TR>
-<TD >Njegova glava je kakor zlato,  najčistejše zlato.<br>Njegovi kodrasti lasje so kakor zibajoče se palmove veje, <br>črni so kakor krokar.</TD>
-</TR>
-<TR>
-<TD >Njegove oči so kakor golobi ob potoku, <br>ki se kopajo v mleku, <br>ki sedijo ob prekipevajočem jezeru.</TD>
-</TR>
-<TR>
-<TD >Njegova lica so kakor dišavne gredice, <br>kakor grički dišavnih zelišč.<br>Njegove ustnice so kakor lilije,  s katerih kaplja mirino olje.</TD>
-</TR>
-<TR>
-<TD >Njegovi prsti na rokah so iz zlata,  okrašeni s krizolitom.<br>Njegov trebuh je iz zloščene slonovine,  prekrit s safirji.</TD>
-</TR>
-<TR>
-<TD >Njegove noge so kakor marmorni stebri,  ki stojijo na podstavkih iz najčistejšega zlata.<br>Lep je kakor Libanon,  edinstven kakor cedre.</TD>
-</TR>
-<TR>
-<TD >Njegova usta so sama sladkost, <br>vse na njem je privlačno.<br>To je moj dragi,  moj najdražji,  o jeruzalemska dekleta!«</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 6. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Kje je tvoj dragi, <br>o najlepša med ženskami?<br>Kam je šel tvoj dragi?<br>Iskale ga bomo s teboj.«</TD>
-</TR>
-<TR>
-<TD >»Moj dragi je šel na svoj vrt, <br>k dišavnim gredicam, <br>da bi pasel čredo med vrtovi<br>in nabiral lilije.</TD>
-</TR>
-<TR>
-<TD >Jaz pripadam svojemu dragemu<br>in moj dragi meni.<br>Med lilijami pase čredo.«</TD>
-</TR>
-<TR>
-<TD >»Moja draga,  lepa si kakor Tirza, <br>ljubka kakor Jeruzalem, <br>osupljiva kakor vojska,  zbrana okoli praporjev.</TD>
-</TR>
-<TR>
-<TD >Umakni svoje oči od mene, <br>ker se jim ne morem upreti.<br>Tvoji lasje so kakor čreda koz, <br>ki se spuščajo z gileadskih strmin.</TD>
-</TR>
-<TR>
-<TD >Tvoji zobje so kakor čreda<br>pravkar okopanih ovc.<br>Vsaka ima svojega dvojčka, <br>nobena ni sama.</TD>
-</TR>
-<TR>
-<TD >Tvoja lica,  skrita za tančico, <br>so kakor krhlji granatnega jabolka.</TD>
-</TR>
-<TR>
-<TD >Med 60 kraljicami, </TD>
-</TR>
-<TR>
-<TD >stranskimi ženami<br>in nešteto dekleti</TD>
-</TR>
-<TR>
-<TD >je le ena,  ki je moja golobica,  popolna moja, <br>ta,  ki je svoji mami najbolj pri srcu, <br>ki je ljubljenka nje,  ki jo je rodila.<br>Ko jo vidijo dekleta,  ji govorijo,  da je srečna, <br>kraljice in stranske žene jo hvalijo:</TD>
-</TR>
-<TR>
-<TD >‚Kdo je ta,  ki sveti kakor zora, <br>ki je lepa kakor luna, <br>čista kakor sončna svetloba<br>in osupljiva kakor vojska,  zbrana okoli praporjev?«</TD>
-</TR>
-<TR>
-<TD >»Odšla sem na orehov vrt, <br>da bi videla,  ali v dolini že kaj poganja, <br>ali je trta že vzbrstela, <br>ali so granatovci že zacveteli.</TD>
-</TR>
-<TR>
-<TD >In še preden sem se zavedala, <br>me je želja,  da bi videla vse to, <br>pripeljala k vozovom mojega plemenitega ljudstva.«</TD>
-</TR>
-<TR>
-<TD >»Vrni se,  vrni,  o Šulamka!<br>Vrni se,  vrni, <br>da te bomo lahko gledali!«<br>»Zakaj želite gledati Šulamko?«<br>»Podobna je plesu dveh skupin!«</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 7. Poglavje</TD>
-</TR>
-<TR>
-<TD >»Kako lepe so tvoje noge v sandalah, <br>o plemenito dekle!<br>Obline tvojih bokov so kakor okras, <br>delo umetnikovih rok.</TD>
-</TR>
-<TR>
-<TD >Tvoj popek je kakor čaša, <br>naj v njej ne zmanjka mešanega vina.<br>Tvoj trebuh je kakor v kupček nasuto pšenično zrnje, <br>obdano z lilijami.</TD>
-</TR>
-<TR>
-<TD >Tvoji dojki sta kakor dva mladiča, <br>gazelina dvojčka.</TD>
-</TR>
-<TR>
-<TD >Tvoj vrat je kakor slonokoščen stolp.<br>Tvoje oči so kakor jezera v Hešbonu, <br>pri Batrabimskih vratih.<br>Tvoj nos je kakor libanonski stolp, <br>ki gleda proti Damasku.</TD>
-</TR>
-<TR>
-<TD >Tvoja glava je lepa kakor Karmel<br>in tvoji kodri so kakor vijoličasta volna.<br>Tvoji prekrasni dolgi lasje so omrežili kralja.</TD>
-</TR>
-<TR>
-<TD >Kako si prikupna in kako očarljiva, <br>moja draga,  lepota vseh lepot!</TD>
-</TR>
-<TR>
-<TD >Tvoja postava je podobna palmi<br>in tvoje prsi dateljnovim grozdom.</TD>
-</TR>
-<TR>
-<TD >Rekel sem: ‚Splezal bom na palmo, <br>da bom z njenih vej utrgal sadeže.<br>Naj bodo tvoje prsi kakor grozdi vinske trte, <br>vonj tvojega diha kakor vonj jabolk</TD>
-</TR>
-<TR>
-<TD >in tvoja usta kakor najboljše vino.«<br>»Naj gladko teče po grlu mojega dragega, <br>naj bo kakor vino,  ki človeku nežno teče po ustnicah in ga uspava.</TD>
-</TR>
-<TR>
-<TD >Pripadam svojemu dragemu<br>in on hrepeni po meni.</TD>
-</TR>
-<TR>
-<TD >Pridi,  moj dragi, <br>pojdiva na polje.<br>Ostaniva med heninimi grmi.</TD>
-</TR>
-<TR>
-<TD >Zgodaj vstaniva in pojdiva v vinograde, <br>da vidiva,  ali je vinska trta že vzbrstela, <br>ali so se cvetovi že odprli, <br>ali so granatovci že zacveteli.<br>Tam ti bom pokazala,  kako zelo te imam rada.</TD>
-</TR>
-<TR>
-<TD >Mandragore širijo svoj vonj<br>in pri naših vratih je vsakovrstno žlahtno sadje, <br>sveže in suho, <br>ki sem ga shranila zate,  moj dragi.</TD>
-</TR>
-<TR>
-<TD >Visoka pesem 8. Poglavje</TD>
-</TR>
-<TR>
-<TD >Ko bi le ti bil moj brat, <br>ki ga je dojila moja mama!<br>Potem bi te lahko poljubila,  ko bi te srečala zunaj, <br>in nihče me zaradi tega ne bi obsojal.</TD>
-</TR>
-<TR>
-<TD >Odpeljala bi te, <br>peljala v hišo svoje mame, <br>ki me je poučevala.<br>Dala bi ti piti zeliščno vino<br>in sveži sok granatnih jabolk.</TD>
-</TR>
-<TR>
-<TD >Njegova levica bi bila pod mojo glavo, <br>njegova desnica bi me objemala.</TD>
-</TR>
-<TR>
-<TD >O jeruzalemska dekleta,  prisezite mi, <br>da ne boste vzbujale in razvnemale v meni ljubezni,  če se sama ne prebudi.«</TD>
-</TR>
-<TR>
-<TD >»Kdo je ženska,  ki prihaja iz pustinje<br>in objema svojega dragega?«<br>»Pod jablano sem te zbudila.<br>Tam je bila tvoja mama v porodnih bolečinah.<br>Tam je bila v porodnih bolečinah ta,  ki te je rodila.</TD>
-</TR>
-<TR>
-<TD >Položi me kakor pečat na svoje srce, <br>kakor pečat na svojo roko, <br>saj je ljubezen močna kakor smrt<br>in zvestoba nepopustljiva kakor grob.<br>Plameni ljubezni so plameni ognja,  Jahov plamen.</TD>
-</TR>
-<TR>
-<TD >Obilne vode ne morejo pogasiti ljubezni, <br>niti reke je odplaviti.<br>Če bi kdo hotel za ljubezen dati vse bogastvo svoje hiše, <br>bi drugi to bogastvo samo zaničevali.«</TD>
-</TR>
-<TR>
-<TD >»Sestrico imamo, <br>ki še nima prsi.<br>Kaj bomo storili s svojo sestro, <br>ko bodo prosili za njeno roko?«</TD>
-</TR>
-<TR>
-<TD >»Če bo kakor zid, <br>bomo na njej zgradili srebrn nadzidek, <br>če pa bo kakor vrata, <br>jo bomo zagradili s cedrovimi deskami.«</TD>
-</TR>
-<TR>
-<TD >»Jaz sem kakor zid<br>in moje prsi so kakor stolpi.<br>Tako lahko moj dragi vidi, <br>da je moje srce mirno.</TD>
-</TR>
-<TR>
-<TD >Salomon je imel vinograd v Baal Hamonu.<br>Vinograd je izročil oskrbnikom<br>in vsak od njih je moral za to,  kar je v njem zraslo,  prinesti po tisoč šeklov srebra.</TD>
-</TR>
-<TR>
-<TD >Ti imaš tisoč šeklov srebra,  o Salomon, <br>in tisti,  ki skrbijo za pridelek,  dvesto.<br>Toda jaz imam vinograd,  ki je samo moj.«</TD>
-</TR>
-<TR>
-<TD >»O ti,  ki prebivaš na vrtovih, <br>prijatelji pozorno poslušajo,  da bi slišali tvoj glas.<br>Daj,  da ga slišim tudi jaz!«</TD>
-</TR>
-<TR>
-<TD >»Pohiti,  moj dragi, <br>bodi hiter kakor gazela, <br>kakor mlad jelen<br>na gorah,  kjer rastejo dišavnice.«</TD>
-</TR>
-</TBODY>
-</TABLE>
+	<h2 id='naslov'></h2>
+    <br>
+    <table id='tblOsnova'>
+        <thead>
+            <tr>
+            </tr> 
+        </thead>
+        <tbody>
+			
+        </tbody>          
+        
+    </table>
+    <script>var vecDatotek = false;</script>
+<script>
+var GlavaNV0 = ['Knjiga','Kr','P','V','K','NZ'];
+var Najdi=[0,1,2,3,4,5,6];
+var CB=[];
+var Glava=['Knjiga','Kr','P','V','Visoka_pesem','K','NZ'];
+var Lokacije = [
+{Knjiga:"",Kr:"",P:1,V:0,Visoka_pesem:"Visoka pesem 1. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:1,Visoka_pesem:"Pesem vseh pesmi. Salomonova pesem:",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:2,Visoka_pesem:"»Poljubi me s svojimi ustnicami.<br>saj je tvoja nežnost boljša od vina.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:3,Visoka_pesem:"Vonj dišečih olj na tebi je prijeten.<br>Tvoje ime je kakor dišeče olje. ki se izliva na glavo.<br>Zato si dekletom všeč.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:4,Visoka_pesem:"Vzemi me s seboj. pobegniva.<br>saj me je kralj pripeljal v svoje sobane!<br>Veseliva se skupaj.<br>Opevajva tvojo nežnost. ki je slajša od vina.<br>Nič čudnega. da si dekletom všeč.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:5,Visoka_pesem:"Temna sem. a lepa. o jeruzalemska dekleta.<br>sem kakor kedarski šotori. kakor Salomonova šotorska pregrinjala.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:6,Visoka_pesem:"Nikar ne strmite vame. ker sem potemnela.<br>ker sem zagorela od sonca.<br>Moji bratje so se razjezili name.<br>Naročili so mi. naj varujem vinograde.<br>toda svojega vinograda nisem varovala.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:7,Visoka_pesem:"Povej mi. moj dragi. ki te tako zelo ljubim.<br>kje paseš svojo čredo.<br>kam jo vodiš počivat opoldne.<br>Zakaj bi med čredami tvojih prijateljev<br>hodila kakor ženska. zakrita s tančico?«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:8,Visoka_pesem:"»Če ne veš. kje je. o najlepša med ženskami.<br>pojdi po sledeh črede<br>in pasi svoje kozličke pri pastirskih šotorih.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:9,Visoka_pesem:"»Moja draga. lepa si kakor žrebica. vprežena v faraonove vozove.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:10,Visoka_pesem:"Tvojim licem se lepo poda nakit<br>in tvojemu vratu ogrlice.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:11,Visoka_pesem:"Naredili ti bomo zlat nakit<br>s srebrnimi okraski.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:12,Visoka_pesem:"»Ko kralj sedi za svojo mizo.<br>se širi vonj moje dišave.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:13,Visoka_pesem:"Moj dragi je zame kakor dišeča vrečica mire.<br>ki ponoči leži na mojih prsih.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:14,Visoka_pesem:"Moj dragi je zame kakor cvetovi hene<br>med engedijskimi vinogradi.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:15,Visoka_pesem:"»Kako si lepa. moja draga!<br>Kako si lepa! Tvoje oči so kakor golobičje.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:16,Visoka_pesem:"»Tudi ti si lep. moj dragi. in prijeten.<br>Najino ležišče je mehko listje.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:1,V:17,Visoka_pesem:"Tramovi najine hiše so cedre<br>in najina streha so brinova drevesa.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:2,V:0,Visoka_pesem:"Visoka pesem 2. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:1,Visoka_pesem:"Navadni žafran z obalne nižine sem.<br>lilija iz dolin.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:2,Visoka_pesem:"»Kakor lilija med trnjem<br>je moja draga med dekleti.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:3,Visoka_pesem:"»Kakor jablana med gozdnim drevjem<br>je moj dragi med mladeniči.<br>Hrepenim po tem. da bi se usedla v njegovo senco.<br>Njegov sadež je sladek mojim ustom.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:4,Visoka_pesem:"Pripeljal me je v hišo. kjer je gostija.<br>in nad menoj je plapolal prapor njegove ljubezni.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:5,Visoka_pesem:"Okrepčajte me z rozinovimi hlebčki.<br>poživite me z jabolki.<br>ker sem bolna od ljubezni.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:6,Visoka_pesem:"Njegova levica je pod mojo glavo.<br>njegova desnica me objema.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:7,Visoka_pesem:"O jeruzalemska dekleta.<br>prisezite mi pri gazelah in košutah na polju.<br>da ne boste vzbujale in razvnemale v meni ljubezni. če se sama ne prebudi.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:8,Visoka_pesem:"Svojega dragega slišim!<br>Glejte! Prihaja.<br>vzpenja se po gorah. skače po hribih.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:9,Visoka_pesem:"Moj dragi je podoben gazeli. podoben je mlademu jelenu.<br>Stoji pred našim zidom.<br>gleda skozi okna.<br>pogleduje skozi zamrežena okna.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:10,Visoka_pesem:"Moj dragi mi govori:<br>‚Pridi. moja draga.<br>lepotica moja. pojdi z menoj!",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:11,Visoka_pesem:"Zime je konec.<br>nehalo je deževati.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:12,Visoka_pesem:"Po deželi se že vse razcveta.<br>čas obrezovanja je prišel<br>in petje grlice se sliši v naši deželi.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:13,Visoka_pesem:"Prve fige so dozorele.<br>po zraku se širi prijeten vonj cvetoče vinske trte.<br>Vstani. moja draga. in pridi.<br>lepotica moja. pojdi z menoj!",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:14,Visoka_pesem:"Golobica moja. pridi iz skalnega zavetja.<br>zavetja strme pečine.<br>Daj. da te vidim. da slišim tvoj glas.<br>saj je tvoj glas prijeten in tvoj videz prikupen.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:15,Visoka_pesem:"»Polovite nam lisice.<br>mlade lisice. ki uničujejo vinograde.<br>saj so naši vinogradi v cvetju.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:16,Visoka_pesem:"»Moj dragi je moj in jaz sem njegova.<br>Med lilijami pase čredo.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:2,V:17,Visoka_pesem:"Hitro se vrni. moj dragi.<br>preden zapiha dnevni vetrič in sence zbežijo.<br>Vrni se hitro kakor gazela. kakor mlad jelen na gorah. ki naju ločujejo.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:3,V:0,Visoka_pesem:"Visoka pesem 3. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:1,Visoka_pesem:"Noč za nočjo sem na postelji<br>razmišljala o njem. ki ga ljubim.<br>Hrepenela sem po tem. da ga vidim. vendar njega ni bilo.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:2,Visoka_pesem:"Zato sem si rekla: ‚Vstala bom in prehodila mesto.<br>Po ulicah in trgih bom šla<br>in iskala njega. ki ga ljubim.<br>Iskala sem ga. pa ga nisem našla.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:3,Visoka_pesem:"Do mene so prišli stražarji. ki so delali obhod po mestu.<br>in vprašala sem jih: ‚Ali ste videli njega. ki ga ljubim?",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:4,Visoka_pesem:"Ravno sem odšla od njih.<br>že sem našla njega. ki ga ljubim.<br>Oklenila sem se ga in ga nisem spustila.<br>dokler ga nisem pripeljala v hišo svoje mame.<br>v sobo nje. ki me je rodila.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:5,Visoka_pesem:"O jeruzalemska dekleta.<br>prisezite mi pri gazelah in košutah na polju.<br>da ne boste vzbujale in razvnemale v meni ljubezni. če se sama ne prebudi.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:6,Visoka_pesem:"»Kaj je to. kar prihaja iz pustinje kakor dimni stebri<br>in je odišavljeno z miro in kadilno smolo.<br>z vsakovrstnim dišečim prahom. ki ga prodajajo trgovci?«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:7,Visoka_pesem:"»Glej. to je Salomonova nosilnica.<br>Okoli nje je 60 junaških bojevnikov.<br>izbranih izmed izraelskih junakov.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:8,Visoka_pesem:"Vsi so oboroženi z mečem.<br>vsi so izurjeni za boj.<br>Vsak ima ob boku pripasan meč.<br>da bi kralja varoval pred nevarnostmi noči.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:9,Visoka_pesem:"»To je nosilnica kralja Salomona.<br>ki si jo je dal narediti iz libanonskega lesa.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:10,Visoka_pesem:"Njene stebriče je dal narediti iz srebra<br>in njena naslonjala iz zlata.<br>Njen sedež je iz vijoličaste volne<br>in njeno notranjost so z ljubeznijo okrasile<br>jeruzalemska dekleta.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:3,V:11,Visoka_pesem:"»O sionska dekleta. pojdite ven<br>in poglejte kralja Salomona.<br>Na glavi ima poročno krono. ki mu jo je naredila njegova mama<br>za njegov poročni dan.<br>za dan. ko je njegovo srce prekipevalo od veselja.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:4,V:0,Visoka_pesem:"Visoka pesem 4. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:1,Visoka_pesem:"»Kako si lepa. moja draga!<br>Kako si lepa!<br>Tvoje oči. skrite za tančico. so kakor golobičje.<br>Tvoji lasje so kakor čreda koz.<br>ki se spuščajo z gileadskega gorovja.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:2,Visoka_pesem:"Tvoji zobje so kakor čreda pravkar ostriženih<br>in okopanih ovc.<br>Vsaka ima svojega dvojčka.<br>nobena ni sama.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:3,Visoka_pesem:"Tvoje ustnice so kakor živo rdeča nit<br>in tvoje besede so prijetne.<br>Tvoja lica. skrita za tančico.<br>so kakor krhlji granatnega jabolka.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:4,Visoka_pesem:"Tvoj vrat je kakor Davidov stolp.<br>skrbno sezidan iz plasti kamenja.<br>na katerem visi tisoč okroglih ščitov.<br>vsi so ščiti junaških bojevnikov.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:5,Visoka_pesem:"Tvoji dojki sta kakor dva mladiča.<br>gazelina dvojčka.<br>ki se paseta med lilijami.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:6,Visoka_pesem:"»Preden zapiha dnevni vetrič in sence zbežijo.<br>bom odšla na goro mire<br>in na grič kadilne smole.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:7,Visoka_pesem:"»Vsa si lepa. moja draga.<br>na tebi ni napake.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:8,Visoka_pesem:"Pojdi z menoj z Libanona. moja nevesta.<br>pojdi z menoj z Libanona.<br>Spusti se z vrha Amane.<br>z vrha Senirja. z vrha Hermona.<br>z gora. na katerih domujejo levi in leopardi.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:9,Visoka_pesem:"Osvojila si moje srce. moja draga. nevesta moja.<br>z enim samim pogledom si osvojila moje srce.<br>z enim samim biserom s svoje ogrlice.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:10,Visoka_pesem:"Kako prijetna mi je tvoja nežnost. moja draga. nevesta moja!<br>Tvoja nežnost je veliko boljša od vina<br>in vonj tvojih dišav od vsake začimbe!",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:11,Visoka_pesem:"Nevesta moja. tvoje ustnice so sladke kakor med iz satovja.<br>Tvoj jezik je kakor med in mleko.<br>vonj tvojih oblačil je kakor vonj Libanona.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:12,Visoka_pesem:"Moja draga. nevesta moja. si kakor zaklenjen vrt.<br>kakor zaklenjen vrt. zapečaten izvir.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:13,Visoka_pesem:"Si kakor rajski vrt.<br>kjer rastejo granatovci z najžlahtnejšimi sadeži.<br>kjer rastejo hena in narda.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:14,Visoka_pesem:"narda in žafran. dišeči trst in cimet.<br>najrazličnejša drevesa kadilne smole. mira in aloa<br>ter najboljše dišavnice.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:15,Visoka_pesem:"Si kakor izvir na vrtu. studenec sveže vode.<br>potok. ki teče z Libanona.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:4,V:16,Visoka_pesem:"Zbudi se. o severni veter.<br>pridi. o južni veter.<br>Nežno zapihaj nad mojim vrtom.<br>Naj se razširijo njegove dišave.«<br>»Moj dragi. pridi na svoj vrt<br>in uživaj njegove najžlahtnejše sadeže.«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:5,V:0,Visoka_pesem:"Visoka pesem 5. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:1,Visoka_pesem:"»Prišel sem na svoj vrt.<br>o moja draga. nevesta moja.<br>Nabral sem svojo miro in dišavnice.<br>Jedel sem svoje satovje in med.<br>pil sem svoje vino in mleko.«<br>»Jejta. draga prijatelja!<br>Pijta in opijta se z nežnostjo!«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:2,Visoka_pesem:"»Spim. toda moje srce je budno.<br>Svojega dragega slišim. da trka in govori:<br>‚Odpri mi. moja draga. moja ljubljena.<br>golobica moja. popolna moja.<br>saj je moja glava mokra od rose.<br>moji kodri od kapljic. ki padajo ponoči.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:3,Visoka_pesem:"Haljo sem si že slekla.<br>Ali naj jo spet oblečem?<br>Noge sem si že umila.<br>Ali naj si jih spet umažem?",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:4,Visoka_pesem:"Moj dragi je umaknil roko iz odprtine na vratih<br>in srce mi je vztrepetalo od hrepenenja po njem.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:5,Visoka_pesem:"Vstala sem. da bi odprla svojemu dragemu.<br>Z rok se mi je na zapah pocedila mira.<br>s prstov se mi je pocedilo mirino olje.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:6,Visoka_pesem:"Odprla sem svojemu dragemu.<br>toda moj dragi se je že obrnil in odšel.<br>Ko je odšel. me je prevzel obup.<br>Iskala sem ga. pa ga nisem našla.<br>Klicala sem ga. pa mi ni odgovoril.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:7,Visoka_pesem:"Do mene so prišli stražarji. ki so delali obhod po mestu.<br>Udarili so me in me ranili.<br>Stražarji na obzidju so mi vzeli ruto.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:8,Visoka_pesem:"O jeruzalemska dekleta. prisezite mi.<br>da boste mojemu dragemu. če ga najdete.<br>sporočile. da sem bolna od ljubezni.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:9,Visoka_pesem:"»V čem je tvoj dragi boljši od vseh drugih.<br>o najlepša med ženskami?<br>V čem je tvoj dragi boljši od vseh drugih.<br>da ti moramo to priseči?«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:10,Visoka_pesem:"»Moj dragi je zelo lep in kar žari.<br>med deset tisoči mu ni enakega.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:11,Visoka_pesem:"Njegova glava je kakor zlato. najčistejše zlato.<br>Njegovi kodrasti lasje so kakor zibajoče se palmove veje.<br>črni so kakor krokar.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:12,Visoka_pesem:"Njegove oči so kakor golobi ob potoku.<br>ki se kopajo v mleku.<br>ki sedijo ob prekipevajočem jezeru.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:13,Visoka_pesem:"Njegova lica so kakor dišavne gredice.<br>kakor grički dišavnih zelišč.<br>Njegove ustnice so kakor lilije. s katerih kaplja mirino olje.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:14,Visoka_pesem:"Njegovi prsti na rokah so iz zlata. okrašeni s krizolitom.<br>Njegov trebuh je iz zloščene slonovine. prekrit s safirji.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:15,Visoka_pesem:"Njegove noge so kakor marmorni stebri. ki stojijo na podstavkih iz najčistejšega zlata.<br>Lep je kakor Libanon. edinstven kakor cedre.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:5,V:16,Visoka_pesem:"Njegova usta so sama sladkost.<br>vse na njem je privlačno.<br>To je moj dragi. moj najdražji. o jeruzalemska dekleta!«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:6,V:0,Visoka_pesem:"Visoka pesem 6. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:1,Visoka_pesem:"»Kje je tvoj dragi.<br>o najlepša med ženskami?<br>Kam je šel tvoj dragi?<br>Iskale ga bomo s teboj.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:2,Visoka_pesem:"»Moj dragi je šel na svoj vrt.<br>k dišavnim gredicam.<br>da bi pasel čredo med vrtovi<br>in nabiral lilije.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:3,Visoka_pesem:"Jaz pripadam svojemu dragemu<br>in moj dragi meni.<br>Med lilijami pase čredo.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:4,Visoka_pesem:"»Moja draga. lepa si kakor Tirza.<br>ljubka kakor Jeruzalem.<br>osupljiva kakor vojska. zbrana okoli praporjev.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:5,Visoka_pesem:"Umakni svoje oči od mene.<br>ker se jim ne morem upreti.<br>Tvoji lasje so kakor čreda koz.<br>ki se spuščajo z gileadskih strmin.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:6,Visoka_pesem:"Tvoji zobje so kakor čreda<br>pravkar okopanih ovc.<br>Vsaka ima svojega dvojčka.<br>nobena ni sama.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:7,Visoka_pesem:"Tvoja lica. skrita za tančico.<br>so kakor krhlji granatnega jabolka.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:8,Visoka_pesem:"Med 60 kraljicami.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:80,Visoka_pesem:"stranskimi ženami<br>in nešteto dekleti",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:9,Visoka_pesem:"je le ena. ki je moja golobica. popolna moja.<br>ta. ki je svoji mami najbolj pri srcu.<br>ki je ljubljenka nje. ki jo je rodila.<br>Ko jo vidijo dekleta. ji govorijo. da je srečna.<br>kraljice in stranske žene jo hvalijo:",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:10,Visoka_pesem:"‚Kdo je ta. ki sveti kakor zora.<br>ki je lepa kakor luna.<br>čista kakor sončna svetloba<br>in osupljiva kakor vojska. zbrana okoli praporjev?«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:11,Visoka_pesem:"»Odšla sem na orehov vrt.<br>da bi videla. ali v dolini že kaj poganja.<br>ali je trta že vzbrstela.<br>ali so granatovci že zacveteli.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:12,Visoka_pesem:"In še preden sem se zavedala.<br>me je želja. da bi videla vse to.<br>pripeljala k vozovom mojega plemenitega ljudstva.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:6,V:13,Visoka_pesem:"»Vrni se. vrni. o Šulamka!<br>Vrni se. vrni.<br>da te bomo lahko gledali!«<br>»Zakaj želite gledati Šulamko?«<br>»Podobna je plesu dveh skupin!«",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:7,V:0,Visoka_pesem:"Visoka pesem 7. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:1,Visoka_pesem:"»Kako lepe so tvoje noge v sandalah.<br>o plemenito dekle!<br>Obline tvojih bokov so kakor okras.<br>delo umetnikovih rok.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:2,Visoka_pesem:"Tvoj popek je kakor čaša.<br>naj v njej ne zmanjka mešanega vina.<br>Tvoj trebuh je kakor v kupček nasuto pšenično zrnje.<br>obdano z lilijami.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:3,Visoka_pesem:"Tvoji dojki sta kakor dva mladiča.<br>gazelina dvojčka.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:4,Visoka_pesem:"Tvoj vrat je kakor slonokoščen stolp.<br>Tvoje oči so kakor jezera v Hešbonu.<br>pri Batrabimskih vratih.<br>Tvoj nos je kakor libanonski stolp.<br>ki gleda proti Damasku.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:5,Visoka_pesem:"Tvoja glava je lepa kakor Karmel<br>in tvoji kodri so kakor vijoličasta volna.<br>Tvoji prekrasni dolgi lasje so omrežili kralja.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:6,Visoka_pesem:"Kako si prikupna in kako očarljiva.<br>moja draga. lepota vseh lepot!",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:7,Visoka_pesem:"Tvoja postava je podobna palmi<br>in tvoje prsi dateljnovim grozdom.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:8,Visoka_pesem:"Rekel sem: ‚Splezal bom na palmo.<br>da bom z njenih vej utrgal sadeže.<br>Naj bodo tvoje prsi kakor grozdi vinske trte.<br>vonj tvojega diha kakor vonj jabolk",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:9,Visoka_pesem:"in tvoja usta kakor najboljše vino.«<br>»Naj gladko teče po grlu mojega dragega.<br>naj bo kakor vino. ki človeku nežno teče po ustnicah in ga uspava.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:10,Visoka_pesem:"Pripadam svojemu dragemu<br>in on hrepeni po meni.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:11,Visoka_pesem:"Pridi. moj dragi.<br>pojdiva na polje.<br>Ostaniva med heninimi grmi.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:12,Visoka_pesem:"Zgodaj vstaniva in pojdiva v vinograde.<br>da vidiva. ali je vinska trta že vzbrstela.<br>ali so se cvetovi že odprli.<br>ali so granatovci že zacveteli.<br>Tam ti bom pokazala. kako zelo te imam rada.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:7,V:13,Visoka_pesem:"Mandragore širijo svoj vonj<br>in pri naših vratih je vsakovrstno žlahtno sadje.<br>sveže in suho.<br>ki sem ga shranila zate. moj dragi.",K:"",NZ:"X"},
+{Knjiga:"",Kr:"",P:8,V:0,Visoka_pesem:"Visoka pesem 8. poglavje",K:"",NZ:""},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:1,Visoka_pesem:"Ko bi le ti bil moj brat.<br>ki ga je dojila moja mama!<br>Potem bi te lahko poljubila. ko bi te srečala zunaj.<br>in nihče me zaradi tega ne bi obsojal.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:2,Visoka_pesem:"Odpeljala bi te.<br>peljala v hišo svoje mame.<br>ki me je poučevala.<br>Dala bi ti piti zeliščno vino<br>in sveži sok granatnih jabolk.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:3,Visoka_pesem:"Njegova levica bi bila pod mojo glavo.<br>njegova desnica bi me objemala.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:4,Visoka_pesem:"O jeruzalemska dekleta. prisezite mi.<br>da ne boste vzbujale in razvnemale v meni ljubezni. če se sama ne prebudi.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:5,Visoka_pesem:"»Kdo je ženska. ki prihaja iz pustinje<br>in objema svojega dragega?«<br>»Pod jablano sem te zbudila.<br>Tam je bila tvoja mama v porodnih bolečinah.<br>Tam je bila v porodnih bolečinah ta. ki te je rodila.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:6,Visoka_pesem:"Položi me kakor pečat na svoje srce.<br>kakor pečat na svojo roko.<br>saj je ljubezen močna kakor smrt<br>in zvestoba nepopustljiva kakor grob.<br>Plameni ljubezni so plameni ognja. Jahov plamen.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:7,Visoka_pesem:"Obilne vode ne morejo pogasiti ljubezni.<br>niti reke je odplaviti.<br>Če bi kdo hotel za ljubezen dati vse bogastvo svoje hiše.<br>bi drugi to bogastvo samo zaničevali.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:8,Visoka_pesem:"»Sestrico imamo.<br>ki še nima prsi.<br>Kaj bomo storili s svojo sestro.<br>ko bodo prosili za njeno roko?«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:9,Visoka_pesem:"»Če bo kakor zid.<br>bomo na njej zgradili srebrn nadzidek.<br>če pa bo kakor vrata.<br>jo bomo zagradili s cedrovimi deskami.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:10,Visoka_pesem:"»Jaz sem kakor zid<br>in moje prsi so kakor stolpi.<br>Tako lahko moj dragi vidi.<br>da je moje srce mirno.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:11,Visoka_pesem:"Salomon je imel vinograd v Baal Hamonu.<br>Vinograd je izročil oskrbnikom<br>in vsak od njih je moral za to. kar je v njem zraslo. prinesti po tisoč šeklov srebra.",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:12,Visoka_pesem:"Ti imaš tisoč šeklov srebra. o Salomon.<br>in tisti. ki skrbijo za pridelek. dvesto.<br>Toda jaz imam vinograd. ki je samo moj.«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:13,Visoka_pesem:"»O ti. ki prebivaš na vrtovih.<br>prijatelji pozorno poslušajo. da bi slišali tvoj glas.<br>Daj. da ga slišim tudi jaz!«",K:"",NZ:"X"},
+{Knjiga:"Visoka pesem",Kr:"Vp",P:8,V:14,Visoka_pesem:"»Pohiti. moj dragi.<br>bodi hiter kakor gazela.<br>kakor mlad jelen<br>na gorah. kjer rastejo dišavnice.«",K:"",NZ:"X"},
+];
+        document.querySelector('#naslov').innerText = document.querySelector('title').innerText;
+
+		var steviloStolpcev = Glava.length;
+
+		var zaporedjeStolpcev = {};
+		for(var i = 0; i <steviloStolpcev; i++){			
+			zaporedjeStolpcev[i] = Glava[i];
+		}
+
+		function vrniImeStolpca(index){
+			return zaporedjeStolpcev[index];
+		}
+		
+
+		function narisiGlavoTabele(){
+			var glava_tr = document.querySelector('#tblOsnova thead tr');
+			var th = [];
+
+			for(let i = 0; i < Glava.length; i++){	
+				th[i] = document.createElement('th');
+				th[i].innerHTML = Glava[i];				
+				if (GlavaNV0.indexOf(Glava[i]) > -1 ) th[i].style.display = 'none';
+				th[i].appendChild(document.createElement('br'));
+				glava_tr.appendChild(th[i]);
+			}
+		}
+
+		function izrisiVrsticeTabele(podatki){
+			document.querySelector('#tblOsnova tbody').innerHTML = '';
+			for(let i = 0; i < podatki.length; i++){          
+				var vrstica = document.createElement('tr');
+				var stolpci = [];
+				for(let j = 0; j < steviloStolpcev; j++){
+					stolpci[j] = document.createElement('td');
+					stolpci[j].innerHTML = podatki[i][vrniImeStolpca(j)];
+				    if (GlavaNV0.indexOf(Glava[j]) > -1 ) stolpci[j].style.display = 'none';
+					vrstica.appendChild(stolpci[j]);
+				}
+				document.querySelector('#tblOsnova tbody').appendChild(vrstica);	
+			}
+		}
+
+	    function Uvod(){
+
+            //#[3,3,5]
+		    const q = eval(location.hash.slice(1));
+			const L=q.length;
+		    //console.log(q);
+			switch (L) {
+				case 1: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					break;
+				case 2: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					break;
+				case 3: 
+					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
+			}
+
+        }
+		narisiGlavoTabele();
+
+        if(location.hash.slice(1).length > 0){
+			Uvod();
+        }
+		izrisiVrsticeTabele(Lokacije);   
+
+    </script>
 </body>
 </html>
