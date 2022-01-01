@@ -16,19 +16,20 @@ if(location.hash.slice(1).length > 0){
 	//console.log(q);
 	switch (L) {
 	case 1: 
-			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html";
+			url = "https://branje66.vercel.app/"+q[0]+".html";
 			break;
 		case 2: 
-			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html#["+q[1]+"]";
+			url = "https://branje66.vercel.app/"+q[0]+".html#["+q[1]+"]";
 			break;
 		case 3: 
-			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html#["+q[1]+","+q[2]+"]";
+			url = "https://branje66.vercel.app/"+q[0]+".html#["+q[1]+","+q[2]+"]";
 			break;
 		case 4: 
-			url = "https://arhiv.snaga-mb.si/MS/bible66/"+q[0]+".html#["+q[1]+","+q[2]+","+q[3]+"]";
+			url = "https://branje66.vercel.app/"+q[0]+".html#["+q[1]+","+q[2]+","+q[3]+"]";
 			break;
 	}
-
+//https://branje66.vercel.app/#['Rut',3,5]
+//https://branje66.vercel.app/#['Rut',3]
     const msgW = open(url, '_self');
 
 }
