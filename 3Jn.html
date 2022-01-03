@@ -117,7 +117,7 @@ var Lokacije = [
 		    //console.log(q);
 			switch (L) {
 				case 1: 
-					Lokacije = Lokacije.filter(function (el) {return el.P == q[0];});
+					Lokacije = Lokacije.filter(function (el) {return el.P >= q[0];});
 					break;
 				case 2: 
 					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
