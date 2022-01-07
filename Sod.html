@@ -745,9 +745,8 @@ var Lokacije = [
 					Lokacije = Lokacije.filter(function (el) {return el.P >= q[0];});
 					break;
 				case 2: 
-					if (q[1].indexOf(".") > -1) {
-					q[1] = q[1].replace('.');
-						Lokacije = Lokacije.filter(function (el) {return el.P >= q[0] && el.P <= q[1];});
+					if (q[1]<0) {
+						Lokacije = Lokacije.filter(function (el) {return el.P >= q[0] && el.P <= -q[1];});
 					} else{
 						Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
 					}
