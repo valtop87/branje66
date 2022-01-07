@@ -218,7 +218,11 @@ var Lokacije = [
 					Lokacije = Lokacije.filter(function (el) {return el.P >= q[0];});
 					break;
 				case 2: 
-					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					if (q[1]<0) {
+						Lokacije = Lokacije.filter(function (el) {return el.P >= q[0] && el.P <= -q[1];});
+					} else{
+						Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1] || el.P > q[0];});
+					}
 					break;
 				case 3: 
 					Lokacije = Lokacije.filter(function (el) {return el.P == q[0] && el.V >= q[1]  && el.V <= q[2];});
